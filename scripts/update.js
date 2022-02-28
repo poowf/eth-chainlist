@@ -25,6 +25,6 @@ function handleFile(err, data) {
         maxArrayLength: Infinity,
         maxStringLength: Infinity
       })
-      .toString()};\nexport default chainArray;`
+      .toString()};\nmodule.exports = chainArray;`
   );
 }

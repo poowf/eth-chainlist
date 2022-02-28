@@ -5611,4 +5611,4 @@ const chainArray = [
     networkId: 6022140761023
   }
 ];
-export default chainArray;
+module.exports = chainArray;
