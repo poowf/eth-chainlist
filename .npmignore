@@ -33,6 +33,7 @@ Thumbs.db
 
 # Do not publish
 babel.config.js
+.prettierignore
 .gitattributes
 .commitlintrc.json
 .versionrc.json
