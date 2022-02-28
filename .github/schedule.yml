@@ -1,0 +1,32 @@
+name: Schedule
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 0 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: yarn update-chain
+      - id: checkUpdate
+        name: check_for_data_updates
+        run: |
+          if GIT_CHANGES=$(git status --porcelain) && [ -z "$GIT_CHANGES" ]; then
+            echo "Nothing to lint. Skipping this job!"
+            exit 1
+          fi
+      - run: |
+          git config --global user.name ${GITHUB_ACTOR}
+          git config --global user.email ${GITHUB_ACTOR}@poowf.com
+          git add ${GITHUB_WORKSPACE}/.
+          yarn build
+          yarn release
+          git commit -m "chore: update chain data"
+          git push
+        if: steps.checkUpdate.conclusion == 'success'

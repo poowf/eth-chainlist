@@ -1,0 +1,67 @@
+{
+  "name": "eth-chainlist",
+  "version": "0.0.2",
+  "description": "List of EVM Chains",
+  "main": "index.js",
+  "scripts": {
+    "build": "cp -r src/* ./",
+    "lint": "eslint --ignore-path .gitignore . --ext .js --ext .jsx --ext .ts --ext .tsx",
+    "format": "prettier \"./**/*.+(ts|js|tsx|jsx)\" --write",
+    "update-chain": "node scripts/update.js",
+    "release": "standard-version",
+    "pre-commit": "lint-staged",
+    "commit": "cz",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "./**/*.{ts,js,tsx,jsx}": [
+      "yarn lint --fix",
+      "yarn format"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-semistandard": "^16.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2",
+    "standard-version": "^9.3.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poowf/eth-chainlist"
+  },
+  "keywords": [
+    "eth",
+    "evm",
+    "chain",
+    "eth chain"
+  ],
+  "author": "zanechua",
+  "contributors": [
+    {
+      "name": "Zane J. Chua",
+      "email": "hi@zanechua.com",
+      "url": "https://zanechua.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poowf/eth-chainlist/issues"
+  },
+  "homepage": "https://github.com/poowf/eth-chainlist#readme"
+}

@@ -1,0 +1,31 @@
+# VSCode & Webstorm history directories
+.history
+.idea
+.vscode
+
+# Mac OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git
+
+# node.js
+.yarn
+yarn.lock.sha256sum
+package-lock.json
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+
+# Other
+chain.json
+src/data/chain.js

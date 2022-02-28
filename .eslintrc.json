@@ -1,0 +1,44 @@
+{
+  "root": true,
+  "extends": [
+    "semistandard",
+    "prettier"
+  ],
+  "plugins": [
+    "eslint-plugin-prettier"
+  ],
+  "env": {
+    "es6": false,
+    "node": true,
+    "jest": true
+  },
+  "ignorePatterns": ["node_modules/", "src/data/chain.js"],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {},
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "rules": {
+    "quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": false }
+    ],
+    "no-unused-vars": ["warn"],
+    "no-useless-escape": ["warn"],
+    "camelcase": "off",
+    "no-use-before-define": "off",
+    "global-require": [0],
+    "prettier/prettier": [
+      "error",
+      { "endOfLine": "auto" }
+    ]
+  }
+}

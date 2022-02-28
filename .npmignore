@@ -1,0 +1,47 @@
+# VSCode & Webstorm history directories
+.history
+.idea
+.vscode
+
+# node.js
+.yarn
+yarn.lock.sha256sum
+package-lock.json
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+_cacache/
+_logs/
+
+# Mac OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git
+
+# Bundle artifact
+*.jsbundle
+
+# Do not publish
+babel.config.js
+.gitattributes
+.commitlintrc.json
+.versionrc.json
+.prettierrc.js
+.flowconfig
+.eslintrc.json
+.buckconfig
+chain.json
+scripts/
+.github/
+.husky/
+src/
