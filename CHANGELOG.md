@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.5 (2022-11-08)
+
+
+### Maintenance
+
+* make husky hooks executable ([8563681](https://github.com/poowf/eth-chainlist/commit/8563681945e6122006599a7d15be54f696f961b2))
+* update chain data ([6c0bf2e](https://github.com/poowf/eth-chainlist/commit/6c0bf2e7b8338f3fae6e9e2c2d17e36370e01e63))
+
 ### [0.0.4](https://github.com/poowf/eth-chainlist/compare/v0.0.3...v0.0.4) (2022-02-28)
 
 
