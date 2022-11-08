@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '16.x'
           cache: 'yarn'
       - run: yarn install --frozen-lockfile
       - run: yarn update-chain
@@ -24,10 +24,13 @@ jobs:
           fi
       - run: |
           git config --global user.name ${GITHUB_ACTOR}
-          git config --global user.email ${GITHUB_ACTOR}@poowf.com
+          git config --global user.email zane@poowf.com
           git add ${GITHUB_WORKSPACE}/.
           yarn build
-          yarn release
           git commit -m "chore: update chain data"
-          git push
+          yarn release
+          git push --follow-tags
+      - run: gh workflow run publish.yml --ref $(git describe --tags)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: steps.checkUpdate.conclusion == 'success'
