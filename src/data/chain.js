@@ -2279,6 +2279,24 @@ const chainArray = [
     parent: { chain: 'eip155-100', type: 'L2' }
   },
   {
+    name: 'MOAC testnet',
+    chain: 'MOAC',
+    rpc: [ 'http://gateway.moac.io/testnet' ],
+    faucets: [],
+    nativeCurrency: { name: 'MOAC', symbol: 'mc', decimals: 18 },
+    infoURL: 'https://moac.io',
+    shortName: 'moactest',
+    chainId: 201,
+    networkId: 201,
+    explorers: [
+      {
+        name: 'moac testnet explorer',
+        url: 'https://testnet.moac.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Freight Trust Network',
     chain: 'EDI',
     rpc: [
@@ -2381,7 +2399,7 @@ const chainArray = [
     name: 'Oasys Mainnet',
     chain: 'Oasys',
     icon: 'oasys',
-    rpc: [ 'https://rpc-mainnet.oasys.games' ],
+    rpc: [ 'https://rpc.mainnet.oasys.games' ],
     faucets: [],
     nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
     infoURL: 'https://oasys.games',
@@ -3908,6 +3926,25 @@ const chainArray = [
     }
   },
   {
+    name: 'MOAC mainnet',
+    chain: 'MOAC',
+    rpc: [ 'http://gateway.moac.io/mainnet' ],
+    faucets: [],
+    nativeCurrency: { name: 'MOAC', symbol: 'mc', decimals: 18 },
+    infoURL: 'https://moac.io',
+    shortName: 'moac',
+    chainId: 1099,
+    networkId: 1099,
+    slip44: 314,
+    explorers: [
+      {
+        name: 'moac explorer',
+        url: 'https://explorer.moac.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'WEMIX3.0 Mainnet',
     chain: 'WEMIX',
     rpc: [ 'https://api.wemix.com', 'wss://ws.wemix.com' ],
@@ -4292,6 +4329,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Dos Fuji Subnet',
+    chain: 'DOS',
+    rpc: [ 'https://test.doschain.com/jsonrpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dos Native Token', symbol: 'DOS', decimals: 18 },
+    infoURL: 'http://doschain.io/',
+    shortName: 'DOS',
+    chainId: 1311,
+    networkId: 1311,
+    explorers: [
+      {
+        name: 'dos-testnet',
+        url: 'https://test.doscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Aitd Mainnet',
     chain: 'AITD',
     icon: 'aitd',
@@ -4340,6 +4395,25 @@ const chainArray = [
     shortName: 'geth',
     chainId: 1337,
     networkId: 1337
+  },
+  {
+    name: 'Polygon zkEVM Testnet',
+    title: 'Polygon zkEVM Testnet',
+    chain: 'Polygon',
+    rpc: [ 'https://rpc.public.zkevm-test.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://polygon.technology/solutions/polygon-zkevm/',
+    shortName: 'zkevmtest',
+    chainId: 1402,
+    networkId: 1402,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.public.zkevm-test.net',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Sherpax Mainnet',
@@ -4440,6 +4514,26 @@ const chainArray = [
     icon: 'ludan',
     chainId: 1688,
     networkId: 1688
+  },
+  {
+    name: 'Anytype EVM Chain',
+    chain: 'ETH',
+    icon: 'any',
+    rpc: [ 'https://geth.anytype.io' ],
+    faucets: [ 'https://evm.anytype.io/faucet' ],
+    nativeCurrency: { name: 'ANY', symbol: 'ANY', decimals: 18 },
+    infoURL: 'https://evm.anytype.io',
+    shortName: 'AnytypeChain',
+    chainId: 1701,
+    networkId: 1701,
+    explorers: [
+      {
+        name: 'Anytype Explorer',
+        url: 'https://explorer.anytype.io',
+        icon: 'any',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'TBSI Mainnet',
@@ -6194,7 +6288,7 @@ const chainArray = [
   {
     name: 'Alph Network',
     chain: 'ALPH',
-    rpc: [ 'https://rpc.alph.network' ],
+    rpc: [ 'https://rpc.alph.network', 'wss://rpc.alph.network' ],
     faucets: [],
     nativeCurrency: { name: 'Alph Network', symbol: 'ALPH', decimals: 18 },
     infoURL: 'https://alph.network',
@@ -7744,6 +7838,30 @@ const chainArray = [
       {
         name: 'thinkiumscan',
         url: 'https://test103.thinkiumscan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DoKEN Super Chain Mainnet',
+    chain: 'DoKEN Super Chain',
+    rpc: [
+      'https://sgrpc.doken.dev',
+      'https://nyrpc.doken.dev',
+      'https://ukrpc.doken.dev'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'DoKEN', symbol: 'DKN', decimals: 18 },
+    infoURL: 'https://doken.dev/',
+    shortName: 'DoKEN',
+    chainId: 61916,
+    networkId: 61916,
+    icon: 'doken',
+    explorers: [
+      {
+        name: 'DSC Scan',
+        url: 'https://explore.doken.dev',
+        icon: 'doken',
         standard: 'EIP3091'
       }
     ]
@@ -9479,6 +9597,52 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Imversed Canary',
+    chain: 'Imversed',
+    rpc: [ 'https://jsonrpc-endpoint-canary.imversed.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Imversed Token', symbol: 'IMV', decimals: 18 },
+    infoURL: 'https://imversed.com',
+    shortName: 'imversed',
+    chainId: 5555555,
+    networkId: 5555555,
+    icon: 'imversed',
+    explorers: [
+      {
+        name: 'Imversed Cosmos Explorer (Big Dipper)',
+        url: 'https://tex-c.imversed.com',
+        icon: 'imversed',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Imversed Testnet',
+    chain: 'Imversed',
+    rpc: [ 'https://jsonrpc-endpoint-test.imversed.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Imversed Token', symbol: 'IMV', decimals: 18 },
+    infoURL: 'https://imversed.com',
+    shortName: 'imversed-testnet',
+    chainId: 5555558,
+    networkId: 5555558,
+    icon: 'imversed',
+    explorers: [
+      {
+        name: 'Imversed EVM Explorer (Blockscout)',
+        url: 'https://txe-test.imversed.com',
+        icon: 'imversed',
+        standard: 'none'
+      },
+      {
+        name: 'Imversed Cosmos Explorer (Big Dipper)',
+        url: 'https://tex-t.imversed.com',
+        icon: 'imversed',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Musicoin',
     chain: 'MUSIC',
     rpc: [ 'https://mewapi.musicoin.tw' ],
@@ -9880,6 +10044,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nebula Staging',
+    chain: 'staging-faint-slimy-achird',
+    rpc: [
+      'https://staging-v3.skalenodes.com/v1/staging-faint-slimy-achird',
+      'wss://staging-v3.skalenodes.com/v1/ws/staging-faint-slimy-achird'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: 'https://nebulachain.io/',
+    shortName: 'nebula-staging',
+    chainId: 503129905,
+    networkId: 503129905,
+    explorers: [
+      {
+        name: 'nebula',
+        url: 'https://staging-faint-slimy-achird.explorer.staging-v3.skalenodes.com',
+        icon: 'nebula',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'IPOS Network',
     chain: 'IPOS',
     rpc: [ 'https://rpc.iposlab.com', 'https://rpc2.iposlab.com' ],
@@ -9936,6 +10122,28 @@ const chainArray = [
     shortName: 'aurora-betanet',
     chainId: 1313161556,
     networkId: 1313161556
+  },
+  {
+    name: 'Nebula Mainnet',
+    chain: 'green-giddy-denebola',
+    rpc: [
+      'https://mainnet.skalenodes.com/v1/green-giddy-denebola',
+      'wss://mainnet-proxy.skalenodes.com/v1/ws/green-giddy-denebola'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: 'https://nebulachain.io/',
+    shortName: 'nebula-mainnet',
+    chainId: 1482601649,
+    networkId: 1482601649,
+    explorers: [
+      {
+        name: 'nebula',
+        url: 'https://green-giddy-denebola.explorer.mainnet.skalenodes.com',
+        icon: 'nebula',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Harmony Mainnet Shard 0',
