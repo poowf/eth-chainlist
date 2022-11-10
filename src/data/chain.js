@@ -3651,6 +3651,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Memo Smart Chain Mainnet',
+    chain: 'MEMO',
+    rpc: [
+      'https://chain.metamemo.one:8501',
+      'wss://chain.metamemo.one:16801'
+    ],
+    faucets: [ 'https://faucet.metamemo.one/' ],
+    nativeCurrency: { name: 'Memo', symbol: 'CMEMO', decimals: 18 },
+    infoURL: 'www.memolabs.org',
+    shortName: 'memochain',
+    chainId: 985,
+    networkId: 985,
+    icon: 'memo',
+    explorers: [
+      {
+        name: 'Memo Mainnet Explorer',
+        url: 'https://scan.metamemo.one:8080',
+        icon: 'memoscan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'TOP Mainnet',
     chain: 'TOP',
     icon: 'top',
@@ -5422,6 +5445,24 @@ const chainArray = [
       {
         name: 'JFIN Chain Explorer',
         url: 'https://exp.jfinchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Metacodechain',
+    chain: 'metacode',
+    rpc: [ 'https://j.blockcoach.com:8503' ],
+    faucets: [],
+    nativeCurrency: { name: 'J', symbol: 'J', decimals: 18 },
+    infoURL: 'https://j.blockcoach.com:8089',
+    shortName: 'metacode',
+    chainId: 3666,
+    networkId: 3666,
+    explorers: [
+      {
+        name: 'meta',
+        url: 'https://j.blockcoach.com:8089',
         standard: 'EIP3091'
       }
     ]
