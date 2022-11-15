@@ -5344,6 +5344,25 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Debounce Subnet Testnet',
+    chain: 'Debounce Network',
+    icon: 'debounce',
+    rpc: [ 'https://dev-rpc.debounce.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Debounce Network', symbol: 'DB', decimals: 18 },
+    infoURL: 'https://debounce.network',
+    shortName: 'debounce-devnet',
+    chainId: 3306,
+    networkId: 3306,
+    explorers: [
+      {
+        name: 'Debounce Devnet Explorer',
+        url: 'https://explorer.debounce.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ZCore Testnet',
     chain: 'Beach',
     icon: 'zcore',
@@ -6184,7 +6203,7 @@ const chainArray = [
     networkId: 8029
   },
   {
-    name: 'Shardeum Liberty 1.5',
+    name: 'Shardeum Liberty 1.6',
     chain: 'Shardeum',
     rpc: [ 'https://liberty10.shardeum.org/' ],
     faucets: [ 'https://faucet.liberty10.shardeum.org' ],
@@ -7976,6 +7995,26 @@ const chainArray = [
         name: 'eCredits TestNet Explorer',
         url: 'https://explorer.tst.ecredits.com',
         icon: 'ecredits',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SiriusNet',
+    chain: 'SIN',
+    rpc: [
+      'https://u0tnafcv6j:o2T045sxuCNXL878RDQLp5__Zj-es2cvdjtgkl4etn0@u0v7kwtvtg-u0wj114sve-rpc.us0-aws.kaleido.io/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'MCD', symbol: 'MCD', decimals: 18 },
+    infoURL: 'https://macaucasinolisboa.xyz',
+    shortName: 'mcl',
+    chainId: 67390,
+    networkId: 67390,
+    explorers: [
+      {
+        name: 'siriusnetscan',
+        url: 'https://siriusnet.tryethernal.com',
         standard: 'EIP3091'
       }
     ]
