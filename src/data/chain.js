@@ -2305,7 +2305,7 @@ const chainArray = [
   {
     name: 'MOAC testnet',
     chain: 'MOAC',
-    rpc: [ 'http://gateway.moac.io/testnet' ],
+    rpc: [ 'https://gateway.moac.io/testnet' ],
     faucets: [],
     nativeCurrency: { name: 'MOAC', symbol: 'mc', decimals: 18 },
     infoURL: 'https://moac.io',
@@ -3975,7 +3975,7 @@ const chainArray = [
   {
     name: 'MOAC mainnet',
     chain: 'MOAC',
-    rpc: [ 'http://gateway.moac.io/mainnet' ],
+    rpc: [ 'https://gateway.moac.io/mainnet' ],
     faucets: [],
     nativeCurrency: { name: 'MOAC', symbol: 'mc', decimals: 18 },
     infoURL: 'https://moac.io',
@@ -9241,19 +9241,39 @@ const chainArray = [
     }
   },
   {
-    name: 'Dexalot Testnet',
+    name: 'Dexalot Subnet Testnet',
     chain: 'DEXALOT',
+    icon: 'dexalot',
     rpc: [ 'https://subnets.avax.network/dexalot/testnet/rpc' ],
-    faucets: [ 'https://sfaucet.dexalot-test.com' ],
+    faucets: [ 'https://faucet.avax.network/?subnet=dexalot' ],
     nativeCurrency: { name: 'Dexalot', symbol: 'ALOT', decimals: 18 },
     infoURL: 'https://dexalot.com',
-    shortName: 'Dexalot',
+    shortName: 'dexalot-testnet',
     chainId: 432201,
     networkId: 432201,
     explorers: [
       {
+        name: 'Avalanche Subnet Testnet Explorer',
+        url: 'https://subnets-test.avax.network/dexalot',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Dexalot Subnet',
+    chain: 'DEXALOT',
+    icon: 'dexalot',
+    rpc: [ 'https://subnets.avax.network/dexalot/mainnet/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dexalot', symbol: 'ALOT', decimals: 18 },
+    infoURL: 'https://dexalot.com',
+    shortName: 'dexalot',
+    chainId: 432204,
+    networkId: 432204,
+    explorers: [
+      {
         name: 'Avalanche Subnet Explorer',
-        url: 'https://subnets.avax.network/dexalot/testnet/explorer',
+        url: 'https://subnets.avax.network/dexalot',
         standard: 'EIP3091'
       }
     ]
