@@ -724,7 +724,7 @@ const chainArray = [
   {
     name: 'Darwinia Pangoro Testnet',
     chain: 'pangoro',
-    rpc: [ 'http://pangoro-rpc.darwinia.network' ],
+    rpc: [ 'https://pangoro-rpc.darwinia.network' ],
     faucets: [],
     nativeCurrency: {
       name: 'Pangoro Network Native Token”',
@@ -746,7 +746,7 @@ const chainArray = [
   {
     name: 'Darwinia Network',
     chain: 'darwinia',
-    rpc: [ 'https://darwinia-rpc.darwinia.network' ],
+    rpc: [ 'https://rpc.darwinia.network' ],
     faucets: [],
     nativeCurrency: {
       name: 'Darwinia Network Native Token',
@@ -4714,6 +4714,46 @@ const chainArray = [
       {
         name: 'explorer',
         url: 'https://explorer.boyanet.org:4001',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ONUS Chain Testnet',
+    title: 'ONUS Chain Testnet',
+    chain: 'onus',
+    rpc: [ 'https://rpc-testnet.onuschain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'ONUS', symbol: 'ONUS', decimals: 18 },
+    infoURL: 'https://onuschain.io',
+    shortName: 'onus-testnet',
+    chainId: 1945,
+    networkId: 1945,
+    explorers: [
+      {
+        name: 'Onus explorer testnet',
+        url: 'https://explorer-testnet.onuschain.io',
+        icon: 'onus',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ONUS Chain Mainnet',
+    title: 'ONUS Chain Mainnet',
+    chain: 'onus',
+    rpc: [ 'https://rpc.onuschain.io', 'wss://ws.onuschain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'ONUS', symbol: 'ONUS', decimals: 18 },
+    infoURL: 'https://onuschain.io',
+    shortName: 'onus-mainnet',
+    chainId: 1975,
+    networkId: 1975,
+    explorers: [
+      {
+        name: 'Onus explorer mainnet',
+        url: 'https://explorer.onuschain.io',
+        icon: 'onus',
         standard: 'EIP3091'
       }
     ]
