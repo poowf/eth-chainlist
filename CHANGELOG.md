@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.12 (2022-11-18)
+
+
+### Maintenance
+
+* patch vulnerabilities ([34713a9](https://github.com/poowf/eth-chainlist/commit/34713a91b48550bedd940d659db0ce5dcd20315b))
+* update chain data ([010ffc9](https://github.com/poowf/eth-chainlist/commit/010ffc90beb541f56460bcaaddecdebb69a25a92))
+
 ### 0.0.11 (2022-11-17)
 
 
