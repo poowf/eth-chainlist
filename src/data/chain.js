@@ -391,16 +391,17 @@ const chainArray = [
     networkId: 23
   },
   {
-    name: 'Dithereum Mainnet',
-    chain: 'DTH',
-    icon: 'dithereum',
-    rpc: [ 'https://node-mainnet.dithereum.io' ],
-    faucets: [ 'https://faucet.dithereum.org' ],
-    nativeCurrency: { name: 'Dither', symbol: 'DTH', decimals: 18 },
-    infoURL: 'https://dithereum.org',
-    shortName: 'dthmainnet',
+    name: 'KardiaChain Mainnet',
+    chain: 'KAI',
+    icon: 'kardiachain',
+    rpc: [ 'https://rpc.kardiachain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'KardiaChain', symbol: 'KAI', decimals: 18 },
+    infoURL: 'https://kardiachain.io',
+    shortName: 'kardiachain',
     chainId: 24,
-    networkId: 24
+    networkId: 0,
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Cronos Mainnet Beta',
@@ -768,7 +769,7 @@ const chainArray = [
   {
     name: 'Ennothem Mainnet Proterozoic',
     chain: 'ETMP',
-    rpc: [ 'https://rpc.etm.network' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Ennothem', symbol: 'ETMP', decimals: 18 },
     infoURL: 'https://etm.network',
@@ -2335,6 +2336,25 @@ const chainArray = [
     networkId: 0
   },
   {
+    name: 'MAP Makalu',
+    title: 'MAP Testnet Makalu',
+    chain: 'MAP',
+    rpc: [ 'https://testnet-rpc.maplabs.io' ],
+    faucets: [ 'https://faucet.maplabs.io' ],
+    nativeCurrency: { name: 'Makalu MAP', symbol: 'MAP', decimals: 18 },
+    infoURL: 'https://maplabs.io',
+    shortName: 'makalu',
+    chainId: 212,
+    networkId: 212,
+    explorers: [
+      {
+        name: 'mapscan',
+        url: 'https://testnet.mapscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SoterOne Mainnet old',
     chain: 'SOTER',
     rpc: [ 'https://rpc.soter.one' ],
@@ -3399,9 +3419,10 @@ const chainArray = [
     name: 'Qitmeer',
     chain: 'MEER',
     rpc: [
-      'https://evm-dataseed3.meerscan.io',
-      'https://evm-dataseed1.meerscan.com',
-      'https://evm-dataseed.meerscan.com'
+      'https://evm-dataseed1.meerscan.io',
+      'https://evm-dataseed2.meerscan.io',
+      'https://evm-dataseed.meerscan.com',
+      'https://evm-dataseed1.meerscan.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Qitmeer', symbol: 'MEER', decimals: 18 },
@@ -3410,6 +3431,7 @@ const chainArray = [
     chainId: 813,
     networkId: 813,
     slip44: 813,
+    icon: 'meer',
     explorers: [
       {
         name: 'meerscan',
@@ -3932,7 +3954,7 @@ const chainArray = [
   {
     name: 'Bronos Mainnet',
     chain: 'Bronos',
-    rpc: [ 'https://evm.bronos.org' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'BRO', symbol: 'BRO', decimals: 18 },
     infoURL: 'https://bronos.org',
@@ -3975,7 +3997,7 @@ const chainArray = [
   {
     name: 'MOAC mainnet',
     chain: 'MOAC',
-    rpc: [ 'https://gateway.moac.io/mainnet' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'MOAC', symbol: 'mc', decimals: 18 },
     infoURL: 'https://moac.io',
@@ -5079,6 +5101,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Exosama Network',
+    chain: 'EXN',
+    rpc: [ 'https://rpc.exosama.com', 'wss://rpc.exosama.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sama Token', symbol: 'SAMA', decimals: 18 },
+    infoURL: 'https://moonsama.com',
+    shortName: 'exn',
+    chainId: 2109,
+    networkId: 2109,
+    slip44: 2109,
+    icon: 'exn',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.exosama.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BOSagora Mainnet',
     chain: 'ETH',
     rpc: [ 'https://mainnet.bosagora.org', 'https://rpc.bosagora.org' ],
@@ -5870,6 +5913,19 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Firechain Mainnet',
+    chain: 'FIRE',
+    icon: 'firechain',
+    rpc: [ 'https://mainnet.rpc1.thefirechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
+    infoURL: 'https://thefirechain.com',
+    shortName: 'fire',
+    chainId: 5290,
+    networkId: 5290,
+    explorers: []
+  },
+  {
     name: 'Uzmi Network Mainnet',
     chain: 'UZMI',
     rpc: [ 'https://network.uzmigames.com.br/' ],
@@ -6307,13 +6363,14 @@ const chainArray = [
   {
     name: 'Qitmeer Network Testnet',
     chain: 'MEER',
-    rpc: [ 'https://explorer.qitmeer.io/rpc' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Qitmeer Testnet', symbol: 'MEER-T', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'meertest',
     chainId: 8131,
     networkId: 8131,
+    icon: 'meer',
     explorers: [
       {
         name: 'meerscan testnet',
@@ -6522,7 +6579,10 @@ const chainArray = [
   {
     name: 'Evmos',
     chain: 'Evmos',
-    rpc: [ 'https://eth.bd.evmos.org:8545' ],
+    rpc: [
+      'https://eth.bd.evmos.org:8545',
+      'https://evmos-evm.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Evmos', symbol: 'EVMOS', decimals: 18 },
     infoURL: 'https://evmos.org',
@@ -6578,6 +6638,19 @@ const chainArray = [
     shortName: 'GENEC',
     chainId: 9100,
     networkId: 9100
+  },
+  {
+    name: 'Rinia Testnet',
+    chain: 'FIRE',
+    icon: 'rinia',
+    rpc: [ 'https://rinia.rpc1.thefirechain.com' ],
+    faucets: [ 'https://faucet.thefirechain.com' ],
+    nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
+    infoURL: 'https://thefirechain.com',
+    shortName: 'tfire',
+    chainId: 9170,
+    networkId: 9170,
+    explorers: []
   },
   {
     name: 'Rangers Protocol Testnet Robin',
@@ -6949,7 +7022,7 @@ const chainArray = [
     name: 'Shyft Testnet',
     chain: 'SHYFTT',
     icon: 'shyft',
-    rpc: [ 'https://rpc.testnet.shyft.network/' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Shyft Test Token', symbol: 'SHYFTT', decimals: 18 },
     infoURL: 'https://shyft.network',
@@ -7258,6 +7331,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'MAP Mainnet',
+    chain: 'MAP',
+    icon: 'map',
+    rpc: [ 'https://rpc.maplabs.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'MAP', symbol: 'MAP', decimals: 18 },
+    infoURL: 'https://maplabs.io',
+    shortName: 'map',
+    chainId: 22776,
+    networkId: 22776,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'mapscan',
+        url: 'https://mapscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Opside Testnet',
     chain: 'Opside',
     rpc: [ 'https://testrpc.opside.network' ],
@@ -7279,7 +7372,7 @@ const chainArray = [
   {
     name: 'Webchain',
     chain: 'WEB',
-    rpc: [ 'https://node1.webchain.network' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Webchain Ether', symbol: 'WEB', decimals: 18 },
     infoURL: 'https://webchain.network',
@@ -9485,12 +9578,10 @@ const chainArray = [
     shortName: 'psc-s0',
     chainId: 900000,
     networkId: 900000,
-    icon: 'posichain',
     explorers: [
       {
         name: 'Posichain Explorer',
         url: 'https://explorer.posichain.org',
-        icon: 'posichain',
         standard: 'EIP3091'
       }
     ]
@@ -9505,12 +9596,10 @@ const chainArray = [
     shortName: 'psc-t-s0',
     chainId: 910000,
     networkId: 910000,
-    icon: 'posichain',
     explorers: [
       {
         name: 'Posichain Explorer Testnet',
         url: 'https://explorer-testnet.posichain.org',
-        icon: 'posichain',
         standard: 'EIP3091'
       }
     ]
@@ -9525,12 +9614,10 @@ const chainArray = [
     shortName: 'psc-d-s0',
     chainId: 920000,
     networkId: 920000,
-    icon: 'posichain',
     explorers: [
       {
         name: 'Posichain Explorer Devnet',
         url: 'https://explorer-devnet.posichain.org',
-        icon: 'posichain',
         standard: 'EIP3091'
       }
     ]
@@ -9545,12 +9632,10 @@ const chainArray = [
     shortName: 'psc-d-s1',
     chainId: 920001,
     networkId: 920001,
-    icon: 'posichain',
     explorers: [
       {
         name: 'Posichain Explorer Devnet',
         url: 'https://explorer-devnet.posichain.org',
-        icon: 'posichain',
         standard: 'EIP3091'
       }
     ]
@@ -9700,7 +9785,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'PlatON Dev Testnet',
+    name: 'PlatON Dev Testnet Deprecated',
     chain: 'PlatON',
     rpc: [
       'https://devnetopenapi2.platon.network/rpc',
@@ -9715,6 +9800,7 @@ const chainArray = [
     chainId: 2203181,
     networkId: 1,
     icon: 'platon',
+    status: 'deprecated',
     explorers: [
       {
         name: 'PlatON explorer',
@@ -10172,6 +10258,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Calypso NFT Hub | SKALE Testnet',
+    title: 'Calypso NFT Hub Testnet',
+    chain: 'staging-utter-unripe-menkar',
+    rpc: [
+      'https://staging-v3.skalenodes.com/v1/staging-utter-unripe-menkar'
+    ],
+    faucets: [ 'https://sfuel.dirtroad.dev/staging' ],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: 'https://calypsohub.network/',
+    shortName: 'calypso-testnet',
+    chainId: 344106930,
+    networkId: 344106930,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://staging-utter-unripe-menkar.explorer.staging-v3.skalenodes.com',
+        icon: 'calypso',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Gather Testnet Network',
     chain: 'GTH',
     rpc: [ 'https://testnet.gather.network' ],
@@ -10279,7 +10387,7 @@ const chainArray = [
   {
     name: 'Aurora Betanet',
     chain: 'NEAR',
-    rpc: [ 'https://betanet.aurora.dev/' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://aurora.dev',
@@ -10305,6 +10413,26 @@ const chainArray = [
         name: 'nebula',
         url: 'https://green-giddy-denebola.explorer.mainnet.skalenodes.com',
         icon: 'nebula',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Calypso NFT Hub | SKALE',
+    title: 'Calypso NFT Hub Mainnet',
+    chain: 'honorable-steel-rasalhague',
+    rpc: [ 'https://mainnet.skalenodes.com/v1/honorable-steel-rasalhague' ],
+    faucets: [ 'https://sfuel.dirtroad.dev' ],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: 'https://calypsohub.network/',
+    shortName: 'calypso-mainnet',
+    chainId: 1564830818,
+    networkId: 1564830818,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com',
+        icon: 'calypso',
         standard: 'EIP3091'
       }
     ]
@@ -10474,7 +10602,6 @@ const chainArray = [
   {
     name: 'Palm Testnet',
     chain: 'Palm',
-    icon: 'palm',
     rpc: [ 'https://palm-testnet.infura.io/v3/${INFURA_API_KEY}' ],
     faucets: [],
     nativeCurrency: { name: 'PALM', symbol: 'PALM', decimals: 18 },
@@ -10486,15 +10613,13 @@ const chainArray = [
       {
         name: 'Palm Testnet Explorer',
         url: 'https://explorer.palm-uat.xyz',
-        standard: 'EIP3091',
-        icon: 'palm'
+        standard: 'EIP3091'
       }
     ]
   },
   {
     name: 'Palm',
     chain: 'Palm',
-    icon: 'palm',
     rpc: [ 'https://palm-mainnet.infura.io/v3/${INFURA_API_KEY}' ],
     faucets: [],
     nativeCurrency: { name: 'PALM', symbol: 'PALM', decimals: 18 },
@@ -10506,8 +10631,7 @@ const chainArray = [
       {
         name: 'Palm Explorer',
         url: 'https://explorer.palm.io',
-        standard: 'EIP3091',
-        icon: 'palm'
+        standard: 'EIP3091'
       }
     ]
   },
