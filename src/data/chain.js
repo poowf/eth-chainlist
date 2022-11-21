@@ -1919,6 +1919,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'DeBank Testnet',
+    chain: 'DeBank',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'debank-testnet',
+    chainId: 115,
+    networkId: 115,
+    explorers: []
+  },
+  {
+    name: 'DeBank Mainnet',
+    chain: 'DeBank',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'debank-mainnet',
+    chainId: 116,
+    networkId: 116,
+    explorers: []
+  },
+  {
     name: 'Fuse Mainnet',
     chain: 'FUSE',
     rpc: [ 'https://rpc.fuse.io' ],
@@ -7222,7 +7246,12 @@ const chainArray = [
     title: 'Proof Of Memes Mainnet',
     chain: 'POM',
     icon: 'pom',
-    rpc: [ 'https://mainnet-rpc.memescan.io' ],
+    rpc: [
+      'https://mainnet-rpc.memescan.io',
+      'https://mainnet-rpc2.memescan.io',
+      'https://mainnet-rpc3.memescan.io',
+      'https://mainnet-rpc4.memescan.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Proof Of Memes', symbol: 'POM', decimals: 18 },
     infoURL: 'https://proofofmemes.org',
