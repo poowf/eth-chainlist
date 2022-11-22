@@ -5600,6 +5600,42 @@ const chainArray = [
     ]
   },
   {
+    name: 'Pandonet',
+    chain: 'Pando',
+    rpc: [ 'https://eth-rpc-api.pandoproject.org/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Pando token ', symbol: 'PTX', decimals: 18 },
+    infoURL: 'https://www.pandoproject.org/',
+    shortName: 'pando-mainnet',
+    chainId: 3601,
+    networkId: 3601,
+    explorers: [
+      {
+        name: 'Pando Mainnet Explorer',
+        url: 'https://explorer.pandoproject.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Pando Testnet',
+    chain: 'Pando',
+    rpc: [ 'https://testnet.ethrpc.pandoproject.org/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Pando token ', symbol: 'PTX', decimals: 18 },
+    infoURL: 'https://www.pandoproject.org/',
+    shortName: 'pando-testnet',
+    chainId: 3602,
+    networkId: 3602,
+    explorers: [
+      {
+        name: 'Pando Testnet Explorer',
+        url: 'https://testnet.explorer.pandoproject.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Metacodechain',
     chain: 'metacode',
     rpc: [ 'https://j.blockcoach.com:8503' ],
@@ -6175,6 +6211,21 @@ const chainArray = [
       chain: 'eip155-250',
       bridges: [ { url: 'https://beta-bridge.lif3.com/' } ]
     }
+  },
+  {
+    name: 'PolySmartChain',
+    chain: 'PSC',
+    rpc: [
+      'https://seed0.polysmartchain.com/',
+      'https://seed1.polysmartchain.com/',
+      'https://seed2.polysmartchain.com/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'PSC', symbol: 'PSC', decimals: 18 },
+    infoURL: 'https://www.polysmartchain.com/',
+    shortName: 'psc',
+    chainId: 6999,
+    networkId: 6999
   },
   {
     name: 'Ella the heart',
