@@ -1923,8 +1923,9 @@ const chainArray = [
     chain: 'DeBank',
     rpc: [],
     faucets: [],
+    icon: 'debank',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: '',
+    infoURL: 'https://debank.com',
     shortName: 'debank-testnet',
     chainId: 115,
     networkId: 115,
@@ -1935,8 +1936,9 @@ const chainArray = [
     chain: 'DeBank',
     rpc: [],
     faucets: [],
+    icon: 'debank',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: '',
+    infoURL: 'https://debank.com',
     shortName: 'debank-mainnet',
     chainId: 116,
     networkId: 116,
@@ -2048,6 +2050,24 @@ const chainArray = [
       {
         name: 'hecoinfo',
         url: 'https://hecoinfo.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Alyx Chain Testnet',
+    chain: 'Alyx Chain Testnet',
+    rpc: [ 'https://testnet-rpc.alyxchain.com' ],
+    faucets: [ 'https://faucet.alyxchain.com' ],
+    nativeCurrency: { name: 'Alyx Testnet Native Token', symbol: 'ALYX', decimals: 18 },
+    infoURL: 'https://www.alyxchain.com',
+    shortName: 'AlyxTestnet',
+    chainId: 135,
+    networkId: 135,
+    explorers: [
+      {
+        name: 'alyx testnet scan',
+        url: 'https://testnet.alyxscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -3354,6 +3374,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'QL1',
+    chain: 'QOM',
+    status: 'incubating',
+    rpc: [ 'https://mainnet.qom.one:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'Shiba Predator', symbol: 'QOM', decimals: 18 },
+    infoURL: 'https://qom.one',
+    shortName: 'qom',
+    chainId: 766,
+    networkId: 766,
+    icon: 'qom',
+    explorers: [
+      {
+        name: 'QL1 Mainnet Explorer',
+        url: 'https://mainnet.qom.one',
+        icon: 'qom',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'OpenChain Testnet',
     chain: 'OpenChain Testnet',
     rpc: [
@@ -4074,6 +4115,35 @@ const chainArray = [
     ]
   },
   {
+    name: 'DeFiChain EVM Network Mainnet',
+    chain: 'defichain-evm',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'DeFiChain', symbol: 'DFI', decimals: 18 },
+    infoURL: 'https://meta.defichain.com/',
+    shortName: 'DFI',
+    chainId: 1130,
+    networkId: 1130,
+    slip44: 1130,
+    icon: 'defichain-network',
+    explorers: []
+  },
+  {
+    name: 'DeFiChain EVM Network Testnet',
+    chain: 'defichain-evm-testnet',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'DeFiChain', symbol: 'DFI', decimals: 18 },
+    infoURL: 'https://meta.defichain.com/',
+    shortName: 'DFI-T',
+    chainId: 1131,
+    networkId: 1131,
+    icon: 'defichain-network',
+    explorers: []
+  },
+  {
     name: 'MathChain',
     chain: 'MATH',
     rpc: [
@@ -4435,6 +4505,24 @@ const chainArray = [
       {
         name: 'dos-testnet',
         url: 'https://test.doscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Alyx Mainnet',
+    chain: 'ALYX',
+    rpc: [ 'https://rpc.alyxchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Alyx Chain Native Token', symbol: 'ALYX', decimals: 18 },
+    infoURL: 'https://www.alyxchain.com',
+    shortName: 'alyx',
+    chainId: 1314,
+    networkId: 1314,
+    explorers: [
+      {
+        name: 'alyxscan',
+        url: 'https://www.alyxscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -5602,6 +5690,7 @@ const chainArray = [
   {
     name: 'Pandonet',
     chain: 'Pando',
+    icon: 'pando',
     rpc: [ 'https://eth-rpc-api.pandoproject.org/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'Pando token ', symbol: 'PTX', decimals: 18 },
@@ -5620,6 +5709,7 @@ const chainArray = [
   {
     name: 'Pando Testnet',
     chain: 'Pando',
+    icon: 'pando',
     rpc: [ 'https://testnet.ethrpc.pandoproject.org/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'Pando token ', symbol: 'PTX', decimals: 18 },
@@ -9969,6 +10059,27 @@ const chainArray = [
         url: 'https://tex-t.imversed.com',
         icon: 'imversed',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'QL1 Testnet',
+    chain: 'QOM',
+    status: 'incubating',
+    rpc: [ 'https://testnet.qom.one:8545' ],
+    faucets: [ 'https://faucet.qom.one' ],
+    nativeCurrency: { name: 'Shiba Predator', symbol: 'QOM', decimals: 18 },
+    infoURL: 'https://qom.one',
+    shortName: 'tqom',
+    chainId: 7668378,
+    networkId: 7668378,
+    icon: 'qom',
+    explorers: [
+      {
+        name: 'QL1 Testnet Explorer',
+        url: 'https://testnet.qom.one',
+        icon: 'qom',
+        standard: 'EIP3091'
       }
     ]
   },
