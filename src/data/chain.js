@@ -9,6 +9,7 @@ const chainArray = [
       'https://api.mycryptoapi.com/eth',
       'https://cloudflare-eth.com'
     ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://ethereum.org',
@@ -90,8 +91,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Görli',
-    title: 'Ethereum Testnet Görli',
+    name: 'Goerli',
+    title: 'Ethereum Testnet Goerli',
     chain: 'ETH',
     rpc: [
       'https://goerli.infura.io/v3/${INFURA_API_KEY}',
@@ -103,7 +104,7 @@ const chainArray = [
       'https://goerli-faucet.slock.it?address=${ADDRESS}',
       'https://faucet.goerli.mudit.blog'
     ],
-    nativeCurrency: { name: 'Görli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://goerli.net/#about',
     shortName: 'gor',
     chainId: 5,
@@ -688,7 +689,7 @@ const chainArray = [
       'https://docs.crab.network/dvm/wallets/dvm-metamask#apply-for-the-test-token'
     ],
     nativeCurrency: {
-      name: 'Pangolin Network Native Token”',
+      name: 'Pangolin Network Native Token',
       symbol: 'PRING',
       decimals: 18
     },
@@ -728,7 +729,7 @@ const chainArray = [
     rpc: [ 'https://pangoro-rpc.darwinia.network' ],
     faucets: [],
     nativeCurrency: {
-      name: 'Pangoro Network Native Token”',
+      name: 'Pangoro Network Native Token',
       symbol: 'ORING',
       decimals: 18
     },
@@ -2661,7 +2662,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Filecoin — Mainnet',
+    name: 'Filecoin - Mainnet',
     chain: 'FIL',
     status: 'incubating',
     rpc: [ 'https://api.node.glif.io/rpc/v0' ],
@@ -2957,7 +2958,7 @@ const chainArray = [
     chain: 'ETH',
     rpc: [ 'https://goerli.optimism.io/' ],
     faucets: [],
-    nativeCurrency: { name: 'Görli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://optimism.io',
     shortName: 'ogor',
     chainId: 420,
@@ -5497,6 +5498,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'BitYuan Mainnet',
+    chain: 'BTY',
+    rpc: [ 'https://mainnet.bityuan.com/eth' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTY', symbol: 'BTY', decimals: 18 },
+    infoURL: 'https://www.bityuan.com',
+    shortName: 'bty',
+    chainId: 2999,
+    networkId: 2999,
+    icon: 'bty',
+    explorers: [
+      {
+        name: 'BitYuan Block Chain Explorer',
+        url: 'https://mainnet.bityuan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'CENNZnet Rata',
     chain: 'CENNZnet',
     rpc: [ 'https://rata.centrality.me/public' ],
@@ -5548,7 +5568,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Filecoin — Buildernet',
+    name: 'Filecoin - Buildernet',
     chain: 'FIL',
     status: 'incubating',
     rpc: [],
@@ -7585,7 +7605,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Optimism Bedrock: Goerli Alpha Testnet',
+    name: 'Optimism Bedrock (Goerli Alpha Testnet)',
     chain: 'ETH',
     rpc: [
       'https://alpha-1-replica-0.bedrock-goerli.optimism.io',
@@ -7594,7 +7614,7 @@ const chainArray = [
       'https://alpha-1-replica-2.bedrock-goerli.optimism.io'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Görli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://community.optimism.io/docs/developers/bedrock',
     shortName: 'obgor',
     chainId: 28528,
@@ -7658,7 +7678,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Filecoin — Wallaby testnet',
+    name: 'Filecoin - Wallaby testnet',
     chain: 'FIL',
     status: 'incubating',
     rpc: [ 'https://wallaby.node.glif.io/rpc/v0' ],
@@ -9363,7 +9383,7 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Filecoin — Calibration testnet',
+    name: 'Filecoin - Calibration testnet',
     chain: 'FIL',
     status: 'incubating',
     rpc: [ 'https://api.calibration.node.glif.io/rpc/v0' ],
@@ -9520,19 +9540,19 @@ const chainArray = [
     }
   },
   {
-    name: 'Arbitrum Görli',
-    title: 'Arbitrum Görli Rollup Testnet',
+    name: 'Arbitrum Goerli',
+    title: 'Arbitrum Goerli Rollup Testnet',
     chainId: 421613,
     shortName: 'arb-goerli',
     chain: 'ETH',
     networkId: 421613,
-    nativeCurrency: { name: 'Arbitrum Görli Ether', symbol: 'AGOR', decimals: 18 },
+    nativeCurrency: { name: 'Arbitrum Goerli Ether', symbol: 'AGOR', decimals: 18 },
     rpc: [ 'https://goerli-rollup.arbitrum.io/rpc/' ],
     faucets: [],
     infoURL: 'https://arbitrum.io/',
     explorers: [
       {
-        name: 'Arbitrum Görli Rollup Explorer',
+        name: 'Arbitrum Goerli Rollup Explorer',
         url: 'https://goerli-rollup-explorer.arbitrum.io',
         standard: 'EIP3091'
       }
@@ -9666,7 +9686,7 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
   },
   {
-    name: 'Scroll Görli Testnet',
+    name: 'Scroll Goerli Testnet',
     chain: 'ETH',
     rpc: [],
     faucets: [],
@@ -9707,6 +9727,26 @@ const chainArray = [
     chainId: 666666,
     networkId: 666666,
     slip44: 60
+  },
+  {
+    name: 'OctaSpace',
+    chain: 'OCTA',
+    rpc: [ 'https://rpc.octa.space', 'wss://rpc.octa.space' ],
+    faucets: [],
+    nativeCurrency: { name: 'OctaSpace', symbol: 'OCTA', decimals: 18 },
+    infoURL: 'https://octa.space',
+    shortName: 'octa',
+    chainId: 800001,
+    networkId: 800001,
+    icon: 'octaspace',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.octa.space',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: '4GoodNetwork',
@@ -10002,7 +10042,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Filecoin — Butterfly testnet',
+    name: 'Filecoin - Butterfly testnet',
     chain: 'FIL',
     status: 'incubating',
     rpc: [],
@@ -10291,7 +10331,7 @@ const chainArray = [
     slip44: 344
   },
   {
-    name: 'Filecoin — Local testnet',
+    name: 'Filecoin - Local testnet',
     chain: 'FIL',
     status: 'incubating',
     rpc: [],
@@ -10449,7 +10489,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Calypso NFT Hub | SKALE Testnet',
+    name: 'Calypso NFT Hub (SKALE Testnet)',
     title: 'Calypso NFT Hub Testnet',
     chain: 'staging-utter-unripe-menkar',
     rpc: [
@@ -10609,7 +10649,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Calypso NFT Hub | SKALE',
+    name: 'Calypso NFT Hub (SKALE)',
     title: 'Calypso NFT Hub Mainnet',
     chain: 'honorable-steel-rasalhague',
     rpc: [ 'https://mainnet.skalenodes.com/v1/honorable-steel-rasalhague' ],
