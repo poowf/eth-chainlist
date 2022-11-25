@@ -1682,12 +1682,7 @@ const chainArray = [
   {
     name: 'POA Network Core',
     chain: 'POA',
-    rpc: [
-      'https://core.poanetwork.dev',
-      'http://core.poanetwork.dev:8545',
-      'https://core.poa.network',
-      'ws://core.poanetwork.dev:8546'
-    ],
+    rpc: [ 'https://core.poa.network' ],
     faucets: [],
     nativeCurrency: { name: 'POA Network Core Ether', symbol: 'POA', decimals: 18 },
     infoURL: 'https://poa.network',
@@ -7973,6 +7968,7 @@ const chainArray = [
     name: 'Avalanche C-Chain',
     chain: 'AVAX',
     rpc: [ 'https://api.avax.network/ext/bc/C/rpc' ],
+    features: [ { name: 'EIP1559' } ],
     faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/' ],
     nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
     infoURL: 'https://www.avax.network/',
@@ -8878,7 +8874,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Chiado 1 Testnet',
+    name: 'Deprecated Chiado Testnet',
     chain: 'CHI1',
     icon: 'gnosis',
     rpc: [ 'https://rpc-chiado.gnosistestnet.com' ],
@@ -10277,6 +10273,25 @@ const chainArray = [
     shortName: 'qki',
     chainId: 20181205,
     networkId: 20181205
+  },
+  {
+    name: 'Excelon Mainnet',
+    chain: 'XLON',
+    icon: 'xlon',
+    rpc: [ 'http://wallet2.xlon.org:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'Excelon', symbol: 'xlon', decimals: 18 },
+    infoURL: 'https://xlon.org',
+    shortName: 'xlon',
+    chainId: 22052002,
+    networkId: 22052002,
+    explorers: [
+      {
+        name: 'Excelon explorer',
+        url: 'https://explorer.excelon.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Excoincial Chain Volta-Testnet',
