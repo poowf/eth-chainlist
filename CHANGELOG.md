@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.18 (2022-11-25)
+
+
+### Maintenance
+
+* **release:** 0.0.17 ([1a86e1a](https://github.com/poowf/eth-chainlist/commit/1a86e1a5d0b57afc47721a84ca551c6aadfcaaac))
+* update chain data ([8195a04](https://github.com/poowf/eth-chainlist/commit/8195a04279971ce286e52b44802e1137c962926c))
+
 ### 0.0.17 (2022-11-24)
 
 
