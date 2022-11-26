@@ -6314,7 +6314,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-250',
-      bridges: [ { url: 'https://beta-bridge.lif3.com/' } ]
+      bridges: [ { url: 'https://lif3.com/bridge' } ]
     }
   },
   {
