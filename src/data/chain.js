@@ -2071,6 +2071,7 @@ const chainArray = [
   {
     name: 'Polygon Mainnet',
     chain: 'Polygon',
+    icon: 'polygon',
     rpc: [
       'https://polygon-rpc.com/',
       'https://rpc-mainnet.matic.network',
@@ -2128,7 +2129,7 @@ const chainArray = [
   {
     name: 'PHI Network v2',
     chain: 'PHI',
-    rpc: [ 'https://connect.phi.network', '' ],
+    rpc: [ 'https://connect.phi.network' ],
     faucets: [],
     nativeCurrency: { name: 'PHI', symbol: 'Φ', decimals: 18 },
     infoURL: 'https://phi.network',
@@ -3009,6 +3010,23 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Gear Zero Network Mainnet',
+    chain: 'GearZero',
+    rpc: [ 'https://gzn.linksme.info' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Gear Zero Network Native Token',
+      symbol: 'GZN',
+      decimals: 18
+    },
+    infoURL: 'https://token.gearzero.ca/mainnet',
+    shortName: 'gz-mainnet',
+    chainId: 516,
+    networkId: 516,
+    slip44: 516,
+    explorers: []
   },
   {
     name: 'XT Smart Chain Mainnet',
@@ -5306,7 +5324,7 @@ const chainArray = [
   {
     name: 'Bitcoin EVM',
     chain: 'Bitcoin EVM',
-    rpc: [ 'https://connect.bitcoinevm.com', '' ],
+    rpc: [ 'https://connect.bitcoinevm.com' ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'eBTC', decimals: 18 },
     infoURL: 'https://bitcoinevm.com',
@@ -7949,6 +7967,7 @@ const chainArray = [
   {
     name: 'Avalanche Fuji Testnet',
     chain: 'AVAX',
+    icon: 'avax',
     rpc: [ 'https://api.avax-test.network/ext/bc/C/rpc' ],
     faucets: [ 'https://faucet.avax-test.network/' ],
     nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
@@ -7967,6 +7986,7 @@ const chainArray = [
   {
     name: 'Avalanche C-Chain',
     chain: 'AVAX',
+    icon: 'avax',
     rpc: [ 'https://api.avax.network/ext/bc/C/rpc' ],
     features: [ { name: 'EIP1559' } ],
     faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/' ],
@@ -8582,6 +8602,7 @@ const chainArray = [
     name: 'Mumbai',
     title: 'Polygon Testnet Mumbai',
     chain: 'Polygon',
+    icon: 'polygon',
     rpc: [
       'https://matic-mumbai.chainstacklabs.com',
       'https://rpc-mumbai.maticvigil.com',
@@ -9365,6 +9386,23 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Gear Zero Network Testnet',
+    chain: 'GearZero',
+    rpc: [ 'https://gzn-test.linksme.info' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Gear Zero Network Native Token',
+      symbol: 'GZN',
+      decimals: 18
+    },
+    infoURL: 'https://token.gearzero.ca/testnet',
+    shortName: 'gz-testnet',
+    chainId: 266256,
+    networkId: 266256,
+    slip44: 266256,
+    explorers: []
   },
   {
     name: 'Social Smart Chain Mainnet',
