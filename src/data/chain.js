@@ -3411,10 +3411,7 @@ const chainArray = [
   {
     name: 'OpenChain Testnet',
     chain: 'OpenChain Testnet',
-    rpc: [
-      'http://mainnet.openchain.info:8545',
-      'https://mainnet1.openchain.info'
-    ],
+    rpc: [],
     faucets: [ 'https://faucet.openchain.info/' ],
     nativeCurrency: { name: 'Openchain Testnet', symbol: 'TOPC', decimals: 18 },
     infoURL: 'https://testnet.openchain.info/',
@@ -3760,7 +3757,7 @@ const chainArray = [
     name: 'TOP Mainnet EVM',
     chain: 'TOP',
     icon: 'top',
-    rpc: [ 'ethapi.topnetwork.org' ],
+    rpc: [ 'https://ethapi.topnetwork.org' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.topnetwork.org/',
@@ -3802,7 +3799,7 @@ const chainArray = [
     name: 'TOP Mainnet',
     chain: 'TOP',
     icon: 'top',
-    rpc: [ 'topapi.topnetwork.org' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'TOP', symbol: 'TOP', decimals: 6 },
     infoURL: 'https://www.topnetwork.org/',
@@ -6542,7 +6539,7 @@ const chainArray = [
   {
     name: 'Shardeum Liberty 2.0',
     chain: 'Shardeum',
-    rpc: [ 'https://liberty20.shardeum.org/' ],
+    rpc: [],
     faucets: [ 'https://faucet.liberty20.shardeum.org' ],
     nativeCurrency: { name: 'Shardeum SHM', symbol: 'SHM', decimals: 18 },
     infoURL: 'https://docs.shardeum.org/',
