@@ -10088,9 +10088,12 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Imversed Canary',
+    name: 'Imversed Mainnet',
     chain: 'Imversed',
-    rpc: [ 'https://jsonrpc-endpoint-canary.imversed.com' ],
+    rpc: [
+      'https://jsonrpc.imversed.network',
+      'https://ws-jsonrpc.imversed.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Imversed Token', symbol: 'IMV', decimals: 18 },
     infoURL: 'https://imversed.com',
@@ -10099,6 +10102,12 @@ const chainArray = [
     networkId: 5555555,
     icon: 'imversed',
     explorers: [
+      {
+        name: 'Imversed EVM explorer (Blockscout)',
+        url: 'https://txe.imversed.network',
+        icon: 'imversed',
+        standard: 'EIP3091'
+      },
       {
         name: 'Imversed Cosmos Explorer (Big Dipper)',
         url: 'https://tex-c.imversed.com',
@@ -10110,7 +10119,10 @@ const chainArray = [
   {
     name: 'Imversed Testnet',
     chain: 'Imversed',
-    rpc: [ 'https://jsonrpc-endpoint-test.imversed.com' ],
+    rpc: [
+      'https://jsonrpc-test.imversed.network',
+      'https://ws-jsonrpc-test.imversed.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Imversed Token', symbol: 'IMV', decimals: 18 },
     infoURL: 'https://imversed.com',
@@ -10121,9 +10133,9 @@ const chainArray = [
     explorers: [
       {
         name: 'Imversed EVM Explorer (Blockscout)',
-        url: 'https://txe-test.imversed.com',
+        url: 'https://txe-test.imversed.network',
         icon: 'imversed',
-        standard: 'none'
+        standard: 'EIP3091'
       },
       {
         name: 'Imversed Cosmos Explorer (Big Dipper)',
