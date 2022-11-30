@@ -3497,8 +3497,10 @@ const chainArray = [
     rpc: [
       'https://evm-dataseed1.meerscan.io',
       'https://evm-dataseed2.meerscan.io',
+      'https://evm-dataseed3.meerscan.io',
       'https://evm-dataseed.meerscan.com',
-      'https://evm-dataseed1.meerscan.com'
+      'https://evm-dataseed1.meerscan.com',
+      'https://evm-dataseed2.meerscan.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Qitmeer', symbol: 'MEER', decimals: 18 },
@@ -5267,7 +5269,7 @@ const chainArray = [
   {
     name: 'Findora Mainnet',
     chain: 'Findora',
-    rpc: [ 'https://prod-mainnet.prod.findora.org:8545' ],
+    rpc: [ 'https://rpc-mainnet.findora.org' ],
     faucets: [],
     nativeCurrency: { name: 'FRA', symbol: 'FRA', decimals: 18 },
     infoURL: 'https://findora.org/',
@@ -6367,6 +6369,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Planq Mainnet',
+    chain: 'Planq',
+    icon: 'planq',
+    rpc: [ 'https://evm-rpc.planq.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Planq', symbol: 'PLQ', decimals: 18 },
+    infoURL: 'https://planq.network',
+    shortName: 'planq',
+    chainId: 7070,
+    networkId: 7070,
+    explorers: [
+      {
+        name: 'Planq EVM Explorer (Blockscout)',
+        url: 'https://evm.planq.network',
+        standard: 'none'
+      },
+      {
+        name: 'Planq Cosmos Explorer (BigDipper)',
+        url: 'https://explorer.planq.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Shyft Mainnet',
     chain: 'SHYFT',
     icon: 'shyft',
@@ -7316,6 +7342,25 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-43113' }
   },
   {
+    name: 'SPS',
+    chain: 'SPS',
+    rpc: [ 'https://marketplace.ssquad.games' ],
+    faucets: [],
+    nativeCurrency: { name: 'ECG', symbol: 'ECG', decimals: 18 },
+    infoURL: 'https://ssquad.games/',
+    shortName: 'SPS',
+    chainId: 13000,
+    networkId: 13000,
+    explorers: [
+      {
+        name: 'SPS Explorer',
+        url: 'http://spsscan.ssquad.games',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'incubating'
+  },
+  {
     name: 'Phoenix Mainnet',
     chain: 'Phoenix',
     rpc: [ 'https://rpc.phoenixplorer.com/' ],
@@ -7331,6 +7376,24 @@ const chainArray = [
         name: 'phoenixplorer',
         url: 'https://phoenixplorer.com',
         icon: 'phoenixplorer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SPS Testnet',
+    chain: 'SPS-Testnet',
+    rpc: [ 'https://www.3sps.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'ECG', symbol: 'ECG', decimals: 18 },
+    infoURL: 'https://ssquad.games/',
+    shortName: 'SPS-Test',
+    chainId: 14000,
+    networkId: 14000,
+    explorers: [
+      {
+        name: 'SPS Test Explorer',
+        url: 'https://explorer.3sps.net',
         standard: 'EIP3091'
       }
     ]
@@ -10325,7 +10388,7 @@ const chainArray = [
     name: 'Excelon Mainnet',
     chain: 'XLON',
     icon: 'xlon',
-    rpc: [ 'http://wallet2.xlon.org:8545' ],
+    rpc: [ 'https://edgewallet1.xlon.org/' ],
     faucets: [],
     nativeCurrency: { name: 'Excelon', symbol: 'xlon', decimals: 18 },
     infoURL: 'https://xlon.org',
