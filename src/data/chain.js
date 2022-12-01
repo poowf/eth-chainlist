@@ -6350,6 +6350,46 @@ const chainArray = [
     networkId: 6999
   },
   {
+    name: 'ZetaChain Mainnet',
+    chain: 'ZetaChain',
+    icon: 'zetachain',
+    rpc: [ 'https://api.mainnet.zetachain.com/evm' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zeta', symbol: 'ZETA', decimals: 18 },
+    infoURL: 'https://docs.zetachain.com/',
+    shortName: 'zetachain-mainnet',
+    chainId: 7000,
+    networkId: 7000,
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'ZetaChain Mainnet Explorer',
+        url: 'https://explorer.mainnet.zetachain.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ZetaChain Athens Testnet',
+    chain: 'ZetaChain',
+    icon: 'zetachain',
+    rpc: [ 'https://api.athens2.zetachain.com/evm' ],
+    faucets: [ 'https://labs.zetachain.com/get-zeta' ],
+    nativeCurrency: { name: 'Zeta', symbol: 'aZETA', decimals: 18 },
+    infoURL: 'https://docs.zetachain.com/',
+    shortName: 'zetachain-athens',
+    chainId: 7001,
+    networkId: 7001,
+    status: 'active',
+    explorers: [
+      {
+        name: 'ZetaChain Athens Testnet Explorer',
+        url: 'https://explorer.athens.zetachain.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Ella the heart',
     chain: 'ella',
     icon: 'ella',
@@ -6979,7 +7019,10 @@ const chainArray = [
     name: 'Gon Chain',
     chain: 'GonChain',
     icon: 'gonchain',
-    rpc: [ 'https://node1.testnet.gaiaopen.network' ],
+    rpc: [
+      'https://node1.testnet.gaiaopen.network',
+      'http://database1.gaiaopen.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Gon Token', symbol: 'GT', decimals: 18 },
     infoURL: '',
@@ -8101,7 +8144,14 @@ const chainArray = [
       'https://celo.org/developers/faucet',
       'https://cauldron.pretoriaresearchlab.io/alfajores-faucet'
     ],
-    infoURL: 'https://docs.celo.org/'
+    infoURL: 'https://docs.celo.org/',
+    explorers: [
+      {
+        name: 'Celoscan',
+        url: 'https://celoscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Autobahn Network',
@@ -10283,13 +10333,7 @@ const chainArray = [
     name: 'Sepolia',
     title: 'Ethereum Testnet Sepolia',
     chain: 'ETH',
-    rpc: [
-      'https://rpc.sepolia.dev',
-      'https://rpc.sepolia.online',
-      'https://www.sepoliarpc.space',
-      'https://rpc.sepolia.org',
-      'https://rpc-sepolia.rockx.com'
-    ],
+    rpc: [ 'https://rpc.sepolia.org', 'https://rpc-sepolia.rockx.com' ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
     ],
