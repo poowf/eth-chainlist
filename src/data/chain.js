@@ -5423,6 +5423,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Altcoinchain',
+    chain: 'mainnet',
+    rpc: [ 'http://161.35.101.221:8545', 'https://rpc0.altcoinchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Altcoin', symbol: 'ALT', decimals: 18 },
+    infoURL: 'https://altcoinchain.org',
+    shortName: 'alt',
+    chainId: 2330,
+    networkId: 12345,
+    icon: 'altcoinchain',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'expedition',
+        url: 'https://expedition.altcoinchain.org',
+        icon: 'altcoinchain',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Kortho Mainnet',
     chain: 'Kortho Chain',
     rpc: [ 'https://www.kortho-chain.com' ],
@@ -7854,6 +7875,27 @@ const chainArray = [
     shortName: 'fsn',
     chainId: 32659,
     networkId: 32659
+  },
+  {
+    name: 'Aves Mainnet',
+    chain: 'AVS',
+    rpc: [ 'https://rpc.avescoin.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Aves', symbol: 'AVS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://avescoin.io',
+    shortName: 'avs',
+    chainId: 33333,
+    networkId: 33333,
+    icon: 'aves',
+    explorers: [
+      {
+        name: 'avescan',
+        url: 'https://avescan.io',
+        icon: 'avescan',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Q Mainnet',
