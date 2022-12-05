@@ -2396,6 +2396,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'SiriusNet V2',
+    chain: 'SIN2',
+    faucets: [],
+    rpc: [
+      'https://u0zpw2zdzz:uf4y-ZGiQP_CJJgY6Vea2mSaeXOa1vFvfQ1PZhaDQ9M@u0iclv2dgh-u0jlczjhef-rpc.us0-aws.kaleido.io/'
+    ],
+    icon: 'siriusnet',
+    nativeCurrency: { name: 'MCD', symbol: 'MCD', decimals: 18 },
+    infoURL: 'https://siriusnet.io',
+    shortName: 'SIN2',
+    chainId: 217,
+    networkId: 217,
+    explorers: [
+      {
+        name: 'siriusnet explorer',
+        url: 'http://rpc.siriusnet.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'SoterOne Mainnet old',
     chain: 'SOTER',
     rpc: [ 'https://rpc.soter.one' ],
@@ -3712,6 +3733,17 @@ const chainArray = [
     nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 }
   },
   {
+    name: 'muNode Testnet',
+    chain: 'munode',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://munode.dev/',
+    shortName: 'munode',
+    chainId: 956,
+    networkId: 956
+  },
+  {
     name: 'CCN',
     title: 'ComputeCoin Main Network',
     chain: 'CCN',
@@ -4352,6 +4384,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'CIC Chain Testnet',
+    chain: 'CICT',
+    rpc: [ 'https://testapi.cicscan.com' ],
+    faucets: [ 'https://cicfaucet.com' ],
+    nativeCurrency: { name: 'Crazy Internet Coin', symbol: 'CICT', decimals: 18 },
+    infoURL: 'https://www.cicchain.net',
+    shortName: 'CICT',
+    chainId: 1252,
+    networkId: 1252,
+    explorers: [
+      {
+        name: 'CICscan',
+        url: 'https://testnet.cicscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'HALO Mainnet',
     chain: 'HALO',
     rpc: [ 'https://nodes.halo.land' ],
@@ -4589,6 +4639,24 @@ const chainArray = [
     shortName: 'geth',
     chainId: 1337,
     networkId: 1337
+  },
+  {
+    name: 'CIC Chain Mainnet',
+    chain: 'CIC',
+    rpc: [ 'https://xapi.cicscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Crazy Internet Coin', symbol: 'CIC', decimals: 18 },
+    infoURL: 'https://www.cicchain.net',
+    shortName: 'CIC',
+    chainId: 1353,
+    networkId: 1353,
+    explorers: [
+      {
+        name: 'CICscan',
+        url: 'https://cicscan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Polygon zkEVM Testnet',
@@ -7697,6 +7765,41 @@ const chainArray = [
     ]
   },
   {
+    name: 'Oasis Sapphire',
+    chain: 'Sapphire',
+    icon: 'oasis',
+    rpc: [ 'https://sapphire.oasis.dev', 'wss://sapphire.oasis.dev/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sapphire Rose', symbol: 'ROSE', decimals: 18 },
+    infoURL: 'https://docs.oasis.io/dapp/sapphire',
+    shortName: 'sapphire',
+    chainId: 23294,
+    networkId: 23294,
+    status: 'incubating'
+  },
+  {
+    name: 'Oasis Sapphire Testnet',
+    chain: 'Sapphire',
+    icon: 'oasis',
+    rpc: [
+      'https://testnet.sapphire.oasis.dev',
+      'wss://testnet.sapphire.oasis.dev/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Sapphire Test Rose', symbol: 'TEST', decimals: 18 },
+    infoURL: 'https://docs.oasis.io/dapp/sapphire',
+    shortName: 'sapphire-testnet',
+    chainId: 23295,
+    networkId: 23295,
+    explorers: [
+      {
+        name: 'Oasis Sapphire Testnet Explorer',
+        url: 'https://testnet.explorer.sapphire.oasis.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Webchain',
     chain: 'WEB',
     rpc: [],
@@ -7794,6 +7897,45 @@ const chainArray = [
     chainId: 31102,
     networkId: 1,
     slip44: 31102
+  },
+  {
+    name: 'CloudTx Mainnet',
+    chain: 'CLD',
+    icon: 'cloudtx',
+    rpc: [ 'https://mainnetrpc.num.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'CloudTx', symbol: 'CLD', decimals: 18 },
+    infoURL: 'https://cloudtx.finance',
+    shortName: 'CLDTX',
+    chainId: 31223,
+    networkId: 31223,
+    explorers: [
+      {
+        name: 'cloudtxscan',
+        url: 'https://scan.cloudtx.finance',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CloudTx Testnet',
+    chain: 'CloudTx',
+    rpc: [ 'https://testnet-rpc.cloudtx.finance' ],
+    faucets: [ 'https://faucet.cloudtx.finance' ],
+    nativeCurrency: { name: 'CloudTx', symbol: 'CLOUD', decimals: 18 },
+    infoURL: 'https://cloudtx.finance/',
+    shortName: 'CLD',
+    chainId: 31224,
+    networkId: 31224,
+    icon: 'cloudtx',
+    explorers: [
+      {
+        name: 'cloudtxexplorer',
+        url: 'https://explorer.cloudtx.finance      ',
+        icon: 'cloudtx',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'GoChain Testnet',
@@ -9855,7 +9997,13 @@ const chainArray = [
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     rpc: [ 'https://rpc.etherfair.org' ],
     faucets: [],
-    explorers: [],
+    explorers: [
+      {
+        name: 'etherfair',
+        url: 'https://explorer.etherfair.org',
+        standard: 'EIP3091'
+      }
+    ],
     infoURL: 'https://etherfair.org'
   },
   {
