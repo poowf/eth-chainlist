@@ -6276,23 +6276,18 @@ const chainArray = [
     ]
   },
   {
-    name: 'Digest Swarm Chain',
-    chain: 'DSC',
-    icon: 'swarmchain',
-    rpc: [ 'https://rpc.digestgroup.ltd' ],
+    name: 'Ganache',
+    title: 'Ganache GUI Ethereum Testnet',
+    chain: 'ETH',
+    icon: 'ganache',
+    rpc: [ 'https://127.0.0.1:7545' ],
     faucets: [],
-    nativeCurrency: { name: 'DigestCoin', symbol: 'DGCC', decimals: 18 },
-    infoURL: 'https://digestgroup.ltd',
-    shortName: 'dgcc',
+    nativeCurrency: { name: 'Ganache Test Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://trufflesuite.com/ganache/',
+    shortName: 'ggui',
     chainId: 5777,
     networkId: 5777,
-    explorers: [
-      {
-        name: 'swarmexplorer',
-        url: 'https://explorer.digestgroup.ltd',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Ontology Testnet',
@@ -7902,9 +7897,9 @@ const chainArray = [
     name: 'CloudTx Mainnet',
     chain: 'CLD',
     icon: 'cloudtx',
-    rpc: [ 'https://mainnetrpc.num.network' ],
+    rpc: [ 'https://mainnet-rpc.cloudtx.finance' ],
     faucets: [],
-    nativeCurrency: { name: 'CloudTx', symbol: 'CLD', decimals: 18 },
+    nativeCurrency: { name: 'CloudTx', symbol: 'CLD', decimals: 9 },
     infoURL: 'https://cloudtx.finance',
     shortName: 'CLDTX',
     chainId: 31223,
@@ -7922,7 +7917,7 @@ const chainArray = [
     chain: 'CloudTx',
     rpc: [ 'https://testnet-rpc.cloudtx.finance' ],
     faucets: [ 'https://faucet.cloudtx.finance' ],
-    nativeCurrency: { name: 'CloudTx', symbol: 'CLOUD', decimals: 18 },
+    nativeCurrency: { name: 'CloudTx', symbol: 'CLOUD', decimals: 9 },
     infoURL: 'https://cloudtx.finance/',
     shortName: 'CLD',
     chainId: 31224,
