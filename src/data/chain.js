@@ -2994,6 +2994,44 @@ const chainArray = [
     slip44: 499
   },
   {
+    name: 'Camino C-Chain',
+    chain: 'CAM',
+    rpc: [ 'https://mainnet.camino.foundation/ext/bc/C/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Camino', symbol: 'CAM', decimals: 18 },
+    infoURL: 'https://camino.foundation/',
+    shortName: 'Camino',
+    chainId: 500,
+    networkId: 1000,
+    icon: 'camino',
+    explorers: [
+      {
+        name: 'blockexplorer',
+        url: 'https://explorer.camino.foundation/mainnet',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Columbus Test Network',
+    chain: 'CAM',
+    rpc: [ 'https://columbus.camino.foundation/ext/bc/C/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Camino', symbol: 'CAM', decimals: 18 },
+    infoURL: 'https://camino.foundation/',
+    shortName: 'Columbus',
+    chainId: 501,
+    networkId: 1001,
+    icon: 'camino',
+    explorers: [
+      {
+        name: 'blockexplorer',
+        url: 'https://explorer.camino.foundation',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Double-A Chain Mainnet',
     chain: 'AAC',
     rpc: [ 'https://rpc.acuteangle.com' ],
@@ -3412,7 +3450,7 @@ const chainArray = [
     name: 'QL1',
     chain: 'QOM',
     status: 'incubating',
-    rpc: [ 'https://mainnet.qom.one:8545' ],
+    rpc: [ 'https://rpc.qom.one:8545' ],
     faucets: [],
     nativeCurrency: { name: 'Shiba Predator', symbol: 'QOM', decimals: 18 },
     infoURL: 'https://qom.one',
@@ -7899,7 +7937,7 @@ const chainArray = [
     icon: 'cloudtx',
     rpc: [ 'https://mainnet-rpc.cloudtx.finance' ],
     faucets: [],
-    nativeCurrency: { name: 'CloudTx', symbol: 'CLD', decimals: 9 },
+    nativeCurrency: { name: 'CloudTx', symbol: 'CLD', decimals: 18 },
     infoURL: 'https://cloudtx.finance',
     shortName: 'CLDTX',
     chainId: 31223,
@@ -7915,19 +7953,18 @@ const chainArray = [
   {
     name: 'CloudTx Testnet',
     chain: 'CloudTx',
+    icon: 'cloudtx',
     rpc: [ 'https://testnet-rpc.cloudtx.finance' ],
     faucets: [ 'https://faucet.cloudtx.finance' ],
-    nativeCurrency: { name: 'CloudTx', symbol: 'CLOUD', decimals: 9 },
+    nativeCurrency: { name: 'CloudTx', symbol: 'CLD', decimals: 18 },
     infoURL: 'https://cloudtx.finance/',
     shortName: 'CLD',
     chainId: 31224,
     networkId: 31224,
-    icon: 'cloudtx',
     explorers: [
       {
         name: 'cloudtxexplorer',
-        url: 'https://explorer.cloudtx.finance      ',
-        icon: 'cloudtx',
+        url: 'https://explorer.cloudtx.finance',
         standard: 'EIP3091'
       }
     ]
@@ -8085,6 +8122,26 @@ const chainArray = [
     chainId: 39797,
     networkId: 39797,
     slip44: 39797
+  },
+  {
+    name: 'OHO Mainnet',
+    chain: 'OHO',
+    rpc: [ 'https://mainnet.oho.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'OHO', symbol: 'OHO', decimals: 18 },
+    infoURL: 'https://oho.ai',
+    shortName: 'oho',
+    chainId: 39815,
+    networkId: 39815,
+    icon: 'oho',
+    explorers: [
+      {
+        name: 'ohoscan',
+        url: 'https://ohoscan.com',
+        icon: 'ohoscan',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Opulent-X BETA',
@@ -8778,9 +8835,12 @@ const chainArray = [
     networkId: 1
   },
   {
-    name: 'Godwoken Testnet (V1.1)',
+    name: 'Godwoken Testnet v1',
     chain: 'GWT',
-    rpc: [ 'https://godwoken-testnet-v1.ckbapp.dev' ],
+    rpc: [
+      'https://godwoken-testnet-v1.ckbapp.dev',
+      'https://v1.testnet.godwoken.io/rpc'
+    ],
     faucets: [ 'https://testnet.bridge.godwoken.io' ],
     nativeCurrency: { name: 'pCKB', symbol: 'pCKB', decimals: 18 },
     infoURL: 'https://www.nervos.org',
@@ -10447,7 +10507,7 @@ const chainArray = [
     name: 'QL1 Testnet',
     chain: 'QOM',
     status: 'incubating',
-    rpc: [ 'https://testnet.qom.one:8545' ],
+    rpc: [ 'https://rpct.qom.one:8545' ],
     faucets: [ 'https://faucet.qom.one' ],
     nativeCurrency: { name: 'Shiba Predator', symbol: 'QOM', decimals: 18 },
     infoURL: 'https://qom.one',
