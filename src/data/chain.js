@@ -5531,15 +5531,15 @@ const chainArray = [
   {
     name: 'Altcoinchain',
     chain: 'mainnet',
-    rpc: [ 'http://161.35.101.221:8545', 'https://rpc0.altcoinchain.org' ],
+    rpc: [ 'http://161.35.101.221:8547', 'https://rpc0.altcoinchain.org' ],
     faucets: [],
     nativeCurrency: { name: 'Altcoin', symbol: 'ALT', decimals: 18 },
     infoURL: 'https://altcoinchain.org',
     shortName: 'alt',
     chainId: 2330,
-    networkId: 12345,
+    networkId: 2330,
     icon: 'altcoinchain',
-    status: 'incubating',
+    status: 'active',
     explorers: [
       {
         name: 'expedition',
