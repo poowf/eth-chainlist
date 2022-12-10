@@ -7530,7 +7530,7 @@ const chainArray = [
   {
     name: 'SPS',
     chain: 'SPS',
-    rpc: [ 'https://marketplace.ssquad.games' ],
+    rpc: [ 'https://rpc.ssquad.games' ],
     faucets: [],
     nativeCurrency: { name: 'ECG', symbol: 'ECG', decimals: 18 },
     infoURL: 'https://ssquad.games/',
@@ -7543,8 +7543,7 @@ const chainArray = [
         url: 'http://spsscan.ssquad.games',
         standard: 'EIP3091'
       }
-    ],
-    status: 'incubating'
+    ]
   },
   {
     name: 'Phoenix Mainnet',
