@@ -4449,10 +4449,12 @@ const chainArray = [
     shortName: 'CICT',
     chainId: 1252,
     networkId: 1252,
+    icon: 'cicchain',
     explorers: [
       {
         name: 'CICscan',
         url: 'https://testnet.cicscan.com',
+        icon: 'cicchain',
         standard: 'EIP3091'
       }
     ]
@@ -4706,10 +4708,12 @@ const chainArray = [
     shortName: 'CIC',
     chainId: 1353,
     networkId: 1353,
+    icon: 'cicchain',
     explorers: [
       {
         name: 'CICscan',
         url: 'https://cicscan.com',
+        icon: 'cicchain',
         standard: 'EIP3091'
       }
     ]
