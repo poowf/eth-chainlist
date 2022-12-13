@@ -2750,6 +2750,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'zkSync v2',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zksync.io/',
+    shortName: 'zksync',
+    chainId: 324,
+    networkId: 324,
+    icon: 'ethereum',
+    explorers: [
+      {
+        name: 'zkSync v2 Block Explorer',
+        url: 'https://explorer.zksync.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
+    status: 'incubating'
+  },
+  {
     name: 'Web3Q Mainnet',
     chain: 'Web3Q',
     rpc: [ 'https://mainnet.web3q.io:8545' ],
@@ -3974,6 +3995,27 @@ const chainArray = [
     networkId: 1001
   },
   {
+    name: 'T-EKTA',
+    title: 'EKTA Testnet T-EKTA',
+    chain: 'T-EKTA',
+    rpc: [ 'https://test.ekta.io:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'T-EKTA', symbol: 'T-EKTA', decimals: 18 },
+    infoURL: 'https://www.ekta.io',
+    shortName: 't-ekta',
+    chainId: 1004,
+    networkId: 1004,
+    icon: 'ekta',
+    explorers: [
+      {
+        name: 'test-ektascan',
+        url: 'https://test.ektascan.io',
+        icon: 'ekta',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Newton Testnet',
     chain: 'NEW',
     rpc: [ 'https://rpc1.newchain.newtonproject.org' ],
@@ -4351,6 +4393,25 @@ const chainArray = [
         name: 'Enter Explorer - Expenter',
         url: 'https://explorer.entercoin.net',
         icon: 'enter',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Exzo Network Mainnet',
+    chain: 'EXZO',
+    icon: 'exzo',
+    rpc: [ 'https://mainnet.exzo.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'Exzo', symbol: 'XZO', decimals: 18 },
+    infoURL: 'https://exzo.network',
+    shortName: 'xzo',
+    chainId: 1229,
+    networkId: 1229,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://exzoscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -5064,6 +5125,26 @@ const chainArray = [
     chainId: 1987,
     networkId: 1987,
     slip44: 1987
+  },
+  {
+    name: 'Ekta',
+    chain: 'EKTA',
+    rpc: [ 'https://main.ekta.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'EKTA', symbol: 'EKTA', decimals: 18 },
+    infoURL: 'https://www.ekta.io',
+    shortName: 'ekta',
+    chainId: 1994,
+    networkId: 1994,
+    icon: 'ekta',
+    explorers: [
+      {
+        name: 'ektascan',
+        url: 'https://ektascan.io',
+        icon: 'ekta',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Dogechain Mainnet',
@@ -7448,6 +7529,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Haqq Network',
+    chain: 'Haqq',
+    rpc: [ 'https://rpc.eth.haqq.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Islamic Coin', symbol: 'ISLM', decimals: 18 },
+    infoURL: 'https://islamiccoin.net',
+    shortName: 'ISLM',
+    chainId: 11235,
+    networkId: 11235,
+    explorers: [
+      {
+        name: 'Mainnet HAQQ Explorer',
+        url: 'https://explorer.haqq.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Shyft Testnet',
     chain: 'SHYFTT',
     icon: 'shyft',
@@ -7735,6 +7834,26 @@ const chainArray = [
     shortName: 'CLOTestnet',
     chainId: 20729,
     networkId: 79
+  },
+  {
+    name: 'P12 Chain',
+    chain: 'P12',
+    icon: 'p12',
+    rpc: [ 'https://rpc-chain.p12.games' ],
+    faucets: [],
+    nativeCurrency: { name: 'Hooked P12', symbol: 'hP12', decimals: 18 },
+    infoURL: 'https://p12.network',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    shortName: 'p12',
+    chainId: 20736,
+    networkId: 20736,
+    explorers: [
+      {
+        name: 'P12 Chain Explorer',
+        url: 'https://explorer.p12.games',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'CENNZnet Azalea',
@@ -8540,6 +8659,24 @@ const chainArray = [
         url: 'https://explorer.dfkchain.com',
         icon: 'ethereum',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Haqq Chain Testnet',
+    chain: 'TestEdge2',
+    rpc: [ 'https://rpc.eth.testedge2.haqq.network' ],
+    faucets: [ 'https://testedge2.haqq.network' ],
+    nativeCurrency: { name: 'Islamic Coin', symbol: 'ISLMT', decimals: 18 },
+    infoURL: 'https://islamiccoin.net',
+    shortName: 'ISLMT',
+    chainId: 54211,
+    networkId: 54211,
+    explorers: [
+      {
+        name: 'TestEdge HAQQ Explorer',
+        url: 'https://explorer.testedge2.haqq.network',
+        standard: 'EIP3091'
       }
     ]
   },
