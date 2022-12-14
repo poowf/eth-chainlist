@@ -2066,7 +2066,8 @@ const chainArray = [
         url: 'https://testnet.alyxscan.com',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    icon: 'alyx'
   },
   {
     name: 'Polygon Mainnet',
@@ -2675,6 +2676,29 @@ const chainArray = [
         url: 'https://blockscout.com/xdai/optimism',
         icon: 'blockscout',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Bobaopera',
+    chain: 'Bobaopera',
+    rpc: [
+      'https://bobaopera.boba.network',
+      'wss://wss.bobaopera.boba.network',
+      'https://replica.bobaopera.boba.network',
+      'wss://replica-wss.bobaopera.boba.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
+    infoURL: 'https://boba.network',
+    shortName: 'Bobaopera',
+    chainId: 301,
+    networkId: 301,
+    explorers: [
+      {
+        name: 'Bobaopera block explorer',
+        url: 'https://blockexplorer.bobaopera.boba.network',
+        standard: 'none'
       }
     ]
   },
@@ -4628,7 +4652,7 @@ const chainArray = [
     networkId: 1288
   },
   {
-    name: 'Boba Network Bobabeam',
+    name: 'Bobabeam',
     chain: 'Bobabeam',
     rpc: [
       'https://bobabeam.boba.network',
@@ -4651,7 +4675,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Boba Network Bobabase Testnet',
+    name: 'Bobabase Testnet',
     chain: 'Bobabase Testnet',
     rpc: [
       'https://bobabase.boba.network',
@@ -4707,7 +4731,8 @@ const chainArray = [
         url: 'https://www.alyxscan.com',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    icon: 'alyx'
   },
   {
     name: 'Aitd Mainnet',
@@ -5381,6 +5406,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'OriginTrail Parachain',
+    chain: 'OTP',
+    rpc: [
+      'https://astrosat.origintrail.network',
+      'wss://parachain-rpc.origin-trail.network'
+    ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'OriginTrail Parachain Token',
+      symbol: 'OTP',
+      decimals: 12
+    },
+    infoURL: 'https://parachain.origintrail.io',
+    shortName: 'otp',
+    chainId: 2043,
+    networkId: 2043
+  },
+  {
     name: 'Quokkacoin Mainnet',
     chain: 'Qkacoin',
     rpc: [ 'https://rpc.qkacoin.org' ],
@@ -5632,9 +5675,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'BOMB Chain',
+    chain: 'BOMB',
+    rpc: [ 'https://rpc.bombchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'BOMB Token', symbol: 'BOMB', decimals: 18 },
+    infoURL: 'https://www.bombchain.com',
+    shortName: 'bomb',
+    chainId: 2300,
+    networkId: 2300,
+    icon: 'bomb',
+    explorers: [
+      {
+        name: 'bombscan',
+        icon: 'bomb',
+        url: 'https://bombscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Altcoinchain',
     chain: 'mainnet',
-    rpc: [ 'http://161.35.101.221:8547', 'https://rpc0.altcoinchain.org' ],
+    rpc: [ 'https://rpc0.altcoinchain.org/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'Altcoin', symbol: 'ALT', decimals: 18 },
     infoURL: 'https://altcoinchain.org',
@@ -5646,9 +5709,29 @@ const chainArray = [
     explorers: [
       {
         name: 'expedition',
-        url: 'https://expedition.altcoinchain.org',
+        url: 'http://expedition.altcoinchain.org',
         icon: 'altcoinchain',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'BOMB Chain Testnet',
+    chain: 'BOMB',
+    rpc: [ 'https://bombchain-testnet.ankr.com/bas_full_rpc_1' ],
+    faucets: [ 'https://faucet.bombchain-testnet.ankr.com/' ],
+    nativeCurrency: { name: 'BOMB Token', symbol: 'tBOMB', decimals: 18 },
+    infoURL: 'https://www.bombmoney.com',
+    shortName: 'bombt',
+    chainId: 2399,
+    networkId: 2399,
+    icon: 'bomb',
+    explorers: [
+      {
+        name: 'bombscan-testnet',
+        icon: 'bomb',
+        url: 'https://explorer.bombchain-testnet.ankr.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -5738,6 +5821,29 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Boba Network Goerli Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://goerli.boba.network/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://boba.network',
+    shortName: 'Bobagoerli',
+    chainId: 2888,
+    networkId: 2888,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://testnet.bobascan.com',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-5',
+      bridges: [ { url: 'https://gateway.goerli.boba.network' } ]
+    }
   },
   {
     name: 'BitYuan Mainnet',
@@ -5950,7 +6056,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Pandonet',
+    name: 'Pando Mainnet',
     chain: 'Pando',
     icon: 'pando',
     rpc: [ 'https://eth-rpc-api.pandoproject.org/rpc' ],
@@ -6120,7 +6226,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Boba Network Bobaopera Testnet',
+    name: 'Bobaopera Testnet',
     chain: 'Bobaopera Testnet',
     rpc: [
       'https://testnet.bobaopera.boba.network',
@@ -6183,7 +6289,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Boba Network Bobafuji Testnet',
+    name: 'Bobafuji Testnet',
     chain: 'Bobafuji Testnet',
     rpc: [
       'https://testnet.avax.boba.network',
@@ -6194,7 +6300,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
     infoURL: 'https://boba.network',
-    shortName: 'BobafujiTestnet',
+    shortName: 'BobaFujiTestnet',
     chainId: 4328,
     networkId: 4328,
     explorers: [
@@ -7198,7 +7304,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Boba Network BNB Testnet',
+    name: 'Boba BNB Testnet',
     chain: 'Boba BNB Testnet',
     rpc: [
       'https://testnet.bnb.boba.network',
@@ -7209,7 +7315,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
     infoURL: 'https://boba.network',
-    shortName: 'BobaBNBTestnet',
+    shortName: 'BobaBnbTestnet',
     chainId: 9728,
     networkId: 9728,
     explorers: [
@@ -7841,7 +7947,7 @@ const chainArray = [
     icon: 'p12',
     rpc: [ 'https://rpc-chain.p12.games' ],
     faucets: [],
-    nativeCurrency: { name: 'Hooked P12', symbol: 'hP12', decimals: 18 },
+    nativeCurrency: { name: 'Hooked P2', symbol: 'hP2', decimals: 18 },
     infoURL: 'https://p12.network',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     shortName: 'p12',
@@ -8510,7 +8616,8 @@ const chainArray = [
     rpc: [
       'https://avax.boba.network',
       'wss://wss.avax.boba.network',
-      'https://replica.avax.boba.network'
+      'https://replica.avax.boba.network',
+      'wss://replica-wss.avax.boba.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
@@ -9210,6 +9317,29 @@ const chainArray = [
         url: 'https://explorer.lambda.top',
         standard: 'EIP3091',
         icon: 'lambda'
+      }
+    ]
+  },
+  {
+    name: 'Boba BNB Mainnet',
+    chain: 'Boba BNB Mainnet',
+    rpc: [
+      'https://bnb.boba.network',
+      'wss://wss.bnb.boba.network',
+      'https://replica.bnb.boba.network',
+      'wss://replica-wss.bnb.boba.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
+    infoURL: 'https://boba.network',
+    shortName: 'BobaBnb',
+    chainId: 97288,
+    networkId: 97288,
+    explorers: [
+      {
+        name: 'Boba BNB block explorer',
+        url: 'https://blockexplorer.bnb.boba.network',
+        standard: 'none'
       }
     ]
   },
