@@ -3027,6 +3027,24 @@ const chainArray = [
     networkId: 420
   },
   {
+    name: 'Zeeth Chain',
+    chain: 'ZeethChain',
+    rpc: [ 'https://rpc.zeeth.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zeeth Token', symbol: 'ZTH', decimals: 18 },
+    infoURL: '',
+    shortName: 'zeeth',
+    chainId: 427,
+    networkId: 427,
+    explorers: [
+      {
+        name: 'Zeeth Explorer',
+        url: 'https://explorer.zeeth.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Rupaya',
     chain: 'RUPX',
     rpc: [],
@@ -3645,6 +3663,24 @@ const chainArray = [
     chainId: 821,
     networkId: 2,
     status: 'deprecated'
+  },
+  {
+    name: 'Zeeth Chain Dev',
+    chain: 'ZeethChainDev',
+    rpc: [ 'https://rpc.dev.zeeth.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zeeth Token', symbol: 'ZTH', decimals: 18 },
+    infoURL: '',
+    shortName: 'zeethdev',
+    chainId: 859,
+    networkId: 859,
+    explorers: [
+      {
+        name: 'Zeeth Explorer Dev',
+        url: 'https://explorer.dev.zeeth.io',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Dexit Network',
@@ -8334,6 +8370,26 @@ const chainArray = [
         name: 'avescan',
         url: 'https://avescan.io',
         icon: 'avescan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'J2O Taro',
+    chain: 'TARO',
+    rpc: [ 'https://rpc.j2o.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'TARO Coin', symbol: 'taro', decimals: 18 },
+    infoURL: 'https://j2o.io',
+    shortName: 'j2o',
+    chainId: 35011,
+    networkId: 35011,
+    explorers: [
+      {
+        name: 'J2O Taro Explorer',
+        url: 'https://exp.j2o.io',
+        icon: 'j2otaro',
         standard: 'EIP3091'
       }
     ]
