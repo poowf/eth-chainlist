@@ -132,13 +132,21 @@ const chainArray = [
   {
     name: 'ThaiChain',
     chain: 'TCH',
-    rpc: [ 'https://rpc.dome.cloud' ],
+    rpc: [ 'https://rpc.dome.cloud', 'https://rpc.thaichain.org' ],
     faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'ThaiChain Ether', symbol: 'TCH', decimals: 18 },
     infoURL: 'https://thaichain.io',
     shortName: 'tch',
     chainId: 7,
-    networkId: 7
+    networkId: 7,
+    explorers: [
+      {
+        name: 'Thaichain Explorer',
+        url: 'https://exp.thaichain.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Ubiq',
@@ -3174,6 +3182,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Firechain Mainnet',
+    chain: 'FIRE',
+    icon: 'firechain',
+    rpc: [ 'https://mainnet.rpc1.thefirechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
+    infoURL: 'https://thefirechain.com',
+    shortName: 'fire',
+    chainId: 529,
+    networkId: 529,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'F(x)Core Mainnet Network',
     chain: 'Fxcore',
     rpc: [ 'https://fx-json-web3.functionx.io:8545' ],
@@ -3824,6 +3846,20 @@ const chainArray = [
     shortName: 'PF',
     chainId: 909,
     networkId: 909,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
+    name: 'Rinia Testnet',
+    chain: 'FIRE',
+    icon: 'rinia',
+    rpc: [ 'https://rinia.rpc1.thefirechain.com' ],
+    faucets: [ 'https://faucet.thefirechain.com' ],
+    nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
+    infoURL: 'https://thefirechain.com',
+    shortName: 'tfire',
+    chainId: 917,
+    networkId: 917,
     explorers: [],
     status: 'incubating'
   },
@@ -6092,8 +6128,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Pando Mainnet',
-    chain: 'Pando',
+    name: 'PandoProject Mainnet',
+    chain: 'PandoProject',
     icon: 'pando',
     rpc: [ 'https://eth-rpc-api.pandoproject.org/rpc' ],
     faucets: [],
@@ -6111,8 +6147,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Pando Testnet',
-    chain: 'Pando',
+    name: 'PandoProject Testnet',
+    chain: 'PandoProject',
     icon: 'pando',
     rpc: [ 'https://testnet.ethrpc.pandoproject.org/rpc' ],
     faucets: [],
@@ -6488,17 +6524,18 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Firechain Mainnet',
+    name: 'Firechain Mainnet Old',
     chain: 'FIRE',
     icon: 'firechain',
     rpc: [ 'https://mainnet.rpc1.thefirechain.com' ],
     faucets: [],
     nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
     infoURL: 'https://thefirechain.com',
-    shortName: 'fire',
+    shortName: '_old_fire',
     chainId: 5290,
     networkId: 5290,
-    explorers: []
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Uzmi Network Mainnet',
@@ -7289,17 +7326,18 @@ const chainArray = [
     networkId: 9100
   },
   {
-    name: 'Rinia Testnet',
+    name: 'Rinia Testnet Old',
     chain: 'FIRE',
     icon: 'rinia',
     rpc: [ 'https://rinia.rpc1.thefirechain.com' ],
     faucets: [ 'https://faucet.thefirechain.com' ],
     nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
     infoURL: 'https://thefirechain.com',
-    shortName: 'tfire',
+    shortName: '_old_tfire',
     chainId: 9170,
     networkId: 9170,
-    explorers: []
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Rangers Protocol Testnet Robin',
@@ -8295,7 +8333,10 @@ const chainArray = [
     name: 'Filecoin - Wallaby testnet',
     chain: 'FIL',
     status: 'incubating',
-    rpc: [ 'https://wallaby.node.glif.io/rpc/v0' ],
+    rpc: [
+      'https://wallaby.filfox.info/rpc/v0',
+      'https://wallaby.node.glif.io/rpc/v0'
+    ],
     faucets: [ 'https://wallaby.network/#faucet' ],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
@@ -8305,6 +8346,11 @@ const chainArray = [
     networkId: 31415,
     slip44: 1,
     explorers: [
+      {
+        name: 'Filfox',
+        url: 'https://wallaby.filfox.info',
+        standard: 'none'
+      },
       {
         name: 'Glif Explorer',
         url: 'https://explorer.glif.io/wallaby',
@@ -11681,6 +11727,24 @@ const chainArray = [
         name: 'Ntity Haradev Blockscout',
         url: 'https://blockscout.haradev.com',
         icon: 'ntity',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'PDC Mainnet',
+    chain: 'IPDC',
+    rpc: [ 'https://mainnet.ipdc.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'PDC', symbol: 'PDC', decimals: 18 },
+    infoURL: 'https://ipdc.io',
+    shortName: 'ipdc',
+    chainId: 666301171999,
+    networkId: 666301171999,
+    explorers: [
+      {
+        name: 'ipdcscan',
+        url: 'https://scan.ipdc.io',
         standard: 'EIP3091'
       }
     ]
