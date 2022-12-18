@@ -269,6 +269,7 @@ const chainArray = [
   {
     name: 'Flare Testnet Coston',
     chain: 'FLR',
+    icon: 'coston',
     rpc: [ 'https://coston-api.flare.network/ext/bc/C/rpc' ],
     faucets: [
       'https://faucet.towolabs.com',
@@ -321,8 +322,8 @@ const chainArray = [
     chain: 'SGB',
     icon: 'songbird',
     rpc: [
-      'https://songbird.towolabs.com/rpc',
       'https://songbird-api.flare.network/ext/C/rpc',
+      'https://songbird.towolabs.com/ext/C/rpc',
       'https://sgb.ftso.com.au/ext/bc/C/rpc',
       'https://sgb.lightft.so/rpc',
       'https://sgb-rpc.ftso.eu'
@@ -1918,6 +1919,25 @@ const chainArray = [
       {
         name: 'Dehvo Explorer',
         url: 'https://explorer.dehvo.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Flare Testnet Coston2',
+    chain: 'FLR',
+    icon: 'coston2',
+    rpc: [ 'https://coston2-api.flare.network/ext/bc/C/rpc' ],
+    faucets: [ 'https://coston2-faucet.towolabs.com' ],
+    nativeCurrency: { name: 'Coston2 Flare', symbol: 'C2FLR', decimals: 18 },
+    infoURL: 'https://flare.xyz',
+    shortName: 'c2flr',
+    chainId: 114,
+    networkId: 114,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://coston2-explorer.flare.network',
         standard: 'EIP3091'
       }
     ]
@@ -3687,6 +3707,44 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'Taraxa Mainnet',
+    chain: 'Tara',
+    icon: 'taraxa',
+    rpc: [ 'https://rpc.mainnet.taraxa.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Tara', symbol: 'TARA', decimals: 18 },
+    infoURL: 'https://taraxa.io',
+    shortName: 'tara',
+    chainId: 841,
+    networkId: 841,
+    explorers: [
+      {
+        name: 'Taraxa Explorer',
+        url: 'https://explorer.mainnet.taraxa.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Taraxa Testnet',
+    chain: 'Tara',
+    icon: 'taraxa',
+    rpc: [ 'https://rpc.testnet.taraxa.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Tara', symbol: 'TARA', decimals: 18 },
+    infoURL: 'https://taraxa.io',
+    shortName: 'taratest',
+    chainId: 842,
+    networkId: 842,
+    explorers: [
+      {
+        name: 'Taraxa Explorer',
+        url: 'https://explorer.testnet.taraxa.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Zeeth Chain Dev',
     chain: 'ZeethChainDev',
     rpc: [ 'https://rpc.dev.zeeth.io' ],
@@ -5040,6 +5098,23 @@ const chainArray = [
     networkId: 1708
   },
   {
+    name: 'Kerleano',
+    title: 'Proof of Carbon Reduction testnet',
+    chain: 'CRC',
+    status: 'incubating',
+    rpc: [
+      'https://cacib-saturn-test.francecentral.cloudapp.azure.com',
+      'wss://cacib-saturn-test.francecentral.cloudapp.azure.com:9443'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Carbon Reduction Coin', symbol: 'CRC', decimals: 18 },
+    infoURL: 'https://github.com/ethereum-pocr/kerleano',
+    shortName: 'kerleano',
+    chainId: 1804,
+    networkId: 1804,
+    explorers: []
+  },
+  {
     name: 'Rabbit Analog Testnet Chain',
     chain: 'rAna',
     icon: 'rabbit',
@@ -5839,6 +5914,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'PoCRNet',
+    title: 'Proof of Carbon Reduction mainnet',
+    chain: 'CRC',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Carbon Reduction Coin', symbol: 'CRC', decimals: 18 },
+    infoURL: 'https://github.com/ethereum-pocr',
+    shortName: 'pocrnet',
+    chainId: 2606,
+    networkId: 2606,
+    explorers: []
+  },
+  {
     name: 'Redlight Chain Mainnet',
     chain: 'REDLC',
     rpc: [ 'https://dataseed2.redlightscan.finance' ],
@@ -6223,6 +6312,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'DRAC Network',
+    chain: 'DRAC',
+    rpc: [ 'https://www.dracscan.com/rpc' ],
+    faucets: [ 'https://www.dracscan.io/faucet' ],
+    nativeCurrency: { name: 'DRAC', symbol: 'DRAC', decimals: 18 },
+    infoURL: 'https://drac.io/',
+    shortName: 'drac',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    chainId: 3912,
+    networkId: 3912,
+    icon: 'drac',
+    explorers: [
+      {
+        name: 'DRAC_Network Scan',
+        url: 'https://www.dracscan.io',
+        icon: 'DRAC',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DYNO Mainnet',
     chain: 'DYNO',
     rpc: [ 'https://api.dynoprotocol.com' ],
@@ -6473,6 +6583,42 @@ const chainArray = [
       {
         name: 'Venidium Explorer',
         url: 'https://evm.venidiumexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mantle',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.mantle.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'BitDAO', symbol: 'BIT', decimals: 18 },
+    infoURL: 'https://mantle.xyz',
+    shortName: 'mantle',
+    chainId: 5000,
+    networkId: 5000,
+    explorers: [
+      {
+        name: 'Mantle Explorer',
+        url: 'https://explorer.mantle.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mantle Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.testnet.mantle.xyz' ],
+    faucets: [ 'https://faucet.testnet.mantle.xyz' ],
+    nativeCurrency: { name: 'Testnet BitDAO', symbol: 'BIT', decimals: 18 },
+    infoURL: 'https://mantle.xyz',
+    shortName: 'mantle-testnet',
+    chainId: 5001,
+    networkId: 5001,
+    explorers: [
+      {
+        name: 'Mantle Testnet Explorer',
+        url: 'https://explorer.testnet.mantle.xyz',
         standard: 'EIP3091'
       }
     ]
