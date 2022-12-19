@@ -417,6 +417,7 @@ const chainArray = [
     name: 'Cronos Mainnet Beta',
     chain: 'CRO',
     rpc: [ 'https://evm.cronos.org' ],
+    features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Cronos', symbol: 'CRO', decimals: 18 },
     infoURL: 'https://cronos.org/',
