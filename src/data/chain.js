@@ -7156,7 +7156,7 @@ const chainArray = [
     networkId: 8029
   },
   {
-    name: 'Shardeum Liberty 1.6',
+    name: 'Shardeum Liberty 1.X',
     chain: 'Shardeum',
     rpc: [ 'https://liberty10.shardeum.org/' ],
     faucets: [ 'https://faucet.liberty10.shardeum.org' ],
@@ -7175,7 +7175,7 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
-    name: 'Shardeum Liberty 2.0',
+    name: 'Shardeum Liberty 2.X',
     chain: 'Shardeum',
     rpc: [],
     faucets: [ 'https://faucet.liberty20.shardeum.org' ],
@@ -8342,6 +8342,24 @@ const chainArray = [
     shortName: 'mintme',
     chainId: 24734,
     networkId: 37480
+  },
+  {
+    name: 'Hammer Chain Mainnet',
+    chain: 'HammerChain',
+    rpc: [ 'https://www.hammerchain.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'GOLDT', symbol: 'GOLDT', decimals: 18 },
+    infoURL: 'https://www.hammerchain.io',
+    shortName: 'GOLDT',
+    chainId: 25888,
+    networkId: 25888,
+    explorers: [
+      {
+        name: 'Hammer Chain Explorer',
+        url: 'https://www.hammerchain.io',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'OasisChain Mainnet',
@@ -10194,6 +10212,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Mythical Chain',
+    chain: 'MYTH',
+    rpc: [ 'https://chain-rpc.mythicalgames.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Mythos', symbol: 'MYTH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mythicalgames.com/',
+    shortName: 'myth',
+    chainId: 201804,
+    networkId: 201804,
+    icon: 'mythical',
+    explorers: [
+      {
+        name: 'Mythical Chain Explorer',
+        url: 'https://explorer.mythicalgames.com',
+        icon: 'mythical',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Jellie',
     title: 'Twala Testnet Jellie',
     shortName: 'twl-jellie',
@@ -11327,6 +11366,26 @@ const chainArray = [
     shortName: 'JOYS',
     chainId: 35855456,
     networkId: 35855456
+  },
+  {
+    name: 'maistestsubnet',
+    chain: 'MAI',
+    rpc: [
+      'http://174.138.9.169:9650/ext/bc/VUKSzFZKckx4PoZF9gX5QAqLPxbLzvu1vcssPG5QuodaJtdHT/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'maistestsubnet', symbol: 'MAI', decimals: 18 },
+    infoURL: '',
+    shortName: 'mais',
+    chainId: 43214913,
+    networkId: 43214913,
+    explorers: [
+      {
+        name: 'maistesntet',
+        url: 'http://174.138.9.169:3006/?network=maistesntet',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Aquachain',
