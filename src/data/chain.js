@@ -3997,29 +3997,40 @@ const chainArray = [
     networkId: 956
   },
   {
-    name: 'CCN',
-    title: 'ComputeCoin Main Network',
-    chain: 'CCN',
-    rpc: [ 'https://rpc.mainnet.computecoin.com' ],
+    name: 'Oort Mainnet',
+    chain: 'Oort Mainnet',
+    rpc: [ 'https://rpc.oortech.com' ],
     faucets: [],
-    nativeCurrency: { name: 'ComputeCoin', symbol: 'CCN', decimals: 18 },
-    infoURL: 'https://computecoin.com/',
+    nativeCurrency: { name: 'Oort', symbol: 'CCN', decimals: 18 },
+    infoURL: 'https://oortech.com',
     shortName: 'ccn',
     chainId: 970,
     networkId: 970,
     icon: 'ccn'
   },
   {
-    name: 'CCN Beta',
-    title: 'ComputeCoin Beta Network',
-    chain: 'CCN Beta',
-    rpc: [ 'https://beta-rpc.mainnet.computecoin.com' ],
+    name: 'Oort Huygens',
+    chain: 'Huygens',
+    rpc: [ 'https://huygens-rpc.oortech.com' ],
     faucets: [],
-    nativeCurrency: { name: 'ComputeCoin', symbol: 'CCN', decimals: 18 },
-    infoURL: 'https://computecoin.com/',
-    shortName: 'ccnbeta',
+    nativeCurrency: { name: 'Oort', symbol: 'CCN', decimals: 18 },
+    infoURL: 'https://oortech.com',
+    shortName: 'Huygens',
     chainId: 971,
     networkId: 971,
+    icon: 'ccn'
+  },
+  {
+    name: 'Oort Ascraeus',
+    title: 'Oort Ascraeus',
+    chain: 'Ascraeus',
+    rpc: [ 'https://ascraeus-rpc.oortech.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Oort', symbol: 'CCNA', decimals: 18 },
+    infoURL: 'https://oortech.com',
+    shortName: 'Ascraeus',
+    chainId: 972,
+    networkId: 972,
     icon: 'ccn'
   },
   {
@@ -7544,6 +7555,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Oort MainnetDev',
+    title: 'Oort MainnetDev',
+    chain: 'MainnetDev',
+    rpc: [ 'https://dev-rpc.oortech.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Oort', symbol: 'CCN', decimals: 18 },
+    infoURL: 'https://oortech.com',
+    shortName: 'MainnetDev',
+    chainId: 9700,
+    networkId: 9700,
+    icon: 'ccn'
   },
   {
     name: 'Boba BNB Testnet',
