@@ -1007,6 +1007,7 @@ const chainArray = [
   {
     name: 'Ontology Mainnet',
     chain: 'Ontology',
+    icon: 'ontology',
     rpc: [
       'http://dappnode1.ont.io:20339',
       'http://dappnode2.ont.io:20339',
@@ -4499,6 +4500,31 @@ const chainArray = [
     networkId: 1140
   },
   {
+    name: 'Smart Host Teknoloji TESTNET',
+    chain: 'SHT',
+    rpc: [ 'https://s2.tl.web.tr:4041' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Smart Host Teknoloji TESTNET',
+      symbol: 'tSHT',
+      decimals: 18
+    },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://smart-host.com.tr',
+    shortName: 'sht',
+    chainId: 1177,
+    networkId: 1177,
+    icon: 'smarthost',
+    explorers: [
+      {
+        name: 'Smart Host Teknoloji TESTNET Explorer',
+        url: 'https://s2.tl.web.tr:4000',
+        icon: 'smarthost',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Iora Chain',
     chain: 'IORA',
     icon: 'iorachain',
@@ -5347,6 +5373,25 @@ const chainArray = [
         name: 'ektascan',
         url: 'https://ektascan.io',
         icon: 'ekta',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'edeXa Testnet',
+    chain: 'edeXa TestNetwork',
+    rpc: [ 'https://testnet.edexa.com/rpc' ],
+    faucets: [ 'https://faucet.edexa.com/' ],
+    nativeCurrency: { name: 'EDEXA', symbol: 'EDX', decimals: 18 },
+    infoURL: 'https://edexa.com/',
+    shortName: 'edx',
+    chainId: 1995,
+    networkId: 1995,
+    icon: 'edexa',
+    explorers: [
+      {
+        name: 'edexa-testnet',
+        url: 'https://explorer.edexa.com',
         standard: 'EIP3091'
       }
     ]
@@ -6812,6 +6857,7 @@ const chainArray = [
   {
     name: 'Ontology Testnet',
     chain: 'Ontology',
+    icon: 'ontology',
     rpc: [
       'http://polaris1.ont.io:20339',
       'http://polaris2.ont.io:20339',
