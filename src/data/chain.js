@@ -5420,12 +5420,9 @@ const chainArray = [
     chain: 'DC',
     icon: 'dogechain',
     rpc: [
-      'https://rpc-sg.dogechain.dog',
-      'https://rpc-us.dogechain.dog',
       'https://rpc.dogechain.dog',
-      'https://rpc01-sg.dogechain.dog',
-      'https://rpc02-sg.dogechain.dog',
-      'https://rpc03-sg.dogechain.dog'
+      'https://rpc-us.dogechain.dog',
+      'https://rpc01.dogechain.dog'
     ],
     faucets: [],
     nativeCurrency: { name: 'Dogecoin', symbol: 'DOGE', decimals: 18 },
