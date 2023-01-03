@@ -7413,22 +7413,24 @@ const chainArray = [
     ]
   },
   {
-    name: 'Ambros Chain Testnet',
-    chain: 'ambroschain',
-    rpc: [ 'https://api.testnet.ambros.network' ],
+    name: 'XANAChain',
+    chain: 'XANAChain',
+    rpc: [ 'https://mainnet.xana.net/rpc' ],
     faucets: [],
-    nativeCurrency: { name: 'AMBROS', symbol: 'AMBROS', decimals: 18 },
-    infoURL: 'https://test.ambros.network',
-    shortName: 'ambrostestnet',
+    nativeCurrency: { name: 'XETA', symbol: 'XETA', decimals: 18 },
+    infoURL: 'https://xanachain.xana.net/',
+    shortName: 'XANAChain',
     chainId: 8888,
     networkId: 8888,
+    icon: 'xeta',
     explorers: [
       {
-        name: 'Ambros Chain Explorer',
-        url: 'https://testnet.ambrosscan.com',
-        standard: 'none'
+        name: 'XANAChain',
+        url: 'https://xanachain.xana.net',
+        standard: 'EIP3091'
       }
-    ]
+    ],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Vyvo Smart Chain',
@@ -10853,9 +10855,9 @@ const chainArray = [
   {
     name: 'Scroll Pre-Alpha Testnet',
     chain: 'ETH',
-    rpc: [ 'https://prealpha.scroll.io/l2' ],
-    faucets: [ 'https://prealpha.scroll.io' ],
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [ 'https://prealpha-rpc.scroll.io/l2' ],
+    faucets: [ 'https://prealpha.scroll.io/faucet' ],
+    nativeCurrency: { name: 'Ether', symbol: 'TSETH', decimals: 18 },
     infoURL: 'https://scroll.io',
     shortName: 'scr-prealpha',
     chainId: 534354,
