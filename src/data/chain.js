@@ -2451,9 +2451,7 @@ const chainArray = [
     name: 'SiriusNet V2',
     chain: 'SIN2',
     faucets: [],
-    rpc: [
-      'https://u0zpw2zdzz:uf4y-ZGiQP_CJJgY6Vea2mSaeXOa1vFvfQ1PZhaDQ9M@u0iclv2dgh-u0jlczjhef-rpc.us0-aws.kaleido.io/'
-    ],
+    rpc: [ 'https://rpc2.siriusnet.io' ],
     icon: 'siriusnet',
     nativeCurrency: { name: 'MCD', symbol: 'MCD', decimals: 18 },
     infoURL: 'https://siriusnet.io',
@@ -2463,7 +2461,7 @@ const chainArray = [
     explorers: [
       {
         name: 'siriusnet explorer',
-        url: 'http://rpc.siriusnet.io',
+        url: 'https://scan.siriusnet.io',
         standard: 'none'
       }
     ]
@@ -11375,6 +11373,25 @@ const chainArray = [
     shortName: 'tpep',
     chainId: 13371337,
     networkId: 13371337
+  },
+  {
+    name: 'Anduschain Mainnet',
+    chain: 'anduschain',
+    rpc: [ 'https://rpc.anduschain.io/rpc', 'wss://rpc.anduschain.io/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'DAON', symbol: 'DEB', decimals: 18 },
+    infoURL: 'https://anduschain.io/',
+    shortName: 'anduschain-mainnet',
+    chainId: 14288640,
+    networkId: 14288640,
+    explorers: [
+      {
+        name: 'anduschain explorer',
+        url: 'http://explorer.anduschain.io',
+        icon: 'daon',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Plian Testnet Main',
