@@ -6837,6 +6837,25 @@ const chainArray = [
     }
   },
   {
+    name: 'Chain Verse Mainnet',
+    chain: 'CVERSE',
+    icon: 'chain_verse',
+    rpc: [ 'https://rpc.chainverse.info' ],
+    faucets: [],
+    nativeCurrency: { name: 'Oasys', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://chainverse.info',
+    shortName: 'cverse',
+    chainId: 5555,
+    networkId: 5555,
+    explorers: [
+      {
+        name: 'Chain Verse Explorer',
+        url: 'https://explorer.chainverse.info',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Syscoin Tanenbaum Testnet',
     chain: 'SYS',
     rpc: [ 'https://rpc.tanenbaum.io', 'wss://rpc.tanenbaum.io/wss' ],
@@ -8484,6 +8503,27 @@ const chainArray = [
         name: 'Hammer Chain Explorer',
         url: 'https://www.hammerchain.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Hertz Network Mainnet',
+    chain: 'HTZ',
+    rpc: [ 'https://mainnet-rpc.hertzscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Hertz', symbol: 'HTZ', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.hertz-network.com',
+    shortName: 'HTZ',
+    chainId: 26600,
+    networkId: 26600,
+    icon: 'hertz-network',
+    explorers: [
+      {
+        name: 'Hertz Scan',
+        url: 'https://hertzscan.com',
+        icon: 'hertz-network',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -11387,7 +11427,7 @@ const chainArray = [
     explorers: [
       {
         name: 'anduschain explorer',
-        url: 'http://explorer.anduschain.io',
+        url: 'https://explorer.anduschain.io',
         icon: 'daon',
         standard: 'none'
       }
