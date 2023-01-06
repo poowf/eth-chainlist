@@ -7305,6 +7305,19 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
+    name: 'StreamuX Blockchain',
+    chain: 'StreamuX',
+    rpc: [
+      'https://u0ma6t6heb:KDNwOsRDGcyM2Oeui1p431Bteb4rvcWkuPgQNHwB4FM@u0xy4x6x82-u0e2mg517m-rpc.us0-aws.kaleido.io/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'StreamuX', symbol: 'SmuX', decimals: 18 },
+    infoURL: 'https://www.streamux.cloud',
+    shortName: 'StreamuX',
+    chainId: 8098,
+    networkId: 8098
+  },
+  {
     name: 'Qitmeer Network Testnet',
     chain: 'MEER',
     rpc: [],
@@ -8155,6 +8168,26 @@ const chainArray = [
         url: 'https://phoenixplorer.com',
         icon: 'phoenixplorer',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Susono',
+    chain: 'SUS',
+    rpc: [
+      'https://gateway.opn.network/node/ext/bc/2VsZe5DstWw2bfgdx3YbjKcMsJnNDjni95sZorBEdk9L9Qr9Fr/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Susono', symbol: 'OPN', decimals: 18 },
+    infoURL: '',
+    shortName: 'sus',
+    chainId: 13812,
+    networkId: 13812,
+    explorers: [
+      {
+        name: 'Susono',
+        url: 'http://explorer.opn.network',
+        standard: 'none'
       }
     ]
   },
@@ -10485,6 +10518,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Mas Mainnet',
+    chain: 'MAS',
+    rpc: [ 'http://node.masnet.ai:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'Master Bank', symbol: 'MAS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://masterbank.org',
+    shortName: 'mas',
+    chainId: 220315,
+    networkId: 220315,
+    icon: 'mas',
+    explorers: [
+      {
+        name: 'explorer masnet',
+        url: 'https://explorer.masnet.ai',
+        icon: 'explorer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Haymo Testnet',
     chain: 'tHYM',
     rpc: [ 'https://testnet1.haymo.network' ],
@@ -11307,6 +11361,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'OpenVessel',
+    chain: 'VSL',
+    icon: 'vsl',
+    rpc: [ 'https://mainnet-external.openvessel.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Vessel ETH', symbol: 'VETH', decimals: 18 },
+    infoURL: 'https://www.openvessel.io',
+    shortName: 'vsl',
+    chainId: 7355310,
+    networkId: 7355310,
+    explorers: [
+      {
+        name: 'openvessel-mainnet',
+        url: 'https://mainnet-explorer.openvessel.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'QL1 Testnet',
     chain: 'QOM',
     status: 'incubating',
@@ -12054,6 +12127,36 @@ const chainArray = [
     shortName: 'hop',
     chainId: 2021121117,
     networkId: 2021121117
+  },
+  {
+    name: 'Europa SKALE Chain',
+    chain: 'europa',
+    icon: 'europa',
+    rpc: [
+      'https://mainnet.skalenodes.com/v1/elated-tan-skat',
+      'wss://mainnet.skalenodes.com/v1/elated-tan-skat'
+    ],
+    faucets: [
+      'https://ruby.exchange/faucet.html',
+      'https://sfuel.mylilius.com/'
+    ],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: 'https://europahub.network/',
+    shortName: 'europa',
+    chainId: 2046399126,
+    networkId: 2046399126,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://elated-tan-skat.explorer.mainnet.skalenodes.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://ruby.exchange/bridge.html' } ]
+    }
   },
   {
     name: 'Pirl',
