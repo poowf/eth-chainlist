@@ -6229,7 +6229,7 @@ const chainArray = [
     name: 'Filecoin - Hyperspace testnet',
     chain: 'FIL',
     icon: 'filecoin',
-    rpc: [ 'https://hyperspace.node.glif.io/rpc/v0' ],
+    rpc: [ 'https://api.hyperspace.node.glif.io/rpc/v0' ],
     faucets: [ 'https://hyperspace.filtest.network/#faucet' ],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
