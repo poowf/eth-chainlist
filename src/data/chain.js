@@ -5068,6 +5068,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ctex Scan Blockchain',
+    chain: 'Ctex Scan Blockchain',
+    icon: 'ctex',
+    rpc: [ 'https://mainnet-rpc.ctexscan.com/' ],
+    faucets: [ 'https://faucet.ctexscan.com' ],
+    nativeCurrency: { name: 'CTEX', symbol: 'CTEX', decimals: 18 },
+    infoURL: 'https://ctextoken.io',
+    shortName: 'CTEX',
+    chainId: 1455,
+    networkId: 1455,
+    explorers: [
+      {
+        name: 'Ctex Scan Explorer',
+        url: 'https://ctexscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Sherpax Mainnet',
     chain: 'Sherpax Mainnet',
     rpc: [ 'https://mainnet.sherpax.io/rpc' ],
@@ -5359,6 +5378,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'D-Chain Mainnet',
+    chain: 'D-Chain',
+    rpc: [
+      'https://mainnet.d-chain.network/ext/bc/2ZiR1Bro5E59siVuwdNuRFzqL95NkvkbzyLBdrsYR9BLSHV7H4/rpc'
+    ],
+    nativeCurrency: { name: 'DOINX', symbol: 'DOINX', decimals: 18 },
+    shortName: 'dchain-mainnet',
+    chainId: 1951,
+    networkId: 1951,
+    icon: 'dchain',
+    faucets: [],
+    infoURL: ''
   },
   {
     name: 'ONUS Chain Mainnet',
@@ -7016,12 +7049,12 @@ const chainArray = [
     ]
   },
   {
-    name: 'Tres Leches Testnet',
+    name: 'Tres Testnet',
     chain: 'TresLeches',
     rpc: [ 'https://rpc-test.tresleches.finance/' ],
     faucets: [ 'http://faucet.tresleches.finance:8080' ],
-    nativeCurrency: { name: 'Tres Leches', symbol: 'TRES', decimals: 18 },
-    infoURL: 'https://tresleches.finance',
+    nativeCurrency: { name: 'TRES', symbol: 'TRES', decimals: 18 },
+    infoURL: 'https://treschain.com',
     shortName: 'TRESTEST',
     chainId: 6065,
     networkId: 6065,
@@ -7036,12 +7069,12 @@ const chainArray = [
     ]
   },
   {
-    name: 'Tres Leches Mainnet',
+    name: 'Tres Mainnet',
     chain: 'TresLeches',
-    rpc: [ 'https://rpc.tresleches.finance/' ],
+    rpc: [ 'https://rpc.tresleches.finance/', 'https://rpc.treschain.io/' ],
     faucets: [],
-    nativeCurrency: { name: 'Tres Leches', symbol: 'TRES', decimals: 18 },
-    infoURL: 'https://tresleches.finance',
+    nativeCurrency: { name: 'TRES', symbol: 'TRES', decimals: 18 },
+    infoURL: 'https://treschain.com',
     shortName: 'TRESMAIN',
     chainId: 6066,
     networkId: 6066,
@@ -8606,14 +8639,20 @@ const chainArray = [
     name: 'Oasis Sapphire',
     chain: 'Sapphire',
     icon: 'oasis',
-    rpc: [ 'https://sapphire.oasis.dev', 'wss://sapphire.oasis.dev/ws' ],
+    rpc: [ 'https://sapphire.oasis.io', 'wss://sapphire.oasis.io/ws' ],
     faucets: [],
     nativeCurrency: { name: 'Sapphire Rose', symbol: 'ROSE', decimals: 18 },
     infoURL: 'https://docs.oasis.io/dapp/sapphire',
     shortName: 'sapphire',
     chainId: 23294,
     networkId: 23294,
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'Oasis Sapphire Explorer',
+        url: 'https://explorer.sapphire.oasis.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Oasis Sapphire Testnet',
@@ -11133,6 +11172,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bear Network Chain Mainnet',
+    chain: 'BRNKC',
+    icon: 'brnkc',
+    rpc: [
+      'https://brnkc-mainnet.bearnetwork.net',
+      'https://brnkc-mainnet1.bearnetwork.net'
+    ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Bear Network Chain Native Token',
+      symbol: 'BRNKC',
+      decimals: 18
+    },
+    infoURL: 'https://bearnetwork.net',
+    shortName: 'BRNKC',
+    chainId: 641230,
+    networkId: 641230
+  },
+  {
     name: 'Vision - Vpioneer Test Chain',
     chain: 'Vision-Vpioneer',
     rpc: [ 'https://vpioneer.infragrid.v.network/ethereum/compatible' ],
@@ -12450,6 +12508,24 @@ const chainArray = [
         name: 'Ntity Haradev Blockscout',
         url: 'https://blockscout.haradev.com',
         icon: 'ntity',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zeniq',
+    chain: 'ZENIQ',
+    rpc: [ 'https://smart.zeniq.network:9545' ],
+    faucets: [ 'https://faucet.zeniq.net/' ],
+    nativeCurrency: { name: 'Zeniq', symbol: 'ZENIQ', decimals: 18 },
+    infoURL: 'https://www.zeniq.dev/',
+    shortName: 'zeniq',
+    chainId: 383414847825,
+    networkId: 383414847825,
+    explorers: [
+      {
+        name: 'zeniq-smart-chain-explorer',
+        url: 'https://smart.zeniq.net',
         standard: 'EIP3091'
       }
     ]
