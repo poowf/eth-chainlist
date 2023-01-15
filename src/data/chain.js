@@ -7704,8 +7704,8 @@ const chainArray = [
     icon: 'evmos',
     explorers: [
       {
-        name: 'Evmos EVM Explorer (Blockscout)',
-        url: 'https://evm.evmos.org',
+        name: 'Evmos EVM Explorer (Escan)',
+        url: 'https://escan.live',
         standard: 'none',
         icon: 'evmos'
       },
