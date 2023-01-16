@@ -5394,6 +5394,19 @@ const chainArray = [
     infoURL: ''
   },
   {
+    name: 'Atelier',
+    title: 'Atelier Test Network',
+    chain: 'ALTR',
+    rpc: [ 'https://1971.network/atlr', 'wss://1971.network/atlr' ],
+    faucets: [],
+    nativeCurrency: { name: 'ATLR', symbol: 'ATLR', decimals: 18 },
+    infoURL: 'https://1971.network/',
+    shortName: 'atlr',
+    chainId: 1971,
+    networkId: 1971,
+    icon: 'atlr'
+  },
+  {
     name: 'ONUS Chain Mainnet',
     title: 'ONUS Chain Mainnet',
     chain: 'onus',
@@ -8913,13 +8926,27 @@ const chainArray = [
   {
     name: 'Fusion Mainnet',
     chain: 'FSN',
-    rpc: [ 'https://mainnet.anyswap.exchange', 'https://fsn.dev/api' ],
+    icon: 'fusion',
+    rpc: [
+      'https://mainnet.fusionnetwork.io',
+      'wss://mainnet.fusionnetwork.io'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Fusion', symbol: 'FSN', decimals: 18 },
-    infoURL: 'https://www.fusion.org/',
+    infoURL: 'https://fusion.org',
     shortName: 'fsn',
     chainId: 32659,
-    networkId: 32659
+    networkId: 32659,
+    slip44: 288,
+    explorers: [
+      {
+        name: 'fsnscan',
+        url: 'https://fsnscan.com',
+        icon: 'fsnscan',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Aves Mainnet',
@@ -9297,6 +9324,31 @@ const chainArray = [
         name: 'autobahn explorer',
         url: 'https://explorer.autobahn.network',
         icon: 'autobahn',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Fusion Testnet',
+    chain: 'FSN',
+    icon: 'fusion',
+    rpc: [
+      'https://testnet.fusionnetwork.io',
+      'wss://testnet.fusionnetwork.io'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet Fusion', symbol: 'T-FSN', decimals: 18 },
+    infoURL: 'https://fusion.org',
+    shortName: 'tfsn',
+    chainId: 46688,
+    networkId: 46688,
+    slip44: 288,
+    explorers: [
+      {
+        name: 'fsnscan',
+        url: 'https://testnet.fsnscan.com',
+        icon: 'fsnscan',
         standard: 'EIP3091'
       }
     ]
