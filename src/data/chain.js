@@ -7484,6 +7484,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'BeOne Chain Testnet',
+    chain: 'BOC',
+    rpc: [
+      'https://pre-boc1.beonechain.com',
+      'https://pre-boc2.beonechain.com',
+      'https://pre-boc3.beonechain.com'
+    ],
+    faucets: [ 'https://testnet.beonescan.com/faucet' ],
+    nativeCurrency: { name: 'BeOne Chain Testnet', symbol: 'BOC', decimals: 18 },
+    infoURL: 'https://testnet.beonescan.com',
+    shortName: 'tBOC',
+    chainId: 8181,
+    networkId: 8181,
+    icon: 'beonechain',
+    explorers: [
+      {
+        name: 'BeOne Chain Testnet',
+        url: 'https://testnet.beonescan.com',
+        icon: 'beonechain',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Klaytn Mainnet Cypress',
     chain: 'KLAY',
     rpc: [ 'https://public-node-api.klaytnapi.com/v1/cypress' ],
@@ -7661,6 +7685,27 @@ const chainArray = [
         name: 'JIBCHAIN Explorer',
         url: 'https://exp-l1.jibchain.net',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Giant Mammoth Mainnet',
+    title: 'Giant Mammoth Chain',
+    chain: 'GMMT',
+    rpc: [ 'https://rpc-asia.gmmtchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Giant Mammoth Coin', symbol: 'GMMT', decimals: 18 },
+    infoURL: 'https://gmmtchain.io/',
+    shortName: 'gmmt',
+    chainId: 8989,
+    networkId: 8989,
+    icon: 'gmmt',
+    explorers: [
+      {
+        name: 'gmmtscan',
+        url: 'https://scan.gmmtchain.io',
+        standard: 'EIP3091',
+        icon: 'gmmt'
       }
     ]
   },
@@ -8731,6 +8776,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitkub Chain Testnet',
+    chain: 'BKC',
+    icon: 'bkc',
+    rpc: [
+      'https://rpc-testnet.bitkubchain.io',
+      'wss://wss-testnet.bitkubchain.io'
+    ],
+    faucets: [ 'https://faucet.bitkubchain.com' ],
+    nativeCurrency: { name: 'Bitkub Coin', symbol: 'tKUB', decimals: 18 },
+    infoURL: 'https://www.bitkubchain.com/',
+    shortName: 'bkct',
+    chainId: 25925,
+    networkId: 25925,
+    explorers: [
+      {
+        name: 'bkcscan-testnet',
+        url: 'https://testnet.bkcscan.com',
+        standard: 'none',
+        icon: 'bkc'
+      }
+    ]
+  },
+  {
     name: 'Hertz Network Mainnet',
     chain: 'HTZ',
     rpc: [ 'https://mainnet-rpc.hertzscan.com' ],
@@ -9170,7 +9238,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Oasis Emerald ParaTime Testnet',
+    name: 'Oasis Emerald Testnet',
     chain: 'Emerald',
     icon: 'oasis',
     rpc: [
@@ -9179,32 +9247,32 @@ const chainArray = [
     ],
     faucets: [ 'https://faucet.testnet.oasis.dev/' ],
     nativeCurrency: { name: 'Emerald Rose', symbol: 'ROSE', decimals: 18 },
-    infoURL: 'https://docs.oasis.dev/general/developer-resources/overview',
+    infoURL: 'https://docs.oasis.io/dapp/emerald',
     shortName: 'emerald-testnet',
     chainId: 42261,
     networkId: 42261,
     explorers: [
       {
-        name: 'Emerald ParaTime Testnet Explorer',
+        name: 'Oasis Emerald Testnet Explorer',
         url: 'https://testnet.explorer.emerald.oasis.dev',
         standard: 'EIP3091'
       }
     ]
   },
   {
-    name: 'Oasis Emerald ParaTime Mainnet',
+    name: 'Oasis Emerald',
     chain: 'Emerald',
     icon: 'oasis',
     rpc: [ 'https://emerald.oasis.dev', 'wss://emerald.oasis.dev/ws' ],
     faucets: [],
     nativeCurrency: { name: 'Emerald Rose', symbol: 'ROSE', decimals: 18 },
-    infoURL: 'https://docs.oasis.dev/general/developer-resources/overview',
+    infoURL: 'https://docs.oasis.io/dapp/emerald',
     shortName: 'emerald',
     chainId: 42262,
     networkId: 42262,
     explorers: [
       {
-        name: 'Emerald ParaTime Mainnet Explorer',
+        name: 'Oasis Emerald Explorer',
         url: 'https://explorer.emerald.oasis.dev',
         standard: 'EIP3091'
       }
@@ -9517,6 +9585,29 @@ const chainArray = [
         name: 'reiscan',
         url: 'https://testnet.reiscan.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Boba BNB Mainnet',
+    chain: 'Boba BNB Mainnet',
+    rpc: [
+      'https://bnb.boba.network',
+      'wss://wss.bnb.boba.network',
+      'https://replica.bnb.boba.network',
+      'wss://replica-wss.bnb.boba.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
+    infoURL: 'https://boba.network',
+    shortName: 'BobaBnb',
+    chainId: 56288,
+    networkId: 56288,
+    explorers: [
+      {
+        name: 'Boba BNB block explorer',
+        url: 'https://blockexplorer.bnb.boba.network',
+        standard: 'none'
       }
     ]
   },
@@ -10054,13 +10145,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Boba BNB Mainnet',
+    name: 'Boba BNB Mainnet Old',
     chain: 'Boba BNB Mainnet',
     rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
     infoURL: 'https://boba.network',
-    shortName: 'BobaBnb',
+    shortName: 'BobaBnbOld',
     chainId: 97288,
     networkId: 97288,
     explorers: [
@@ -10069,7 +10160,8 @@ const chainArray = [
         url: 'https://blockexplorer.bnb.boba.network',
         standard: 'none'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'UB Smart Chain(testnet)',
