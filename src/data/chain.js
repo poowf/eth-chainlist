@@ -4383,6 +4383,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Proxy Network Testnet',
+    chain: 'Proxy Network',
+    rpc: [ 'http://128.199.94.183:8041' ],
+    faucets: [],
+    nativeCurrency: { name: 'PRX', symbol: 'PRX', decimals: 18 },
+    infoURL: 'https://theproxy.network',
+    shortName: 'prx',
+    chainId: 1031,
+    networkId: 1031,
+    explorers: [
+      {
+        name: 'proxy network testnet',
+        url: 'http://testnet-explorer.theproxy.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bronos Testnet',
     chain: 'Bronos',
     rpc: [ 'https://evm-testnet.bronos.org' ],
@@ -5340,6 +5358,26 @@ const chainArray = [
     shortName: 'tsf',
     chainId: 1856,
     networkId: 1
+  },
+  {
+    name: 'Gitshock Cartenz Testnet',
+    chain: 'Gitshock Cartenz',
+    icon: 'gitshockchain',
+    rpc: [ 'https://rpc.cartenz.works' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Gitshock Cartenz', symbol: 'tGTFX', decimals: 18 },
+    infoURL: 'https://gitshock.com',
+    shortName: 'gitshockchain',
+    chainId: 1881,
+    networkId: 1881,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://scan.cartenz.works',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'BON Network',
@@ -9679,6 +9717,33 @@ const chainArray = [
       {
         name: 'thinkiumscan',
         url: 'https://test103.thinkiumscan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Etica Mainnet',
+    chain: 'Etica Protocol (ETI/EGAZ)',
+    icon: 'etica',
+    rpc: [
+      'https://eticamainnet.eticascan.org',
+      'https://eticamainnet.eticaprotocol.org'
+    ],
+    faucets: [ 'http://faucet.etica-stats.org/' ],
+    nativeCurrency: { name: 'EGAZ', symbol: 'EGAZ', decimals: 18 },
+    infoURL: 'https://eticaprotocol.org',
+    shortName: 'Etica',
+    chainId: 61803,
+    networkId: 61803,
+    explorers: [
+      {
+        name: 'eticascan',
+        url: 'https://eticascan.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'eticastats',
+        url: 'http://explorer.etica-stats.org',
         standard: 'EIP3091'
       }
     ]
