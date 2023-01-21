@@ -2219,6 +2219,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'Armonia Eva Chain Mainnet',
+    chain: 'Eva',
+    rpc: [ 'https://evascan.io/api/eth-rpc/' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Armonia Multichain Native Token',
+      symbol: 'AMAX',
+      decimals: 18
+    },
+    infoURL: 'https://amax.network',
+    shortName: 'eva',
+    chainId: 160,
+    networkId: 160,
+    status: 'incubating'
+  },
+  {
+    name: 'Armonia Eva Chain Testnet',
+    chain: 'Wall-e',
+    rpc: [ 'https://testnet.evascan.io/api/eth-rpc/' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Armonia Multichain Native Token',
+      symbol: 'AMAX',
+      decimals: 18
+    },
+    infoURL: 'https://amax.network',
+    shortName: 'wall-e',
+    chainId: 161,
+    networkId: 161,
+    explorers: [
+      {
+        name: 'blockscout - evascan',
+        url: 'https://testnet.evascan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Lightstreams Testnet',
     chain: 'PHT',
     rpc: [ 'https://node.sirius.lightstreams.io' ],
@@ -6313,8 +6351,11 @@ const chainArray = [
     name: 'Filecoin - Hyperspace testnet',
     chain: 'FIL',
     icon: 'filecoin',
-    rpc: [ 'https://api.hyperspace.node.glif.io/rpc/v0' ],
-    faucets: [ 'https://hyperspace.filtest.network/#faucet' ],
+    rpc: [
+      'https://api.hyperspace.node.glif.io/rpc/v1',
+      'https://filecoin-hyperspace.chainstacklabs.com/rpc/v1'
+    ],
+    faucets: [ 'https://hyperspace.yoga/#faucet' ],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
     shortName: 'filecoin-hyperspace',
@@ -8698,6 +8739,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'HOME Verse Mainnet',
+    chain: 'HOME Verse',
+    icon: 'home_verse',
+    rpc: [ 'https://rpc.mainnet.oasys.homeverse.games/' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://www.homeverse.games/',
+    shortName: 'HMV',
+    chainId: 19011,
+    networkId: 19011,
+    explorers: [
+      {
+        name: 'HOME Verse Explorer',
+        url: 'https://explorer.oasys.homeverse.games',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
     name: 'BTCIX Network',
     chain: 'BTCIX',
     rpc: [ 'https://seed.btcix.org/rpc' ],
@@ -9112,8 +9173,8 @@ const chainArray = [
     name: 'Filecoin - Wallaby testnet',
     chain: 'FIL',
     icon: 'filecoin',
-    rpc: [ 'https://wallaby.node.glif.io/rpc/v0' ],
-    faucets: [ 'https://wallaby.network/#faucet' ],
+    rpc: [ 'https://wallaby.node.glif.io/rpc/v1' ],
+    faucets: [ 'https://wallaby.yoga/#faucet' ],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
     shortName: 'filecoin-wallaby',
@@ -11163,7 +11224,7 @@ const chainArray = [
     name: 'Filecoin - Calibration testnet',
     chain: 'FIL',
     icon: 'filecoin',
-    rpc: [ 'https://api.calibration.node.glif.io/rpc/v0' ],
+    rpc: [ 'https://api.calibration.node.glif.io/rpc/v1' ],
     faucets: [ 'https://faucet.calibration.fildev.network/' ],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
