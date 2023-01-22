@@ -2810,6 +2810,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Omax Mainnet',
+    chain: 'OMAX Chain',
+    rpc: [ 'https://mainapi.omaxray.com' ],
+    faucets: [ 'https://faucet.omaxray.com/' ],
+    nativeCurrency: { name: 'OMAX COIN', symbol: 'OMAX', decimals: 18 },
+    infoURL: 'https://www.omaxcoin.com/',
+    shortName: 'omax',
+    chainId: 311,
+    networkId: 311,
+    icon: 'omaxchain',
+    explorers: [
+      {
+        name: 'Omax Chain Explorer',
+        url: 'https://omaxray.com',
+        icon: 'omaxray',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Filecoin - Mainnet',
     chain: 'FIL',
     icon: 'filecoin',
@@ -7601,6 +7621,25 @@ const chainArray = [
       {
         name: 'Klaytnscope',
         url: 'https://scope.klaytn.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Blockton Blockchain',
+    chain: 'Blockton Blockchain',
+    icon: 'bton',
+    rpc: [ 'https://rpc.blocktonscan.com/' ],
+    faucets: [ 'https://faucet.blocktonscan.com/' ],
+    nativeCurrency: { name: 'BLOCKTON', symbol: 'BTON', decimals: 18 },
+    infoURL: 'https://blocktoncoin.com',
+    shortName: 'BTON',
+    chainId: 8272,
+    networkId: 8272,
+    explorers: [
+      {
+        name: 'Blockton Explorer',
+        url: 'https://blocktonscan.com',
         standard: 'none'
       }
     ]
