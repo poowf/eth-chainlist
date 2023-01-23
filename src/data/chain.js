@@ -3899,6 +3899,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Fantasia Chain Mainnet',
+    chain: 'FSC',
+    rpc: [
+      'https://mainnet-data1.fantasiachain.com/',
+      'https://mainnet-data2.fantasiachain.com/',
+      'https://mainnet-data3.fantasiachain.com/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'FST', symbol: 'FST', decimals: 18 },
+    infoURL: 'https://fantasia.technology/',
+    shortName: 'FSCMainnet',
+    chainId: 868,
+    networkId: 868,
+    explorers: [
+      {
+        name: 'FSCScan',
+        url: 'https://explorer.fantasiachain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Dexit Network',
     chain: 'DXT',
     rpc: [ 'https://dxt.dexit.network' ],
@@ -9696,6 +9718,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Floripa',
+    title: 'Wireshape Testnet Floripa',
+    chain: 'Wireshape',
+    rpc: [ 'https://rpc-floripa.wireshape.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'WIRE', symbol: 'WIRE', decimals: 18 },
+    infoURL: 'https://wireshape.org',
+    shortName: 'floripa',
+    chainId: 49049,
+    networkId: 49049,
+    explorers: [
+      {
+        name: 'Wire Explorer',
+        url: 'https://floripa-explorer.wireshape.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bifrost Testnet1',
     title: 'The Bifrost Testnet network',
     chain: 'BFC',
@@ -9729,6 +9770,18 @@ const chainArray = [
     chainId: 49797,
     networkId: 49797,
     slip44: 49797
+  },
+  {
+    name: 'Liveplex OracleEVM',
+    chain: 'Liveplex OracleEVM Network',
+    rpc: [ 'http://129.153.75.68:5000' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'LOE',
+    chainId: 50001,
+    networkId: 50001,
+    explorers: []
   },
   {
     name: 'GTON Testnet',
