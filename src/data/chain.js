@@ -11632,10 +11632,10 @@ const chainArray = [
   {
     name: 'ethereum Fair',
     chainId: 513100,
-    networkId: 1,
+    networkId: 513100,
     shortName: 'etf',
     chain: 'ETF',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'EthereumFair', symbol: 'ETHF', decimals: 18 },
     rpc: [ 'https://rpc.etherfair.org' ],
     faucets: [],
     explorers: [
