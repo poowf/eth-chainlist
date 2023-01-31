@@ -9814,7 +9814,7 @@ const chainArray = [
   {
     name: 'Liveplex OracleEVM',
     chain: 'Liveplex OracleEVM Network',
-    rpc: [ 'http://129.153.75.68:5000' ],
+    rpc: [ 'https://oracle.liveplex.io' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: '',
