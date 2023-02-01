@@ -5959,6 +5959,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Metaplayerone Mainnet',
+    chain: 'METAD',
+    icon: 'metad',
+    rpc: [ 'https://rpc.metaplayer.one/' ],
+    faucets: [],
+    nativeCurrency: { name: 'METAD', symbol: 'METAD', decimals: 18 },
+    infoURL: 'https://docs.metaplayer.one/',
+    shortName: 'Metad',
+    chainId: 2122,
+    networkId: 2122,
+    explorers: [
+      {
+        name: 'Metad Scan',
+        url: 'https://scan.metaplayer.one',
+        icon: 'metad',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BOSagora Mainnet',
     chain: 'ETH',
     rpc: [ 'https://mainnet.bosagora.org', 'https://rpc.bosagora.org' ],
@@ -6670,6 +6690,24 @@ const chainArray = [
         url: 'https://bittexscan.com',
         icon: 'etherscan',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Empire Network',
+    chain: 'EMPIRE',
+    rpc: [ 'https://rpc.empirenetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Empire', symbol: 'EMPIRE', decimals: 18 },
+    infoURL: 'https://www.empirenetwork.io/',
+    shortName: 'empire',
+    chainId: 3693,
+    networkId: 3693,
+    explorers: [
+      {
+        name: 'Empire Explorer',
+        url: 'https://explorer.empirenetwork.io',
+        standard: 'none'
       }
     ]
   },
@@ -11708,7 +11746,14 @@ const chainArray = [
     infoURL: 'https://bearnetwork.net',
     shortName: 'BRNKC',
     chainId: 641230,
-    networkId: 641230
+    networkId: 641230,
+    explorers: [
+      {
+        name: 'brnkscan',
+        url: 'https://brnkscan.bearnetwork.net',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Vision - Vpioneer Test Chain',
@@ -11971,6 +12016,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zhejiang',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.zhejiang.ethpandaops.io' ],
+    faucets: [
+      'https://faucet.zhejiang.ethpandaops.io',
+      'https://zhejiang-faucet.pk910.de'
+    ],
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zhejiang.ethpandaops.io',
+    shortName: 'zhejiang',
+    chainId: 1337803,
+    networkId: 1337803,
+    icon: 'ethereum',
+    explorers: [
+      {
+        name: 'Zhejiang Explorer',
+        url: 'https://zhejiang.beaconcha.in',
+        icon: 'ethereum',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Plian Mainnet Main',
     chain: 'Plian',
     rpc: [ 'https://mainnet.plian.io/pchain' ],
@@ -12225,7 +12293,7 @@ const chainArray = [
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
     ],
-    nativeCurrency: { name: 'Sepolia Ether', symbol: 'SEP', decimals: 18 },
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://sepolia.otterscan.io',
     shortName: 'sep',
     chainId: 11155111,
