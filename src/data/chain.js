@@ -2279,6 +2279,25 @@ const chainArray = [
     networkId: 163
   },
   {
+    name: 'Atoshi Testnet',
+    chain: 'ATOSHI',
+    icon: 'atoshi',
+    rpc: [ 'https://node.atoshi.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ATOSHI', symbol: 'ATOS', decimals: 18 },
+    infoURL: 'https://atoshi.org',
+    shortName: 'atoshi',
+    chainId: 167,
+    networkId: 167,
+    explorers: [
+      {
+        name: 'atoshiscan',
+        url: 'https://scan.atoverse.info',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'AIOZ Network',
     chain: 'AIOZ',
     icon: 'aioz',
@@ -4599,6 +4618,54 @@ const chainArray = [
     ]
   },
   {
+    name: 'Core Blockchain Testnet',
+    chain: 'Core',
+    icon: 'core',
+    rpc: [ 'https://rpc.test.btcs.network/' ],
+    faucets: [ 'https://scan.test.btcs.network/faucet' ],
+    nativeCurrency: {
+      name: 'Core Blockchain Testnet Native Token',
+      symbol: 'tCORE',
+      decimals: 18
+    },
+    infoURL: 'https://www.coredao.org',
+    shortName: 'tcore',
+    chainId: 1115,
+    networkId: 1115,
+    explorers: [
+      {
+        name: 'Core Scan Testnet',
+        url: 'https://scan.test.btcs.network',
+        icon: 'core',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Core Blockchain Mainnet',
+    chain: 'Core',
+    icon: 'core',
+    rpc: [ 'https://rpc.coredao.org/' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Core Blockchain Native Token',
+      symbol: 'CORE',
+      decimals: 18
+    },
+    infoURL: 'https://www.coredao.org',
+    shortName: 'core',
+    chainId: 1116,
+    networkId: 1116,
+    explorers: [
+      {
+        name: 'Core Scan',
+        url: 'https://scan.coredao.org',
+        icon: 'core',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DeFiChain EVM Network Mainnet',
     chain: 'defichain-evm',
     status: 'incubating',
@@ -5332,18 +5399,26 @@ const chainArray = [
     name: 'Kerleano',
     title: 'Proof of Carbon Reduction testnet',
     chain: 'CRC',
-    status: 'incubating',
+    status: 'active',
     rpc: [
       'https://cacib-saturn-test.francecentral.cloudapp.azure.com',
       'wss://cacib-saturn-test.francecentral.cloudapp.azure.com:9443'
     ],
-    faucets: [],
+    faucets: [
+      'https://github.com/ethereum-pocr/kerleano/blob/main/docs/faucet.md'
+    ],
     nativeCurrency: { name: 'Carbon Reduction Coin', symbol: 'CRC', decimals: 18 },
     infoURL: 'https://github.com/ethereum-pocr/kerleano',
     shortName: 'kerleano',
     chainId: 1804,
     networkId: 1804,
-    explorers: []
+    explorers: [
+      {
+        name: 'Lite Explorer',
+        url: 'https://ethereum-pocr.github.io/explorer/kerleano',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Rabbit Analog Testnet Chain',
@@ -6290,15 +6365,24 @@ const chainArray = [
     name: 'PoCRNet',
     title: 'Proof of Carbon Reduction mainnet',
     chain: 'CRC',
-    status: 'incubating',
-    rpc: [],
+    status: 'active',
+    rpc: [
+      'https://pocrnet.westeurope.cloudapp.azure.com/http',
+      'wss://pocrnet.westeurope.cloudapp.azure.com/ws'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Carbon Reduction Coin', symbol: 'CRC', decimals: 18 },
-    infoURL: 'https://github.com/ethereum-pocr',
+    infoURL: 'https://github.com/ethereum-pocr/pocrnet',
     shortName: 'pocrnet',
     chainId: 2606,
     networkId: 2606,
-    explorers: []
+    explorers: [
+      {
+        name: 'Lite Explorer',
+        url: 'https://ethereum-pocr.github.io/explorer/pocrnet',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Redlight Chain Mainnet',
@@ -7830,6 +7914,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'TMY Chain',
+    chain: 'TMY',
+    icon: 'ethereum',
+    rpc: [ 'https://node1.tmyblockchain.org/rpc' ],
+    faucets: [ 'https://faucet.tmychain.org/' ],
+    nativeCurrency: { name: 'TMY', symbol: 'TMY', decimals: 18 },
+    infoURL: 'https://tmychain.org/',
+    shortName: 'tmy',
+    chainId: 8768,
+    networkId: 8768
   },
   {
     name: 'Unique',
@@ -9852,7 +9948,7 @@ const chainArray = [
   {
     name: 'Liveplex OracleEVM',
     chain: 'Liveplex OracleEVM Network',
-    rpc: [ 'https://oracle.liveplex.io' ],
+    rpc: [ 'https://rpc.oracle.liveplex.io' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: '',
