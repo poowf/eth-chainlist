@@ -2012,6 +2012,46 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'ENULS Mainnet',
+    chain: 'ENULS',
+    rpc: [ 'https://evmapi.nuls.io', 'https://evmapi2.nuls.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'NULS', symbol: 'NULS', decimals: 18 },
+    infoURL: 'https://nuls.io',
+    shortName: 'enuls',
+    chainId: 119,
+    networkId: 119,
+    icon: 'enuls',
+    explorers: [
+      {
+        name: 'enulsscan',
+        url: 'https://evmscan.nuls.io',
+        icon: 'enuls',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ENULS Testnet',
+    chain: 'ENULS',
+    rpc: [ 'https://beta.evmapi.nuls.io', 'https://beta.evmapi2.nuls.io' ],
+    faucets: [ 'http://faucet.nuls.io' ],
+    nativeCurrency: { name: 'NULS', symbol: 'NULS', decimals: 18 },
+    infoURL: 'https://nuls.io',
+    shortName: 'enulst',
+    chainId: 120,
+    networkId: 120,
+    icon: 'enuls',
+    explorers: [
+      {
+        name: 'enulsscan',
+        url: 'https://beta.evmscan.nuls.io',
+        icon: 'enuls',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Fuse Mainnet',
     chain: 'FUSE',
     rpc: [ 'https://rpc.fuse.io' ],
@@ -3111,6 +3151,25 @@ const chainArray = [
     nativeCurrency: { name: 'Pulse', symbol: 'PLS', decimals: 18 }
   },
   {
+    name: 'Consta Testnet',
+    chain: 'tCNT',
+    rpc: [ 'https://rpc-testnet.theconsta.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'tCNT', symbol: 'tCNT', decimals: 18 },
+    infoURL: 'http://theconsta.com',
+    shortName: 'tCNT',
+    chainId: 371,
+    networkId: 371,
+    icon: 'constachain',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer-testnet.theconsta.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Lisinski',
     chain: 'CRO',
     rpc: [ 'https://rpc-bitfalls1.lisinski.online' ],
@@ -3555,6 +3614,28 @@ const chainArray = [
       {
         name: 'SX Network Toronto Explorer',
         url: 'https://explorer.toronto.sx.technology',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Endurance Smart Chain Mainnet',
+    chain: 'ACE',
+    rpc: [ 'https://rpc-endurance.fusionist.io/' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Endurance Chain Native Token',
+      symbol: 'ACE',
+      decimals: 18
+    },
+    infoURL: 'https://ace.fusionist.io/',
+    shortName: 'ace',
+    chainId: 648,
+    networkId: 648,
+    explorers: [
+      {
+        name: 'Endurance Scan',
+        url: 'https://explorer.endurance.fusionist.io',
         standard: 'EIP3091'
       }
     ]
@@ -4661,6 +4742,25 @@ const chainArray = [
         name: 'Core Scan',
         url: 'https://scan.coredao.org',
         icon: 'core',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Dogcoin Mainnet',
+    chain: 'DOGS',
+    icon: 'dogs',
+    rpc: [ 'https://mainnet-rpc.dogcoin.network' ],
+    faucets: [ 'https://faucet.dogcoin.network' ],
+    nativeCurrency: { name: 'Dogcoin', symbol: 'DOGS', decimals: 18 },
+    infoURL: 'https://dogcoin.network',
+    shortName: 'DOGSm',
+    chainId: 1117,
+    networkId: 1117,
+    explorers: [
+      {
+        name: 'Dogcoin',
+        url: 'https://explorer.dogcoin.network',
         standard: 'EIP3091'
       }
     ]
@@ -6934,6 +7034,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitindi Testnet',
+    chain: 'BNI',
+    icon: 'bitindiTestnet',
+    rpc: [ 'https://testnet-rpc.bitindi.org' ],
+    faucets: [ 'https://faucet.bitindi.org' ],
+    nativeCurrency: { name: 'BNI', symbol: '$BNI', decimals: 18 },
+    infoURL: 'https://bitindi.org',
+    shortName: 'BNIt',
+    chainId: 4096,
+    networkId: 4096,
+    explorers: [
+      {
+        name: 'Bitindi',
+        url: 'https://testnet.bitindiscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Bitindi Mainnet',
+    chain: 'BNI',
+    icon: 'bitindi',
+    rpc: [ 'https://mainnet-rpc.bitindi.org' ],
+    faucets: [ 'https://faucet.bitindi.org' ],
+    nativeCurrency: { name: 'BNI', symbol: '$BNI', decimals: 18 },
+    infoURL: 'https://bitindi.org',
+    shortName: 'BNIm',
+    chainId: 4099,
+    networkId: 4099,
+    explorers: [
+      {
+        name: 'Bitindi',
+        url: 'https://bitindiscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'AIOZ Network Testnet',
     chain: 'AIOZ',
     icon: 'aioz',
@@ -8255,6 +8393,25 @@ const chainArray = [
     networkId: 9170,
     explorers: [],
     status: 'deprecated'
+  },
+  {
+    name: 'Dogcoin Testnet',
+    chain: 'DOGS',
+    icon: 'dogs',
+    rpc: [ 'https://testnet-rpc.dogcoin.network' ],
+    faucets: [ 'https://faucet.dogcoin.network' ],
+    nativeCurrency: { name: 'Dogcoin', symbol: 'DOGS', decimals: 18 },
+    infoURL: 'https://dogcoin.network',
+    shortName: 'DOGSt',
+    chainId: 9339,
+    networkId: 9339,
+    explorers: [
+      {
+        name: 'Dogcoin',
+        url: 'https://testnet.dogcoin.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Rangers Protocol Testnet Robin',
@@ -11478,6 +11635,25 @@ const chainArray = [
     networkId: 246785
   },
   {
+    name: 'Saakuru Testnet',
+    chain: 'Saakuru',
+    icon: 'saakuru',
+    rpc: [ 'https://rpc-testnet.saakuru.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://saakuru.network',
+    shortName: 'saakuru-testnet',
+    chainId: 247253,
+    networkId: 247253,
+    explorers: [
+      {
+        name: 'saakuru-explorer-testnet',
+        url: 'https://explorer-testnet.saakuru.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CMP-Mainnet',
     chain: 'CMP',
     rpc: [
@@ -12310,6 +12486,25 @@ const chainArray = [
         url: 'https://tex-t.imversed.com',
         icon: 'imversed',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Saakuru Mainnet',
+    chain: 'Saakuru',
+    icon: 'saakuru',
+    rpc: [ 'https://rpc.saakuru.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://saakuru.network',
+    shortName: 'saakuru',
+    chainId: 7225878,
+    networkId: 7225878,
+    explorers: [
+      {
+        name: 'saakuru-explorer',
+        url: 'https://explorer.saakuru.network',
+        standard: 'EIP3091'
       }
     ]
   },
