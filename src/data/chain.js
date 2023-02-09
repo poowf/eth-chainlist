@@ -5314,6 +5314,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'AmStar Mainnet',
+    chain: 'AmStar',
+    icon: 'amstar',
+    rpc: [ 'https://mainnet-rpc.amstarscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'SINSO', symbol: 'SINSO', decimals: 18 },
+    infoURL: 'https://sinso.io',
+    shortName: 'ASAR',
+    chainId: 1388,
+    networkId: 1388,
+    explorers: [
+      {
+        name: 'amstarscan',
+        url: 'https://mainnet.amstarscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Polygon zkEVM Testnet',
     title: 'Polygon zkEVM Testnet',
     chain: 'Polygon',
@@ -6057,6 +6076,41 @@ const chainArray = [
     shortName: 'otp',
     chainId: 2043,
     networkId: 2043
+  },
+  {
+    name: 'Stratos Testnet',
+    chain: 'STOS',
+    rpc: [ 'https://web3-testnet-rpc.thestratos.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'STOS', symbol: 'STOS', decimals: 18 },
+    infoURL: 'https://www.thestratos.org',
+    shortName: 'stos-testnet',
+    chainId: 2047,
+    networkId: 2047,
+    explorers: [
+      {
+        name: 'Stratos EVM Explorer (Blockscout)',
+        url: 'https://web3-testnet-explorer.thestratos.org',
+        standard: 'none'
+      },
+      {
+        name: 'Stratos Cosmos Explorer (BigDipper)',
+        url: 'https://big-dipper-dev.thestratos.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Stratos Mainnet',
+    chain: 'STOS',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'STOS', symbol: 'STOS', decimals: 18 },
+    infoURL: 'https://www.thestratos.org',
+    shortName: 'stos-mainnet',
+    chainId: 2048,
+    networkId: 2048,
+    status: 'incubating'
   },
   {
     name: 'Quokkacoin Mainnet',
