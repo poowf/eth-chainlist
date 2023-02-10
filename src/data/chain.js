@@ -3249,6 +3249,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Frenchain Testnet',
+    chain: 'tfren',
+    rpc: [ 'https://rpc-01tn.frenchain.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'tFREN', symbol: 'FtREN', decimals: 18 },
+    infoURL: 'https://frenchain.app',
+    shortName: 'tFREN',
+    chainId: 444,
+    networkId: 444,
+    icon: 'fren',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.frenscan.io',
+        icon: 'fren',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Rupaya',
     chain: 'RUPX',
     rpc: [],
@@ -6688,6 +6708,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bifrost Mainnet',
+    title: 'The Bifrost Mainnet network',
+    chain: 'BFC',
+    rpc: [
+      'https://public-01.mainnet.thebifrost.io/rpc',
+      'https://public-02.mainnet.thebifrost.io/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Bifrost', symbol: 'BFC', decimals: 18 },
+    infoURL: 'https://thebifrost.io',
+    shortName: 'bfc',
+    chainId: 3068,
+    networkId: 3068,
+    icon: 'bifrost',
+    explorers: [
+      {
+        name: 'explorer-thebifrost',
+        url: 'https://explorer.mainnet.thebifrost.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Filecoin - Hyperspace testnet',
     chain: 'FIL',
     icon: 'filecoin',
@@ -10038,6 +10081,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Frenchain',
+    chain: 'fren',
+    rpc: [ 'https://rpc-02.frenscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'FREN', symbol: 'FREN', decimals: 18 },
+    infoURL: 'https://frenchain.app',
+    shortName: 'FREN',
+    chainId: 44444,
+    networkId: 44444,
+    icon: 'fren',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://frenscan.io',
+        icon: 'fren',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Celo Alfajores Testnet',
     chainId: 44787,
     shortName: 'ALFA',
@@ -10144,20 +10207,20 @@ const chainArray = [
     ]
   },
   {
-    name: 'Bifrost Testnet1',
+    name: 'Bifrost Testnet',
     title: 'The Bifrost Testnet network',
     chain: 'BFC',
     rpc: [
       'https://public-01.testnet.thebifrost.io/rpc',
-      'https://public-02.testnet.thebifrost.io/rpc',
-      'https://private.chain.thebifrost.io/rpc'
+      'https://public-02.testnet.thebifrost.io/rpc'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bifrost', symbol: 'BFC', decimals: 18 },
-    infoURL: 'https://testnet.thebifrost.io',
-    shortName: 'BIT',
+    infoURL: 'https://thebifrost.io',
+    shortName: 'tbfc',
     chainId: 49088,
     networkId: 49088,
+    icon: 'bifrost',
     explorers: [
       {
         name: 'explorer-thebifrost',
@@ -11938,6 +12001,26 @@ const chainArray = [
     }
   },
   {
+    name: 'Fastex Chain testnet',
+    chain: 'FTN',
+    title: 'Fastex Chain testnet',
+    rpc: [ 'https://rpc.testnet.fastexchain.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'FTN', symbol: 'FTN', decimals: 18 },
+    infoURL: 'https://fastex.com',
+    shortName: 'ftn',
+    chainId: 424242,
+    networkId: 424242,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.ftnscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Dexalot Subnet Testnet',
     chain: 'DEXALOT',
     icon: 'dexalot',
@@ -12066,16 +12149,23 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
   },
   {
-    name: 'Scroll Goerli Testnet',
+    name: 'Scroll Alpha Testnet',
     chain: 'ETH',
-    rpc: [],
+    status: 'incubating',
+    rpc: [ 'https://alpha-rpc.scroll.io/l2' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://scroll.io',
-    shortName: 'scr-goerli',
+    shortName: 'scr-alpha',
     chainId: 534353,
     networkId: 534353,
-    explorers: [],
+    explorers: [
+      {
+        name: 'Scroll Alpha Testnet Block Explorer',
+        url: 'https://blockscout.scroll.io',
+        standard: 'EIP3091'
+      }
+    ],
     parent: { type: 'L2', chain: 'eip155-5', bridges: [] }
   },
   {
