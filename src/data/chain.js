@@ -3770,6 +3770,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Canto Testnet',
+    chain: 'Canto Tesnet',
+    rpc: [ 'https://eth.plexnode.wtf/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Canto', symbol: 'CANTO', decimals: 18 },
+    infoURL: 'https://canto.io',
+    shortName: 'tcanto',
+    chainId: 740,
+    networkId: 740,
+    explorers: [
+      {
+        name: 'Canto Tesnet Explorer (Neobase)',
+        url: 'http://testnet-explorer.canto.neobase.one',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Vention Smart Chain Testnet',
     chain: 'VSCT',
     icon: 'ventionTestnet',
@@ -9208,6 +9226,25 @@ const chainArray = [
     networkId: 16001
   },
   {
+    name: 'AirDAO Mainnet',
+    chain: 'ambnet',
+    icon: 'airdao',
+    rpc: [ 'https://network.ambrosus.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Amber', symbol: 'AMB', decimals: 18 },
+    infoURL: 'https://airdao.io',
+    shortName: 'airdao',
+    chainId: 16718,
+    networkId: 16718,
+    explorers: [
+      {
+        name: 'AirDAO Network Explorer',
+        url: 'https://airdao.io/explorer',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'IVAR Chain Testnet',
     chain: 'IVAR',
     icon: 'ivar',
@@ -9399,6 +9436,25 @@ const chainArray = [
         url: 'https://taycan-cosmoscan.hupayx.io',
         standard: 'none',
         icon: 'shuffle'
+      }
+    ]
+  },
+  {
+    name: 'AirDAO Testnet',
+    chain: 'ambnet-test',
+    icon: 'airdao',
+    rpc: [ 'https://network.ambrosus-test.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Amber', symbol: 'AMB', decimals: 18 },
+    infoURL: 'https://testnet.airdao.io',
+    shortName: 'airdao-test',
+    chainId: 22040,
+    networkId: 22040,
+    explorers: [
+      {
+        name: 'AirDAO Network Explorer',
+        url: 'https://testnet.airdao.io/explorer',
+        standard: 'none'
       }
     ]
   },
@@ -11214,6 +11270,47 @@ const chainArray = [
         name: 'quarkchain-mainnet',
         url: 'https://mainnet.quarkchain.io/7',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'VeChain',
+    chain: 'VeChain',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'VeChain', symbol: 'VET', decimals: 18 },
+    infoURL: 'https://vechain.org',
+    shortName: 'vechain',
+    chainId: 100009,
+    networkId: 100009,
+    explorers: [
+      {
+        name: 'VeChain Stats',
+        url: 'https://vechainstats.com',
+        standard: 'none'
+      },
+      {
+        name: 'VeChain Explorer',
+        url: 'https://explore.vechain.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'VeChain Testnet',
+    chain: 'VeChain',
+    rpc: [],
+    faucets: [ 'https://faucet.vecha.in' ],
+    nativeCurrency: { name: 'VeChain', symbol: 'VET', decimals: 18 },
+    infoURL: 'https://vechain.org',
+    shortName: 'vechain-testnet',
+    chainId: 100010,
+    networkId: 100010,
+    explorers: [
+      {
+        name: 'VeChain Explorer',
+        url: 'https://explore-testnet.vechain.org',
+        standard: 'none'
       }
     ]
   },
