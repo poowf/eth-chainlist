@@ -1685,24 +1685,6 @@ const chainArray = [
     ]
   },
   {
-    name: 'NEXT Smart Chain',
-    chain: 'NSC',
-    rpc: [ 'https://rpc.nextsmartchain.com' ],
-    faucets: [ 'https://faucet.nextsmartchain.com' ],
-    nativeCurrency: { name: 'NEXT', symbol: 'NEXT', decimals: 18 },
-    infoURL: 'https://www.nextsmartchain.com/',
-    shortName: 'nsc',
-    chainId: 96,
-    networkId: 96,
-    explorers: [
-      {
-        name: 'Next Smart Chain Explorer',
-        url: 'https://explorer.nextsmartchain.com',
-        standard: 'none'
-      }
-    ]
-  },
-  {
     name: 'Binance Smart Chain Testnet',
     chain: 'BSC',
     rpc: [
@@ -5352,6 +5334,44 @@ const chainArray = [
     networkId: 1337
   },
   {
+    name: 'Elysium Testnet',
+    title: 'An L1, carbon-neutral, tree-planting, metaverse dedicated blockchain created by VulcanForged',
+    chain: 'Elysium',
+    rpc: [ 'https://elysium-test-rpc.vulcanforged.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'LAVA', symbol: 'LAVA', decimals: 18 },
+    infoURL: 'https://elysiumscan.vulcanforged.com',
+    shortName: 'ELST',
+    chainId: 1338,
+    networkId: 1338,
+    explorers: [
+      {
+        name: 'Elysium testnet explorer',
+        url: 'https://elysium-explorer.vulcanforged.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Elysium Mainnet',
+    title: 'An L1, carbon-neutral, tree-planting, metaverse dedicated blockchain created by VulcanForged',
+    chain: 'Elysium',
+    rpc: [ 'https://elysium-rpc.vulcanforged.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'LAVA', symbol: 'LAVA', decimals: 18 },
+    infoURL: 'https://elysiumscan.vulcanforged.com',
+    shortName: 'ELSM',
+    chainId: 1339,
+    networkId: 1339,
+    explorers: [
+      {
+        name: 'Elysium mainnet explorer',
+        url: 'https://explorer.elysiumchain.tech',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'CIC Chain Mainnet',
     chain: 'CIC',
     rpc: [ 'https://xapi.cicscan.com' ],
@@ -7327,6 +7347,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'BlackFort Exchange Network Testnet',
+    chain: 'TBXN',
+    rpc: [ 'https://testnet.blackfort.network/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'BlackFort Testnet Token', symbol: 'TBXN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://blackfort.exchange',
+    shortName: 'TBXN',
+    chainId: 4777,
+    networkId: 4777,
+    icon: 'bxn',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet-explorer.blackfort.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Venidium Testnet',
     chain: 'XVM',
     rpc: [ 'https://rpc-evm-testnet.venidium.io' ],
@@ -7359,6 +7400,32 @@ const chainArray = [
       {
         name: 'Venidium Explorer',
         url: 'https://evm.venidiumexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'BlackFort Exchange Network',
+    chain: 'BXN',
+    rpc: [
+      'https://mainnet.blackfort.network/rpc',
+      'https://mainnet-1.blackfort.network/rpc',
+      'https://mainnet-2.blackfort.network/rpc',
+      'https://mainnet-3.blackfort.network/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'BlackFort Token', symbol: 'BXN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://blackfort.exchange',
+    shortName: 'BXN',
+    chainId: 4999,
+    networkId: 4999,
+    icon: 'bxn',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.blackfort.network',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -10875,7 +10942,7 @@ const chainArray = [
     name: 'ResinCoin Mainnet',
     chain: 'RESIN',
     icon: 'resincoin',
-    rpc: [ 'https://mainnet.resincoin.dev' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'RESIN', decimals: 18 },
     infoURL: 'https://resincoin.dev',
@@ -11958,6 +12025,24 @@ const chainArray = [
       {
         name: 'Filscout - Calibration',
         url: 'https://calibration.filscout.com/en',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Oone Chain Testnet',
+    chain: 'OONE',
+    rpc: [ 'https://blockchain-test.adigium.world' ],
+    faucets: [ 'https://apps-test.adigium.com/faucet' ],
+    nativeCurrency: { name: 'Oone', symbol: 'tOONE', decimals: 18 },
+    infoURL: 'https://oone.world',
+    shortName: 'oonetest',
+    chainId: 333777,
+    networkId: 333777,
+    explorers: [
+      {
+        name: 'expedition',
+        url: 'https://explorer-test.adigium.world',
         standard: 'none'
       }
     ]
