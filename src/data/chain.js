@@ -2034,6 +2034,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'Realchain Mainnet',
+    chain: 'REAL',
+    rpc: [
+      'https://rcl-dataseed1.rclsidechain.com',
+      'https://rcl-dataseed2.rclsidechain.com',
+      'https://rcl-dataseed3.rclsidechain.com',
+      'https://rcl-dataseed4.rclsidechain.com',
+      'wss://rcl-dataseed1.rclsidechain.com/v1/',
+      'wss://rcl-dataseed2.rclsidechain.com/v1/',
+      'wss://rcl-dataseed3.rclsidechain.com/v1/',
+      'wss://rcl-dataseed4.rclsidechain.com/v1/'
+    ],
+    faucets: [ 'https://faucet.rclsidechain.com' ],
+    nativeCurrency: { name: 'Realchain', symbol: 'REAL', decimals: 18 },
+    infoURL: 'https://www.rclsidechain.com/',
+    shortName: 'REAL',
+    chainId: 121,
+    networkId: 121,
+    slip44: 714,
+    explorers: [
+      {
+        name: 'realscan',
+        url: 'https://rclscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Fuse Mainnet',
     chain: 'FUSE',
     rpc: [ 'https://rpc.fuse.io' ],
@@ -5411,7 +5439,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Polygon zkEVM Testnet',
+    name: 'Polygon zkEVM Testnet old',
     title: 'Polygon zkEVM Testnet',
     chain: 'Polygon',
     rpc: [],
@@ -5424,6 +5452,26 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
+        url: 'https://explorer.public.zkevm-test.net',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'deprecated'
+  },
+  {
+    name: 'Polygon zkEVM Testnet',
+    title: 'Polygon zkEVM Testnet',
+    chain: 'Polygon',
+    rpc: [ 'https://rpc.public.zkevm-test.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://polygon.technology/solutions/polygon-zkevm/',
+    shortName: 'testnet-zkEVM-mango',
+    chainId: 1422,
+    networkId: 1422,
+    explorers: [
+      {
+        name: 'Polygon zkEVM explorer',
         url: 'https://explorer.public.zkevm-test.net',
         standard: 'EIP3091'
       }
@@ -7908,7 +7956,11 @@ const chainArray = [
   {
     name: 'Canto',
     chain: 'Canto',
-    rpc: [ 'https://canto.slingshot.finance' ],
+    rpc: [
+      'https://canto.slingshot.finance',
+      'https://canto.neobase.one',
+      'https://mainnode.plexnode.org:8545'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Canto', symbol: 'CANTO', decimals: 18 },
     infoURL: 'https://canto.io',
