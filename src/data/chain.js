@@ -2786,24 +2786,29 @@ const chainArray = [
     ]
   },
   {
-    name: 'zkSync alpha testnet',
+    name: 'zkSync Era Testnet',
     chain: 'ETH',
     rpc: [ 'https://zksync2-testnet.zksync.dev' ],
-    faucets: [ 'https://portal.zksync.io/faucet' ],
+    faucets: [ 'https://goerli.portal.zksync.io/faucet' ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://v2-docs.zksync.io/',
+    infoURL: 'https://era.zksync.io/docs/',
     shortName: 'zksync-goerli',
     chainId: 280,
     networkId: 280,
-    icon: 'ethereum',
+    icon: 'zksync-era',
     explorers: [
       {
-        name: 'blockscout',
-        url: 'https://zksync2-testnet.zkscan.io',
-        icon: 'blockscout',
+        name: 'zkSync Era Block Explorer',
+        url: 'https://goerli.explorer.zksync.io',
+        icon: 'zksync-era',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://goerli.portal.zksync.io/bridge' } ]
+    }
   },
   {
     name: 'Boba Network',
@@ -2969,25 +2974,29 @@ const chainArray = [
     ]
   },
   {
-    name: 'zkSync v2',
+    name: 'zkSync Era Mainnet',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://zksync2-mainnet.zksync.io' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://zksync.io/',
     shortName: 'zksync',
     chainId: 324,
     networkId: 324,
-    icon: 'ethereum',
+    icon: 'zksync-era',
     explorers: [
       {
-        name: 'zkSync v2 Block Explorer',
+        name: 'zkSync Era Block Explorer',
         url: 'https://explorer.zksync.io',
+        icon: 'zksync-era',
         standard: 'EIP3091'
       }
     ],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
-    status: 'incubating'
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portal.zksync.io/bridge' } ]
+    }
   },
   {
     name: 'Web3Q Mainnet',
@@ -4861,6 +4870,25 @@ const chainArray = [
     networkId: 1131,
     icon: 'defichain-network',
     explorers: []
+  },
+  {
+    name: 'AmStar Testnet',
+    chain: 'AmStar',
+    icon: 'amstar',
+    rpc: [ 'https://testnet-rpc.amstarscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'SINSO', symbol: 'SINSO', decimals: 18 },
+    infoURL: 'https://sinso.io',
+    shortName: 'ASARt',
+    chainId: 1138,
+    networkId: 1138,
+    explorers: [
+      {
+        name: 'amstarscan-testnet',
+        url: 'https://testnet.amstarscan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MathChain',
