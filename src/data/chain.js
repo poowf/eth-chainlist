@@ -323,7 +323,6 @@ const chainArray = [
     icon: 'songbird',
     rpc: [
       'https://songbird-api.flare.network/ext/C/rpc',
-      'https://songbird.towolabs.com/ext/C/rpc',
       'https://sgb.ftso.com.au/ext/bc/C/rpc',
       'https://sgb.lightft.so/rpc',
       'https://sgb-rpc.ftso.eu'
@@ -2837,6 +2836,124 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://gateway.boba.network' } ]
     }
+  },
+  {
+    name: 'Hedera Mainnet',
+    chain: 'Hedera',
+    icon: 'hedera',
+    rpc: [ 'https://mainnet.hashio.io/api' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 8 },
+    infoURL: 'https://hedera.com',
+    shortName: 'hedera-mainnet',
+    chainId: 295,
+    networkId: 295,
+    slip44: 3030,
+    explorers: [
+      {
+        name: 'HashScan',
+        url: 'https://hashscan.io/mainnet/dashboard',
+        standard: 'none'
+      },
+      {
+        name: 'Arkhia Explorer',
+        url: 'https://explorer.arkhia.io',
+        standard: 'none'
+      },
+      {
+        name: 'DragonGlass',
+        url: 'https://app.dragonglass.me',
+        standard: 'none'
+      },
+      {
+        name: 'Hedera Explorer',
+        url: 'https://hederaexplorer.io',
+        standard: 'none'
+      },
+      {
+        name: 'Ledger Works Explore',
+        url: 'https://explore.lworks.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Hedera Testnet',
+    chain: 'Hedera',
+    icon: 'hedera',
+    rpc: [ 'https://testnet.hashio.io/api' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://portal.hedera.com' ],
+    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 8 },
+    infoURL: 'https://hedera.com',
+    shortName: 'hedera-testnet',
+    chainId: 296,
+    networkId: 296,
+    slip44: 3030,
+    explorers: [
+      {
+        name: 'HashScan',
+        url: 'https://hashscan.io/testnet/dashboard',
+        standard: 'none'
+      },
+      {
+        name: 'Arkhia Explorer',
+        url: 'https://explorer.arkhia.io',
+        standard: 'none'
+      },
+      {
+        name: 'DragonGlass',
+        url: 'https://app.dragonglass.me',
+        standard: 'none'
+      },
+      {
+        name: 'Hedera Explorer',
+        url: 'https://hederaexplorer.io',
+        standard: 'none'
+      },
+      {
+        name: 'Ledger Works Explore',
+        url: 'https://explore.lworks.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Hedera Previewnet',
+    chain: 'Hedera',
+    icon: 'hedera',
+    rpc: [ 'https://previewnet.hashio.io/api' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://portal.hedera.com' ],
+    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 8 },
+    infoURL: 'https://hedera.com',
+    shortName: 'hedera-previewnet',
+    chainId: 297,
+    networkId: 297,
+    slip44: 3030,
+    explorers: [
+      {
+        name: 'HashScan',
+        url: 'https://hashscan.io/previewnet/dashboard',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Hedera Localnet',
+    chain: 'Hedera',
+    icon: 'hedera',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 8 },
+    infoURL: 'https://hedera.com',
+    shortName: 'hedera-localnet',
+    chainId: 298,
+    networkId: 298,
+    slip44: 3030,
+    explorers: []
   },
   {
     name: 'Optimism on Gnosis',
@@ -8002,8 +8119,13 @@ const chainArray = [
         standard: 'none'
       },
       {
-        name: 'Canto Cosmos Explorer (BigDipper)',
-        url: 'https://cosmos.explorer.canto.io',
+        name: 'Canto Cosmos Explorer',
+        url: 'https://cosmos-explorers.neobase.one',
+        standard: 'none'
+      },
+      {
+        name: 'Canto EVM Explorer (Blockscout)',
+        url: 'https://tuber.build',
         standard: 'none'
       }
     ]
