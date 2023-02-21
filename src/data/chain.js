@@ -3756,6 +3756,24 @@ const chainArray = [
     networkId: 600
   },
   {
+    name: 'Graphlinq Blockchain Mainnet',
+    chain: 'GLQ Blockchain',
+    rpc: [ 'https://glq-dataseed.graphlinq.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'GLQ', symbol: 'GLQ', decimals: 18 },
+    infoURL: 'https://graphlinq.io',
+    shortName: 'glq',
+    chainId: 614,
+    networkId: 614,
+    explorers: [
+      {
+        name: 'GLQ Explorer',
+        url: 'https://explorer.graphlinq.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'SX Network Testnet',
     chain: 'SX',
     icon: 'SX',
@@ -8494,6 +8512,7 @@ const chainArray = [
   {
     name: 'MARO Blockchain Mainnet',
     chain: 'MARO Blockchain',
+    icon: 'MARO',
     rpc: [ 'https://rpc-mainnet.ma.ro' ],
     faucets: [],
     nativeCurrency: { name: 'MARO', symbol: 'MARO', decimals: 18 },
@@ -9352,6 +9371,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'BLG Testnet',
+    chain: 'BLG',
+    icon: 'blg',
+    rpc: [ 'https://rpc.blgchain.com' ],
+    faucets: [ 'https://faucet.blgchain.com' ],
+    nativeCurrency: { name: 'Blg', symbol: 'BLG', decimals: 18 },
+    infoURL: 'https://blgchain.com',
+    shortName: 'blgchain',
+    chainId: 12321,
+    networkId: 12321
   },
   {
     name: 'Step Testnet',
