@@ -6001,6 +6001,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitcichain Mainnet',
+    chain: 'BITCI',
+    icon: 'bitci',
+    rpc: [ 'https://rpc.bitci.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitci', symbol: 'BITCI', decimals: 18 },
+    infoURL: 'https://www.bitcichain.com',
+    shortName: 'bitci',
+    chainId: 1907,
+    networkId: 1907,
+    explorers: [
+      {
+        name: 'Bitci Explorer',
+        url: 'https://bitciexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Bitcichain Testnet',
+    chain: 'TBITCI',
+    icon: 'bitci',
+    rpc: [ 'https://testnet.bitcichain.com' ],
+    faucets: [ 'https://faucet.bitcichain.com' ],
+    nativeCurrency: { name: 'Test Bitci', symbol: 'TBITCI', decimals: 18 },
+    infoURL: 'https://www.bitcichain.com',
+    shortName: 'tbitci',
+    chainId: 1908,
+    networkId: 1908,
+    explorers: [
+      {
+        name: 'Bitci Explorer Testnet',
+        url: 'https://testnet.bitciexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ONUS Chain Testnet',
     title: 'ONUS Chain Testnet',
     chain: 'onus',
@@ -7876,8 +7914,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'Hika Devnet',
-    chain: 'Hika Network Testnet',
+    name: 'Hika Network Testnet',
+    title: 'Hika Network Testnet',
+    chain: 'HIK',
     icon: 'hik',
     rpc: [ 'https://rpc-testnet.hika.network/' ],
     faucets: [],
@@ -11337,6 +11376,29 @@ const chainArray = [
         name: 'polygonscan',
         url: 'https://mumbai.polygonscan.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Base Goerli Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://goerli.base.org' ],
+    faucets: [ 'https://www.coinbase.com/faucets/base-ethereum-goerli-faucet' ],
+    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://base.org',
+    shortName: 'basegor',
+    chainId: 84531,
+    networkId: 84531,
+    explorers: [
+      {
+        name: 'basescan',
+        url: 'https://goerli.basescan.org',
+        standard: 'none'
+      },
+      {
+        name: 'basescout',
+        url: 'https://base-goerli.blockscout.com',
+        standard: 'none'
       }
     ]
   },
