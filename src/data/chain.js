@@ -5788,6 +5788,28 @@ const chainArray = [
     networkId: 1657
   },
   {
+    name: 'Horizen Yuma Testnet',
+    shortName: 'Yuma',
+    chain: 'Yuma',
+    icon: 'eon',
+    rpc: [ 'https://yuma-testnet.horizenlabs.io/ethv1' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://yuma-testnet-faucet.horizen.io' ],
+    nativeCurrency: { name: 'Testnet Zen', symbol: 'tZEN', decimals: 18 },
+    infoURL: 'https://horizen.io/',
+    chainId: 1662,
+    networkId: 1662,
+    slip44: 121,
+    explorers: [
+      {
+        name: 'Yuma Testnet Block Explorer',
+        url: 'https://yuma-explorer.horizen.io',
+        icon: 'eon',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'LUDAN Mainnet',
     chain: 'LUDAN',
     rpc: [ 'https://rpc.ludan.org/' ],
@@ -6160,7 +6182,10 @@ const chainArray = [
   {
     name: 'edeXa Testnet',
     chain: 'edeXa TestNetwork',
-    rpc: [ 'https://testnet.edexa.com/rpc' ],
+    rpc: [
+      'https://testnet.edexa.com/rpc',
+      'https://io-dataseed1.testnet.edexa.io-market.com/rpc'
+    ],
     faucets: [ 'https://faucet.edexa.com/' ],
     nativeCurrency: { name: 'EDEXA', symbol: 'EDX', decimals: 18 },
     infoURL: 'https://edexa.com/',
@@ -6769,6 +6794,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Arevia',
+    chain: 'Arevia',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Arev', symbol: 'ARÉV', decimals: 18 },
+    infoURL: '',
+    shortName: 'arevia',
+    chainId: 2309,
+    networkId: 2309,
+    explorers: [],
+    status: 'incubating'
   },
   {
     name: 'Altcoinchain',
@@ -8518,6 +8556,18 @@ const chainArray = [
     shortName: 'Kortho',
     chainId: 8285,
     networkId: 8285
+  },
+  {
+    name: 'Base',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://base.org',
+    shortName: 'base',
+    chainId: 8453,
+    networkId: 8453,
+    status: 'incubating'
   },
   {
     name: 'Toki Network',
