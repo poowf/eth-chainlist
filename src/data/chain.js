@@ -7574,6 +7574,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tipboxcoin Testnet',
+    chain: 'TPBX',
+    icon: 'tipboxcoinIcon',
+    rpc: [ 'https://testnet-rpc.tipboxcoin.net' ],
+    faucets: [ 'https://faucet.tipboxcoin.net' ],
+    nativeCurrency: { name: 'Tipboxcoin', symbol: 'TPBX', decimals: 18 },
+    infoURL: 'https://tipboxcoin.net',
+    shortName: 'TPBXt',
+    chainId: 4141,
+    networkId: 4141,
+    explorers: [
+      {
+        name: 'Tipboxcoin',
+        url: 'https://testnet.tipboxcoin.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PHI Network V1',
     chain: 'PHI V1',
     rpc: [ 'https://rpc1.phi.network', 'https://rpc2.phi.network' ],
@@ -12533,6 +12552,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tipboxcoin Mainnet',
+    chain: 'TPBX',
+    icon: 'tipboxcoinIcon',
+    rpc: [ 'https://mainnet-rpc.tipboxcoin.net' ],
+    faucets: [ 'https://faucet.tipboxcoin.net' ],
+    nativeCurrency: { name: 'Tipboxcoin', symbol: 'TPBX', decimals: 18 },
+    infoURL: 'https://tipboxcoin.net',
+    shortName: 'TPBXm',
+    chainId: 404040,
+    networkId: 404040,
+    explorers: [
+      {
+        name: 'Tipboxcoin',
+        url: 'https://tipboxcoin.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Kekchain',
     chain: 'kek',
     rpc: [ 'https://mainnet.kekchain.com' ],
@@ -13689,6 +13727,7 @@ const chainArray = [
     shortName: 'bakerloo-0',
     chainId: 65010000,
     networkId: 65010000,
+    icon: 'autonity',
     explorers: [
       {
         name: 'autonity-blockscout',
@@ -13710,6 +13749,7 @@ const chainArray = [
     shortName: 'piccadilly-0',
     chainId: 65100000,
     networkId: 65100000,
+    icon: 'autonity',
     explorers: [
       {
         name: 'autonity-blockscout',
