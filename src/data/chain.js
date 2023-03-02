@@ -8252,6 +8252,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'KLYNTAR',
+    chain: 'KLY',
+    rpc: [
+      'https://evm.klyntar.org/kly_evm_rpc',
+      'https://evm.klyntarscan.org/kly_evm_rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'KLYNTAR', symbol: 'KLY', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://klyntar.org',
+    shortName: 'kly',
+    chainId: 7331,
+    networkId: 7331,
+    icon: 'klyntar',
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'Shyft Mainnet',
     chain: 'SHYFT',
     icon: 'shyft',
@@ -12092,6 +12110,35 @@ const chainArray = [
       {
         name: 'quarkchain-devnet',
         url: 'https://devnet.quarkchain.io/7',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Siberium Network',
+    chain: 'SBR',
+    rpc: [
+      'https://rpc.main.siberium.net',
+      'https://rpc.main.siberium.net.ru'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Siberium', symbol: 'SBR', decimals: 18 },
+    infoURL: 'https://siberium.net',
+    shortName: 'sbr',
+    chainId: 111111,
+    networkId: 111111,
+    icon: 'siberium',
+    explorers: [
+      {
+        name: 'Siberium Mainnet Explorer - blockscout - 1',
+        url: 'https://explorer.main.siberium.net',
+        icon: 'siberium',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Siberium Mainnet Explorer - blockscout - 2',
+        url: 'https://explorer.main.siberium.net.ru',
+        icon: 'siberium',
         standard: 'EIP3091'
       }
     ]
