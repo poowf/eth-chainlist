@@ -3078,6 +3078,21 @@ const chainArray = [
         url: 'https://filfox.info/en',
         standard: 'none'
       },
+      {
+        name: 'Beryx',
+        url: 'https://beryx.zondax.ch',
+        standard: 'none'
+      },
+      {
+        name: 'Glif Explorer',
+        url: 'https://explorer.glif.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Filmine',
+        url: 'https://explorer.filmine.io',
+        standard: 'none'
+      },
       { name: 'Filscan', url: 'https://filscan.io', standard: 'none' },
       {
         name: 'Filscout',
@@ -6095,6 +6110,28 @@ const chainArray = [
     infoURL: ''
   },
   {
+    name: 'Eleanor',
+    title: 'Metatime Testnet Eleanor',
+    chain: 'MTC',
+    rpc: [
+      'https://rpc.metatime.com/eleanor',
+      'wss://ws.metatime.com/eleanor'
+    ],
+    faucets: [ 'https://faucet.metatime.com/eleanor' ],
+    nativeCurrency: { name: 'Eleanor Metacoin', symbol: 'MTC', decimals: 18 },
+    infoURL: 'https://eleanor.metatime.com',
+    shortName: 'mtc',
+    chainId: 1967,
+    networkId: 1967,
+    explorers: [
+      {
+        name: 'metaexplorer-eleanor',
+        url: 'https://explorer.metatime.com/eleanor',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Atelier',
     title: 'Atelier Test Network',
     chain: 'ALTR',
@@ -7121,6 +7158,7 @@ const chainArray = [
     icon: 'filecoin',
     rpc: [
       'https://api.hyperspace.node.glif.io/rpc/v1',
+      'https://rpc.ankr.com/filecoin_testnet',
       'https://filecoin-hyperspace.chainstacklabs.com/rpc/v1'
     ],
     faucets: [ 'https://hyperspace.yoga/#faucet' ],
