@@ -9479,6 +9479,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'HashBit Mainnet',
+    chain: 'HBIT',
+    rpc: [ 'https://mainnet-rpc.hashbit.org', 'https://rpc.hashbit.org' ],
+    faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/' ],
+    nativeCurrency: { name: 'HashBit Native Token', symbol: 'HBIT', decimals: 18 },
+    infoURL: 'https://hashbit.org',
+    shortName: 'hbit',
+    chainId: 11119,
+    networkId: 11119,
+    explorers: [
+      {
+        name: 'hashbitscan',
+        url: 'https://explorer.hashbit.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Haqq Network',
     chain: 'Haqq',
     rpc: [ 'https://rpc.eth.haqq.network' ],
@@ -12949,6 +12967,25 @@ const chainArray = [
       {
         name: 'Scroll L2 Block Explorer',
         url: 'https://l2scan.scroll.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'BeanEco SmartChain',
+    title: 'BESC Mainnet',
+    chain: 'BESC',
+    rpc: [ 'https://mainnet-rpc.bescscan.io' ],
+    faucets: [ 'faucet.bescscan.ion' ],
+    nativeCurrency: { name: 'BeanEco SmartChain', symbol: 'BESC', decimals: 18 },
+    infoURL: 'besceco.finance',
+    shortName: 'BESC',
+    chainId: 535037,
+    networkId: 535037,
+    explorers: [
+      {
+        name: 'bescscan',
+        url: 'https://Bescscan.io',
         standard: 'EIP3091'
       }
     ]
