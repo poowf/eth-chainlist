@@ -7,7 +7,8 @@ const chainArray = [
       'https://mainnet.infura.io/v3/${INFURA_API_KEY}',
       'wss://mainnet.infura.io/ws/v3/${INFURA_API_KEY}',
       'https://api.mycryptoapi.com/eth',
-      'https://cloudflare-eth.com'
+      'https://cloudflare-eth.com',
+      'https://ethereum.publicnode.com'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -988,6 +989,7 @@ const chainArray = [
       'https://bsc-dataseed2.ninicoin.io',
       'https://bsc-dataseed3.ninicoin.io',
       'https://bsc-dataseed4.ninicoin.io',
+      'https://bsc.publicnode.com',
       'wss://bsc-ws-node.nariox.org'
     ],
     faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/' ],
@@ -2739,7 +2741,7 @@ const chainArray = [
   {
     name: 'Fantom Opera',
     chain: 'FTM',
-    rpc: [ 'https://rpc.ftm.tools' ],
+    rpc: [ 'https://rpc.ftm.tools', 'https://fantom.publicnode.com' ],
     faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/' ],
     nativeCurrency: { name: 'Fantom', symbol: 'FTM', decimals: 18 },
     infoURL: 'https://fantom.foundation',
@@ -5879,6 +5881,27 @@ const chainArray = [
     shortName: 'tTBSI',
     chainId: 1708,
     networkId: 1708
+  },
+  {
+    name: 'Palette Chain Mainnet',
+    chain: 'PLT',
+    rpc: [ 'https://palette-rpc.com:22000' ],
+    faucets: [],
+    nativeCurrency: { name: 'Palette Token', symbol: 'PLT', decimals: 18 },
+    features: [],
+    infoURL: 'https://hashpalette.com/',
+    shortName: 'PaletteChain',
+    chainId: 1718,
+    networkId: 1718,
+    icon: 'PLT',
+    explorers: [
+      {
+        name: 'Palettescan',
+        url: 'https://palettescan.com',
+        icon: 'PLT',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Kerleano',
@@ -10737,7 +10760,10 @@ const chainArray = [
     name: 'Avalanche C-Chain',
     chain: 'AVAX',
     icon: 'avax',
-    rpc: [ 'https://api.avax.network/ext/bc/C/rpc' ],
+    rpc: [
+      'https://api.avax.network/ext/bc/C/rpc',
+      'https://avalanche-c-chain.publicnode.com'
+    ],
     features: [ { name: 'EIP1559' } ],
     faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/' ],
     nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
