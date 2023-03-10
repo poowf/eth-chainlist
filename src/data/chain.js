@@ -416,7 +416,7 @@ const chainArray = [
   {
     name: 'Cronos Mainnet Beta',
     chain: 'CRO',
-    rpc: [ 'https://evm.cronos.org' ],
+    rpc: [ 'https://evm.cronos.org', 'https://cronos-evm.publicnode.com' ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Cronos', symbol: 'CRO', decimals: 18 },
@@ -8789,7 +8789,7 @@ const chainArray = [
   {
     name: 'TMY Chain',
     chain: 'TMY',
-    icon: 'ethereum',
+    icon: 'tmychain',
     rpc: [ 'https://node1.tmyblockchain.org/rpc' ],
     faucets: [ 'https://faucet.tmychain.org/' ],
     nativeCurrency: { name: 'TMY', symbol: 'TMY', decimals: 18 },
