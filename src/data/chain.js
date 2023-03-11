@@ -2213,6 +2213,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'iExec Sidechain',
+    chain: 'Bellecour',
+    icon: 'rlc',
+    rpc: [ 'https://bellecour.iex.ec' ],
+    faucets: [],
+    nativeCurrency: { name: 'xRLC', symbol: 'xRLC', decimals: 18 },
+    infoURL: 'https://iex.ec',
+    shortName: 'rlc',
+    chainId: 134,
+    networkId: 134,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.bellecour.iex.ec',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Alyx Chain Testnet',
     chain: 'Alyx Chain Testnet',
     rpc: [ 'https://testnet-rpc.alyxchain.com' ],
@@ -5604,7 +5624,7 @@ const chainArray = [
     name: 'Elysium Mainnet',
     title: 'An L1, carbon-neutral, tree-planting, metaverse dedicated blockchain created by VulcanForged',
     chain: 'Elysium',
-    rpc: [ 'https://elysium-rpc.vulcanforged.com' ],
+    rpc: [ 'https://rpc.elysiumchain.tech/' ],
     faucets: [],
     nativeCurrency: { name: 'LAVA', symbol: 'LAVA', decimals: 18 },
     infoURL: 'https://elysiumscan.vulcanforged.com',
