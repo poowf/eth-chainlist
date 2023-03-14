@@ -832,7 +832,6 @@ const chainArray = [
       {
         name: 'etmp',
         url: 'https://pioneer.etmscan.network',
-        icon: 'etmpscan',
         standard: 'EIP3091'
       }
     ]
@@ -1332,7 +1331,6 @@ const chainArray = [
       {
         name: 'explorer',
         url: 'https://explorer.idchain.one',
-        icon: 'etherscan',
         standard: 'EIP3091'
       }
     ]
@@ -1781,7 +1779,6 @@ const chainArray = [
       {
         name: 'gnosisscan',
         url: 'https://gnosisscan.io',
-        icon: 'gnosisscan',
         standard: 'EIP3091'
       },
       {
@@ -2546,6 +2543,42 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'OKBChain Testnet',
+    chain: 'okbchain',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: {
+      name: 'OKBChain Global Utility Token in testnet',
+      symbol: 'OKB',
+      decimals: 18
+    },
+    features: [],
+    infoURL: 'https://www.okex.com/okc',
+    shortName: 'tokb',
+    chainId: 195,
+    networkId: 195,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
+    name: 'OKBChain Mainnet',
+    chain: 'okbchain',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: {
+      name: 'OKBChain Global Utility Token',
+      symbol: 'OKB',
+      decimals: 18
+    },
+    features: [],
+    infoURL: 'https://www.okex.com/okc',
+    shortName: 'okb',
+    chainId: 196,
+    networkId: 196,
+    explorers: [],
+    status: 'incubating'
   },
   {
     name: 'BitTorrent Chain Mainnet',
@@ -4613,7 +4646,7 @@ const chainArray = [
       {
         name: 'Memo Mainnet Explorer',
         url: 'https://scan.metamemo.one:8080',
-        icon: 'memoscan',
+        icon: 'memo',
         standard: 'EIP3091'
       }
     ]
@@ -7321,7 +7354,6 @@ const chainArray = [
       {
         name: 'Paribu Net Explorer',
         url: 'https://explorer.paribu.network',
-        icon: 'explorer',
         standard: 'EIP3091'
       }
     ]
@@ -7341,7 +7373,6 @@ const chainArray = [
       {
         name: 'Paribu Net Testnet Explorer',
         url: 'https://testnet.paribuscan.com',
-        icon: 'explorer',
         standard: 'EIP3091'
       }
     ]
@@ -7430,12 +7461,10 @@ const chainArray = [
     shortName: 'btx',
     chainId: 3690,
     networkId: 3690,
-    icon: 'ethereum',
     explorers: [
       {
         name: 'bittexscan',
         url: 'https://bittexscan.com',
-        icon: 'etherscan',
         standard: 'EIP3091'
       }
     ]
@@ -7493,7 +7522,6 @@ const chainArray = [
       {
         name: 'DRAC_Network Scan',
         url: 'https://www.dracscan.io',
-        icon: 'DRAC',
         standard: 'EIP3091'
       }
     ]
@@ -8801,7 +8829,6 @@ const chainArray = [
       {
         name: 'alphscan',
         url: 'https://explorer.alph.network',
-        icon: 'alphscan',
         standard: 'EIP3091'
       }
     ]
@@ -9196,7 +9223,6 @@ const chainArray = [
       {
         name: 'QEasyWeb3 Explorer',
         url: 'https://www.qeasyweb3.com',
-        icon: 'qetscan',
         standard: 'EIP3091'
       }
     ]
@@ -9806,7 +9832,6 @@ const chainArray = [
       {
         name: 'phoenixplorer',
         url: 'https://phoenixplorer.com',
-        icon: 'phoenixplorer',
         standard: 'EIP3091'
       }
     ]
@@ -12549,7 +12574,6 @@ const chainArray = [
       {
         name: 'explorer masnet',
         url: 'https://explorer.masnet.ai',
-        icon: 'explorer',
         standard: 'EIP3091'
       }
     ]
@@ -12723,6 +12747,26 @@ const chainArray = [
     shortName: 'olympus',
     chainId: 333999,
     networkId: 333999
+  },
+  {
+    name: 'HAPchain Testnet',
+    chain: 'HAPchain',
+    rpc: [ 'https://jsonrpc-test.hap.land' ],
+    faucets: [],
+    nativeCurrency: { name: 'HAP', symbol: 'HAP', decimals: 18 },
+    infoURL: 'https://hap.land',
+    shortName: 'hap-testnet',
+    chainId: 373737,
+    networkId: 373737,
+    icon: 'hap',
+    explorers: [
+      {
+        name: 'HAP EVM Explorer (Blockscout)',
+        url: 'https://blockscout-test.hap.land',
+        standard: 'none',
+        icon: 'hap'
+      }
+    ]
   },
   {
     name: 'Metal C-Chain',
@@ -13640,6 +13684,26 @@ const chainArray = [
     parent: { chain: 'eip155-2099156', type: 'L2' }
   },
   {
+    name: 'HAPchain',
+    chain: 'HAPchain',
+    rpc: [ 'https://jsonrpc.hap.land' ],
+    faucets: [],
+    nativeCurrency: { name: 'HAP', symbol: 'HAP', decimals: 18 },
+    infoURL: 'https://hap.land',
+    shortName: 'hap',
+    chainId: 8794598,
+    networkId: 8794598,
+    icon: 'hap',
+    explorers: [
+      {
+        name: 'HAP EVM Explorer (Blockscout)',
+        url: 'https://blockscout.hap.land',
+        standard: 'none',
+        icon: 'hap'
+      }
+    ]
+  },
+  {
     name: 'Plian Testnet Subchain 1',
     chain: 'Plian',
     rpc: [ 'https://testnet.plian.io/child_test' ],
@@ -14202,6 +14266,27 @@ const chainArray = [
     shortName: 'ipos',
     chainId: 1122334455,
     networkId: 1122334455
+  },
+  {
+    name: 'CyberdeckNet',
+    chain: 'cyberdeck',
+    rpc: [ 'http://cybeth1.cyberdeck.eu:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cyb', symbol: 'CYB', decimals: 18 },
+    infoURL: 'https://cyberdeck.eu',
+    shortName: 'cyb',
+    chainId: 1146703430,
+    networkId: 1146703430,
+    icon: 'cyberdeck',
+    status: 'active',
+    explorers: [
+      {
+        name: 'CybEthExplorer',
+        url: 'http://cybeth1.cyberdeck.eu:8000',
+        icon: 'cyberdeck',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Aurora Mainnet',
