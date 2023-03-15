@@ -13480,9 +13480,7 @@ const chainArray = [
       'https://devnetopenapi2.platon.network/rpc',
       'wss://devnetopenapi2.platon.network/ws'
     ],
-    faucets: [
-      'https://faucet.platon.network/faucet/?id=e5d32df10aee11ec911142010a667c03'
-    ],
+    faucets: [ 'https://devnet2faucet.platon.network/faucet' ],
     nativeCurrency: { name: 'LAT', symbol: 'lat', decimals: 18 },
     infoURL: 'https://www.platon.network',
     shortName: 'platondev',
