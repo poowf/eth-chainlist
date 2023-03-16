@@ -3119,7 +3119,10 @@ const chainArray = [
     name: 'Filecoin - Mainnet',
     chain: 'FIL',
     icon: 'filecoin',
-    rpc: [ 'https://api.node.glif.io/', 'https://rpc.ankr.com/filecoin' ],
+    rpc: [
+      'https://api.node.glif.io/',
+      'https://rpc.ankr.com/filecoin, https://filecoin-mainnet.chainstacklabs.com/rpc/v1'
+    ],
     faucets: [],
     nativeCurrency: { name: 'filecoin', symbol: 'FIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
@@ -3144,8 +3147,8 @@ const chainArray = [
         standard: 'EIP3091'
       },
       {
-        name: 'Filmine',
-        url: 'https://explorer.filmine.io',
+        name: 'Dev.storage',
+        url: 'https://dev.storage',
         standard: 'none'
       },
       { name: 'Filscan', url: 'https://filscan.io', standard: 'none' },
@@ -3464,6 +3467,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'LA Testnet',
+    chain: 'LATestnet',
+    rpc: [ 'https://rpc.testnet.lachain.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Test La Coin', symbol: 'TLA', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: '',
+    shortName: 'latestnet',
+    chainId: 418,
+    networkId: 418,
+    explorers: []
   },
   {
     name: 'Optimism Goerli Testnet',
@@ -5732,6 +5748,26 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'Polygon zkEVM Testnet Pre Audit-Upgraded',
+    title: 'Polygon zkEVM Testnet Pre Audit-Upgraded',
+    chain: 'Polygon',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://polygon.technology/solutions/polygon-zkevm/',
+    shortName: 'testnet-zkEVM-mango-pre-audit-upgraded',
+    chainId: 1422,
+    networkId: 1422,
+    explorers: [
+      {
+        name: 'Polygon zkEVM explorer',
+        url: 'https://explorer.public.zkevm-test.net',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'deprecated'
+  },
+  {
     name: 'Polygon zkEVM Testnet',
     title: 'Polygon zkEVM Testnet',
     chain: 'Polygon',
@@ -5740,8 +5776,8 @@ const chainArray = [
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://polygon.technology/solutions/polygon-zkevm/',
     shortName: 'testnet-zkEVM-mango',
-    chainId: 1422,
-    networkId: 1422,
+    chainId: 1442,
+    networkId: 1442,
     explorers: [
       {
         name: 'Polygon zkEVM explorer',
@@ -7261,8 +7297,8 @@ const chainArray = [
         standard: 'none'
       },
       {
-        name: 'Filmine',
-        url: 'https://explorer.filmine.io',
+        name: 'Dev.storage',
+        url: 'https://dev.storage',
         standard: 'none'
       },
       {
@@ -12702,6 +12738,11 @@ const chainArray = [
       {
         name: 'Filscout - Calibration',
         url: 'https://calibration.filscout.com/en',
+        standard: 'none'
+      },
+      {
+        name: 'Filfox - Calibration',
+        url: 'https://calibration.filfox.info',
         standard: 'none'
       }
     ]
