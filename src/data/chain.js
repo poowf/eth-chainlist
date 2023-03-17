@@ -3121,7 +3121,8 @@ const chainArray = [
     icon: 'filecoin',
     rpc: [
       'https://api.node.glif.io/',
-      'https://rpc.ankr.com/filecoin, https://filecoin-mainnet.chainstacklabs.com/rpc/v1'
+      'https://rpc.ankr.com/filecoin',
+      'https://filecoin-mainnet.chainstacklabs.com/rpc/v1'
     ],
     faucets: [],
     nativeCurrency: { name: 'filecoin', symbol: 'FIL', decimals: 18 },
@@ -5064,7 +5065,7 @@ const chainArray = [
     name: 'Core Blockchain Mainnet',
     chain: 'Core',
     icon: 'core',
-    rpc: [ 'https://rpc.coredao.org/' ],
+    rpc: [ 'https://rpc.coredao.org/', 'https://rpc-core.icecreamswap.com' ],
     faucets: [],
     nativeCurrency: {
       name: 'Core Blockchain Native Token',
@@ -5766,6 +5767,25 @@ const chainArray = [
       }
     ],
     status: 'deprecated'
+  },
+  {
+    name: 'Rikeza Network Mainnet',
+    title: 'Rikeza Network Mainnet',
+    chain: 'Rikeza',
+    rpc: [ 'https://rpc.rikscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Rikeza', symbol: 'RIK', decimals: 18 },
+    infoURL: 'https://rikeza.io',
+    shortName: 'RIK',
+    chainId: 1433,
+    networkId: 1433,
+    explorers: [
+      {
+        name: 'Rikeza Blockchain explorer',
+        url: 'https://rikscan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Polygon zkEVM Testnet',
@@ -6533,26 +6553,63 @@ const chainArray = [
     ]
   },
   {
-    name: 'Edgeware Mainnet',
+    name: 'Edgeware EdgeEVM Mainnet',
     chain: 'EDG',
-    rpc: [ 'https://mainnet1.edgewa.re' ],
+    icon: 'edgeware',
+    rpc: [
+      'https://edgeware-evm.jelliedowl.net',
+      'https://mainnet2.edgewa.re/evm',
+      'https://mainnet3.edgewa.re/evm',
+      'https://mainnet4.edgewa.re/evm',
+      'https://mainnet5.edgewa.re/evm',
+      'wss://edgeware.jelliedowl.net',
+      'wss://mainnet2.edgewa.re',
+      'wss://mainnet3.edgewa.re',
+      'wss://mainnet4.edgewa.re',
+      'wss://mainnet5.edgewa.re'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'Edge', symbol: 'EDG', decimals: 18 },
-    infoURL: 'http://edgewa.re',
+    nativeCurrency: { name: 'Edgeware', symbol: 'EDG', decimals: 18 },
+    infoURL: 'https://edgeware.io',
     shortName: 'edg',
     chainId: 2021,
-    networkId: 2021
+    networkId: 2021,
+    slip44: 523,
+    explorers: [
+      {
+        name: 'Edgscan by Bharathcoorg',
+        url: 'https://edgscan.live',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Subscan',
+        url: 'https://edgeware.subscan.io',
+        standard: 'none',
+        icon: 'subscan'
+      }
+    ]
   },
   {
-    name: 'Beresheet Testnet',
+    name: 'Beresheet BereEVM Testnet',
     chain: 'EDG',
-    rpc: [ 'https://beresheet1.edgewa.re' ],
+    rpc: [
+      'https://beresheet-evm.jelliedowl.net',
+      'wss://beresheet.jelliedowl.net'
+    ],
     faucets: [],
-    nativeCurrency: { name: 'Testnet Edge', symbol: 'tEDG', decimals: 18 },
-    infoURL: 'http://edgewa.re',
+    nativeCurrency: { name: 'Testnet EDG', symbol: 'tEDG', decimals: 18 },
+    infoURL: 'https://edgeware.io/build',
     shortName: 'edgt',
     chainId: 2022,
-    networkId: 2022
+    networkId: 2022,
+    explorers: [
+      {
+        name: 'Edgscan by Bharathcoorg',
+        url: 'https://testnet.edgscan.live',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Taycan Testnet',
@@ -9815,6 +9872,25 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-43113' }
   },
   {
+    name: 'Rikeza Network Testnet',
+    title: 'Rikeza Network Testnet',
+    chain: 'Rikeza',
+    rpc: [ 'https://testnet-rpc.rikscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Rikeza', symbol: 'RIK', decimals: 18 },
+    infoURL: 'https://rikeza.io',
+    shortName: 'tRIK',
+    chainId: 12715,
+    networkId: 12715,
+    explorers: [
+      {
+        name: 'Rikeza Blockchain explorer',
+        url: 'https://testnet.rikscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SPS',
     chain: 'SPS',
     rpc: [ 'https://rpc.ssquad.games' ],
@@ -10542,6 +10618,24 @@ const chainArray = [
         url: 'https://fsnscan.com',
         icon: 'fsnscan',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zilliqa EVM Testnet',
+    chain: 'ZIL',
+    rpc: [ 'https://dev-api.zilliqa.com' ],
+    faucets: [ 'https://dev-wallet.zilliqa.com/faucet?network=testnet' ],
+    nativeCurrency: { name: 'Zilliqa', symbol: 'ZIL', decimals: 18 },
+    infoURL: 'https://www.zilliqa.com/',
+    shortName: 'zil-testnet',
+    chainId: 33101,
+    networkId: 33101,
+    explorers: [
+      {
+        name: 'Zilliqa EVM Explorer',
+        url: 'https://evmx.zilliqa.com',
+        standard: 'none'
       }
     ]
   },
