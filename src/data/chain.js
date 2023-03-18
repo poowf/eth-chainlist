@@ -8336,6 +8336,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Scolcoin WeiChain Testnet',
+    chain: 'SCOLWEI-testnet',
+    rpc: [ 'https://testnet-rpc.scolcoin.com' ],
+    faucets: [ 'https://faucet.scolcoin.com' ],
+    nativeCurrency: { name: 'Scolcoin', symbol: 'SCOL', decimals: 18 },
+    infoURL: 'https://scolcoin.com',
+    shortName: 'SRC-test',
+    chainId: 6552,
+    networkId: 6552,
+    icon: 'scolcoin',
+    explorers: [
+      {
+        name: 'Scolscan Testnet Explorer',
+        url: 'https://testnet-explorer.scolcoin.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Pixie Chain Mainnet',
     chain: 'PixieChain',
     rpc: [
@@ -11485,6 +11504,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Scolcoin Mainnet',
+    chain: 'SCOLWEI',
+    rpc: [ 'https://mainnet-rpc.scolcoin.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Scolcoin', symbol: 'SCOL', decimals: 18 },
+    infoURL: 'https://scolcoin.com',
+    shortName: 'SRC',
+    chainId: 65450,
+    networkId: 65450,
+    icon: 'scolcoin',
+    explorers: [
+      {
+        name: 'Scolscan Explorer',
+        url: 'https://explorer.scolcoin.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SiriusNet',
     chain: 'SIN',
     status: 'deprecated',
@@ -14418,6 +14456,26 @@ const chainArray = [
         url: 'http://cybeth1.cyberdeck.eu:8000',
         icon: 'cyberdeck',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'HUMAN Protocol',
+    title: 'HUMAN Protocol',
+    chain: 'wan-red-ain',
+    rpc: [ 'https://mainnet.skalenodes.com/v1/wan-red-ain' ],
+    faucets: [ 'https://dashboard.humanprotocol.org/faucet' ],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: 'https://www.humanprotocol.org',
+    shortName: 'human-mainnet',
+    chainId: 1273227453,
+    networkId: 1273227453,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://wan-red-ain.explorer.mainnet.skalenodes.com',
+        icon: 'human',
+        standard: 'EIP3091'
       }
     ]
   },
