@@ -10024,6 +10024,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'LoopNetwork Mainnet',
+    chain: 'LoopNetwork',
+    rpc: [ 'https://api.mainnetloop.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'LOOP', symbol: 'LOOP', decimals: 18 },
+    infoURL: 'http://theloopnetwork.org/',
+    shortName: 'loop',
+    chainId: 15551,
+    networkId: 15551,
+    explorers: [
+      {
+        name: 'loopscan',
+        url: 'http://explorer.mainnetloop.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Trust EVM Testnet',
     chain: 'Trust EVM Testnet',
     rpc: [ 'https://api.testnet-dev.trust.one' ],
