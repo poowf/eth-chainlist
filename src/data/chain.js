@@ -6152,6 +6152,54 @@ const chainArray = [
     ]
   },
   {
+    name: 'Lightlink Phoenix Mainnet',
+    chain: 'Lightlink Phoenix Mainnet',
+    icon: 'lightlink',
+    rpc: [
+      'https://replicator-01.phoenix.lightlink.io/rpc/v1',
+      'https://replicator-02.phoenix.lightlink.io/rpc/v1'
+    ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://lightlink.io',
+    shortName: 'lightlink_phoenix',
+    chainId: 1890,
+    networkId: 1890,
+    explorers: [
+      {
+        name: 'phoenix',
+        url: 'https://phoenix.lightlink.io',
+        icon: 'lightlink',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lightlink Pegasus Testnet',
+    chain: 'Lightlink Pegasus Testnet',
+    icon: 'lightlink',
+    rpc: [
+      'https://replicator-01.pegasus.lightlink.io/rpc/v1',
+      'https://replicator-02.pegasus.lightlink.io/rpc/v1'
+    ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [ 'https://pegasus-faucet-react.vercel.app' ],
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://lightlink.io',
+    shortName: 'lightlink_pegasus',
+    chainId: 1891,
+    networkId: 1891,
+    explorers: [
+      {
+        name: 'pegasus',
+        url: 'https://pegasus.lightlink.io',
+        icon: 'lightlink',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BON Network',
     chain: 'BON',
     rpc: [ 'http://rpc.boyanet.org:8545', 'ws://rpc.boyanet.org:8546' ],
@@ -7600,6 +7648,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'AlveyChain Mainnet',
+    chain: 'ALV',
+    icon: 'alveychain',
+    rpc: [ 'https://rpc.alveychain.com/rpc', 'https://rpc2.alvey.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'AlveyCoin', symbol: 'ALV', decimals: 18 },
+    infoURL: 'https://alveyscan.com/rpc',
+    shortName: 'alv',
+    chainId: 3797,
+    networkId: 3797,
+    explorers: [
+      {
+        name: 'AlveyScan',
+        url: 'https://alveyscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DRAC Network',
     chain: 'DRAC',
     rpc: [ 'https://www.dracscan.com/rpc' ],
@@ -8550,6 +8617,48 @@ const chainArray = [
         name: 'Shyft BX',
         url: 'https://bx.shyft.network',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'The Root Network - Mainnet',
+    chain: 'TRN',
+    rpc: [
+      'https://root.rootnet.live/archive',
+      'wss://root.rootnet.live/archive/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'XRP', symbol: 'XRP', decimals: 6 },
+    infoURL: 'https://www.futureverse.com/technology/root',
+    shortName: 'trn-mainnet',
+    chainId: 7668,
+    networkId: 7668,
+    explorers: [
+      {
+        name: 'rootnet',
+        url: 'https://explorer.rootnet.live',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'The Root Network - Porcini Testnet',
+    chain: 'TRN',
+    rpc: [
+      'https://porcini.rootnet.app/archive',
+      'wss://porcini.rootnet.app/archive/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'XRP', symbol: 'XRP', decimals: 6 },
+    infoURL: 'https://www.futureverse.com/technology/root',
+    shortName: 'trn-porcini',
+    chainId: 7672,
+    networkId: 7672,
+    explorers: [
+      {
+        name: 'rootnet',
+        url: 'https://explorer.rootnet.cloud',
+        standard: 'none'
       }
     ]
   },
@@ -11905,6 +12014,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'CYBERTRUST',
+    chain: 'CYBER',
+    rpc: [ 'http://testnet.cybertrust.space:48501' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cyber Trust', symbol: 'CYBER', decimals: 18 },
+    infoURL: 'https://cybertrust.space',
+    shortName: 'Cyber',
+    chainId: 85449,
+    networkId: 48501
+  },
+  {
     name: 'Chiliz Scoville Testnet',
     chain: 'CHZ',
     rpc: [ 'https://scoville-rpc.chiliz.com' ],
@@ -14280,6 +14400,26 @@ const chainArray = [
       {
         name: 'autonity-blockscout',
         url: 'https://piccadilly.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'T.E.A.M Blockchain',
+    chain: 'TEAM',
+    rpc: [ 'https://rpc.teamblockchain.team' ],
+    faucets: [],
+    nativeCurrency: { name: 'TEAM', symbol: '$TEAM', decimals: 8 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://teamblockchain.team',
+    shortName: 'team',
+    chainId: 88888888,
+    networkId: 88888888,
+    explorers: [
+      {
+        icon: 'team',
+        name: 'teamscan',
+        url: 'https://teamblockchain.team',
         standard: 'EIP3091'
       }
     ]
