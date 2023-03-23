@@ -2277,6 +2277,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'WoopChain Mainnet',
+    chain: 'WOOP',
+    icon: 'woopchain',
+    rpc: [ 'https://rpc.woop.ai/rpc' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'WoopCoin', symbol: 'WOOC', decimals: 18 },
+    infoURL: 'https://wikiwoop.com',
+    shortName: 'woop',
+    chainId: 139,
+    networkId: 139,
+    explorers: [
+      {
+        name: 'wikiwoop',
+        url: 'https://explorer.wikiwoop.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Openpiece Testnet',
     chain: 'OPENPIECE',
     icon: 'openpiece',
@@ -4169,7 +4189,7 @@ const chainArray = [
   },
   {
     name: 'Lucid Blockchain',
-    chain: 'Lucid Blockchain',
+    chain: 'Lucid',
     icon: 'lucid',
     rpc: [ 'https://rpc.lucidcoin.io' ],
     faucets: [ 'https://faucet.lucidcoin.io' ],
@@ -12698,6 +12718,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Taiko (Alpha-2 Testnet)',
+    chain: 'ETH',
+    icon: 'taiko',
+    rpc: [ 'https://rpc.a2.taiko.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://taiko.xyz',
+    shortName: 'taiko-a2',
+    chainId: 167004,
+    networkId: 167004,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.a2.taiko.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Condor Test Network',
     chain: 'CONDOR',
     icon: 'condor',
@@ -12920,6 +12959,25 @@ const chainArray = [
         name: 'explorer masnet',
         url: 'https://explorer.masnet.ai',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'HashKey Chain Testnet',
+    chain: 'HashKey',
+    rpc: [ 'https://testnet.hashkeychain/rpc' ],
+    faucets: [ 'https://testnet.hashkeychain/faucet' ],
+    nativeCurrency: { name: 'HashKey Token', symbol: 'tHSK', decimals: 18 },
+    infoURL: 'https://www.hashkey.com',
+    shortName: 'hsktest',
+    chainId: 230315,
+    networkId: 230315,
+    icon: 'hsk',
+    explorers: [
+      {
+        name: 'HashKey Chain Testnet Explorer',
+        url: 'https://testnet.hashkeyscan.io',
+        standard: 'none'
       }
     ]
   },
@@ -14409,7 +14467,7 @@ const chainArray = [
     chain: 'TEAM',
     rpc: [ 'https://rpc.teamblockchain.team' ],
     faucets: [],
-    nativeCurrency: { name: 'TEAM', symbol: '$TEAM', decimals: 8 },
+    nativeCurrency: { name: 'TEAM', symbol: '$TEAM', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://teamblockchain.team',
     shortName: 'team',
