@@ -2902,7 +2902,7 @@ const chainArray = [
   {
     name: 'zkSync Era Testnet',
     chain: 'ETH',
-    rpc: [ 'https://zksync2-testnet.zksync.dev' ],
+    rpc: [ 'https://testnet.era.zksync.dev' ],
     faucets: [ 'https://goerli.portal.zksync.io/faucet' ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://era.zksync.io/docs/',
@@ -3227,7 +3227,7 @@ const chainArray = [
   {
     name: 'zkSync Era Mainnet',
     chain: 'ETH',
-    rpc: [ 'https://zksync2-mainnet.zksync.io' ],
+    rpc: [ 'https://mainnet.era.zksync.io' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://zksync.io/',
@@ -3246,7 +3246,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://portal.zksync.io/bridge' } ]
+      bridges: [ { url: 'https://bridge.zksync.io/' } ]
     }
   },
   {
@@ -12693,6 +12693,25 @@ const chainArray = [
         name: 'Siberium Mainnet Explorer - blockscout - 2',
         url: 'https://explorer.main.siberium.net.ru',
         icon: 'siberium',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ADIL Devnet',
+    chain: 'ADIL',
+    icon: 'adil',
+    rpc: [ 'https://devnet.adilchain-rpc.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Devnet ADIL', symbol: 'ADIL', decimals: 18 },
+    infoURL: 'https://adilchain.io',
+    shortName: 'dadil',
+    chainId: 123456,
+    networkId: 123456,
+    explorers: [
+      {
+        name: 'ADIL Devnet Explorer',
+        url: 'https://devnet.adilchain-scan.io',
         standard: 'EIP3091'
       }
     ]
