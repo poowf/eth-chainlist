@@ -4083,7 +4083,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Canto Tesnet Explorer (Neobase)',
-        url: 'http://testnet-explorer.canto.neobase.one',
+        url: 'https://testnet-explorer.canto.neobase.one',
         standard: 'none'
       }
     ]
@@ -5591,7 +5591,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Dos Native Token', symbol: 'DOS', decimals: 18 },
     infoURL: 'http://doschain.io/',
-    shortName: 'DOS',
+    shortName: 'TDOS',
     chainId: 1311,
     networkId: 1311,
     explorers: [
@@ -7707,6 +7707,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'DOS Tesnet',
+    chain: 'DOS',
+    rpc: [ 'https://test.doschain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'DOS', symbol: 'DOS', decimals: 18 },
+    infoURL: 'http://doschain.io/',
+    shortName: 'dost',
+    chainId: 3939,
+    networkId: 3939,
+    explorers: [
+      {
+        name: 'DOScan-Test',
+        url: 'https://test.doscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DYNO Mainnet',
     chain: 'DYNO',
     rpc: [ 'https://api.dynoprotocol.com' ],
@@ -8641,6 +8659,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'ADIL Testnet',
+    chain: 'ADIL',
+    icon: 'adil',
+    rpc: [ 'https://testnet.adilchain-rpc.io' ],
+    faucets: [ 'https://testnet-faucet.adil-scan.io' ],
+    nativeCurrency: { name: 'Testnet ADIL', symbol: 'ADIL', decimals: 18 },
+    infoURL: 'https://adilchain.io',
+    shortName: 'tadil',
+    chainId: 7575,
+    networkId: 7575,
+    explorers: [
+      {
+        name: 'ADIL Testnet Explorer',
+        url: 'https://testnet.adilchain-scan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'The Root Network - Mainnet',
     chain: 'TRN',
     rpc: [
@@ -8757,6 +8794,20 @@ const chainArray = [
         url: 'https://explorer.hazlor.com',
         standard: 'none'
       }
+    ]
+  },
+  {
+    name: 'DOS Chain',
+    chain: 'DOS',
+    rpc: [ 'https://main.doschain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'DOS', symbol: 'DOS', decimals: 18 },
+    infoURL: 'https://doschain.io',
+    shortName: 'dos',
+    chainId: 7979,
+    networkId: 7979,
+    explorers: [
+      { name: 'DOScan', url: 'https://doscan.io', standard: 'EIP3091' }
     ]
   },
   {
@@ -13466,15 +13517,15 @@ const chainArray = [
     name: 'ethereum Fair',
     chainId: 513100,
     networkId: 513100,
-    shortName: 'etf',
-    chain: 'ETF',
+    shortName: 'ethf',
+    chain: 'ETHF',
     nativeCurrency: { name: 'EthereumFair', symbol: 'ETHF', decimals: 18 },
     rpc: [ 'https://rpc.etherfair.org' ],
     faucets: [],
     explorers: [
       {
         name: 'etherfair',
-        url: 'https://explorer.etherfair.org',
+        url: 'https://www.oklink.com/ethf',
         standard: 'EIP3091'
       }
     ],
@@ -14492,6 +14543,7 @@ const chainArray = [
     shortName: 'team',
     chainId: 88888888,
     networkId: 88888888,
+    icon: 'team',
     explorers: [
       {
         icon: 'team',
@@ -14799,6 +14851,27 @@ const chainArray = [
     shortName: 'aurora-betanet',
     chainId: 1313161556,
     networkId: 1313161556
+  },
+  {
+    name: 'RaptorChain',
+    chain: 'RPTR',
+    rpc: [ 'https://rpc.raptorchain.io/web3' ],
+    faucets: [],
+    nativeCurrency: { name: 'Raptor', symbol: 'RPTR', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://raptorchain.io',
+    shortName: 'rptr',
+    chainId: 1380996178,
+    networkId: 1380996178,
+    icon: 'raptorchain',
+    explorers: [
+      {
+        name: 'RaptorChain Explorer',
+        url: 'https://explorer.raptorchain.io',
+        icon: 'raptorchain_explorer',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Nebula Mainnet',
