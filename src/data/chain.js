@@ -6310,6 +6310,30 @@ const chainArray = [
     infoURL: ''
   },
   {
+    name: 'Dexilla Testnet',
+    chain: 'Dexilla',
+    rpc: [ 'https://rpc.dexilla.com' ],
+    faucets: [],
+    icon: 'dxz',
+    nativeCurrency: { name: 'Dexilla Native Token', symbol: 'DXZ', decimals: 18 },
+    infoURL: 'https://dexilla.com',
+    shortName: 'Dexilla',
+    chainId: 1954,
+    networkId: 1954,
+    explorers: [
+      {
+        name: 'dos-mainnet',
+        url: 'https://exp.dexilla.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.dexilla.com' } ]
+    }
+  },
+  {
     name: 'Eleanor',
     title: 'Metatime Testnet Eleanor',
     chain: 'MTC',
@@ -7716,10 +7740,12 @@ const chainArray = [
     shortName: 'dost',
     chainId: 3939,
     networkId: 3939,
+    icon: 'doschain',
     explorers: [
       {
         name: 'DOScan-Test',
         url: 'https://test.doscan.io',
+        icon: 'doschain',
         standard: 'EIP3091'
       }
     ]
@@ -8806,8 +8832,14 @@ const chainArray = [
     shortName: 'dos',
     chainId: 7979,
     networkId: 7979,
+    icon: 'doschain',
     explorers: [
-      { name: 'DOScan', url: 'https://doscan.io', standard: 'EIP3091' }
+      {
+        name: 'DOScan',
+        url: 'https://doscan.io',
+        icon: 'doschain',
+        standard: 'EIP3091'
+      }
     ]
   },
   {
@@ -10379,6 +10411,25 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'CamelArk Mainnet',
+    chainId: 20001,
+    shortName: 'CamelArk',
+    chain: 'ETHW',
+    icon: 'camelark',
+    networkId: 20001,
+    nativeCurrency: { name: 'EthereumPoW', symbol: 'ETHW', decimals: 18 },
+    rpc: [ 'https://mainnet-http-rpc.camelark.com' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'CamelArkscan',
+        url: 'https://scan.camelark.com',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://www.camelark.com'
   },
   {
     name: 'Callisto Testnet',
@@ -14178,6 +14229,34 @@ const chainArray = [
         icon: 'hap'
       }
     ]
+  },
+  {
+    name: 'Quarix Testnet',
+    chain: 'Quarix',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Q', symbol: 'Q', decimals: 18 },
+    infoURL: '',
+    shortName: 'quarix-testnet',
+    chainId: 8888881,
+    networkId: 8888881,
+    icon: 'quarix',
+    explorers: []
+  },
+  {
+    name: 'Quarix',
+    chain: 'Quarix',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Q', symbol: 'Q', decimals: 18 },
+    infoURL: '',
+    shortName: 'quarix',
+    chainId: 8888888,
+    networkId: 8888888,
+    icon: 'quarix',
+    explorers: []
   },
   {
     name: 'Plian Testnet Subchain 1',
