@@ -14614,6 +14614,7 @@ const chainArray = [
   {
     name: 'T.E.A.M Blockchain',
     chain: 'TEAM',
+    icon: 'team',
     rpc: [ 'https://rpc.teamblockchain.team' ],
     faucets: [],
     nativeCurrency: { name: 'TEAM', symbol: '$TEAM', decimals: 18 },
@@ -14622,10 +14623,8 @@ const chainArray = [
     shortName: 'team',
     chainId: 88888888,
     networkId: 88888888,
-    icon: 'team',
     explorers: [
       {
-        icon: 'team',
         name: 'teamscan',
         url: 'https://teamblockchain.team',
         standard: 'EIP3091'
