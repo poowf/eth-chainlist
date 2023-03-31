@@ -2985,7 +2985,7 @@ const chainArray = [
     rpc: [ 'https://mainnet.hashio.io/api' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 8 },
+    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 18 },
     infoURL: 'https://hedera.com',
     shortName: 'hedera-mainnet',
     chainId: 295,
@@ -3026,7 +3026,7 @@ const chainArray = [
     rpc: [ 'https://testnet.hashio.io/api' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://portal.hedera.com' ],
-    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 8 },
+    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 18 },
     infoURL: 'https://hedera.com',
     shortName: 'hedera-testnet',
     chainId: 296,
@@ -3067,7 +3067,7 @@ const chainArray = [
     rpc: [ 'https://previewnet.hashio.io/api' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://portal.hedera.com' ],
-    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 8 },
+    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 18 },
     infoURL: 'https://hedera.com',
     shortName: 'hedera-previewnet',
     chainId: 297,
@@ -3088,7 +3088,7 @@ const chainArray = [
     rpc: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 8 },
+    nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 18 },
     infoURL: 'https://hedera.com',
     shortName: 'hedera-localnet',
     chainId: 298,
@@ -9035,7 +9035,7 @@ const chainArray = [
       {
         name: 'Shardeum Scan',
         url: 'https://explorer-liberty10.shardeum.org',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ],
     redFlags: [ 'reusedChainId' ]
@@ -9055,7 +9055,7 @@ const chainArray = [
       {
         name: 'Shardeum Scan',
         url: 'https://explorer-liberty20.shardeum.org',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ],
     redFlags: [ 'reusedChainId' ]
@@ -9075,7 +9075,7 @@ const chainArray = [
       {
         name: 'Shardeum Scan',
         url: 'https://explorer-sphinx.shardeum.org',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ],
     redFlags: [ 'reusedChainId' ]
