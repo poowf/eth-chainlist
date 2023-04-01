@@ -10594,9 +10594,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'CamelArk Mainnet',
+    name: 'Camelark Mainnet',
     chainId: 20001,
-    shortName: 'CamelArk',
+    shortName: 'Camelark',
     chain: 'ETHW',
     icon: 'camelark',
     networkId: 20001,
@@ -10605,7 +10605,7 @@ const chainArray = [
     faucets: [],
     explorers: [
       {
-        name: 'CamelArkscan',
+        name: 'CamelarkScan',
         url: 'https://scan.camelark.com',
         standard: 'EIP3091'
       }
