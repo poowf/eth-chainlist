@@ -798,6 +798,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Acria IntelliChain',
+    chain: 'AIC',
+    rpc: [ 'https://aic.acria.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'ACRIA', symbol: 'ACRIA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://acria.ai',
+    shortName: 'aic',
+    chainId: 47,
+    networkId: 47,
+    explorers: [
+      {
+        name: 'Acria IntelliChain-Explorer',
+        url: 'https://explorer.acria.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Ennothem Mainnet Proterozoic',
     chain: 'ETMP',
     rpc: [ 'https://rpc.etm.network' ],
@@ -2293,6 +2312,31 @@ const chainArray = [
         name: 'polygonscan',
         url: 'https://polygonscan.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Defi Oracle Meta Mainnet',
+    chain: 'dfiometa',
+    icon: 'defioraclemeta',
+    rpc: [
+      'https://rpc.public-0138.defi-oracle.io',
+      'wss://rpc.public-0138.defi-oracle.io'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://defi-oracle.io/',
+    shortName: 'dfio-meta-main',
+    chainId: 138,
+    networkId: 1,
+    slip44: 60,
+    ens: { registry: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85' },
+    explorers: [
+      {
+        name: 'Quorum Explorer',
+        url: 'https://public-0138.defi-oracle.io',
+        standard: 'none'
       }
     ]
   },
@@ -4112,7 +4156,8 @@ const chainArray = [
         url: 'https://testnet-explorer.canto.neobase.one',
         standard: 'none'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'Vention Smart Chain Testnet',
@@ -6989,6 +7034,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'Defi Oracle Meta Testnet',
+    chain: 'dfiometatest',
+    icon: 'defioraclemeta',
+    rpc: [
+      'https://rpc.public-2138.defi-oracle.io',
+      'wss://rpc.public-2138.defi-oracle.io'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'testEther', symbol: 'tETH', decimals: 18 },
+    infoURL: 'https://defi-oracle.io/',
+    shortName: 'dfio-meta-test',
+    chainId: 2138,
+    networkId: 21,
+    slip44: 60,
+    ens: { registry: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85' },
+    explorers: [
+      {
+        name: 'Quorum Explorer',
+        url: 'https://public-2138.defi-oracle.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'BOSagora Mainnet',
     chain: 'ETH',
     rpc: [ 'https://mainnet.bosagora.org', 'https://rpc.bosagora.org' ],
@@ -7217,6 +7287,30 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'WEMIX Kanvas Sepolia',
+    title: 'WEMIX Kanvas Testnet Sepolia',
+    chainId: 2357,
+    shortName: 'kanvas-aqua',
+    chain: 'ETH',
+    networkId: 2357,
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [ 'https://api.aqua.wemixkanvas.io' ],
+    faucets: [],
+    infoURL: 'https://wemixkanvas.io',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.aqua.wemixkanvas.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://wemixkanvas.io/bridge' } ]
+    }
   },
   {
     name: 'BOMB Chain Testnet',
@@ -8888,6 +8982,24 @@ const chainArray = [
       {
         name: 'Canto EVM Explorer (Blockscout)',
         url: 'https://tuber.build',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Canto Tesnet',
+    chain: 'Canto',
+    rpc: [ 'https://testnet-archive.plexnode.wtf' ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet Canto', symbol: 'CANTO', decimals: 18 },
+    infoURL: 'https://canto.io',
+    shortName: 'TestnetCanto',
+    chainId: 7701,
+    networkId: 7701,
+    explorers: [
+      {
+        name: 'Canto Testnet EVM Explorer (Blockscout)',
+        url: 'https://testnet.tuber.build',
         standard: 'none'
       }
     ]
