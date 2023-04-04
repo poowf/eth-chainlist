@@ -4597,6 +4597,17 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'DecentraBone Layer1 Testnet',
+    chain: 'DBONE',
+    rpc: [ 'https://layer1test.decentrabone.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'DecentraBone', symbol: 'DBONE', decimals: 18 },
+    infoURL: 'https://decentrabone.com',
+    shortName: 'DBONE',
+    chainId: 910,
+    networkId: 910
+  },
+  {
     name: 'Rinia Testnet',
     chain: 'FIRE',
     icon: 'rinia',
@@ -5048,6 +5059,29 @@ const chainArray = [
         url: 'https://broscan.bronos.org',
         standard: 'none',
         icon: 'bronos'
+      }
+    ]
+  },
+  {
+    name: 'ShimmerEVM Testnet',
+    title: 'ShimmerEVM Testnet',
+    chain: 'ShimmerEVM',
+    icon: 'shimmerevm',
+    rpc: [ 'https://json-rpc.evm.testnet.shimmer.network' ],
+    faucets: [
+      'https://evm-toolkit.evm.testnet.shimmer.network',
+      'https://evm-faucet.testnet.shimmer.network'
+    ],
+    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 18 },
+    infoURL: 'https://shimmer.network',
+    shortName: 'shimmerevm-testnet',
+    chainId: 1071,
+    networkId: 1071,
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://explorer.evm.testnet.shimmer.network',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -13520,6 +13554,25 @@ const chainArray = [
       {
         name: 'explorer masnet',
         url: 'https://explorer.masnet.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Taf ECO Chain Mainnet',
+    chain: 'Taf ECO Chain',
+    icon: 'taf',
+    rpc: [ 'https://mainnet.tafchain.com/v1' ],
+    faucets: [],
+    nativeCurrency: { name: 'Taf ECO Chain Mainnet', symbol: 'TAFECO', decimals: 18 },
+    infoURL: 'https://www.tafchain.com',
+    shortName: 'TAFECO',
+    chainId: 224168,
+    networkId: 224168,
+    explorers: [
+      {
+        name: 'Taf ECO Chain Mainnet',
+        url: 'https://ecoscan.tafchain.com',
         standard: 'EIP3091'
       }
     ]
