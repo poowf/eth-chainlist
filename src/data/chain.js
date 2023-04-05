@@ -2671,6 +2671,24 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Neutrinos TestNet',
+    chain: 'NEUTR',
+    rpc: [ 'https://testnet-rpc.neutrinoschain.com' ],
+    faucets: [ 'https://neutrinoschain.com/faucet' ],
+    nativeCurrency: { name: 'Neutrinos', symbol: 'NEUTR', decimals: 18 },
+    infoURL: 'https://docs.neutrinoschain.com',
+    shortName: 'NEUTR',
+    chainId: 197,
+    networkId: 197,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.neutrinoschain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BitTorrent Chain Mainnet',
     chain: 'BTTC',
     rpc: [ 'https://rpc.bittorrentchain.io/' ],
@@ -7333,10 +7351,12 @@ const chainArray = [
     rpc: [ 'https://api.aqua.wemixkanvas.io' ],
     faucets: [],
     infoURL: 'https://wemixkanvas.io',
+    icon: 'wemixkanvas',
     explorers: [
       {
         name: 'blockscout',
         url: 'https://blockscout.aqua.wemixkanvas.io',
+        icon: 'wemixkanvas',
         standard: 'EIP3091'
       }
     ],
