@@ -9307,7 +9307,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Qitmeer Network Mixnext',
+    name: 'Qitmeer Network Mixnet',
     chain: 'MEER',
     rpc: [],
     faucets: [],
@@ -12522,7 +12522,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Amana Testnet', symbol: 'MEER-t', decimals: 18 },
+    nativeCurrency: { name: 'Amana Testnet', symbol: 'MEER-T', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'amanatest',
     icon: 'meer',
@@ -12535,7 +12535,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Amana Mixnet', symbol: 'MEER-m', decimals: 18 },
+    nativeCurrency: { name: 'Amana Mixnet', symbol: 'MEER-M', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'amanamix',
     icon: 'meer',
@@ -12548,7 +12548,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Amana Privnet', symbol: 'MEER-p', decimals: 18 },
+    nativeCurrency: { name: 'Amana Privnet', symbol: 'MEER-P', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'amanapriv',
     icon: 'meer',
@@ -12561,7 +12561,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Flana Testnet', symbol: 'MEER-t', decimals: 18 },
+    nativeCurrency: { name: 'Flana Testnet', symbol: 'MEER-T', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'flanatest',
     icon: 'meer',
@@ -12574,7 +12574,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Flana Mixnet', symbol: 'MEER-m', decimals: 18 },
+    nativeCurrency: { name: 'Flana Mixnet', symbol: 'MEER-M', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'flanamix',
     icon: 'meer',
@@ -12587,7 +12587,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Flana Privnet', symbol: 'MEER-p', decimals: 18 },
+    nativeCurrency: { name: 'Flana Privnet', symbol: 'MEER-P', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'flanapriv',
     icon: 'meer',
@@ -12600,7 +12600,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Mizana Testnet', symbol: 'MEER-t', decimals: 18 },
+    nativeCurrency: { name: 'Mizana Testnet', symbol: 'MEER-T', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'mizanatest',
     icon: 'meer',
@@ -12613,7 +12613,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Mizana Mixnet', symbol: 'MEER-m', decimals: 18 },
+    nativeCurrency: { name: 'Mizana Mixnet', symbol: 'MEER-M', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'mizanamix',
     icon: 'meer',
@@ -12626,7 +12626,7 @@ const chainArray = [
     chain: 'MEER',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Mizana Privnet', symbol: 'MEER-p', decimals: 18 },
+    nativeCurrency: { name: 'Mizana Privnet', symbol: 'MEER-P', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'mizanapriv',
     icon: 'meer',
@@ -15193,10 +15193,12 @@ const chainArray = [
     shortName: 'GTH',
     chainId: 192837465,
     networkId: 192837465,
+    icon: 'gather',
     explorers: [
       {
         name: 'Blockscout',
         url: 'https://explorer.gather.network',
+        icon: 'gather',
         standard: 'none'
       }
     ]
@@ -15324,10 +15326,12 @@ const chainArray = [
     shortName: 'tGTH',
     chainId: 356256156,
     networkId: 356256156,
+    icon: 'gather',
     explorers: [
       {
         name: 'Blockscout',
         url: 'https://testnet-explorer.gather.network',
+        icon: 'gather',
         standard: 'none'
       }
     ]
