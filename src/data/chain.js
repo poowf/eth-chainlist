@@ -6210,6 +6210,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'PartyChain',
+    chain: 'mainnet',
+    rpc: [
+      'https://tea.mining4people.com/rpc',
+      'http://172.104.194.36:8545'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Grams', symbol: 'GRAMS', decimals: 18 },
+    infoURL: 'TeaPartyCrypto.com',
+    shortName: 'TeaParty',
+    chainId: 1773,
+    networkId: 1773,
+    icon: 'grams',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'PartyExplorer',
+        url: 'https://partyexplorer.co',
+        icon: 'grams',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Kerleano',
     title: 'Proof of Carbon Reduction testnet',
     chain: 'CRC',
@@ -14621,6 +14645,25 @@ const chainArray = [
     networkId: 3141592,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'MXC Wannsee zkEVM Testnet',
+    chain: 'MXC zkEVM',
+    icon: 'mxc',
+    rpc: [ 'https://wannsee-rpc.mxc.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'MXC Wannsee zkEVM Testnet', symbol: 'MXC', decimals: 18 },
+    infoURL: 'https://wannsee.mxc.com/docs/intro',
+    shortName: 'MXC',
+    chainId: 5167003,
+    networkId: 5167003,
+    explorers: [
+      {
+        name: 'MXC Wannsee zkEVM Testnet',
+        url: 'https://wannsee-explorer.mxc.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Imversed Mainnet',
