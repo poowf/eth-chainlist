@@ -14052,6 +14052,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Markr Go',
+    chain: 'Unified',
+    icon: 'markrgo',
+    rpc: [ 'https://rpc.markr.io/ext/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
+    infoURL: 'https://www.markr.io/',
+    shortName: 'markr-go',
+    chainId: 431140,
+    networkId: 431140,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'Dexalot Subnet Testnet',
     chain: 'DEXALOT',
     icon: 'dexalot',
