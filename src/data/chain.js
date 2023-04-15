@@ -1519,6 +1519,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Linqto Devnet',
+    chain: 'LNQ',
+    rpc: [ 'https://linqto-dev.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'XRP', symbol: 'XRP', decimals: 18 },
+    infoURL: 'https://linqto.com',
+    shortName: 'linqto-devnet',
+    chainId: 84,
+    networkId: 84,
+    explorers: [
+      {
+        name: 'Linqto Devnet Explorer',
+        url: 'https://explorer.linqto-dev.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'GateChain Testnet',
     chainId: 85,
     shortName: 'gttest',
@@ -2407,6 +2425,25 @@ const chainArray = [
         url: 'https://phiscan.com',
         icon: 'phi',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'OEBlock Testnet',
+    chain: 'OEBt',
+    rpc: [ 'https://testnet-rpc.oeblock.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'OEBlock', symbol: 'OEB', decimals: 18 },
+    infoURL: 'https://www.oeblock.com/',
+    shortName: 'obe',
+    chainId: 156,
+    networkId: 156,
+    icon: 'oescan',
+    explorers: [
+      {
+        name: 'OEScan explorer',
+        url: 'https://testnet.oescan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -4678,6 +4715,7 @@ const chainArray = [
       'wss://rpc.v2.testnet.pulsechain.com/'
     ],
     faucets: [ 'https://faucet.v2.testnet.pulsechain.com/' ],
+    status: 'deprecated',
     nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 }
   },
   {
@@ -4692,6 +4730,7 @@ const chainArray = [
       'wss://rpc.v2b.testnet.pulsechain.com/'
     ],
     faucets: [ 'https://faucet.v2b.testnet.pulsechain.com/' ],
+    status: 'deprecated',
     nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 }
   },
   {
@@ -4706,6 +4745,25 @@ const chainArray = [
       'wss://rpc.v3.testnet.pulsechain.com/'
     ],
     faucets: [ 'https://faucet.v3.testnet.pulsechain.com/' ],
+    nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 }
+  },
+  {
+    name: 'PulseChain Testnet v4',
+    shortName: 't4pls',
+    chain: 't4PLS',
+    chainId: 943,
+    networkId: 943,
+    icon: 'pulsechain',
+    infoURL: 'https://pulsechain.com',
+    rpc: [
+      'https://rpc.v4.testnet.pulsechain.com/',
+      'wss://rpc.v4.testnet.pulsechain.com/'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.v4.testnet.pulsechain.com/' ],
+    ens: { registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e' },
+    status: 'incubating',
+    explorers: [],
     nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 }
   },
   {
