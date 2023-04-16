@@ -15888,6 +15888,7 @@ const chainArray = [
   {
     name: 'Palm Testnet',
     chain: 'Palm',
+    icon: 'palm',
     rpc: [ 'https://palm-testnet.infura.io/v3/${INFURA_API_KEY}' ],
     faucets: [],
     nativeCurrency: { name: 'PALM', symbol: 'PALM', decimals: 18 },
@@ -15906,6 +15907,7 @@ const chainArray = [
   {
     name: 'Palm',
     chain: 'Palm',
+    icon: 'palm',
     rpc: [ 'https://palm-mainnet.infura.io/v3/${INFURA_API_KEY}' ],
     faucets: [],
     nativeCurrency: { name: 'PALM', symbol: 'PALM', decimals: 18 },
