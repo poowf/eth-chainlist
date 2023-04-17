@@ -12359,6 +12359,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cosmic Chain',
+    chain: 'COSMIC',
+    rpc: [ 'http://testnet.cosmicchain.site:3344' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cosmic Chain', symbol: 'COSMIC', decimals: 18 },
+    infoURL: 'https://cosmicchain.site',
+    shortName: 'Cosmic',
+    chainId: 67588,
+    networkId: 3344
+  },
+  {
     name: 'Condrieu',
     title: 'Ethereum Verkle Testnet Condrieu',
     chain: 'ETH',
@@ -15357,6 +15368,22 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Kanazawa',
+    title: 'Meld Testnet Kanazawa',
+    chain: 'MELD',
+    rpc: [
+      'https://rpc-kanazawa.meldlabs.dev/ext/bc/2Ci7VYrUd4fTBqGA5D2HA6UPHzQ4LQyr8rZQww9MGSv9rNkRzn/rpc'
+    ],
+    faucets: [],
+    features: [],
+    nativeCurrency: { name: 'gMeld', symbol: 'gMELD', decimals: 18 },
+    infoURL: 'https://meld.com',
+    shortName: 'meld',
+    chainId: 222000222,
+    networkId: 222000222,
+    explorers: []
   },
   {
     name: 'Neon EVM DevNet',
