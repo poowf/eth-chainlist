@@ -2431,7 +2431,8 @@ const chainArray = [
   {
     name: 'OEBlock Testnet',
     chain: 'OEBt',
-    rpc: [ 'https://testnet-rpc.oeblock.com/' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    rpc: [ 'https://testnet-rpc.oeblock.com' ],
     faucets: [],
     nativeCurrency: { name: 'OEBlock', symbol: 'OEB', decimals: 18 },
     infoURL: 'https://www.oeblock.com/',
