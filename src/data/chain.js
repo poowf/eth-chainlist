@@ -2987,6 +2987,26 @@ const chainArray = [
     networkId: 258
   },
   {
+    name: 'Neonlink Mainnet',
+    chain: 'Neonlink',
+    rpc: [ 'https://mainnet.neonlink.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Neonlink Native Token', symbol: 'NEON', decimals: 18 },
+    infoURL: 'https://neonlink.io',
+    shortName: 'neon',
+    chainId: 259,
+    networkId: 259,
+    icon: 'neonlink',
+    explorers: [
+      {
+        name: 'Neon Blockchain Explorer',
+        url: 'https://scan.neonlink.io',
+        standard: 'EIP3091',
+        icon: 'neonlink'
+      }
+    ]
+  },
+  {
     name: 'SUR Blockchain Network',
     chain: 'SUR',
     rpc: [ 'https://sur.nilin.org' ],
@@ -6028,6 +6048,7 @@ const chainArray = [
     name: 'Rikeza Network Mainnet',
     title: 'Rikeza Network Mainnet',
     chain: 'Rikeza',
+    icon: 'rikeza',
     rpc: [ 'https://rpc.rikscan.com' ],
     faucets: [],
     nativeCurrency: { name: 'Rikeza', symbol: 'RIK', decimals: 18 },
@@ -6255,7 +6276,7 @@ const chainArray = [
     nativeCurrency: { name: 'Palette Token', symbol: 'PLT', decimals: 18 },
     features: [],
     infoURL: 'https://hashpalette.com/',
-    shortName: 'PaletteChain',
+    shortName: 'PCM',
     chainId: 1718,
     networkId: 1718,
     icon: 'PLT',
@@ -8880,6 +8901,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'IRIShub',
+    chain: 'IRIShub',
+    rpc: [ 'https://evmrpc.irishub-1.irisnet.org' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Eris', symbol: 'ERIS', decimals: 18 },
+    infoURL: 'https://www.irisnet.org',
+    shortName: 'iris',
+    chainId: 6688,
+    networkId: 6688,
+    icon: 'irishub',
+    explorers: [
+      {
+        name: 'IRISHub Cosmos Explorer (IOBScan)',
+        url: 'https://irishub.iobscan.io',
+        standard: 'none',
+        icon: 'irishub'
+      }
+    ]
+  },
+  {
     name: 'Gold Smart Chain Mainnet',
     chain: 'STAND',
     icon: 'stand',
@@ -10046,6 +10088,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Neonlink Testnet',
+    chain: 'Neonlink',
+    rpc: [ 'https://testnet.neonlink.io' ],
+    faucets: [ 'https://faucet.neonlink.io/' ],
+    nativeCurrency: { name: 'Neonlink Native Token', symbol: 'tNEON', decimals: 18 },
+    infoURL: 'https://neonlink.io',
+    shortName: 'testneon',
+    chainId: 9559,
+    networkId: 9559,
+    icon: 'neonlink',
+    explorers: [
+      {
+        name: 'Neon Blockchain Explorer',
+        url: 'https://testnet-scan.neonlink.io',
+        standard: 'EIP3091',
+        icon: 'neonlink'
+      }
+    ]
+  },
+  {
     name: 'Oort MainnetDev',
     title: 'Oort MainnetDev',
     chain: 'MainnetDev',
@@ -10600,6 +10662,7 @@ const chainArray = [
     name: 'Rikeza Network Testnet',
     title: 'Rikeza Network Testnet',
     chain: 'Rikeza',
+    icon: 'rikeza',
     rpc: [ 'https://testnet-rpc.rikscan.com' ],
     faucets: [],
     nativeCurrency: { name: 'Rikeza', symbol: 'RIK', decimals: 18 },
@@ -10825,6 +10888,27 @@ const chainArray = [
         name: 'ivarscan',
         url: 'https://testnet.ivarscan.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Palette Chain Testnet',
+    chain: 'PLT',
+    rpc: [ 'https://palette-opennet.com:22000' ],
+    faucets: [],
+    nativeCurrency: { name: 'Palette Token', symbol: 'PLT', decimals: 18 },
+    features: [],
+    infoURL: 'https://hashpalette.com/',
+    shortName: 'PCT',
+    chainId: 17180,
+    networkId: 17180,
+    icon: 'PLT',
+    explorers: [
+      {
+        name: 'Palettescan',
+        url: 'https://testnet.palettescan.com',
+        icon: 'PLT',
+        standard: 'none'
       }
     ]
   },
@@ -13911,6 +13995,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'TTcoin Smart Chain Mainnet',
+    chain: 'TSC',
+    icon: 'tscscan',
+    rpc: [ 'https://mainnet-rpc.tscscan.com' ],
+    faucets: [ 'https://faucet.tscscan.com' ],
+    nativeCurrency: { name: 'TTcoin', symbol: 'TC', decimals: 18 },
+    infoURL: 'https://ttcoin.info/',
+    shortName: 'tc',
+    chainId: 330844,
+    networkId: 330844,
+    explorers: [
+      {
+        name: 'TTcoin Smart Chain Explorer',
+        url: 'https://tscscan.com',
+        standard: 'EIP3091',
+        icon: 'tscscan'
+      }
+    ]
+  },
+  {
     name: 'Oone Chain Testnet',
     chain: 'OONE',
     rpc: [ 'https://blockchain-test.adigium.world' ],
@@ -15657,6 +15761,28 @@ const chainArray = [
     shortName: 'aurora-betanet',
     chainId: 1313161556,
     networkId: 1313161556
+  },
+  {
+    name: 'Chaos (SKALE Testnet)',
+    title: 'Chaos Testnet',
+    chain: 'staging-fast-active-bellatrix',
+    rpc: [
+      'https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix'
+    ],
+    faucets: [ 'https://sfuel.skale.network/staging/chaos' ],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: 'https://docs.skale.network/develop/',
+    shortName: 'chaos-tenet',
+    chainId: 1351057110,
+    networkId: 1351057110,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://staging-fast-active-bellatrix.explorer.staging-v3.skalenodes.com',
+        icon: 'chaos',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'RaptorChain',
