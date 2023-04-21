@@ -9154,10 +9154,10 @@ const chainArray = [
     ]
   },
   {
-    name: 'ADIL Mainnet',
+    name: 'Adil Chain V2 Mainnet',
     chain: 'ADIL',
     icon: 'adil',
-    rpc: [ 'https://s2.adilchain-rpc.io' ],
+    rpc: [ 'https://adilchain-rpc.io' ],
     faucets: [],
     nativeCurrency: { name: 'ADIL', symbol: 'ADIL', decimals: 18 },
     infoURL: 'https://adilchain.io',
@@ -9167,7 +9167,7 @@ const chainArray = [
     explorers: [
       {
         name: 'ADIL Mainnet Explorer',
-        url: 'https://s2.adilchain-scan.io',
+        url: 'https://adilchain-scan.io',
         standard: 'EIP3091'
       }
     ]
@@ -11383,6 +11383,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ferrum Testnet',
+    chain: 'tFRM',
+    rpc: [ 'http://testnet.dev.svcs.ferrumnetwork.io:9933' ],
+    faucets: [ 'https://testnet.faucet.ferrumnetwork.io' ],
+    nativeCurrency: { name: 'Ferrum', symbol: 'tFRM', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://ferrum.network',
+    shortName: 'frm',
+    chainId: 26026,
+    networkId: 26026,
+    explorers: [
+      {
+        name: 'polkadotjs',
+        url: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet.dev.svcs.ferrumnetwork.io#/explorer',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Hertz Network Mainnet',
     chain: 'HTZ',
     rpc: [ 'https://mainnet-rpc.hertzscan.com' ],
@@ -11597,6 +11616,25 @@ const chainArray = [
         url: 'https://fsnscan.com',
         icon: 'fsnscan',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zilliqa EVM',
+    chain: 'ZIL',
+    rpc: [ 'https://api.zilliqa.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zilliqa', symbol: 'ZIL', decimals: 18 },
+    infoURL: 'https://www.zilliqa.com/',
+    shortName: 'zil',
+    chainId: 32769,
+    networkId: 32769,
+    icon: 'zilliqa',
+    explorers: [
+      {
+        name: 'Zilliqa EVM Explorer',
+        url: 'https://evmx.zilliqa.com',
+        standard: 'none'
       }
     ]
   },
@@ -12290,11 +12328,16 @@ const chainArray = [
   },
   {
     name: 'Linea Testnet',
-    title: 'Linea Testnet',
+    title: 'Linea Goerli Testnet',
     chain: 'ETH',
-    rpc: [ 'https://rpc.goerli.linea.build' ],
+    rpc: [
+      'https://rpc.goerli.linea.build',
+      'wss://rpc.goerli.linea.build',
+      'https://consensys-zkevm-goerli-prealpha.infura.io/v3/${INFURA_API_KEY}',
+      'wss://consensys-zkevm-goerli-prealpha.infura.io/v3/${INFURA_API_KEY}'
+    ],
     faucets: [ 'https://faucetlink.to/goerli' ],
-    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://linea.build',
     shortName: 'linea-testnet',
     chainId: 59140,
@@ -12311,7 +12354,7 @@ const chainArray = [
     },
     explorers: [
       {
-        name: 'Linea Testnet Explorer',
+        name: 'blockscout',
         url: 'https://explorer.goerli.linea.build',
         standard: 'EIP3091',
         icon: 'linea'
