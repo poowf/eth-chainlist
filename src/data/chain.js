@@ -861,7 +861,8 @@ const chainArray = [
     rpc: [
       'https://erpc.xinfin.network',
       'https://rpc.xinfin.network',
-      'https://rpc1.xinfin.network'
+      'https://rpc1.xinfin.network',
+      'https://rpc-xdc.icecreamswap.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'XinFin', symbol: 'XDC', decimals: 18 },
@@ -6811,7 +6812,7 @@ const chainArray = [
     explorers: [
       {
         name: 'edexa-testnet',
-        url: 'https://explorer.edexa.com',
+        url: 'https://explorer.testnet.edexa.com',
         standard: 'EIP3091'
       }
     ]
@@ -7507,29 +7508,29 @@ const chainArray = [
     ]
   },
   {
-    name: 'WEMIX Kanvas Sepolia',
-    title: 'WEMIX Kanvas Testnet Sepolia',
+    name: 'Kroma Sepolia',
+    title: 'Kroma Testnet Sepolia',
     chainId: 2357,
-    shortName: 'kanvas-aqua',
+    shortName: 'kroma-sepolia',
     chain: 'ETH',
     networkId: 2357,
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
-    rpc: [ 'https://api.aqua.wemixkanvas.io' ],
+    rpc: [ 'https://api.sepolia.kroma.network' ],
     faucets: [],
-    infoURL: 'https://wemixkanvas.io',
-    icon: 'wemixkanvas',
+    infoURL: 'https://kroma.network',
+    icon: 'kroma',
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://blockscout.aqua.wemixkanvas.io',
-        icon: 'wemixkanvas',
+        url: 'https://blockscout.sepolia.kroma.network',
+        icon: 'kroma',
         standard: 'EIP3091'
       }
     ],
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
-      bridges: [ { url: 'https://wemixkanvas.io/bridge' } ]
+      bridges: [ { url: 'https://kroma.network/bridge' } ]
     }
   },
   {
