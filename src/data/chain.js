@@ -8837,6 +8837,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'SatoshiChain Testnet',
+    chain: 'SATS',
+    icon: 'satoshichain',
+    rpc: [ 'https://rpc.satoshichain.io' ],
+    faucets: [ 'https://faucet.satoshichain.io' ],
+    nativeCurrency: { name: 'SatoshiChain Coin', symbol: 'SATS', decimals: 18 },
+    infoURL: 'https://satoshichain.net',
+    shortName: 'sats',
+    chainId: 5758,
+    networkId: 5758,
+    explorers: [
+      {
+        name: 'SatoshiChain Explorer',
+        url: 'https://satoshiscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Ganache',
     title: 'Ganache GUI Ethereum Testnet',
     chain: 'ETH',
@@ -13775,6 +13794,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'ICPlaza Mainnet',
+    chain: 'ICPlaza',
+    icon: 'icplaza',
+    rpc: [ 'https://rpcmainnet.ic-plaza.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ict', symbol: 'ict', decimals: 18 },
+    infoURL: 'https://docs.ic-plaza.org/',
+    shortName: 'ICPlaza',
+    chainId: 142857,
+    networkId: 142857,
+    explorers: [
+      {
+        name: 'ICPlaza',
+        url: 'https://browsemainnet.ic-plaza.org/index',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Taiko (Alpha-2 Testnet)',
     chain: 'ETH',
     icon: 'taiko',
@@ -15673,15 +15711,16 @@ const chainArray = [
   {
     name: 'Kanazawa',
     title: 'Meld Testnet Kanazawa',
-    chain: 'MELD',
+    chain: 'Kanazawa',
     rpc: [
       'https://rpc-kanazawa.meldlabs.dev/ext/bc/2Ci7VYrUd4fTBqGA5D2HA6UPHzQ4LQyr8rZQww9MGSv9rNkRzn/rpc'
     ],
     faucets: [],
     features: [],
     nativeCurrency: { name: 'gMeld', symbol: 'gMELD', decimals: 18 },
+    icon: 'meld',
     infoURL: 'https://meld.com',
-    shortName: 'meld',
+    shortName: 'kanazawa',
     chainId: 222000222,
     networkId: 222000222,
     explorers: []
@@ -15776,6 +15815,21 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Meld',
+    title: 'Meld Mainnet',
+    chain: 'MELD',
+    rpc: [ 'https://network-rpc.meld.com' ],
+    faucets: [],
+    features: [],
+    nativeCurrency: { name: 'gMeld', symbol: 'gMELD', decimals: 18 },
+    icon: 'meld',
+    infoURL: 'https://meld.com',
+    shortName: 'meld',
+    chainId: 333000333,
+    networkId: 333000333,
+    explorers: []
   },
   {
     name: 'Calypso NFT Hub (SKALE Testnet)',
