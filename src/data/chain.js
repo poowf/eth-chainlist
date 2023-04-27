@@ -2420,6 +2420,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Six Protocol Testnet',
+    chain: 'FIVENET',
+    icon: 'six',
+    rpc: [ 'https://rpc-evm.fivenet.sixprotocol.net' ],
+    faucets: [ 'https://faucet.sixprotocol.net' ],
+    nativeCurrency: { name: 'SIX testnet evm token', symbol: 'tSIX', decimals: 18 },
+    infoURL: 'https://six.network/',
+    shortName: 'sixt',
+    chainId: 150,
+    networkId: 150,
+    explorers: [
+      {
+        name: 'SIX Scan fivenet',
+        url: 'https://sixscan.io/fivenet',
+        standard: 'none',
+        icon: 'six'
+      }
+    ]
+  },
+  {
     name: 'OEBlock Testnet',
     chain: 'OEBt',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -9269,7 +9289,7 @@ const chainArray = [
       {
         name: 'rootnet',
         url: 'https://explorer.rootnet.live',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -9290,7 +9310,7 @@ const chainArray = [
       {
         name: 'rootnet',
         url: 'https://explorer.rootnet.cloud',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
