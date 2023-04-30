@@ -2908,6 +2908,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'SwapDEX',
+    chain: 'SDX',
+    rpc: [ 'https://rpc.swapdex.network', 'wss://ss.swapdex.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'SwapDEX', symbol: 'SDX', decimals: 18 },
+    infoURL: 'https://swapdex.network/',
+    shortName: 'SDX',
+    chainId: 230,
+    networkId: 230,
+    explorers: [
+      {
+        name: 'SwapDEX',
+        url: 'https://evm.swapdex.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Energy Web Chain',
     chain: 'Energy Web Chain',
     rpc: [ 'https://rpc.energyweb.org', 'wss://rpc.energyweb.org/ws' ],
@@ -8994,6 +9012,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Peerpay',
+    chain: 'P2P',
+    rpc: [ 'https://peerpay.su.gy/p2p' ],
+    faucets: [],
+    nativeCurrency: { name: 'Peerpay', symbol: 'P2P', decimals: 18 },
+    infoURL: 'https://peerpay.su.gy',
+    shortName: 'Peerpay',
+    chainId: 6502,
+    networkId: 6502,
+    explorers: []
   },
   {
     name: 'Scolcoin WeiChain Testnet',
@@ -16363,6 +16393,30 @@ const chainArray = [
       {
         name: 'Palm Explorer',
         url: 'https://explorer.palm.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Alphabet Mainnet',
+    chain: 'Alphabet Network',
+    icon: 'alphabetnetwork',
+    rpc: [
+      'https://londonpublic.alphabetnetwork.org',
+      'wss://londonpublic.alphabetnetwork.org/ws/',
+      'https://main-rpc.com',
+      'wss://main-rpc.com/ws/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'ALT', symbol: 'ALT', decimals: 18 },
+    infoURL: 'https://alphabetnetwork.org',
+    shortName: 'alphabet',
+    chainId: 111222333444,
+    networkId: 111222333444,
+    explorers: [
+      {
+        name: 'Alphabet Explorer',
+        url: 'https://scan.alphabetnetwork.org',
         standard: 'EIP3091'
       }
     ]
