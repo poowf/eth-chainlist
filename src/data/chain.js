@@ -2317,6 +2317,26 @@ const chainArray = [
     icon: 'alyx'
   },
   {
+    name: 'Deamchain Mainnet',
+    chain: 'Deamchain',
+    icon: 'deam',
+    rpc: [ 'https://mainnet.deamchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Deamchain Native Token', symbol: 'DEAM', decimals: 18 },
+    infoURL: 'https://deamchain.com',
+    shortName: 'deam',
+    chainId: 136,
+    networkId: 136,
+    explorers: [
+      {
+        name: 'Deamchain Block Explorer',
+        url: 'https://scan.deamchain.com',
+        standard: 'EIP3091',
+        icon: 'deam'
+      }
+    ]
+  },
+  {
     name: 'Polygon Mainnet',
     chain: 'Polygon',
     icon: 'polygon',
@@ -2942,6 +2962,26 @@ const chainArray = [
         name: 'SwapDEX',
         url: 'https://evm.swapdex.network',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Deamchain Testnet',
+    chain: 'Deamchain',
+    icon: 'deam',
+    rpc: [ 'https://testnet.deamchain.com' ],
+    faucets: [ 'https://faucet.deamchain.com' ],
+    nativeCurrency: { name: 'Deamchain Native Token', symbol: 'DEAM', decimals: 18 },
+    infoURL: 'https://deamchain.com',
+    shortName: 'deamtest',
+    chainId: 236,
+    networkId: 236,
+    explorers: [
+      {
+        name: 'Deamchain Testnet Explorer',
+        url: 'https://testnet-scan.deamchain.com',
+        standard: 'EIP3091',
+        icon: 'deam'
       }
     ]
   },
