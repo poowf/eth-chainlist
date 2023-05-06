@@ -2500,6 +2500,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tenet Testnet',
+    title: 'Tenet Testnet',
+    chain: 'TENET',
+    icon: 'tenet',
+    rpc: [ 'https://rpc.testnet.tenet.org' ],
+    faucets: [ 'https://faucet.testnet.tenet.org' ],
+    nativeCurrency: { name: 'TENET', symbol: 'TENET', decimals: 18 },
+    infoURL: 'https://tenet.org/',
+    shortName: 'tenet-testnet',
+    chainId: 155,
+    networkId: 155,
+    explorers: [
+      {
+        name: 'TenetScan Testnet',
+        url: 'https://testnet.tenetscan.io',
+        icon: 'tenet',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'OEBlock Testnet',
     chain: 'OEBt',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -3584,7 +3605,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Cronos Testnet Explorer',
-        url: 'https://testnet.cronoscan.com',
+        url: 'https://explorer.cronos.org/testnet',
         standard: 'none'
       }
     ]
@@ -3748,14 +3769,20 @@ const chainArray = [
     name: 'LA Testnet',
     chain: 'LATestnet',
     rpc: [ 'https://rpc.testnet.lachain.network' ],
-    faucets: [],
+    faucets: [ 'https://faucet.lachain.network' ],
     nativeCurrency: { name: 'Test La Coin', symbol: 'TLA', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: '',
     shortName: 'latestnet',
     chainId: 418,
     networkId: 418,
-    explorers: []
+    explorers: [
+      {
+        name: 'LA Testnet Explorer',
+        url: 'https://testexplorer.lachain.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Optimism Goerli Testnet',
@@ -6324,6 +6351,27 @@ const chainArray = [
       {
         name: 'Beagle Messaging Chain Explorer',
         url: 'https://eth.beagle.chat',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tenet',
+    title: 'Tenet Mainnet',
+    chain: 'TENET',
+    icon: 'tenet',
+    rpc: [ 'https://rpc.tenet.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'TENET', symbol: 'TENET', decimals: 18 },
+    infoURL: 'https://tenet.org/',
+    shortName: 'tenet',
+    chainId: 1559,
+    networkId: 1559,
+    explorers: [
+      {
+        name: 'TenetScan Mainnet',
+        url: 'https://tenetscan.io',
+        icon: 'tenet',
         standard: 'EIP3091'
       }
     ]
