@@ -5826,6 +5826,44 @@ const chainArray = [
     }
   },
   {
+    name: 'ARC Mainnet',
+    chain: 'ARC',
+    icon: 'arc',
+    rpc: [ 'https://rpc-main-1.archiechain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'ARC', symbol: 'ARC', decimals: 18 },
+    infoURL: 'https://archiechain.io/',
+    shortName: 'ARC',
+    chainId: 1243,
+    networkId: 1243,
+    explorers: [
+      {
+        name: 'archiescan',
+        url: 'https://app.archiescan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ARC Testnet',
+    chain: 'ARC',
+    icon: 'arc',
+    rpc: [ 'https://rpc-test-1.archiechain.io' ],
+    faucets: [ 'https://faucet.archiechain.io' ],
+    nativeCurrency: { name: 'ARC', symbol: 'ARC', decimals: 18 },
+    infoURL: 'https://archiechain.io/',
+    shortName: 'TARC',
+    chainId: 1244,
+    networkId: 1244,
+    explorers: [
+      {
+        name: 'archiescan',
+        url: 'https://testnet.archiescan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'OM Platform Mainnet',
     chain: 'omplatform',
     rpc: [ 'https://rpc-cnx.omplatform.com/' ],
@@ -6283,6 +6321,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'GIL Testnet',
+    chain: 'GIL',
+    icon: 'gauss',
+    rpc: [ 'https://rpc.giltestnet.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'GANG', symbol: 'GANG', decimals: 18 },
+    infoURL: 'https://gaussgang.com/',
+    shortName: 'gil',
+    chainId: 1452,
+    networkId: 1452,
+    explorers: [
+      {
+        name: 'GIL Explorer',
+        url: 'https://explorer.giltestnet.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Ctex Scan Blockchain',
     chain: 'Ctex Scan Blockchain',
     icon: 'ctex',
@@ -6556,8 +6613,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Gauss Mainnet',
+    chain: 'Gauss',
+    icon: 'gauss',
+    rpc: [ 'https://rpc.gaussgang.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'GANG', symbol: 'GANG', decimals: 18 },
+    infoURL: 'https://gaussgang.com/',
+    shortName: 'gauss',
+    chainId: 1777,
+    networkId: 1777,
+    explorers: [
+      {
+        name: 'Gauss Explorer',
+        url: 'https://explorer.gaussgang.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Kerleano',
-    title: 'Proof of Carbon Reduction testnet',
+    title: 'Proof of Climate awaReness testnet',
     chain: 'CRC',
     status: 'active',
     rpc: [
@@ -6567,15 +6643,17 @@ const chainArray = [
     faucets: [
       'https://github.com/ethereum-pocr/kerleano/blob/main/docs/faucet.md'
     ],
-    nativeCurrency: { name: 'Carbon Reduction Coin', symbol: 'CRC', decimals: 18 },
+    nativeCurrency: { name: 'Climate awaReness Coin', symbol: 'CRC', decimals: 18 },
     infoURL: 'https://github.com/ethereum-pocr/kerleano',
     shortName: 'kerleano',
     chainId: 1804,
     networkId: 1804,
+    icon: 'pocr',
     explorers: [
       {
         name: 'Lite Explorer',
         url: 'https://ethereum-pocr.github.io/explorer/kerleano',
+        icon: 'pocr',
         standard: 'EIP3091'
       }
     ]
@@ -7852,7 +7930,7 @@ const chainArray = [
   },
   {
     name: 'PoCRNet',
-    title: 'Proof of Carbon Reduction mainnet',
+    title: 'Proof of Climate awaReness mainnet',
     chain: 'CRC',
     status: 'active',
     rpc: [
@@ -7860,15 +7938,17 @@ const chainArray = [
       'wss://pocrnet.westeurope.cloudapp.azure.com/ws'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Carbon Reduction Coin', symbol: 'CRC', decimals: 18 },
+    nativeCurrency: { name: 'Climate awaReness Coin', symbol: 'CRC', decimals: 18 },
     infoURL: 'https://github.com/ethereum-pocr/pocrnet',
     shortName: 'pocrnet',
     chainId: 2606,
     networkId: 2606,
+    icon: 'pocr',
     explorers: [
       {
         name: 'Lite Explorer',
         url: 'https://ethereum-pocr.github.io/explorer/pocrnet',
+        icon: 'pocr',
         standard: 'EIP3091'
       }
     ]
@@ -12988,11 +13068,6 @@ const chainArray = [
     networkId: 71401,
     explorers: [
       {
-        name: 'GWScout Explorer',
-        url: 'https://gw-testnet-explorer.nervosdao.community',
-        standard: 'none'
-      },
-      {
         name: 'GWScan Block Explorer',
         url: 'https://v1.testnet.gwscan.com',
         standard: 'none'
@@ -13010,11 +13085,6 @@ const chainArray = [
     chainId: 71402,
     networkId: 71402,
     explorers: [
-      {
-        name: 'GWScout Explorer',
-        url: 'https://gw-mainnet-explorer.nervosdao.community',
-        standard: 'none'
-      },
       {
         name: 'GWScan Block Explorer',
         url: 'https://v1.gwscan.com',
