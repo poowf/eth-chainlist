@@ -3878,7 +3878,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockexplorer',
-        url: 'https://explorer.camino.foundation',
+        url: 'https://suite.camino.network/explorer',
         standard: 'none'
       }
     ]
@@ -11258,7 +11258,7 @@ const chainArray = [
   {
     name: 'IRIShub Testnet',
     chain: 'IRIShub',
-    rpc: [ 'http://34.80.202.172:8545' ],
+    rpc: [ 'https://evmrpc.nyancat.irisnet.org' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Eris', symbol: 'ERIS', decimals: 18 },
