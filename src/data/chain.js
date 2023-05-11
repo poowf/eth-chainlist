@@ -3848,7 +3848,7 @@ const chainArray = [
   {
     name: 'Camino C-Chain',
     chain: 'CAM',
-    rpc: [],
+    rpc: [ 'https://api.camino.network/ext/bc/C/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'Camino', symbol: 'CAM', decimals: 18 },
     infoURL: 'https://camino.network/',
@@ -3859,7 +3859,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockexplorer',
-        url: 'https://explorer.camino.foundation/mainnet',
+        url: 'https://suite.camino.network/explorer',
         standard: 'none'
       }
     ]
@@ -8604,6 +8604,27 @@ const chainArray = [
     }
   },
   {
+    name: 'Oasis Testnet',
+    title: 'Bahamut Testnet Oasis',
+    icon: 'bahamut',
+    chain: 'Bahamut',
+    rpc: [ 'https://rpc1.oasis.bahamutchain.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.oasis.fastexchain.com' ],
+    nativeCurrency: { name: 'FTN', symbol: 'FTN', decimals: 18 },
+    infoURL: 'https://fastexchain.com',
+    shortName: 'Oasis',
+    chainId: 4090,
+    networkId: 4090,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://oasis.ftnscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Bitindi Testnet',
     chain: 'BNI',
     icon: 'bitindiTestnet',
@@ -8921,6 +8942,30 @@ const chainArray = [
         name: 'Mantle Testnet Explorer',
         url: 'https://explorer.testnet.mantle.xyz',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Sahara',
+    title: 'Bahamut mainnet Sahara',
+    chain: 'Bahamut',
+    icon: 'bahamut',
+    rpc: [
+      'https://rpc1.sahara.bahamutchain.com',
+      'https://rpc2.sahara.bahamutchain.com'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'FTN', symbol: 'FTN', decimals: 18 },
+    shortName: 'ftn',
+    infoURL: 'https://fastexchain.com',
+    chainId: 5165,
+    networkId: 5165,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://ftnscan.com',
+        standard: 'none'
       }
     ]
   },
@@ -9469,6 +9514,25 @@ const chainArray = [
         name: 'Shyft BX',
         url: 'https://bx.shyft.network',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Raba Network Mainnet',
+    chain: 'Raba',
+    icon: 'raba',
+    rpc: [ 'https://rpc.x.raba.app/', 'wss://rpc.x.raba.app/ws/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Raba', symbol: 'RABA', decimals: 18 },
+    infoURL: 'https://x.raba.app/',
+    shortName: 'raba',
+    chainId: 7484,
+    networkId: 7484,
+    explorers: [
+      {
+        name: 'raba',
+        url: 'https://x.raba.app/explorer',
+        standard: 'none'
       }
     ]
   },
@@ -10560,6 +10624,27 @@ const chainArray = [
     chainId: 9792,
     networkId: 9792,
     explorers: []
+  },
+  {
+    name: 'AltLayer Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://testnet-rollup-api.altlayer.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://altlayer.io',
+    shortName: 'alt-testnet',
+    chainId: 9997,
+    networkId: 9997,
+    icon: 'altlayer',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet-rollup-explorer.altlayer.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'myOwn Testnet',
@@ -13039,6 +13124,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'GuapcoinX',
+    chain: 'GuapcoinX',
+    rpc: [
+      'https://rpc-mainnet.guapcoinx.com/',
+      'https://rpc-mainnet-1.guapcoinx.com/',
+      'https://rpc-mainnet-2.guapcoinx.com/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'GuapcoinX', symbol: 'GuapX', decimals: 18 },
+    infoURL: 'https://guapcoin.org/',
+    shortName: 'GuapX',
+    chainId: 71111,
+    networkId: 71111,
+    icon: 'guapcoinx',
+    explorers: [
+      {
+        name: 'GuapcoinX Explorer',
+        url: 'http://explorer.guapcoinx.com',
+        standard: 'none',
+        icon: 'guapcoinx'
+      }
+    ]
+  },
+  {
     name: 'Polyjuice Testnet',
     chain: 'CKB',
     icon: 'polyjuice',
@@ -14737,7 +14846,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'FTN', symbol: 'FTN', decimals: 18 },
     infoURL: 'https://fastex.com',
-    shortName: 'ftn',
+    shortName: 'fastexTestnet',
     chainId: 424242,
     networkId: 424242,
     explorers: [
