@@ -2874,6 +2874,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'Structx Mainnet',
+    chain: 'utx',
+    rpc: [ 'https://mainnet.structx.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Notes', symbol: 'utx', decimals: 18 },
+    infoURL: 'https://structx.io',
+    shortName: 'utx',
+    chainId: 208,
+    networkId: 208
+  },
+  {
     name: 'Freight Trust Network',
     chain: 'EDI',
     rpc: [
@@ -3173,6 +3184,28 @@ const chainArray = [
     slip44: 269,
     explorers: [
       { name: 'hscan', url: 'https://hscan.org', standard: 'EIP3091' }
+    ]
+  },
+  {
+    name: 'LaChain',
+    chain: 'LaChain',
+    rpc: [
+      'https://rpc1.mainnet.lachain.network',
+      'https://rpc2.mainnet.lachain.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'LaCoin', symbol: 'LAC', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: '',
+    shortName: 'lachain',
+    chainId: 274,
+    networkId: 274,
+    explorers: [
+      {
+        name: 'LaChain Explorer',
+        url: 'https://explorer.lachain.network',
+        standard: 'EIP3091'
+      }
     ]
   },
   {
@@ -3683,17 +3716,17 @@ const chainArray = [
     ]
   },
   {
-    name: 'PulseChain Mainnet',
+    name: 'PulseChain',
     shortName: 'pls',
     chain: 'PLS',
     chainId: 369,
     networkId: 369,
     infoURL: 'https://pulsechain.com/',
-    rpc: [
-      'https://rpc.mainnet.pulsechain.com/',
-      'wss://rpc.mainnet.pulsechain.com/'
-    ],
+    rpc: [ 'https://rpc.pulsechain.com/', 'wss://rpc.pulsechain.com/' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
+    ens: { registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e' },
+    status: 'incubating',
     nativeCurrency: { name: 'Pulse', symbol: 'PLS', decimals: 18 }
   },
   {
@@ -7107,8 +7140,8 @@ const chainArray = [
     icon: 'dogechain',
     rpc: [
       'https://rpc.dogechain.dog',
-      'https://rpc-us.dogechain.dog',
-      'https://rpc01.dogechain.dog'
+      'https://rpc01-sg.dogechain.dog',
+      'https://rpc.ankr.com/dogechain'
     ],
     faucets: [],
     nativeCurrency: { name: 'Dogecoin', symbol: 'DOGE', decimals: 18 },
@@ -16170,6 +16203,25 @@ const chainArray = [
       {
         name: 'neonscan',
         url: 'https://testnet.neonscan.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Razor Skale Chain',
+    chain: 'Razor Schain',
+    icon: 'razornetwork',
+    rpc: [ 'https://mainnet.skalenodes.com/v1/turbulent-unique-scheat' ],
+    faucets: [ 'https://faucet.razorscan.io/' ],
+    nativeCurrency: { name: 'sFuel', symbol: 'SFUEL', decimals: 18 },
+    infoURL: 'https://razor.network',
+    shortName: 'razor',
+    chainId: 278611351,
+    networkId: 278611351,
+    explorers: [
+      {
+        name: 'turbulent-unique-scheat',
+        url: 'https://turbulent-unique-scheat.explorer.mainnet.skalenodes.com',
         standard: 'EIP3091'
       }
     ]
