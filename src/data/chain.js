@@ -8637,10 +8637,10 @@ const chainArray = [
     }
   },
   {
-    name: 'Oasis Testnet',
-    title: 'Bahamut Testnet Oasis',
+    name: 'Fastex Chain (Bahamut) Oasis Testnet',
+    title: 'Bahamut testnet Oasis',
     icon: 'bahamut',
-    chain: 'Bahamut',
+    chain: 'Fastex Chain (Bahamut)',
     rpc: [ 'https://rpc1.oasis.bahamutchain.com' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.oasis.fastexchain.com' ],
@@ -8979,9 +8979,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'Sahara',
+    name: 'Fastex Chain (Bahamut)',
     title: 'Bahamut mainnet Sahara',
-    chain: 'Bahamut',
+    chain: 'Fastex Chain (Bahamut)',
     icon: 'bahamut',
     rpc: [
       'https://rpc1.sahara.bahamutchain.com',
@@ -16122,9 +16122,7 @@ const chainArray = [
     name: 'Kanazawa',
     title: 'Meld Testnet Kanazawa',
     chain: 'Kanazawa',
-    rpc: [
-      'https://rpc-kanazawa.meldlabs.dev/ext/bc/2Ci7VYrUd4fTBqGA5D2HA6UPHzQ4LQyr8rZQww9MGSv9rNkRzn/rpc'
-    ],
+    rpc: [ 'https://subnets.avax.network/meld/testnet/rpc' ],
     faucets: [],
     features: [],
     nativeCurrency: { name: 'gMeld', symbol: 'gMELD', decimals: 18 },
@@ -16133,7 +16131,14 @@ const chainArray = [
     shortName: 'kanazawa',
     chainId: 222000222,
     networkId: 222000222,
-    explorers: []
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://subnets-test.avax.network/meld',
+        icon: 'meld',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Neon EVM DevNet',
@@ -16249,7 +16254,7 @@ const chainArray = [
     name: 'Meld',
     title: 'Meld Mainnet',
     chain: 'MELD',
-    rpc: [ 'https://network-rpc.meld.com' ],
+    rpc: [ 'https://subnets.avax.network/meld/mainnet/rpc' ],
     faucets: [],
     features: [],
     nativeCurrency: { name: 'gMeld', symbol: 'gMELD', decimals: 18 },
@@ -16258,7 +16263,14 @@ const chainArray = [
     shortName: 'meld',
     chainId: 333000333,
     networkId: 333000333,
-    explorers: []
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://subnets.avax.network/meld',
+        icon: 'meld',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Calypso NFT Hub (SKALE Testnet)',
