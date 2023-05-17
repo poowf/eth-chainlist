@@ -98,7 +98,8 @@ const chainArray = [
     rpc: [
       'https://goerli.infura.io/v3/${INFURA_API_KEY}',
       'wss://goerli.infura.io/v3/${INFURA_API_KEY}',
-      'https://rpc.goerli.mudit.blog/'
+      'https://rpc.goerli.mudit.blog/',
+      'https://ethereum-goerli.publicnode.com'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=5&address=${ADDRESS}',
@@ -1741,7 +1742,8 @@ const chainArray = [
       'https://data-seed-prebsc-1-s2.binance.org:8545',
       'https://data-seed-prebsc-2-s2.binance.org:8545',
       'https://data-seed-prebsc-1-s3.binance.org:8545',
-      'https://data-seed-prebsc-2-s3.binance.org:8545'
+      'https://data-seed-prebsc-2-s3.binance.org:8545',
+      'https://bsc-testnet.publicnode.com'
     ],
     faucets: [ 'https://testnet.binance.org/faucet-smart' ],
     nativeCurrency: {
@@ -3862,6 +3864,25 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://testnet.frenscan.io',
         icon: 'fren',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ARZIO Chain',
+    chain: 'ARZIO',
+    icon: 'arzio',
+    rpc: [ 'https://chain-rpc.arzio.co' ],
+    faucets: [],
+    nativeCurrency: { name: 'ARZIO', symbol: 'AZO', decimals: 18 },
+    infoURL: 'https://chain.arzio.co',
+    shortName: 'arzio',
+    chainId: 456,
+    networkId: 456,
+    explorers: [
+      {
+        name: 'ARZIO Scan',
+        url: 'https://scan.arzio.co',
         standard: 'EIP3091'
       }
     ]
@@ -6275,6 +6296,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Joseon Mainnet',
+    chain: 'Joseon',
+    icon: 'joseon',
+    rpc: [ 'https://rpc.modchain.net/blockchain.joseon.com/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Joseon Mun', symbol: 'JSM', decimals: 18 },
+    infoURL: 'https://www.joseon.com/',
+    shortName: 'mun',
+    chainId: 1392,
+    networkId: 1392,
+    explorers: [
+      {
+        name: 'BlockExplorer',
+        url: 'https://www.blockexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Polygon zkEVM Testnet old',
     title: 'Polygon zkEVM Testnet',
     chain: 'Polygon',
@@ -7570,7 +7610,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Metaplayerone Network',
+    name: 'Metaplayerone Dubai Testnet',
     chain: 'MP1 Dubai-Testnet',
     icon: 'meu',
     rpc: [ 'https://rpc-dubai.mp1network.com/' ],
@@ -8553,7 +8593,10 @@ const chainArray = [
   {
     name: 'Fantom Testnet',
     chain: 'FTM',
-    rpc: [ 'https://rpc.testnet.fantom.network' ],
+    rpc: [
+      'https://rpc.testnet.fantom.network',
+      'https://fantom-testnet.publicnode.com'
+    ],
     faucets: [ 'https://faucet.fantom.network' ],
     nativeCurrency: { name: 'Fantom', symbol: 'FTM', decimals: 18 },
     infoURL: 'https://docs.fantom.foundation/quick-start/short-guide#fantom-testnet',
@@ -11126,8 +11169,23 @@ const chainArray = [
     name: 'Fibonacci Mainnet',
     chain: 'FIBO',
     icon: 'fibonacci',
-    rpc: [ 'https://node1.fibo-api.asia' ],
-    faucets: [],
+    rpc: [
+      'https://node1.fibo-api.asia',
+      'https://node2.fibo-api.asia',
+      'https://node3.fibo-api.asia',
+      'https://node4.fibo-api.asia',
+      'https://node5.fibo-api.asia',
+      'https://node6.fibo-api.asia',
+      'https://node7.fibo-api.asia',
+      'https://node1.fibo-rpc.asia',
+      'https://node2.fibo-rpc.asia',
+      'https://node3.fibo-rpc.asia',
+      'https://node4.fibo-rpc.asia',
+      'https://node5.fibo-rpc.asia',
+      'https://node6.fibo-rpc.asia',
+      'https://node7.fibo-rpc.asia'
+    ],
+    faucets: [ 'https://test.fibochain.org/faucets' ],
     nativeCurrency: { name: 'FIBONACCI UTILITY TOKEN', symbol: 'FIBO', decimals: 18 },
     infoURL: 'https://fibochain.org',
     shortName: 'fibo',
@@ -12389,7 +12447,10 @@ const chainArray = [
     name: 'Avalanche Fuji Testnet',
     chain: 'AVAX',
     icon: 'avax',
-    rpc: [ 'https://api.avax-test.network/ext/bc/C/rpc' ],
+    rpc: [
+      'https://api.avax-test.network/ext/bc/C/rpc',
+      'https://avalanche-fuji-c-chain.publicnode.com'
+    ],
     faucets: [ 'https://faucet.avax-test.network/' ],
     nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
     infoURL: 'https://cchain.explorer.avax-test.network',
@@ -13344,7 +13405,8 @@ const chainArray = [
     rpc: [
       'https://matic-mumbai.chainstacklabs.com',
       'https://rpc-mumbai.maticvigil.com',
-      'https://matic-testnet-archive-rpc.bwarelabs.com'
+      'https://matic-testnet-archive-rpc.bwarelabs.com',
+      'https://polygon-mumbai-bor.publicnode.com'
     ],
     faucets: [ 'https://faucet.polygon.technology/' ],
     nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
@@ -15048,6 +15110,11 @@ const chainArray = [
         name: 'Scroll Alpha Testnet Block Explorer',
         url: 'https://blockscout.scroll.io',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Scroll Alpha Testnet Block Explorer',
+        url: 'https://scrollexplorer.unifra.io',
+        standard: 'EIP3091'
       }
     ],
     parent: { type: 'L2', chain: 'eip155-5', bridges: [] }
@@ -15166,6 +15233,25 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://explorer.octa.space',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CURVE Mainnet',
+    chain: 'CURVE',
+    icon: 'curveIcon',
+    rpc: [ 'https://mainnet-rpc.curvescan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Curve', symbol: 'CURVE', decimals: 18 },
+    infoURL: 'https://curvescan.io',
+    shortName: 'CURVEm',
+    chainId: 827431,
+    networkId: 827431,
+    explorers: [
+      {
+        name: 'CURVE Mainnet',
+        url: 'https://curvescan.io',
         standard: 'EIP3091'
       }
     ]
