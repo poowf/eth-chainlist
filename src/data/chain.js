@@ -3191,6 +3191,7 @@ const chainArray = [
   {
     name: 'LaChain',
     chain: 'LaChain',
+    icon: 'LaChain',
     rpc: [
       'https://rpc1.mainnet.lachain.network',
       'https://rpc2.mainnet.lachain.network'
@@ -3801,11 +3802,12 @@ const chainArray = [
     ]
   },
   {
-    name: 'LA Testnet',
-    chain: 'LATestnet',
+    name: 'LaTestnet',
+    chain: 'LaTestnet',
+    icon: 'LaChain',
     rpc: [ 'https://rpc.testnet.lachain.network' ],
     faucets: [ 'https://faucet.lachain.network' ],
-    nativeCurrency: { name: 'Test La Coin', symbol: 'TLA', decimals: 18 },
+    nativeCurrency: { name: 'Test LaCoin', symbol: 'TLA', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: '',
     shortName: 'latestnet',
@@ -3813,7 +3815,7 @@ const chainArray = [
     networkId: 418,
     explorers: [
       {
-        name: 'LA Testnet Explorer',
+        name: 'LaTestnet Explorer',
         url: 'https://testexplorer.lachain.network',
         standard: 'EIP3091'
       }
@@ -7864,6 +7866,26 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'SOMA Network Testnet',
+    chain: 'SOMA',
+    rpc: [ 'https://data-testnet-v1.somanetwork.io/' ],
+    faucets: [ 'https://faucet.somanetwork.io' ],
+    nativeCurrency: { name: 'SMA', symbol: 'tSMA', decimals: 18 },
+    infoURL: 'https://somanetwork.io',
+    shortName: 'sma',
+    chainId: 2323,
+    networkId: 2323,
+    icon: 'soma',
+    explorers: [
+      {
+        name: 'SOMA Testnet Explorer',
+        icon: 'soma',
+        url: 'https://testnet.somascan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Altcoinchain',
     chain: 'mainnet',
     rpc: [ 'https://rpc0.altcoinchain.org/rpc' ],
@@ -9931,6 +9953,18 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
+    name: 'BitEth',
+    chain: 'BTE',
+    rpc: [ 'https://rpc.biteth.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'BitEth', symbol: 'BTE', decimals: 18 },
+    infoURL: 'https://biteth.org',
+    shortName: 'BitEth',
+    chainId: 8086,
+    networkId: 8086,
+    explorers: []
+  },
+  {
     name: 'StreamuX Blockchain',
     chain: 'StreamuX',
     rpc: [
@@ -11432,6 +11466,25 @@ const chainArray = [
     networkId: 16001
   },
   {
+    name: 'Genesys Mainnet',
+    chain: 'Genesys',
+    icon: 'genesys',
+    rpc: [ 'https://rpc.genesys.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Genesys', symbol: 'GSYS', decimals: 18 },
+    infoURL: 'https://www.genesys.network/',
+    shortName: 'Genesys',
+    chainId: 16507,
+    networkId: 16507,
+    explorers: [
+      {
+        name: 'GchainExplorer',
+        url: 'https://gchainexplorer.genesys.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'IRIShub Testnet',
     chain: 'IRIShub',
     rpc: [ 'https://evmrpc.nyancat.irisnet.org' ],
@@ -12703,6 +12756,30 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-3' }
+  },
+  {
+    name: 'Opside Testnet Pre-Alpha',
+    chain: 'ETH',
+    rpc: [
+      'https://pre-alpha-us-http-geth.opside.network',
+      'https://pre-alpha-hk-http-geth.opside.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'IDE Test Token', symbol: 'IDE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://opsi.de/',
+    shortName: 'Opside-Testnet',
+    chainId: 51178,
+    networkId: 51178,
+    icon: 'opside-new',
+    explorers: [
+      {
+        name: 'OpsideTestnetInfo',
+        url: 'https://pre-alpha.opside.info',
+        icon: 'opside-new',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Sardis Mainnet',
@@ -15583,6 +15660,20 @@ const chainArray = [
     chainId: 3141592,
     networkId: 3141592,
     slip44: 1,
+    explorers: []
+  },
+  {
+    name: 'Worlds Caldera',
+    chain: 'WCal',
+    rpc: [ 'https://worlds-test.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://caldera.xyz/',
+    shortName: 'worldscal',
+    chainId: 4281033,
+    networkId: 4281033,
+    icon: 'ethereum',
     explorers: []
   },
   {
