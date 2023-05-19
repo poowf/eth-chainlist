@@ -1700,6 +1700,27 @@ const chainArray = [
     parent: { chain: 'eip155-90', type: 'shard' }
   },
   {
+    name: 'SwissDLT',
+    chain: 'SDLT',
+    rpc: [ 'https://rpc.swissdlt.ch' ],
+    faucets: [],
+    nativeCurrency: { name: 'BCTS', symbol: 'BCTS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://bcts.ch',
+    shortName: 'sdlt',
+    chainId: 94,
+    networkId: 94,
+    icon: 'bcts',
+    explorers: [
+      {
+        name: 'SwissDLT Explorer',
+        url: 'https://explorer.swissdlt.ch',
+        icon: 'bcts',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CryptoKylin Testnet',
     chain: 'EOS',
     rpc: [ 'https://kylin.eosargentina.io' ],
@@ -7902,6 +7923,27 @@ const chainArray = [
         name: 'expedition',
         url: 'http://expedition.altcoinchain.org',
         icon: 'altcoinchain',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'SOMA Network Mainnet',
+    chain: 'SOMA',
+    rpc: [ 'https://data-mainnet-v1.somanetwork.io/' ],
+    faucets: [ 'https://airdrop.somanetwork.io' ],
+    nativeCurrency: { name: 'Soma Native Token', symbol: 'SMA', decimals: 18 },
+    infoURL: 'https://somanetwork.io',
+    shortName: 'smam',
+    chainId: 2332,
+    networkId: 2332,
+    icon: 'soma',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'SOMA Explorer Mainnet',
+        icon: 'soma',
+        url: 'https://somascan.io',
         standard: 'none'
       }
     ]
