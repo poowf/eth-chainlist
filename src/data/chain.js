@@ -681,7 +681,14 @@ const chainArray = [
     infoURL: 'https://telos.net',
     shortName: 'TelosEVMTestnet',
     chainId: 41,
-    networkId: 41
+    networkId: 41,
+    explorers: [
+      {
+        name: 'teloscan',
+        url: 'https://testnet.teloscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Kovan',
@@ -3449,6 +3456,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Neurochain Testnet',
+    chain: 'NCN',
+    rpc: [ 'https://nc-rpc-test1.neurochain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Neurochain', symbol: 'tNCN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.neurochain.ai',
+    shortName: 'ncnt',
+    chainId: 303,
+    networkId: 303,
+    icon: 'neurochain',
+    explorers: [
+      {
+        name: 'neuroscan',
+        url: 'https://testnet.ncnscan.com',
+        icon: 'neurochain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Omax Mainnet',
     chain: 'OMAX Chain',
     rpc: [ 'https://mainapi.omaxray.com' ],
@@ -3464,6 +3492,30 @@ const chainArray = [
         name: 'Omax Chain Explorer',
         url: 'https://omaxray.com',
         icon: 'omaxray',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Neurochain Mainnet',
+    chain: 'NCN',
+    rpc: [
+      'https://nc-rpc-prd1.neurochain.io',
+      'https://nc-rpc-prd2.neurochain.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Neurochain', symbol: 'NCN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.neurochain.ai',
+    shortName: 'ncn',
+    chainId: 313,
+    networkId: 313,
+    icon: 'neurochain',
+    explorers: [
+      {
+        name: 'neuroscan',
+        url: 'https://ncnscan.com',
+        icon: 'neurochain',
         standard: 'EIP3091'
       }
     ]
