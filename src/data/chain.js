@@ -5759,6 +5759,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Origin Testnet',
+    chain: 'Origin',
+    rpc: [ 'https://json-rpc.origin.uptick.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Origin', symbol: 'UOC', decimals: 18 },
+    infoURL: 'https://www.uptick.network',
+    shortName: 'auoc',
+    chainId: 1170,
+    networkId: 1170,
+    icon: 'origin',
+    explorers: [
+      {
+        name: 'Origin Explorer',
+        url: 'https://evm-explorer.origin.uptick.network',
+        icon: 'origin',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Smart Host Teknoloji TESTNET',
     chain: 'SHT',
     rpc: [ 'https://s2.tl.web.tr:4041' ],
@@ -10823,6 +10843,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'PepeNetwork Mainnet',
+    chain: 'PepeNetwork',
+    rpc: [ 'https://rpc-mainnet.pepenetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Pepe', symbol: 'WPEPE', decimals: 18 },
+    infoURL: 'https://pepenetwork.io',
+    shortName: 'pn',
+    chainId: 9779,
+    networkId: 9779,
+    icon: 'pepenetwork',
+    explorers: [
+      {
+        name: 'Pepe Explorer',
+        url: 'https://explorer.pepenetwork.io',
+        icon: 'pepenetwork',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Carbon EVM',
     chain: 'Carbon',
     icon: 'carbon',
@@ -15007,6 +15047,25 @@ const chainArray = [
     networkId: 333999
   },
   {
+    name: 'Bitfinity Network Testnet',
+    chain: 'BFT',
+    rpc: [ 'https://testnet.bitfinity.network' ],
+    faucets: [ 'https://bitfinity.network/faucet' ],
+    nativeCurrency: { name: 'BITFINITY', symbol: 'BFT', decimals: 18 },
+    infoURL: 'https://bitfinity.network',
+    shortName: 'Bitfinity',
+    chainId: 355113,
+    networkId: 355113,
+    explorers: [
+      {
+        name: 'Bitfinity Block Explorer',
+        url: 'https://explorer.bitfinity.network',
+        icon: 'bitfinity',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'HAPchain Testnet',
     chain: 'HAPchain',
     rpc: [ 'https://jsonrpc-test.hap.land' ],
@@ -15326,8 +15385,23 @@ const chainArray = [
     infoURL: 'https://etherfair.org'
   },
   {
+    name: 'Scroll Sepolia Testnet',
+    chain: 'ETH',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://scroll.io',
+    shortName: 'scr-sepolia',
+    chainId: 534351,
+    networkId: 534351,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
+  },
+  {
     name: 'Scroll',
     chain: 'ETH',
+    status: 'incubating',
     rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -15341,7 +15415,7 @@ const chainArray = [
   {
     name: 'Scroll Alpha Testnet',
     chain: 'ETH',
-    status: 'incubating',
+    status: 'active',
     rpc: [ 'https://alpha-rpc.scroll.io/l2' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -15366,6 +15440,7 @@ const chainArray = [
   {
     name: 'Scroll Pre-Alpha Testnet',
     chain: 'ETH',
+    status: 'deprecated',
     rpc: [ 'https://prealpha-rpc.scroll.io/l2' ],
     faucets: [ 'https://prealpha.scroll.io/faucet' ],
     nativeCurrency: { name: 'Ether', symbol: 'TSETH', decimals: 18 },
