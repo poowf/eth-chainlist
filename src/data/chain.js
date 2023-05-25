@@ -4463,6 +4463,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Shibarium Beta',
+    chain: 'Shibarium',
+    icon: 'shibarium',
+    rpc: [ 'https://puppynet.shibrpc.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'BONE', symbol: 'BONE', decimals: 18 },
+    infoURL: 'https://beta.shibariumtech.com',
+    shortName: 'shibarium',
+    chainId: 719,
+    networkId: 719,
+    explorers: [
+      {
+        name: 'shibscan',
+        url: 'https://puppyscan.shib.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Lycan Chain',
     chain: 'LYC',
     rpc: [ 'https://rpc.lycanchain.com/' ],
@@ -7127,10 +7146,10 @@ const chainArray = [
   {
     name: 'Super Smart Chain Testnet',
     chain: 'TSCS',
-    rpc: [ 'https://testnet.superexchain.com:8544' ],
-    faucets: [ 'https://testnet.superexchain.com' ],
+    rpc: [ 'https://testnetrpc.scschain.com' ],
+    faucets: [ 'https://testnet.scschain.com' ],
     nativeCurrency: { name: 'Super Chain Native Token', symbol: 'TSCS', decimals: 18 },
-    infoURL: 'https://testnet.superexchain.com',
+    infoURL: 'https://testnet.scschain.com',
     shortName: 'tscs',
     chainId: 1969,
     networkId: 1969,
@@ -7138,7 +7157,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://testnetscan.superexchain.com',
+        url: 'https://testnetscan.scschain.com',
         standard: 'EIP3091'
       }
     ]
@@ -7146,10 +7165,10 @@ const chainArray = [
   {
     name: 'Super Smart Chain Mainnet',
     chain: 'SCS',
-    rpc: [ 'https://superexchain.com:8545' ],
+    rpc: [ 'https://rpc.scschain.com' ],
     faucets: [],
     nativeCurrency: { name: 'Super Chain Native Token', symbol: 'SCS', decimals: 18 },
-    infoURL: 'https://superexchain.com',
+    infoURL: 'https://scschain.com',
     shortName: 'scs',
     chainId: 1970,
     networkId: 1970,
@@ -7157,7 +7176,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://scan.superexchain.com',
+        url: 'https://scan.scschain.com',
         standard: 'EIP3091'
       }
     ]
@@ -9525,6 +9544,30 @@ const chainArray = [
         name: 'Scolscan Testnet Explorer',
         url: 'https://testnet-explorer.scolcoin.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Fox Testnet Network',
+    chain: 'FOX',
+    rpc: [
+      'https://rpc-testnet-v1.foxchain.app/',
+      'https://rpc2-testnet-v1.foxchain.app/',
+      'https://rpc3-testnet-v1.foxchain.app'
+    ],
+    faucets: [ 'https://faucet.foxchain.app' ],
+    nativeCurrency: { name: 'FOX Native Token', symbol: 'tFOX', decimals: 18 },
+    infoURL: 'https://foxchain.app',
+    shortName: 'fox',
+    chainId: 6565,
+    networkId: 6565,
+    icon: 'fox',
+    explorers: [
+      {
+        name: 'FOX Testnet Explorer',
+        icon: 'fox',
+        url: 'https://testnet.foxscan.app',
+        standard: 'none'
       }
     ]
   },
@@ -13080,8 +13123,8 @@ const chainArray = [
     rpc: [
       'https://rpc.goerli.linea.build',
       'wss://rpc.goerli.linea.build',
-      'https://consensys-zkevm-goerli-prealpha.infura.io/v3/${INFURA_API_KEY}',
-      'wss://consensys-zkevm-goerli-prealpha.infura.io/v3/${INFURA_API_KEY}'
+      'https://linea-goerli.infura.io/v3/${INFURA_API_KEY}',
+      'wss://linea-goerli.infura.io/v3/${INFURA_API_KEY}'
     ],
     faucets: [ 'https://faucetlink.to/goerli' ],
     nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
