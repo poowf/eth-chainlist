@@ -12887,10 +12887,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'Floripa',
-    title: 'Wireshape Testnet Floripa',
+    name: 'Wireshape Floripa Testnet',
+    title: 'Wireshape Floripa Testnet',
     chain: 'Wireshape',
-    rpc: [ 'https://rpc-floripa.wireshape.org' ],
+    icon: 'wireshape',
+    rpc: [
+      'https://rpc-floripa.wireshape.org',
+      'https://floripa.rpc.thirdweb.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'WIRE', symbol: 'WIRE', decimals: 18 },
     infoURL: 'https://wireshape.org',
