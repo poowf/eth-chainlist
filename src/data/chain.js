@@ -8329,6 +8329,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'PLAYA3ULL GAMES',
+    chain: '3ULL',
+    rpc: [ 'https://api.mainnet.playa3ull.games' ],
+    faucets: [],
+    nativeCurrency: { name: '3ULL', symbol: '3ULL', decimals: 18 },
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://playa3ull.games',
+    shortName: '3ULL',
+    chainId: 3011,
+    networkId: 3011,
+    icon: 'playa3ull',
+    explorers: [
+      {
+        name: 'PLAYA3ULL GAMES Explorer',
+        url: 'https://3011.routescan.io',
+        icon: 'playa3ull',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Orlando Chain',
     chain: 'ORL',
     rpc: [ 'https://rpc-testnet.orlchain.com' ],
@@ -13247,6 +13268,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'AxelChain Dev-Net',
+    chain: 'AXEL',
+    rpc: [ 'https://aium-rpc-dev.viacube.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Axelium', symbol: 'AIUM', decimals: 18 },
+    infoURL: 'https://www.axel.org',
+    shortName: 'aium-dev',
+    chainId: 61800,
+    networkId: 61800,
+    icon: 'axelium',
+    explorers: [
+      {
+        name: 'AxelChain Dev-Net Explorer',
+        url: 'https://devexplorer2.viacube.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Etica Mainnet',
     chain: 'Etica Protocol (ETI/EGAZ)',
     icon: 'etica',
@@ -14554,7 +14594,7 @@ const chainArray = [
       'https://rpc.main.siberium.net.ru'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Siberium', symbol: 'SBR', decimals: 18 },
+    nativeCurrency: { name: 'Siberium', symbol: 'SIBR', decimals: 18 },
     infoURL: 'https://siberium.net',
     shortName: 'sbr',
     chainId: 111111,
@@ -15496,7 +15536,7 @@ const chainArray = [
       },
       {
         name: 'Scroll Alpha Testnet Block Explorer',
-        url: 'https://scrollexplorer.unifra.io',
+        url: 'https://scrollscan.co',
         standard: 'EIP3091'
       }
     ],
