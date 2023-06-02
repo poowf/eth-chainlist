@@ -691,33 +691,28 @@ const chainArray = [
     ]
   },
   {
-    name: 'Kovan',
-    title: 'Ethereum Testnet Kovan',
-    chain: 'ETH',
+    name: 'LUKSO Mainnet',
+    chain: 'LUKSO',
+    icon: 'lukso',
     rpc: [
-      'https://kovan.poa.network',
-      'http://kovan.poa.network:8545',
-      'https://kovan.infura.io/v3/${INFURA_API_KEY}',
-      'wss://kovan.infura.io/ws/v3/${INFURA_API_KEY}',
-      'ws://kovan.poa.network:8546'
+      'https://rpc.mainnet.lukso.network',
+      'wss://ws-rpc.mainnet.lukso.network'
     ],
-    faucets: [
-      'http://fauceth.komputing.org?chain=42&address=${ADDRESS}',
-      'https://faucet.kovan.network',
-      'https://gitter.im/kovan-testnet/faucet'
-    ],
-    nativeCurrency: { name: 'Kovan Ether', symbol: 'ETH', decimals: 18 },
+    faucets: [],
+    nativeCurrency: { name: 'LUKSO', symbol: 'LYX', decimals: 18 },
     explorers: [
       {
-        name: 'etherscan',
-        url: 'https://kovan.etherscan.io',
+        name: 'Blockscout',
+        url: 'https://explorer.execution.mainnet.lukso.network',
         standard: 'EIP3091'
       }
     ],
-    infoURL: 'https://kovan-testnet.github.io/website',
-    shortName: 'kov',
+    infoURL: 'https://lukso.network',
+    shortName: 'lukso',
     chainId: 42,
-    networkId: 42
+    networkId: 42,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Darwinia Pangolin Testnet',
@@ -1037,7 +1032,12 @@ const chainArray = [
   {
     name: 'Syscoin Mainnet',
     chain: 'SYS',
-    rpc: [ 'https://rpc.syscoin.org', 'wss://rpc.syscoin.org/wss' ],
+    rpc: [
+      'https://rpc.syscoin.org',
+      'https://rpc.ankr.com/syscoin/${ANKR_API_KEY}',
+      'https://syscoin.public-rpc.com',
+      'wss://rpc.syscoin.org/wss'
+    ],
     faucets: [ 'https://faucet.syscoin.org' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
     infoURL: 'https://www.syscoin.org',
@@ -4191,6 +4191,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Rollux Mainnet',
+    chain: 'SYS',
+    rpc: [ 'https://rpc.rollux.com', 'wss://rpc.rollux.com/wss' ],
+    faucets: [ 'https://rollux.id/faucetapp' ],
+    nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
+    infoURL: 'https://rollux.com',
+    shortName: 'sys-rollux',
+    chainId: 570,
+    networkId: 570,
+    explorers: [
+      {
+        name: 'Rollux Explorer',
+        url: 'https://explorer.rollux.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Metis Stardust Testnet',
     chain: 'ETH',
     rpc: [ 'https://stardust.metis.io/?owner=588' ],
@@ -6535,6 +6553,27 @@ const chainArray = [
       {
         name: 'Ctex Scan Explorer',
         url: 'https://ctexscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ChainX-EVM',
+    chain: 'ChainX',
+    rpc: [
+      'https://mainnet.chainx.org/rpc',
+      'https://mainnet2.chainx.org/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://chainx.org',
+    shortName: 'chainx',
+    chainId: 1501,
+    networkId: 1501,
+    explorers: [
+      {
+        name: 'chainx-evm scan',
+        url: 'https://evm.chainx.org',
         standard: 'none'
       }
     ]
@@ -9005,6 +9044,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'LUKSO Testnet',
+    chain: 'LUKSO Testnet',
+    icon: 'lukso',
+    rpc: [
+      'https://rpc.testnet.lukso.network',
+      'wss://ws-rpc.testnet.lukso.network'
+    ],
+    faucets: [ 'https://faucet.testnet.lukso.network' ],
+    nativeCurrency: { name: 'TestLYX', symbol: 'LYXt', decimals: 18 },
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.execution.testnet.lukso.network',
+        standard: 'none'
+      }
+    ],
+    infoURL: 'https://lukso.network',
+    shortName: 'lukso-testnet',
+    chainId: 4201,
+    networkId: 4201,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
+  },
+  {
     name: 'Nexi Mainnet',
     chain: 'Nexi',
     icon: 'nexi',
@@ -9197,7 +9259,7 @@ const chainArray = [
     chain: 'ETH',
     rpc: [ 'https://rpc.mantle.xyz' ],
     faucets: [],
-    nativeCurrency: { name: 'BitDAO', symbol: 'BIT', decimals: 18 },
+    nativeCurrency: { name: 'Mantle', symbol: 'MNT', decimals: 18 },
     infoURL: 'https://mantle.xyz',
     shortName: 'mantle',
     chainId: 5000,
@@ -9215,7 +9277,7 @@ const chainArray = [
     chain: 'ETH',
     rpc: [ 'https://rpc.testnet.mantle.xyz' ],
     faucets: [ 'https://faucet.testnet.mantle.xyz' ],
-    nativeCurrency: { name: 'Testnet BitDAO', symbol: 'BIT', decimals: 18 },
+    nativeCurrency: { name: 'Testnet Mantle', symbol: 'MNT', decimals: 18 },
     infoURL: 'https://mantle.xyz',
     shortName: 'mantle-testnet',
     chainId: 5001,
@@ -9545,6 +9607,46 @@ const chainArray = [
         name: 'treslechesexplorer',
         url: 'https://explorer.tresleches.finance',
         icon: 'treslechesexplorer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'UPTN Testnet',
+    chain: 'UPTN',
+    icon: 'uptn',
+    rpc: [ 'https://node-api.alp.uptn.io/v1/ext/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'UPTN', symbol: 'UPTN', decimals: 18 },
+    infoURL: 'https://uptn.io',
+    shortName: 'UPTN-TEST',
+    chainId: 6118,
+    networkId: 6118,
+    explorers: [
+      {
+        name: 'UPTN Testnet Explorer',
+        url: 'https://testnet.explorer.uptn.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'UPTN',
+    chain: 'UPTN',
+    icon: 'uptn',
+    rpc: [ 'https://node-api.uptn.io/v1/ext/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'UPTN', symbol: 'UPTN', decimals: 18 },
+    infoURL: 'https://uptn.io',
+    shortName: 'UPTN',
+    chainId: 6119,
+    networkId: 6119,
+    explorers: [
+      {
+        name: 'UPTN Explorer',
+        url: 'https://explorer.uptn.io',
         standard: 'EIP3091'
       }
     ]
@@ -13134,21 +13236,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'Syscoin Rollux Testnet',
+    name: 'Rollux Testnet',
     chain: 'SYS',
     rpc: [
       'https://rpc-tanenbaum.rollux.com',
+      'https://rpc.ankr.com/rollux_testnet/${ANKR_API_KEY}',
       'wss://rpc-tanenbaum.rollux.com/wss'
     ],
-    faucets: [],
-    nativeCurrency: { name: 'Rollux Testnet Syscoin', symbol: 'tSYS', decimals: 18 },
-    infoURL: 'https://syscoin.org',
+    faucets: [ 'https://rollux.id/faucetapp' ],
+    nativeCurrency: { name: 'Testnet Syscoin', symbol: 'TSYS', decimals: 18 },
+    infoURL: 'https://rollux.com',
     shortName: 'tsys-rollux',
     chainId: 57000,
     networkId: 57000,
     explorers: [
       {
-        name: 'Syscoin Rollux Testnet Explorer',
+        name: 'Rollux Testnet Explorer',
         url: 'https://rollux.tanenbaum.io',
         standard: 'EIP3091'
       }
