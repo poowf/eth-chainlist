@@ -8446,47 +8446,18 @@ const chainArray = [
   },
   {
     name: 'Filecoin - Hyperspace testnet',
+    status: 'deprecated',
     chain: 'FIL',
     icon: 'filecoin',
-    rpc: [
-      'https://api.hyperspace.node.glif.io/rpc/v1',
-      'https://rpc.ankr.com/filecoin_testnet',
-      'https://filecoin-hyperspace.chainstacklabs.com/rpc/v1'
-    ],
-    faucets: [ 'https://hyperspace.yoga/#faucet' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
     shortName: 'filecoin-hyperspace',
     chainId: 3141,
     networkId: 3141,
     slip44: 1,
-    explorers: [
-      {
-        name: 'Filfox - Hyperspace',
-        url: 'https://hyperspace.filfox.info/en',
-        standard: 'none'
-      },
-      {
-        name: 'Glif Explorer - Hyperspace',
-        url: 'https://explorer.glif.io/?network=hyperspace',
-        standard: 'none'
-      },
-      {
-        name: 'Beryx',
-        url: 'https://beryx.zondax.ch',
-        standard: 'none'
-      },
-      {
-        name: 'Dev.storage',
-        url: 'https://dev.storage',
-        standard: 'none'
-      },
-      {
-        name: 'Filscan - Hyperspace',
-        url: 'https://hyperspace.filscan.io',
-        standard: 'none'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Debounce Subnet Testnet',
@@ -12475,10 +12446,11 @@ const chainArray = [
   },
   {
     name: 'Filecoin - Wallaby testnet',
+    status: 'deprecated',
     chain: 'FIL',
     icon: 'filecoin',
-    rpc: [ 'https://wallaby.node.glif.io/rpc/v1' ],
-    faucets: [ 'https://wallaby.yoga/#faucet' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
     shortName: 'filecoin-wallaby',
@@ -14113,6 +14085,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nautilus Chain',
+    title: 'Nautilus Trition Testnet',
+    chain: 'ETH',
+    icon: 'nautilus',
+    rpc: [ 'https://triton.api.nautchain.xyz' ],
+    faucets: [ 'https://faucet.eclipse.builders' ],
+    nativeCurrency: {
+      name: 'Nautilus Zebec Testnet Tokens',
+      symbol: 'tZBC',
+      decimals: 18
+    },
+    infoURL: 'https://docs.nautchain.xyz',
+    shortName: 'NAUT',
+    chainId: 91002,
+    networkId: 91002,
+    explorers: [
+      {
+        name: 'Nautscan',
+        url: 'https://triton.nautscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Lambda Testnet',
     chain: 'Lambda',
     rpc: [ 'https://evm.lambda.top/' ],
@@ -15194,7 +15190,12 @@ const chainArray = [
     name: 'Filecoin - Calibration testnet',
     chain: 'FIL',
     icon: 'filecoin',
-    rpc: [ 'https://api.calibration.node.glif.io/rpc/v1' ],
+    rpc: [
+      'https://api.calibration.node.glif.io/rpc/v1',
+      'https://rpc.ankr.com/filecoin_testnet',
+      'https://filecoin-calibration.chainstacklabs.com/rpc/v1',
+      'https://filecoin-calibration.chainup.net/rpc/v1'
+    ],
     faucets: [ 'https://faucet.calibration.fildev.network/' ],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
     infoURL: 'https://filecoin.io',
@@ -15216,6 +15217,16 @@ const chainArray = [
       {
         name: 'Filfox - Calibration',
         url: 'https://calibration.filfox.info',
+        standard: 'none'
+      },
+      {
+        name: 'Glif Explorer - Calibration',
+        url: 'https://explorer.glif.io/?network=calibration',
+        standard: 'none'
+      },
+      {
+        name: 'Beryx',
+        url: 'https://beryx.zondax.ch',
         standard: 'none'
       }
     ]
