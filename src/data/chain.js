@@ -3225,7 +3225,8 @@ const chainArray = [
     icon: 'LaChain',
     rpc: [
       'https://rpc1.mainnet.lachain.network',
-      'https://rpc2.mainnet.lachain.network'
+      'https://rpc2.mainnet.lachain.network',
+      'https://lachain.rpc-nodes.cedalio.dev'
     ],
     faucets: [],
     nativeCurrency: { name: 'LaCoin', symbol: 'LAC', decimals: 18 },
@@ -3872,7 +3873,10 @@ const chainArray = [
     name: 'LaTestnet',
     chain: 'LaTestnet',
     icon: 'LaChain',
-    rpc: [ 'https://rpc.testnet.lachain.network' ],
+    rpc: [
+      'https://rpc.testnet.lachain.network',
+      'https://lachain-testnet.rpc-nodes.cedalio.dev'
+    ],
     faucets: [ 'https://faucet.lachain.network' ],
     nativeCurrency: { name: 'Test LaCoin', symbol: 'TLA', decimals: 18 },
     features: [ { name: 'EIP155' } ],
@@ -4652,6 +4656,17 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Patex',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.patex.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://patex.io/',
+    shortName: 'peth',
+    chainId: 789,
+    networkId: 789
   },
   {
     name: 'Lucid Blockchain',
@@ -6522,6 +6537,21 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Living Assets Mainnet',
+    chain: 'LAS',
+    icon: 'livingassets',
+    rpc: [
+      'https://beta.mainnet.livingassets.io/rpc',
+      'https://gamma.mainnet.livingassets.io/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'LAS', symbol: 'LAS', decimals: 18 },
+    infoURL: 'https://dev.livingassets.io/',
+    shortName: 'LAS',
+    chainId: 1440,
+    networkId: 1440
   },
   {
     name: 'Polygon zkEVM Testnet',
@@ -9825,7 +9855,7 @@ const chainArray = [
     rpc: [ 'https://api.mainnet.zetachain.com/evm' ],
     faucets: [],
     nativeCurrency: { name: 'Zeta', symbol: 'ZETA', decimals: 18 },
-    infoURL: 'https://docs.zetachain.com/',
+    infoURL: 'https://zetachain.com/docs/',
     shortName: 'zetachain-mainnet',
     chainId: 7000,
     networkId: 7000,
@@ -9842,10 +9872,13 @@ const chainArray = [
     name: 'ZetaChain Athens Testnet',
     chain: 'ZetaChain',
     icon: 'zetachain',
-    rpc: [ 'https://api.athens2.zetachain.com/evm' ],
+    rpc: [
+      'https://zetachain-athens-evm.blockpi.network/v1/rpc/public',
+      'wss://zetachain-athens.blockpi.network/rpc/v1/public/websocket'
+    ],
     faucets: [ 'https://labs.zetachain.com/get-zeta' ],
     nativeCurrency: { name: 'Zeta', symbol: 'aZETA', decimals: 18 },
-    infoURL: 'https://docs.zetachain.com/',
+    infoURL: 'https://zetachain.com/docs',
     shortName: 'zetachain-athens',
     chainId: 7001,
     networkId: 7001,
@@ -13025,7 +13058,7 @@ const chainArray = [
     icon: 'wireshape',
     rpc: [
       'https://rpc-floripa.wireshape.org',
-      'https://floripa.rpc.thirdweb.com'
+      'https://wireshape-floripa-testnet.rpc.thirdweb.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'WIRE', symbol: 'WIRE', decimals: 18 },
@@ -15275,6 +15308,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Aves Testnet',
+    chain: 'AVST',
+    rpc: [ 'https://test.rpc.avescoin.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'AvesT', symbol: 'AVST', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://ethereum.org',
+    shortName: 'avst',
+    chainId: 333331,
+    networkId: 333331,
+    icon: 'aves',
+    explorers: [
+      {
+        name: 'avescan',
+        url: 'https://testnet.avescoin.io',
+        icon: 'avescan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Oone Chain Testnet',
     chain: 'OONE',
     rpc: [ 'https://blockchain-test.adigium.world' ],
@@ -15594,6 +15648,17 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Patex Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://test-rpc.patex.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://patex.io/',
+    shortName: 'psep',
+    chainId: 471100,
+    networkId: 471100
   },
   {
     name: 'OpenChain Mainnet',
