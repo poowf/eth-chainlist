@@ -3851,6 +3851,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ozone Chain Testnet',
+    chain: 'OZONE',
+    rpc: [ 'https://node1.testnet.ozonechain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'OZONE', symbol: 'OZO', decimals: 18 },
+    infoURL: 'https://ozonechain.io',
+    shortName: 'ozo_tst',
+    chainId: 401,
+    networkId: 401,
+    icon: 'ozonechain',
+    explorers: [
+      {
+        name: 'OZONE Scan',
+        url: 'https://testnet.ozonescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SX Network Mainnet',
     chain: 'SX',
     icon: 'SX',
@@ -8880,6 +8899,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ozone Chain Mainnet',
+    chain: 'OZONE',
+    rpc: [ 'https://node1.ozonechain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'OZONE', symbol: 'OZO', decimals: 18 },
+    infoURL: 'https://ozonechain.io',
+    shortName: 'ozo',
+    chainId: 4000,
+    networkId: 4000,
+    icon: 'ozonechain',
+    explorers: [
+      {
+        name: 'OZONE Scan',
+        url: 'https://ozonescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Fantom Testnet',
     chain: 'FTM',
     rpc: [
@@ -9539,17 +9577,17 @@ const chainArray = [
     name: 'SatoshiChain Testnet',
     chain: 'SATS',
     icon: 'satoshichain',
-    rpc: [ 'https://rpc.satoshichain.io' ],
+    rpc: [ 'https://testnet-rpc.satoshichain.io' ],
     faucets: [ 'https://faucet.satoshichain.io' ],
     nativeCurrency: { name: 'SatoshiChain Coin', symbol: 'SATS', decimals: 18 },
     infoURL: 'https://satoshichain.net',
-    shortName: 'sats',
+    shortName: 'satst',
     chainId: 5758,
     networkId: 5758,
     explorers: [
       {
-        name: 'SatoshiChain Explorer',
-        url: 'https://satoshiscan.io',
+        name: 'SatoshiChain Testnet Explorer',
+        url: 'https://testnet.satoshiscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -11537,6 +11575,25 @@ const chainArray = [
         name: 'SanR Chain Explorer',
         url: 'https://sanrchain-explorer.santiment.net',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'SatoshiChain Mainnet',
+    chain: 'SATS',
+    icon: 'satoshichain',
+    rpc: [ 'https://mainnet-rpc.satoshichain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SatoshiChain Coin', symbol: 'SATS', decimals: 18 },
+    infoURL: 'https://satoshichain.net',
+    shortName: 'sats',
+    chainId: 12009,
+    networkId: 12009,
+    explorers: [
+      {
+        name: 'SatoshiChain Explorer',
+        url: 'https://satoshiscan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -14744,6 +14801,26 @@ const chainArray = [
       {
         name: 'quarkchain-devnet',
         url: 'https://devnet.quarkchain.io/7',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Siberium Test Network',
+    chain: 'SBR',
+    rpc: [ 'https://rpc.test.siberium.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'TestSIBR', symbol: 'SIBR', decimals: 18 },
+    infoURL: 'https://siberium.net',
+    shortName: 'testsbr',
+    chainId: 111000,
+    networkId: 111000,
+    icon: 'siberium',
+    explorers: [
+      {
+        name: 'Siberium Testnet Explorer - blockscout',
+        url: 'https://explorer.test.siberium.net',
+        icon: 'siberium',
         standard: 'EIP3091'
       }
     ]
