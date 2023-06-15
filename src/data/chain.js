@@ -2634,6 +2634,25 @@ const chainArray = [
     networkId: 163
   },
   {
+    name: 'Omni Testnet 1',
+    chain: 'Omni',
+    rpc: [ 'https://testnet-1.omni.network' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
+    infoURL: 'https://docs.omni.network/',
+    shortName: 'omni_testnet',
+    chainId: 165,
+    networkId: 165,
+    explorers: [
+      {
+        name: 'Omni Explorer',
+        url: 'https://testnet-1.explorer.omni.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Atoshi Testnet',
     chain: 'ATOSHI',
     icon: 'atoshi',
@@ -7697,6 +7716,17 @@ const chainArray = [
     shortName: 'otp',
     chainId: 2043,
     networkId: 2043
+  },
+  {
+    name: 'Shrapnel Subnet',
+    chain: 'shrapnel',
+    rpc: [ 'https://subnets.avax.network/shrapnel/mainnet/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Shrapnel Gas Token', symbol: 'SHRAPG', decimals: 18 },
+    infoURL: 'https://www.shrapnel.com/',
+    shortName: 'Shrapnel',
+    chainId: 2044,
+    networkId: 2044
   },
   {
     name: 'Stratos Testnet',
