@@ -1728,17 +1728,26 @@ const chainArray = [
     ]
   },
   {
-    name: 'CryptoKylin Testnet',
-    chain: 'EOS',
-    rpc: [ 'https://kylin.eosargentina.io' ],
-    faucets: [],
-    nativeCurrency: { name: 'EOS', symbol: 'EOS', decimals: 18 },
-    infoURL: 'https://www.cryptokylin.io/',
-    shortName: 'kylin',
+    name: 'CamDL Mainnet',
+    chain: 'CADL',
+    rpc: [ 'https://rpc1.camdl.gov.kh/' ],
+    faucets: [ 'https://faucet.camdl.gov.kh/' ],
+    nativeCurrency: { name: 'CADL', symbol: 'CADL', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://camdl.gov.kh/',
+    shortName: 'camdl',
     chainId: 95,
     networkId: 95,
-    explorers: [],
-    status: 'deprecated'
+    redFlags: [ 'reusedChainId' ],
+    icon: 'camdl',
+    explorers: [
+      {
+        name: 'CamDL Block Explorer',
+        url: 'https://explorer.camdl.gov.kh',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Bitkub Chain',
@@ -13309,6 +13318,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Titan',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc.titan.tokamak.network',
+      'wss://rpc.titan.tokamak.network/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://tokamak.network',
+    shortName: 'teth',
+    chainId: 55004,
+    networkId: 55004,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.titan.tokamak.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'REI Chain Mainnet',
     chain: 'REI',
     icon: 'reichain',
@@ -16507,6 +16537,24 @@ const chainArray = [
     chainId: 7762959,
     networkId: 7762959,
     slip44: 184
+  },
+  {
+    name: 'Zora',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.zora.co/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zora.co',
+    shortName: 'zora',
+    chainId: 7777777,
+    networkId: 7777777,
+    explorers: [
+      {
+        name: 'Zora Network Explorer',
+        url: 'https://explorer.zora.co',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Plian Mainnet Subchain 1',
