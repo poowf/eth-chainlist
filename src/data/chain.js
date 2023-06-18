@@ -3489,12 +3489,10 @@ const chainArray = [
     shortName: 'ncnt',
     chainId: 303,
     networkId: 303,
-    icon: 'neurochain',
     explorers: [
       {
         name: 'neuroscan',
         url: 'https://testnet.ncnscan.com',
-        icon: 'neurochain',
         standard: 'EIP3091'
       }
     ]
@@ -3533,12 +3531,10 @@ const chainArray = [
     shortName: 'ncn',
     chainId: 313,
     networkId: 313,
-    icon: 'neurochain',
     explorers: [
       {
         name: 'neuroscan',
         url: 'https://ncnscan.com',
-        icon: 'neurochain',
         standard: 'EIP3091'
       }
     ]
@@ -7870,7 +7866,6 @@ const chainArray = [
   {
     name: 'Metaplayerone Dubai Testnet',
     chain: 'MP1 Dubai-Testnet',
-    icon: 'meu',
     rpc: [ 'https://rpc-dubai.mp1network.com/' ],
     faucets: [],
     nativeCurrency: { name: 'Metaunit', symbol: 'MEU', decimals: 18 },
@@ -7882,7 +7877,6 @@ const chainArray = [
       {
         name: 'MP1Scan',
         url: 'https://dubai.mp1scan.io',
-        icon: 'meu',
         standard: 'EIP3091'
       }
     ]
