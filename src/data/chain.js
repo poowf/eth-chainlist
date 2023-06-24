@@ -6813,7 +6813,8 @@ const chainArray = [
         icon: 'eon',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'Horizen Gobi Testnet',
