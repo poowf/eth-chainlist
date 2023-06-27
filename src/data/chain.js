@@ -181,7 +181,7 @@ const chainArray = [
     networkId: 2
   },
   {
-    name: 'Optimism',
+    name: 'OP Mainnet',
     chain: 'ETH',
     rpc: [ 'https://mainnet.optimism.io/' ],
     faucets: [],
@@ -4240,7 +4240,11 @@ const chainArray = [
   {
     name: 'Rollux Mainnet',
     chain: 'SYS',
-    rpc: [ 'https://rpc.rollux.com', 'wss://rpc.rollux.com/wss' ],
+    rpc: [
+      'https://rpc.rollux.com',
+      'wss://rpc.rollux.com/wss',
+      'https://rpc.ankr.com/rollux/${ANKR_API_KEY}'
+    ],
     faucets: [ 'https://rollux.id/faucetapp' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
     infoURL: 'https://rollux.com',
@@ -8960,6 +8964,26 @@ const chainArray = [
       {
         name: 'OZONE Scan',
         url: 'https://ozonescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Peperium Chain Testnet',
+    chain: 'PERIUM',
+    rpc: [ 'https://rpc-testnet.peperium.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Peperium Chain Testnet', symbol: 'PERIUM', decimals: 18 },
+    infoURL: 'https://peperium.io',
+    shortName: 'PERIUM',
+    chainId: 4001,
+    networkId: 4001,
+    icon: 'peperium',
+    explorers: [
+      {
+        name: 'Peperium Chain Explorer',
+        url: 'https://scan-testnet.peperium.io',
+        icon: 'peperium',
         standard: 'EIP3091'
       }
     ]
