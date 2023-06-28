@@ -1115,7 +1115,7 @@ const chainArray = [
   {
     name: 'Ethereum Classic Mainnet',
     chain: 'ETC',
-    rpc: [ 'https://www.ethercluster.com/etc' ],
+    rpc: [ 'https://etc.rivet.link' ],
     faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/?' ],
     nativeCurrency: { name: 'Ethereum Classic Ether', symbol: 'ETC', decimals: 18 },
     infoURL: 'https://ethereumclassic.org',
@@ -1149,7 +1149,7 @@ const chainArray = [
   {
     name: 'Ethereum Classic Testnet Mordor',
     chain: 'ETC',
-    rpc: [ 'https://www.ethercluster.com/mordor' ],
+    rpc: [ 'https://rpc.mordor.etccooperative.org' ],
     faucets: [],
     nativeCurrency: {
       name: 'Mordor Classic Testnet Ether',
@@ -6798,26 +6798,19 @@ const chainArray = [
     networkId: 1657
   },
   {
-    name: 'Horizen Yuma Testnet',
+    name: 'Horizen Yuma Testnet Deprecated',
     shortName: 'Yuma',
     chain: 'Yuma',
     icon: 'eon',
-    rpc: [ 'https://yuma-testnet.horizenlabs.io/ethv1' ],
+    rpc: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    faucets: [ 'https://yuma-testnet-faucet.horizen.io' ],
+    faucets: [],
     nativeCurrency: { name: 'Testnet Zen', symbol: 'tZEN', decimals: 18 },
     infoURL: 'https://horizen.io/',
     chainId: 1662,
     networkId: 1662,
     slip44: 121,
-    explorers: [
-      {
-        name: 'Yuma Testnet Block Explorer',
-        url: 'https://yuma-explorer.horizen.io',
-        icon: 'eon',
-        standard: 'EIP3091'
-      }
-    ],
+    explorers: [],
     status: 'deprecated'
   },
   {
@@ -16838,6 +16831,30 @@ const chainArray = [
     shortName: 'qki',
     chainId: 20181205,
     networkId: 20181205
+  },
+  {
+    name: 'Pego Network',
+    chain: 'PEGO',
+    rpc: [
+      'https://pegorpc.com',
+      'https://node1.pegorpc.com',
+      'https://node2.pegorpc.com',
+      'https://node3.pegorpc.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Pego Native Token', symbol: 'PG', decimals: 18 },
+    infoURL: 'https://pego.network',
+    shortName: 'pg',
+    chainId: 20201022,
+    networkId: 20201022,
+    icon: 'pego',
+    explorers: [
+      {
+        name: 'Pego Network Explorer',
+        url: 'https://scan.pego.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Excelon Mainnet',
