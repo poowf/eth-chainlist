@@ -4242,6 +4242,7 @@ const chainArray = [
     chain: 'SYS',
     rpc: [
       'https://rpc.rollux.com',
+      'https://rollux.public-rpc.com',
       'wss://rpc.rollux.com/wss',
       'https://rpc.ankr.com/rollux/${ANKR_API_KEY}'
     ],
@@ -9757,6 +9758,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cascadia Testnet',
+    chain: 'Cascadia',
+    rpc: [ 'https://testnet.cascadia.foundation' ],
+    faucets: [ 'https://www.cascadia.foundation/faucet' ],
+    nativeCurrency: { name: 'CC', symbol: 'tCC', decimals: 18 },
+    infoURL: 'https://www.cascadia.foundation',
+    shortName: 'cascadia',
+    chainId: 6102,
+    networkId: 6102,
+    icon: 'cascadia',
+    explorers: [
+      {
+        name: 'Cascadia EVM Explorer',
+        url: 'https://explorer.cascadia.foundation',
+        standard: 'none',
+        icon: 'cascadia'
+      },
+      {
+        name: 'Cascadia Cosmos Explorer',
+        url: 'https://validator.cascadia.foundation',
+        standard: 'none',
+        icon: 'cascadia'
+      }
+    ]
+  },
+  {
     name: 'UPTN Testnet',
     chain: 'UPTN',
     icon: 'uptn',
@@ -10947,14 +10974,8 @@ const chainArray = [
     icon: 'evmos',
     explorers: [
       {
-        name: 'Evmos EVM Explorer',
-        url: 'https://evm.evmos.dev',
-        standard: 'EIP3091',
-        icon: 'evmos'
-      },
-      {
-        name: 'Evmos Cosmos Explorer',
-        url: 'https://explorer.evmos.dev',
+        name: 'Evmos Explorer (Escan)',
+        url: 'https://testnet.escan.live',
         standard: 'none',
         icon: 'evmos'
       }
@@ -10963,10 +10984,7 @@ const chainArray = [
   {
     name: 'Evmos',
     chain: 'Evmos',
-    rpc: [
-      'https://eth.bd.evmos.org:8545',
-      'https://evmos-evm.publicnode.com'
-    ],
+    rpc: [ 'https://evmos-evm.publicnode.com' ],
     faucets: [],
     nativeCurrency: { name: 'Evmos', symbol: 'EVMOS', decimals: 18 },
     infoURL: 'https://evmos.org',
@@ -10976,14 +10994,8 @@ const chainArray = [
     icon: 'evmos',
     explorers: [
       {
-        name: 'Evmos EVM Explorer (Escan)',
+        name: 'Evmos Explorer (Escan)',
         url: 'https://escan.live',
-        standard: 'none',
-        icon: 'evmos'
-      },
-      {
-        name: 'Evmos Cosmos Explorer (Mintscan)',
-        url: 'https://www.mintscan.io/evmos',
         standard: 'none',
         icon: 'evmos'
       }
@@ -14958,6 +14970,26 @@ const chainArray = [
         name: 'Siberium Mainnet Explorer - blockscout - 2',
         url: 'https://explorer.main.siberium.net.ru',
         icon: 'siberium',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Metachain One Mainnet',
+    chain: 'METAO',
+    icon: 'metao',
+    rpc: [ 'https://rpc.metachain.one', 'https://rpc2.metachain.one' ],
+    faucets: [],
+    nativeCurrency: { name: 'Metao', symbol: 'METAO', decimals: 18 },
+    infoURL: 'https://metachain.one',
+    shortName: 'metao',
+    chainId: 112358,
+    networkId: 112358,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.metachain.one',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
