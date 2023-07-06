@@ -7993,6 +7993,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Moonsama Network',
+    chain: 'MSN',
+    rpc: [ 'https://rpc.moonsama.com', 'wss://rpc.moonsama.com/ws' ],
+    faucets: [ 'https://multiverse.moonsama.com/faucet' ],
+    nativeCurrency: { name: 'Sama Token', symbol: 'SAMA', decimals: 18 },
+    infoURL: 'https://moonsama.com',
+    shortName: 'msn',
+    chainId: 2199,
+    networkId: 2199,
+    slip44: 2199,
+    icon: 'msn',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.moonsama.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bitcoin EVM',
     chain: 'Bitcoin EVM',
     rpc: [ 'https://connect.bitcoinevm.com' ],
@@ -9317,6 +9338,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'MEVerse Chain Testnet',
+    chain: 'MEVerse',
+    rpc: [ 'https://rpc.meversetestnet.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'MEVerse', symbol: 'MEV', decimals: 18 },
+    infoURL: 'https://www.meverse.sg',
+    shortName: 'TESTMEV',
+    chainId: 4759,
+    networkId: 4759,
+    icon: 'meverse',
+    explorers: [
+      {
+        name: 'MEVerse Chain Testnet Explorer',
+        url: 'https://testnet.meversescan.io',
+        standard: 'none',
+        icon: 'meverse'
+      }
+    ]
+  },
+  {
     name: 'BlackFort Exchange Network Testnet',
     chain: 'TBXN',
     rpc: [ 'https://testnet.blackfort.network/rpc' ],
@@ -10117,6 +10158,26 @@ const chainArray = [
         name: 'raba',
         url: 'https://x.raba.app/explorer',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'MEVerse Chain Mainnet',
+    chain: 'MEVerse',
+    rpc: [ 'https://rpc.meversemainnet.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'MEVerse', symbol: 'MEV', decimals: 18 },
+    infoURL: 'https://www.meverse.sg',
+    shortName: 'MEV',
+    chainId: 7518,
+    networkId: 7518,
+    icon: 'meverse',
+    explorers: [
+      {
+        name: 'MEVerse Chain Explorer',
+        url: 'https://www.meversescan.io',
+        standard: 'none',
+        icon: 'meverse'
       }
     ]
   },
@@ -16455,6 +16516,27 @@ const chainArray = [
     networkId: 3141592,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'AltLayer Zero Gas Network',
+    chain: 'ETH',
+    rpc: [ 'https://zero.alt.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'ZERO', symbol: 'ZERO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://altlayer.io',
+    shortName: 'alt-zerogas',
+    chainId: 4000003,
+    networkId: 4000003,
+    icon: 'altlayer',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://zero-explorer.alt.technology',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Worlds Caldera',
