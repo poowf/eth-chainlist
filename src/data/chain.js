@@ -4396,6 +4396,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Avocado',
+    chain: 'Avocado',
+    rpc: [ 'https://rpc.avocado.instadapp.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://avocado.instadapp.io',
+    shortName: 'avocado',
+    chainId: 634,
+    networkId: 634,
+    icon: 'avocado',
+    explorers: [
+      {
+        name: 'avoscan',
+        url: 'https://avoscan.co',
+        icon: 'avocado',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'SX Network Testnet',
     chain: 'SX',
     icon: 'SX',
@@ -5617,6 +5637,26 @@ const chainArray = [
       {
         name: 'explorer',
         url: 'https://explorer.evm.testnet.shimmer.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mintara Testnet',
+    title: 'Mintara Testnet',
+    chain: 'Mintara',
+    icon: 'mintara',
+    rpc: [ 'https://subnets.avax.network/mintara/testnet/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'MINTARA', symbol: 'MNTR', decimals: 18 },
+    infoURL: 'https://playthink.co.jp',
+    shortName: 'mintara-testnet',
+    chainId: 1079,
+    networkId: 1079,
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://subnets-test.avax.network/mintara',
         standard: 'EIP3091'
       }
     ]
