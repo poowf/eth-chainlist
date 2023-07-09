@@ -3099,6 +3099,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Plinga Mainnet',
+    chain: 'Plinga',
+    icon: 'plinga',
+    rpc: [
+      'https://rpcurl.mainnet.plgchain.com',
+      'https://rpcurl.plgchain.blockchain.evmnode.online',
+      'https://rpcurl.mainnet.plgchain.plinga.technology'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Plinga', symbol: 'PLINGA', decimals: 18 },
+    infoURL: 'https://www.plinga.technology/',
+    shortName: 'plgchain',
+    chainId: 242,
+    networkId: 242,
+    explorers: [
+      {
+        name: 'plgscan',
+        url: 'https://www.plgscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Energy Web Chain',
     chain: 'Energy Web Chain',
     rpc: [ 'https://rpc.energyweb.org', 'wss://rpc.energyweb.org/ws' ],
@@ -8818,6 +8841,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'Botanix Testnet',
+    chain: 'BTC',
+    icon: 'botanix',
+    rpc: [ 'https://testnet-rpc.btxtestchain.com' ],
+    faucets: [ 'https://faucet.btxtestchain.com' ],
+    nativeCurrency: { name: 'Botanix', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://btxtestchain.com',
+    shortName: 'BTCt',
+    chainId: 3636,
+    networkId: 3636,
+    explorers: [
+      {
+        name: 'Botanix',
+        url: 'https://testnet.btxtestchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Botanix Mainnet',
+    chain: 'BTC',
+    icon: 'botanix',
+    rpc: [ 'https://rpc.btxtestchain.com' ],
+    faucets: [ 'https://faucet.btxtestchain.com' ],
+    nativeCurrency: { name: 'Botanix', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://btxtestchain.com',
+    shortName: 'BTCm',
+    chainId: 3637,
+    networkId: 3637,
+    explorers: [
+      {
+        name: 'Botanix',
+        url: 'https://btxtestchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Jouleverse Mainnet',
     chain: 'Jouleverse',
     rpc: [ 'https://rpc.jnsdao.com:8503' ],
@@ -10082,10 +10143,7 @@ const chainArray = [
     name: 'ZetaChain Athens Testnet',
     chain: 'ZetaChain',
     icon: 'zetachain',
-    rpc: [
-      'https://zetachain-athens-evm.blockpi.network/v1/rpc/public',
-      'wss://zetachain-athens.blockpi.network/rpc/v1/public/websocket'
-    ],
+    rpc: [ 'https://api.athens2.zetachain.com/evm' ],
     faucets: [ 'https://labs.zetachain.com/get-zeta' ],
     nativeCurrency: { name: 'Zeta', symbol: 'aZETA', decimals: 18 },
     infoURL: 'https://zetachain.com/docs',
@@ -16105,6 +16163,24 @@ const chainArray = [
       {
         name: 'Scroll L2 Block Explorer',
         url: 'https://l2scan.scroll.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Shinarium Beta',
+    chain: 'Shinarium',
+    rpc: [ 'https://rpc.shinarium.org' ],
+    faucets: [ 'https://faucet.shinarium.org' ],
+    nativeCurrency: { name: 'Shina Inu', symbol: 'SHI', decimals: 18 },
+    infoURL: 'https://shinarium.org',
+    shortName: 'shi',
+    chainId: 534849,
+    networkId: 534849,
+    explorers: [
+      {
+        name: 'shinascan',
+        url: 'https://shinascan.shinarium.org',
         standard: 'EIP3091'
       }
     ]
