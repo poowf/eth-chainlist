@@ -3322,7 +3322,14 @@ const chainArray = [
   {
     name: 'Boba Network',
     chain: 'ETH',
-    rpc: [ 'https://mainnet.boba.network/' ],
+    rpc: [
+      'https://mainnet.boba.network',
+      'https://replica.boba.network',
+      'http://boba-ethereum.gateway.tenderly.co',
+      'http://gateway.tenderly.co/public/boba-ethereum',
+      'wss://boba-ethereum.gateway.tenderly.co/',
+      'wss://gateway.tenderly.co/public/boba-ethereum'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://boba.network',
@@ -5642,6 +5649,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'ShimmerEVM Testnet Deprecated',
+    title: 'ShimmerEVM Testnet Deprecated',
+    chain: 'ShimmerEVM',
+    icon: 'shimmerevm',
+    rpc: [],
+    faucets: [
+      'https://evm-toolkit.evm.testnet.shimmer.network',
+      'https://evm-faucet.testnet.shimmer.network'
+    ],
+    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 18 },
+    infoURL: 'https://shimmer.network',
+    shortName: 'shimmerevm-testnet-deprecated',
+    chainId: 1071,
+    networkId: 1071,
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://explorer.evm.testnet.shimmer.network',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'deprecated'
+  },
+  {
     name: 'ShimmerEVM Testnet',
     title: 'ShimmerEVM Testnet',
     chain: 'ShimmerEVM',
@@ -5651,11 +5682,11 @@ const chainArray = [
       'https://evm-toolkit.evm.testnet.shimmer.network',
       'https://evm-faucet.testnet.shimmer.network'
     ],
-    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 18 },
+    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 6 },
     infoURL: 'https://shimmer.network',
     shortName: 'shimmerevm-testnet',
-    chainId: 1071,
-    networkId: 1071,
+    chainId: 1072,
+    networkId: 1072,
     explorers: [
       {
         name: 'explorer',
@@ -8493,11 +8524,14 @@ const chainArray = [
   {
     name: 'Boba Network Goerli Testnet',
     chain: 'ETH',
-    rpc: [ 'https://goerli.boba.network/' ],
+    rpc: [
+      'https://goerli.boba.network/',
+      'wss://wss.goerli.boba.network/'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://boba.network',
-    shortName: 'Bobagoerli',
+    shortName: 'BobaGoerli',
     chainId: 2888,
     networkId: 2888,
     explorers: [
@@ -8510,7 +8544,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-5',
-      bridges: [ { url: 'https://gateway.goerli.boba.network' } ]
+      bridges: [ { url: 'https://gateway.boba.network' } ]
     }
   },
   {
@@ -9383,8 +9417,7 @@ const chainArray = [
     rpc: [
       'https://testnet.avax.boba.network',
       'wss://wss.testnet.avax.boba.network',
-      'https://replica.testnet.avax.boba.network',
-      'wss://replica-wss.testnet.avax.boba.network'
+      'https://replica.testnet.avax.boba.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
@@ -9398,7 +9431,12 @@ const chainArray = [
         url: 'https://blockexplorer.testnet.avax.boba.network',
         standard: 'none'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-5',
+      bridges: [ { url: 'https://gateway.boba.network' } ]
+    }
   },
   {
     name: 'Htmlcoin Mainnet',
@@ -11337,7 +11375,12 @@ const chainArray = [
         url: 'https://blockexplorer.testnet.bnb.boba.network',
         standard: 'none'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-5',
+      bridges: [ { url: 'https://gateway.boba.network' } ]
+    }
   },
   {
     name: 'MainnetZ Testnet',
@@ -13619,9 +13662,11 @@ const chainArray = [
     chain: 'Boba BNB Mainnet',
     rpc: [
       'https://bnb.boba.network',
-      'wss://wss.bnb.boba.network',
+      'http://boba-bnb.gateway.tenderly.co/',
+      'http://gateway.tenderly.co/public/boba-bnb',
       'https://replica.bnb.boba.network',
-      'wss://replica-wss.bnb.boba.network'
+      'wss://boba-bnb.gateway.tenderly.co/',
+      'wss://gateway.tenderly.co/public/boba-bnb'
     ],
     faucets: [],
     nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
@@ -13635,7 +13680,12 @@ const chainArray = [
         url: 'https://blockexplorer.bnb.boba.network',
         standard: 'none'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-5',
+      bridges: [ { url: 'https://gateway.boba.network' } ]
+    }
   },
   {
     name: 'Rollux Testnet',
@@ -13658,6 +13708,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Sepolia PGN (Public Goods Network)',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.publicgoods.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://publicgoods.network/',
+    shortName: 'sepPGN',
+    chainId: 58008,
+    networkId: 58008,
+    icon: 'publicGoodsNetwork',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.sepolia.publicgoods.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://pgn-bridge.vercel.app/bridge' } ]
+    }
   },
   {
     name: 'Linea Testnet',
