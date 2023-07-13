@@ -996,13 +996,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Binance Smart Chain Mainnet',
+    name: 'BNB Smart Chain Mainnet',
     chain: 'BSC',
     rpc: [
-      'https://bsc-dataseed1.binance.org',
-      'https://bsc-dataseed2.binance.org',
-      'https://bsc-dataseed3.binance.org',
-      'https://bsc-dataseed4.binance.org',
+      'https://bsc-dataseed1.bnbchain.org',
+      'https://bsc-dataseed2.bnbchain.org',
+      'https://bsc-dataseed3.bnbchain.org',
+      'https://bsc-dataseed4.bnbchain.org',
       'https://bsc-dataseed1.defibit.io',
       'https://bsc-dataseed2.defibit.io',
       'https://bsc-dataseed3.defibit.io',
@@ -1015,8 +1015,8 @@ const chainArray = [
       'wss://bsc-ws-node.nariox.org'
     ],
     faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/' ],
-    nativeCurrency: { name: 'Binance Chain Native Token', symbol: 'BNB', decimals: 18 },
-    infoURL: 'https://www.binance.org',
+    nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
+    infoURL: 'https://www.bnbchain.org/en',
     shortName: 'bnb',
     chainId: 56,
     networkId: 56,
@@ -1771,24 +1771,20 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
-    name: 'Binance Smart Chain Testnet',
+    name: 'BNB Smart Chain Testnet',
     chain: 'BSC',
     rpc: [
-      'https://data-seed-prebsc-1-s1.binance.org:8545',
-      'https://data-seed-prebsc-2-s1.binance.org:8545',
-      'https://data-seed-prebsc-1-s2.binance.org:8545',
-      'https://data-seed-prebsc-2-s2.binance.org:8545',
-      'https://data-seed-prebsc-1-s3.binance.org:8545',
-      'https://data-seed-prebsc-2-s3.binance.org:8545',
+      'https://data-seed-prebsc-1-s1.bnbchain.org:8545',
+      'https://data-seed-prebsc-2-s1.bnbchain.org:8545',
+      'https://data-seed-prebsc-1-s2.bnbchain.org:8545',
+      'https://data-seed-prebsc-2-s2.bnbchain.org:8545',
+      'https://data-seed-prebsc-1-s3.bnbchain.org:8545',
+      'https://data-seed-prebsc-2-s3.bnbchain.org:8545',
       'https://bsc-testnet.publicnode.com'
     ],
-    faucets: [ 'https://testnet.binance.org/faucet-smart' ],
-    nativeCurrency: {
-      name: 'Binance Chain Native Token',
-      symbol: 'tBNB',
-      decimals: 18
-    },
-    infoURL: 'https://testnet.binance.org/',
+    faucets: [ 'https://testnet.bnbchain.org/faucet-smart' ],
+    nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'tBNB', decimals: 18 },
+    infoURL: 'https://www.bnbchain.org/en',
     shortName: 'bnbt',
     chainId: 97,
     networkId: 97,
@@ -3975,6 +3971,32 @@ const chainArray = [
     shortName: 'ogor',
     chainId: 420,
     networkId: 420
+  },
+  {
+    name: 'PGN (Public Goods Network)',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.publicgoods.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://publicgoods.network/',
+    shortName: 'PGN',
+    chainId: 424,
+    networkId: 424,
+    icon: 'publicGoodsNetwork',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.publicgoods.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.publicgoods.network' } ]
+    }
   },
   {
     name: 'Zeeth Chain',
@@ -12385,6 +12407,25 @@ const chainArray = [
       {
         name: 'explorer-proofofmemes',
         url: 'https://memescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MXC zkEVM Mainnet',
+    chain: 'MXC zkEVM',
+    icon: 'mxczkevm',
+    rpc: [ 'https://rpc.mxc.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'MXC zkEVM Mainnet', symbol: 'MXC', decimals: 18 },
+    infoURL: 'https://doc.mxc.com/docs/intro',
+    shortName: 'MXCzkEVM',
+    chainId: 18686,
+    networkId: 18686,
+    explorers: [
+      {
+        name: 'MXC zkEVM Mainnet',
+        url: 'https://explorer.mxc.com',
         standard: 'EIP3091'
       }
     ]
