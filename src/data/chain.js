@@ -10880,14 +10880,27 @@ const chainArray = [
   {
     name: 'Base',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://developer-access-mainnet.base.org/' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://base.org',
     shortName: 'base',
     chainId: 8453,
     networkId: 8453,
-    status: 'incubating'
+    icon: 'base',
+    explorers: [
+      {
+        name: 'basescan',
+        url: 'https://basescan.org',
+        standard: 'none'
+      },
+      {
+        name: 'basescout',
+        url: 'https://base.blockscout.com',
+        standard: 'none'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Toki Network',
@@ -12617,6 +12630,25 @@ const chainArray = [
       {
         name: 'mapscan',
         url: 'https://mapscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Antofy Testnet',
+    chain: 'ABN',
+    icon: 'antofy',
+    rpc: [ 'https://testnet-rpc.antofy.io' ],
+    faucets: [ 'https://faucet.antofy.io' ],
+    nativeCurrency: { name: 'Antofy', symbol: 'ABN', decimals: 18 },
+    infoURL: 'https://antofy.io',
+    shortName: 'ABNt',
+    chainId: 23006,
+    networkId: 23006,
+    explorers: [
+      {
+        name: 'Antofy Testnet',
+        url: 'https://test.antofyscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -14526,6 +14558,7 @@ const chainArray = [
     shortName: 'basegor',
     chainId: 84531,
     networkId: 84531,
+    icon: 'baseTestnet',
     explorers: [
       {
         name: 'basescan',
@@ -17534,7 +17567,7 @@ const chainArray = [
   {
     name: 'Neon EVM MainNet',
     chain: 'Solana',
-    rpc: [ 'https://mainnet.neonevm.org' ],
+    rpc: [],
     faucets: [],
     icon: 'neon',
     nativeCurrency: { name: 'Neon', symbol: 'NEON', decimals: 18 },
