@@ -3267,6 +3267,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'EgonCoin Mainnet',
+    chain: 'EGON',
+    icon: 'egonicon',
+    rpc: [ 'https://rpc.egcscan.com' ],
+    faucets: [ 'https://faucet.egcscan.com' ],
+    nativeCurrency: { name: 'EgonCoin', symbol: 'EGON', decimals: 18 },
+    infoURL: 'https://egcscan.com',
+    shortName: 'EGONm',
+    chainId: 271,
+    networkId: 271,
+    explorers: [
+      {
+        name: 'EgonCoin Mainnet',
+        url: 'https://egcscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'LaChain',
     chain: 'LaChain',
     icon: 'LaChain',
@@ -8327,12 +8346,39 @@ const chainArray = [
     ]
   },
   {
-    name: 'Kroma Sepolia',
-    title: 'Kroma Testnet Sepolia',
+    name: '(deprecated) Kroma Sepolia',
+    title: '(deprecated) Kroma Testnet Sepolia',
     chainId: 2357,
-    shortName: 'kroma-sepolia',
+    shortName: 'deprecated-kroma-sepolia',
     chain: 'ETH',
     networkId: 2357,
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [ 'https://api.sepolia-deprecated.kroma.network' ],
+    faucets: [],
+    infoURL: 'https://kroma.network',
+    icon: 'kroma',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.sepolia-deprecated.kroma.network',
+        icon: 'kroma',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://kroma.network/bridge' } ]
+    },
+    status: 'deprecated'
+  },
+  {
+    name: 'Kroma Sepolia',
+    title: 'Kroma Testnet Sepolia',
+    chainId: 2358,
+    shortName: 'kroma-sepolia',
+    chain: 'ETH',
+    networkId: 2358,
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     rpc: [ 'https://api.sepolia.kroma.network' ],
     faucets: [],
@@ -9003,6 +9049,25 @@ const chainArray = [
       {
         name: 'SenjePowers',
         url: 'https://testnet.senjepowersscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SenjePowers Mainnet',
+    chain: 'SPC',
+    icon: 'SenjePowers',
+    rpc: [ 'https://rpc.senjepowersscan.com' ],
+    faucets: [ 'https://faucet.senjepowersscan.com' ],
+    nativeCurrency: { name: 'SenjePowers', symbol: 'SPC', decimals: 18 },
+    infoURL: 'https://senjepowersscan.com',
+    shortName: 'SPCm',
+    chainId: 3699,
+    networkId: 3699,
+    explorers: [
+      {
+        name: 'SenjePowers',
+        url: 'https://senjepowersscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -10282,6 +10347,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitrock Mainnet',
+    chain: 'Bitrock',
+    icon: 'bitrock',
+    rpc: [ 'https://connect.bit-rock.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BITROCK', symbol: 'BROCK', decimals: 18 },
+    infoURL: 'https://bit-rock.io',
+    shortName: 'bitrock',
+    chainId: 7171,
+    networkId: 7171,
+    explorers: [
+      {
+        name: 'Bitrock Explorer',
+        url: 'https://scan.bit-rock.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'KLYNTAR',
     chain: 'KLY',
     rpc: [
@@ -10485,6 +10569,25 @@ const chainArray = [
         name: 'Canto Testnet EVM Explorer (Blockscout)',
         url: 'https://testnet.tuber.build',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Bitrock Testnet',
+    chain: 'Bitrock',
+    icon: 'bitrock',
+    rpc: [ 'https://testnet.bit-rock.io' ],
+    faucets: [ 'https://faucet.bit-rock.io' ],
+    nativeCurrency: { name: 'BITROCK', symbol: 'BROCK', decimals: 18 },
+    infoURL: 'https://bit-rock.io',
+    shortName: 'tbitrock',
+    chainId: 7771,
+    networkId: 7771,
+    explorers: [
+      {
+        name: 'Bitrock Testnet Explorer',
+        url: 'https://testnetscan.bit-rock.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -15814,6 +15917,25 @@ const chainArray = [
     networkId: 266256,
     slip44: 266256,
     explorers: []
+  },
+  {
+    name: 'EgonCoin Testnet',
+    chain: 'EGON',
+    icon: 'egonicon',
+    rpc: [ 'https://rpctest.egcscan.com' ],
+    faucets: [ 'https://faucet.egcscan.com' ],
+    nativeCurrency: { name: 'EgonCoin', symbol: 'EGON', decimals: 18 },
+    infoURL: 'https://egcscan.com',
+    shortName: 'EGONt',
+    chainId: 271271,
+    networkId: 271271,
+    explorers: [
+      {
+        name: 'EgonCoin Testnet',
+        url: 'https://testnet.egcscan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Social Smart Chain Mainnet',
