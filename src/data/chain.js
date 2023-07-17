@@ -6804,7 +6804,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'ChainX-EVM',
+    name: 'BEVM',
     chain: 'ChainX',
     rpc: [
       'https://mainnet.chainx.org/rpc',
@@ -6818,7 +6818,7 @@ const chainArray = [
     networkId: 1501,
     explorers: [
       {
-        name: 'chainx-evm scan',
+        name: 'bevm scan',
         url: 'https://evm.chainx.org',
         standard: 'none'
       }
