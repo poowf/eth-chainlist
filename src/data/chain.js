@@ -8149,6 +8149,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Antofy Mainnet',
+    chain: 'ABN',
+    icon: 'antofy',
+    rpc: [ 'https://rpc.antofy.io' ],
+    faucets: [ 'https://faucet.antofy.io' ],
+    nativeCurrency: { name: 'Antofy', symbol: 'ABN', decimals: 18 },
+    infoURL: 'https://antofy.io',
+    shortName: 'ABNm',
+    chainId: 2202,
+    networkId: 2202,
+    explorers: [
+      {
+        name: 'Antofy Mainnet',
+        url: 'https://antofyscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bitcoin EVM',
     chain: 'Bitcoin EVM',
     rpc: [ 'https://connect.bitcoinevm.com' ],
@@ -9689,6 +9708,7 @@ const chainArray = [
   {
     name: 'Mantle',
     chain: 'ETH',
+    icon: 'mantle',
     rpc: [ 'https://rpc.mantle.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Mantle', symbol: 'MNT', decimals: 18 },
@@ -9702,7 +9722,12 @@ const chainArray = [
         url: 'https://explorer.mantle.xyz',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.mantle.xyz' } ]
+    }
   },
   {
     name: 'Mantle Testnet',
@@ -10632,6 +10657,26 @@ const chainArray = [
       {
         name: 'Hazlor Testnet Explorer',
         url: 'https://explorer.hazlor.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ARDENIUM Athena',
+    chain: 'ATHENA',
+    rpc: [ 'https://rpc-athena.ardescan.com/' ],
+    faucets: [ 'https://faucet-athena.ardescan.com/' ],
+    nativeCurrency: { name: 'ARD', symbol: 'tARD', decimals: 18 },
+    infoURL: 'https://ardenium.org',
+    shortName: 'ard',
+    chainId: 7895,
+    networkId: 7895,
+    icon: 'ard',
+    explorers: [
+      {
+        name: 'ARDENIUM Athena Explorer',
+        icon: 'ard',
+        url: 'https://testnet.ardscan.com',
         standard: 'none'
       }
     ]
@@ -11653,7 +11698,10 @@ const chainArray = [
     icon: 'gonchain',
     rpc: [
       'https://node1.testnet.gaiaopen.network',
-      'http://database1.gaiaopen.network'
+      'https://node1.mainnet.gon.network',
+      'https://node2.mainnet.gon.network',
+      'https://node3.mainnet.gon.network',
+      'https://node4.mainnet.gon.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Gon Token', symbol: 'GT', decimals: 18 },
