@@ -6806,10 +6806,7 @@ const chainArray = [
   {
     name: 'BEVM',
     chain: 'ChainX',
-    rpc: [
-      'https://mainnet.chainx.org/rpc',
-      'https://mainnet2.chainx.org/rpc'
-    ],
+    rpc: [ 'https://rpc-1.bevm.io/', 'https://rpc-2.bevm.io/' ],
     faucets: [],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://chainx.org',
@@ -6819,7 +6816,7 @@ const chainArray = [
     explorers: [
       {
         name: 'bevm scan',
-        url: 'https://evm.chainx.org',
+        url: 'https://scan.bevm.io',
         standard: 'none'
       }
     ]
@@ -7883,7 +7880,7 @@ const chainArray = [
   {
     name: 'Stratos Testnet',
     chain: 'STOS',
-    rpc: [ 'https://web3-testnet-rpc.thestratos.org' ],
+    rpc: [ 'https://web3-rpc-mesos.thestratos.org' ],
     faucets: [],
     nativeCurrency: { name: 'STOS', symbol: 'STOS', decimals: 18 },
     infoURL: 'https://www.thestratos.org',
@@ -7893,12 +7890,12 @@ const chainArray = [
     explorers: [
       {
         name: 'Stratos EVM Explorer (Blockscout)',
-        url: 'https://web3-testnet-explorer.thestratos.org',
+        url: 'https://web3-explorer-mesos.thestratos.org',
         standard: 'none'
       },
       {
         name: 'Stratos Cosmos Explorer (BigDipper)',
-        url: 'https://big-dipper-dev.thestratos.org',
+        url: 'https://big-dipper-mesos.thestratos.org',
         standard: 'none'
       }
     ]
@@ -10409,6 +10406,28 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Horizen EON',
+    shortName: 'EON',
+    chain: 'EON',
+    icon: 'eon',
+    rpc: [ 'https://eon-rpc.horizenlabs.io/ethv1' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Zencash', symbol: 'ZEN', decimals: 18 },
+    infoURL: 'https://horizen.io/',
+    chainId: 7332,
+    networkId: 7332,
+    slip44: 121,
+    explorers: [
+      {
+        name: 'Horizen EON Block Explorer',
+        url: 'https://eon-explorer.horizenlabs.io',
+        icon: 'eon',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Shyft Mainnet',
     chain: 'SHYFT',
     icon: 'shyft',
@@ -11447,6 +11466,25 @@ const chainArray = [
     networkId: 9170,
     explorers: [],
     status: 'deprecated'
+  },
+  {
+    name: 'Codefin Mainnet',
+    chain: 'COF',
+    icon: 'codefin',
+    rpc: [ 'https://chain-rpc.codefin.pro' ],
+    faucets: [],
+    nativeCurrency: { name: 'Codefin', symbol: 'COF', decimals: 18 },
+    infoURL: 'https://network.codefin.pro',
+    shortName: 'COF',
+    chainId: 9223,
+    networkId: 9223,
+    explorers: [
+      {
+        name: 'Codefin Net Explorer',
+        url: 'https://explorer.codefin.pro',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Dogcoin Testnet',
@@ -15592,7 +15630,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Taiko (Alpha-3 Testnet)',
+    name: 'Taiko Grimsvotn L2',
     chain: 'ETH',
     status: 'active',
     icon: 'taiko',
@@ -15600,13 +15638,33 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://taiko.xyz',
-    shortName: 'taiko-a3',
+    shortName: 'taiko-l2',
     chainId: 167005,
     networkId: 167005,
     explorers: [
       {
         name: 'blockscout',
         url: 'https://explorer.test.taiko.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Taiko Eldfell L3',
+    chain: 'ETH',
+    status: 'active',
+    icon: 'taiko',
+    rpc: [ 'https://rpc.l3test.taiko.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://taiko.xyz',
+    shortName: 'taiko-l3',
+    chainId: 167006,
+    networkId: 167006,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.l3test.taiko.xyz',
         standard: 'EIP3091'
       }
     ]
