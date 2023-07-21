@@ -4694,6 +4694,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Script Testnet',
+    chain: 'SPAY',
+    rpc: [ 'https://testeth-rpc-api.script.tv/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Script', symbol: 'SPAY', decimals: 18 },
+    infoURL: 'https://token.script.tv',
+    shortName: 'SPAY',
+    chainId: 742,
+    networkId: 742,
+    explorers: [
+      {
+        name: 'Script Explorer',
+        url: 'https://explorer.script.tv',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'QL1',
     chain: 'QOM',
     status: 'incubating',
@@ -7013,7 +7031,14 @@ const chainArray = [
     infoURL: 'https://blockchain.or.th',
     shortName: 'TBSI',
     chainId: 1707,
-    networkId: 1707
+    networkId: 1707,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://exp.blockchain.or.th',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'TBSI Testnet',
@@ -7025,7 +7050,14 @@ const chainArray = [
     infoURL: 'https://blockchain.or.th',
     shortName: 'tTBSI',
     chainId: 1708,
-    networkId: 1708
+    networkId: 1708,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://exp.testnet.blockchain.or.th',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Palette Chain Mainnet',
