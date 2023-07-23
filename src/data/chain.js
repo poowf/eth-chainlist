@@ -3939,6 +3939,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Pepe Chain Mainnet',
+    chain: 'PC',
+    status: 'active',
+    icon: 'pepechain',
+    rpc: [ 'https://rpc.pepe-chain.vip' ],
+    faucets: [],
+    nativeCurrency: { name: 'Pepe', symbol: 'PEPE', decimals: 18 },
+    infoURL: 'https://pepe-chain.vip',
+    shortName: 'pepe',
+    chainId: 411,
+    networkId: 411,
+    explorers: [
+      {
+        name: 'pepechain explorer',
+        url: 'https://explorer.pepe-chain.vip',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SX Network Mainnet',
     chain: 'SX',
     icon: 'SX',
@@ -5226,6 +5246,30 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Mode Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.mode.network' ],
+    faucets: [ 'https://sepoliafaucet.com/' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://docs.mode.network/',
+    shortName: 'modesep',
+    chainId: 919,
+    networkId: 919,
+    icon: 'modeTestnet',
+    explorers: [
+      {
+        name: 'modescout',
+        url: 'https://sepolia.explorer.mode.network',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.mode.network/' } ]
+    }
+  },
+  {
     name: 'PulseChain Testnet',
     shortName: 'tpls',
     chain: 'tPLS',
@@ -5412,6 +5456,25 @@ const chainArray = [
         name: 'topscan.dev',
         url: 'https://www.topscan.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'eLiberty Mainnet',
+    chain: '$EL',
+    icon: 'eLiberty',
+    rpc: [ 'https://rpc.eliberty.ngo' ],
+    faucets: [ 'https://faucet.eliberty.ngo' ],
+    nativeCurrency: { name: 'eLiberty', symbol: '$EL', decimals: 18 },
+    infoURL: 'https://eliberty.ngo',
+    shortName: 'ELm',
+    chainId: 990,
+    networkId: 990,
+    explorers: [
+      {
+        name: 'eLiberty Mainnet',
+        url: 'https://explorer.eliberty.ngo',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -14109,7 +14172,7 @@ const chainArray = [
       'https://rpc.goerli.linea.build',
       'wss://rpc.goerli.linea.build',
       'https://linea-goerli.infura.io/v3/${INFURA_API_KEY}',
-      'wss://linea-goerli.infura.io/v3/${INFURA_API_KEY}'
+      'wss://linea-goerli.infura.io/ws/v3/${INFURA_API_KEY}'
     ],
     faucets: [ 'https://faucetlink.to/goerli' ],
     nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
@@ -14129,8 +14192,52 @@ const chainArray = [
     },
     explorers: [
       {
-        name: 'blockscout',
+        name: 'Etherscan',
+        url: 'https://goerli.lineascan.build',
+        standard: 'EIP3091',
+        icon: 'linea'
+      },
+      {
+        name: 'Blockscout',
         url: 'https://explorer.goerli.linea.build',
+        standard: 'EIP3091',
+        icon: 'linea'
+      }
+    ],
+    status: 'active'
+  },
+  {
+    name: 'Linea',
+    title: 'Linea Mainnet',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc.linea.build',
+      'wss://rpc.linea.build',
+      'https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}',
+      'wss://linea-mainnet.infura.io/ws/v3/${INFURA_API_KEY}'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://linea.build',
+    shortName: 'linea',
+    chainId: 59144,
+    networkId: 59144,
+    icon: 'linea',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.linea.build' } ]
+    },
+    explorers: [
+      {
+        name: 'Etherscan',
+        url: 'https://lineascan.build',
+        standard: 'EIP3091',
+        icon: 'linea'
+      },
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.linea.build',
         standard: 'EIP3091',
         icon: 'linea'
       }
@@ -15049,6 +15156,25 @@ const chainArray = [
       }
     ],
     status: 'deprecated'
+  },
+  {
+    name: 'eLiberty Testnet',
+    chain: '$EL',
+    icon: 'eLiberty',
+    rpc: [ 'https://testnet-rpc.eliberty.ngo' ],
+    faucets: [ 'https://faucet.eliberty.ngo' ],
+    nativeCurrency: { name: 'eLiberty', symbol: '$EL', decimals: 18 },
+    infoURL: 'https://eliberty.ngo',
+    shortName: 'ELt',
+    chainId: 99099,
+    networkId: 99099,
+    explorers: [
+      {
+        name: 'eLiberty Testnet',
+        url: 'https://testnet.eliberty.ngo',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'UB Smart Chain(testnet)',
@@ -16691,6 +16817,7 @@ const chainArray = [
   {
     name: 'Shinarium Beta',
     chain: 'Shinarium',
+    icon: 'shinarium',
     rpc: [ 'https://rpc.shinarium.org' ],
     faucets: [ 'https://faucet.shinarium.org' ],
     nativeCurrency: { name: 'Shina Inu', symbol: 'SHI', decimals: 18 },
