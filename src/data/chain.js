@@ -2942,6 +2942,24 @@ const chainArray = [
     networkId: 208
   },
   {
+    name: 'Bitnet',
+    chain: 'BTN',
+    rpc: [ 'http://rpc.bitnet.money' ],
+    faucets: [ 'https://bitnet.money/forum/showthread.php?tid=2' ],
+    nativeCurrency: { name: 'Bitnet', symbol: 'BTN', decimals: 18 },
+    infoURL: 'https://bitnet.money',
+    shortName: 'BTN',
+    chainId: 210,
+    networkId: 210,
+    explorers: [
+      {
+        name: 'Bitnet Explorer',
+        url: 'https://btnscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Freight Trust Network',
     chain: 'EDI',
     rpc: [
@@ -13646,6 +13664,26 @@ const chainArray = [
       {
         name: 'Oasis Emerald Explorer',
         url: 'https://explorer.emerald.oasis.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Kinto Testnet',
+    title: 'Kinto Testnet',
+    chain: 'ETH',
+    rpc: [ 'http://35.215.120.180:8545' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ethereum.org',
+    shortName: 'keth',
+    chainId: 42888,
+    networkId: 42888,
+    explorers: [
+      {
+        name: 'kintoscan',
+        url: 'http://35.215.120.180:4000',
         standard: 'EIP3091'
       }
     ]
