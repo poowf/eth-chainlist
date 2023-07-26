@@ -1361,7 +1361,7 @@ const chainArray = [
   {
     name: 'Decimal Smart Chain Mainnet',
     chain: 'DSC',
-    rpc: [ 'https://node.decimalchain.com/web3' ],
+    rpc: [ 'https://node.decimalchain.com/web3/' ],
     faucets: [],
     nativeCurrency: { name: 'Decimal', symbol: 'DEL', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -2944,7 +2944,7 @@ const chainArray = [
   {
     name: 'Bitnet',
     chain: 'BTN',
-    rpc: [ 'http://rpc.bitnet.money' ],
+    rpc: [ 'https://rpc.bitnet.money' ],
     faucets: [ 'https://bitnet.money/forum/showthread.php?tid=2' ],
     nativeCurrency: { name: 'Bitnet', symbol: 'BTN', decimals: 18 },
     infoURL: 'https://bitnet.money',
@@ -16059,7 +16059,7 @@ const chainArray = [
   {
     name: 'Decimal Smart Chain Testnet',
     chain: 'tDSC',
-    rpc: [ 'https://testnet-val.decimalchain.com/web3' ],
+    rpc: [ 'https://testnet-val.decimalchain.com/web3/' ],
     faucets: [],
     nativeCurrency: { name: 'Decimal', symbol: 'tDEL', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -17652,7 +17652,10 @@ const chainArray = [
     rpc: [
       'https://rpc.sepolia.org',
       'https://rpc2.sepolia.org',
-      'https://rpc-sepolia.rockx.com'
+      'https://rpc-sepolia.rockx.com',
+      'https://rpc.sepolia.ethpandaops.io',
+      'https://sepolia.infura.io/v3/${INFURA_API_KEY}',
+      'wss://sepolia.infura.io/v3/${INFURA_API_KEY}'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
