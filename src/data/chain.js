@@ -24,6 +24,12 @@ const chainArray = [
         name: 'etherscan',
         url: 'https://etherscan.io',
         standard: 'EIP3091'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://eth.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -117,6 +123,12 @@ const chainArray = [
         name: 'etherscan-goerli',
         url: 'https://goerli.etherscan.io',
         standard: 'EIP3091'
+      },
+      {
+        name: 'blockscout-goerli',
+        url: 'https://eth-goerli.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -194,6 +206,12 @@ const chainArray = [
       {
         name: 'etherscan',
         url: 'https://optimistic.etherscan.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://optimism.blockscout.com',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -1409,7 +1427,8 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://blockscout.com/poa/sokol',
-        standard: 'none'
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -1469,22 +1488,28 @@ const chainArray = [
     ]
   },
   {
-    name: 'Zenith Testnet (Vilnius)',
-    chain: 'Zenith',
-    rpc: [ 'https://vilnius.zenithchain.co/http' ],
-    faucets: [ 'https://faucet.zenithchain.co/' ],
-    nativeCurrency: { name: 'Vilnius', symbol: 'VIL', decimals: 18 },
-    infoURL: 'https://www.zenithchain.co/',
+    name: 'Japan Open Chain Mainnet',
+    chain: 'JOC',
+    rpc: [
+      'https://rpc-1.japanopenchain.org:8545',
+      'https://rpc-2.japanopenchain.org:8545'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Japan Open Chain Token', symbol: 'JOC', decimals: 18 },
+    infoURL: 'https://www.japanopenchain.org/',
+    shortName: 'joc',
     chainId: 81,
     networkId: 81,
-    shortName: 'VIL',
+    icon: 'joc',
     explorers: [
       {
-        name: 'vilnius scan',
-        url: 'https://vilnius.scan.zenithchain.co',
-        standard: 'EIP3091'
+        name: 'Block Explorer',
+        url: 'https://explorer.japanopenchain.org',
+        standard: 'EIP3091',
+        icon: 'joc'
       }
-    ]
+    ],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Meter Mainnet',
@@ -1831,7 +1856,8 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://blockscout.com/poa/core',
-        standard: 'none'
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -1869,7 +1895,7 @@ const chainArray = [
       },
       {
         name: 'blockscout',
-        url: 'https://blockscout.com/xdai/mainnet',
+        url: 'https://gnosis.blockscout.com',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -2944,8 +2970,9 @@ const chainArray = [
   {
     name: 'Bitnet',
     chain: 'BTN',
-    rpc: [ 'https://rpc.bitnet.money' ],
-    faucets: [ 'https://bitnet.money/forum/showthread.php?tid=2' ],
+    icon: 'bitnet',
+    rpc: [ 'https://rpc.bitnet.money', 'https://rpc.btnscan.com' ],
+    faucets: [],
     nativeCurrency: { name: 'Bitnet', symbol: 'BTN', decimals: 18 },
     infoURL: 'https://bitnet.money',
     shortName: 'BTN',
@@ -3780,6 +3807,12 @@ const chainArray = [
         url: 'https://shiden.subscan.io',
         standard: 'none',
         icon: 'subscan'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.com/shiden',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -4027,7 +4060,15 @@ const chainArray = [
     infoURL: 'https://optimism.io',
     shortName: 'ogor',
     chainId: 420,
-    networkId: 420
+    networkId: 420,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://optimism-goerli.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'PGN (Public Goods Network)',
@@ -4410,6 +4451,12 @@ const chainArray = [
         url: 'https://astar.subscan.io',
         standard: 'none',
         icon: 'subscan'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.com/astar',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -10487,6 +10534,12 @@ const chainArray = [
         name: 'ZetaChain Athens Testnet Explorer',
         url: 'https://explorer.athens.zetachain.com',
         standard: 'none'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://zetachain-athens-3.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -11229,7 +11282,8 @@ const chainArray = [
       {
         name: 'basescout',
         url: 'https://base.blockscout.com',
-        standard: 'none'
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ],
     status: 'active'
@@ -11834,6 +11888,44 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Mind Smart Chain Testnet',
+    chain: 'tMIND',
+    icon: 'mindchain',
+    rpc: [ 'https://testnet-msc.mindchain.info/' ],
+    faucets: [ 'https://faucet.mindchain.info/' ],
+    nativeCurrency: { name: 'MIND Coin', symbol: 'tMIND', decimals: 18 },
+    infoURL: 'https://mindscan.info',
+    shortName: 'tMIND',
+    chainId: 9977,
+    networkId: 9977,
+    explorers: [
+      {
+        name: 'Mind Chain explorer',
+        url: 'https://testnet.mindscan.info',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mind Smart Chain Mainnet',
+    chain: 'MIND',
+    icon: 'mindchain',
+    rpc: [ 'https://rpc-msc.mindchain.info/' ],
+    faucets: [],
+    nativeCurrency: { name: 'MIND Coin', symbol: 'MIND', decimals: 18 },
+    infoURL: 'https://mindscan.info',
+    shortName: 'MIND',
+    chainId: 9996,
+    networkId: 9996,
+    explorers: [
+      {
+        name: 'Mind Chain explorer',
+        url: 'https://mainnet.mindscan.info',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'AltLayer Testnet',
     chain: 'ETH',
     rpc: [ 'https://testnet-rollup-api.altlayer.io' ],
@@ -11963,8 +12055,14 @@ const chainArray = [
     networkId: 10200,
     explorers: [
       {
-        name: 'blockscout',
+        name: 'blockscout-chiadochain',
         url: 'https://blockscout.chiadochain.net',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://gnosis-chiado.blockscout.com',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -12750,6 +12848,26 @@ const chainArray = [
         name: 'Game Network',
         url: 'https://explorer.fod.games',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Smart Trade Networks',
+    chain: 'Smart Trade Networks',
+    rpc: [ 'https://beefledgerwallet.com:8544' ],
+    faucets: [],
+    nativeCurrency: { name: 'STN', symbol: 'STN', decimals: 18 },
+    infoURL: 'https://www.smarttradenetworks.com',
+    shortName: 'STN',
+    chainId: 18122,
+    networkId: 18122,
+    icon: 'stn',
+    explorers: [
+      {
+        name: 'stnscan',
+        url: 'https://stnscan.com',
+        icon: 'stn',
+        standard: 'none'
       }
     ]
   },
@@ -15026,7 +15144,8 @@ const chainArray = [
       {
         name: 'basescout',
         url: 'https://base-goerli.blockscout.com',
-        standard: 'none'
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -16140,6 +16259,48 @@ const chainArray = [
         name: 'explorer masnet',
         url: 'https://explorer.masnet.ai',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Reapchain Mainnet',
+    chain: 'REAP',
+    rpc: [ 'https://rpc.reapchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Reap', symbol: 'REAP', decimals: 18 },
+    features: [],
+    infoURL: 'https://reapchain.com',
+    shortName: 'reap',
+    chainId: 221230,
+    networkId: 221230,
+    icon: 'reapchain',
+    explorers: [
+      {
+        name: 'Reapchain Dashboard',
+        url: 'https://dashboard.reapchain.org',
+        icon: 'reapchain',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Reapchain Testnet',
+    chain: 'REAP',
+    rpc: [ 'https://test-rpc.reapchain.org' ],
+    faucets: [ 'http://faucet.reapchain.com' ],
+    nativeCurrency: { name: 'test-Reap', symbol: 'tREAP', decimals: 18 },
+    features: [],
+    infoURL: 'https://reapchain.com',
+    shortName: 'reap-testnet',
+    chainId: 221231,
+    networkId: 221231,
+    icon: 'reapchain',
+    explorers: [
+      {
+        name: 'Reapchain Testnet Dashboard',
+        url: 'https://test-dashboard.reapchain.org',
+        icon: 'reapchain',
+        standard: 'none'
       }
     ]
   },
@@ -18080,6 +18241,12 @@ const chainArray = [
       {
         name: 'neonscan',
         url: 'https://devnet.neonscan.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://neon-devnet.blockscout.com',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
