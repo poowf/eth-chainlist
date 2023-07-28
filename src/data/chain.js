@@ -195,7 +195,10 @@ const chainArray = [
   {
     name: 'OP Mainnet',
     chain: 'ETH',
-    rpc: [ 'https://mainnet.optimism.io/' ],
+    rpc: [
+      'https://mainnet.optimism.io',
+      'https://optimism.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://optimism.io',
@@ -3913,7 +3916,11 @@ const chainArray = [
     chainId: 369,
     networkId: 369,
     infoURL: 'https://pulsechain.com/',
-    rpc: [ 'https://rpc.pulsechain.com/', 'wss://rpc.pulsechain.com/' ],
+    rpc: [
+      'https://rpc.pulsechain.com',
+      'wss://rpc.pulsechain.com',
+      'https://pulsechain.publicnode.com'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     ens: { registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e' },
@@ -4054,7 +4061,10 @@ const chainArray = [
   {
     name: 'Optimism Goerli Testnet',
     chain: 'ETH',
-    rpc: [ 'https://goerli.optimism.io/' ],
+    rpc: [
+      'https://goerli.optimism.io',
+      'https://optimism-goerli.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://optimism.io',
@@ -5388,7 +5398,8 @@ const chainArray = [
     infoURL: 'https://pulsechain.com',
     rpc: [
       'https://rpc.v4.testnet.pulsechain.com/',
-      'wss://rpc.v4.testnet.pulsechain.com/'
+      'wss://rpc.v4.testnet.pulsechain.com/',
+      'https://pulsechain-testnet.publicnode.com'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.v4.testnet.pulsechain.com/' ],
@@ -7026,7 +7037,7 @@ const chainArray = [
     title: 'Tenet Mainnet',
     chain: 'TENET',
     icon: 'tenet',
-    rpc: [ 'https://rpc.tenet.org' ],
+    rpc: [ 'https://rpc.tenet.org', 'https://tenet-evm.publicnode.com' ],
     faucets: [],
     nativeCurrency: { name: 'TENET', symbol: 'TENET', decimals: 18 },
     infoURL: 'https://tenet.org/',
@@ -8390,7 +8401,8 @@ const chainArray = [
       'https://evm.kava.io',
       'https://evm2.kava.io',
       'wss://wevm.kava.io',
-      'wss://wevm2.kava.io'
+      'wss://wevm2.kava.io',
+      'https://kava-evm.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Kava', symbol: 'KAVA', decimals: 18 },
@@ -9866,7 +9878,7 @@ const chainArray = [
     name: 'Mantle',
     chain: 'ETH',
     icon: 'mantle',
-    rpc: [ 'https://rpc.mantle.xyz' ],
+    rpc: [ 'https://rpc.mantle.xyz', 'https://mantle.publicnode.com' ],
     faucets: [],
     nativeCurrency: { name: 'Mantle', symbol: 'MNT', decimals: 18 },
     infoURL: 'https://mantle.xyz',
@@ -10422,7 +10434,10 @@ const chainArray = [
   {
     name: 'IRIShub',
     chain: 'IRIShub',
-    rpc: [ 'https://evmrpc.irishub-1.irisnet.org' ],
+    rpc: [
+      'https://evmrpc.irishub-1.irisnet.org',
+      'https://iris-evm.publicnode.com'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Eris', symbol: 'ERIS', decimals: 18 },
@@ -11910,7 +11925,10 @@ const chainArray = [
     name: 'Mind Smart Chain Mainnet',
     chain: 'MIND',
     icon: 'mindchain',
-    rpc: [ 'https://rpc-msc.mindchain.info/' ],
+    rpc: [
+      'https://rpc-msc.mindchain.info/',
+      'https://seednode.mindchain.info'
+    ],
     faucets: [],
     nativeCurrency: { name: 'MIND Coin', symbol: 'MIND', decimals: 18 },
     infoURL: 'https://mindscan.info',
@@ -12285,7 +12303,10 @@ const chainArray = [
   {
     name: 'Haqq Network',
     chain: 'Haqq',
-    rpc: [ 'https://rpc.eth.haqq.network' ],
+    rpc: [
+      'https://rpc.eth.haqq.network',
+      'https://haqq-evm.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Islamic Coin', symbol: 'ISLM', decimals: 18 },
     infoURL: 'https://islamiccoin.net',
@@ -13676,7 +13697,8 @@ const chainArray = [
     rpc: [
       'https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}',
       'https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}',
-      'https://arb1.arbitrum.io/rpc'
+      'https://arb1.arbitrum.io/rpc',
+      'https://arbitrum-one.publicnode.com'
     ],
     faucets: [],
     explorers: [
@@ -13705,7 +13727,10 @@ const chainArray = [
     chain: 'ETH',
     networkId: 42170,
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    rpc: [ 'https://nova.arbitrum.io/rpc' ],
+    rpc: [
+      'https://nova.arbitrum.io/rpc',
+      'https://arbitrum-nova.publicnode.com'
+    ],
     faucets: [],
     explorers: [
       {
@@ -16765,7 +16790,10 @@ const chainArray = [
     chain: 'ETH',
     networkId: 421613,
     nativeCurrency: { name: 'Arbitrum Goerli Ether', symbol: 'AGOR', decimals: 18 },
-    rpc: [ 'https://goerli-rollup.arbitrum.io/rpc/' ],
+    rpc: [
+      'https://goerli-rollup.arbitrum.io/rpc',
+      'https://arbitrum-goerli.publicnode.com'
+    ],
     faucets: [],
     infoURL: 'https://arbitrum.io/',
     explorers: [
