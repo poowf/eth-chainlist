@@ -436,7 +436,7 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
-    name: 'Cronos Mainnet Beta',
+    name: 'Cronos Mainnet',
     chain: 'CRO',
     rpc: [ 'https://evm.cronos.org', 'https://cronos-evm.publicnode.com' ],
     features: [ { name: 'EIP1559' } ],
@@ -4125,6 +4125,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Obscuro Testnet',
+    title: 'Obscuro Sepolia Rollup Testnet',
+    chainId: 443,
+    shortName: 'obs-testnet',
+    chain: 'ETH',
+    networkId: 443,
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [ 'https://testnet.obscu.ro' ],
+    faucets: [],
+    infoURL: 'https://obscu.ro',
+    explorers: [
+      {
+        name: 'Obscuro Sepolia Rollup Explorer',
+        url: 'https://testnet.obscuroscan.io',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-5',
+      bridges: [ { url: 'https://bridge.obscu.ro' } ]
+    }
+  },
+  {
     name: 'Frenchain Testnet',
     chain: 'tfren',
     rpc: [ 'https://rpc-01tn.frenchain.app' ],
@@ -4542,6 +4566,28 @@ const chainArray = [
     shortName: 'mesh-chain-testnet',
     chainId: 600,
     networkId: 600
+  },
+  {
+    name: 'PEER Testnet',
+    chain: 'PEER',
+    rpc: [
+      'http://testnet-polka-host-232813573.us-west-1.elb.amazonaws.com'
+    ],
+    faucets: [ 'https://testnet.peer.inc' ],
+    nativeCurrency: { name: 'PEER Token', symbol: 'PEER', decimals: 18 },
+    infoURL: 'https://peer.inc',
+    shortName: 'PEER',
+    chainId: 601,
+    networkId: 601,
+    icon: 'peer',
+    explorers: [
+      {
+        name: 'PEER Explorer',
+        url: 'https://testnet.peer.inc',
+        standard: 'none',
+        icon: 'peer'
+      }
+    ]
   },
   {
     name: 'Graphlinq Blockchain Mainnet',
@@ -5909,6 +5955,26 @@ const chainArray = [
       {
         name: 'explorer',
         url: 'https://subnets-test.avax.network/mintara',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mintara Mainnet',
+    title: 'Mintara Mainnet',
+    chain: 'Mintara',
+    icon: 'mintara',
+    rpc: [ 'https://subnets.avax.network/mintara/mainnet/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'MINTARA', symbol: 'MNTR', decimals: 18 },
+    infoURL: 'https://playthink.co.jp',
+    shortName: 'mintara',
+    chainId: 1080,
+    networkId: 1080,
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://subnets.avax.network/mintara',
         standard: 'EIP3091'
       }
     ]
@@ -10133,6 +10199,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'Arcturus Chain Testnet',
+    chain: 'ARCTURUS',
+    rpc: [ 'http://185.99.196.3:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'Test Arct', symbol: 'tARCT', decimals: 18 },
+    infoURL: 'https://arcturuschain.io',
+    shortName: 'ARCT',
+    chainId: 5616,
+    networkId: 5616
+  },
+  {
     name: 'Syscoin Tanenbaum Testnet',
     chain: 'SYS',
     rpc: [ 'https://rpc.tanenbaum.io', 'wss://rpc.tanenbaum.io/wss' ],
@@ -11280,7 +11357,7 @@ const chainArray = [
   {
     name: 'Base',
     chain: 'ETH',
-    rpc: [ 'https://developer-access-mainnet.base.org/' ],
+    rpc: [ 'https://mainnet.base.org/' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://base.org',
