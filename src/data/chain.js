@@ -4495,39 +4495,71 @@ const chainArray = [
     ]
   },
   {
-    name: 'Acala Mandala Testnet',
+    name: 'Acala Mandala Testnet TC9',
     chain: 'mACA',
-    rpc: [],
+    rpc: [
+      'https://eth-rpc-tc9.aca-staging.network',
+      'wss://eth-rpc-tc9.aca-staging.network'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Acala Mandala Token', symbol: 'mACA', decimals: 18 },
     infoURL: 'https://acala.network',
     shortName: 'maca',
     chainId: 595,
-    networkId: 595
+    networkId: 595,
+    slip44: 595,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.mandala.aca-staging.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Karura Network Testnet',
     chain: 'KAR',
-    rpc: [],
+    rpc: [
+      'https://eth-rpc-karura-testnet.aca-staging.network',
+      'wss://eth-rpc-karura-testnet.aca-staging.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Karura Token', symbol: 'KAR', decimals: 18 },
     infoURL: 'https://karura.network',
     shortName: 'tkar',
     chainId: 596,
     networkId: 596,
-    slip44: 596
+    slip44: 596,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.karura-testnet.aca-staging.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Acala Network Testnet',
     chain: 'ACA',
-    rpc: [],
+    rpc: [
+      'https://eth-rpc-acala-testnet.aca-staging.network',
+      'wss://eth-rpc-acala-testnet.aca-staging.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Acala Token', symbol: 'ACA', decimals: 18 },
     infoURL: 'https://acala.network',
     shortName: 'taca',
     chainId: 597,
     networkId: 597,
-    slip44: 597
+    slip44: 597,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.acala-dev.aca-dev.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Metis Goerli Testnet',
@@ -4689,14 +4721,25 @@ const chainArray = [
   {
     name: 'Karura Network',
     chain: 'KAR',
-    rpc: [],
+    rpc: [
+      'https://eth-rpc-karura.aca-api.network',
+      'wss://eth-rpc-karura.aca-api.network'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Karura Token', symbol: 'KAR', decimals: 18 },
-    infoURL: 'https://karura.network',
+    infoURL: 'https://acala.network/karura',
     shortName: 'kar',
     chainId: 686,
     networkId: 686,
-    slip44: 686
+    slip44: 686,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.karura.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Star Social Testnet',
@@ -4928,14 +4971,25 @@ const chainArray = [
   {
     name: 'Acala Network',
     chain: 'ACA',
-    rpc: [],
+    rpc: [
+      'https://eth-rpc-acala.aca-api.network',
+      'wss://eth-rpc-acala.aca-api.network'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Acala Token', symbol: 'ACA', decimals: 18 },
     infoURL: 'https://acala.network',
     shortName: 'aca',
     chainId: 787,
     networkId: 787,
-    slip44: 787
+    slip44: 787,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.acala.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Aerochain Testnet',
@@ -6853,6 +6907,26 @@ const chainArray = [
         name: 'zafirium-explorer',
         url: 'https://explorer.zakumi.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Kalar Chain Mainnet',
+    chain: 'KLC',
+    icon: 'kalarchain',
+    rpc: [ 'http://rpc-api.kalarchain.tech' ],
+    faucets: [],
+    nativeCurrency: { name: 'Kalar', symbol: 'KLC', decimals: 18 },
+    infoURL: 'https://kalarchain.tech',
+    shortName: 'KLC',
+    chainId: 1379,
+    networkId: 1379,
+    explorers: [
+      {
+        name: 'kalarscan',
+        url: 'https://explorer.kalarchain.tech',
+        icon: 'kalarscan',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -10610,10 +10684,10 @@ const chainArray = [
     ]
   },
   {
-    name: 'ZetaChain Athens Testnet',
+    name: 'ZetaChain Athens 3 Testnet',
     chain: 'ZetaChain',
     icon: 'zetachain',
-    rpc: [ 'https://api.athens2.zetachain.com/evm' ],
+    rpc: [ 'https://rpc.ankr.com/zetachain_evm_athens_testnet' ],
     faucets: [ 'https://labs.zetachain.com/get-zeta' ],
     nativeCurrency: { name: 'Zeta', symbol: 'aZETA', decimals: 18 },
     infoURL: 'https://zetachain.com/docs',
@@ -10624,7 +10698,7 @@ const chainArray = [
     explorers: [
       {
         name: 'ZetaChain Athens Testnet Explorer',
-        url: 'https://explorer.athens.zetachain.com',
+        url: 'https://athens3.explorer.zetachain.com',
         standard: 'none'
       },
       {
@@ -11978,6 +12052,50 @@ const chainArray = [
     chainId: 9792,
     networkId: 9792,
     explorers: []
+  },
+  {
+    name: 'IMPERIUM TESTNET',
+    chain: 'tIMP',
+    rpc: [
+      'https://data-aws-testnet.imperiumchain.com, https://data-aws2-testnet.imperiumchain.com'
+    ],
+    faucets: [ 'https://faucet.imperiumchain.com/' ],
+    nativeCurrency: { name: 'tIMP', symbol: 'tIMP', decimals: 18 },
+    infoURL: 'https://imperiumchain.com',
+    shortName: 'tIMP',
+    chainId: 9818,
+    networkId: 9818,
+    icon: 'timp',
+    explorers: [
+      {
+        name: 'IMPERIUM TESTNET Explorer',
+        icon: 'timp',
+        url: 'https://network.impscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'IMPERIUM MAINNET',
+    chain: 'IMP',
+    rpc: [
+      'https://data-aws-mainnet.imperiumchain.com, https://data-aws2-mainnet.imperiumchain.com'
+    ],
+    faucets: [ 'https://faucet.imperiumchain.com/' ],
+    nativeCurrency: { name: 'IMP', symbol: 'IMP', decimals: 18 },
+    infoURL: 'https://imperiumchain.com',
+    shortName: 'IMP',
+    chainId: 9819,
+    networkId: 9819,
+    icon: 'imp',
+    explorers: [
+      {
+        name: 'IMPERIUM Explorer',
+        icon: 'imp',
+        url: 'https://impscan.com',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Mind Smart Chain Testnet',
@@ -18733,10 +18851,19 @@ const chainArray = [
   {
     name: 'Harmony Mainnet Shard 0',
     chain: 'Harmony',
-    rpc: [ 'https://api.harmony.one', 'https://api.s0.t.hmny.io' ],
-    faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/' ],
+    rpc: [
+      'https://api.harmony.one',
+      'https://a.api.s0.t.hmny.io',
+      'https://api.s0.t.hmny.io',
+      'https://rpc.ankr.com/harmony',
+      'https://harmony.api.onfinality.io/public',
+      'https://1rpc.io/one'
+    ],
+    faucets: [],
     nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
     infoURL: 'https://www.harmony.one/',
+    slip44: 1023,
+    ens: { registry: '0x4cd2563118e57b19179d8dc033f2b0c5b5d69ff5' },
     shortName: 'hmy-s0',
     chainId: 1666600000,
     networkId: 1666600000,
@@ -18755,9 +18882,17 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
     infoURL: 'https://www.harmony.one/',
+    slip44: 1023,
     shortName: 'hmy-s1',
     chainId: 1666600001,
-    networkId: 1666600001
+    networkId: 1666600001,
+    explorers: [
+      {
+        name: 'Harmony Block Explorer',
+        url: 'https://explorer.harmony.one/blocks/shard/1',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Harmony Mainnet Shard 2',
@@ -18766,9 +18901,17 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
     infoURL: 'https://www.harmony.one/',
+    slip44: 1023,
     shortName: 'hmy-s2',
     chainId: 1666600002,
-    networkId: 1666600002
+    networkId: 1666600002,
+    explorers: [
+      {
+        name: 'Harmony Block Explorer',
+        url: 'https://explorer.harmony.one/blocks/shard/2',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Harmony Mainnet Shard 3',
@@ -18777,9 +18920,17 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
     infoURL: 'https://www.harmony.one/',
+    slip44: 1023,
     shortName: 'hmy-s3',
     chainId: 1666600003,
-    networkId: 1666600003
+    networkId: 1666600003,
+    explorers: [
+      {
+        name: 'Harmony Block Explorer',
+        url: 'https://explorer.harmony.one/blocks/shard/3',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Harmony Testnet Shard 0',
@@ -18794,7 +18945,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Harmony Testnet Block Explorer',
-        url: 'https://explorer.pops.one',
+        url: 'https://explorer.testnet.harmony.one',
         standard: 'EIP3091'
       }
     ]
@@ -18803,52 +18954,43 @@ const chainArray = [
     name: 'Harmony Testnet Shard 1',
     chain: 'Harmony',
     rpc: [ 'https://api.s1.b.hmny.io' ],
-    faucets: [],
+    faucets: [ 'https://faucet.pops.one' ],
     nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
     infoURL: 'https://www.harmony.one/',
     shortName: 'hmy-b-s1',
     chainId: 1666700001,
-    networkId: 1666700001
-  },
-  {
-    name: 'Harmony Testnet Shard 2',
-    chain: 'Harmony',
-    rpc: [ 'https://api.s2.b.hmny.io' ],
-    faucets: [],
-    nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
-    infoURL: 'https://www.harmony.one/',
-    shortName: 'hmy-b-s2',
-    chainId: 1666700002,
-    networkId: 1666700002
-  },
-  {
-    name: 'Harmony Testnet Shard 3',
-    chain: 'Harmony',
-    rpc: [ 'https://api.s3.b.hmny.io' ],
-    faucets: [],
-    nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
-    infoURL: 'https://www.harmony.one/',
-    shortName: 'hmy-b-s3',
-    chainId: 1666700003,
-    networkId: 1666700003
+    networkId: 1666700001,
+    explorers: [
+      {
+        name: 'Harmony Block Explorer',
+        url: 'https://explorer.testnet.harmony.one',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Harmony Devnet Shard 0',
     chain: 'Harmony',
-    rpc: [ 'https://api.s1.ps.hmny.io', 'https://api.s1.ps.hmny.io' ],
-    faucets: [ 'http://dev.faucet.easynode.one/' ],
+    rpc: [ 'https://api.s0.ps.hmny.io' ],
+    faucets: [],
     nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
     infoURL: 'https://www.harmony.one/',
     shortName: 'hmy-ps-s0',
     chainId: 1666900000,
     networkId: 1666900000,
-    explorers: [
-      {
-        name: 'Harmony Block Explorer',
-        url: 'https://explorer.ps.hmny.io',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
+  },
+  {
+    name: 'Harmony Devnet Shard 1',
+    chain: 'Harmony',
+    rpc: [ 'https://api.s1.ps.hmny.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
+    infoURL: 'https://www.harmony.one/',
+    shortName: 'hmy-ps-s1',
+    chainId: 1666900001,
+    networkId: 1666900001,
+    explorers: []
   },
   {
     name: 'DataHopper',
