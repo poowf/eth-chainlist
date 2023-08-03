@@ -1057,7 +1057,8 @@ const chainArray = [
       'https://rpc.syscoin.org',
       'https://rpc.ankr.com/syscoin/${ANKR_API_KEY}',
       'https://syscoin.public-rpc.com',
-      'wss://rpc.syscoin.org/wss'
+      'wss://rpc.syscoin.org/wss',
+      'https://syscoin-evm.publicnode.com'
     ],
     faucets: [ 'https://faucet.syscoin.org' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
@@ -6911,10 +6912,10 @@ const chainArray = [
     ]
   },
   {
-    name: 'Kalar Chain Mainnet',
+    name: 'Kalar Chain',
     chain: 'KLC',
     icon: 'kalarchain',
-    rpc: [ 'http://rpc-api.kalarchain.tech' ],
+    rpc: [ 'https://rpc-api.kalarchain.tech' ],
     faucets: [],
     nativeCurrency: { name: 'Kalar', symbol: 'KLC', decimals: 18 },
     infoURL: 'https://kalarchain.tech',
@@ -10286,7 +10287,11 @@ const chainArray = [
   {
     name: 'Syscoin Tanenbaum Testnet',
     chain: 'SYS',
-    rpc: [ 'https://rpc.tanenbaum.io', 'wss://rpc.tanenbaum.io/wss' ],
+    rpc: [
+      'https://rpc.tanenbaum.io',
+      'wss://rpc.tanenbaum.io/wss',
+      'https://syscoin-tanenbaum-evm.publicnode.com'
+    ],
     faucets: [ 'https://faucet.tanenbaum.io' ],
     nativeCurrency: { name: 'Testnet Syscoin', symbol: 'tSYS', decimals: 18 },
     infoURL: 'https://syscoin.org',
@@ -17721,6 +17726,26 @@ const chainArray = [
     networkId: 3141592,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'Manta Pacific Testnet',
+    chain: 'Manta Pacific',
+    rpc: [ 'https://manta-testnet.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Manta', symbol: 'MANTA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://manta-testnet.caldera.dev/',
+    shortName: 'manta',
+    chainId: 3441005,
+    networkId: 3441005,
+    icon: 'manta',
+    explorers: [
+      {
+        name: 'manta-testnet Explorer',
+        url: 'https://manta-testnet.calderaexplorer.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'AltLayer Zero Gas Network',
