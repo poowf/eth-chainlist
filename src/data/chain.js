@@ -12146,7 +12146,8 @@ const chainArray = [
     icon: 'mindchain',
     rpc: [
       'https://rpc-msc.mindchain.info/',
-      'https://seednode.mindchain.info'
+      'https://seednode.mindchain.info',
+      'wss://seednode.mindchain.info/ws'
     ],
     faucets: [],
     nativeCurrency: { name: 'MIND Coin', symbol: 'MIND', decimals: 18 },
