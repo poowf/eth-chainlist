@@ -12789,21 +12789,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'Credit Smartchain Mainnet',
+    name: 'Credit Smart Chain',
     chain: 'CREDIT',
-    rpc: [ 'https://mainnet-rpc.cscscan.io' ],
+    rpc: [ 'https://rpc.creditsmartchain.com' ],
     faucets: [],
     nativeCurrency: { name: 'Credit', symbol: 'CREDIT', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://creditsmartchain.com',
     shortName: 'Credit',
     chainId: 13308,
-    networkId: 1,
+    networkId: 13308,
     icon: 'credit',
     explorers: [
       {
-        name: 'CSC Scan',
-        url: 'https://explorer.cscscan.io',
+        name: 'Creditscan',
+        url: 'https://scan.creditsmartchain.com',
         icon: 'credit',
         standard: 'EIP3091'
       }
