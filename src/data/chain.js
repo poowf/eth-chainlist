@@ -12810,6 +12810,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Beam Testnet',
+    chain: 'BEAM',
+    rpc: [ 'https://subnets.avax.network/beam/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Merit Circle', symbol: 'MC', decimals: 18 },
+    infoURL: 'https://gaming.meritcircle.io',
+    shortName: 'BEAM',
+    chainId: 13337,
+    networkId: 13337,
+    explorers: [
+      {
+        name: 'Beam Explorer',
+        url: 'https://subnets-test.avax.network/beam',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Phoenix Mainnet',
     chain: 'Phoenix',
     rpc: [ 'https://rpc.phoenixplorer.com/' ],
@@ -17192,35 +17211,55 @@ const chainArray = [
   {
     name: 'Scroll Sepolia Testnet',
     chain: 'ETH',
-    status: 'incubating',
-    rpc: [],
+    status: 'active',
+    rpc: [ 'https://sepolia-rpc.scroll.io/' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://scroll.io',
     shortName: 'scr-sepolia',
     chainId: 534351,
     networkId: 534351,
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
+    explorers: [
+      {
+        name: 'Scroll Sepolia Testnet Block Explorer',
+        url: 'https://sepolia-blockscout.scroll.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://scroll.io/bridge' } ]
+    }
   },
   {
     name: 'Scroll',
     chain: 'ETH',
     status: 'incubating',
-    rpc: [],
+    rpc: [ 'https://rpc.scroll.io' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://scroll.io',
     shortName: 'scr',
     chainId: 534352,
     networkId: 534352,
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+    explorers: [
+      {
+        name: 'Scroll Mainnet Block Explorer',
+        url: 'https://blockscout.scroll.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://scroll.io/bridge' } ]
+    }
   },
   {
     name: 'Scroll Alpha Testnet',
     chain: 'ETH',
-    status: 'active',
+    status: 'deprecated',
     rpc: [ 'https://alpha-rpc.scroll.io/l2' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -17231,12 +17270,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Scroll Alpha Testnet Block Explorer',
-        url: 'https://blockscout.scroll.io',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'Scroll Alpha Testnet Block Explorer',
-        url: 'https://scrollscan.co',
+        url: 'https://alpha-blockscout.scroll.io',
         standard: 'EIP3091'
       }
     ],
@@ -17246,20 +17280,14 @@ const chainArray = [
     name: 'Scroll Pre-Alpha Testnet',
     chain: 'ETH',
     status: 'deprecated',
-    rpc: [ 'https://prealpha-rpc.scroll.io/l2' ],
-    faucets: [ 'https://prealpha.scroll.io/faucet' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'TSETH', decimals: 18 },
     infoURL: 'https://scroll.io',
     shortName: 'scr-prealpha',
     chainId: 534354,
     networkId: 534354,
-    explorers: [
-      {
-        name: 'Scroll L2 Block Explorer',
-        url: 'https://l2scan.scroll.io',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Shinarium Beta',
