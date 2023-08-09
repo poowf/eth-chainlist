@@ -5083,7 +5083,11 @@ const chainArray = [
       'https://evm-dataseed3.meerscan.io',
       'https://evm-dataseed.meerscan.com',
       'https://evm-dataseed1.meerscan.com',
-      'https://evm-dataseed2.meerscan.com'
+      'https://evm-dataseed2.meerscan.com',
+      'https://qng.rpc.qitmeer.io',
+      'https://mainnet.meerlabs.com',
+      'https://rpc.dimai.ai',
+      'https://rpc.woowow.io'
     ],
     faucets: [],
     nativeCurrency: { name: 'Qitmeer', symbol: 'MEER', decimals: 18 },
@@ -5097,7 +5101,7 @@ const chainArray = [
       {
         name: 'meerscan',
         icon: 'meer',
-        url: 'https://evm.meerscan.com',
+        url: 'https://qng.meerscan.io',
         standard: 'none'
       }
     ]
@@ -11279,8 +11283,12 @@ const chainArray = [
   {
     name: 'Qitmeer Network Testnet',
     chain: 'MEER',
-    rpc: [],
-    faucets: [],
+    rpc: [
+      'https://testnet-qng.rpc.qitmeer.io',
+      'https://testnet.meerlabs.com',
+      'https://meer.testnet.meerfans.club'
+    ],
+    faucets: [ 'https://faucet.qitmeer.io' ],
     nativeCurrency: { name: 'Qitmeer Testnet', symbol: 'MEER-T', decimals: 18 },
     infoURL: 'https://github.com/Qitmeer',
     shortName: 'meertest',
@@ -11291,7 +11299,7 @@ const chainArray = [
       {
         name: 'meerscan testnet',
         icon: 'meer',
-        url: 'https://testnet.qng.meerscan.io',
+        url: 'https://qng-testnet.meerscan.io',
         standard: 'none'
       }
     ]
@@ -12081,7 +12089,8 @@ const chainArray = [
     name: 'IMPERIUM TESTNET',
     chain: 'tIMP',
     rpc: [
-      'https://data-aws-testnet.imperiumchain.com, https://data-aws2-testnet.imperiumchain.com'
+      'https://data-aws-testnet.imperiumchain.com',
+      'https://data-aws2-testnet.imperiumchain.com'
     ],
     faucets: [ 'https://faucet.imperiumchain.com/' ],
     nativeCurrency: { name: 'tIMP', symbol: 'tIMP', decimals: 18 },
@@ -12103,7 +12112,8 @@ const chainArray = [
     name: 'IMPERIUM MAINNET',
     chain: 'IMP',
     rpc: [
-      'https://data-aws-mainnet.imperiumchain.com, https://data-aws2-mainnet.imperiumchain.com'
+      'https://data-aws-mainnet.imperiumchain.com',
+      'https://data-aws2-mainnet.imperiumchain.com'
     ],
     faucets: [ 'https://faucet.imperiumchain.com/' ],
     nativeCurrency: { name: 'IMP', symbol: 'IMP', decimals: 18 },
