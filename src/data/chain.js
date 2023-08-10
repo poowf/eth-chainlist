@@ -12896,6 +12896,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Humanode Testnet 5 Israfel',
+    chain: 'Humanode Testnet 5',
+    rpc: [ 'https://explorer-rpc-http.testnet5.stages.humanode.io' ],
+    faucets: [ 'https://t.me/HumanodeTestnet5FaucetBot' ],
+    nativeCurrency: { name: 'HMND', symbol: 'HMND', decimals: 18 },
+    infoURL: 'https://humanode.io',
+    shortName: 'hmnd-t5',
+    chainId: 14853,
+    networkId: 14853,
+    explorers: []
+  },
+  {
     name: 'LoopNetwork Mainnet',
     chain: 'LoopNetwork',
     rpc: [ 'https://api.mainnetloop.com' ],
@@ -16560,7 +16572,7 @@ const chainArray = [
   {
     name: 'Reapchain Testnet',
     chain: 'REAP',
-    rpc: [ 'https://test-rpc.reapchain.org' ],
+    rpc: [ 'https://test-eth.reapchain.org' ],
     faucets: [ 'http://faucet.reapchain.com' ],
     nativeCurrency: { name: 'test-Reap', symbol: 'tREAP', decimals: 18 },
     features: [],
