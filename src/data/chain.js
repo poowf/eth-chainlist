@@ -4370,6 +4370,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'PAWCHAIN Testnet',
+    chain: 'PAW',
+    rpc: [ 'https://pawchainx.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'PAW', symbol: 'PAW', decimals: 18 },
+    infoURL: 'https://pawchainx.com/',
+    shortName: 'PAW',
+    chainId: 542,
+    networkId: 542,
+    explorers: [
+      {
+        name: 'PAWCHAIN Testnet',
+        url: 'https://pawscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Vela1 Chain Mainnet',
     chain: 'VELA1',
     rpc: [ 'https://rpc.velaverse.io' ],
