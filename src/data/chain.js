@@ -6720,6 +6720,26 @@ const chainArray = [
     networkId: 1288
   },
   {
+    name: 'Swisstronik Testnet',
+    chain: 'SWTR',
+    rpc: [ 'https://json-rpc.testnet.swisstronik.com' ],
+    faucets: [ 'https://faucet.testnet.swisstronik.com' ],
+    nativeCurrency: { name: 'Swisstronik', symbol: 'SWTR', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.swisstronik.com',
+    shortName: 'swtr',
+    chainId: 1291,
+    networkId: 1291,
+    icon: 'swisstronik',
+    explorers: [
+      {
+        name: 'Swisstronik Scout',
+        url: 'https://explorer-evm.testnet.swisstronik.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Bobabeam',
     chain: 'Bobabeam',
     rpc: [
@@ -8825,6 +8845,30 @@ const chainArray = [
         url: 'https://explorer.xo-dex.com',
         standard: 'EIP3091',
         icon: 'xodex'
+      }
+    ]
+  },
+  {
+    name: 'Unicorn Ultra Nebulas Testnet',
+    chain: 'u2u',
+    rpc: [ 'https://rpc-nebulas-testnet.uniultra.xyz' ],
+    faucets: [ 'https://faucet.uniultra.xyz' ],
+    nativeCurrency: {
+      name: 'Unicorn Ultra Nebulas Testnet',
+      symbol: 'U2U',
+      decimals: 18
+    },
+    infoURL: 'https://uniultra.xyz',
+    shortName: 'u2u_nebulas',
+    chainId: 2484,
+    networkId: 2484,
+    icon: 'u2u_nebulas',
+    explorers: [
+      {
+        icon: 'u2u_nebulas',
+        name: 'U2U Explorer',
+        url: 'https://testnet.u2uscan.xyz',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -13106,6 +13150,30 @@ const chainArray = [
       {
         name: 'ivarscan',
         url: 'https://testnet.ivarscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Holesky',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.holesky.ethpandaops.io' ],
+    faucets: [
+      'https://faucet.holesky.ethpandaops.io',
+      'https://holesky-faucet.pk910.de'
+    ],
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://holesky.ethpandaops.io',
+    shortName: 'holesky',
+    chainId: 17000,
+    networkId: 17000,
+    icon: 'ethereum',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'Holesky Explorer',
+        url: 'https://holesky.beaconcha.in',
+        icon: 'ethereum',
         standard: 'EIP3091'
       }
     ]
