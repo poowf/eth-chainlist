@@ -9961,6 +9961,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Orderly Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://l2-orderly-l2-4460-sepolia-8tc3sd7dvy.t.conduit.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'www.orderly.network',
+    shortName: 'orderlyl2',
+    chainId: 4460,
+    networkId: 4460,
+    icon: 'orderlyTestnet',
+    explorers: [
+      {
+        name: 'basescout',
+        url: 'https://explorerl2new-orderly-l2-4460-sepolia-8tc3sd7dvy.t.conduit.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'IoTeX Network Mainnet',
     chain: 'iotex.io',
     rpc: [ 'https://babel-api.mainnet.iotex.io' ],
@@ -12399,6 +12419,29 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://gnosis-chiado.blockscout.com',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MaxxChain Mainnet',
+    chain: 'MaxxChain',
+    rpc: [
+      'https://rpc.maxxchain.org',
+      'https://rpc1.maxxchain.org',
+      'https://rpc2.maxxchain.org'
+    ],
+    faucets: [ 'https://faucet.maxxchain.org' ],
+    nativeCurrency: { name: 'Power', symbol: 'PWR', decimals: 18 },
+    icon: 'pwr',
+    infoURL: 'https://www.maxxchain.org/',
+    shortName: 'PWR',
+    chainId: 10201,
+    networkId: 10201,
+    explorers: [
+      {
+        name: 'MaxxChain Block Explorer',
+        url: 'https://explorer.maxxchain.org',
         standard: 'EIP3091'
       }
     ]
