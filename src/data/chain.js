@@ -1878,6 +1878,7 @@ const chainArray = [
       'https://gnosis.api.onfinality.io/public',
       'https://gnosis.blockpi.network/v1/rpc/public',
       'https://web3endpoints.com/gnosischain-mainnet',
+      'https://gnosis.oat.farm',
       'wss://rpc.gnosischain.com/wss'
     ],
     faucets: [
@@ -4736,6 +4737,30 @@ const chainArray = [
     shortName: 'pixie-chain-testnet',
     chainId: 666,
     networkId: 666
+  },
+  {
+    name: 'LAOS Arrakis',
+    title: 'LAOS Testnet Arrakis',
+    chain: 'LAOS',
+    icon: 'laos',
+    rpc: [
+      'https://arrakis.gorengine.com/own',
+      'wss://arrakis.gorengine.com/own'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'LAOS', symbol: 'LAOS', decimals: 18 },
+    infoURL: 'https://www.laosfoundation.io/',
+    shortName: 'laos',
+    chainId: 667,
+    networkId: 667,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://arrakis.gorengine.com',
+        icon: 'laos',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Karura Network',
@@ -8577,9 +8602,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Kava EVM Testnet',
+    name: 'Kava Testnet',
     chain: 'KAVA',
-    rpc: [ 'https://evm.testnet.kava.io', 'wss://wevm.testnet.kava.io' ],
+    rpc: [
+      'https://evm.testnet.kava.io',
+      'https://kava-evm-testnet.rpc.thirdweb.com',
+      'wss://wevm.testnet.kava.io'
+    ],
     faucets: [ 'https://faucet.kava.io' ],
     nativeCurrency: { name: 'TKava', symbol: 'TKAVA', decimals: 18 },
     infoURL: 'https://www.kava.io',
@@ -8590,18 +8619,20 @@ const chainArray = [
     explorers: [
       {
         name: 'Kava Testnet Explorer',
-        url: 'https://explorer.testnet.kava.io',
+        url: 'http://testnet.kavascan.com',
         standard: 'EIP3091',
         icon: 'kava'
       }
     ]
   },
   {
-    name: 'Kava EVM',
+    name: 'Kava',
     chain: 'KAVA',
     rpc: [
       'https://evm.kava.io',
       'https://evm2.kava.io',
+      'https://kava-rpc.gateway.pokt.network',
+      'https://kava-evm.rpc.thirdweb.com',
       'wss://wevm.kava.io',
       'wss://wevm2.kava.io',
       'https://kava-evm.publicnode.com'
@@ -8616,7 +8647,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Kava EVM Explorer',
-        url: 'https://explorer.kava.io',
+        url: 'https://kavascan.com',
         standard: 'EIP3091',
         icon: 'kava'
       }
@@ -11545,7 +11576,10 @@ const chainArray = [
   {
     name: 'Base',
     chain: 'ETH',
-    rpc: [ 'https://mainnet.base.org/' ],
+    rpc: [
+      'https://mainnet.base.org/',
+      'https://developer-access-mainnet.base.org/'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://base.org',
@@ -17164,6 +17198,30 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://testnet-explorer.kekchain.com',
         icon: 'kek',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Alterium L2 Testnet',
+    chain: 'ALT',
+    icon: 'alterium',
+    rpc: [ 'https://l2-testnet-rpc.altscan.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Alterium ETH', symbol: 'AltETH', decimals: 18 },
+    infoURL: 'https://alteriumprotocol.org',
+    shortName: 'alterium',
+    chainId: 420692,
+    networkId: 420692,
+    parent: {
+      type: 'L2',
+      chain: 'eip155-5',
+      bridges: [ { url: 'https://testnet-bridge.alteriumprotocol.org' } ]
+    },
+    explorers: [
+      {
+        name: 'Alterium L2 Testnet Explorer',
+        url: 'https://l2-testnet.altscan.org',
         standard: 'EIP3091'
       }
     ]
