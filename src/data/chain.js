@@ -8247,6 +8247,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Kiwi Subnet',
+    chain: 'KIWI',
+    rpc: [ 'https://subnets.avax.network/kiwi/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Shrapgas', symbol: 'SHRAP', decimals: 18 },
+    infoURL: '',
+    shortName: 'kiwi',
+    chainId: 2037,
+    networkId: 2037,
+    explorers: [
+      {
+        name: 'KIWI Explorer',
+        url: 'https://subnets-test.avax.network/kiwi',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'OriginTrail Parachain',
     chain: 'OTP',
     rpc: [
@@ -8707,7 +8726,13 @@ const chainArray = [
   {
     name: 'SOMA Network Testnet',
     chain: 'SOMA',
-    rpc: [ 'https://data-testnet-v1.somanetwork.io/' ],
+    rpc: [
+      'https://data-testnet-v1.somanetwork.io/',
+      'https://testnet-au-server-2.somanetwork.io',
+      'https://testnet-au-server-1.somanetwork.io',
+      'https://testnet-sg-server-1.somanetwork.io',
+      'https://testnet-sg-server-2.somanetwork.io'
+    ],
     faucets: [ 'https://faucet.somanetwork.io' ],
     nativeCurrency: { name: 'SMA', symbol: 'tSMA', decimals: 18 },
     infoURL: 'https://somanetwork.io',
@@ -8748,7 +8773,12 @@ const chainArray = [
   {
     name: 'SOMA Network Mainnet',
     chain: 'SOMA',
-    rpc: [ 'https://data-mainnet-v1.somanetwork.io/' ],
+    rpc: [
+      'https://data-mainnet-v1.somanetwork.io/',
+      'https://id-mainnet.somanetwork.io',
+      'https://hk-mainnet.somanetwork.io',
+      'https://sg-mainnet.somanetwork.io'
+    ],
     faucets: [ 'https://airdrop.somanetwork.io' ],
     nativeCurrency: { name: 'Soma Native Token', symbol: 'SMA', decimals: 18 },
     infoURL: 'https://somanetwork.io',
