@@ -1383,7 +1383,13 @@ const chainArray = [
   {
     name: 'Decimal Smart Chain Mainnet',
     chain: 'DSC',
-    rpc: [ 'https://node.decimalchain.com/web3/' ],
+    rpc: [
+      'https://node.decimalchain.com/web3/',
+      'https://node1-mainnet.decimalchain.com/web3/',
+      'https://node2-mainnet.decimalchain.com/web3/',
+      'https://node3-mainnet.decimalchain.com/web3/',
+      'https://node4-mainnet.decimalchain.com/web3/'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Decimal', symbol: 'DEL', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -3838,6 +3844,26 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Yooldo Verse Mainnet',
+    chain: 'Yooldo Verse',
+    icon: 'yooldo_verse',
+    rpc: [ 'https://rpc.yooldo-verse.xyz/' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://yooldo.gg/',
+    shortName: 'YVM',
+    chainId: 345,
+    networkId: 345,
+    explorers: [
+      {
+        name: 'Yooldo Verse Explorer',
+        url: 'https://explorer.yooldo-verse.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-248' }
   },
   {
     name: 'Theta Mainnet',
@@ -8247,6 +8273,37 @@ const chainArray = [
     ]
   },
   {
+    name: 'Centrifuge',
+    chain: 'CFG',
+    rpc: [ 'wss://fullnode.parachain.centrifuge.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Centrifuge', symbol: 'CFG', decimals: 18 },
+    infoURL: 'https://centrifuge.io',
+    shortName: 'cfg',
+    chainId: 2031,
+    networkId: 2031,
+    explorers: [
+      {
+        name: 'subscan',
+        url: 'https://centrifuge.subscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Catalyst',
+    chain: 'CFG',
+    rpc: [ 'wss://fullnode.catalyst.cntrfg.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Catalyst CFG', symbol: 'NCFG', decimals: 18 },
+    infoURL: 'https://centrifuge.io',
+    shortName: 'ncfg',
+    chainId: 2032,
+    networkId: 2032
+  },
+  {
     name: 'Kiwi Subnet',
     chain: 'KIWI',
     rpc: [ 'https://subnets.avax.network/kiwi/testnet/rpc' ],
@@ -8346,6 +8403,30 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Altair',
+    chain: 'AIR',
+    rpc: [ 'wss://fullnode.altair.centrifuge.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Altair', symbol: 'AIR', decimals: 18 },
+    infoURL: 'https://centrifuge.io',
+    shortName: 'air',
+    chainId: 2088,
+    networkId: 2088
+  },
+  {
+    name: 'Algol',
+    chain: 'algol',
+    rpc: [ 'wss://fullnode.algol.cntrfg.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Algol', symbol: 'ALGL', decimals: 18 },
+    infoURL: 'https://centrifuge.io',
+    shortName: 'algl',
+    chainId: 2089,
+    networkId: 2089
   },
   {
     name: 'Ecoball Mainnet',
@@ -10338,7 +10419,7 @@ const chainArray = [
     chain: 'HMND',
     rpc: [ 'https://explorer-rpc-http.mainnet.stages.humanode.io' ],
     faucets: [],
-    nativeCurrency: { name: 'HMND', symbol: 'HMND', decimals: 18 },
+    nativeCurrency: { name: 'eHMND', symbol: 'eHMND', decimals: 18 },
     infoURL: 'https://humanode.io',
     shortName: 'hmnd',
     chainId: 5234,
@@ -12511,6 +12592,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Arthera Testnet',
+    chain: 'AA',
+    icon: 'arthera',
+    rpc: [ 'https://rpc-test.arthera.net' ],
+    faucets: [ 'https://faucet.arthera.net' ],
+    nativeCurrency: { name: 'Arthera', symbol: 'AA', decimals: 18 },
+    infoURL: 'https://docs.arthera.net',
+    shortName: 'aa',
+    chainId: 10243,
+    networkId: 10243,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer-test.arthera.net',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: '0XTade',
     chain: '0XTade Chain',
     rpc: [ 'https://node.0xtchain.com' ],
@@ -13094,7 +13195,7 @@ const chainArray = [
     chain: 'Humanode Testnet 5',
     rpc: [ 'https://explorer-rpc-http.testnet5.stages.humanode.io' ],
     faucets: [ 'https://t.me/HumanodeTestnet5FaucetBot' ],
-    nativeCurrency: { name: 'HMND', symbol: 'HMND', decimals: 18 },
+    nativeCurrency: { name: 'eHMND', symbol: 'eHMND', decimals: 18 },
     infoURL: 'https://humanode.io',
     shortName: 'hmnd-t5',
     chainId: 14853,
