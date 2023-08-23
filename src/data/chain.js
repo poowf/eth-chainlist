@@ -7343,8 +7343,8 @@ const chainArray = [
     chain: 'Gobi',
     icon: 'eon',
     rpc: [
-      'https://gobi-testnet.horizenlabs.io/ethv1',
-      'https://rpc.ankr.com/horizen_testnet_evm'
+      'https://gobi-rpc.horizenlabs.io/ethv1',
+      'https://rpc.ankr.com/horizen_gobi_testnet'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.horizen.io' ],
