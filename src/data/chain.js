@@ -2676,9 +2676,9 @@ const chainArray = [
     networkId: 163
   },
   {
-    name: 'Omni Testnet 1',
+    name: 'Omni Testnet',
     chain: 'Omni',
-    rpc: [ 'https://testnet-1.omni.network' ],
+    rpc: [ 'https://testnet.omni.network' ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
     nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
@@ -2689,7 +2689,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Omni Explorer',
-        url: 'https://testnet-1.explorer.omni.network',
+        url: 'https://testnet.explorer.omni.network',
         standard: 'EIP3091'
       }
     ]
@@ -12362,7 +12362,10 @@ const chainArray = [
     name: 'Mind Smart Chain Testnet',
     chain: 'tMIND',
     icon: 'mindchain',
-    rpc: [ 'https://testnet-msc.mindchain.info/' ],
+    rpc: [
+      'https://testnet-msc.mindchain.info/',
+      'wss://testnet-msc.mindchain.info/ws'
+    ],
     faucets: [ 'https://faucet.mindchain.info/' ],
     nativeCurrency: { name: 'MIND Coin', symbol: 'tMIND', decimals: 18 },
     infoURL: 'https://mindscan.info',
