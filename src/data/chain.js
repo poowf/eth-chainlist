@@ -9629,6 +9629,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Xpla Mainnet',
+    chain: 'XPLA',
+    rpc: [ 'https://dimension-rpc.xpla.dev' ],
+    faucets: [ 'https://faucet.xpla.io/' ],
+    nativeCurrency: { name: 'XPLA', symbol: 'XPLA', decimals: 18 },
+    infoURL: 'https://xpla.io/',
+    shortName: 'xpla',
+    chainId: 3701,
+    networkId: 3701,
+    icon: 'xpla',
+    explorers: [
+      {
+        name: 'XPLA Explorer',
+        url: 'https://explorer.xpla.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Crossbell',
     chain: 'Crossbell',
     rpc: [ 'https://rpc.crossbell.io' ],
@@ -9662,6 +9681,46 @@ const chainArray = [
       {
         name: 'AlveyScan',
         url: 'https://alveyscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'KalyChain Mainnet',
+    chain: 'KLC',
+    icon: 'kalychain',
+    rpc: [ 'https://rpc.kalychain.io/rpc' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'KalyCoin', symbol: 'KLC', decimals: 18 },
+    infoURL: 'https://kalychain.io',
+    shortName: 'kalymainnet',
+    chainId: 3888,
+    networkId: 3888,
+    explorers: [
+      {
+        name: 'KalyScan',
+        url: 'https://kalyscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'KalyChain Testnet',
+    chain: 'KLC',
+    icon: 'kalychain',
+    rpc: [ 'https://testnetrpc.kalychain.io/rpc' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'KalyCoin', symbol: 'KLC', decimals: 18 },
+    infoURL: 'https://kalychain.io',
+    shortName: 'kalytestnet',
+    chainId: 3889,
+    networkId: 3889,
+    explorers: [
+      {
+        name: 'KalyScan',
+        url: 'https://testnet.kalyscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -10080,6 +10139,25 @@ const chainArray = [
       chain: 'eip155-5',
       bridges: [ { url: 'https://gateway.boba.network' } ]
     }
+  },
+  {
+    name: 'Beam Subnet',
+    chain: 'BEAM',
+    rpc: [ 'https://subnets.avax.network/beam/mainnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Merit Circle', symbol: 'MC', decimals: 18 },
+    infoURL: 'https://www.onbeam.com/',
+    shortName: 'beamsubnet',
+    chainId: 4337,
+    networkId: 4337,
+    explorers: [
+      {
+        name: 'BEAM Explorer',
+        url: 'https://subnets.avax.network/beam',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Htmlcoin Mainnet',
@@ -10530,6 +10608,21 @@ const chainArray = [
     shortName: 'ARCT',
     chainId: 5616,
     networkId: 5616
+  },
+  {
+    name: 'Tanssi EVM ContainerChain',
+    chain: 'EVMCC',
+    rpc: [
+      'https://fraa-dancebox-3001-rpc.a.dancebox.tanssi.network',
+      'wss://fraa-dancebox-3001-rpc.a.dancebox.tanssi.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Unit', symbol: 'Unit', decimals: 18 },
+    infoURL: 'https://tanssi.network',
+    shortName: 'TanssiCC',
+    chainId: 5678,
+    networkId: 5678,
+    explorers: []
   },
   {
     name: 'Syscoin Tanenbaum Testnet',
@@ -11594,15 +11687,11 @@ const chainArray = [
     status: 'incubating'
   },
   {
-    name: 'BeOne Chain Testnet',
-    chain: 'BOC',
-    rpc: [
-      'https://pre-boc1.beonechain.com',
-      'https://pre-boc2.beonechain.com',
-      'https://pre-boc3.beonechain.com'
-    ],
+    name: 'Testnet BeOne Chain',
+    chain: 'tBOC',
+    rpc: [ 'https://pre-boc1.beonechain.com' ],
     faucets: [ 'https://testnet.beonescan.com/faucet' ],
-    nativeCurrency: { name: 'BeOne Chain Testnet', symbol: 'BOC', decimals: 18 },
+    nativeCurrency: { name: 'Testnet BeOne Chain', symbol: 'tBOC', decimals: 18 },
     infoURL: 'https://testnet.beonescan.com',
     shortName: 'tBOC',
     chainId: 8181,
@@ -11610,7 +11699,7 @@ const chainArray = [
     icon: 'beonechain',
     explorers: [
       {
-        name: 'BeOne Chain Testnet',
+        name: 'Testnet BeOne Chain',
         url: 'https://testnet.beonescan.com',
         icon: 'beonechain',
         standard: 'none'
@@ -14881,6 +14970,25 @@ const chainArray = [
     }
   },
   {
+    name: 'VELO Labs Mainnet',
+    chain: 'NOVA chain',
+    rpc: [ 'https://nova.velo.org' ],
+    faucets: [ 'https://nova-faucet.velo.org' ],
+    nativeCurrency: { name: 'Nova', symbol: 'NOVA', decimals: 18 },
+    infoURL: 'https://velo.org',
+    shortName: 'VELO',
+    chainId: 56789,
+    networkId: 56789,
+    icon: 'novachain',
+    explorers: [
+      {
+        name: 'novascan',
+        url: 'https://novascan.velo.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Rollux Testnet',
     chain: 'SYS',
     rpc: [
@@ -15753,6 +15861,26 @@ const chainArray = [
         name: 'basescout',
         url: 'https://base-goerli.blockscout.com',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Aerie Network',
+    chain: 'Aerie',
+    rpc: [ 'https://mainnet.aerielab.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Aerie', symbol: 'AER', decimals: 18 },
+    infoURL: 'https://aerielab.io/',
+    shortName: 'Aerie',
+    chainId: 84886,
+    networkId: 84886,
+    icon: 'aerie',
+    explorers: [
+      {
+        name: 'Aerie Explorer',
+        url: 'https://explorer.aerielab.io',
+        icon: 'aerie',
         standard: 'EIP3091'
       }
     ]
