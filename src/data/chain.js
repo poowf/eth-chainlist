@@ -8,7 +8,9 @@ const chainArray = [
       'wss://mainnet.infura.io/ws/v3/${INFURA_API_KEY}',
       'https://api.mycryptoapi.com/eth',
       'https://cloudflare-eth.com',
-      'https://ethereum.publicnode.com'
+      'https://ethereum.publicnode.com',
+      'https://mainnet.gateway.tenderly.co',
+      'wss://mainnet.gateway.tenderly.co'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -105,7 +107,9 @@ const chainArray = [
       'https://goerli.infura.io/v3/${INFURA_API_KEY}',
       'wss://goerli.infura.io/v3/${INFURA_API_KEY}',
       'https://rpc.goerli.mudit.blog/',
-      'https://ethereum-goerli.publicnode.com'
+      'https://ethereum-goerli.publicnode.com',
+      'https://goerli.gateway.tenderly.co',
+      'wss://goerli.gateway.tenderly.co'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=5&address=${ADDRESS}',
@@ -197,7 +201,9 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://mainnet.optimism.io',
-      'https://optimism.publicnode.com'
+      'https://optimism.publicnode.com',
+      'https://optimism.gateway.tenderly.co',
+      'wss://optimism.gateway.tenderly.co'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -2130,12 +2136,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'DeBank Testnet',
+    name: 'DeBank Testnet(Deprecated)',
     chain: 'DeBank',
     rpc: [],
     faucets: [],
     icon: 'debank',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    status: 'deprecated',
     infoURL: 'https://debank.com',
     shortName: 'debank-testnet',
     chainId: 115,
@@ -2149,6 +2156,7 @@ const chainArray = [
     faucets: [],
     icon: 'debank',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    status: 'deprecated',
     infoURL: 'https://debank.com',
     shortName: 'debank-mainnet',
     chainId: 116,
@@ -2442,7 +2450,9 @@ const chainArray = [
       'https://rpc-mainnet.maticvigil.com',
       'https://rpc-mainnet.matic.quiknode.pro',
       'https://matic-mainnet-full-rpc.bwarelabs.com',
-      'https://polygon-bor.publicnode.com'
+      'https://polygon-bor.publicnode.com',
+      'https://polygon.gateway.tenderly.co',
+      'wss://polygon.gateway.tenderly.co'
     ],
     faucets: [],
     nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
@@ -2913,6 +2923,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitchain Mainnet',
+    chain: 'Bit',
+    rpc: [ 'https://rpc.bitchain.biz/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://www.bitchain.biz/',
+    shortName: 'bit',
+    chainId: 198,
+    networkId: 198,
+    explorers: [
+      {
+        name: 'Bitchain Scan',
+        url: 'https://explorer.bitchain.biz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BitTorrent Chain Mainnet',
     chain: 'BTTC',
     rpc: [ 'https://rpc.bittorrentchain.io/' ],
@@ -2964,6 +2992,25 @@ const chainArray = [
         name: 'moac testnet explorer',
         url: 'https://testnet.moac.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'opBNB Mainnet',
+    chain: 'opBNB',
+    rpc: [ 'https://opbnb-mainnet-rpc.bnbchain.org' ],
+    faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains' ],
+    nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
+    infoURL: 'https://opbnb.bnbchain.org/en',
+    shortName: 'obnb',
+    chainId: 204,
+    networkId: 204,
+    slip44: 714,
+    explorers: [
+      {
+        name: 'opbnbscan',
+        url: 'http://mainnet.opbnbscan.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -3396,8 +3443,8 @@ const chainArray = [
     rpc: [
       'https://mainnet.boba.network',
       'https://replica.boba.network',
-      'http://boba-ethereum.gateway.tenderly.co',
-      'http://gateway.tenderly.co/public/boba-ethereum',
+      'https://boba-ethereum.gateway.tenderly.co',
+      'https://gateway.tenderly.co/public/boba-ethereum',
       'wss://boba-ethereum.gateway.tenderly.co/',
       'wss://gateway.tenderly.co/public/boba-ethereum'
     ],
@@ -4091,7 +4138,9 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://goerli.optimism.io',
-      'https://optimism-goerli.publicnode.com'
+      'https://optimism-goerli.publicnode.com',
+      'https://optimism-goerli.gateway.tenderly.co',
+      'wss://optimism-goerli.gateway.tenderly.co'
     ],
     faucets: [],
     nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
@@ -10141,19 +10190,20 @@ const chainArray = [
     }
   },
   {
-    name: 'Beam Subnet',
+    name: 'Beam',
     chain: 'BEAM',
     rpc: [ 'https://subnets.avax.network/beam/mainnet/rpc' ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Merit Circle', symbol: 'MC', decimals: 18 },
-    infoURL: 'https://www.onbeam.com/',
-    shortName: 'beamsubnet',
+    infoURL: 'https://www.onbeam.com',
+    shortName: 'beam',
+    icon: 'beam',
     chainId: 4337,
     networkId: 4337,
     explorers: [
       {
-        name: 'BEAM Explorer',
+        name: 'Beam Explorer',
         url: 'https://subnets.avax.network/beam',
         standard: 'EIP3091'
       }
@@ -10594,6 +10644,29 @@ const chainArray = [
       {
         name: 'Chain Verse Explorer',
         url: 'https://explorer.chainverse.info',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'opBNB Testnet',
+    chain: 'opBNB',
+    rpc: [ 'https://opbnb-testnet-rpc.bnbchain.org' ],
+    faucets: [ 'https://testnet.bnbchain.org/faucet-smart' ],
+    nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'tBNB', decimals: 18 },
+    infoURL: 'https://opbnb.bnbchain.org/en',
+    shortName: 'obnbt',
+    chainId: 5611,
+    networkId: 5611,
+    explorers: [
+      {
+        name: 'bscscan-opbnb-testnet',
+        url: 'https://opbnb-testnet.bscscan.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'opbnbscan',
+        url: 'http://opbnbscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -11778,7 +11851,9 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://mainnet.base.org/',
-      'https://developer-access-mainnet.base.org/'
+      'https://developer-access-mainnet.base.org/',
+      'https://base.gateway.tenderly.co',
+      'wss://base.gateway.tenderly.co'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -12315,7 +12390,9 @@ const chainArray = [
       'https://testnet.bnb.boba.network',
       'wss://wss.testnet.bnb.boba.network',
       'https://replica.testnet.bnb.boba.network',
-      'wss://replica-wss.testnet.bnb.boba.network'
+      'wss://replica-wss.testnet.bnb.boba.network',
+      'https://boba-bnb-testnet.gateway.tenderly.co',
+      'wss://boba-bnb-testnet.gateway.tenderly.co'
     ],
     faucets: [],
     nativeCurrency: { name: 'Boba Token', symbol: 'BOBA', decimals: 18 },
@@ -13213,8 +13290,9 @@ const chainArray = [
     features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Merit Circle', symbol: 'MC', decimals: 18 },
-    infoURL: 'https://gaming.meritcircle.io',
-    shortName: 'BEAM',
+    infoURL: 'https://www.onbeam.com',
+    shortName: 'beam-testnet',
+    icon: 'beam',
     chainId: 13337,
     networkId: 13337,
     explorers: [
@@ -14944,8 +15022,8 @@ const chainArray = [
     chain: 'Boba BNB Mainnet',
     rpc: [
       'https://bnb.boba.network',
-      'http://boba-bnb.gateway.tenderly.co/',
-      'http://gateway.tenderly.co/public/boba-bnb',
+      'https://boba-bnb.gateway.tenderly.co/',
+      'https://gateway.tenderly.co/public/boba-bnb',
       'https://replica.bnb.boba.network',
       'wss://boba-bnb.gateway.tenderly.co/',
       'wss://gateway.tenderly.co/public/boba-bnb'
@@ -15707,7 +15785,9 @@ const chainArray = [
       'https://matic-mumbai.chainstacklabs.com',
       'https://rpc-mumbai.maticvigil.com',
       'https://matic-testnet-archive-rpc.bwarelabs.com',
-      'https://polygon-mumbai-bor.publicnode.com'
+      'https://polygon-mumbai-bor.publicnode.com',
+      'https://polygon-mumbai.gateway.tenderly.co',
+      'wss://polygon-mumbai.gateway.tenderly.co'
     ],
     faucets: [ 'https://faucet.polygon.technology/' ],
     nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
@@ -15843,7 +15923,11 @@ const chainArray = [
   {
     name: 'Base Goerli Testnet',
     chain: 'ETH',
-    rpc: [ 'https://goerli.base.org' ],
+    rpc: [
+      'https://goerli.base.org',
+      'https://base-goerli.gateway.tenderly.co',
+      'wss://base-goerli.gateway.tenderly.co'
+    ],
     faucets: [ 'https://www.coinbase.com/faucets/base-ethereum-goerli-faucet' ],
     nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://base.org',
@@ -18213,6 +18297,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'DeBank Testnet',
+    chain: 'DeBank',
+    rpc: [ 'http://rpc.testnet.debank.com' ],
+    faucets: [],
+    icon: 'debank',
+    nativeCurrency: { name: 'DeBank USD', symbol: 'USD', decimals: 18 },
+    infoURL: 'https://debank.com',
+    shortName: 'dbk',
+    chainId: 2021398,
+    networkId: 2021398,
+    explorers: [
+      {
+        name: 'DeBank Chain Explorer',
+        url: 'https://explorer.testnet.debank.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Plian Mainnet Main',
     chain: 'Plian',
     rpc: [ 'https://mainnet.plian.io/pchain' ],
@@ -18627,7 +18730,9 @@ const chainArray = [
       'https://rpc-sepolia.rockx.com',
       'https://rpc.sepolia.ethpandaops.io',
       'https://sepolia.infura.io/v3/${INFURA_API_KEY}',
-      'wss://sepolia.infura.io/v3/${INFURA_API_KEY}'
+      'wss://sepolia.infura.io/v3/${INFURA_API_KEY}',
+      'https://sepolia.gateway.tenderly.co',
+      'wss://sepolia.gateway.tenderly.co'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
