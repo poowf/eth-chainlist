@@ -11853,7 +11853,8 @@ const chainArray = [
       'https://mainnet.base.org/',
       'https://developer-access-mainnet.base.org/',
       'https://base.gateway.tenderly.co',
-      'wss://base.gateway.tenderly.co'
+      'wss://base.gateway.tenderly.co',
+      'https://base.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -15926,7 +15927,8 @@ const chainArray = [
     rpc: [
       'https://goerli.base.org',
       'https://base-goerli.gateway.tenderly.co',
-      'wss://base-goerli.gateway.tenderly.co'
+      'wss://base-goerli.gateway.tenderly.co',
+      'https://base-goerli.publicnode.com'
     ],
     faucets: [ 'https://www.coinbase.com/faucets/base-ethereum-goerli-faucet' ],
     nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
