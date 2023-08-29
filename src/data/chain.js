@@ -662,10 +662,10 @@ const chainArray = [
     slip44: 538
   },
   {
-    name: 'Unicorn Ultra Testnet',
+    name: 'U2U Solaris Mainnet',
     chain: 'u2u',
-    rpc: [ 'https://rpc-testnet.uniultra.xyz' ],
-    faucets: [ 'https://faucet.uniultra.xyz' ],
+    rpc: [ 'https://rpc-mainnet.uniultra.xyz' ],
+    faucets: [],
     nativeCurrency: { name: 'Unicorn Ultra', symbol: 'U2U', decimals: 18 },
     infoURL: 'https://uniultra.xyz',
     shortName: 'u2u',
@@ -676,7 +676,7 @@ const chainArray = [
       {
         icon: 'u2u',
         name: 'U2U Explorer',
-        url: 'https://testnet.uniultra.xyz',
+        url: 'https://u2uscan.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -2583,6 +2583,53 @@ const chainArray = [
         icon: 'six'
       }
     ]
+  },
+  {
+    name: 'Redbelly Network Mainnet',
+    shortName: 'rbn',
+    chain: 'RBN',
+    chainId: 151,
+    networkId: 151,
+    rpc: [],
+    faucets: [],
+    infoURL: 'https://redbelly.network',
+    nativeCurrency: { name: 'Redbelly Network Coin', symbol: 'RBNT', decimals: 18 },
+    status: 'incubating'
+  },
+  {
+    name: 'Redbelly Network Devnet',
+    shortName: 'rbn-devnet',
+    chain: 'RBN',
+    chainId: 152,
+    networkId: 152,
+    rpc: [],
+    faucets: [],
+    infoURL: 'https://redbelly.network',
+    nativeCurrency: { name: 'Redbelly Network Coin', symbol: 'RBNT', decimals: 18 },
+    status: 'incubating'
+  },
+  {
+    name: 'Redbelly Network Testnet',
+    shortName: 'rbn-testnet',
+    chain: 'RBN',
+    chainId: 153,
+    networkId: 153,
+    rpc: [],
+    faucets: [],
+    infoURL: 'https://redbelly.network',
+    nativeCurrency: { name: 'Redbelly Network Coin', symbol: 'RBNT', decimals: 18 },
+    status: 'incubating'
+  },
+  {
+    name: 'Redbelly Network TGE',
+    shortName: 'rbn-tge',
+    chain: 'RBN',
+    chainId: 154,
+    networkId: 154,
+    rpc: [],
+    faucets: [],
+    infoURL: 'https://redbelly.network',
+    nativeCurrency: { name: 'Redbelly Network Coin', symbol: 'RBNT', decimals: 18 }
   },
   {
     name: 'Tenet Testnet',
@@ -9368,6 +9415,28 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Dubxcoin network',
+    chain: 'DUBX',
+    rpc: [ 'https://rpcmain.arabianchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dubxcoin mainnet', symbol: 'DUBX', decimals: 18 },
+    infoURL: 'https://arabianchain.org',
+    shortName: 'dubx',
+    chainId: 3269,
+    networkId: 3269
+  },
+  {
+    name: 'Dubxcoin testnet',
+    chain: 'TESTDUBX',
+    rpc: [ 'https://rpctestnet.arabianchain.org' ],
+    faucets: [ 'https://faucet.arabianchain.org/' ],
+    nativeCurrency: { name: 'Dubxcoin testnet', symbol: 'TDUBX', decimals: 18 },
+    infoURL: 'https://arabianchain.org',
+    shortName: 'testdubx',
+    chainId: 3270,
+    networkId: 3270
+  },
+  {
     name: 'Debounce Subnet Testnet',
     chain: 'Debounce Network',
     icon: 'debounce',
@@ -15754,6 +15823,63 @@ const chainArray = [
         name: 'Dragonfly Blockscout',
         url: 'https://blockscout.dragonfly.hexapod.network',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Amplify Subnet',
+    chain: 'AMPLIFY',
+    rpc: [ 'https://subnets.avax.network/amplify/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'AMP', symbol: 'AMP', decimals: 18 },
+    infoURL: 'https://www.avax.network',
+    shortName: 'amplify',
+    chainId: 78430,
+    networkId: 78430,
+    explorers: [
+      {
+        name: 'AMPLIFY Explorer',
+        url: 'https://subnets-test.avax.network/amplify',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Bulletin Subnet',
+    chain: 'BULLETIN',
+    rpc: [ 'https://subnets.avax.network/bulletin/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'BLT', symbol: 'BLT', decimals: 18 },
+    infoURL: 'https://www.avax.network',
+    shortName: 'bulletin',
+    chainId: 78431,
+    networkId: 78431,
+    explorers: [
+      {
+        name: 'BULLETIN Explorer',
+        url: 'https://subnets-test.avax.network/bulletin',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Conduit Subnet',
+    chain: 'CONDUIT',
+    rpc: [ 'https://subnets.avax.network/conduit/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'CON', symbol: 'CON', decimals: 18 },
+    infoURL: 'https://www.avax.network',
+    shortName: 'conduit',
+    chainId: 78432,
+    networkId: 78432,
+    explorers: [
+      {
+        name: 'CONDUIT Explorer',
+        url: 'https://subnets-test.avax.network/conduit',
         standard: 'EIP3091'
       }
     ]
