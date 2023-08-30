@@ -638,16 +638,24 @@ const chainArray = [
     ]
   },
   {
-    name: 'SeedCoin-Network',
-    chain: 'SeedCoin-Network',
-    rpc: [ 'https://node.seedcoin.network' ],
+    name: 'Xpla Mainnet',
+    chain: 'XPLA',
+    rpc: [ 'https://dimension-rpc.xpla.dev' ],
     faucets: [],
-    nativeCurrency: { name: 'SeedCoin', symbol: 'SEED', decimals: 18 },
-    infoURL: 'https://www.seedcoin.network/',
-    shortName: 'SEED',
-    icon: 'seedcoin',
+    nativeCurrency: { name: 'XPLA', symbol: 'XPLA', decimals: 18 },
+    infoURL: 'https://xpla.io',
+    shortName: 'xpla',
     chainId: 37,
-    networkId: 37
+    networkId: 37,
+    icon: 'xpla',
+    explorers: [
+      {
+        name: 'XPLA Explorer',
+        url: 'https://explorer.xpla.io',
+        standard: 'none'
+      }
+    ],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Valorbit',
@@ -4880,6 +4888,32 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://arrakis.gorengine.com',
         icon: 'laos',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'JuncaGlobal Chain Testnet',
+    chain: 'JuncaGlobal Test Chain',
+    rpc: [
+      'https://rpc-testnet.juncachain.com',
+      'wss://ws-testnet.juncachain.com'
+    ],
+    faucets: [ 'https://faucet-testnet.juncachain.com' ],
+    nativeCurrency: {
+      name: 'JuncaGlobal Chain Testnet Native Token',
+      symbol: 'JGCT',
+      decimals: 18
+    },
+    infoURL: 'https://junca-cash.world',
+    shortName: 'junca',
+    chainId: 669,
+    networkId: 669,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://scan-testnet.juncachain.com',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -9242,6 +9276,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Morphism Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc-testnet.morphism.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://morphism.xyz',
+    shortName: 'tmorph',
+    chainId: 2710,
+    networkId: 2710,
+    explorers: [
+      {
+        name: 'Morphism Testnet Explorer',
+        url: 'https://explorer-testnet.morphism.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge-testnet.morphism.xyz' } ]
+    }
+  },
+  {
     name: 'Boba Network Goerli Testnet',
     chain: 'ETH',
     rpc: [
@@ -9747,13 +9804,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Xpla Mainnet',
-    chain: 'XPLA',
+    name: 'Xpla Testnet',
+    chain: 'XPLATest',
     rpc: [ 'https://dimension-rpc.xpla.dev' ],
-    faucets: [ 'https://faucet.xpla.io/' ],
+    faucets: [ 'https://faucet.xpla.io' ],
     nativeCurrency: { name: 'XPLA', symbol: 'XPLA', decimals: 18 },
-    infoURL: 'https://xpla.io/',
-    shortName: 'xpla',
+    infoURL: 'https://xpla.io',
+    shortName: 'xplatest',
     chainId: 3701,
     networkId: 3701,
     icon: 'xpla',
@@ -9763,7 +9820,8 @@ const chainArray = [
         url: 'https://explorer.xpla.io',
         standard: 'none'
       }
-    ]
+    ],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Crossbell',
@@ -11277,11 +11335,14 @@ const chainArray = [
     status: 'incubating'
   },
   {
-    name: 'Horizen EON',
+    name: 'Horizen EON Mainnet',
     shortName: 'EON',
     chain: 'EON',
     icon: 'eon',
-    rpc: [ 'https://eon-rpc.horizenlabs.io/ethv1' ],
+    rpc: [
+      'https://eon-rpc.horizenlabs.io/ethv1',
+      'https://rpc.ankr.com/horizen_eon'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Zencash', symbol: 'ZEN', decimals: 18 },
@@ -13928,6 +13989,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nautilus Mainnet',
+    chain: 'ETH',
+    icon: 'nautilus',
+    rpc: [ 'https://api.nautilus.nautchain.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zebec', symbol: 'ZBC', decimals: 18 },
+    infoURL: 'https://docs.nautchain.xyz',
+    shortName: 'NAUTCHAIN',
+    chainId: 22222,
+    networkId: 22222,
+    explorers: [
+      {
+        name: 'Nautscan',
+        url: 'https://nautscan.com',
+        standard: 'EIP3091',
+        icon: 'nautilus'
+      }
+    ]
+  },
+  {
     name: 'MAP Mainnet',
     chain: 'MAP',
     icon: 'map',
@@ -16107,6 +16188,26 @@ const chainArray = [
     shortName: 'Cyber',
     chainId: 85449,
     networkId: 48501
+  },
+  {
+    name: 'Nautilus Proteus Testnet',
+    chain: 'ETH',
+    icon: 'nautilus',
+    rpc: [ 'https://api.proteus.nautchain.xyz/solana' ],
+    faucets: [ 'https://proteusfaucet.nautchain.xyz' ],
+    nativeCurrency: { name: 'Zebec Test Token', symbol: 'tZBC', decimals: 18 },
+    infoURL: 'https://docs.nautchain.xyz',
+    shortName: 'NAUTTest',
+    chainId: 88002,
+    networkId: 88002,
+    explorers: [
+      {
+        name: 'Nautscan',
+        url: 'https://proteus.nautscan.com',
+        standard: 'EIP3091',
+        icon: 'nautilus'
+      }
+    ]
   },
   {
     name: 'Chiliz Scoville Testnet',
