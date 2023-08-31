@@ -640,7 +640,7 @@ const chainArray = [
   {
     name: 'Xpla Mainnet',
     chain: 'XPLA',
-    rpc: [ 'https://dimension-rpc.xpla.dev' ],
+    rpc: [ 'https://dimension-evm-rpc.xpla.dev' ],
     faucets: [],
     nativeCurrency: { name: 'XPLA', symbol: 'XPLA', decimals: 18 },
     infoURL: 'https://xpla.io',
@@ -651,8 +651,8 @@ const chainArray = [
     explorers: [
       {
         name: 'XPLA Explorer',
-        url: 'https://explorer.xpla.io',
-        standard: 'none'
+        url: 'https://explorer.xpla.io/mainnet',
+        standard: 'EIP3091'
       }
     ],
     redFlags: [ 'reusedChainId' ]
@@ -4893,27 +4893,26 @@ const chainArray = [
     ]
   },
   {
-    name: 'JuncaGlobal Chain Testnet',
-    chain: 'JuncaGlobal Test Chain',
+    name: 'JuncaChain testnet',
+    chain: 'JuncaChain testnet',
     rpc: [
       'https://rpc-testnet.juncachain.com',
       'wss://ws-testnet.juncachain.com'
     ],
     faucets: [ 'https://faucet-testnet.juncachain.com' ],
     nativeCurrency: {
-      name: 'JuncaGlobal Chain Testnet Native Token',
+      name: 'JuncaChain Testnet Native Token',
       symbol: 'JGCT',
       decimals: 18
     },
     infoURL: 'https://junca-cash.world',
-    shortName: 'junca',
+    shortName: 'Junca',
     chainId: 669,
     networkId: 669,
     explorers: [
       {
-        name: 'blockscout',
+        name: 'JuncaScan',
         url: 'https://scan-testnet.juncachain.com',
-        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -8453,6 +8452,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Shrapnel Testnet',
+    chain: 'SHRAPNEL',
+    rpc: [ 'https://subnets.avax.network/shrapnel/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'SHRAPG', symbol: 'SHRAPG', decimals: 18 },
+    infoURL: 'https://www.shrapnel.com/',
+    shortName: 'shraptest',
+    chainId: 2038,
+    networkId: 2038,
+    explorers: [
+      {
+        name: 'SHRAPNEL Explorer',
+        url: 'https://subnets-test.avax.network/shrapnel',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'OriginTrail Parachain',
     chain: 'OTP',
     rpc: [
@@ -9821,7 +9839,7 @@ const chainArray = [
         standard: 'none'
       }
     ],
-    redFlags: [ 'reusedChainId' ]
+    status: 'deprecated'
   },
   {
     name: 'Crossbell',
@@ -13207,6 +13225,25 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Polygon Supernet Arianee',
+    chain: 'Arianee',
+    rpc: [ 'https://rpc.polygonsupernet.public.arianee.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Arianee', symbol: 'ARIA20', decimals: 18 },
+    infoURL: 'https://arianee.org',
+    shortName: 'Arianee',
+    chainId: 11891,
+    networkId: 11891,
+    explorers: [
+      {
+        name: 'Polygon Supernet Arianee Explorer',
+        url: 'https://polygonsupernet.explorer.arianee.net',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { chain: 'eip155-1', type: 'L2' }
   },
   {
     name: 'SatoshiChain Mainnet',
