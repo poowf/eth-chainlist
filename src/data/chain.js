@@ -4893,6 +4893,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'JuncaChain',
+    chain: 'JuncaChain',
+    rpc: [ 'https://rpc.juncachain.com' ],
+    nativeCurrency: { name: 'JuncaChain Native Token', symbol: 'JGC', decimals: 18 },
+    faucets: [],
+    infoURL: 'https://junca-cash.world',
+    shortName: 'junca',
+    chainId: 668,
+    networkId: 668,
+    explorers: [
+      {
+        name: 'JuncaScan',
+        url: 'https://scan.juncachain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'JuncaChain testnet',
     chain: 'JuncaChain testnet',
     rpc: [
@@ -4906,7 +4924,7 @@ const chainArray = [
       decimals: 18
     },
     infoURL: 'https://junca-cash.world',
-    shortName: 'Junca',
+    shortName: 'juncat',
     chainId: 669,
     networkId: 669,
     explorers: [
