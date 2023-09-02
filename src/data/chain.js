@@ -1955,6 +1955,24 @@ const chainArray = [
     networkId: 102
   },
   {
+    name: 'Worldland Mainnet',
+    chain: 'Worldland',
+    rpc: [ 'https://seoul.worldland.foundation' ],
+    faucets: [],
+    nativeCurrency: { name: 'Worldland', symbol: 'WL', decimals: 18 },
+    infoURL: 'https://worldland.foundation',
+    shortName: 'WLC',
+    chainId: 103,
+    networkId: 103,
+    explorers: [
+      {
+        name: 'Worldland Explorer',
+        url: 'https://scan.worldland.foundation',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Kaiba Lightning Chain Testnet',
     chain: 'tKLC',
     rpc: [ 'https://klc.live/' ],
@@ -8690,6 +8708,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'BigShortBets',
+    chain: 'BIGSB',
+    rpc: [ 'https://market.bigsb.io', 'wss://market.bigsb.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'USD Coin', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://bigshortbets.com/',
+    shortName: 'bigsb',
+    chainId: 2137,
+    networkId: 2137,
+    explorers: []
+  },
+  {
     name: 'Defi Oracle Meta Testnet',
     chain: 'dfiometatest',
     icon: 'defioraclemeta',
@@ -10741,6 +10771,29 @@ const chainArray = [
     shortName: 'UZMI',
     chainId: 5315,
     networkId: 5315
+  },
+  {
+    name: 'Tritanium Testnet',
+    chain: 'TRITANIUM',
+    rpc: [
+      'https://nodetestnet-station-one.tritanium.network/',
+      'https://nodetestnet-station-two.tritanium.network/'
+    ],
+    faucets: [ 'https://faucet.tritanium.network' ],
+    nativeCurrency: { name: 'Tritanium Native Token', symbol: 'tTRN', decimals: 18 },
+    infoURL: 'https://tritanium.network',
+    shortName: 'ttrn',
+    chainId: 5353,
+    networkId: 5353,
+    icon: 'tritanium',
+    explorers: [
+      {
+        name: 'TRITANIUM Testnet Explorer',
+        icon: 'tritanium',
+        url: 'https://testnet.tritanium.network',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Nahmii Mainnet',
@@ -12966,6 +13019,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Worldland Testnet',
+    chain: 'Worldland',
+    rpc: [ 'https://gwangju.worldland.foundation' ],
+    faucets: [],
+    nativeCurrency: { name: 'Worldland', symbol: 'WL', decimals: 18 },
+    infoURL: 'https://worldland.foundation',
+    shortName: 'TWLC',
+    chainId: 10395,
+    networkId: 10395,
+    explorers: [
+      {
+        name: 'Worldland Explorer',
+        url: 'https://testscan.worldland.foundation',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Numbers Mainnet',
     chain: 'NUM',
     icon: 'num',
@@ -14583,6 +14654,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'ConnectorManager Robin',
+    chain: 'Rangers',
+    icon: 'rangers',
+    rpc: [ 'https://robin-cm.rangersprotocol.com/api/jsonrpc' ],
+    faucets: [ 'https://robin-faucet.rangersprotocol.com' ],
+    nativeCurrency: { name: 'Rangers Protocol Gas', symbol: 'ttRPG', decimals: 18 },
+    infoURL: 'https://rangersprotocol.com',
+    shortName: 'ttrpg',
+    chainId: 38401,
+    networkId: 38401,
+    explorers: [
+      {
+        name: 'rangersscan-robin',
+        url: 'https://robin-rangersscan.rangersprotocol.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Energi Mainnet',
     chain: 'NRG',
     rpc: [ 'https://nodeapi.energi.network' ],
@@ -15169,7 +15259,7 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://rpc.titan.tokamak.network',
-      'wss://rpc.titan.tokamak.network/ws'
+      'wss://rpc.titan.tokamak.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -16327,7 +16417,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Nautilus Chain',
+    name: 'Nautilus Trition Chain',
     title: 'Nautilus Trition Testnet',
     chain: 'ETH',
     icon: 'nautilus',
@@ -18187,6 +18277,31 @@ const chainArray = [
       {
         name: 'bescscan',
         url: 'https://Bescscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Rethereum Mainnet',
+    chain: 'RTH',
+    rpc: [
+      'https://rpc.rethereum.org',
+      'https://rethereum.rpc.restratagem.com',
+      'https://rpc.rthcentral.org'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Rethereum', symbol: 'RTH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.rethereum.org',
+    shortName: 'rth',
+    chainId: 622277,
+    networkId: 622277,
+    icon: 'rethereum',
+    explorers: [
+      {
+        name: 'rethereum',
+        url: 'https://explorer.rethereum.org',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
