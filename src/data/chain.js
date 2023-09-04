@@ -6341,6 +6341,26 @@ const chainArray = [
     }
   },
   {
+    name: 'BLXq Testnet',
+    chain: 'BLXQ',
+    icon: 'blxq',
+    rpc: [ 'https://testnetq1.blx.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'BLXQ', symbol: 'BLXQ', decimals: 18 },
+    infoURL: 'https://blx.org',
+    shortName: 'blxq',
+    chainId: 1107,
+    networkId: 1107,
+    explorers: [
+      {
+        name: 'BLXq Explorer',
+        url: 'https://explorer.blx.org',
+        icon: 'blxq',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'WEMIX3.0 Mainnet',
     chain: 'WEMIX',
     rpc: [ 'https://api.wemix.com', 'wss://ws.wemix.com' ],
