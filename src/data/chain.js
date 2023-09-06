@@ -1957,6 +1957,7 @@ const chainArray = [
   {
     name: 'Worldland Mainnet',
     chain: 'Worldland',
+    icon: 'worldland',
     rpc: [ 'https://seoul.worldland.foundation' ],
     faucets: [],
     nativeCurrency: { name: 'Worldland', symbol: 'WL', decimals: 18 },
@@ -3353,6 +3354,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Kroma',
+    chain: 'ETH',
+    rpc: [ 'https://api.kroma.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://kroma.network',
+    icon: 'kroma',
+    shortName: 'kroma',
+    chainId: 255,
+    networkId: 255,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.kroma.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://kroma.network/bridge' } ]
+    }
   },
   {
     name: 'Huobi ECO Chain Testnet',
@@ -13041,6 +13067,7 @@ const chainArray = [
   {
     name: 'Worldland Testnet',
     chain: 'Worldland',
+    icon: 'worldland',
     rpc: [ 'https://gwangju.worldland.foundation' ],
     faucets: [],
     nativeCurrency: { name: 'Worldland', symbol: 'WL', decimals: 18 },
@@ -18020,6 +18047,30 @@ const chainArray = [
       type: 'L2',
       chain: 'eip155-5',
       bridges: [ { url: 'https://bridge.arbitrum.io/' } ]
+    }
+  },
+  {
+    name: 'Arbitrum Sepolia',
+    title: 'Arbitrum Sepolia Rollup Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia-rollup.abitrum.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://arbitrum.io',
+    shortName: 'arb-sep',
+    chainId: 421614,
+    networkId: 421614,
+    explorers: [
+      {
+        name: 'Arbitrum Sepolia Rollup Testnet Explorer',
+        url: 'https://sepolia-explorer.arbitrum.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.arbitrum.io' } ]
     }
   },
   {
