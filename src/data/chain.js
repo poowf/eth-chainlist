@@ -138,6 +138,7 @@ const chainArray = [
   },
   {
     name: 'Ethereum Classic Testnet Kotti',
+    status: 'deprecated',
     chain: 'ETC',
     rpc: [ 'https://www.ethercluster.com/kotti' ],
     faucets: [],
@@ -754,7 +755,7 @@ const chainArray = [
     chain: 'pangolin',
     rpc: [ 'https://pangolin-rpc.darwinia.network' ],
     faucets: [
-      'https://docs.crab.network/dvm/wallets/dvm-metamask#apply-for-the-test-token'
+      'https://docs.darwinia.network/pangolin-testnet-1e9ac8b09e874e8abd6a7f18c096ca6a'
     ],
     nativeCurrency: {
       name: 'Pangolin Network Native Token',
@@ -774,9 +775,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'Darwinia Crab Network',
+    name: 'Crab Network',
     chain: 'crab',
-    rpc: [ 'https://crab-rpc.darwinia.network' ],
+    rpc: [
+      'https://crab-rpc.darwinia.network',
+      'https://crab-rpc.darwiniacommunitydao.xyz',
+      'https://crab.api.onfinality.io/public-ws',
+      'https://darwiniacrab-rpc.dwellir.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Crab Network Native Token', symbol: 'CRAB', decimals: 18 },
     infoURL: 'https://crab.network/',
@@ -795,7 +801,9 @@ const chainArray = [
     name: 'Darwinia Pangoro Testnet',
     chain: 'pangoro',
     rpc: [ 'https://pangoro-rpc.darwinia.network' ],
-    faucets: [],
+    faucets: [
+      'https://docs.darwinia.network/pangoro-testnet-70cfec5dc9ca42759959ba3803edaec2'
+    ],
     nativeCurrency: {
       name: 'Pangoro Network Native Token',
       symbol: 'ORING',
@@ -816,7 +824,12 @@ const chainArray = [
   {
     name: 'Darwinia Network',
     chain: 'darwinia',
-    rpc: [ 'https://rpc.darwinia.network' ],
+    rpc: [
+      'https://rpc.darwinia.network',
+      'https://darwinia-rpc.darwiniacommunitydao.xyz',
+      'https://darwinia2.api.onfinality.io/public-ws',
+      'https://darwinia-rpc.dwellir.com'
+    ],
     faucets: [],
     nativeCurrency: {
       name: 'Darwinia Network Native Token',
@@ -1151,8 +1164,13 @@ const chainArray = [
   {
     name: 'Ethereum Classic Mainnet',
     chain: 'ETC',
-    rpc: [ 'https://etc.rivet.link' ],
-    faucets: [ 'https://free-online-app.com/faucet-for-eth-evm-chains/?' ],
+    rpc: [
+      'https://etc.rivet.link',
+      'https://etc.etcdesktop.com',
+      'https://etc.mytokenpocket.vip'
+    ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
     nativeCurrency: { name: 'Ethereum Classic Ether', symbol: 'ETC', decimals: 18 },
     infoURL: 'https://ethereumclassic.org',
     shortName: 'etc',
@@ -1163,7 +1181,7 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://blockscout.com/etc/mainnet',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -1186,7 +1204,11 @@ const chainArray = [
     name: 'Ethereum Classic Testnet Mordor',
     chain: 'ETC',
     rpc: [ 'https://rpc.mordor.etccooperative.org' ],
-    faucets: [],
+    features: [ { name: 'EIP155' } ],
+    faucets: [
+      'https://mordor.canhaz.net/',
+      'https://easy.hebeswap.com/#/faucet'
+    ],
     nativeCurrency: {
       name: 'Mordor Classic Testnet Ether',
       symbol: 'METC',
@@ -1195,7 +1217,15 @@ const chainArray = [
     infoURL: 'https://github.com/eth-classic/mordor/',
     shortName: 'metc',
     chainId: 63,
-    networkId: 7
+    networkId: 7,
+    slip44: 63,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.com/etc/mordor',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Ellaism',
