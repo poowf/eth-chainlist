@@ -2107,6 +2107,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Shibarium',
+    chain: 'Shibarium',
+    icon: 'shibarium',
+    rpc: [ 'https://www.shibrpc.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'BONE Shibarium', symbol: 'BONE', decimals: 18 },
+    infoURL: 'https://shibariumecosystem.com',
+    shortName: 'shibariumecosystem',
+    chainId: 109,
+    networkId: 109,
+    explorers: [
+      {
+        name: 'shibariumscan',
+        url: 'https://www.shibariumscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Proton Testnet',
     chain: 'XPR',
     rpc: [ 'https://protontestnet.greymass.com/' ],
@@ -4394,6 +4413,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Areon Network Testnet',
+    chain: 'Areon',
+    icon: 'areon',
+    rpc: [ 'https://testnet-rpc.areon.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Areon', symbol: 'AREA', decimals: 18 },
+    infoURL: 'https://areon.network',
+    shortName: 'area',
+    chainId: 462,
+    networkId: 462,
+    explorers: [
+      {
+        name: 'AreonScan',
+        url: 'https://areonscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Rupaya',
     chain: 'RUPX',
     rpc: [],
@@ -6350,6 +6388,34 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://bridge.metis.io' } ]
     }
+  },
+  {
+    name: 'Humans.ai Mainnet',
+    chain: 'Humans',
+    rpc: [
+      'https://jsonrpc.humans.nodestake.top',
+      'https://humans-mainnet-evm.itrocket.net:443',
+      'https://humans-evm-rpc.staketab.org:443',
+      'https://evm.humans.stakepool.dev.br',
+      'https://mainnet-humans-evm.konsortech.xyz',
+      'https://evm-rpc.mainnet.humans.zone'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'HEART', symbol: 'HEART', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://humans.ai',
+    shortName: 'humans',
+    chainId: 1089,
+    networkId: 1089,
+    icon: 'humans',
+    explorers: [
+      {
+        name: 'explorer.guru',
+        url: 'https://humans.explorers.guru',
+        icon: 'humans',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'MOAC mainnet',
@@ -18083,7 +18149,7 @@ const chainArray = [
     name: 'Arbitrum Sepolia',
     title: 'Arbitrum Sepolia Rollup Testnet',
     chain: 'ETH',
-    rpc: [ 'https://sepolia-rollup.abitrum.io/rpc' ],
+    rpc: [ 'https://sepolia-rollup.arbitrum.io/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://arbitrum.io',
