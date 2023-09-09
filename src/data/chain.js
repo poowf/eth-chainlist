@@ -4144,11 +4144,25 @@ const chainArray = [
       'wss://rpc.pulsechain.com',
       'https://pulsechain.publicnode.com'
     ],
+    slip44: 60,
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     ens: { registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e' },
-    status: 'incubating',
-    nativeCurrency: { name: 'Pulse', symbol: 'PLS', decimals: 18 }
+    status: 'active',
+    nativeCurrency: { name: 'Pulse', symbol: 'PLS', decimals: 18 },
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://scan.pulsechain.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'otterscan',
+        url: 'https://otter.pulsechain.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Consta Testnet',
@@ -4375,6 +4389,7 @@ const chainArray = [
   },
   {
     name: 'Frenchain Testnet',
+    status: 'deprecated',
     chain: 'tfren',
     rpc: [ 'https://rpc-01tn.frenchain.app' ],
     faucets: [],
@@ -5819,6 +5834,7 @@ const chainArray = [
       'wss://rpc.v3.testnet.pulsechain.com/'
     ],
     faucets: [ 'https://faucet.v3.testnet.pulsechain.com/' ],
+    status: 'deprecated',
     nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 }
   },
   {
@@ -5837,9 +5853,17 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.v4.testnet.pulsechain.com/' ],
     ens: { registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e' },
-    status: 'incubating',
-    explorers: [],
-    nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 }
+    status: 'active',
+    slip44: 60,
+    nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 },
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://scan.v4.testnet.pulsechain.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'muNode Testnet',
@@ -6613,6 +6637,25 @@ const chainArray = [
     networkId: 1131,
     icon: 'defichain-network',
     explorers: []
+  },
+  {
+    name: 'DeFiMetaChain',
+    icon: 'changi',
+    chain: 'DFI',
+    rpc: [ 'https://testnet-dmc.mydefichain.com:20551' ],
+    faucets: [ 'http://tc04.mydefichain.com/faucet' ],
+    nativeCurrency: { name: 'DeFiChain Token', symbol: 'DFI', decimals: 18 },
+    infoURL: 'https://defichain.com',
+    shortName: 'changi',
+    chainId: 1133,
+    networkId: 1133,
+    explorers: [
+      {
+        name: 'MetaScan',
+        url: 'https://meta.defiscan.live',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'AmStar Testnet',
@@ -9585,6 +9628,7 @@ const chainArray = [
   {
     name: 'Canxium Mainnet',
     chain: 'CAU',
+    icon: 'canxium',
     rpc: [ 'https://rpc.canxium.org' ],
     faucets: [],
     nativeCurrency: { name: 'Canxium', symbol: 'CAU', decimals: 18 },
@@ -14545,6 +14589,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cerium Testnet',
+    chain: 'CAU',
+    icon: 'canxium',
+    rpc: [ 'https://cerium-rpc.canxium.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Canxium', symbol: 'CAU', decimals: 18 },
+    infoURL: 'https://canxium.org',
+    shortName: 'ceri',
+    chainId: 30103,
+    networkId: 30103,
+    explorers: [
+      {
+        name: 'canxium explorer',
+        url: 'https://cerium-explorer.canxium.net',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Ethersocial Network',
     chain: 'ESN',
     rpc: [ 'https://api.esn.gonspool.com' ],
@@ -16278,9 +16341,7 @@ const chainArray = [
     chain: 'Polygon',
     icon: 'polygon',
     rpc: [
-      'https://matic-mumbai.chainstacklabs.com',
       'https://rpc-mumbai.maticvigil.com',
-      'https://matic-testnet-archive-rpc.bwarelabs.com',
       'https://polygon-mumbai-bor.publicnode.com',
       'https://polygon-mumbai.gateway.tenderly.co',
       'wss://polygon-mumbai.gateway.tenderly.co'
