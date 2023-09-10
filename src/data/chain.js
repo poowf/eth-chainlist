@@ -5290,7 +5290,7 @@ const chainArray = [
     networkId: 777
   },
   {
-    name: 'MAAL Sharia Chain',
+    name: 'MAAL Chain',
     chain: 'MAAL',
     icon: 'maal',
     rpc: [
@@ -5300,7 +5300,7 @@ const chainArray = [
     ],
     faucets: [],
     nativeCurrency: { name: 'MAAL', symbol: 'MAAL', decimals: 18 },
-    infoURL: 'https://www.maalblockchain.com/',
+    infoURL: 'https://www.maalchain.com/',
     shortName: 'maal',
     chainId: 786,
     networkId: 786,
