@@ -3806,6 +3806,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Wyzth Testnet',
+    chain: 'WYZ',
+    rpc: [ 'https://rpc-testnet3.wyzthchain.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Wyzth', symbol: 'WYZ', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://wyzth.org/',
+    shortName: 'wyz',
+    chainId: 309,
+    networkId: 309,
+    icon: 'wyzth_icon',
+    explorers: [
+      {
+        name: 'wyzth',
+        url: 'http://24.199.108.65:4000',
+        icon: 'wyzth',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Omax Mainnet',
     chain: 'OMAX Chain',
     rpc: [ 'https://mainapi.omaxray.com' ],
@@ -6113,6 +6134,24 @@ const chainArray = [
     networkId: 1001
   },
   {
+    name: 'Tectum Emission Token',
+    chain: 'TET',
+    rpc: [ 'https://rpc.softnote.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Tectum', symbol: 'TET', decimals: 8 },
+    infoURL: 'https://softnote.com',
+    shortName: 'tet',
+    chainId: 1003,
+    networkId: 1003,
+    explorers: [
+      {
+        name: 'Tectum explorer',
+        url: 'https://explorer.tectum.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'T-EKTA',
     title: 'EKTA Testnet T-EKTA',
     chain: 'T-EKTA',
@@ -7236,39 +7275,45 @@ const chainArray = [
     icon: 'alyx'
   },
   {
-    name: 'Aitd Mainnet',
-    chain: 'AITD',
-    icon: 'aitd',
-    rpc: [ 'https://walletrpc.aitd.io', 'https://node.aitd.io' ],
+    name: 'AIA Mainnet',
+    chain: 'AIA',
+    icon: 'aia',
+    rpc: [
+      'https://aia-dataseed1.aiachain.org',
+      'https://aia-dataseed2.aiachain.org',
+      'https://aia-dataseed3.aiachain.org',
+      'https://aia-dataseed4.aiachain.org'
+    ],
     faucets: [],
-    nativeCurrency: { name: 'AITD Mainnet', symbol: 'AITD', decimals: 18 },
-    infoURL: 'https://www.aitd.io/',
-    shortName: 'aitd',
+    nativeCurrency: { name: 'AIA Mainnet', symbol: 'AIA', decimals: 18 },
+    infoURL: 'https://aiachain.org/',
+    shortName: 'aia',
     chainId: 1319,
     networkId: 1319,
     explorers: [
       {
-        name: 'AITD Chain Explorer Mainnet',
-        url: 'https://aitd-explorer-new.aitd.io',
+        name: 'AIA Chain Explorer Mainnet',
+        url: 'https://aiascan.com',
         standard: 'EIP3091'
       }
     ]
   },
   {
-    name: 'Aitd Testnet',
-    chain: 'AITD',
-    icon: 'aitd',
-    rpc: [ 'http://http-testnet.aitd.io' ],
-    faucets: [ 'https://aitd-faucet-pre.aitdcoin.com/' ],
-    nativeCurrency: { name: 'AITD Testnet', symbol: 'AITD', decimals: 18 },
-    infoURL: 'https://www.aitd.io/',
-    shortName: 'aitdtestnet',
+    name: 'AIA Testnet',
+    chain: 'AIA',
+    icon: 'aia',
+    rpc: [ 'https://aia-dataseed1-testnet.aiachain.org' ],
+    faucets: [ 'https://aia-faucet-testnet.aiachain.org' ],
+    nativeCurrency: { name: 'AIA Testnet', symbol: 'AIA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://aiachain.org',
+    shortName: 'aiatestnet',
     chainId: 1320,
     networkId: 1320,
     explorers: [
       {
-        name: 'AITD Chain Explorer Testnet',
-        url: 'https://block-explorer-testnet.aitd.io',
+        name: 'AIA Chain Explorer Testnet',
+        url: 'https://testnet.aiascan.com',
         standard: 'EIP3091'
       }
     ]
