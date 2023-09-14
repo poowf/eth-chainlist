@@ -2878,6 +2878,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Manta Pacific Mainnet',
+    chain: 'Manta Pacific',
+    rpc: [ 'https://pacific-rpc.manta.network/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://pacific-info.manta.network',
+    shortName: 'manta',
+    chainId: 169,
+    networkId: 169,
+    icon: 'manta',
+    explorers: [
+      {
+        name: 'manta-pacific Explorer',
+        url: 'https://pacific-explorer.manta.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'HOO Smart Chain Testnet',
     chain: 'ETH',
     rpc: [ 'https://http-testnet.hoosmartchain.com' ],
@@ -4420,25 +4440,33 @@ const chainArray = [
     }
   },
   {
-    name: 'Frenchain Testnet',
-    status: 'deprecated',
-    chain: 'tfren',
-    rpc: [ 'https://rpc-01tn.frenchain.app' ],
+    name: 'Synapse Chain Testnet',
+    status: 'active',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.synapseprotocol.com' ],
     faucets: [],
-    nativeCurrency: { name: 'tFREN', symbol: 'FtREN', decimals: 18 },
-    infoURL: 'https://frenchain.app',
-    shortName: 'tFREN',
+    nativeCurrency: { name: 'Sepolia ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://synapseprotocol.com',
+    shortName: 'synapse-sepolia',
     chainId: 444,
     networkId: 444,
-    icon: 'fren',
+    redFlags: [ 'reusedChainId' ],
     explorers: [
       {
-        name: 'blockscout',
-        url: 'https://testnet.frenscan.io',
-        icon: 'fren',
+        name: 'Synapse Chain Sepolia',
+        url: 'https://sepolia.synapsescan.com',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://docs.synapseprotocol.com/synapse-chain/using-synapse-chain/bridging-to-synapse-chain'
+        }
+      ]
+    }
   },
   {
     name: 'ARZIO Chain',
@@ -5823,6 +5851,25 @@ const chainArray = [
       chain: 'eip155-11155111',
       bridges: [ { url: 'https://bridge.mode.network/' } ]
     }
+  },
+  {
+    name: 'Yidark Chain Mainnet',
+    chain: 'Yidark',
+    icon: 'ydk',
+    rpc: [ 'https://rpc.yidark.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Yidark', symbol: 'YDK', decimals: 18 },
+    infoURL: 'https://yidarkscan.com',
+    shortName: 'ydk',
+    chainId: 927,
+    networkId: 927,
+    explorers: [
+      {
+        name: 'Yidarkscan',
+        url: 'https://yidarkscan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'PulseChain Testnet',
@@ -13066,6 +13113,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Agung Network',
+    chain: 'Agung',
+    icon: 'agung',
+    rpc: [ 'https://rpcpc1-qa.agung.peaq.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Agung', symbol: 'AGNG', decimals: 18 },
+    infoURL: 'https://www.peaq.network',
+    shortName: 'AGNG',
+    chainId: 9990,
+    networkId: 9990,
+    explorers: [
+      {
+        name: 'Polkadot.js',
+        url: 'https://polkadot.js.org/apps/?rpc=wss://wsspc1-qa.agung.peaq.network#/explorer',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Mind Smart Chain Mainnet',
     chain: 'MIND',
     icon: 'mindchain',
@@ -14460,7 +14526,7 @@ const chainArray = [
     icon: 'map',
     rpc: [ 'https://rpc.maplabs.io' ],
     faucets: [],
-    nativeCurrency: { name: 'MAP', symbol: 'MAP', decimals: 18 },
+    nativeCurrency: { name: 'MAPO', symbol: 'MAPO', decimals: 18 },
     infoURL: 'https://maplabs.io',
     shortName: 'map',
     chainId: 22776,
@@ -19168,7 +19234,7 @@ const chainArray = [
     nativeCurrency: { name: 'Manta', symbol: 'MANTA', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://manta-testnet.caldera.dev/',
-    shortName: 'manta',
+    shortName: 'mantaTestnet',
     chainId: 3441005,
     networkId: 3441005,
     icon: 'manta',
