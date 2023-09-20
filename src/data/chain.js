@@ -4493,9 +4493,9 @@ const chainArray = [
     icon: 'areon',
     rpc: [ 'https://testnet-rpc.areon.network' ],
     faucets: [],
-    nativeCurrency: { name: 'Areon', symbol: 'AREA', decimals: 18 },
+    nativeCurrency: { name: 'Areon', symbol: 'TAREA', decimals: 18 },
     infoURL: 'https://areon.network',
-    shortName: 'area',
+    shortName: 'tarea',
     chainId: 462,
     networkId: 462,
     explorers: [
@@ -6592,7 +6592,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'BLXQ', symbol: 'BLXQ', decimals: 18 },
     infoURL: 'https://blx.org',
-    shortName: 'blxq',
+    shortName: 'tblxq',
     chainId: 1107,
     networkId: 1107,
     explorers: [
@@ -6601,6 +6601,26 @@ const chainArray = [
         url: 'https://explorer.blx.org',
         icon: 'blxq',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'BLXq Mainnet',
+    chain: 'BLXQ',
+    icon: 'blxq',
+    rpc: [ 'https://mainnet.blxq.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'BLXQ', symbol: 'BLXQ', decimals: 18 },
+    infoURL: 'https://blx.org',
+    shortName: 'blxq',
+    chainId: 1108,
+    networkId: 1108,
+    explorers: [
+      {
+        name: 'BLXq Explorer',
+        url: 'https://explorer.blxq.org',
+        icon: 'blxq',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -15404,8 +15424,8 @@ const chainArray = [
     infoURL: 'https://docs.celo.org/',
     explorers: [
       {
-        name: 'Celoscan',
-        url: 'https://celoscan.io',
+        name: 'Alfajoresscan',
+        url: 'https://alfajores.celoscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -17635,6 +17655,26 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://explorer.l3test.taiko.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Taiko Jolnir L2',
+    chain: 'ETH',
+    status: 'incubating',
+    icon: 'taiko',
+    rpc: [ 'https://rpc.jolnir.taiko.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://taiko.xyz',
+    shortName: 'tko-jolnir',
+    chainId: 167007,
+    networkId: 167007,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.jolnir.taiko.xyz',
         standard: 'EIP3091'
       }
     ]
