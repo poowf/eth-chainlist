@@ -358,7 +358,8 @@ const chainArray = [
       'https://songbird-api.flare.network/ext/C/rpc',
       'https://sgb.ftso.com.au/ext/bc/C/rpc',
       'https://sgb.lightft.so/rpc',
-      'https://sgb-rpc.ftso.eu'
+      'https://sgb-rpc.ftso.eu',
+      'https://rpc.ftso.au/songbird'
     ],
     faucets: [],
     nativeCurrency: { name: 'Songbird', symbol: 'SGB', decimals: 18 },
@@ -11152,6 +11153,25 @@ const chainArray = [
         icon: 'tritanium',
         url: 'https://testnet.tritanium.network',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'VEX EVM TESTNET',
+    chain: 'vex',
+    icon: 'vex',
+    rpc: [ 'https://testnet.vexascan.com/evmapi' ],
+    faucets: [ 'https://t.me/vexfaucetbot' ],
+    nativeCurrency: { name: 'VEX EVM TESTNET', symbol: 'VEX', decimals: 18 },
+    infoURL: 'https://vexanium.com',
+    shortName: 'VEX',
+    chainId: 5522,
+    networkId: 5522,
+    explorers: [
+      {
+        name: 'Vexascan-EVM-TestNet',
+        url: 'https://testnet.vexascan.com/evmexplorer',
+        standard: 'EIP3091'
       }
     ]
   },
