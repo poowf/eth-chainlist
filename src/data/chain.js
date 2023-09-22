@@ -2366,7 +2366,8 @@ const chainArray = [
     infoURL: 'https://fuse.io/',
     shortName: 'fuse',
     chainId: 122,
-    networkId: 122
+    networkId: 122,
+    icon: 'fuse'
   },
   {
     name: 'Fuse Sparknet',
@@ -3896,7 +3897,8 @@ const chainArray = [
     rpc: [
       'https://api.node.glif.io/',
       'https://rpc.ankr.com/filecoin',
-      'https://filecoin-mainnet.chainstacklabs.com/rpc/v1'
+      'https://filecoin-mainnet.chainstacklabs.com/rpc/v1',
+      'https://filfox.info/rpc/v1'
     ],
     faucets: [],
     nativeCurrency: { name: 'filecoin', symbol: 'FIL', decimals: 18 },
@@ -9323,6 +9325,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'The Krest Network',
+    chain: 'Krest',
+    icon: 'krest',
+    rpc: [ 'https://erpc-krest.peaq.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Krest', symbol: 'KRST', decimals: 18 },
+    infoURL: 'https://www.peaq.network',
+    shortName: 'KRST',
+    chainId: 2241,
+    networkId: 2241,
+    explorers: [
+      {
+        name: 'Polkadot.js',
+        url: 'https://polkadot.js.org/apps/?rpc=wss://wss-krest.peaq.network#/explorer',
+        standard: 'none'
+      },
+      {
+        name: 'Subscan',
+        url: 'https://krest.subscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'BOMB Chain',
     chain: 'BOMB',
     rpc: [ 'https://rpc.bombchain.com' ],
@@ -13910,13 +13936,13 @@ const chainArray = [
   },
   {
     name: 'Quantum Chain Testnet',
-    chain: 'QNET',
+    chain: 'tQNET',
     icon: 'qnet',
     rpc: [ 'https://testnet-rpc.quantumscan.org' ],
     faucets: [],
-    nativeCurrency: { name: 'Quantum Chain', symbol: 'QNET', decimals: 18 },
+    nativeCurrency: { name: 'Quantum Chain', symbol: 'tQNET', decimals: 18 },
     infoURL: 'https://quantumnetwork.gg',
-    shortName: 'qnet',
+    shortName: 'tqnet',
     chainId: 12890,
     networkId: 12890,
     explorers: [
@@ -16722,6 +16748,25 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Quantum Chain Mainnet',
+    chain: 'QNET',
+    icon: 'qnet',
+    rpc: [ 'https://rpc.quantumscan.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Quantum Chain', symbol: 'QNET', decimals: 18 },
+    infoURL: 'https://quantumnetwork.gg',
+    shortName: 'qnet',
+    chainId: 81720,
+    networkId: 81720,
+    explorers: [
+      {
+        name: 'Quantum Scan Mainnet',
+        url: 'https://quantumscan.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Base Goerli Testnet',
     chain: 'ETH',
     rpc: [
@@ -18135,7 +18180,8 @@ const chainArray = [
       'https://api.calibration.node.glif.io/rpc/v1',
       'https://rpc.ankr.com/filecoin_testnet',
       'https://filecoin-calibration.chainstacklabs.com/rpc/v1',
-      'https://filecoin-calibration.chainup.net/rpc/v1'
+      'https://filecoin-calibration.chainup.net/rpc/v1',
+      'https://calibration.filfox.info/rpc/v1'
     ],
     faucets: [ 'https://faucet.calibration.fildev.network/' ],
     nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
