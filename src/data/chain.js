@@ -270,7 +270,10 @@ const chainArray = [
     name: 'Flare Mainnet',
     chain: 'FLR',
     icon: 'flare',
-    rpc: [ 'https://flare-api.flare.network/ext/C/rpc' ],
+    rpc: [
+      'https://flare-api.flare.network/ext/C/rpc',
+      'https://rpc.ftso.au/flare'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Flare', symbol: 'FLR', decimals: 18 },
     infoURL: 'https://flare.xyz',
@@ -2658,6 +2661,27 @@ const chainArray = [
         url: 'https://phiscan.com',
         icon: 'phi',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ShimmerEVM Mainnet',
+    title: 'ShimmerEVM Mainnet',
+    chain: 'ShimmerEVM',
+    rpc: [ 'https://json-rpc.evm.shimmer.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 18 },
+    infoURL: 'https://shimmer.network',
+    shortName: 'shimmerevm-mainnet',
+    chainId: 148,
+    networkId: 148,
+    icon: 'shimmerevm',
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://explorer.evm.shimmer.network',
+        icon: 'shimmerevm',
+        standard: 'EIP3091'
       }
     ]
   },
