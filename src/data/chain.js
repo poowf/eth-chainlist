@@ -6573,7 +6573,7 @@ const chainArray = [
     shortName: 'humans',
     chainId: 1089,
     networkId: 1089,
-    icon: 'humans',
+    icon: 'humans-dark',
     explorers: [
       {
         name: 'explorer.guru',
@@ -9377,7 +9377,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'The Krest Network',
+    name: 'Krest Network',
     chain: 'Krest',
     icon: 'krest',
     rpc: [ 'https://erpc-krest.peaq.network' ],
@@ -10703,6 +10703,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Humans.ai Testnet',
+    chain: 'Humans Testnet',
+    rpc: [ 'https://evm-rpc.testnet.humans.zone' ],
+    faucets: [],
+    nativeCurrency: { name: 'HEART', symbol: 'HEART', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://humans.ai',
+    shortName: 'humans_testnet',
+    chainId: 4139,
+    networkId: 4139,
+    icon: 'humans-dark'
   },
   {
     name: 'Tipboxcoin Testnet',
@@ -13252,6 +13265,11 @@ const chainArray = [
       {
         name: 'Polkadot.js',
         url: 'https://polkadot.js.org/apps/?rpc=wss://wsspc1-qa.agung.peaq.network#/explorer',
+        standard: 'none'
+      },
+      {
+        name: 'Subscan',
+        url: 'https://agung.subscan.io',
         standard: 'none'
       }
     ]
