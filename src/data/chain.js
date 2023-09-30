@@ -1951,7 +1951,9 @@ const chainArray = [
       'https://gnosis.blockpi.network/v1/rpc/public',
       'https://web3endpoints.com/gnosischain-mainnet',
       'https://gnosis.oat.farm',
-      'wss://rpc.gnosischain.com/wss'
+      'wss://rpc.gnosischain.com/wss',
+      'https://gnosis.publicnode.com',
+      'wss://gnosis.publicnode.com'
     ],
     faucets: [
       'https://gnosisfaucet.com',
@@ -3186,7 +3188,11 @@ const chainArray = [
   {
     name: 'opBNB Mainnet',
     chain: 'opBNB',
-    rpc: [ 'https://opbnb-mainnet-rpc.bnbchain.org' ],
+    rpc: [
+      'https://opbnb-mainnet-rpc.bnbchain.org',
+      'https://opbnb.publicnode.com',
+      'wss://opbnb.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
     infoURL: 'https://opbnb.bnbchain.org/en',
@@ -5243,6 +5249,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Highbury',
+    chain: 'HIGHBURY',
+    rpc: [ 'https://highbury.furya.io', 'https://rest.furya.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Fury', symbol: 'FURY', decimals: 18 },
+    infoURL: 'https://www.fury.black',
+    shortName: 'fury',
+    chainId: 710,
+    networkId: 710,
+    icon: 'highbury',
+    explorers: [
+      {
+        name: 'Furya EVM Explorer',
+        url: 'https://explorer.furya.io',
+        standard: 'EIP3091',
+        icon: 'highbury'
+      }
+    ]
+  },
+  {
     name: 'Shibarium Beta',
     chain: 'Shibarium',
     icon: 'shibarium',
@@ -7219,7 +7245,9 @@ const chainArray = [
     chain: 'MOON',
     rpc: [
       'https://rpc.api.moonbeam.network',
-      'wss://wss.api.moonbeam.network'
+      'wss://wss.api.moonbeam.network',
+      'https://moonbeam.publicnode.com',
+      'wss://moonbeam.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Glimmer', symbol: 'GLMR', decimals: 18 },
@@ -7240,7 +7268,9 @@ const chainArray = [
     chain: 'MOON',
     rpc: [
       'https://rpc.api.moonriver.moonbeam.network',
-      'wss://wss.api.moonriver.moonbeam.network'
+      'wss://wss.api.moonriver.moonbeam.network',
+      'https://moonriver.publicnode.com',
+      'wss://moonriver.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Moonriver', symbol: 'MOVR', decimals: 18 },
@@ -13469,7 +13499,9 @@ const chainArray = [
     rpc: [
       'https://rpc.chiadochain.net',
       'https://rpc.chiado.gnosis.gateway.fm',
-      'wss://rpc.chiadochain.net/wss'
+      'wss://rpc.chiadochain.net/wss',
+      'https://gnosis-chiado.publicnode.com',
+      'wss://gnosis-chiado.publicnode.com'
     ],
     faucets: [ 'https://gnosisfaucet.com' ],
     nativeCurrency: { name: 'Chiado xDAI', symbol: 'XDAI', decimals: 18 },
@@ -14364,7 +14396,11 @@ const chainArray = [
   {
     name: 'Holesky',
     chain: 'ETH',
-    rpc: [ 'https://rpc.holesky.ethpandaops.io' ],
+    rpc: [
+      'https://rpc.holesky.ethpandaops.io',
+      'https://ethereum-holesky.publicnode.com',
+      'wss://ethereum-holesky.publicnode.com'
+    ],
     faucets: [
       'https://faucet.holesky.ethpandaops.io',
       'https://holesky-faucet.pk910.de'
@@ -14380,6 +14416,12 @@ const chainArray = [
       {
         name: 'Holesky Explorer',
         url: 'https://holesky.beaconcha.in',
+        icon: 'ethereum',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'otterscan-holesky',
+        url: 'https://holesky.otterscan.io',
         icon: 'ethereum',
         standard: 'EIP3091'
       }
@@ -15465,6 +15507,25 @@ const chainArray = [
       {
         name: 'Oasis Emerald Explorer',
         url: 'https://explorer.emerald.oasis.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Gesoten Verse Testnet',
+    chain: 'Gesoten Verse',
+    rpc: [ 'https://rpc.testnet.verse.gesoten.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://gesoten.com/',
+    shortName: 'GST',
+    icon: 'gesoten',
+    chainId: 42801,
+    networkId: 42801,
+    explorers: [
+      {
+        name: 'Gesoten Verse Testnet Explorer',
+        url: 'https://explorer.testnet.verse.gesoten.com',
         standard: 'EIP3091'
       }
     ]
@@ -19873,7 +19934,9 @@ const chainArray = [
       'https://sepolia.infura.io/v3/${INFURA_API_KEY}',
       'wss://sepolia.infura.io/v3/${INFURA_API_KEY}',
       'https://sepolia.gateway.tenderly.co',
-      'wss://sepolia.gateway.tenderly.co'
+      'wss://sepolia.gateway.tenderly.co',
+      'https://ethereum-sepolia.publicnode.com',
+      'wss://ethereum-sepolia.publicnode.com'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
