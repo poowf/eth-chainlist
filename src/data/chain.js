@@ -14424,6 +14424,12 @@ const chainArray = [
         url: 'https://holesky.otterscan.io',
         icon: 'ethereum',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Holesky Etherscan',
+        url: 'https://holesky.etherscan.io',
+        icon: 'ethereum',
+        standard: 'EIP3091'
       }
     ]
   },
