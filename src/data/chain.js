@@ -15219,6 +15219,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zilliqa EVM Isolated Server',
+    chain: 'ZIL',
+    rpc: [ 'https://zilliqa-isolated-server.zilliqa.com/' ],
+    faucets: [ 'https://dev-wallet.zilliqa.com/faucet?network=isolated_server' ],
+    nativeCurrency: { name: 'Zilliqa', symbol: 'ZIL', decimals: 18 },
+    infoURL: 'https://www.zilliqa.com/',
+    shortName: 'zil-isolated-server',
+    chainId: 32990,
+    networkId: 32990,
+    icon: 'zilliqa',
+    explorers: [
+      {
+        name: 'Zilliqa EVM Isolated Server Explorer',
+        url: 'https://devex.zilliqa.com/?network=https://zilliqa-isolated-server.zilliqa.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Zilliqa EVM Testnet',
     chain: 'ZIL',
     rpc: [ 'https://dev-api.zilliqa.com' ],
@@ -15253,6 +15272,44 @@ const chainArray = [
         name: 'avescan',
         url: 'https://avescan.io',
         icon: 'avescan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zilliqa EVM Devnet',
+    chain: 'ZIL',
+    rpc: [ 'https://api.devnet.zilliqa.com/' ],
+    faucets: [ 'https://faucet.devnet.zilliqa.com/' ],
+    nativeCurrency: { name: 'Zilliqa', symbol: 'ZIL', decimals: 18 },
+    infoURL: 'https://www.zilliqa.com/',
+    shortName: 'zil-devnet',
+    chainId: 33385,
+    networkId: 33385,
+    icon: 'zilliqa',
+    explorers: [
+      {
+        name: 'Zilliqa EVM Devnet Explorer',
+        url: 'https://otterscan.devnet.zilliqa.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zilliqa 2 EVM Devnet',
+    chain: 'ZIL',
+    rpc: [ 'https://api.zq2-devnet.zilstg.dev' ],
+    faucets: [ 'https://faucet.zq2-devnet.zilstg.dev' ],
+    nativeCurrency: { name: 'Zilliqa', symbol: 'ZIL', decimals: 18 },
+    infoURL: 'https://www.zilliqa.com/',
+    shortName: 'zq2-devnet',
+    chainId: 33469,
+    networkId: 33469,
+    icon: 'zilliqa',
+    explorers: [
+      {
+        name: 'Zilliqa 2 EVM Devnet Explorer',
+        url: 'https://explorer.zq2-devnet.zilstg.dev',
         standard: 'EIP3091'
       }
     ]
