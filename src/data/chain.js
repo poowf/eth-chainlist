@@ -9032,6 +9032,7 @@ const chainArray = [
   {
     name: 'Movo Smart Chain Mainnet',
     chain: 'MOVO',
+    icon: 'movo',
     rpc: [
       'https://msc-rpc.movoscan.com',
       'https://msc-rpc.movochain.org',
@@ -9044,7 +9045,6 @@ const chainArray = [
     chainId: 2049,
     networkId: 2049,
     slip44: 2050,
-    icon: 'movo',
     explorers: [
       {
         name: 'movoscan',
