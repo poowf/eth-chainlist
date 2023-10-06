@@ -11,7 +11,8 @@ const chainArray = [
       'https://ethereum.publicnode.com',
       'wss://ethereum.publicnode.com',
       'https://mainnet.gateway.tenderly.co',
-      'wss://mainnet.gateway.tenderly.co'
+      'wss://mainnet.gateway.tenderly.co',
+      'https://rpc.blocknative.com/boost'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -5689,7 +5690,7 @@ const chainArray = [
     ],
     faucets: [],
     nativeCurrency: { name: 'FST', symbol: 'FST', decimals: 18 },
-    infoURL: 'https://fantasia.technology/',
+    infoURL: 'https://fantasiachain.com/',
     shortName: 'FSCMainnet',
     chainId: 868,
     networkId: 868,
@@ -14459,6 +14460,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'G8Chain Mainnet',
+    chain: 'G8C',
+    icon: 'G8Chain',
+    rpc: [ 'https://mainnet-rpc.oneg8.network' ],
+    faucets: [ 'https://faucet.oneg8.network' ],
+    nativeCurrency: { name: 'G8Chain', symbol: 'G8C', decimals: 18 },
+    infoURL: 'https://oneg8.one',
+    shortName: 'G8Cm',
+    chainId: 17171,
+    networkId: 17171,
+    explorers: [
+      {
+        name: 'G8Chain',
+        url: 'https://mainnet.oneg8.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Palette Chain Testnet',
     chain: 'PLT',
     rpc: [ 'https://palette-opennet.com:22000' ],
@@ -14565,6 +14585,25 @@ const chainArray = [
       {
         name: 'explorer-proofofmemes',
         url: 'https://memescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'G8Chain Testnet',
+    chain: 'G8C',
+    icon: 'G8Chain',
+    rpc: [ 'https://testnet-rpc.oneg8.network' ],
+    faucets: [ 'https://faucet.oneg8.network' ],
+    nativeCurrency: { name: 'G8Coin', symbol: 'G8C', decimals: 18 },
+    infoURL: 'https://oneg8.one',
+    shortName: 'G8Ct',
+    chainId: 18181,
+    networkId: 18181,
+    explorers: [
+      {
+        name: 'G8Chain',
+        url: 'https://testnet.oneg8.network',
         standard: 'EIP3091'
       }
     ]
@@ -19074,8 +19113,13 @@ const chainArray = [
     networkId: 534352,
     explorers: [
       {
-        name: 'Scroll Mainnet Block Explorer',
+        name: 'Blockscout',
         url: 'https://blockscout.scroll.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Scrollscan',
+        url: 'https://scrollscan.com',
         standard: 'EIP3091'
       }
     ],
