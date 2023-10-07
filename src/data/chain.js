@@ -273,11 +273,12 @@ const chainArray = [
     icon: 'flare',
     rpc: [
       'https://flare-api.flare.network/ext/C/rpc',
+      'https://flare.public-rpc.com',
       'https://rpc.ftso.au/flare'
     ],
     faucets: [],
     nativeCurrency: { name: 'Flare', symbol: 'FLR', decimals: 18 },
-    infoURL: 'https://flare.xyz',
+    infoURL: 'https://flare.network',
     shortName: 'flr',
     chainId: 14,
     networkId: 14,
@@ -285,6 +286,11 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://flare-explorer.flare.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'flarescan',
+        url: 'https://flarescan.com',
         standard: 'EIP3091'
       }
     ]
