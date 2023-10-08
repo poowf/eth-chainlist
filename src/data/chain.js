@@ -6275,7 +6275,14 @@ const chainArray = [
     infoURL: 'https://www.klaytn.com/',
     shortName: 'Baobab',
     chainId: 1001,
-    networkId: 1001
+    networkId: 1001,
+    explorers: [
+      {
+        name: 'klaytnscope',
+        url: 'https://scope.klaytn.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Tectum Emission Token',
@@ -18877,8 +18884,8 @@ const chainArray = [
     infoURL: 'https://arbitrum.io/',
     explorers: [
       {
-        name: 'Arbitrum Goerli Rollup Explorer',
-        url: 'https://goerli-rollup-explorer.arbitrum.io',
+        name: 'Arbitrum Goerli Arbiscan',
+        url: 'https://goerli.arbiscan.io',
         standard: 'EIP3091'
       }
     ],
@@ -19327,6 +19334,24 @@ const chainArray = [
         name: 'Miexs Smartchain Explorer',
         url: 'https://miexs.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Modularium',
+    chain: 'EVMCC',
+    rpc: [ 'https://fraa-dancebox-3035-rpc.a.dancebox.tanssi.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Modularium', symbol: 'MDM', decimals: 18 },
+    infoURL: 'https://www.rmrk.app/',
+    shortName: 'mdlrm',
+    chainId: 776877,
+    networkId: 776877,
+    explorers: [
+      {
+        name: 'Tanssi Explorer',
+        url: 'https://tanssi-evmexplorer.netlify.app/?rpcUrl=https://fraa-dancebox-3035-rpc.a.dancebox.tanssi.network',
+        standard: 'none'
       }
     ]
   },
