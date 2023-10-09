@@ -3700,6 +3700,26 @@ const chainArray = [
     }
   },
   {
+    name: 'Orderly Mainnet',
+    chain: 'ETH',
+    rpc: [ 'http://rpc.orderly.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'www.orderly.network',
+    shortName: 'orderly',
+    chainId: 291,
+    networkId: 291,
+    icon: 'orderly',
+    explorers: [
+      {
+        name: 'orderlyscout',
+        url: 'https://explorer.orderly.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hedera Mainnet',
     chain: 'Hedera',
     icon: 'hedera',
@@ -16299,6 +16319,12 @@ const chainArray = [
       {
         name: 'Blockscout',
         url: 'https://explorer.linea.build',
+        standard: 'EIP3091',
+        icon: 'linea'
+      },
+      {
+        name: 'L2scan',
+        url: 'https://linea.l2scan.co',
         standard: 'EIP3091',
         icon: 'linea'
       }
