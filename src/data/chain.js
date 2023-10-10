@@ -3702,7 +3702,10 @@ const chainArray = [
   {
     name: 'Orderly Mainnet',
     chain: 'ETH',
-    rpc: [ 'http://rpc.orderly.network' ],
+    rpc: [
+      'https://rpc.orderly.network',
+      'https://l2-orderly-mainnet-0.t.conduit.xyz'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'www.orderly.network',
@@ -11240,19 +11243,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'Fastex Chain (Bahamut)',
-    title: 'Bahamut mainnet Sahara',
-    chain: 'Fastex Chain (Bahamut)',
+    name: 'Bahamut',
+    title: 'Bahamut mainnet',
+    chain: 'Bahamut',
     icon: 'bahamut',
     rpc: [
-      'https://rpc1.sahara.bahamutchain.com',
-      'https://rpc2.sahara.bahamutchain.com'
+      'https://rpc1.bahamut.io',
+      'https://rpc2.bahamut.io',
+      'wss://ws1.sahara.bahamutchain.com',
+      'wss://ws2.sahara.bahamutchain.com'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'FTN', symbol: 'FTN', decimals: 18 },
     shortName: 'ftn',
-    infoURL: 'https://fastexchain.com',
+    infoURL: 'https://bahamut.io',
     chainId: 5165,
     networkId: 5165,
     explorers: [
@@ -12719,6 +12724,25 @@ const chainArray = [
     networkId: 8655,
     icon: 'toki',
     explorers: []
+  },
+  {
+    name: 'Hela Official Runtime Mainnet',
+    chain: 'Hela',
+    icon: 'hela',
+    rpc: [ 'https://mainnet-rpc.helachain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Hela HLUSD', symbol: 'HLUSD', decimals: 18 },
+    infoURL: 'https://helalabs.com',
+    shortName: 'hela',
+    chainId: 8668,
+    networkId: 8668,
+    explorers: [
+      {
+        name: 'Hela Official Runtime Mainnet Explorer',
+        url: 'https://mainnet-blockexplorer.helachain.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'TOOL Global Mainnet',
@@ -19322,6 +19346,25 @@ const chainArray = [
     slip44: 60
   },
   {
+    name: 'Hela Official Runtime Testnet',
+    chain: 'Hela',
+    icon: 'hela',
+    rpc: [ 'https://testnet-rpc.helachain.com' ],
+    faucets: [ 'https://testnet-faucet.helachain.com' ],
+    nativeCurrency: { name: 'Hela HLUSD', symbol: 'HLUSD', decimals: 18 },
+    infoURL: 'https://helalabs.com',
+    shortName: 'hela-testnet',
+    chainId: 666888,
+    networkId: 666888,
+    explorers: [
+      {
+        name: 'Hela Official Runtime Testnet Explorer',
+        url: 'https://testnet-blockexplorer.helachain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bear Network Chain Testnet',
     chain: 'BRNKCTEST',
     icon: 'brnkc',
@@ -20051,7 +20094,7 @@ const chainArray = [
     status: 'incubating',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Q', symbol: 'Q', decimals: 18 },
+    nativeCurrency: { name: 'QARE', symbol: 'QARE', decimals: 18 },
     infoURL: '',
     shortName: 'quarix-testnet',
     chainId: 8888881,
@@ -20065,7 +20108,7 @@ const chainArray = [
     status: 'incubating',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Q', symbol: 'Q', decimals: 18 },
+    nativeCurrency: { name: 'QARE', symbol: 'QARE', decimals: 18 },
     infoURL: '',
     shortName: 'quarix',
     chainId: 8888888,
