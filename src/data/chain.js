@@ -3210,7 +3210,7 @@ const chainArray = [
     explorers: [
       {
         name: 'opbnbscan',
-        url: 'http://mainnet.opbnbscan.com',
+        url: 'https://mainnet.opbnbscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -3274,6 +3274,25 @@ const chainArray = [
       {
         name: 'mapscan',
         url: 'https://testnet.mapscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Shinarium Mainnet',
+    chain: 'Shinarium',
+    icon: 'shinarium',
+    rpc: [ 'https://mainnet.shinarium.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Shina Inu', symbol: 'SHI', decimals: 18 },
+    infoURL: 'https://shinarium.org',
+    shortName: 'shinarium',
+    chainId: 214,
+    networkId: 214,
+    explorers: [
+      {
+        name: 'shinascan',
+        url: 'https://shinascan.shinarium.org',
         standard: 'EIP3091'
       }
     ]
@@ -11475,7 +11494,7 @@ const chainArray = [
       },
       {
         name: 'opbnbscan',
-        url: 'http://opbnbscan.com',
+        url: 'https://opbnbscan.com',
         standard: 'EIP3091'
       }
     ]
