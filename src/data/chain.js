@@ -12054,7 +12054,7 @@ const chainArray = [
     name: 'Bitrock Mainnet',
     chain: 'Bitrock',
     icon: 'bitrock',
-    rpc: [ 'https://connect.bit-rock.io' ],
+    rpc: [ 'https://connect.bit-rock.io', 'https://brockrpc.io' ],
     faucets: [],
     nativeCurrency: { name: 'BITROCK', symbol: 'BROCK', decimals: 18 },
     infoURL: 'https://bit-rock.io',
@@ -12064,7 +12064,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Bitrock Explorer',
-        url: 'https://scan.bit-rock.io',
+        url: 'https://explorer.bit-rock.io',
         standard: 'EIP3091'
       }
     ]
