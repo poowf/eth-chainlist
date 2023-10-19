@@ -19346,7 +19346,7 @@ const chainArray = [
     name: 'Scroll',
     chain: 'ETH',
     status: 'incubating',
-    rpc: [ 'https://rpc.scroll.io' ],
+    rpc: [ 'https://rpc.scroll.io', 'https://rpc-scroll.icecreamswap.com' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://scroll.io',
