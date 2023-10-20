@@ -3223,9 +3223,14 @@ const chainArray = [
   },
   {
     name: 'opBNB Mainnet',
+    icon: 'bnbchain',
     chain: 'opBNB',
     rpc: [
       'https://opbnb-mainnet-rpc.bnbchain.org',
+      'https://opbnb-mainnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3',
+      'wss://opbnb-mainnet.nodereal.io/ws/v1/64a9df0874fb4a93b9d0a3849de012d3',
+      'https://opbnb-mainnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5',
+      'wss://opbnb-mainnet.nodereal.io/ws/v1/e9a36765eb8a40b9bd12e680a1fd2bc5',
       'https://opbnb.publicnode.com',
       'wss://opbnb.publicnode.com'
     ],
@@ -10121,7 +10126,7 @@ const chainArray = [
   },
   {
     name: 'Bifrost Mainnet',
-    title: 'The Bifrost Mainnet network',
+    title: 'Bifrost Network Mainnet',
     chain: 'BFC',
     rpc: [
       'https://public-01.mainnet.thebifrost.io/rpc',
@@ -11563,7 +11568,14 @@ const chainArray = [
   {
     name: 'opBNB Testnet',
     chain: 'opBNB',
-    rpc: [ 'https://opbnb-testnet-rpc.bnbchain.org' ],
+    icon: 'bnbchain',
+    rpc: [
+      'https://opbnb-testnet-rpc.bnbchain.org',
+      'https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3',
+      'wss://opbnb-testnet.nodereal.io/ws/v1/64a9df0874fb4a93b9d0a3849de012d3',
+      'https://opbnb-testnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5',
+      'wss://opbnb-testnet.nodereal.io/ws/v1/e9a36765eb8a40b9bd12e680a1fd2bc5'
+    ],
     faucets: [ 'https://testnet.bnbchain.org/faucet-smart' ],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'tBNB', decimals: 18 },
     infoURL: 'https://opbnb.bnbchain.org/en',
@@ -12021,7 +12033,7 @@ const chainArray = [
     icon: 'zetachain',
     rpc: [ 'https://rpc.ankr.com/zetachain_evm_athens_testnet' ],
     faucets: [ 'https://labs.zetachain.com/get-zeta' ],
-    nativeCurrency: { name: 'Zeta', symbol: 'aZETA', decimals: 18 },
+    nativeCurrency: { name: 'Zeta', symbol: 'ZETA', decimals: 18 },
     infoURL: 'https://zetachain.com/docs',
     shortName: 'zetachain-athens',
     chainId: 7001,
@@ -13152,7 +13164,10 @@ const chainArray = [
   {
     name: 'Evmos Testnet',
     chain: 'Evmos',
-    rpc: [ 'https://eth.bd.evmos.dev:8545' ],
+    rpc: [
+      'https://evmos-testnet.lava.build',
+      'https://eth.bd.evmos.dev:8545'
+    ],
     faucets: [ 'https://faucet.evmos.dev' ],
     nativeCurrency: { name: 'test-Evmos', symbol: 'tEVMOS', decimals: 18 },
     infoURL: 'https://evmos.org',
@@ -13173,6 +13188,8 @@ const chainArray = [
     name: 'Evmos',
     chain: 'Evmos',
     rpc: [
+      'https://evmos.lava.build',
+      'wss://evmos.lava.build/websocket',
       'https://evmos-evm.publicnode.com',
       'wss://evmos-evm.publicnode.com'
     ],
