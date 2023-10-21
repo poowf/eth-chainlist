@@ -12,7 +12,9 @@ const chainArray = [
       'wss://ethereum.publicnode.com',
       'https://mainnet.gateway.tenderly.co',
       'wss://mainnet.gateway.tenderly.co',
-      'https://rpc.blocknative.com/boost'
+      'https://rpc.blocknative.com/boost',
+      'https://rpc.flashbots.net',
+      'https://rpc.flashbots.net/fast'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -3246,6 +3248,26 @@ const chainArray = [
         name: 'opbnbscan',
         url: 'https://mainnet.opbnbscan.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'VinuChain Network',
+    chain: 'VinuChain',
+    icon: 'vitainu',
+    rpc: [ 'https://vinuchain-rpc.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'VinuChain', symbol: 'VС', decimals: 18 },
+    infoURL: 'https://vitainu.org',
+    shortName: 'VC',
+    chainId: 207,
+    networkId: 207,
+    explorers: [
+      {
+        name: 'VinuScan',
+        url: 'https://vinuscan.com',
+        icon: 'vinuscan',
+        standard: 'none'
       }
     ]
   },
@@ -16098,7 +16120,7 @@ const chainArray = [
   },
   {
     name: 'Bifrost Testnet',
-    title: 'The Bifrost Testnet network',
+    title: 'Bifrost Network Testnet',
     chain: 'BFC',
     rpc: [
       'https://public-01.testnet.thebifrost.io/rpc',
