@@ -641,16 +641,24 @@ const chainArray = [
     networkId: 33
   },
   {
-    name: 'Dithereum Testnet',
-    chain: 'DTH',
-    icon: 'dithereum',
-    rpc: [ 'https://node-testnet.dithereum.io' ],
-    faucets: [ 'https://faucet.dithereum.org' ],
-    nativeCurrency: { name: 'Dither', symbol: 'DTH', decimals: 18 },
-    infoURL: 'https://dithereum.org',
-    shortName: 'dth',
+    name: 'SecureChain Mainnet',
+    chain: 'SCAI',
+    icon: 'SCAIIcon',
+    rpc: [ 'https://mainnet-rpc.scai.network' ],
+    faucets: [ 'https://faucet.securechain.ai' ],
+    nativeCurrency: { name: 'SecureChain', symbol: 'SCAI', decimals: 18 },
+    infoURL: 'https://securechain.ai',
+    shortName: 'scai',
     chainId: 34,
-    networkId: 34
+    networkId: 34,
+    redFlags: [ 'reusedChainId' ],
+    explorers: [
+      {
+        name: 'SecureChain Mainnet',
+        url: 'https://explorer.securechain.ai',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'TBWG Chain',
@@ -18368,6 +18376,24 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://explorer.jolnir.taiko.xyz',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Bitica Chain Mainnet',
+    chain: 'BDCC',
+    rpc: [ 'https://mainnet-rpc.biticablockchain.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitica Coin', symbol: 'BDCC', decimals: 18 },
+    infoURL: 'https://biticablockchain.com/',
+    shortName: 'bdcc',
+    chainId: 188710,
+    networkId: 188710,
+    explorers: [
+      {
+        name: 'Bitica DPOS Blockchain Explorer',
+        url: 'https://biticablockchain.com',
+        standard: 'none'
       }
     ]
   },
