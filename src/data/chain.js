@@ -647,7 +647,7 @@ const chainArray = [
   {
     name: 'SecureChain Mainnet',
     chain: 'SCAI',
-    icon: 'SCAIIcon',
+    icon: 'scaiIcon',
     rpc: [ 'https://mainnet-rpc.scai.network' ],
     faucets: [ 'https://faucet.securechain.ai' ],
     nativeCurrency: { name: 'SecureChain', symbol: 'SCAI', decimals: 18 },
@@ -21115,6 +21115,25 @@ const chainArray = [
         name: 'nebula',
         url: 'https://staging-faint-slimy-achird.explorer.staging-v3.skalenodes.com',
         icon: 'nebula',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zora Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.rpc.zora.energy' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    icon: 'zoraSepoliaTestnet',
+    infoURL: 'https://zora.energy',
+    shortName: 'zsep',
+    chainId: 999999999,
+    networkId: 999999999,
+    explorers: [
+      {
+        name: 'Zora Sepolia Testnet Network Explorer',
+        url: 'https://sepolia.explorer.zora.energy',
         standard: 'EIP3091'
       }
     ]
