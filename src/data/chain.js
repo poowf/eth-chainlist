@@ -12779,6 +12779,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Torus Testnet',
+    chain: 'TQF',
+    icon: 'torus',
+    rpc: [ 'https://rpc.testnet.toruschain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'tTQF', symbol: 'TTQF', decimals: 18 },
+    infoURL: 'https://docs.toruschain.com',
+    shortName: 'ttqf',
+    chainId: 8194,
+    networkId: 8194,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.torusscan.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Klaytn Mainnet Cypress',
     chain: 'KLAY',
     rpc: [ 'https://public-node-api.klaytnapi.com/v1/cypress' ],
@@ -19447,13 +19467,13 @@ const chainArray = [
     networkId: 534352,
     explorers: [
       {
-        name: 'Blockscout',
-        url: 'https://blockscout.scroll.io',
+        name: 'Scrollscan',
+        url: 'https://scrollscan.com',
         standard: 'EIP3091'
       },
       {
-        name: 'Scrollscan',
-        url: 'https://scrollscan.com',
+        name: 'Blockscout',
+        url: 'https://blockscout.scroll.io',
         standard: 'EIP3091'
       }
     ],
@@ -20124,6 +20144,17 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'DPU Chain',
+    chain: 'DPU',
+    rpc: [ 'https://sc-rpc.dpu.ac.th' ],
+    faucets: [],
+    nativeCurrency: { name: 'DGS', symbol: 'DGS', decimals: 18 },
+    infoURL: '',
+    shortName: 'DPU',
+    chainId: 2611555,
+    networkId: 2611555
   },
   {
     name: 'Filecoin - Butterfly testnet',
