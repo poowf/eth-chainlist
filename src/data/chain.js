@@ -958,7 +958,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'XinFin XDC Network',
+    name: 'XDC Network',
     chain: 'XDC',
     rpc: [
       'https://erpc.xinfin.network',
