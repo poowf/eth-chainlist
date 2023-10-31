@@ -3264,9 +3264,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'VinuChain Testnet',
+    chain: 'VinuChain Testnet',
+    rpc: [ 'https://vinufoundation-rpc.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'VinuChain', symbol: 'VС', decimals: 18 },
+    infoURL: 'https://vitainu.org',
+    shortName: 'VCTEST',
+    chainId: 206,
+    networkId: 206,
+    icon: 'vitainu-testnet',
+    explorers: [
+      {
+        name: 'VinuScan Testnet',
+        url: 'https://testnet.vinuscan.com',
+        icon: 'vinuscan-testnet',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'VinuChain Network',
     chain: 'VinuChain',
-    icon: 'vitainu',
     rpc: [ 'https://vinuchain-rpc.com' ],
     faucets: [],
     nativeCurrency: { name: 'VinuChain', symbol: 'VС', decimals: 18 },
@@ -3274,6 +3293,7 @@ const chainArray = [
     shortName: 'VC',
     chainId: 207,
     networkId: 207,
+    icon: 'vitainu',
     explorers: [
       {
         name: 'VinuScan',
@@ -20853,6 +20873,25 @@ const chainArray = [
       {
         name: 'autonity-blockscout',
         url: 'https://piccadilly.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Frame Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.testnet.frame.xyz/http' ],
+    faucets: [ 'https://faucet.triangleplatform.com/frame/testnet' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    icon: 'frameTestnet',
+    infoURL: 'https://www.frame.xyz/',
+    shortName: 'frametest',
+    chainId: 68840142,
+    networkId: 68840142,
+    explorers: [
+      {
+        name: 'Frame Testnet Explorer',
+        url: 'https://explorer.testnet.frame.xyz',
         standard: 'EIP3091'
       }
     ]
