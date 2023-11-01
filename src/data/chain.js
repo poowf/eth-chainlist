@@ -2424,7 +2424,15 @@ const chainArray = [
     shortName: 'fuse',
     chainId: 122,
     networkId: 122,
-    icon: 'fuse'
+    icon: 'fuse',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.fuse.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Fuse Sparknet',
@@ -11126,10 +11134,13 @@ const chainArray = [
   {
     name: 'Beam',
     chain: 'BEAM',
-    rpc: [ 'https://subnets.avax.network/beam/mainnet/rpc' ],
+    rpc: [
+      'https://subnets.avax.network/beam/mainnet/rpc',
+      'wss://subnets.avax.network/beam/mainnet/ws'
+    ],
     features: [ { name: 'EIP1559' } ],
-    faucets: [],
-    nativeCurrency: { name: 'Merit Circle', symbol: 'MC', decimals: 18 },
+    faucets: [ 'https://faucet.onbeam.com' ],
+    nativeCurrency: { name: 'Beam', symbol: 'BEAM', decimals: 18 },
     infoURL: 'https://www.onbeam.com',
     shortName: 'beam',
     icon: 'beam',
@@ -14460,10 +14471,16 @@ const chainArray = [
   {
     name: 'Beam Testnet',
     chain: 'BEAM',
-    rpc: [ 'https://subnets.avax.network/beam/testnet/rpc' ],
+    rpc: [
+      'https://subnets.avax.network/beam/testnet/rpc',
+      'wss://subnets.avax.network/beam/testnet/ws'
+    ],
     features: [ { name: 'EIP1559' } ],
-    faucets: [],
-    nativeCurrency: { name: 'Merit Circle', symbol: 'MC', decimals: 18 },
+    faucets: [
+      'https://faucet.avax.network/?subnet=beam',
+      'https://faucet.onbeam.com'
+    ],
+    nativeCurrency: { name: 'Beam', symbol: 'BEAM', decimals: 18 },
     infoURL: 'https://www.onbeam.com',
     shortName: 'beam-testnet',
     icon: 'beam',
