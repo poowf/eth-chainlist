@@ -4440,6 +4440,30 @@ const chainArray = [
     networkId: 385
   },
   {
+    name: 'Nativ3 Mainnet',
+    chainId: 399,
+    shortName: 'N3',
+    chain: 'Nativ3',
+    icon: 'nativ3',
+    networkId: 399,
+    nativeCurrency: { name: 'USNT', symbol: 'USNT', decimals: 18 },
+    rpc: [ 'https://rpc.nativ3.network', 'wss://ws.nativ3.network' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'N3scan',
+        url: 'https://scan.nativ3.network',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://nativ3.network',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [ { url: 'https://bridge.nativ3.network' } ]
+    }
+  },
+  {
     name: 'HyperonChain TestNet',
     chain: 'HPN',
     icon: 'hyperonchain',
@@ -15371,6 +15395,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'MCH Verse Mainnet',
+    chain: 'MCH Verse',
+    icon: 'mch_verse',
+    rpc: [ 'https://rpc.oasys.mycryptoheroes.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://www.mycryptoheroes.net/verse',
+    shortName: 'MCHV',
+    chainId: 29548,
+    networkId: 29548,
+    explorers: [
+      {
+        name: 'MCH Verse Explorer',
+        url: 'https://explorer.oasys.mycryptoheroes.net',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
     name: 'Piece testnet',
     chain: 'PieceNetwork',
     icon: 'piecechain',
@@ -16310,6 +16354,27 @@ const chainArray = [
       {
         name: 'Sardis',
         url: 'https://contract-mainnet.sardisnetwork.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Electroneum Mainnet',
+    chain: 'Electroneum',
+    rpc: [ 'https://api.electroneum.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Electroneum', symbol: 'ETN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://electroneum.com',
+    shortName: 'etn-mainnet',
+    chainId: 52014,
+    networkId: 52014,
+    icon: 'electroneum',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockexplorer.electroneum.com',
+        icon: 'electroneum',
         standard: 'EIP3091'
       }
     ]
@@ -18992,6 +19057,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nativ3 Testnet',
+    chainId: 333333,
+    shortName: 'N3-Test',
+    chain: 'N3-Test',
+    icon: 'nativ3',
+    networkId: 333333,
+    nativeCurrency: { name: 'USNT', symbol: 'USNT', decimals: 18 },
+    rpc: [ 'https://rpctest.nativ3.network', 'wss://wstest.nativ3.network' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Nativ3 Test Explorer',
+        url: 'https://scantest.nativ3.network',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://nativ3.network',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-421613',
+      bridges: [ { url: 'https://bridgetest.nativ3.network' } ]
+    }
+  },
+  {
     name: 'Oone Chain Testnet',
     chain: 'OONE Testnet',
     rpc: [ 'https://rpc.testnet.oonechain.com' ],
@@ -20278,6 +20367,27 @@ const chainArray = [
       {
         name: 'MXC Wannsee zkEVM Testnet',
         url: 'https://wannsee-explorer.mxc.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Electroneum Testnet',
+    chain: 'Electroneum',
+    rpc: [ 'https://api.electroneum.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Electroneum', symbol: 'ETN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://electroneum.com',
+    shortName: 'etn-testnet',
+    chainId: 5201420,
+    networkId: 5201420,
+    icon: 'electroneum',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockexplorer.thesecurityteam.rocks',
+        icon: 'electroneum',
         standard: 'EIP3091'
       }
     ]
