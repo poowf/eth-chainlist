@@ -21572,6 +21572,7 @@ const chainArray = [
     shortName: 'hmy-s2',
     chainId: 1666600002,
     networkId: 1666600002,
+    status: 'deprecated',
     explorers: [
       {
         name: 'Harmony Block Explorer',
@@ -21591,6 +21592,7 @@ const chainArray = [
     shortName: 'hmy-s3',
     chainId: 1666600003,
     networkId: 1666600003,
+    status: 'deprecated',
     explorers: [
       {
         name: 'Harmony Block Explorer',
