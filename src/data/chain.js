@@ -9607,11 +9607,9 @@ const chainArray = [
     chain: 'KAVA',
     rpc: [
       'https://evm.kava.io',
-      'https://evm2.kava.io',
       'https://kava-rpc.gateway.pokt.network',
       'https://kava-evm.rpc.thirdweb.com',
       'wss://wevm.kava.io',
-      'wss://wevm2.kava.io',
       'https://kava-evm.publicnode.com',
       'wss://kava-evm.publicnode.com'
     ],
@@ -11424,6 +11422,24 @@ const chainArray = [
         url: 'https://evmexplorer.treasurenet.io',
         icon: 'treasurenet',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Mantle Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.sepolia.mantle.xyz' ],
+    faucets: [ 'https://faucet.sepolia.mantle.xyz' ],
+    nativeCurrency: { name: 'Sepolia Mantle', symbol: 'MNT', decimals: 18 },
+    infoURL: 'https://mantle.xyz',
+    shortName: 'mnt-sep',
+    chainId: 5003,
+    networkId: 5003,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.sepolia.mantle.xyz',
+        standard: 'EIP3091'
       }
     ]
   },
