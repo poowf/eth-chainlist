@@ -3436,7 +3436,7 @@ const chainArray = [
   {
     name: 'LACHAIN Mainnet',
     chain: 'LA',
-    icon: 'lachain',
+    icon: 'lachain-io',
     rpc: [ 'https://rpc-mainnet.lachain.io' ],
     faucets: [],
     nativeCurrency: { name: 'LA', symbol: 'LA', decimals: 18 },
@@ -3455,7 +3455,7 @@ const chainArray = [
   {
     name: 'LACHAIN Testnet',
     chain: 'TLA',
-    icon: 'lachain',
+    icon: 'lachain-io',
     rpc: [ 'https://rpc-testnet.lachain.io' ],
     faucets: [],
     nativeCurrency: { name: 'TLA', symbol: 'TLA', decimals: 18 },
@@ -3735,7 +3735,7 @@ const chainArray = [
   {
     name: 'LaChain',
     chain: 'LaChain',
-    icon: 'LaChain',
+    icon: 'lachain-network',
     rpc: [
       'https://rpc1.mainnet.lachain.network',
       'https://rpc2.mainnet.lachain.network',
@@ -4540,7 +4540,7 @@ const chainArray = [
   {
     name: 'LaTestnet',
     chain: 'LaTestnet',
-    icon: 'LaChain',
+    icon: 'lachain-network',
     rpc: [
       'https://rpc.testnet.lachain.network',
       'https://lachain-testnet.rpc-nodes.cedalio.dev'
