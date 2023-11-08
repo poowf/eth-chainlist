@@ -4978,8 +4978,7 @@ const chainArray = [
     rpc: [
       'https://rpc.rollux.com',
       'https://rollux.public-rpc.com',
-      'wss://rpc.rollux.com/wss',
-      'https://rpc.ankr.com/rollux/${ANKR_API_KEY}'
+      'wss://rpc.rollux.com/wss'
     ],
     faucets: [ 'https://rollux.id/faucetapp' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
