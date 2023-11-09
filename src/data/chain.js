@@ -16925,6 +16925,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Janus Testnet',
+    chain: 'JanusNetwork',
+    icon: 'janusnetwork',
+    rpc: [ 'https://rpc.test.janusnetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Janus', symbol: 'JNS', decimals: 18 },
+    infoURL: 'https://janus-network.gitbook.io/janus',
+    shortName: 'janusnetwork-testnet',
+    chainId: 66988,
+    networkId: 66988,
+    status: 'active',
+    explorers: [
+      {
+        name: 'JanusNetwork Testnet Explorer',
+        url: 'https://beta.scan.janusnetwork.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'SiriusNet',
     chain: 'SIN',
     status: 'deprecated',
@@ -20636,6 +20656,52 @@ const chainArray = [
     networkId: 8888888,
     icon: 'quarix',
     explorers: []
+  },
+  {
+    name: 'XCAP',
+    title: 'XCAP Mainnet',
+    chain: 'XCAP',
+    rpc: [
+      'https://xcap-mainnet.relay.xcap.network/znzvh2ueyvm2yts5fv5gnul395jbkfb2/rpc1'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
+    infoURL: 'https://xcap.network/',
+    shortName: 'xcap',
+    chainId: 9322252,
+    networkId: 9322252,
+    icon: 'xcap',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://xcap-mainnet.explorer.xcap.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Milvine',
+    title: 'XCAP Testnet Milvine',
+    chain: 'XCAP',
+    rpc: [
+      'https://xcap-milvine.relay.xcap.network/zj5l55ftsgi027kz4nf14vs8d89inego/rpc1'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
+    infoURL: 'https://xcap.network/',
+    shortName: 'milv',
+    chainId: 9322253,
+    networkId: 9322253,
+    icon: 'xcap',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://xcap-milvine.explorer.xcap.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Plian Testnet Subchain 1',
