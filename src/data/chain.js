@@ -3111,12 +3111,12 @@ const chainArray = [
     ]
   },
   {
-    name: 'Xgon Testnet',
-    chain: 'xgon',
-    rpc: [ 'https://testrpc.xgon.io' ],
+    name: 'X1 Testnet',
+    chain: 'X1',
+    rpc: [ 'https://testrpc.x1.tech', 'https://x1testrpc.okx.com' ],
     faucets: [ 'https://www.oklink.com/okbc-test' ],
     nativeCurrency: {
-      name: 'Xgon Global Utility Token in testnet',
+      name: 'X1 Global Utility Token in testnet',
       symbol: 'OKB',
       decimals: 18
     },
@@ -3135,11 +3135,11 @@ const chainArray = [
     status: 'active'
   },
   {
-    name: 'Xgon Mainnet',
-    chain: 'xgon',
+    name: 'X1 Mainnet',
+    chain: 'X1',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Xgon Global Utility Token', symbol: 'OKB', decimals: 18 },
+    nativeCurrency: { name: 'X1 Global Utility Token', symbol: 'OKB', decimals: 18 },
     features: [],
     infoURL: 'https://www.okx.com/okbc/docs/dev/quick-start/introduction/introduction-to-okbchain',
     shortName: 'okb',
