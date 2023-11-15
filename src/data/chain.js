@@ -9669,7 +9669,10 @@ const chainArray = [
     name: 'Krest Network',
     chain: 'Krest',
     icon: 'krest',
-    rpc: [ 'https://erpc-krest.peaq.network' ],
+    rpc: [
+      'https://erpc-krest.peaq.network',
+      'https://krest.unitedbloc.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Krest', symbol: 'KRST', decimals: 18 },
     infoURL: 'https://www.peaq.network',
@@ -11186,6 +11189,27 @@ const chainArray = [
       {
         name: 'Beam Explorer',
         url: 'https://subnets.avax.network/beam',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Credit Smart Chain Mainnet',
+    chain: 'CREDIT',
+    rpc: [ 'https://rpc.creditsmartchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Credit', symbol: 'CREDIT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://creditsmartchain.com',
+    shortName: 'CreditEdge',
+    chainId: 4400,
+    networkId: 4400,
+    icon: 'credit',
+    explorers: [
+      {
+        name: 'Creditscan',
+        url: 'https://scan.creditsmartchain.com',
+        icon: 'credit',
         standard: 'EIP3091'
       }
     ]
