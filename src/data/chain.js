@@ -3114,21 +3114,21 @@ const chainArray = [
     name: 'X1 Testnet',
     chain: 'X1',
     rpc: [ 'https://testrpc.x1.tech', 'https://x1testrpc.okx.com' ],
-    faucets: [ 'https://www.oklink.com/okbc-test' ],
+    faucets: [ 'https://www.okx.com/x1/faucet' ],
     nativeCurrency: {
       name: 'X1 Global Utility Token in testnet',
       symbol: 'OKB',
       decimals: 18
     },
     features: [],
-    infoURL: 'https://www.okx.com/okbc/docs/dev/quick-start/introduction/introduction-to-okbchain',
+    infoURL: 'https://www.okx.com/x1',
     shortName: 'tokb',
     chainId: 195,
     networkId: 195,
     explorers: [
       {
         name: 'OKLink',
-        url: 'https://www.oklink.com/okbc-test',
+        url: 'https://www.oklink.com/x1-test',
         standard: 'EIP3091'
       }
     ],
@@ -3141,7 +3141,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'X1 Global Utility Token', symbol: 'OKB', decimals: 18 },
     features: [],
-    infoURL: 'https://www.okx.com/okbc/docs/dev/quick-start/introduction/introduction-to-okbchain',
+    infoURL: 'https://www.okx.com/x1',
     shortName: 'okb',
     chainId: 196,
     networkId: 196,
@@ -12009,6 +12009,17 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Digit Soul Smart Chain',
+    chain: 'DGS',
+    rpc: [ 'http://dsc-rpc.digitsoul.co.th' ],
+    faucets: [],
+    nativeCurrency: { name: 'Digit Coin', symbol: 'DGC', decimals: 18 },
+    infoURL: '',
+    shortName: 'DGS',
+    chainId: 6363,
+    networkId: 6363
   },
   {
     name: 'Peerpay',
