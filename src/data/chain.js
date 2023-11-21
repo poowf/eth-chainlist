@@ -878,7 +878,6 @@ const chainArray = [
     rpc: [
       'https://rpc.darwinia.network',
       'https://darwinia-rpc.darwiniacommunitydao.xyz',
-      'https://darwinia2.api.onfinality.io/public-ws',
       'https://darwinia-rpc.dwellir.com'
     ],
     faucets: [],
@@ -11333,6 +11332,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Globel Chain',
+    chain: 'GC',
+    icon: 'globelchain',
+    rpc: [ 'https://rpc.gcscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Globel Chain', symbol: 'GC', decimals: 18 },
+    infoURL: 'https://gcscan.io',
+    shortName: 'GC',
+    chainId: 4893,
+    networkId: 4893,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://gcscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Venidium Testnet',
     chain: 'XVM',
     rpc: [ 'https://rpc-evm-testnet.venidium.io' ],
@@ -13753,6 +13771,8 @@ const chainArray = [
     rpc: [
       'https://rpc-msc.mindchain.info/',
       'https://seednode.mindchain.info',
+      'https://archive.mindchain.info/',
+      'wss://archive.mindchain.info/ws',
       'wss://seednode.mindchain.info/ws'
     ],
     faucets: [],
