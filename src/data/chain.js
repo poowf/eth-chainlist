@@ -12033,7 +12033,7 @@ const chainArray = [
   {
     name: 'Digit Soul Smart Chain',
     chain: 'DGS',
-    rpc: [ 'http://dsc-rpc.digitsoul.co.th' ],
+    rpc: [ 'https://dsc-rpc.digitsoul.co.th' ],
     faucets: [],
     nativeCurrency: { name: 'Digit Coin', symbol: 'DGC', decimals: 18 },
     infoURL: '',
@@ -19327,7 +19327,7 @@ const chainArray = [
   {
     name: 'Digit Soul Smart Chain 2',
     chain: 'DS2',
-    rpc: [ 'http://dgs-rpc.digitsoul.co.th' ],
+    rpc: [ 'https://dgs-rpc.digitsoul.co.th' ],
     faucets: [],
     nativeCurrency: { name: 'Digit Coin', symbol: 'DGC', decimals: 18 },
     infoURL: '',
