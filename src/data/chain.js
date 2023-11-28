@@ -3854,8 +3854,8 @@ const chainArray = [
     explorers: [
       {
         name: 'HashScan',
-        url: 'https://hashscan.io/mainnet/dashboard',
-        standard: 'none'
+        url: 'https://hashscan.io/mainnet',
+        standard: 'EIP3091'
       },
       {
         name: 'Arkhia Explorer',
@@ -3895,8 +3895,8 @@ const chainArray = [
     explorers: [
       {
         name: 'HashScan',
-        url: 'https://hashscan.io/testnet/dashboard',
-        standard: 'none'
+        url: 'https://hashscan.io/testnet',
+        standard: 'EIP3091'
       },
       {
         name: 'Arkhia Explorer',
@@ -3936,8 +3936,8 @@ const chainArray = [
     explorers: [
       {
         name: 'HashScan',
-        url: 'https://hashscan.io/previewnet/dashboard',
-        standard: 'none'
+        url: 'https://hashscan.io/previewnet',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -4629,6 +4629,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Geso Verse',
+    chain: 'Geso Verse',
+    rpc: [ 'https://rpc.verse.gesoten.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://gesoten.com/',
+    shortName: 'GSV',
+    icon: 'gesoten',
+    chainId: 428,
+    networkId: 428,
+    explorers: [
+      {
+        name: 'Geso Verse Explorer',
+        url: 'https://explorer.verse.gesoten.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Obscuro Testnet',
     title: 'Obscuro Sepolia Rollup Testnet',
     chainId: 443,
@@ -4974,11 +4993,7 @@ const chainArray = [
   {
     name: 'Rollux Mainnet',
     chain: 'SYS',
-    rpc: [
-      'https://rpc.rollux.com',
-      'https://rollux.public-rpc.com',
-      'wss://rpc.rollux.com/wss'
-    ],
+    rpc: [ 'https://rpc.rollux.com', 'wss://rpc.rollux.com/wss' ],
     faucets: [ 'https://rollux.id/faucetapp' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
     infoURL: 'https://rollux.com',
@@ -8090,20 +8105,23 @@ const chainArray = [
     networkId: 1657
   },
   {
-    name: 'Horizen Yuma Testnet Deprecated',
-    shortName: 'Yuma',
-    chain: 'Yuma',
-    icon: 'eon',
+    name: 'Liquichain',
+    shortName: 'Liquichain',
+    chain: 'LQC',
     rpc: [],
-    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'Testnet Zen', symbol: 'tZEN', decimals: 18 },
-    infoURL: 'https://horizen.io/',
+    nativeCurrency: { name: 'Licoin', symbol: 'LCN', decimals: 18 },
+    infoURL: 'https://liquichain.io/',
     chainId: 1662,
     networkId: 1662,
-    slip44: 121,
-    explorers: [],
-    status: 'deprecated'
+    explorers: [
+      {
+        name: 'Liquichain Mainnet',
+        url: 'https://mainnet.liquichain.io',
+        standard: 'EIP3091'
+      }
+    ],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Horizen Gobi Testnet',
@@ -8919,7 +8937,7 @@ const chainArray = [
     name: 'MainnetZ Mainnet',
     chain: 'NetZ',
     icon: 'mainnetz',
-    rpc: [ 'https://mainnet-rpc.mainnetz.io' ],
+    rpc: [ 'https://mainnet-rpc.mainnetz.io', 'https://eu-rpc.mainnetz.io' ],
     faucets: [ 'https://faucet.mainnetz.io' ],
     nativeCurrency: { name: 'MainnetZ', symbol: 'NetZ', decimals: 18 },
     infoURL: 'https://mainnetz.io',
@@ -12035,6 +12053,7 @@ const chainArray = [
     chain: 'DGS',
     rpc: [ 'https://dsc-rpc.digitsoul.co.th' ],
     faucets: [],
+    icon: 'pnet',
     nativeCurrency: { name: 'Digit Coin', symbol: 'DGC', decimals: 18 },
     infoURL: '',
     shortName: 'DGS',
@@ -12597,6 +12616,25 @@ const chainArray = [
         name: 'avascan',
         url: 'https://testnet.avascan.info/blockchain/2mZ9doojfwHzXN3VXDQELKnKyZYxv7833U8Yq5eTfFx3hxJtiy',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'MaalChain Testnet',
+    chain: 'MaalChain Testnet',
+    icon: 'maal-test',
+    rpc: [ 'https://node1.maalscan.io/', 'https://rpc-bntest.maalscan.io/' ],
+    faucets: [ 'https://faucet-testnet.maalscan.io/' ],
+    nativeCurrency: { name: 'MAAL', symbol: 'MAAL', decimals: 18 },
+    infoURL: 'https://www.maalchain.com/',
+    shortName: 'maal-test',
+    chainId: 7860,
+    networkId: 7860,
+    explorers: [
+      {
+        name: 'maalscan testnet',
+        url: 'https://testnet.maalscan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -19329,6 +19367,7 @@ const chainArray = [
     chain: 'DS2',
     rpc: [ 'https://dgs-rpc.digitsoul.co.th' ],
     faucets: [],
+    icon: 'pnet',
     nativeCurrency: { name: 'Digit Coin', symbol: 'DGC', decimals: 18 },
     infoURL: '',
     shortName: 'DS2',
@@ -20080,11 +20119,13 @@ const chainArray = [
     shortName: 'dodao',
     chainId: 855456,
     networkId: 855456,
+    icon: 'dodao',
     explorers: [
       {
         name: 'Dodao Explorer',
         url: 'https://tanssi-evmexplorer.netlify.app/?rpcUrl=https://fraa-dancebox-3041-rpc.a.dancebox.tanssi.network',
-        standard: 'none'
+        icon: 'dodao',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -20471,7 +20512,7 @@ const chainArray = [
     chain: 'DPU',
     rpc: [ 'https://sc-rpc.dpu.ac.th' ],
     faucets: [],
-    nativeCurrency: { name: 'DGS', symbol: 'DGS', decimals: 18 },
+    nativeCurrency: { name: 'DGC', symbol: 'DGC', decimals: 18 },
     infoURL: '',
     shortName: 'DPU',
     chainId: 2611555,
@@ -21476,9 +21517,10 @@ const chainArray = [
     ]
   },
   {
-    name: 'Calypso NFT Hub (SKALE Testnet)',
+    name: 'SKALE Calypso Hub Testnet',
     title: 'Calypso NFT Hub Testnet',
     chain: 'staging-utter-unripe-menkar',
+    icon: 'calypso',
     rpc: [
       'https://staging-v3.skalenodes.com/v1/staging-utter-unripe-menkar'
     ],
@@ -21492,7 +21534,6 @@ const chainArray = [
       {
         name: 'Blockscout',
         url: 'https://staging-utter-unripe-menkar.explorer.staging-v3.skalenodes.com',
-        icon: 'calypso',
         standard: 'EIP3091'
       }
     ]
@@ -21518,6 +21559,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'SKALE Europa Hub Testnet',
+    title: 'Europa Hub Testnet',
+    chain: 'staging-legal-crazy-castor',
+    icon: 'europa',
+    rpc: [
+      'https://staging-v3.skalenodes.com/v1/staging-legal-crazy-castor'
+    ],
+    faucets: [ 'https://sfuel.dirtroad.dev/staging' ],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: 'https://europahub.network/',
+    shortName: 'europa-testnet',
+    chainId: 476158412,
+    networkId: 476158412,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://staging-legal-crazy-castor.explorer.staging-v3.skalenodes.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Gather Devnet Network',
     chain: 'GTH',
     rpc: [ 'https://devnet.gather.network' ],
@@ -21536,23 +21599,23 @@ const chainArray = [
     ]
   },
   {
-    name: 'Nebula Staging',
+    name: 'SKALE Nebula Hub Testnet',
     chain: 'staging-faint-slimy-achird',
+    icon: 'nebula',
     rpc: [
       'https://staging-v3.skalenodes.com/v1/staging-faint-slimy-achird',
       'wss://staging-v3.skalenodes.com/v1/ws/staging-faint-slimy-achird'
     ],
-    faucets: [],
+    faucets: [ 'https://sfuel.dirtroad.dev/staging' ],
     nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
     infoURL: 'https://nebulachain.io/',
-    shortName: 'nebula-staging',
+    shortName: 'nebula-testnet',
     chainId: 503129905,
     networkId: 503129905,
     explorers: [
       {
-        name: 'nebula',
+        name: 'Blockscout',
         url: 'https://staging-faint-slimy-achird.explorer.staging-v3.skalenodes.com',
-        icon: 'nebula',
         standard: 'EIP3091'
       }
     ]
@@ -21676,6 +21739,28 @@ const chainArray = [
     networkId: 1313161556
   },
   {
+    name: 'SKALE Titan Hub',
+    chain: 'parallel-stormy-spica',
+    icon: 'titan',
+    rpc: [
+      'https://mainnet.skalenodes.com/v1/parallel-stormy-spica',
+      'wss://mainnet.skalenodes.com/v1/ws/parallel-stormy-spica'
+    ],
+    faucets: [ 'https://sfuel.skale.network/' ],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: '',
+    shortName: 'titan-mainnet',
+    chainId: 1350216234,
+    networkId: 1350216234,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://parallel-stormy-spica.explorer.mainnet.skalenodes.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Chaos (SKALE Testnet)',
     title: 'Chaos Testnet',
     chain: 'staging-fast-active-bellatrix',
@@ -21719,13 +21804,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'Nebula Mainnet',
+    name: 'SKALE Nebula Hub',
     chain: 'green-giddy-denebola',
+    icon: 'nebula',
     rpc: [
       'https://mainnet.skalenodes.com/v1/green-giddy-denebola',
       'wss://mainnet-proxy.skalenodes.com/v1/ws/green-giddy-denebola'
     ],
-    faucets: [],
+    faucets: [ 'https://sfuel.skale.network/' ],
     nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
     infoURL: 'https://nebulachain.io/',
     shortName: 'nebula-mainnet',
@@ -21733,17 +21819,38 @@ const chainArray = [
     networkId: 1482601649,
     explorers: [
       {
-        name: 'nebula',
+        name: 'Blockscout',
         url: 'https://green-giddy-denebola.explorer.mainnet.skalenodes.com',
-        icon: 'nebula',
         standard: 'EIP3091'
       }
     ]
   },
   {
-    name: 'Calypso NFT Hub (SKALE)',
-    title: 'Calypso NFT Hub Mainnet',
+    name: 'SKALE Titan Hub Testnet',
+    chain: 'staging-aware-chief-gianfar',
+    icon: 'titan',
+    rpc: [
+      'https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar',
+      'wss://staging-v3.skalenodes.com/v1/ws/staging-aware-chief-gianfar'
+    ],
+    faucets: [ 'https://sfuel.dirtroad.dev/staging' ],
+    nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
+    infoURL: '',
+    shortName: 'titan-testnet',
+    chainId: 1517929550,
+    networkId: 1517929550,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SKALE Calypso Hub',
     chain: 'honorable-steel-rasalhague',
+    icon: 'calypso',
     rpc: [ 'https://mainnet.skalenodes.com/v1/honorable-steel-rasalhague' ],
     faucets: [ 'https://sfuel.dirtroad.dev' ],
     nativeCurrency: { name: 'sFUEL', symbol: 'sFUEL', decimals: 18 },
@@ -21755,7 +21862,6 @@ const chainArray = [
       {
         name: 'Blockscout',
         url: 'https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com',
-        icon: 'calypso',
         standard: 'EIP3091'
       }
     ]
@@ -21918,7 +22024,7 @@ const chainArray = [
     networkId: 2021121117
   },
   {
-    name: 'Europa SKALE Chain',
+    name: 'SKALE Europa Hub',
     chain: 'europa',
     icon: 'europa',
     rpc: [
