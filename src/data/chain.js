@@ -10107,6 +10107,30 @@ const chainArray = [
     }
   },
   {
+    name: 'K-LAOS',
+    title: 'K-LAOS: LAOS on Kusama',
+    chain: 'K-LAOS',
+    icon: 'k-laos',
+    rpc: [
+      'https://rpc.klaos.laosfoundation.io',
+      'wss://rpc.klaos.laosfoundation.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'KLAOS', symbol: 'KLAOS', decimals: 18 },
+    infoURL: 'https://www.laosfoundation.io/',
+    shortName: 'k-laos',
+    chainId: 2718,
+    networkId: 2718,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.klaos.laosfoundation.io',
+        icon: 'k-laos',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Boba Network Goerli Testnet',
     chain: 'ETH',
     rpc: [
@@ -14894,6 +14918,7 @@ const chainArray = [
   },
   {
     name: 'Holesky',
+    title: 'Ethereum Testnet Holesky',
     chain: 'ETH',
     rpc: [
       'https://rpc.holesky.ethpandaops.io',
@@ -14927,6 +14952,26 @@ const chainArray = [
       {
         name: 'Holesky Etherscan',
         url: 'https://holesky.etherscan.io',
+        icon: 'ethereum',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Redstone Holesky Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.holesky.redstone.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Redstone Testnet Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://redstone.xyz/docs/network-info',
+    shortName: 'redstone',
+    chainId: 17001,
+    networkId: 17001,
+    icon: 'redstone',
+    explorers: [
+      {
+        name: 'Redstone Holesky Explorer',
+        url: 'https://explorer.holesky.redstone.xyz',
         icon: 'ethereum',
         standard: 'EIP3091'
       }
