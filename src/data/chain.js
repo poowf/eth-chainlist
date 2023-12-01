@@ -492,7 +492,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Cronos Explorer',
-        url: 'https://cronoscan.com',
+        url: 'https://explorer.cronos.org',
         standard: 'none'
       }
     ]
@@ -3598,6 +3598,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Fraxchain Mainnet',
+    chain: 'FRAX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
+    infoURL: 'https://mainnet.frax.com',
+    shortName: 'fraxchain',
+    chainId: 252,
+    networkId: 252,
+    explorers: [],
+    status: 'incubating'
   },
   {
     name: 'Kroma',
@@ -6708,6 +6721,30 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'ShimmerEVM Testnet Deprecated 1072',
+    title: 'ShimmerEVM Testnet Deprecated 1072',
+    chain: 'ShimmerEVM',
+    icon: 'shimmerevm',
+    rpc: [],
+    faucets: [
+      'https://evm-toolkit.evm.testnet.shimmer.network',
+      'https://evm-faucet.testnet.shimmer.network'
+    ],
+    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 6 },
+    infoURL: 'https://shimmer.network',
+    shortName: 'shimmerevm-testnet-deprecated-1072',
+    chainId: 1072,
+    networkId: 1072,
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://explorer.evm.testnet.shimmer.network',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'deprecated'
+  },
+  {
     name: 'ShimmerEVM Testnet',
     title: 'ShimmerEVM Testnet',
     chain: 'ShimmerEVM',
@@ -6720,8 +6757,8 @@ const chainArray = [
     nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 6 },
     infoURL: 'https://shimmer.network',
     shortName: 'shimmerevm-testnet',
-    chainId: 1072,
-    networkId: 1072,
+    chainId: 1073,
+    networkId: 1073,
     explorers: [
       {
         name: 'explorer',
@@ -8566,6 +8603,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Merkle Scan',
+    chain: 'MRK',
+    icon: 'merklescan',
+    rpc: [ 'https://marklechain-rpc.merklescan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Merkle', symbol: 'MRK', decimals: 18 },
+    infoURL: 'https://merklescan.com',
+    shortName: 'MRK',
+    chainId: 1909,
+    networkId: 1909,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://merklescan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'ONUS Chain Testnet',
     title: 'ONUS Chain Testnet',
     chain: 'onus',
@@ -9730,6 +9786,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ebro Network',
+    chain: 'ebro',
+    rpc: [ 'https://greendinoswap.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ebro', symbol: 'ebro', decimals: 18 },
+    infoURL: 'https://www.ebrochain.com',
+    shortName: 'ebro',
+    chainId: 2306,
+    networkId: 2306
+  },
+  {
     name: 'Arevia',
     chain: 'Arevia',
     rpc: [],
@@ -9951,6 +10018,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Fraxchain Testnet',
+    chain: 'FRAX',
+    rpc: [ 'https://rpc.testnet.frax.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
+    infoURL: 'https://testnet.frax.com',
+    shortName: 'fraxchain-testnet',
+    chainId: 2522,
+    networkId: 2522,
+    explorers: [],
+    status: 'active'
   },
   {
     name: 'Kortho Mainnet',
@@ -17632,6 +17712,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nordek Mainnet',
+    chain: 'Nordek',
+    rpc: [ 'https://mainnet-rpc.nordekscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'NRK', symbol: 'NRK', decimals: 18 },
+    infoURL: 'https://nordekscan.com',
+    shortName: 'nordek',
+    chainId: 81041,
+    networkId: 81041,
+    explorers: [
+      {
+        name: 'nordek',
+        url: 'https://nordekscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Amana Testnet',
     chain: 'MEER',
     rpc: [],
@@ -19820,7 +19918,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Scroll Sepolia Etherscan',
-        url: 'https://sepolia.scrollscan.dev',
+        url: 'https://sepolia.scrollscan.com',
         standard: 'EIP3091'
       },
       {
@@ -19832,7 +19930,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
-      bridges: [ { url: 'https://scroll.io/bridge' } ]
+      bridges: [ { url: 'https://sepolia.scroll.io/bridge' } ]
     }
   },
   {
