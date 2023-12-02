@@ -13094,7 +13094,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://testnet.torusscan.com',
+        url: 'https://testnet.toruscan.com',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -14787,6 +14787,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Immutable zkEVM Testnet',
+    chain: 'Immutable zkEVM',
+    rpc: [ 'https://rpc.testnet.immutable.com' ],
+    faucets: [ 'https://docs.immutable.com/docs/zkEVM/guides/faucet' ],
+    nativeCurrency: { name: 'Test IMX', symbol: 'tIMX', decimals: 18 },
+    infoURL: 'https://www.immutable.com',
+    shortName: 'imx-testnet',
+    chainId: 13473,
+    networkId: 13473,
+    icon: 'immutable',
+    explorers: [
+      {
+        name: 'Immutable Testnet explorer',
+        url: 'https://explorer.testnet.immutable.com',
+        standard: 'EIP3091',
+        icon: 'immutable'
+      }
+    ]
+  },
+  {
     name: 'Susono',
     chain: 'SUS',
     rpc: [
@@ -14835,6 +14855,26 @@ const chainArray = [
     chainId: 14853,
     networkId: 14853,
     explorers: []
+  },
+  {
+    name: 'Immutable zkEVM Devnet',
+    chain: 'Immutable zkEVM',
+    rpc: [ 'https://rpc.dev.immutable.com' ],
+    faucets: [ 'https://docs.immutable.com/docs/zkEVM/guides/faucet' ],
+    nativeCurrency: { name: 'Dev IMX', symbol: 'dIMX', decimals: 18 },
+    infoURL: 'https://www.immutable.com',
+    shortName: 'imx-devnet',
+    chainId: 15003,
+    networkId: 15003,
+    icon: 'immutable',
+    explorers: [
+      {
+        name: 'Immutable Devnet explorer',
+        url: 'https://explorer.dev.immutable.com',
+        standard: 'EIP3091',
+        icon: 'immutable'
+      }
+    ]
   },
   {
     name: 'LoopNetwork Mainnet',
