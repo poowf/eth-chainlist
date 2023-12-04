@@ -5504,6 +5504,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Blucrates',
+    chain: 'BLU',
+    rpc: [ 'https://data.bluchain.pro' ],
+    faucets: [],
+    nativeCurrency: { name: 'Blucrates', symbol: 'BLU', decimals: 18 },
+    infoURL: 'https://www.blucrates.com',
+    shortName: 'blu',
+    chainId: 727,
+    networkId: 727,
+    slip44: 727
+  },
+  {
     name: 'Canto Testnet',
     chain: 'Canto Tesnet',
     rpc: [ 'https://eth.plexnode.wtf/' ],
@@ -17047,6 +17059,26 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Genesys Code Mainnet',
+    chain: 'GCODE',
+    rpc: [ 'https://mainnet.genesyscode.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'GenesysCode', symbol: 'GCODE', decimals: 18 },
+    infoURL: 'https://genesyscode.io',
+    shortName: 'gcode',
+    chainId: 59971,
+    networkId: 59971,
+    icon: 'genesyscode',
+    explorers: [
+      {
+        name: 'Genesys Scan',
+        url: 'https://genesysscan.io',
+        icon: 'genesyscode',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Thinkium Testnet Chain 0',
     chain: 'Thinkium',
     rpc: [ 'https://test.thinkiumrpc.net/' ],
@@ -20525,6 +20557,25 @@ const chainArray = [
       {
         name: 'Ecrox Chain Explorer',
         url: 'https://ecroxscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tiltyard Subnet',
+    chain: 'TILTYARD',
+    rpc: [ 'https://subnets.avax.network/tiltyard/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Tiltyard Token', symbol: 'TILTG', decimals: 18 },
+    infoURL: '',
+    shortName: 'tiltyard',
+    chainId: 1127469,
+    networkId: 1127469,
+    explorers: [
+      {
+        name: 'TILTYARD Explorer',
+        url: 'http://testnet-explorer.tiltyard.gg',
         standard: 'EIP3091'
       }
     ]
