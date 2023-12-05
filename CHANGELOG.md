@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.297 (2023-12-05)
+
+
+### Maintenance
+
+* **release:** 0.0.296 ([6a9e5e6](https://github.com/poowf/eth-chainlist/commit/6a9e5e6d7de4c5b13ffe51394d8e31693fd4a8be))
+* update chain data ([58c6e33](https://github.com/poowf/eth-chainlist/commit/58c6e333371ec36e16a5e1f7c9cd9cd6a614c29e))
+
 ### 0.0.296 (2023-12-04)
 
 
