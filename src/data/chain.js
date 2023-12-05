@@ -4752,6 +4752,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Areon Network Mainnet',
+    chain: 'Areon',
+    icon: 'areon',
+    rpc: [ 'https://mainnet-rpc.areon.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Areon', symbol: 'AREA', decimals: 18 },
+    infoURL: 'https://areon.network',
+    shortName: 'area',
+    chainId: 463,
+    networkId: 463,
+    explorers: [
+      {
+        name: 'AreonScan',
+        url: 'https://areonscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Rupaya',
     chain: 'RUPX',
     rpc: [],
@@ -5273,6 +5292,24 @@ const chainArray = [
       {
         name: 'Endurance Scan',
         url: 'https://explorer.endurance.fusionist.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Kalichain Mainnet',
+    chain: 'Kalichain',
+    rpc: [ 'https://rpc.kalichain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'kalis', symbol: 'KALIS', decimals: 18 },
+    infoURL: 'https://kalichain.com',
+    shortName: 'kalichain',
+    chainId: 653,
+    networkId: 653,
+    explorers: [
+      {
+        name: 'kalichain explorer',
+        url: 'https://explorer.kalichain.com',
         standard: 'EIP3091'
       }
     ]
