@@ -13555,7 +13555,7 @@ const chainArray = [
   {
     name: 'JIBCHAIN L1',
     chain: 'JBC',
-    rpc: [ 'https://rpc-l1.jibchain.net' ],
+    rpc: [ 'https://rpc-l1.jibchain.net', 'https://jib-rpc.inan.in.th' ],
     faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'JIBCOIN', symbol: 'JBC', decimals: 18 },
@@ -21293,6 +21293,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'OP Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.optimism.io' ],
+    faucets: [ 'https://app.optimism.io/faucet' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://optimism.io',
+    shortName: 'opsep',
+    chainId: 11155420,
+    networkId: 11155420,
+    explorers: [
+      {
+        name: 'opscout',
+        url: 'https://optimism-sepolia.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PepChain Churchill',
     chain: 'PEP',
     rpc: [ 'https://churchill-rpc.pepchain.io' ],
@@ -21571,7 +21590,7 @@ const chainArray = [
     slip44: 61717561
   },
   {
-    name: 'Autonity Bakerloo (Thames) Testnet',
+    name: 'Autonity Bakerloo (Barada) Testnet',
     chain: 'AUT',
     rpc: [
       'https://rpc1.bakerloo.autonity.org/',
@@ -21580,9 +21599,9 @@ const chainArray = [
     faucets: [ 'https://faucet.autonity.org/' ],
     nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
-    shortName: 'bakerloo-0',
-    chainId: 65010000,
-    networkId: 65010000,
+    shortName: 'bakerloo-01',
+    chainId: 65010001,
+    networkId: 65010001,
     icon: 'autonity',
     explorers: [
       {
@@ -21707,7 +21726,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Neon EVM DevNet',
+    name: 'Neon EVM Devnet',
     chain: 'Solana',
     rpc: [ 'https://devnet.neonevm.org' ],
     faucets: [ 'https://neonfaucet.org' ],
@@ -21718,11 +21737,6 @@ const chainArray = [
     chainId: 245022926,
     networkId: 245022926,
     explorers: [
-      {
-        name: 'native',
-        url: 'https://devnet.explorer.neon-labs.org',
-        standard: 'EIP3091'
-      },
       {
         name: 'neonscan',
         url: 'https://devnet.neonscan.org',
@@ -21737,7 +21751,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Neon EVM MainNet',
+    name: 'Neon EVM Mainnet',
     chain: 'Solana',
     rpc: [],
     faucets: [],
@@ -21762,6 +21776,7 @@ const chainArray = [
   },
   {
     name: 'Neon EVM TestNet',
+    status: 'deprecated',
     chain: 'Solana',
     rpc: [ 'https://testnet.neonevm.org' ],
     faucets: [],
