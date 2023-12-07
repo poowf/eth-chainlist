@@ -21753,7 +21753,7 @@ const chainArray = [
   {
     name: 'Neon EVM Mainnet',
     chain: 'Solana',
-    rpc: [],
+    rpc: [ 'https://neon-proxy-mainnet.solana.p2p.org' ],
     faucets: [],
     icon: 'neon',
     nativeCurrency: { name: 'Neon', symbol: 'NEON', decimals: 18 },
