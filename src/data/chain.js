@@ -3769,12 +3769,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'zkSync Era Testnet',
+    name: 'zkSync Era Goerli Testnet (deprecated)',
+    status: 'deprecated',
     chain: 'ETH',
     rpc: [ 'https://testnet.era.zksync.dev' ],
-    faucets: [ 'https://goerli.portal.zksync.io/faucet' ],
+    faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://era.zksync.io/docs/',
+    infoURL: 'https://zksync.io/',
     shortName: 'zksync-goerli',
     chainId: 280,
     networkId: 280,
@@ -3790,7 +3791,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://goerli.portal.zksync.io/bridge' } ]
+      bridges: [ { url: 'https://bridge.zksync.io/' } ]
     }
   },
   {
@@ -3970,17 +3971,30 @@ const chainArray = [
     explorers: []
   },
   {
-    name: '(deprecated) Optimism on GC',
-    chain: 'OGC',
-    rpc: [],
+    name: 'zkSync Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.era.zksync.dev' ],
     faucets: [],
-    nativeCurrency: { name: 'xDAI', symbol: 'xDAI', decimals: 18 },
-    shortName: 'ogc',
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zksync.io/',
+    shortName: 'zksync-sepolia',
     chainId: 300,
     networkId: 300,
-    infoURL: 'https://docs.gnosischain.com',
-    explorers: [],
-    status: 'deprecated'
+    icon: 'zksync-era',
+    explorers: [
+      {
+        name: 'zkSync Block Explorer',
+        url: 'https://sepolia.explorer.zksync.io',
+        icon: 'zksync-era',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.zksync.io/' } ]
+    },
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Bobaopera',
@@ -4175,7 +4189,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'zkSync Era Mainnet',
+    name: 'zkSync Mainnet',
     chain: 'ETH',
     rpc: [ 'https://mainnet.era.zksync.io' ],
     faucets: [],
@@ -15455,6 +15469,27 @@ const chainArray = [
       {
         name: 'omChain Explorer',
         url: 'https://explorer.omchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'BSL Mainnet',
+    chain: 'BSL',
+    rpc: [
+      'http://rpc-mainnet.nftruth.io:8545',
+      'ws://rpc-mainnet.nftruth.io:8645'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Origin NFT', symbol: 'ONF', decimals: 18 },
+    infoURL: 'https://bsquarelab.com/',
+    shortName: 'onf',
+    chainId: 21912,
+    networkId: 21912,
+    explorers: [
+      {
+        name: 'BSL Mainnet Explorer',
+        url: 'https://scan.nftruth.io',
         standard: 'EIP3091'
       }
     ]
