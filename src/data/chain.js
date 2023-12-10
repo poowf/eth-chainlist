@@ -10094,6 +10094,49 @@ const chainArray = [
     ]
   },
   {
+    name: 'Hybrid Chain Network Testnet',
+    chain: 'HYBRID',
+    rpc: [ 'https://rpc-testnet.hybridchain.ai/' ],
+    faucets: [ 'https://faucet-testnet.hybridchain.ai' ],
+    nativeCurrency: { name: 'Hybrid Chain Native Token', symbol: 'tHRC', decimals: 18 },
+    infoURL: 'https://hybridchain.ai',
+    shortName: 'thrc',
+    chainId: 2458,
+    networkId: 2458,
+    icon: 'hybrid',
+    explorers: [
+      {
+        name: 'Hybrid Chain Explorer Testnet',
+        icon: 'hybrid',
+        url: 'https://testnet.hybridscan.ai',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Hybrid Chain Network Mainnet',
+    chain: 'HYBRID',
+    rpc: [
+      'https://coredata-mainnet.hybridchain.ai/',
+      'https://rpc-mainnet.hybridchain.ai'
+    ],
+    faucets: [ 'https://faucet-testnet.hybridchain.ai' ],
+    nativeCurrency: { name: 'Hybrid Chain Native Token', symbol: 'HRC', decimals: 18 },
+    infoURL: 'https://hybridchain.ai',
+    shortName: 'hrc',
+    chainId: 2468,
+    networkId: 2468,
+    icon: 'hybrid',
+    explorers: [
+      {
+        name: 'Hybrid Chain Explorer Mainnet',
+        icon: 'hybrid',
+        url: 'https://hybridscan.ai',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Unicorn Ultra Nebulas Testnet',
     chain: 'u2u',
     rpc: [ 'https://rpc-nebulas-testnet.uniultra.xyz' ],
@@ -11853,6 +11896,7 @@ const chainArray = [
     shortName: 'hmnd',
     chainId: 5234,
     networkId: 5234,
+    icon: 'humanode',
     explorers: [
       {
         name: 'Subscan',
@@ -14992,6 +15036,7 @@ const chainArray = [
     shortName: 'hmnd-t5',
     chainId: 14853,
     networkId: 14853,
+    icon: 'humanode',
     explorers: []
   },
   {
@@ -21701,28 +21746,6 @@ const chainArray = [
     chainId: 61717561,
     networkId: 61717561,
     slip44: 61717561
-  },
-  {
-    name: 'Autonity Bakerloo (Barada) Testnet',
-    chain: 'AUT',
-    rpc: [
-      'https://rpc1.bakerloo.autonity.org/',
-      'wss://rpc1.bakerloo.autonity.org/ws/'
-    ],
-    faucets: [ 'https://faucet.autonity.org/' ],
-    nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
-    infoURL: 'https://autonity.org/',
-    shortName: 'bakerloo-01',
-    chainId: 65010001,
-    networkId: 65010001,
-    icon: 'autonity',
-    explorers: [
-      {
-        name: 'autonity-blockscout',
-        url: 'https://bakerloo.autonity.org',
-        standard: 'EIP3091'
-      }
-    ]
   },
   {
     name: 'Autonity Piccadilly (Thames) Testnet',
