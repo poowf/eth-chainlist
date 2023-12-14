@@ -21767,18 +21767,80 @@ const chainArray = [
     slip44: 61717561
   },
   {
-    name: 'Autonity Piccadilly (Thames) Testnet',
+    name: 'Autonity Bakerloo (Thames) Testnet',
+    status: 'deprecated',
+    chain: 'AUT',
+    rpc: [],
+    faucets: [ 'https://faucet.autonity.org/' ],
+    nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'bakerloo-0',
+    chainId: 65010000,
+    networkId: 65010000,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonity-blockscout',
+        url: 'https://bakerloo.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonity Bakerloo (Barada) Testnet',
     chain: 'AUT',
     rpc: [
-      'https://rpc1.piccadilly.autonity.org/',
-      'wss://rpc1.piccadilly.autonity.org/ws/'
+      'https://rpc1.bakerloo.autonity.org/',
+      'wss://rpc1.bakerloo.autonity.org/ws/'
     ],
+    faucets: [ 'https://faucet.autonity.org/' ],
+    nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'bakerloo-01',
+    chainId: 65010001,
+    networkId: 65010001,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonity-blockscout',
+        url: 'https://bakerloo.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonity Piccadilly (Thames) Testnet',
+    status: 'deprecated',
+    chain: 'AUT',
+    rpc: [],
     faucets: [ 'https://faucet.autonity.org/' ],
     nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
     shortName: 'piccadilly-0',
     chainId: 65100000,
     networkId: 65100000,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonity-blockscout',
+        url: 'https://piccadilly.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonity Piccadilly (Barada) Testnet',
+    chain: 'AUT',
+    rpc: [
+      'https://rpc1.piccadilly.autonity.org/',
+      'wss://rpc1.piccadilly.autonity.org/ws/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'piccadilly-01',
+    chainId: 65100001,
+    networkId: 65100001,
     icon: 'autonity',
     explorers: [
       {
