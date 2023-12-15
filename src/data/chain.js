@@ -78,6 +78,7 @@ const chainArray = [
     shortName: 'rop',
     chainId: 3,
     networkId: 3,
+    slip44: 1,
     ens: { registry: '0x112234455c3a32fd11230c42e7bccd4a84e02010' },
     explorers: [
       {
@@ -104,6 +105,7 @@ const chainArray = [
     shortName: 'rin',
     chainId: 4,
     networkId: 4,
+    slip44: 1,
     ens: { registry: '0xe7410170f87102df0055eb195163a03b7f2bff4a' },
     explorers: [
       {
@@ -136,6 +138,7 @@ const chainArray = [
     shortName: 'gor',
     chainId: 5,
     networkId: 5,
+    slip44: 1,
     ens: { registry: '0x112234455c3a32fd11230c42e7bccd4a84e02010' },
     explorers: [
       {
@@ -152,16 +155,19 @@ const chainArray = [
     ]
   },
   {
-    name: 'Ethereum Classic Testnet Kotti',
+    name: 'Kotti Testnet',
+    title: 'Ethereum Classic Kotti Testnet',
     status: 'deprecated',
     chain: 'ETC',
-    rpc: [ 'https://www.ethercluster.com/kotti' ],
+    icon: 'ethereumclassictestnet',
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Kotti Ether', symbol: 'KOT', decimals: 18 },
-    infoURL: 'https://explorer.jade.builders/?network=kotti',
+    infoURL: 'https://ethereumclassic.org/development/testnets',
     shortName: 'kot',
     chainId: 6,
-    networkId: 6
+    networkId: 6,
+    slip44: 1
   },
   {
     name: 'ThaiChain',
@@ -210,7 +216,8 @@ const chainArray = [
     infoURL: 'https://ethersocial.org',
     shortName: 'tubq',
     chainId: 9,
-    networkId: 2
+    networkId: 2,
+    slip44: 1
   },
   {
     name: 'OP Mainnet',
@@ -269,7 +276,8 @@ const chainArray = [
     infoURL: 'https://metadium.com',
     shortName: 'kal',
     chainId: 12,
-    networkId: 12
+    networkId: 12,
+    slip44: 1
   },
   {
     name: 'Diode Testnet Staging',
@@ -283,7 +291,8 @@ const chainArray = [
     infoURL: 'https://diode.io/staging',
     shortName: 'dstg',
     chainId: 13,
-    networkId: 13
+    networkId: 13,
+    slip44: 1
   },
   {
     name: 'Flare Mainnet',
@@ -370,6 +379,7 @@ const chainArray = [
     shortName: 'TST',
     chainId: 18,
     networkId: 18,
+    slip44: 1,
     explorers: [
       {
         name: 'thundercore-blockscout-testnet',
@@ -459,7 +469,8 @@ const chainArray = [
     infoURL: 'https://elaeth.io/',
     shortName: 'eladidt',
     chainId: 23,
-    networkId: 23
+    networkId: 23,
+    slip44: 1
   },
   {
     name: 'KardiaChain Mainnet',
@@ -507,6 +518,7 @@ const chainArray = [
     shortName: 'L1test',
     chainId: 26,
     networkId: 26,
+    slip44: 1,
     explorers: [
       {
         name: 'Genesis L1 testnet explorer',
@@ -543,6 +555,7 @@ const chainArray = [
     shortName: 'BobaRinkeby',
     chainId: 28,
     networkId: 28,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -614,6 +627,7 @@ const chainArray = [
     shortName: 'trsk',
     chainId: 31,
     networkId: 31,
+    slip44: 1,
     explorers: [
       {
         name: 'RSK Testnet Explorer',
@@ -631,7 +645,8 @@ const chainArray = [
     infoURL: 'https://www.goodata.org',
     shortName: 'GooDT',
     chainId: 32,
-    networkId: 32
+    networkId: 32,
+    slip44: 1
   },
   {
     name: 'GoodData Mainnet',
@@ -770,6 +785,7 @@ const chainArray = [
     shortName: 'TelosEVMTestnet',
     chainId: 41,
     networkId: 41,
+    slip44: 1,
     explorers: [
       {
         name: 'teloscan',
@@ -818,6 +834,7 @@ const chainArray = [
     shortName: 'pangolin',
     chainId: 43,
     networkId: 43,
+    slip44: 1,
     explorers: [
       {
         name: 'subscan',
@@ -864,6 +881,7 @@ const chainArray = [
     shortName: 'pangoro',
     chainId: 45,
     networkId: 45,
+    slip44: 1,
     explorers: [
       {
         name: 'subscan',
@@ -947,6 +965,7 @@ const chainArray = [
     shortName: 'etmpTest',
     chainId: 49,
     networkId: 49,
+    slip44: 1,
     icon: 'etmp',
     explorers: [
       {
@@ -1045,6 +1064,7 @@ const chainArray = [
     shortName: 'tcet',
     chainId: 53,
     networkId: 53,
+    slip44: 1,
     explorers: [
       {
         name: 'coinexscan',
@@ -1220,16 +1240,24 @@ const chainArray = [
     ]
   },
   {
-    name: 'Ethereum Classic Mainnet',
+    name: 'Ethereum Classic',
+    title: 'Ethereum Classic Mainnet',
+    status: 'active',
     chain: 'ETC',
+    icon: 'ethereumclassic',
     rpc: [
       'https://etc.rivet.link',
+      'https://besu-at.etc-network.info',
+      'https://besu-de.etc-network.info',
+      'https://geth-at.etc-network.info',
+      'https://geth-de.etc-network.info',
       'https://etc.etcdesktop.com',
+      'https://rpc.etcinscribe.com',
       'https://etc.mytokenpocket.vip'
     ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
-    nativeCurrency: { name: 'Ethereum Classic Ether', symbol: 'ETC', decimals: 18 },
+    nativeCurrency: { name: 'Ether', symbol: 'ETC', decimals: 18 },
     infoURL: 'https://ethereumclassic.org',
     shortName: 'etc',
     chainId: 61,
@@ -1237,51 +1265,88 @@ const chainArray = [
     slip44: 61,
     explorers: [
       {
-        name: 'blockscout',
-        url: 'https://blockscout.com/etc/mainnet',
+        name: 'blockscout-ethereum-classic',
+        url: 'https://etc.blockscout.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'etcnetworkinfo-blockscout-ethereum-classic',
+        url: 'https://explorer-blockscout.etc-network.info',
+        standard: 'none'
+      },
+      {
+        name: 'etcnetworkinfo-alethio-ethereum-classic',
+        url: 'https://explorer-alethio.etc-network.info',
+        standard: 'none'
+      },
+      {
+        name: 'etcnetworkinfo-expedition-ethereum-classic',
+        url: 'https://explorer-expedition.etc-network.info',
+        standard: 'none'
+      },
+      {
+        name: 'hebeblock-ethereum-classic',
+        url: 'https://etcerscan.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'oklink-ethereum-classic',
+        url: 'https://www.oklink.com/etc',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'tokenview-ethereum-classic',
+        url: 'https://etc.tokenview.io',
         standard: 'EIP3091'
       }
     ]
   },
   {
-    name: 'Ethereum Classic Testnet Morden',
+    name: 'Morden Testnet',
+    title: 'Ethereum Classic Morden Testnet',
+    status: 'deprecated',
     chain: 'ETC',
+    icon: 'ethereumclassictestnet',
     rpc: [],
     faucets: [],
-    nativeCurrency: {
-      name: 'Ethereum Classic Testnet Ether',
-      symbol: 'TETC',
-      decimals: 18
-    },
-    infoURL: 'https://ethereumclassic.org',
+    nativeCurrency: { name: 'Morden Ether', symbol: 'TETC', decimals: 18 },
+    infoURL: 'https://ethereumclassic.org/development/testnets',
     shortName: 'tetc',
     chainId: 62,
-    networkId: 2
+    networkId: 2,
+    slip44: 1
   },
   {
-    name: 'Ethereum Classic Testnet Mordor',
+    name: 'Mordor Testnet',
+    title: 'Ethereum Classic Mordor Testnet',
+    status: 'active',
     chain: 'ETC',
-    rpc: [ 'https://rpc.mordor.etccooperative.org' ],
+    icon: 'ethereumclassictestnet',
+    rpc: [
+      'https://rpc.mordor.etccooperative.org',
+      'https://geth-mordor.etc-network.info'
+    ],
     features: [ { name: 'EIP155' } ],
     faucets: [
-      'https://mordor.canhaz.net/',
-      'https://easy.hebeswap.com/#/faucet'
+      'https://easy.hebeswap.com/#/faucet',
+      'https://faucet.mordortest.net'
     ],
-    nativeCurrency: {
-      name: 'Mordor Classic Testnet Ether',
-      symbol: 'METC',
-      decimals: 18
-    },
-    infoURL: 'https://github.com/eth-classic/mordor/',
+    nativeCurrency: { name: 'Mordor Ether', symbol: 'METC', decimals: 18 },
+    infoURL: 'https://ethereumclassic.org/development/testnets',
     shortName: 'metc',
     chainId: 63,
     networkId: 7,
-    slip44: 63,
+    slip44: 1,
     explorers: [
       {
-        name: 'blockscout',
-        url: 'https://blockscout.com/etc/mordor',
+        name: 'blockscout-mordor',
+        url: 'https://etc-mordor.blockscout.com',
         standard: 'EIP3091'
+      },
+      {
+        name: 'etcnetworkinfo-expedition-mordor',
+        url: 'https://explorer-expedition.etc-network.info/?network=Ethereum+Classic+at+etc-network.info+GETH+Mordor',
+        standard: 'none'
       }
     ]
   },
@@ -1311,6 +1376,7 @@ const chainArray = [
     shortName: 'tokt',
     chainId: 65,
     networkId: 65,
+    slip44: 1,
     explorers: [
       {
         name: 'OKLink',
@@ -1353,7 +1419,8 @@ const chainArray = [
     infoURL: 'http://test.dbmbp.com',
     shortName: 'dbm',
     chainId: 67,
-    networkId: 67
+    networkId: 67,
+    slip44: 1
   },
   {
     name: 'SoterOne Mainnet',
@@ -1383,7 +1450,8 @@ const chainArray = [
     infoURL: 'https://optimism.io',
     shortName: 'okov',
     chainId: 69,
-    networkId: 69
+    networkId: 69,
+    slip44: 1
   },
   {
     name: 'Hoo Smart Chain',
@@ -1441,7 +1509,8 @@ const chainArray = [
     infoURL: 'https://testnet.dxscan.io/',
     shortName: 'dxc',
     chainId: 72,
-    networkId: 72
+    networkId: 72,
+    slip44: 1
   },
   {
     name: 'FNCY',
@@ -1651,6 +1720,7 @@ const chainArray = [
     shortName: 'MeterTest',
     chainId: 83,
     networkId: 83,
+    slip44: 1,
     explorers: [
       {
         name: 'Meter Testnet Scan',
@@ -1683,6 +1753,7 @@ const chainArray = [
     shortName: 'gttest',
     chain: 'GTTEST',
     networkId: 85,
+    slip44: 1,
     nativeCurrency: { name: 'GateToken', symbol: 'GT', decimals: 18 },
     rpc: [ 'https://testnet.gatenode.cc' ],
     faucets: [ 'https://www.gatescan.org/testnet/faucet' ],
@@ -1758,7 +1829,7 @@ const chainArray = [
     shortName: 'tomot',
     chainId: 89,
     networkId: 89,
-    slip44: 889
+    slip44: 1
   },
   {
     name: 'Garizon Stage0',
@@ -1926,6 +1997,7 @@ const chainArray = [
     shortName: 'bnbt',
     chainId: 97,
     networkId: 97,
+    slip44: 1,
     explorers: [
       {
         name: 'bscscan-testnet',
@@ -2049,7 +2121,8 @@ const chainArray = [
     infoURL: 'https://web3games.org/',
     shortName: 'tw3g',
     chainId: 102,
-    networkId: 102
+    networkId: 102,
+    slip44: 1
   },
   {
     name: 'Worldland Mainnet',
@@ -2080,6 +2153,7 @@ const chainArray = [
     shortName: 'tklc',
     chainId: 104,
     networkId: 104,
+    slip44: 1,
     icon: 'kaiba',
     explorers: [
       {
@@ -2142,6 +2216,7 @@ const chainArray = [
     shortName: 'ntn',
     chainId: 107,
     networkId: 107,
+    slip44: 1,
     explorers: [
       {
         name: 'nebulatestnet',
@@ -2201,7 +2276,8 @@ const chainArray = [
     infoURL: 'https://protonchain.com',
     shortName: 'xpr',
     chainId: 110,
-    networkId: 110
+    networkId: 110,
+    slip44: 1
   },
   {
     name: 'EtherLite Chain',
@@ -2270,6 +2346,7 @@ const chainArray = [
     shortName: 'c2flr',
     chainId: 114,
     networkId: 114,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -2290,6 +2367,7 @@ const chainArray = [
     shortName: 'debank-testnet',
     chainId: 115,
     networkId: 115,
+    slip44: 1,
     explorers: []
   },
   {
@@ -2337,6 +2415,7 @@ const chainArray = [
     shortName: 'arcology',
     chainId: 118,
     networkId: 118,
+    slip44: 1,
     explorers: [
       {
         name: 'arcology',
@@ -2375,6 +2454,7 @@ const chainArray = [
     shortName: 'enulst',
     chainId: 120,
     networkId: 120,
+    slip44: 1,
     icon: 'enuls',
     explorers: [
       {
@@ -2465,7 +2545,7 @@ const chainArray = [
     shortName: 'OYchainTestnet',
     chainId: 125,
     networkId: 125,
-    slip44: 125,
+    slip44: 1,
     explorers: [
       {
         name: 'OYchain Testnet Explorer',
@@ -2562,6 +2642,7 @@ const chainArray = [
     shortName: 'AlyxTestnet',
     chainId: 135,
     networkId: 135,
+    slip44: 1,
     explorers: [
       {
         name: 'alyx testnet scan',
@@ -2684,6 +2765,7 @@ const chainArray = [
     shortName: 'OPtest',
     chainId: 141,
     networkId: 141,
+    slip44: 1,
     explorers: [
       {
         name: 'Belly Scan',
@@ -2794,6 +2876,7 @@ const chainArray = [
     chain: 'RBN',
     chainId: 153,
     networkId: 153,
+    slip44: 1,
     rpc: [],
     faucets: [],
     infoURL: 'https://redbelly.network',
@@ -2823,6 +2906,7 @@ const chainArray = [
     shortName: 'tenet-testnet',
     chainId: 155,
     networkId: 155,
+    slip44: 1,
     explorers: [
       {
         name: 'TenetScan Testnet',
@@ -2843,6 +2927,7 @@ const chainArray = [
     shortName: 'obe',
     chainId: 156,
     networkId: 156,
+    slip44: 1,
     icon: 'oescan',
     explorers: [
       {
@@ -2882,6 +2967,7 @@ const chainArray = [
     shortName: 'wall-e',
     chainId: 161,
     networkId: 161,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout - evascan',
@@ -2899,7 +2985,8 @@ const chainArray = [
     infoURL: 'https://explorer.sirius.lightstreams.io',
     shortName: 'tpht',
     chainId: 162,
-    networkId: 162
+    networkId: 162,
+    slip44: 1
   },
   {
     name: 'Lightstreams Mainnet',
@@ -2923,6 +3010,7 @@ const chainArray = [
     shortName: 'omni_testnet',
     chainId: 165,
     networkId: 165,
+    slip44: 1,
     explorers: [
       {
         name: 'Omni Explorer',
@@ -2942,6 +3030,7 @@ const chainArray = [
     shortName: 'atoshi',
     chainId: 167,
     networkId: 167,
+    slip44: 1,
     explorers: [
       {
         name: 'atoshiscan',
@@ -2999,7 +3088,8 @@ const chainArray = [
     infoURL: 'https://www.hoosmartchain.com',
     shortName: 'hoosmartchain',
     chainId: 170,
-    networkId: 170
+    networkId: 170,
+    slip44: 1
   },
   {
     name: 'Latam-Blockchain Resil Testnet',
@@ -3017,7 +3107,8 @@ const chainArray = [
     infoURL: 'https://latam-blockchain.com',
     shortName: 'resil',
     chainId: 172,
-    networkId: 172
+    networkId: 172,
+    slip44: 1
   },
   {
     name: 'AME Chain Mainnet',
@@ -3083,6 +3174,7 @@ const chainArray = [
     shortName: 'BMCT',
     chainId: 189,
     networkId: 189,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockmeta',
@@ -3124,6 +3216,7 @@ const chainArray = [
     shortName: 'tokb',
     chainId: 195,
     networkId: 195,
+    slip44: 1,
     explorers: [
       {
         name: 'OKLink',
@@ -3157,6 +3250,7 @@ const chainArray = [
     shortName: 'NEUTR',
     chainId: 197,
     networkId: 197,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -3230,6 +3324,7 @@ const chainArray = [
     shortName: 'moactest',
     chainId: 201,
     networkId: 201,
+    slip44: 1,
     explorers: [
       {
         name: 'moac testnet explorer',
@@ -3276,6 +3371,7 @@ const chainArray = [
     shortName: 'VCTEST',
     chainId: 206,
     networkId: 206,
+    slip44: 1,
     icon: 'vitainu-testnet',
     explorers: [
       {
@@ -3462,6 +3558,7 @@ const chainArray = [
     shortName: 'TLA',
     chainId: 226,
     networkId: 226,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -3499,6 +3596,7 @@ const chainArray = [
     shortName: 'deamtest',
     chainId: 236,
     networkId: 236,
+    slip44: 1,
     explorers: [
       {
         name: 'Deamchain Testnet Explorer',
@@ -3779,6 +3877,7 @@ const chainArray = [
     shortName: 'zksync-goerli',
     chainId: 280,
     networkId: 280,
+    slip44: 1,
     icon: 'zksync-era',
     explorers: [
       {
@@ -3905,7 +4004,7 @@ const chainArray = [
     shortName: 'hedera-testnet',
     chainId: 296,
     networkId: 296,
-    slip44: 3030,
+    slip44: 1,
     explorers: [
       {
         name: 'HashScan',
@@ -3980,6 +4079,7 @@ const chainArray = [
     shortName: 'zksync-sepolia',
     chainId: 300,
     networkId: 300,
+    slip44: 1,
     icon: 'zksync-era',
     explorers: [
       {
@@ -4030,6 +4130,7 @@ const chainArray = [
     shortName: 'ncnt',
     chainId: 303,
     networkId: 303,
+    slip44: 1,
     explorers: [
       {
         name: 'neuroscan',
@@ -4049,6 +4150,7 @@ const chainArray = [
     shortName: 'wyz',
     chainId: 309,
     networkId: 309,
+    slip44: 1,
     icon: 'wyzth_icon',
     explorers: [
       {
@@ -4180,6 +4282,7 @@ const chainArray = [
     shortName: 'kcst',
     chainId: 322,
     networkId: 322,
+    slip44: 1,
     explorers: [
       {
         name: 'kcc-scan-testnet',
@@ -4244,6 +4347,7 @@ const chainArray = [
     shortName: 'DFKTEST',
     chainId: 335,
     networkId: 335,
+    slip44: 1,
     explorers: [
       {
         name: 'ethernal',
@@ -4296,6 +4400,7 @@ const chainArray = [
     shortName: 'tcro',
     chainId: 338,
     networkId: 338,
+    slip44: 1,
     explorers: [
       {
         name: 'Cronos Testnet Explorer',
@@ -4303,26 +4408,6 @@ const chainArray = [
         standard: 'none'
       }
     ]
-  },
-  {
-    name: 'Yooldo Verse Mainnet',
-    chain: 'Yooldo Verse',
-    icon: 'yooldo_verse',
-    rpc: [ 'https://rpc.yooldo-verse.xyz/' ],
-    faucets: [],
-    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
-    infoURL: 'https://yooldo.gg/',
-    shortName: 'YVM',
-    chainId: 345,
-    networkId: 345,
-    explorers: [
-      {
-        name: 'Yooldo Verse Explorer',
-        url: 'https://explorer.yooldo-verse.xyz',
-        standard: 'EIP3091'
-      }
-    ],
-    parent: { type: 'L2', chain: 'eip155-248' }
   },
   {
     name: 'Theta Mainnet',
@@ -4352,6 +4437,7 @@ const chainArray = [
     shortName: 'theta-sapphire',
     chainId: 363,
     networkId: 363,
+    slip44: 1,
     explorers: [
       {
         name: 'Theta Sapphire Testnet Explorer',
@@ -4370,6 +4456,7 @@ const chainArray = [
     shortName: 'theta-amber',
     chainId: 364,
     networkId: 364,
+    slip44: 1,
     explorers: [
       {
         name: 'Theta Amber Testnet Explorer',
@@ -4388,6 +4475,7 @@ const chainArray = [
     shortName: 'theta-testnet',
     chainId: 365,
     networkId: 365,
+    slip44: 1,
     explorers: [
       {
         name: 'Theta Testnet Explorer',
@@ -4441,6 +4529,7 @@ const chainArray = [
     shortName: 'tCNT',
     chainId: 371,
     networkId: 371,
+    slip44: 1,
     icon: 'constachain',
     explorers: [
       {
@@ -4496,6 +4585,7 @@ const chainArray = [
     shortName: 'hpn',
     chainId: 400,
     networkId: 400,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -4515,6 +4605,7 @@ const chainArray = [
     shortName: 'ozo_tst',
     chainId: 401,
     networkId: 401,
+    slip44: 1,
     icon: 'ozonechain',
     explorers: [
       {
@@ -4602,6 +4693,7 @@ const chainArray = [
     shortName: 'ogor',
     chainId: 420,
     networkId: 420,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -4681,6 +4773,7 @@ const chainArray = [
     shortName: 'obs-testnet',
     chain: 'ETH',
     networkId: 443,
+    slip44: 1,
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     rpc: [ 'https://testnet.obscu.ro' ],
     faucets: [],
@@ -4709,6 +4802,7 @@ const chainArray = [
     shortName: 'synapse-sepolia',
     chainId: 444,
     networkId: 444,
+    slip44: 1,
     redFlags: [ 'reusedChainId' ],
     explorers: [
       {
@@ -4757,6 +4851,7 @@ const chainArray = [
     shortName: 'tarea',
     chainId: 462,
     networkId: 462,
+    slip44: 1,
     explorers: [
       {
         name: 'AreonScan',
@@ -4825,6 +4920,7 @@ const chainArray = [
     shortName: 'Columbus',
     chainId: 501,
     networkId: 1001,
+    slip44: 1,
     icon: 'camino',
     explorers: [
       {
@@ -4865,6 +4961,7 @@ const chainArray = [
     shortName: 'aact',
     chainId: 513,
     networkId: 513,
+    slip44: 1,
     explorers: [
       {
         name: 'aacscan-testnet',
@@ -4975,6 +5072,7 @@ const chainArray = [
     shortName: 'PAW',
     chainId: 542,
     networkId: 542,
+    slip44: 1,
     explorers: [
       {
         name: 'PAWCHAIN Testnet',
@@ -5028,6 +5126,7 @@ const chainArray = [
     shortName: 'dct',
     chainId: 568,
     networkId: 568,
+    slip44: 1,
     explorers: [
       {
         name: 'dogechain testnet explorer',
@@ -5064,6 +5163,7 @@ const chainArray = [
     shortName: 'metis-stardust',
     chainId: 588,
     networkId: 588,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -5118,7 +5218,7 @@ const chainArray = [
     shortName: 'maca',
     chainId: 595,
     networkId: 595,
-    slip44: 595,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -5140,7 +5240,7 @@ const chainArray = [
     shortName: 'tkar',
     chainId: 596,
     networkId: 596,
-    slip44: 596,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -5162,7 +5262,7 @@ const chainArray = [
     shortName: 'taca',
     chainId: 597,
     networkId: 597,
-    slip44: 597,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -5181,6 +5281,7 @@ const chainArray = [
     shortName: 'metis-goerli',
     chainId: 599,
     networkId: 599,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -5207,7 +5308,8 @@ const chainArray = [
     infoURL: '',
     shortName: 'mesh-chain-testnet',
     chainId: 600,
-    networkId: 600
+    networkId: 600,
+    slip44: 1
   },
   {
     name: 'PEER Testnet',
@@ -5221,6 +5323,7 @@ const chainArray = [
     shortName: 'PEER',
     chainId: 601,
     networkId: 601,
+    slip44: 1,
     icon: 'peer',
     explorers: [
       {
@@ -5280,6 +5383,7 @@ const chainArray = [
     shortName: 'SX-Testnet',
     chainId: 647,
     networkId: 647,
+    slip44: 1,
     explorers: [
       {
         name: 'SX Network Toronto Explorer',
@@ -5344,7 +5448,8 @@ const chainArray = [
     infoURL: 'https://scan-testnet.chain.pixie.xyz',
     shortName: 'pixie-chain-testnet',
     chainId: 666,
-    networkId: 666
+    networkId: 666,
+    slip44: 1
   },
   {
     name: 'LAOS Arrakis',
@@ -5405,6 +5510,7 @@ const chainArray = [
     shortName: 'juncat',
     chainId: 669,
     networkId: 669,
+    slip44: 1,
     explorers: [
       {
         name: 'JuncaScan',
@@ -5446,6 +5552,7 @@ const chainArray = [
     shortName: 'SNS',
     chainId: 700,
     networkId: 700,
+    slip44: 1,
     explorers: [
       {
         name: 'starscan',
@@ -5488,6 +5595,7 @@ const chainArray = [
     shortName: 'tbcs',
     chainId: 708,
     networkId: 708,
+    slip44: 1,
     explorers: [
       {
         name: 'BlockChain Station Explorer',
@@ -5576,6 +5684,7 @@ const chainArray = [
     shortName: 'tcanto',
     chainId: 740,
     networkId: 740,
+    slip44: 1,
     explorers: [
       {
         name: 'Canto Tesnet Explorer (Neobase)',
@@ -5596,6 +5705,7 @@ const chainArray = [
     shortName: 'vsct',
     chainId: 741,
     networkId: 741,
+    slip44: 1,
     explorers: [
       {
         name: 'ventionscan',
@@ -5614,6 +5724,7 @@ const chainArray = [
     shortName: 'SPAY',
     chainId: 742,
     networkId: 742,
+    slip44: 1,
     explorers: [
       {
         name: 'Script Explorer',
@@ -5653,6 +5764,7 @@ const chainArray = [
     shortName: 'opc',
     chainId: 776,
     networkId: 776,
+    slip44: 1,
     explorers: [
       {
         name: 'OPEN CHAIN TESTNET',
@@ -5728,6 +5840,7 @@ const chainArray = [
     shortName: 'taero',
     chainId: 788,
     networkId: 788,
+    slip44: 1,
     explorers: [
       {
         name: 'aeroscan',
@@ -5798,6 +5911,7 @@ const chainArray = [
     shortName: 'PFTEST',
     chainId: 808,
     networkId: 808,
+    slip44: 1,
     explorers: []
   },
   {
@@ -5900,6 +6014,7 @@ const chainArray = [
     shortName: 'tclo',
     chainId: 821,
     networkId: 2,
+    slip44: 1,
     status: 'deprecated'
   },
   {
@@ -5932,6 +6047,7 @@ const chainArray = [
     shortName: 'taratest',
     chainId: 842,
     networkId: 842,
+    slip44: 1,
     explorers: [
       {
         name: 'Taraxa Explorer',
@@ -6079,6 +6195,7 @@ const chainArray = [
     shortName: 'gar-test-s1',
     chainId: 901,
     networkId: 901,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -6100,6 +6217,7 @@ const chainArray = [
     shortName: 'gar-test-s2',
     chainId: 902,
     networkId: 902,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -6121,6 +6239,7 @@ const chainArray = [
     shortName: 'gar-test-s3',
     chainId: 903,
     networkId: 903,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -6154,7 +6273,8 @@ const chainArray = [
     infoURL: 'https://decentrabone.com',
     shortName: 'DBONE',
     chainId: 910,
-    networkId: 910
+    networkId: 910,
+    slip44: 1
   },
   {
     name: 'Rinia Testnet',
@@ -6167,6 +6287,7 @@ const chainArray = [
     shortName: 'tfire',
     chainId: 917,
     networkId: 917,
+    slip44: 1,
     explorers: [],
     status: 'incubating'
   },
@@ -6180,6 +6301,7 @@ const chainArray = [
     shortName: 'modesep',
     chainId: 919,
     networkId: 919,
+    slip44: 1,
     icon: 'modeTestnet',
     explorers: [
       {
@@ -6219,6 +6341,7 @@ const chainArray = [
     chain: 'tPLS',
     chainId: 940,
     networkId: 940,
+    slip44: 1,
     infoURL: 'https://pulsechain.com/',
     rpc: [
       'https://rpc.v2.testnet.pulsechain.com/',
@@ -6234,6 +6357,7 @@ const chainArray = [
     chain: 't2bPLS',
     chainId: 941,
     networkId: 941,
+    slip44: 1,
     infoURL: 'https://pulsechain.com/',
     rpc: [
       'https://rpc.v2b.testnet.pulsechain.com/',
@@ -6249,6 +6373,7 @@ const chainArray = [
     chain: 't3PLS',
     chainId: 942,
     networkId: 942,
+    slip44: 1,
     infoURL: 'https://pulsechain.com/',
     rpc: [
       'https://rpc.v3.testnet.pulsechain.com/',
@@ -6278,7 +6403,7 @@ const chainArray = [
     faucets: [ 'https://faucet.v4.testnet.pulsechain.com/' ],
     ens: { registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e' },
     status: 'active',
-    slip44: 60,
+    slip44: 1,
     nativeCurrency: { name: 'Test Pulse', symbol: 'tPLS', decimals: 18 },
     explorers: [
       {
@@ -6303,7 +6428,29 @@ const chainArray = [
     infoURL: 'https://munode.dev/',
     shortName: 'munode',
     chainId: 956,
-    networkId: 956
+    networkId: 956,
+    slip44: 1
+  },
+  {
+    name: 'Lyra Chain',
+    chain: 'Lyra',
+    rpc: [ 'https://rpc.lyra.finance' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://lyra.finance',
+    shortName: 'lyra',
+    chainId: 957,
+    networkId: 957,
+    icon: 'lyra',
+    explorers: [
+      {
+        name: 'Lyra Explorer',
+        url: 'https://explorer.lyra.finance',
+        icon: 'lyra',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'BTC20 Smart Chain',
@@ -6533,7 +6680,8 @@ const chainArray = [
     infoURL: 'https://testnet.wanscan.org',
     shortName: 'twan',
     chainId: 999,
-    networkId: 999
+    networkId: 999,
+    slip44: 1
   },
   {
     name: 'GTON Mainnet',
@@ -6564,6 +6712,7 @@ const chainArray = [
     shortName: 'Baobab',
     chainId: 1001,
     networkId: 1001,
+    slip44: 1,
     explorers: [
       {
         name: 'klaytnscope',
@@ -6621,7 +6770,8 @@ const chainArray = [
     infoURL: 'https://www.newtonproject.org/',
     shortName: 'tnew',
     chainId: 1007,
-    networkId: 1007
+    networkId: 1007,
+    slip44: 1
   },
   {
     name: 'Eurus Mainnet',
@@ -6686,7 +6836,8 @@ const chainArray = [
     infoURL: 'https://clover.finance',
     shortName: 'tclv',
     chainId: 1023,
-    networkId: 1023
+    networkId: 1023,
+    slip44: 1
   },
   {
     name: 'CLV Parachain',
@@ -6709,6 +6860,7 @@ const chainArray = [
     shortName: 'tbtt',
     chainId: 1028,
     networkId: 1028,
+    slip44: 1,
     explorers: [
       {
         name: 'testbttcscan',
@@ -6746,6 +6898,7 @@ const chainArray = [
     shortName: 'prx',
     chainId: 1031,
     networkId: 1031,
+    slip44: 1,
     explorers: [
       {
         name: 'proxy network testnet',
@@ -6764,6 +6917,7 @@ const chainArray = [
     shortName: 'bronos-testnet',
     chainId: 1038,
     networkId: 1038,
+    slip44: 1,
     icon: 'bronos',
     explorers: [
       {
@@ -6809,6 +6963,7 @@ const chainArray = [
     shortName: 'shimmerevm-testnet-deprecated',
     chainId: 1071,
     networkId: 1071,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -6833,6 +6988,7 @@ const chainArray = [
     shortName: 'shimmerevm-testnet-deprecated-1072',
     chainId: 1072,
     networkId: 1072,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -6857,6 +7013,7 @@ const chainArray = [
     shortName: 'shimmerevm-testnet',
     chainId: 1073,
     networkId: 1073,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -6877,6 +7034,7 @@ const chainArray = [
     shortName: 'mintara-testnet',
     chainId: 1079,
     networkId: 1079,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -7012,6 +7170,7 @@ const chainArray = [
     shortName: 'tblxq',
     chainId: 1107,
     networkId: 1107,
+    slip44: 1,
     explorers: [
       {
         name: 'BLXq Explorer',
@@ -7069,6 +7228,7 @@ const chainArray = [
     shortName: 'twemix',
     chainId: 1112,
     networkId: 1112,
+    slip44: 1,
     explorers: [
       {
         name: 'WEMIX Testnet Microscope',
@@ -7092,6 +7252,7 @@ const chainArray = [
     shortName: 'tcore',
     chainId: 1115,
     networkId: 1115,
+    slip44: 1,
     explorers: [
       {
         name: 'Core Scan Testnet',
@@ -7170,6 +7331,7 @@ const chainArray = [
     shortName: 'DFI-T',
     chainId: 1131,
     networkId: 1131,
+    slip44: 1,
     icon: 'defichain-network',
     explorers: []
   },
@@ -7203,6 +7365,7 @@ const chainArray = [
     shortName: 'ASARt',
     chainId: 1138,
     networkId: 1138,
+    slip44: 1,
     explorers: [
       {
         name: 'amstarscan-testnet',
@@ -7234,7 +7397,8 @@ const chainArray = [
     infoURL: 'https://mathchain.org',
     shortName: 'tMATH',
     chainId: 1140,
-    networkId: 1140
+    networkId: 1140,
+    slip44: 1
   },
   {
     name: 'Symplexia Smart Chain',
@@ -7266,6 +7430,7 @@ const chainArray = [
     shortName: 'auoc',
     chainId: 1170,
     networkId: 1170,
+    slip44: 1,
     icon: 'origin',
     explorers: [
       {
@@ -7291,6 +7456,7 @@ const chainArray = [
     shortName: 'sht',
     chainId: 1177,
     networkId: 1177,
+    slip44: 1,
     icon: 'smarthost',
     explorers: [
       {
@@ -7329,7 +7495,8 @@ const chainArray = [
     infoURL: 'https://evanesco.org/',
     shortName: 'avis',
     chainId: 1201,
-    networkId: 1201
+    networkId: 1201,
+    slip44: 1
   },
   {
     name: 'World Trade Technical Chain Mainnet',
@@ -7417,6 +7584,7 @@ const chainArray = [
     shortName: 'UltronTestnet',
     chainId: 1230,
     networkId: 1230,
+    slip44: 1,
     explorers: [
       {
         name: 'Ultron Testnet Explorer',
@@ -7502,6 +7670,7 @@ const chainArray = [
     shortName: 'TARC',
     chainId: 1244,
     networkId: 1244,
+    slip44: 1,
     explorers: [
       {
         name: 'archiescan',
@@ -7538,6 +7707,7 @@ const chainArray = [
     shortName: 'CICT',
     chainId: 1252,
     networkId: 1252,
+    slip44: 1,
     icon: 'cicchain',
     explorers: [
       {
@@ -7637,6 +7807,7 @@ const chainArray = [
     shortName: 'mbase',
     chainId: 1287,
     networkId: 1287,
+    slip44: 1,
     explorers: [
       {
         name: 'moonscan',
@@ -7670,6 +7841,7 @@ const chainArray = [
     shortName: 'swtr',
     chainId: 1291,
     networkId: 1291,
+    slip44: 1,
     icon: 'swisstronik',
     explorers: [
       {
@@ -7717,6 +7889,7 @@ const chainArray = [
     shortName: 'Bobabase',
     chainId: 1297,
     networkId: 1297,
+    slip44: 1,
     explorers: [
       {
         name: 'Bobabase block explorer',
@@ -7798,6 +7971,7 @@ const chainArray = [
     shortName: 'aiatestnet',
     chainId: 1320,
     networkId: 1320,
+    slip44: 1,
     explorers: [
       {
         name: 'AIA Chain Explorer Testnet',
@@ -7816,7 +7990,8 @@ const chainArray = [
     infoURL: 'https://geth.ethereum.org',
     shortName: 'geth',
     chainId: 1337,
-    networkId: 1337
+    networkId: 1337,
+    slip44: 1
   },
   {
     name: 'Elysium Testnet',
@@ -7829,6 +8004,7 @@ const chainArray = [
     shortName: 'ELST',
     chainId: 1338,
     networkId: 1338,
+    slip44: 1,
     explorers: [
       {
         name: 'Elysium testnet explorer',
@@ -7987,6 +8163,7 @@ const chainArray = [
     shortName: 'zkevmtest',
     chainId: 1402,
     networkId: 1402,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -8007,6 +8184,7 @@ const chainArray = [
     shortName: 'testnet-zkEVM-mango-pre-audit-upgraded',
     chainId: 1422,
     networkId: 1422,
+    slip44: 1,
     explorers: [
       {
         name: 'Polygon zkEVM explorer',
@@ -8062,6 +8240,7 @@ const chainArray = [
     shortName: 'testnet-zkEVM-mango',
     chainId: 1442,
     networkId: 1442,
+    slip44: 1,
     explorers: [
       {
         name: 'Polygon zkEVM explorer',
@@ -8081,6 +8260,7 @@ const chainArray = [
     shortName: 'gil',
     chainId: 1452,
     networkId: 1452,
+    slip44: 1,
     explorers: [
       {
         name: 'GIL Explorer',
@@ -8154,6 +8334,7 @@ const chainArray = [
     shortName: 'SherpaxTestnet',
     chainId: 1507,
     networkId: 1507,
+    slip44: 1,
     explorers: [
       {
         name: 'Sherpax Testnet Explorer',
@@ -8273,7 +8454,7 @@ const chainArray = [
     infoURL: 'https://horizen.io/',
     chainId: 1663,
     networkId: 1663,
-    slip44: 121,
+    slip44: 1,
     explorers: [
       {
         name: 'Gobi Testnet Block Explorer',
@@ -8345,6 +8526,7 @@ const chainArray = [
     shortName: 'tTBSI',
     chainId: 1708,
     networkId: 1708,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -8434,6 +8616,7 @@ const chainArray = [
     shortName: 'kerleano',
     chainId: 1804,
     networkId: 1804,
+    slip44: 1,
     icon: 'pocr',
     explorers: [
       {
@@ -8459,6 +8642,7 @@ const chainArray = [
     shortName: 'rAna',
     chainId: 1807,
     networkId: 1807,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -8518,7 +8702,7 @@ const chainArray = [
     shortName: 'cubet',
     chainId: 1819,
     networkId: 1819,
-    slip44: 1819,
+    slip44: 1,
     explorers: [
       {
         name: 'cubetest-scan',
@@ -8569,6 +8753,7 @@ const chainArray = [
     shortName: 'gitshockchain',
     chainId: 1881,
     networkId: 1881,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -8616,6 +8801,7 @@ const chainArray = [
     shortName: 'lightlink_pegasus',
     chainId: 1891,
     networkId: 1891,
+    slip44: 1,
     explorers: [
       {
         name: 'pegasus',
@@ -8692,6 +8878,7 @@ const chainArray = [
     shortName: 'tbitci',
     chainId: 1908,
     networkId: 1908,
+    slip44: 1,
     explorers: [
       {
         name: 'Bitci Explorer Testnet',
@@ -8730,6 +8917,7 @@ const chainArray = [
     shortName: 'onus-testnet',
     chainId: 1945,
     networkId: 1945,
+    slip44: 1,
     explorers: [
       {
         name: 'Onus explorer testnet',
@@ -8764,6 +8952,7 @@ const chainArray = [
     shortName: 'Dexilla',
     chainId: 1954,
     networkId: 1954,
+    slip44: 1,
     explorers: [
       {
         name: 'dos-mainnet',
@@ -8791,6 +8980,7 @@ const chainArray = [
     shortName: 'mtc',
     chainId: 1967,
     networkId: 1967,
+    slip44: 1,
     explorers: [
       {
         name: 'metaexplorer-eleanor',
@@ -8809,6 +8999,7 @@ const chainArray = [
     shortName: 'tscs',
     chainId: 1969,
     networkId: 1969,
+    slip44: 1,
     icon: 'super',
     explorers: [
       {
@@ -8848,6 +9039,7 @@ const chainArray = [
     shortName: 'atlr',
     chainId: 1971,
     networkId: 1971,
+    slip44: 1,
     icon: 'atlr'
   },
   {
@@ -8880,6 +9072,7 @@ const chainArray = [
     shortName: 'euntest',
     chainId: 1984,
     networkId: 1984,
+    slip44: 1,
     icon: 'eurus',
     explorers: [
       {
@@ -8920,6 +9113,7 @@ const chainArray = [
     shortName: 'satoshie_testnet',
     chainId: 1986,
     networkId: 1986,
+    slip44: 1,
     icon: 'satoshie',
     explorers: [
       {
@@ -8975,6 +9169,7 @@ const chainArray = [
     shortName: 'edx',
     chainId: 1995,
     networkId: 1995,
+    slip44: 1,
     icon: 'edexa',
     explorers: [
       {
@@ -9061,6 +9256,7 @@ const chainArray = [
     shortName: 'cloudwalk_testnet',
     chainId: 2008,
     networkId: 2008,
+    slip44: 1,
     explorers: [
       {
         name: 'CloudWalk Testnet Explorer',
@@ -9137,7 +9333,7 @@ const chainArray = [
     shortName: 'pmint_test',
     chainId: 2019,
     networkId: 2019,
-    slip44: 60,
+    slip44: 1,
     explorers: [
       {
         name: 'PublicMint Explorer',
@@ -9217,6 +9413,7 @@ const chainArray = [
     shortName: 'edgt',
     chainId: 2022,
     networkId: 2022,
+    slip44: 1,
     explorers: [
       {
         name: 'Edgscan by Bharathcoorg',
@@ -9235,6 +9432,7 @@ const chainArray = [
     shortName: 'taycan-testnet',
     chainId: 2023,
     networkId: 2023,
+    slip44: 1,
     icon: 'shuffle',
     explorers: [
       {
@@ -9313,6 +9511,7 @@ const chainArray = [
     shortName: 'kiwi',
     chainId: 2037,
     networkId: 2037,
+    slip44: 1,
     explorers: [
       {
         name: 'KIWI Explorer',
@@ -9332,6 +9531,7 @@ const chainArray = [
     shortName: 'shraptest',
     chainId: 2038,
     networkId: 2038,
+    slip44: 1,
     explorers: [
       {
         name: 'SHRAPNEL Explorer',
@@ -9379,6 +9579,7 @@ const chainArray = [
     shortName: 'stos-testnet',
     chainId: 2047,
     networkId: 2047,
+    slip44: 1,
     explorers: [
       {
         name: 'Stratos EVM Explorer (Blockscout)',
@@ -9510,6 +9711,7 @@ const chainArray = [
     shortName: 'esp',
     chainId: 2101,
     networkId: 2101,
+    slip44: 1,
     explorers: [
       {
         name: 'Ecoball Testnet Explorer',
@@ -9569,6 +9771,7 @@ const chainArray = [
     shortName: 'MEU',
     chainId: 2124,
     networkId: 2124,
+    slip44: 1,
     explorers: [
       {
         name: 'MP1Scan',
@@ -9604,7 +9807,7 @@ const chainArray = [
     shortName: 'dfio-meta-test',
     chainId: 2138,
     networkId: 21,
-    slip44: 60,
+    slip44: 1,
     ens: { registry: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85' },
     explorers: [
       {
@@ -9662,6 +9865,7 @@ const chainArray = [
     shortName: 'findora-testnet',
     chainId: 2153,
     networkId: 2153,
+    slip44: 1,
     explorers: [
       {
         name: 'findorascan',
@@ -9680,6 +9884,7 @@ const chainArray = [
     shortName: 'findora-forge',
     chainId: 2154,
     networkId: 2154,
+    slip44: 1,
     explorers: [
       {
         name: 'findorascan',
@@ -9923,6 +10128,7 @@ const chainArray = [
     shortName: 'sma',
     chainId: 2323,
     networkId: 2323,
+    slip44: 1,
     icon: 'soma',
     explorers: [
       {
@@ -9987,6 +10193,7 @@ const chainArray = [
     shortName: 'deprecated-kroma-sepolia',
     chain: 'ETH',
     networkId: 2357,
+    slip44: 1,
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     rpc: [ 'https://api.sepolia-deprecated.kroma.network' ],
     faucets: [],
@@ -10014,6 +10221,7 @@ const chainArray = [
     shortName: 'kroma-sepolia',
     chain: 'ETH',
     networkId: 2358,
+    slip44: 1,
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     rpc: [ 'https://api.sepolia.kroma.network' ],
     faucets: [],
@@ -10043,6 +10251,7 @@ const chainArray = [
     shortName: 'bombt',
     chainId: 2399,
     networkId: 2399,
+    slip44: 1,
     icon: 'bomb',
     explorers: [
       {
@@ -10103,6 +10312,7 @@ const chainArray = [
     shortName: 'thrc',
     chainId: 2458,
     networkId: 2458,
+    slip44: 1,
     icon: 'hybrid',
     explorers: [
       {
@@ -10150,6 +10360,7 @@ const chainArray = [
     shortName: 'u2u_nebulas',
     chainId: 2484,
     networkId: 2484,
+    slip44: 1,
     icon: 'u2u_nebulas',
     explorers: [
       {
@@ -10170,6 +10381,7 @@ const chainArray = [
     shortName: 'fraxchain-testnet',
     chainId: 2522,
     networkId: 2522,
+    slip44: 1,
     explorers: [],
     status: 'active'
   },
@@ -10276,6 +10488,7 @@ const chainArray = [
     shortName: 'Fuji-EZChain',
     chainId: 2613,
     networkId: 2613,
+    slip44: 1,
     icon: 'ezchain',
     explorers: [
       {
@@ -10295,6 +10508,7 @@ const chainArray = [
     shortName: 'twbt',
     chainId: 2625,
     networkId: 2625,
+    slip44: 1,
     icon: 'whitebit-testnet',
     explorers: [
       {
@@ -10314,6 +10528,7 @@ const chainArray = [
     shortName: 'tmorph',
     chainId: 2710,
     networkId: 2710,
+    slip44: 1,
     explorers: [
       {
         name: 'Morph Testnet Explorer',
@@ -10364,6 +10579,7 @@ const chainArray = [
     shortName: 'BobaGoerli',
     chainId: 2888,
     networkId: 2888,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -10575,7 +10791,8 @@ const chainArray = [
     infoURL: 'https://arabianchain.org',
     shortName: 'testdubx',
     chainId: 3270,
-    networkId: 3270
+    networkId: 3270,
+    slip44: 1
   },
   {
     name: 'Debounce Subnet Testnet',
@@ -10588,6 +10805,7 @@ const chainArray = [
     shortName: 'debounce-devnet',
     chainId: 3306,
     networkId: 3306,
+    slip44: 1,
     explorers: [
       {
         name: 'Debounce Devnet Explorer',
@@ -10606,7 +10824,8 @@ const chainArray = [
     infoURL: 'https://zcore.cash',
     shortName: 'zcrbeach',
     chainId: 3331,
-    networkId: 3331
+    networkId: 3331,
+    slip44: 1
   },
   {
     name: 'Web3Q Testnet',
@@ -10618,6 +10837,7 @@ const chainArray = [
     shortName: 'w3q-t',
     chainId: 3333,
     networkId: 3333,
+    slip44: 1,
     explorers: [
       {
         name: 'w3q-testnet',
@@ -10674,6 +10894,7 @@ const chainArray = [
     shortName: 'SCAIt',
     chainId: 3434,
     networkId: 3434,
+    slip44: 1,
     explorers: [
       {
         name: 'SecureChain',
@@ -10692,6 +10913,7 @@ const chainArray = [
     shortName: 'prbtestnet',
     chainId: 3500,
     networkId: 3500,
+    slip44: 1,
     icon: 'prb',
     explorers: [
       {
@@ -10749,6 +10971,7 @@ const chainArray = [
     shortName: 'pando-testnet',
     chainId: 3602,
     networkId: 3602,
+    slip44: 1,
     explorers: [
       {
         name: 'Pando Testnet Explorer',
@@ -10768,6 +10991,7 @@ const chainArray = [
     shortName: 'BTNX',
     chainId: 3636,
     networkId: 3636,
+    slip44: 1,
     explorers: [
       {
         name: '3xpl',
@@ -10878,6 +11102,7 @@ const chainArray = [
     shortName: 'SPCt',
     chainId: 3698,
     networkId: 3698,
+    slip44: 1,
     explorers: [
       {
         name: 'SenjePowers',
@@ -10915,6 +11140,7 @@ const chainArray = [
     shortName: 'xplatest',
     chainId: 3701,
     networkId: 3701,
+    slip44: 1,
     icon: 'xpla',
     explorers: [
       {
@@ -11008,6 +11234,7 @@ const chainArray = [
     shortName: 'kalytestnet',
     chainId: 3889,
     networkId: 3889,
+    slip44: 1,
     explorers: [
       {
         name: 'KalyScan',
@@ -11046,6 +11273,7 @@ const chainArray = [
     shortName: 'dost',
     chainId: 3939,
     networkId: 3939,
+    slip44: 1,
     icon: 'doschain',
     explorers: [
       {
@@ -11084,6 +11312,7 @@ const chainArray = [
     shortName: 'tdyno',
     chainId: 3967,
     networkId: 3967,
+    slip44: 1,
     explorers: [
       {
         name: 'DYNO Explorer',
@@ -11140,6 +11369,7 @@ const chainArray = [
     shortName: 'PERIUM',
     chainId: 4001,
     networkId: 4001,
+    slip44: 1,
     icon: 'peperium',
     explorers: [
       {
@@ -11164,6 +11394,7 @@ const chainArray = [
     shortName: 'tftm',
     chainId: 4002,
     networkId: 4002,
+    slip44: 1,
     icon: 'fantom',
     explorers: [
       {
@@ -11184,6 +11415,7 @@ const chainArray = [
     shortName: 'x1-fastnet',
     chainId: 4003,
     networkId: 4003,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -11208,6 +11440,7 @@ const chainArray = [
     shortName: 'BobaoperaTestnet',
     chainId: 4051,
     networkId: 4051,
+    slip44: 1,
     explorers: [
       {
         name: 'Bobaopera Testnet block explorer',
@@ -11244,6 +11477,7 @@ const chainArray = [
     shortName: 'Nahmii3Testnet',
     chainId: 4062,
     networkId: 4062,
+    slip44: 1,
     icon: 'nahmii',
     explorers: [
       {
@@ -11272,6 +11506,7 @@ const chainArray = [
     shortName: 'Oasis',
     chainId: 4090,
     networkId: 4090,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -11291,6 +11526,7 @@ const chainArray = [
     shortName: 'BNIt',
     chainId: 4096,
     networkId: 4096,
+    slip44: 1,
     explorers: [
       {
         name: 'Bitindi',
@@ -11329,7 +11565,7 @@ const chainArray = [
     shortName: 'aioz-testnet',
     chainId: 4102,
     networkId: 4102,
-    slip44: 60,
+    slip44: 1,
     explorers: [
       {
         name: 'AIOZ Network Testnet Explorer',
@@ -11349,6 +11585,7 @@ const chainArray = [
     shortName: 'humans_testnet',
     chainId: 4139,
     networkId: 4139,
+    slip44: 1,
     icon: 'humans-dark'
   },
   {
@@ -11362,6 +11599,7 @@ const chainArray = [
     shortName: 'TPBXt',
     chainId: 4141,
     networkId: 4141,
+    slip44: 1,
     explorers: [
       {
         name: 'Tipboxcoin',
@@ -11411,6 +11649,7 @@ const chainArray = [
     shortName: 'lukso-testnet',
     chainId: 4201,
     networkId: 4201,
+    slip44: 1,
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
   },
   {
@@ -11451,6 +11690,7 @@ const chainArray = [
     shortName: 'BobaFujiTestnet',
     chainId: 4328,
     networkId: 4328,
+    slip44: 1,
     explorers: [
       {
         name: 'Bobafuji Testnet block explorer',
@@ -11539,6 +11779,7 @@ const chainArray = [
     shortName: 'orderlyl2',
     chainId: 4460,
     networkId: 4460,
+    slip44: 1,
     icon: 'orderlyTestnet',
     explorers: [
       {
@@ -11577,6 +11818,7 @@ const chainArray = [
     shortName: 'iotex-testnet',
     chainId: 4690,
     networkId: 4690,
+    slip44: 1,
     explorers: [
       {
         name: 'testnet iotexscan',
@@ -11595,6 +11837,7 @@ const chainArray = [
     shortName: 'TESTMEV',
     chainId: 4759,
     networkId: 4759,
+    slip44: 1,
     icon: 'meverse',
     explorers: [
       {
@@ -11616,6 +11859,7 @@ const chainArray = [
     shortName: 'TBXN',
     chainId: 4777,
     networkId: 4777,
+    slip44: 1,
     icon: 'bxn',
     explorers: [
       {
@@ -11655,6 +11899,7 @@ const chainArray = [
     shortName: 'txvm',
     chainId: 4918,
     networkId: 4918,
+    slip44: 1,
     explorers: [
       {
         name: 'Venidium EVM Testnet Explorer',
@@ -11746,6 +11991,7 @@ const chainArray = [
     shortName: 'mantle-testnet',
     chainId: 5001,
     networkId: 5001,
+    slip44: 1,
     explorers: [
       {
         name: 'Mantle Testnet Explorer',
@@ -11790,6 +12036,7 @@ const chainArray = [
     shortName: 'mnt-sep',
     chainId: 5003,
     networkId: 5003,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -11815,6 +12062,7 @@ const chainArray = [
     shortName: 'tntest',
     chainId: 5005,
     networkId: 5005,
+    slip44: 1,
     explorers: [
       {
         name: 'Treasurenet EVM BlockExplorer',
@@ -11944,6 +12192,7 @@ const chainArray = [
     shortName: 'ttrn',
     chainId: 5353,
     networkId: 5353,
+    slip44: 1,
     icon: 'tritanium',
     explorers: [
       {
@@ -11965,6 +12214,7 @@ const chainArray = [
     shortName: 'VEX',
     chainId: 5522,
     networkId: 5522,
+    slip44: 1,
     explorers: [
       {
         name: 'Vexascan-EVM-TestNet',
@@ -12008,6 +12258,7 @@ const chainArray = [
     shortName: 'NahmiiTestnet',
     chainId: 5553,
     networkId: 5553,
+    slip44: 1,
     icon: 'nahmii',
     explorers: [
       {
@@ -12059,6 +12310,7 @@ const chainArray = [
     shortName: 'obnbt',
     chainId: 5611,
     networkId: 5611,
+    slip44: 1,
     explorers: [
       {
         name: 'bscscan-opbnb-testnet',
@@ -12081,7 +12333,8 @@ const chainArray = [
     infoURL: 'https://arcturuschain.io',
     shortName: 'ARCT',
     chainId: 5616,
-    networkId: 5616
+    networkId: 5616,
+    slip44: 1
   },
   {
     name: 'Tanssi EVM ContainerChain',
@@ -12113,6 +12366,7 @@ const chainArray = [
     shortName: 'tsys',
     chainId: 5700,
     networkId: 5700,
+    slip44: 1,
     explorers: [
       {
         name: 'Syscoin Testnet Block Explorer',
@@ -12152,6 +12406,7 @@ const chainArray = [
     shortName: 'satst',
     chainId: 5758,
     networkId: 5758,
+    slip44: 1,
     explorers: [
       {
         name: 'SatoshiChain Testnet Explorer',
@@ -12172,6 +12427,7 @@ const chainArray = [
     shortName: 'ggui',
     chainId: 5777,
     networkId: 5777,
+    slip44: 1,
     explorers: []
   },
   {
@@ -12194,6 +12450,7 @@ const chainArray = [
     shortName: 'OntologyTestnet',
     chainId: 5851,
     networkId: 5851,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -12230,6 +12487,7 @@ const chainArray = [
     shortName: 'TRESTEST',
     chainId: 6065,
     networkId: 6065,
+    slip44: 1,
     icon: 'tresleches',
     explorers: [
       {
@@ -12298,6 +12556,7 @@ const chainArray = [
     shortName: 'UPTN-TEST',
     chainId: 6118,
     networkId: 6118,
+    slip44: 1,
     explorers: [
       {
         name: 'UPTN Testnet Explorer',
@@ -12360,6 +12619,7 @@ const chainArray = [
     shortName: 'SRC-test',
     chainId: 6552,
     networkId: 6552,
+    slip44: 1,
     icon: 'scolcoin',
     explorers: [
       {
@@ -12383,6 +12643,7 @@ const chainArray = [
     shortName: 'fox',
     chainId: 6565,
     networkId: 6565,
+    slip44: 1,
     icon: 'fox',
     explorers: [
       {
@@ -12527,6 +12788,7 @@ const chainArray = [
     shortName: 'zetachain-athens',
     chainId: 7001,
     networkId: 7001,
+    slip44: 1,
     status: 'active',
     explorers: [
       {
@@ -12717,6 +12979,7 @@ const chainArray = [
     shortName: 'tadil',
     chainId: 7575,
     networkId: 7575,
+    slip44: 1,
     explorers: [
       {
         name: 'ADIL Testnet Explorer',
@@ -12778,6 +13041,7 @@ const chainArray = [
     shortName: 'trn-porcini',
     chainId: 7672,
     networkId: 7672,
+    slip44: 1,
     explorers: [
       {
         name: 'rootnet',
@@ -12840,6 +13104,7 @@ const chainArray = [
     shortName: 'TestnetCanto',
     chainId: 7701,
     networkId: 7701,
+    slip44: 1,
     explorers: [
       {
         name: 'Canto Testnet EVM Explorer (Blockscout)',
@@ -12865,6 +13130,7 @@ const chainArray = [
     shortName: 'tbitrock',
     chainId: 7771,
     networkId: 7771,
+    slip44: 1,
     explorers: [
       {
         name: 'Bitrock Testnet Explorer',
@@ -12889,6 +13155,7 @@ const chainArray = [
     shortName: 'RiseOfTheWarbotsTestnet',
     chainId: 7777,
     networkId: 7777,
+    slip44: 1,
     explorers: [
       {
         name: 'avascan',
@@ -12908,6 +13175,7 @@ const chainArray = [
     shortName: 'maal-test',
     chainId: 7860,
     networkId: 7860,
+    slip44: 1,
     explorers: [
       {
         name: 'maalscan testnet',
@@ -12929,6 +13197,7 @@ const chainArray = [
     shortName: 'tscas',
     chainId: 7878,
     networkId: 7878,
+    slip44: 1,
     explorers: [
       {
         name: 'Hazlor Testnet Explorer',
@@ -13013,6 +13282,7 @@ const chainArray = [
     shortName: 'teleport-testnet',
     chainId: 8001,
     networkId: 8001,
+    slip44: 1,
     icon: 'teleport',
     explorers: [
       {
@@ -13038,7 +13308,8 @@ const chainArray = [
     infoURL: 'https://mdgl.io',
     shortName: 'mdgl',
     chainId: 8029,
-    networkId: 8029
+    networkId: 8029,
+    slip44: 1
   },
   {
     name: 'Shardeum Liberty 1.X',
@@ -13139,6 +13410,7 @@ const chainArray = [
     shortName: 'meertest',
     chainId: 8131,
     networkId: 8131,
+    slip44: 1,
     icon: 'meer',
     explorers: [
       {
@@ -13224,6 +13496,7 @@ const chainArray = [
     shortName: 'tBOC',
     chainId: 8181,
     networkId: 8181,
+    slip44: 1,
     icon: 'beonechain',
     explorers: [
       {
@@ -13265,6 +13538,7 @@ const chainArray = [
     shortName: 'ttqf',
     chainId: 8194,
     networkId: 8194,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -13321,7 +13595,8 @@ const chainArray = [
     infoURL: 'https://www.kortho.io/',
     shortName: 'Kortho',
     chainId: 8285,
-    networkId: 8285
+    networkId: 8285,
+    slip44: 1
   },
   {
     name: 'Dracones Financial Services',
@@ -13403,6 +13678,7 @@ const chainArray = [
     shortName: 'toki-testnet',
     chainId: 8655,
     networkId: 8655,
+    slip44: 1,
     icon: 'toki',
     explorers: []
   },
@@ -13454,7 +13730,7 @@ const chainArray = [
     shortName: 'tolo',
     chainId: 8724,
     networkId: 8724,
-    slip44: 479
+    slip44: 1
   },
   {
     name: 'Alph Network',
@@ -13570,6 +13846,7 @@ const chainArray = [
     shortName: 'opl',
     chainId: 8882,
     networkId: 8882,
+    slip44: 1,
     explorers: [
       {
         name: 'Unique Scan / Opal',
@@ -13722,6 +13999,7 @@ const chainArray = [
     shortName: 'evmos-testnet',
     chainId: 9000,
     networkId: 9000,
+    slip44: 1,
     icon: 'evmos',
     explorers: [
       {
@@ -13802,6 +14080,7 @@ const chainArray = [
     shortName: '_old_tfire',
     chainId: 9170,
     networkId: 9170,
+    slip44: 1,
     explorers: [],
     status: 'deprecated'
   },
@@ -13835,6 +14114,7 @@ const chainArray = [
     shortName: 'DOGSt',
     chainId: 9339,
     networkId: 9339,
+    slip44: 1,
     explorers: [
       {
         name: 'Dogcoin',
@@ -13854,6 +14134,7 @@ const chainArray = [
     shortName: 'trpg',
     chainId: 9527,
     networkId: 9527,
+    slip44: 1,
     explorers: [
       {
         name: 'rangersscan-robin',
@@ -13872,6 +14153,7 @@ const chainArray = [
     shortName: 'QETTest',
     chainId: 9528,
     networkId: 9528,
+    slip44: 1,
     explorers: [
       {
         name: 'QEasyWeb3 Explorer',
@@ -13890,6 +14172,7 @@ const chainArray = [
     shortName: 'testneon',
     chainId: 9559,
     networkId: 9559,
+    slip44: 1,
     icon: 'neonlink',
     explorers: [
       {
@@ -13938,6 +14221,7 @@ const chainArray = [
     shortName: 'BobaBnbTestnet',
     chainId: 9728,
     networkId: 9728,
+    slip44: 1,
     explorers: [
       {
         name: 'Boba BNB Testnet block explorer',
@@ -13962,6 +14246,7 @@ const chainArray = [
     shortName: 'NetZt',
     chainId: 9768,
     networkId: 9768,
+    slip44: 1,
     explorers: [
       {
         name: 'MainnetZ',
@@ -14014,6 +14299,7 @@ const chainArray = [
     shortName: 'carbon-testnet',
     chainId: 9792,
     networkId: 9792,
+    slip44: 1,
     explorers: []
   },
   {
@@ -14029,6 +14315,7 @@ const chainArray = [
     shortName: 'tIMP',
     chainId: 9818,
     networkId: 9818,
+    slip44: 1,
     icon: 'timp',
     explorers: [
       {
@@ -14076,6 +14363,7 @@ const chainArray = [
     shortName: 'tMIND',
     chainId: 9977,
     networkId: 9977,
+    slip44: 1,
     explorers: [
       {
         name: 'Mind Chain explorer',
@@ -14144,6 +14432,7 @@ const chainArray = [
     shortName: 'alt-testnet',
     chainId: 9997,
     networkId: 9997,
+    slip44: 1,
     icon: 'altlayer',
     explorers: [
       {
@@ -14163,7 +14452,8 @@ const chainArray = [
     infoURL: 'https://docs.bccloud.net/',
     shortName: 'myn',
     chainId: 9999,
-    networkId: 9999
+    networkId: 9999,
+    slip44: 1
   },
   {
     name: 'Smart Bitcoin Cash',
@@ -14193,7 +14483,8 @@ const chainArray = [
     infoURL: 'http://smartbch.org/',
     shortName: 'smartbchtest',
     chainId: 10001,
-    networkId: 10001
+    networkId: 10001,
+    slip44: 1
   },
   {
     name: 'Gon Chain',
@@ -14237,6 +14528,7 @@ const chainArray = [
     shortName: 'joct',
     chainId: 10081,
     networkId: 10081,
+    slip44: 1,
     explorers: [
       {
         name: 'Testnet Block Explorer',
@@ -14288,6 +14580,7 @@ const chainArray = [
     shortName: 'chi',
     chainId: 10200,
     networkId: 10200,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout-chiadochain',
@@ -14337,6 +14630,7 @@ const chainArray = [
     shortName: 'aa',
     chainId: 10243,
     networkId: 10243,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -14375,6 +14669,7 @@ const chainArray = [
     shortName: 'TWLC',
     chainId: 10395,
     networkId: 10395,
+    slip44: 1,
     explorers: [
       {
         name: 'Worldland Explorer',
@@ -14416,6 +14711,7 @@ const chainArray = [
     shortName: 'Snow',
     chainId: 10508,
     networkId: 10508,
+    slip44: 1,
     explorers: [
       {
         name: 'ethernal',
@@ -14481,6 +14777,7 @@ const chainArray = [
     shortName: 'quadranstestnet',
     chainId: 10947,
     networkId: 10947,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -14545,6 +14842,7 @@ const chainArray = [
     shortName: 'astra-testnet',
     chainId: 11115,
     networkId: 11115,
+    slip44: 1,
     icon: 'astra',
     explorers: [
       {
@@ -14612,6 +14910,7 @@ const chainArray = [
     shortName: 'shyftt',
     chainId: 11437,
     networkId: 11437,
+    slip44: 1,
     explorers: [
       {
         name: 'Shyft Testnet BX',
@@ -14631,6 +14930,7 @@ const chainArray = [
     shortName: 'SRDXt',
     chainId: 11612,
     networkId: 11612,
+    slip44: 1,
     explorers: [
       {
         name: 'Sardis',
@@ -14711,6 +15011,7 @@ const chainArray = [
     shortName: 'tZERO',
     chainId: 12051,
     networkId: 12051,
+    slip44: 1,
     explorers: [
       {
         name: 'zeroscan',
@@ -14805,7 +15106,8 @@ const chainArray = [
     infoURL: 'https://blgchain.com',
     shortName: 'blgchain',
     chainId: 12321,
-    networkId: 12321
+    networkId: 12321,
+    slip44: 1
   },
   {
     name: 'Step Testnet',
@@ -14819,6 +15121,7 @@ const chainArray = [
     shortName: 'steptest',
     chainId: 12345,
     networkId: 12345,
+    slip44: 1,
     explorers: [
       {
         name: 'StepScan',
@@ -14857,6 +15160,7 @@ const chainArray = [
     shortName: 'tRIK',
     chainId: 12715,
     networkId: 12715,
+    slip44: 1,
     explorers: [
       {
         name: 'Rikeza Blockchain explorer',
@@ -14876,6 +15180,7 @@ const chainArray = [
     shortName: 'tqnet',
     chainId: 12890,
     networkId: 12890,
+    slip44: 1,
     explorers: [
       {
         name: 'Quantum Scan Testnet',
@@ -14941,6 +15246,7 @@ const chainArray = [
     icon: 'beam',
     chainId: 13337,
     networkId: 13337,
+    slip44: 1,
     explorers: [
       {
         name: 'Beam Explorer',
@@ -14978,6 +15284,7 @@ const chainArray = [
     shortName: 'imx-testnet',
     chainId: 13473,
     networkId: 13473,
+    slip44: 1,
     icon: 'immutable',
     explorers: [
       {
@@ -15018,6 +15325,7 @@ const chainArray = [
     shortName: 'SPS-Test',
     chainId: 14000,
     networkId: 14000,
+    slip44: 1,
     explorers: [
       {
         name: 'SPS Test Explorer',
@@ -15036,6 +15344,7 @@ const chainArray = [
     shortName: 'hmnd-t5',
     chainId: 14853,
     networkId: 14853,
+    slip44: 1,
     icon: 'humanode',
     explorers: []
   },
@@ -15087,6 +15396,7 @@ const chainArray = [
     shortName: 'TrustTestnet',
     chainId: 15555,
     networkId: 15555,
+    slip44: 1,
     explorers: [
       {
         name: 'Trust EVM Explorer',
@@ -15106,6 +15416,7 @@ const chainArray = [
     shortName: 'eos-testnet',
     chainId: 15557,
     networkId: 15557,
+    slip44: 1,
     explorers: [
       {
         name: 'EOS EVM Explorer',
@@ -15139,7 +15450,8 @@ const chainArray = [
     infoURL: 'https://metadot.network',
     shortName: 'mtttest',
     chainId: 16001,
-    networkId: 16001
+    networkId: 16001,
+    slip44: 1
   },
   {
     name: 'Genesys Mainnet',
@@ -15171,6 +15483,7 @@ const chainArray = [
     shortName: 'nyancat',
     chainId: 16688,
     networkId: 16688,
+    slip44: 1,
     icon: 'nyancat',
     explorers: [
       {
@@ -15211,6 +15524,7 @@ const chainArray = [
     shortName: 'tivar',
     chainId: 16888,
     networkId: 16888,
+    slip44: 1,
     explorers: [
       {
         name: 'ivarscan',
@@ -15237,6 +15551,7 @@ const chainArray = [
     shortName: 'holesky',
     chainId: 17000,
     networkId: 17000,
+    slip44: 1,
     icon: 'ethereum',
     status: 'incubating',
     explorers: [
@@ -15270,6 +15585,7 @@ const chainArray = [
     shortName: 'redstone',
     chainId: 17001,
     networkId: 17001,
+    slip44: 1,
     icon: 'redstone',
     explorers: [
       {
@@ -15310,6 +15626,7 @@ const chainArray = [
     shortName: 'PCT',
     chainId: 17180,
     networkId: 17180,
+    slip44: 1,
     icon: 'PLT',
     explorers: [
       {
@@ -15356,6 +15673,7 @@ const chainArray = [
     shortName: 'ZKST',
     chainId: 18000,
     networkId: 18000,
+    slip44: 1,
     infoURL: 'https://goexosphere.com',
     explorers: [
       {
@@ -15421,6 +15739,7 @@ const chainArray = [
     shortName: 'G8Ct',
     chainId: 18181,
     networkId: 18181,
+    slip44: 1,
     explorers: [
       {
         name: 'G8Chain',
@@ -15514,7 +15833,8 @@ const chainArray = [
     infoURL: 'https://callisto.network',
     shortName: 'CLOTestnet',
     chainId: 20729,
-    networkId: 79
+    networkId: 79,
+    slip44: 1
   },
   {
     name: 'P12 Chain',
@@ -15632,6 +15952,7 @@ const chainArray = [
     shortName: 'airdao-test',
     chainId: 22040,
     networkId: 22040,
+    slip44: 1,
     explorers: [
       {
         name: 'AirDAO Network Explorer',
@@ -15691,6 +16012,7 @@ const chainArray = [
     shortName: 'ABNt',
     chainId: 23006,
     networkId: 23006,
+    slip44: 1,
     explorers: [
       {
         name: 'Antofy Testnet',
@@ -15709,6 +16031,7 @@ const chainArray = [
     shortName: 'opside',
     chainId: 23118,
     networkId: 23118,
+    slip44: 1,
     icon: 'opside',
     explorers: [
       {
@@ -15751,6 +16074,7 @@ const chainArray = [
     shortName: 'sapphire-testnet',
     chainId: 23295,
     networkId: 23295,
+    slip44: 1,
     explorers: [
       {
         name: 'Oasis Sapphire Testnet Explorer',
@@ -15814,6 +16138,7 @@ const chainArray = [
     shortName: 'bkct',
     chainId: 25925,
     networkId: 25925,
+    slip44: 1,
     explorers: [
       {
         name: 'bkcscan-testnet',
@@ -15834,6 +16159,7 @@ const chainArray = [
     shortName: 'frm',
     chainId: 26026,
     networkId: 26026,
+    slip44: 1,
     explorers: [
       {
         name: 'polkadotjs',
@@ -15900,6 +16226,7 @@ const chainArray = [
     shortName: 'obgor',
     chainId: 28528,
     networkId: 28528,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -15939,6 +16266,7 @@ const chainArray = [
     shortName: 'Piece',
     chainId: 30067,
     networkId: 30067,
+    slip44: 1,
     explorers: [
       {
         name: 'Piece Scan',
@@ -15958,6 +16286,7 @@ const chainArray = [
     shortName: 'ceri',
     chainId: 30103,
     networkId: 30103,
+    slip44: 1,
     explorers: [
       {
         name: 'canxium explorer',
@@ -16008,6 +16337,7 @@ const chainArray = [
     shortName: 'CLD',
     chainId: 31224,
     networkId: 31224,
+    slip44: 1,
     explorers: [
       {
         name: 'cloudtxexplorer',
@@ -16026,7 +16356,7 @@ const chainArray = [
     shortName: 'got',
     chainId: 31337,
     networkId: 31337,
-    slip44: 6060,
+    slip44: 1,
     explorers: [
       {
         name: 'GoChain Testnet Explorer',
@@ -16148,6 +16478,7 @@ const chainArray = [
     shortName: 'zil-testnet',
     chainId: 33101,
     networkId: 33101,
+    slip44: 1,
     explorers: [
       {
         name: 'Zilliqa EVM Explorer',
@@ -16303,6 +16634,7 @@ const chainArray = [
     shortName: 'q-testnet',
     chainId: 35443,
     networkId: 35443,
+    slip44: 1,
     icon: 'q',
     explorers: [
       {
@@ -16523,6 +16855,7 @@ const chainArray = [
     shortName: 'emerald-testnet',
     chainId: 42261,
     networkId: 42261,
+    slip44: 1,
     explorers: [
       {
         name: 'Oasis Emerald Testnet Explorer',
@@ -16561,6 +16894,7 @@ const chainArray = [
     icon: 'gesoten',
     chainId: 42801,
     networkId: 42801,
+    slip44: 1,
     explorers: [
       {
         name: 'Gesoten Verse Testnet Explorer',
@@ -16581,6 +16915,7 @@ const chainArray = [
     shortName: 'keth',
     chainId: 42888,
     networkId: 42888,
+    slip44: 1,
     explorers: [
       {
         name: 'kintoscan',
@@ -16615,6 +16950,7 @@ const chainArray = [
     shortName: 'Fuji',
     chainId: 43113,
     networkId: 1,
+    slip44: 1,
     explorers: [
       {
         name: 'snowtrace',
@@ -16682,6 +17018,7 @@ const chainArray = [
     shortName: 'ZKFair-Testnet',
     chainId: 43851,
     networkId: 43851,
+    slip44: 1,
     icon: 'zkfair',
     explorers: [
       {
@@ -16718,6 +17055,7 @@ const chainArray = [
     shortName: 'ALFA',
     chain: 'CELO',
     networkId: 44787,
+    slip44: 1,
     nativeCurrency: { name: 'CELO', symbol: 'CELO', decimals: 18 },
     rpc: [
       'https://alfajores-forno.celo-testnet.org',
@@ -16771,7 +17109,7 @@ const chainArray = [
     shortName: 'tfsn',
     chainId: 46688,
     networkId: 46688,
-    slip44: 288,
+    slip44: 1,
     explorers: [
       {
         name: 'fsnscan',
@@ -16814,6 +17152,7 @@ const chainArray = [
     shortName: 'floripa',
     chainId: 49049,
     networkId: 49049,
+    slip44: 1,
     explorers: [
       {
         name: 'Wire Explorer',
@@ -16836,6 +17175,7 @@ const chainArray = [
     shortName: 'tbfc',
     chainId: 49088,
     networkId: 49088,
+    slip44: 1,
     icon: 'bifrost',
     explorers: [
       {
@@ -16855,7 +17195,7 @@ const chainArray = [
     shortName: 'tnrg',
     chainId: 49797,
     networkId: 49797,
-    slip44: 49797
+    slip44: 1
   },
   {
     name: 'Liveplex OracleEVM',
@@ -16870,6 +17210,47 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Yooldo Verse Mainnet',
+    chain: 'Yooldo Verse',
+    icon: 'yooldo_verse',
+    rpc: [ 'https://rpc.yooldo-verse.xyz/' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://yooldo.gg/',
+    shortName: 'YVM',
+    chainId: 50005,
+    networkId: 50005,
+    explorers: [
+      {
+        name: 'Yooldo Verse Explorer',
+        url: 'https://explorer.yooldo-verse.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
+    name: 'Yooldo Verse Testnet',
+    chain: 'Yooldo Verse',
+    icon: 'yooldo_verse',
+    rpc: [ 'https://rpc.testnet.yooldo-verse.xyz/' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://yooldo.gg/',
+    shortName: 'YVT',
+    chainId: 50006,
+    networkId: 50006,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Yooldo Verse Explorer',
+        url: 'https://explorer.testnet.yooldo-verse.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
     name: 'GTON Testnet',
     chain: 'GTON Testnet',
     rpc: [ 'https://testnet.gton.network/' ],
@@ -16879,6 +17260,7 @@ const chainArray = [
     shortName: 'tgton',
     chainId: 50021,
     networkId: 50021,
+    slip44: 1,
     explorers: [
       {
         name: 'GTON Testnet Network Explorer',
@@ -16902,6 +17284,7 @@ const chainArray = [
     shortName: 'Lumoz-Testnet',
     chainId: 51178,
     networkId: 51178,
+    slip44: 1,
     icon: 'opside-new',
     explorers: [
       {
@@ -16982,6 +17365,7 @@ const chainArray = [
     shortName: 'ISLMT',
     chainId: 54211,
     networkId: 54211,
+    slip44: 1,
     explorers: [
       {
         name: 'TestEdge HAQQ Explorer',
@@ -17001,6 +17385,7 @@ const chainArray = [
     shortName: 'ToronetTestnet',
     chainId: 54321,
     networkId: 54321,
+    slip44: 1,
     ens: { registry: '0x059C474f26D65B0458F9da10A649a7322aB02C09' },
     explorers: [
       {
@@ -17061,6 +17446,7 @@ const chainArray = [
     shortName: 'trei',
     chainId: 55556,
     networkId: 55556,
+    slip44: 1,
     explorers: [
       {
         name: 'reiscan',
@@ -17132,6 +17518,7 @@ const chainArray = [
     shortName: 'tsys-rollux',
     chainId: 57000,
     networkId: 57000,
+    slip44: 1,
     explorers: [
       {
         name: 'Rollux Testnet Explorer',
@@ -17182,6 +17569,7 @@ const chainArray = [
     shortName: 'linea-testnet',
     chainId: 59140,
     networkId: 59140,
+    slip44: 1,
     icon: 'linea',
     parent: {
       type: 'L2',
@@ -17282,6 +17670,7 @@ const chainArray = [
     shortName: 'TKM-test0',
     chainId: 60000,
     networkId: 60000,
+    slip44: 1,
     explorers: [
       {
         name: 'thinkiumscan',
@@ -17300,6 +17689,7 @@ const chainArray = [
     shortName: 'TKM-test1',
     chainId: 60001,
     networkId: 60001,
+    slip44: 1,
     explorers: [
       {
         name: 'thinkiumscan',
@@ -17318,6 +17708,7 @@ const chainArray = [
     shortName: 'TKM-test2',
     chainId: 60002,
     networkId: 60002,
+    slip44: 1,
     explorers: [
       {
         name: 'thinkiumscan',
@@ -17336,6 +17727,7 @@ const chainArray = [
     shortName: 'TKM-test103',
     chainId: 60103,
     networkId: 60103,
+    slip44: 1,
     explorers: [
       {
         name: 'thinkiumscan',
@@ -17420,6 +17812,7 @@ const chainArray = [
     shortName: 'BKLV',
     chain: 'CELO',
     networkId: 62320,
+    slip44: 1,
     nativeCurrency: { name: 'CELO', symbol: 'CELO', decimals: 18 },
     rpc: [ 'https://baklava-forno.celo-testnet.org' ],
     faucets: [
@@ -17477,6 +17870,7 @@ const chainArray = [
     shortName: 'ecs-testnet',
     chainId: 63001,
     networkId: 63001,
+    slip44: 1,
     icon: 'ecredits',
     explorers: [
       {
@@ -17517,6 +17911,7 @@ const chainArray = [
     shortName: 'janusnetwork-testnet',
     chainId: 66988,
     networkId: 66988,
+    slip44: 1,
     status: 'active',
     explorers: [
       {
@@ -17589,6 +17984,7 @@ const chainArray = [
     shortName: 'cndr',
     chainId: 69420,
     networkId: 69420,
+    slip44: 1,
     explorers: [
       {
         name: 'Condrieu explorer',
@@ -17706,7 +18102,8 @@ const chainArray = [
     infoURL: 'https://github.com/nervosnetwork/godwoken',
     shortName: 'ckb',
     chainId: 71393,
-    networkId: 1
+    networkId: 1,
+    slip44: 1
   },
   {
     name: 'Godwoken Testnet v1',
@@ -17721,6 +18118,7 @@ const chainArray = [
     shortName: 'gw-testnet-v1',
     chainId: 71401,
     networkId: 71401,
+    slip44: 1,
     explorers: [
       {
         name: 'GWScan Block Explorer',
@@ -17778,7 +18176,8 @@ const chainArray = [
     infoURL: 'https://energyweb.org',
     shortName: 'vt',
     chainId: 73799,
-    networkId: 73799
+    networkId: 73799,
+    slip44: 1
   },
   {
     name: 'Mixin Virtual Machine',
@@ -17830,6 +18229,7 @@ const chainArray = [
     shortName: 'fnc',
     chainId: 77238,
     networkId: 77238,
+    slip44: 1,
     explorers: [
       {
         name: 'Foundry Scan Testnet',
@@ -17886,7 +18286,8 @@ const chainArray = [
     infoURL: 'https://primusmoney.com',
     shortName: 'firenze',
     chainId: 78110,
-    networkId: 78110
+    networkId: 78110,
+    slip44: 1
   },
   {
     name: 'Dragonfly Mainnet (Hexapod)',
@@ -17924,6 +18325,7 @@ const chainArray = [
     shortName: 'amplify',
     chainId: 78430,
     networkId: 78430,
+    slip44: 1,
     explorers: [
       {
         name: 'AMPLIFY Explorer',
@@ -17943,6 +18345,7 @@ const chainArray = [
     shortName: 'bulletin',
     chainId: 78431,
     networkId: 78431,
+    slip44: 1,
     explorers: [
       {
         name: 'BULLETIN Explorer',
@@ -17962,6 +18365,7 @@ const chainArray = [
     shortName: 'conduit',
     chainId: 78432,
     networkId: 78432,
+    slip44: 1,
     explorers: [
       {
         name: 'CONDUIT Explorer',
@@ -17981,6 +18385,7 @@ const chainArray = [
     shortName: 'STANDt',
     chainId: 79879,
     networkId: 79879,
+    slip44: 1,
     explorers: [
       {
         name: 'Gold Smart Chain',
@@ -18007,6 +18412,7 @@ const chainArray = [
     shortName: 'maticmum',
     chainId: 80001,
     networkId: 80001,
+    slip44: 1,
     explorers: [
       {
         name: 'polygonscan',
@@ -18044,6 +18450,7 @@ const chainArray = [
     icon: 'meer',
     chainId: 81341,
     networkId: 81341,
+    slip44: 1,
     status: 'incubating'
   },
   {
@@ -18083,6 +18490,7 @@ const chainArray = [
     icon: 'meer',
     chainId: 81351,
     networkId: 81351,
+    slip44: 1,
     status: 'incubating'
   },
   {
@@ -18122,6 +18530,7 @@ const chainArray = [
     icon: 'meer',
     chainId: 81361,
     networkId: 81361,
+    slip44: 1,
     status: 'incubating'
   },
   {
@@ -18185,6 +18594,7 @@ const chainArray = [
     shortName: 'basegor',
     chainId: 84531,
     networkId: 84531,
+    slip44: 1,
     icon: 'baseTestnet',
     explorers: [
       {
@@ -18216,6 +18626,7 @@ const chainArray = [
     shortName: 'basesep',
     chainId: 84532,
     networkId: 84532,
+    slip44: 1,
     icon: 'baseTestnet',
     explorers: [
       {
@@ -18268,6 +18679,7 @@ const chainArray = [
     shortName: 'NAUTTest',
     chainId: 88002,
     networkId: 88002,
+    slip44: 1,
     explorers: [
       {
         name: 'Nautscan',
@@ -18288,6 +18700,7 @@ const chainArray = [
     shortName: 'chz',
     chainId: 88880,
     networkId: 88880,
+    slip44: 1,
     explorers: [
       {
         name: 'scoville-explorer',
@@ -18373,6 +18786,7 @@ const chainArray = [
     shortName: 'lambda-testnet',
     chainId: 92001,
     networkId: 92001,
+    slip44: 1,
     icon: 'lambda',
     explorers: [
       {
@@ -18403,6 +18817,7 @@ const chainArray = [
     shortName: 'mantis',
     chainId: 96970,
     networkId: 96970,
+    slip44: 1,
     explorers: [
       {
         name: 'Mantis Blockscout',
@@ -18442,6 +18857,7 @@ const chainArray = [
     shortName: 'ELt',
     chainId: 99099,
     networkId: 99099,
+    slip44: 1,
     explorers: [
       {
         name: 'eLiberty Testnet',
@@ -18459,7 +18875,8 @@ const chainArray = [
     infoURL: 'https://www.ubchain.site',
     shortName: 'usctest',
     chainId: 99998,
-    networkId: 99998
+    networkId: 99998,
+    slip44: 1
   },
   {
     name: 'UB Smart Chain',
@@ -18692,6 +19109,7 @@ const chainArray = [
     shortName: 'vechain-testnet',
     chainId: 100010,
     networkId: 100010,
+    slip44: 1,
     explorers: [
       {
         name: 'VeChain Explorer',
@@ -18725,6 +19143,7 @@ const chainArray = [
     shortName: 'SVRNt',
     chainId: 101010,
     networkId: 101010,
+    slip44: 1,
     explorers: [
       {
         name: 'Soverun',
@@ -18976,6 +19395,7 @@ const chainArray = [
     shortName: 'testsbr',
     chainId: 111000,
     networkId: 111000,
+    slip44: 1,
     icon: 'siberium',
     explorers: [
       {
@@ -19105,6 +19525,7 @@ const chainArray = [
     shortName: 'taiko-a2',
     chainId: 167004,
     networkId: 167004,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -19202,6 +19623,7 @@ const chainArray = [
     shortName: 'condor',
     chainId: 188881,
     networkId: 188881,
+    slip44: 1,
     explorers: [
       {
         name: 'CondorScan',
@@ -19224,6 +19646,7 @@ const chainArray = [
     shortName: 'milkTAda',
     chainId: 200101,
     networkId: 200101,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -19243,6 +19666,7 @@ const chainArray = [
     shortName: 'milkTAlgo',
     chainId: 200202,
     networkId: 200202,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -19300,6 +19724,7 @@ const chainArray = [
     shortName: 'alayadev',
     chainId: 201030,
     networkId: 1,
+    slip44: 1,
     icon: 'alaya',
     explorers: [
       {
@@ -19341,6 +19766,7 @@ const chainArray = [
     shortName: 'tDSC',
     chainId: 202020,
     networkId: 202020,
+    slip44: 1,
     icon: 'dsc',
     explorers: [
       {
@@ -19377,6 +19803,7 @@ const chainArray = [
     chain: 'ETH',
     chainId: 202624,
     networkId: 202624,
+    slip44: 1,
     icon: 'twala',
     nativeCurrency: { name: 'Twala Coin', symbol: 'TWL', decimals: 18 },
     rpc: [
@@ -19487,6 +19914,7 @@ const chainArray = [
     shortName: 'reap-testnet',
     chainId: 221231,
     networkId: 221231,
+    slip44: 1,
     icon: 'reapchain',
     explorers: [
       {
@@ -19526,6 +19954,7 @@ const chainArray = [
     shortName: 'hsktest',
     chainId: 230315,
     networkId: 230315,
+    slip44: 1,
     icon: 'hsk',
     explorers: [
       {
@@ -19544,7 +19973,8 @@ const chainArray = [
     infoURL: 'https://haymoswap.web.app/',
     shortName: 'hym',
     chainId: 234666,
-    networkId: 234666
+    networkId: 234666,
+    slip44: 1
   },
   {
     name: 'ARTIS sigma1',
@@ -19567,7 +19997,8 @@ const chainArray = [
     infoURL: 'https://artis.network',
     shortName: 'atstau',
     chainId: 246785,
-    networkId: 246785
+    networkId: 246785,
+    slip44: 1
   },
   {
     name: 'Saakuru Testnet',
@@ -19580,6 +20011,7 @@ const chainArray = [
     shortName: 'saakuru-testnet',
     chainId: 247253,
     networkId: 247253,
+    slip44: 1,
     explorers: [
       {
         name: 'saakuru-explorer-testnet',
@@ -19623,7 +20055,7 @@ const chainArray = [
     shortName: 'gz-testnet',
     chainId: 266256,
     networkId: 266256,
-    slip44: 266256,
+    slip44: 1,
     explorers: []
   },
   {
@@ -19637,6 +20069,7 @@ const chainArray = [
     shortName: 'EGONt',
     chainId: 271271,
     networkId: 271271,
+    slip44: 1,
     explorers: [
       {
         name: 'EgonCoin Testnet',
@@ -19734,6 +20167,7 @@ const chainArray = [
     shortName: 'avst',
     chainId: 333331,
     networkId: 333331,
+    slip44: 1,
     icon: 'aves',
     explorers: [
       {
@@ -19751,6 +20185,7 @@ const chainArray = [
     chain: 'N3-Test',
     icon: 'nativ3',
     networkId: 333333,
+    slip44: 1,
     nativeCurrency: { name: 'USNT', symbol: 'USNT', decimals: 18 },
     rpc: [ 'https://rpctest.nativ3.network', 'wss://wstest.nativ3.network' ],
     faucets: [],
@@ -19778,6 +20213,7 @@ const chainArray = [
     shortName: 'oonetest',
     chainId: 333666,
     networkId: 333666,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -19814,7 +20250,8 @@ const chainArray = [
     infoURL: 'https://polis.tech',
     shortName: 'sparta',
     chainId: 333888,
-    networkId: 333888
+    networkId: 333888,
+    slip44: 1
   },
   {
     name: 'Polis Mainnet',
@@ -19838,6 +20275,7 @@ const chainArray = [
     shortName: 'Bitfinity',
     chainId: 355113,
     networkId: 355113,
+    slip44: 1,
     explorers: [
       {
         name: 'Bitfinity Block Explorer',
@@ -19869,6 +20307,7 @@ const chainArray = [
     shortName: 'hap-testnet',
     chainId: 373737,
     networkId: 373737,
+    slip44: 1,
     icon: 'hap',
     explorers: [
       {
@@ -19966,6 +20405,7 @@ const chainArray = [
     shortName: 'tKEK',
     chainId: 420666,
     networkId: 1,
+    slip44: 1,
     icon: 'kek',
     explorers: [
       {
@@ -19987,6 +20427,7 @@ const chainArray = [
     shortName: 'alterium',
     chainId: 420692,
     networkId: 420692,
+    slip44: 1,
     parent: {
       type: 'L2',
       chain: 'eip155-5',
@@ -20007,6 +20448,7 @@ const chainArray = [
     shortName: 'arb-rinkeby',
     chain: 'ETH',
     networkId: 421611,
+    slip44: 1,
     nativeCurrency: { name: 'Arbitrum Rinkeby Ether', symbol: 'ETH', decimals: 18 },
     rpc: [ 'https://rinkeby.arbitrum.io/rpc' ],
     faucets: [ 'http://fauceth.komputing.org?chain=421611&address=${ADDRESS}' ],
@@ -20036,6 +20478,7 @@ const chainArray = [
     shortName: 'arb-goerli',
     chain: 'ETH',
     networkId: 421613,
+    slip44: 1,
     nativeCurrency: { name: 'Arbitrum Goerli Ether', symbol: 'AGOR', decimals: 18 },
     rpc: [
       'https://goerli-rollup.arbitrum.io/rpc',
@@ -20068,6 +20511,7 @@ const chainArray = [
     shortName: 'arb-sep',
     chainId: 421614,
     networkId: 421614,
+    slip44: 1,
     explorers: [
       {
         name: 'Arbitrum Sepolia Rollup Testnet Explorer',
@@ -20093,6 +20537,7 @@ const chainArray = [
     shortName: 'fastexTestnet',
     chainId: 424242,
     networkId: 424242,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
@@ -20126,6 +20571,7 @@ const chainArray = [
     shortName: 'dexalot-testnet',
     chainId: 432201,
     networkId: 432201,
+    slip44: 1,
     explorers: [
       {
         name: 'Avalanche Subnet Testnet Explorer',
@@ -20163,6 +20609,7 @@ const chainArray = [
     shortName: 'wlkt',
     chainId: 444900,
     networkId: 444900,
+    slip44: 1,
     explorers: [
       {
         name: 'weelink-testnet',
@@ -20180,7 +20627,8 @@ const chainArray = [
     infoURL: 'https://patex.io/',
     shortName: 'psep',
     chainId: 471100,
-    networkId: 471100
+    networkId: 471100,
+    slip44: 1
   },
   {
     name: 'OpenChain Mainnet',
@@ -20215,6 +20663,7 @@ const chainArray = [
     shortName: 'cmp',
     chainId: 512512,
     networkId: 512512,
+    slip44: 1,
     explorers: [
       {
         name: 'Galaxy Scan',
@@ -20257,6 +20706,7 @@ const chainArray = [
     shortName: 'scr-sepolia',
     chainId: 534351,
     networkId: 534351,
+    slip44: 1,
     explorers: [
       {
         name: 'Scroll Sepolia Etherscan',
@@ -20320,6 +20770,7 @@ const chainArray = [
     shortName: 'scr-alpha',
     chainId: 534353,
     networkId: 534353,
+    slip44: 1,
     explorers: [
       {
         name: 'Scroll Alpha Testnet Block Explorer',
@@ -20340,6 +20791,7 @@ const chainArray = [
     shortName: 'scr-prealpha',
     chainId: 534354,
     networkId: 534354,
+    slip44: 1,
     explorers: []
   },
   {
@@ -20461,7 +20913,7 @@ const chainArray = [
     shortName: 'vpioneer',
     chainId: 666666,
     networkId: 666666,
-    slip44: 60
+    slip44: 1
   },
   {
     name: 'Hela Official Runtime Testnet',
@@ -20474,6 +20926,7 @@ const chainArray = [
     shortName: 'hela-testnet',
     chainId: 666888,
     networkId: 666888,
+    slip44: 1,
     explorers: [
       {
         name: 'Hela Official Runtime Testnet Explorer',
@@ -20497,6 +20950,7 @@ const chainArray = [
     shortName: 'BRNKCTEST',
     chainId: 751230,
     networkId: 751230,
+    slip44: 1,
     explorers: [
       {
         name: 'brnktestscan',
@@ -20671,6 +21125,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Astria EVM Dusknet',
+    chain: 'RIA',
+    icon: 'astria',
+    chainId: 912559,
+    networkId: 912559,
+    infoURL: 'https://docs.astria.org',
+    shortName: 'ria-dev',
+    nativeCurrency: { name: 'RIA', symbol: 'RIA', decimals: 18 },
+    rpc: [ 'https://rpc.evm.dusk-2.devnet.astria.org' ],
+    faucets: [ 'https://faucet.evm.dusk-1.devnet.astria.org/' ],
+    explorers: [
+      {
+        name: 'Astria EVM Dusknet Explorer',
+        url: 'https://explorer.evm.dusk-2.devnet.astria.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Posichain Devnet Shard 0',
     chain: 'PSC',
     rpc: [ 'https://api.s0.d.posichain.org' ],
@@ -20716,6 +21189,7 @@ const chainArray = [
     shortName: 'tFNCY',
     chainId: 923018,
     networkId: 923018,
+    slip44: 1,
     icon: 'fncy',
     explorers: [
       {
@@ -20941,6 +21415,7 @@ const chainArray = [
     shortName: 'dbk',
     chainId: 2021398,
     networkId: 2021398,
+    slip44: 1,
     explorers: [
       {
         name: 'DeBank Chain Explorer',
@@ -20980,6 +21455,7 @@ const chainArray = [
     shortName: 'platondev',
     chainId: 2203181,
     networkId: 1,
+    slip44: 1,
     icon: 'platon',
     status: 'deprecated',
     explorers: [
@@ -21003,6 +21479,7 @@ const chainArray = [
     shortName: 'platondev2',
     chainId: 2206132,
     networkId: 1,
+    slip44: 1,
     icon: 'platon',
     explorers: [
       {
@@ -21049,6 +21526,7 @@ const chainArray = [
     shortName: 'mantaTestnet',
     chainId: 3441005,
     networkId: 3441005,
+    slip44: 1,
     icon: 'manta',
     explorers: [
       {
@@ -21104,6 +21582,7 @@ const chainArray = [
     shortName: 'MXC',
     chainId: 5167003,
     networkId: 5167003,
+    slip44: 1,
     explorers: [
       {
         name: 'MXC Wannsee zkEVM Testnet',
@@ -21123,6 +21602,7 @@ const chainArray = [
     shortName: 'etn-testnet',
     chainId: 5201420,
     networkId: 5201420,
+    slip44: 1,
     icon: 'electroneum',
     explorers: [
       {
@@ -21175,6 +21655,7 @@ const chainArray = [
     shortName: 'imversed-testnet',
     chainId: 5555558,
     networkId: 5555558,
+    slip44: 1,
     icon: 'imversed',
     explorers: [
       {
@@ -21240,6 +21721,7 @@ const chainArray = [
     shortName: 'tqom',
     chainId: 7668378,
     networkId: 7668378,
+    slip44: 1,
     icon: 'qom',
     explorers: [
       {
@@ -21331,6 +21813,7 @@ const chainArray = [
     shortName: 'quarix-testnet',
     chainId: 8888881,
     networkId: 8888881,
+    slip44: 1,
     icon: 'quarix',
     explorers: []
   },
@@ -21404,6 +21887,7 @@ const chainArray = [
     shortName: 'plian-testnet-l2',
     chainId: 10067275,
     networkId: 10067275,
+    slip44: 1,
     explorers: [
       {
         name: 'piscan',
@@ -21456,6 +21940,7 @@ const chainArray = [
     shortName: 'sep',
     chainId: 11155111,
     networkId: 11155111,
+    slip44: 1,
     explorers: [
       {
         name: 'etherscan-sepolia',
@@ -21479,6 +21964,7 @@ const chainArray = [
     shortName: 'opsep',
     chainId: 11155420,
     networkId: 11155420,
+    slip44: 1,
     explorers: [
       {
         name: 'opscout',
@@ -21528,6 +22014,7 @@ const chainArray = [
     shortName: 'plian-testnet',
     chainId: 16658437,
     networkId: 16658437,
+    slip44: 1,
     explorers: [
       {
         name: 'piscan',
@@ -21647,6 +22134,7 @@ const chainArray = [
     shortName: 'exlvolta',
     chainId: 27082017,
     networkId: 27082017,
+    slip44: 1,
     explorers: [
       {
         name: 'exlscan',
@@ -21746,6 +22234,7 @@ const chainArray = [
     shortName: 'mais',
     chainId: 43214913,
     networkId: 43214913,
+    slip44: 1,
     explorers: [
       {
         name: 'maistesntet',
@@ -21777,6 +22266,7 @@ const chainArray = [
     shortName: 'bakerloo-0',
     chainId: 65010000,
     networkId: 65010000,
+    slip44: 1,
     icon: 'autonity',
     explorers: [
       {
@@ -21799,6 +22289,7 @@ const chainArray = [
     shortName: 'bakerloo-01',
     chainId: 65010001,
     networkId: 65010001,
+    slip44: 1,
     icon: 'autonity',
     explorers: [
       {
@@ -21819,6 +22310,7 @@ const chainArray = [
     shortName: 'piccadilly-0',
     chainId: 65100000,
     networkId: 65100000,
+    slip44: 1,
     icon: 'autonity',
     explorers: [
       {
@@ -21841,6 +22333,7 @@ const chainArray = [
     shortName: 'piccadilly-01',
     chainId: 65100001,
     networkId: 65100001,
+    slip44: 1,
     icon: 'autonity',
     explorers: [
       {
@@ -21861,6 +22354,7 @@ const chainArray = [
     shortName: 'frametest',
     chainId: 68840142,
     networkId: 68840142,
+    slip44: 1,
     explorers: [
       {
         name: 'Frame Testnet Explorer',
@@ -21898,7 +22392,8 @@ const chainArray = [
     infoURL: 'https://joys.digital',
     shortName: 'TOYS',
     chainId: 99415706,
-    networkId: 99415706
+    networkId: 99415706,
+    slip44: 1
   },
   {
     name: 'Gather Mainnet Network',
@@ -21933,6 +22428,7 @@ const chainArray = [
     shortName: 'kanazawa',
     chainId: 222000222,
     networkId: 222000222,
+    slip44: 1,
     explorers: [
       {
         name: 'explorer',
@@ -22003,6 +22499,7 @@ const chainArray = [
     shortName: 'neonevm-testnet',
     chainId: 245022940,
     networkId: 245022940,
+    slip44: 1,
     explorers: [
       {
         name: 'native',
@@ -22090,6 +22587,7 @@ const chainArray = [
     shortName: 'calypso-testnet',
     chainId: 344106930,
     networkId: 344106930,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -22108,6 +22606,7 @@ const chainArray = [
     shortName: 'tGTH',
     chainId: 356256156,
     networkId: 356256156,
+    slip44: 1,
     icon: 'gather',
     explorers: [
       {
@@ -22132,6 +22631,7 @@ const chainArray = [
     shortName: 'europa-testnet',
     chainId: 476158412,
     networkId: 476158412,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -22172,6 +22672,7 @@ const chainArray = [
     shortName: 'nebula-testnet',
     chainId: 503129905,
     networkId: 503129905,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -22191,6 +22692,7 @@ const chainArray = [
     shortName: 'zsep',
     chainId: 999999999,
     networkId: 999999999,
+    slip44: 1,
     explorers: [
       {
         name: 'Zora Sepolia Testnet Network Explorer',
@@ -22279,6 +22781,7 @@ const chainArray = [
     shortName: 'aurora-testnet',
     chainId: 1313161555,
     networkId: 1313161555,
+    slip44: 1,
     explorers: [
       {
         name: 'aurorascan.dev',
@@ -22333,6 +22836,7 @@ const chainArray = [
     shortName: 'chaos-tenet',
     chainId: 1351057110,
     networkId: 1351057110,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -22399,6 +22903,7 @@ const chainArray = [
     shortName: 'titan-testnet',
     chainId: 1517929550,
     networkId: 1517929550,
+    slip44: 1,
     explorers: [
       {
         name: 'Blockscout',
@@ -22624,6 +23129,7 @@ const chainArray = [
     shortName: 'a8',
     chainId: 2863311531,
     networkId: 2863311531,
+    slip44: 1,
     explorers: [
       {
         name: 'a8scan-testnet',
@@ -22655,6 +23161,7 @@ const chainArray = [
     shortName: 'frankenstein',
     chainId: 4216137055,
     networkId: 4216137055,
+    slip44: 1,
     explorers: [
       {
         name: 'OneLedger Block Explorer',
@@ -22674,6 +23181,7 @@ const chainArray = [
     shortName: 'tpalm',
     chainId: 11297108099,
     networkId: 11297108099,
+    slip44: 1,
     explorers: [
       {
         name: 'Palm Testnet Explorer',
@@ -22755,6 +23263,7 @@ const chainArray = [
     shortName: 'ntt-haradev',
     chainId: 197710212031,
     networkId: 197710212031,
+    slip44: 1,
     icon: 'ntity',
     explorers: [
       {
@@ -22822,6 +23331,7 @@ const chainArray = [
     shortName: 'gw-testnet-v1-deprecated',
     chainId: 868455272153094,
     networkId: 868455272153094,
+    slip44: 1,
     status: 'deprecated',
     explorers: [
       {
