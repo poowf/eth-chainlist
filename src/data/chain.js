@@ -9180,6 +9180,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Kyoto Testnet',
+    chain: 'KYOTO',
+    rpc: [ 'https://rpc.testnet.kyotoprotocol.io:8545' ],
+    faucets: [ 'https://faucet.kyotoprotocol.io' ],
+    nativeCurrency: { name: 'Kyoto', symbol: 'KYOTO', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://kyotoprotocol.io',
+    shortName: 'kyoto-testnet',
+    chainId: 1998,
+    networkId: 1998,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Kyotoscan',
+        url: 'https://testnet.kyotoscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Dogechain Mainnet',
     chain: 'DC',
     icon: 'dogechain',
@@ -15256,6 +15276,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Immutable zkEVM',
+    chain: 'Immutable zkEVM',
+    rpc: [ 'https://rpc.immutable.com' ],
+    faucets: [ 'https://docs.immutable.com/docs/zkEVM/guides/faucet' ],
+    nativeCurrency: { name: 'IMX', symbol: 'IMX', decimals: 18 },
+    infoURL: 'https://www.immutable.com',
+    shortName: 'imx',
+    chainId: 13371,
+    networkId: 13371,
+    icon: 'immutable',
+    explorers: [
+      {
+        name: 'Immutable explorer',
+        url: 'https://explorer.immutable.com',
+        standard: 'EIP3091',
+        icon: 'immutable'
+      }
+    ]
+  },
+  {
     name: 'Phoenix Mainnet',
     chain: 'Phoenix',
     rpc: [ 'https://rpc.phoenixplorer.com/' ],
@@ -20504,7 +20544,10 @@ const chainArray = [
     name: 'Arbitrum Sepolia',
     title: 'Arbitrum Sepolia Rollup Testnet',
     chain: 'ETH',
-    rpc: [ 'https://sepolia-rollup.arbitrum.io/rpc' ],
+    rpc: [
+      'https://sepolia-rollup.arbitrum.io/rpc',
+      'https://arbitrum-sepolia.infura.io/v3/${INFURA_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://arbitrum.io',
@@ -21134,7 +21177,7 @@ const chainArray = [
     shortName: 'ria-dev',
     nativeCurrency: { name: 'RIA', symbol: 'RIA', decimals: 18 },
     rpc: [ 'https://rpc.evm.dusk-2.devnet.astria.org' ],
-    faucets: [ 'https://faucet.evm.dusk-1.devnet.astria.org/' ],
+    faucets: [ 'https://faucet.evm.dusk-2.devnet.astria.org/' ],
     explorers: [
       {
         name: 'Astria EVM Dusknet Explorer',
