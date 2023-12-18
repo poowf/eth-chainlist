@@ -9043,6 +9043,24 @@ const chainArray = [
     icon: 'atlr'
   },
   {
+    name: 'RedeCoin',
+    chain: 'REDEV2',
+    rpc: [ 'https://rpc2.redecoin.eu' ],
+    faucets: [],
+    nativeCurrency: { name: 'RedeCoin', symbol: 'REDEV2', decimals: 18 },
+    infoURL: 'https://www.redecoin.eu',
+    shortName: 'rede',
+    chainId: 1972,
+    networkId: 1972,
+    explorers: [
+      {
+        name: 'RedeCoin Explorer',
+        url: 'https://explorer3.redecoin.eu',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'ONUS Chain Mainnet',
     title: 'ONUS Chain Mainnet',
     chain: 'onus',
@@ -19980,6 +19998,27 @@ const chainArray = [
       {
         name: 'Taf ECO Chain Mainnet',
         url: 'https://ecoscan.tafchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CONET Sebolia Testnet',
+    chain: 'CONET',
+    rpc: [ 'https://rpc1.conet.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'CONET Sebolia', symbol: 'CONET', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://conet.network',
+    shortName: 'conet-sebolia',
+    chainId: 224422,
+    networkId: 224422,
+    slip44: 1,
+    icon: 'conet',
+    explorers: [
+      {
+        name: 'CONET Scan',
+        url: 'https://scan.conet.network',
         standard: 'EIP3091'
       }
     ]
