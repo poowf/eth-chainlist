@@ -1,6 +1,6 @@
 {
   "name": "eth-chainlist",
-  "version": "0.0.306",
+  "version": "0.0.307",
   "description": "List of EVM Chains",
   "main": "index.js",
   "scripts": {
