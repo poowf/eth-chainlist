@@ -18482,6 +18482,7 @@ const chainArray = [
   {
     name: 'Nordek Mainnet',
     chain: 'Nordek',
+    icon: 'nordek',
     rpc: [ 'https://mainnet-rpc.nordekscan.com' ],
     faucets: [],
     nativeCurrency: { name: 'NRK', symbol: 'NRK', decimals: 18 },
