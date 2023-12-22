@@ -3516,6 +3516,25 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'Scalind Testnet',
+    chain: 'ETH',
+    icon: 'scalind',
+    rpc: [ 'https://rpc-sepolia.scalind.com' ],
+    faucets: [ 'https://faucet.scalind.com' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://scalind.com',
+    shortName: 'sepscal',
+    chainId: 220,
+    networkId: 220,
+    explorers: [
+      {
+        name: 'scalind',
+        url: 'https://explorer-sepolia.scalind.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Permission',
     chain: 'ASK',
     rpc: [ 'https://blockchain-api-mainnet.permission.io/rpc' ],
@@ -3603,6 +3622,25 @@ const chainArray = [
         url: 'https://testnet-scan.deamchain.com',
         standard: 'EIP3091',
         icon: 'deam'
+      }
+    ]
+  },
+  {
+    name: 'Blast Mainnet',
+    chain: 'BLAST',
+    icon: 'blastIcon',
+    rpc: [ 'https://rpc.blastblockchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Blast', symbol: 'BLAST', decimals: 18 },
+    infoURL: 'https://docs.blastblockchain.com',
+    shortName: 'blast',
+    chainId: 238,
+    networkId: 238,
+    explorers: [
+      {
+        name: 'Blast Mainnet',
+        url: 'https://scan.blastblockchain.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -7336,13 +7374,16 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'DeFiMetaChain',
-    icon: 'changi',
+    name: 'DeFiMetaChain Changi Testnet',
+    icon: 'defichain-network',
     chain: 'DFI',
-    rpc: [ 'https://testnet-dmc.mydefichain.com:20551' ],
+    rpc: [
+      'https://dmc.mydefichain.com/changi',
+      'https://testnet-dmc.mydefichain.com:20551'
+    ],
     faucets: [ 'http://tc04.mydefichain.com/faucet' ],
     nativeCurrency: { name: 'DeFiChain Token', symbol: 'DFI', decimals: 18 },
-    infoURL: 'https://defichain.com',
+    infoURL: 'https://meta.defichain.com',
     shortName: 'changi',
     chainId: 1133,
     networkId: 1133,
@@ -8903,6 +8944,25 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://merklescan.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Scalind',
+    chain: 'ETH',
+    icon: 'scalind',
+    rpc: [ 'https://rpc.scalind.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://scalind.com',
+    shortName: 'scal',
+    chainId: 1911,
+    networkId: 1911,
+    explorers: [
+      {
+        name: 'scalind',
+        url: 'https://explorer.scalind.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -11532,6 +11592,26 @@ const chainArray = [
     }
   },
   {
+    name: 'Muster Mainnet',
+    chainId: 4078,
+    shortName: 'muster',
+    chain: 'Muster',
+    icon: 'muster',
+    networkId: 4078,
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [ 'https://muster.alt.technology' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Musterscan',
+        url: 'https://muster-explorer.alt.technology',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: '',
+    parent: { type: 'L2', chain: 'eip155-42161', bridges: [] }
+  },
+  {
     name: 'Fastex Chain (Bahamut) Oasis Testnet',
     title: 'Bahamut testnet Oasis',
     icon: 'bahamut',
@@ -12714,6 +12794,58 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cybria Mainnet',
+    chain: 'CYBA',
+    rpc: [ 'https://rpc-mainnet.cybria.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cybria', symbol: 'CYBA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://cybria.io',
+    shortName: 'cyba',
+    chainId: 6661,
+    networkId: 6661,
+    icon: 'cybria',
+    explorers: [
+      {
+        name: 'Cybria Explorer',
+        url: 'https://cybascan.io',
+        icon: 'cybascan',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155420',
+      bridges: [ { url: 'https://app.optimism.io/bridge' } ]
+    }
+  },
+  {
+    name: 'Cybria Testnet',
+    chain: 'CYBA',
+    rpc: [ 'https://l2-rpc.cybascan.io' ],
+    faucets: [ 'https://faucet.cybascan.io' ],
+    nativeCurrency: { name: 'Cybria', symbol: 'CYBA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://cybria.io',
+    shortName: 'tcyba',
+    chainId: 6666,
+    networkId: 6666,
+    icon: 'cybria',
+    explorers: [
+      {
+        name: 'Cybria Explorer',
+        url: 'https://explorer.cybascan.io',
+        icon: 'cybascan',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155420',
+      bridges: [ { url: 'https://app.optimism.io/bridge' } ]
+    }
+  },
+  {
     name: 'IRIShub',
     chain: 'IRIShub',
     rpc: [
@@ -12881,6 +13013,27 @@ const chainArray = [
       {
         name: 'Planq Cosmos Explorer (BigDipper)',
         url: 'https://explorer.planq.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Nume',
+    title: 'Nume',
+    chain: 'Nume',
+    rpc: [ 'https://rpc.numecrypto.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dai Stablecoin', symbol: 'DAI', decimals: 18 },
+    infoURL: 'https://numecrypto.com',
+    shortName: 'nume',
+    chainId: 7100,
+    networkId: 7100,
+    icon: 'nume',
+    explorers: [
+      {
+        name: 'numeexplorer',
+        url: 'https://explorer.numecrypto.com',
+        icon: 'nume',
         standard: 'none'
       }
     ]
@@ -16142,6 +16295,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Blast Testnet',
+    chain: 'BLAST',
+    icon: 'blastIcon',
+    rpc: [ 'http://testnet-rpc.blastblockchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Blast', symbol: 'BLAST', decimals: 18 },
+    infoURL: 'https://docs.blastblockchain.com',
+    shortName: 'blastT',
+    chainId: 23888,
+    networkId: 23888,
+    explorers: [
+      {
+        name: 'Blast Testnet',
+        url: 'http://testnet-explorer.blastblockchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Webchain',
     chain: 'WEB',
     rpc: [],
@@ -16940,6 +17112,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'ZKFair Mainnet',
+    title: 'ZKFair Mainnet',
+    chain: 'ZKFair',
+    rpc: [ 'https://rpc.zkfair.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'USDC Token', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://zkfair.io',
+    shortName: 'ZKFair-Mainnet',
+    chainId: 42766,
+    networkId: 42766,
+    icon: 'zkfair',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://scan.zkfair.io',
+        icon: 'zkfair',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://wallet.zkfair.io' } ]
+    }
   },
   {
     name: 'Gesoten Verse Testnet',
@@ -20922,7 +21120,8 @@ const chainArray = [
       'https://rpc.hypra.network',
       'https://rpc.rethereum.org',
       'https://rethereum.rpc.restratagem.com',
-      'https://rpc.rthcentral.org'
+      'https://rpc.rthcentral.org',
+      'https://hypra.rpc.thirdweb.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Hypra', symbol: 'HYP', decimals: 18 },
