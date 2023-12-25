@@ -8829,10 +8829,7 @@ const chainArray = [
     name: 'Lightlink Phoenix Mainnet',
     chain: 'Lightlink Phoenix Mainnet',
     icon: 'lightlink',
-    rpc: [
-      'https://replicator-01.phoenix.lightlink.io/rpc/v1',
-      'https://replicator-02.phoenix.lightlink.io/rpc/v1'
-    ],
+    rpc: [ 'https://replicator.phoenix.lightlink.io/rpc/v1' ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
     nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
@@ -8853,12 +8850,9 @@ const chainArray = [
     name: 'Lightlink Pegasus Testnet',
     chain: 'Lightlink Pegasus Testnet',
     icon: 'lightlink',
-    rpc: [
-      'https://replicator-01.pegasus.lightlink.io/rpc/v1',
-      'https://replicator-02.pegasus.lightlink.io/rpc/v1'
-    ],
+    rpc: [ 'https://replicator.pegasus.lightlink.io/rpc/v1' ],
     features: [ { name: 'EIP155' } ],
-    faucets: [ 'https://pegasus-faucet-react.vercel.app' ],
+    faucets: [ 'https://faucet.pegasus.lightlink.io/' ],
     nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://lightlink.io',
     shortName: 'lightlink_pegasus',
@@ -14617,6 +14611,7 @@ const chainArray = [
       'https://rpc-msc.mindchain.info/',
       'https://seednode.mindchain.info',
       'https://archive.mindchain.info/',
+      'https://mind-smart-chain.rpc.thirdweb.com',
       'wss://archive.mindchain.info/ws',
       'wss://seednode.mindchain.info/ws'
     ],
@@ -20245,6 +20240,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'CONET Holesky',
+    chain: 'CONET Holesky',
+    rpc: [ 'https://holeskyrpc1.conet.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'CONET Holesky', symbol: 'CONET', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://conet.network',
+    shortName: 'conet-holesky',
+    chainId: 224433,
+    networkId: 224433,
+    slip44: 2147708081,
+    icon: 'conet',
+    explorers: [
+      {
+        name: 'CONET Holesky Scan',
+        url: 'https://scan.conet.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'HashKey Chain Testnet',
     chain: 'HashKey',
     rpc: [ 'https://testnet.hashkeychain/rpc' ],
@@ -20932,6 +20948,27 @@ const chainArray = [
     chainId: 471100,
     networkId: 471100,
     slip44: 1
+  },
+  {
+    name: 'Ultra Pro Mainnet',
+    chain: 'ultrapro',
+    icon: 'ultrapro',
+    rpc: [ 'https://mainnet-rpc.ultraproscan.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ultra Pro', symbol: 'UPRO', decimals: 18 },
+    infoURL: 'https://ultrapro.info',
+    shortName: 'ultrapro',
+    chainId: 473861,
+    networkId: 473861,
+    explorers: [
+      {
+        name: 'ultraproscan',
+        url: 'https://ultraproscan.io',
+        icon: 'ultrapro',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'OpenChain Mainnet',
