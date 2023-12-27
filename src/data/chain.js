@@ -4906,7 +4906,13 @@ const chainArray = [
     name: 'Areon Network Testnet',
     chain: 'Areon',
     icon: 'areon',
-    rpc: [ 'https://testnet-rpc.areon.network' ],
+    rpc: [
+      'https://testnet-rpc.areon.network',
+      'https://testnet-rpc2.areon.network',
+      'https://testnet-rpc3.areon.network',
+      'https://testnet-rpc4.areon.network',
+      'https://testnet-rpc5.areon.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Areon', symbol: 'TAREA', decimals: 18 },
     infoURL: 'https://areon.network',
@@ -9403,7 +9409,7 @@ const chainArray = [
     icon: 'mainnetz',
     rpc: [ 'https://mainnet-rpc.mainnetz.io', 'https://eu-rpc.mainnetz.io' ],
     faucets: [ 'https://faucet.mainnetz.io' ],
-    nativeCurrency: { name: 'MainnetZ', symbol: 'NetZ', decimals: 18 },
+    nativeCurrency: { name: 'mainnetz', symbol: 'NetZ', decimals: 18 },
     infoURL: 'https://mainnetz.io',
     shortName: 'NetZm',
     chainId: 2016,
@@ -12810,6 +12816,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Latest Chain Testnet',
+    chain: 'LATEST',
+    icon: 'latestChain',
+    rpc: [ 'https://testnet-rpc.latestcoin.io' ],
+    faucets: [ 'http://faucet.latestchain.io' ],
+    nativeCurrency: { name: 'Latest', symbol: 'LATEST', decimals: 18 },
+    infoURL: 'https://latestcoin.io',
+    shortName: 'LATESTt',
+    chainId: 6660,
+    networkId: 6660,
+    explorers: [
+      {
+        name: 'Latest Chain',
+        url: 'http://testnet.latestchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Cybria Mainnet',
     chain: 'CYBA',
     rpc: [ 'https://rpc-mainnet.cybria.io' ],
@@ -12883,6 +12908,29 @@ const chainArray = [
         url: 'https://irishub.iobscan.io',
         standard: 'none',
         icon: 'irishub'
+      }
+    ]
+  },
+  {
+    name: 'Compverse Mainnet',
+    chain: 'CPV',
+    icon: 'compverse',
+    rpc: [
+      'https://rpc.compverse.io/',
+      'https://rpc-useast1.compverse.io/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'compverse', symbol: 'CPV', decimals: 18 },
+    infoURL: 'https://compverse.io',
+    shortName: 'compverse',
+    chainId: 6779,
+    networkId: 6779,
+    slip44: 7779,
+    explorers: [
+      {
+        name: 'cpvscan',
+        url: 'https://scan.compverse.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -14575,6 +14623,25 @@ const chainArray = [
       {
         name: 'Mind Chain explorer',
         url: 'https://testnet.mindscan.info',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Combo Mainnet',
+    chain: 'Combo',
+    icon: 'combo',
+    rpc: [ 'https://rpc.combonetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
+    infoURL: 'https://combonetwork.io',
+    shortName: 'combo-mainnet',
+    chainId: 9980,
+    networkId: 9980,
+    explorers: [
+      {
+        name: 'combotrace explorer',
+        url: 'https://combotrace.nodereal.io',
         standard: 'EIP3091'
       }
     ]
@@ -22124,6 +22191,25 @@ const chainArray = [
     parent: { chain: 'eip155-2099156', type: 'L2' }
   },
   {
+    name: 'Hokum',
+    chain: 'Hokum',
+    icon: 'hokum',
+    rpc: [ 'https://mainnet.hokum.gg' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://hokum.gg',
+    shortName: 'hokum',
+    chainId: 8080808,
+    networkId: 8080808,
+    explorers: [
+      {
+        name: 'Hokum Explorer',
+        url: 'https://explorer.hokum.gg',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'HAPchain',
     chain: 'HAPchain',
     rpc: [ 'https://jsonrpc.hap.land' ],
@@ -22441,6 +22527,25 @@ const chainArray = [
       {
         name: 'Pego Network Explorer',
         url: 'https://scan.pego.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Hokum Testnet',
+    chain: 'HokumTestnet',
+    icon: 'hokum',
+    rpc: [ 'https://testnet.hokum.gg' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://hokum.gg',
+    shortName: 'hokum-testnet',
+    chainId: 20482050,
+    networkId: 20482050,
+    explorers: [
+      {
+        name: 'Hokum Explorer',
+        url: 'https://testnet-explorer.hokum.gg',
         standard: 'EIP3091'
       }
     ]
