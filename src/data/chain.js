@@ -13639,6 +13639,18 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'E-Dollar',
+    chain: 'USD',
+    rpc: [ 'https://rpc.e-dollar.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'E-Dollar', symbol: 'USD', decimals: 18 },
+    infoURL: 'https://e-dollar.org',
+    shortName: 'E-Dollar',
+    chainId: 8087,
+    networkId: 8087,
+    explorers: []
+  },
+  {
     name: 'StreamuX Blockchain',
     chain: 'StreamuX',
     rpc: [
@@ -14194,7 +14206,8 @@ const chainArray = [
     name: 'JIBCHAIN L1',
     chain: 'JBC',
     rpc: [ 'https://rpc-l1.jibchain.net', 'https://jib-rpc.inan.in.th' ],
-    faucets: [],
+    faucets: [ 'https://faucet.jibchain.net/' ],
+    icon: 'jbc',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'JIBCOIN', symbol: 'JBC', decimals: 18 },
     infoURL: 'https://jibchain.net',
@@ -19113,6 +19126,25 @@ const chainArray = [
       {
         name: 'Nautscan',
         url: 'https://triton.nautscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Combo Testnet',
+    chain: 'Combo',
+    icon: 'combo',
+    rpc: [ 'https://test-rpc.combonetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'tcBNB', decimals: 18 },
+    infoURL: 'https://combonetwork.io',
+    shortName: 'combo-testnet',
+    chainId: 91715,
+    networkId: 91715,
+    explorers: [
+      {
+        name: 'combotrace explorer',
+        url: 'https://combotrace-testnet.nodereal.io',
         standard: 'EIP3091'
       }
     ]
