@@ -5380,23 +5380,22 @@ const chainArray = [
     slip44: 1
   },
   {
-    name: 'PEER Testnet',
-    chain: 'PEER',
-    rpc: [ 'https://rpc-testnet.peer.inc' ],
-    faucets: [ 'https://testnet.peer.inc' ],
-    nativeCurrency: { name: 'PEER Token', symbol: 'PEER', decimals: 18 },
-    infoURL: 'https://peer.inc',
-    shortName: 'PEER',
+    name: 'Vine Testnet',
+    chain: 'VINE',
+    rpc: [ 'https://rpc-testnet.vne.network' ],
+    faucets: [ 'https://vne.network/rose' ],
+    nativeCurrency: { name: 'VINE', symbol: 'VNE', decimals: 18 },
+    infoURL: 'https://www.peer.inc',
+    shortName: 'VINE',
     chainId: 601,
     networkId: 601,
-    slip44: 1,
-    icon: 'peer',
+    icon: 'vine',
     explorers: [
       {
-        name: 'PEER Explorer',
-        url: 'https://testnet.peer.inc',
+        name: 'Vine Explorer',
+        url: 'https://vne.network/rose',
         standard: 'none',
-        icon: 'peer'
+        icon: 'vine'
       }
     ]
   },
@@ -14206,7 +14205,7 @@ const chainArray = [
     name: 'JIBCHAIN L1',
     chain: 'JBC',
     rpc: [ 'https://rpc-l1.jibchain.net', 'https://jib-rpc.inan.in.th' ],
-    faucets: [ 'https://faucet.jibchain.net/' ],
+    faucets: [],
     icon: 'jbc',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'JIBCOIN', symbol: 'JBC', decimals: 18 },
