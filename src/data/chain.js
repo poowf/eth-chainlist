@@ -2130,7 +2130,7 @@ const chainArray = [
     icon: 'worldland',
     rpc: [ 'https://seoul.worldland.foundation' ],
     faucets: [],
-    nativeCurrency: { name: 'Worldland', symbol: 'WL', decimals: 18 },
+    nativeCurrency: { name: 'Worldland', symbol: 'WLC', decimals: 18 },
     infoURL: 'https://worldland.foundation',
     shortName: 'WLC',
     chainId: 103,
@@ -2830,14 +2830,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'ShimmerEVM Mainnet',
-    title: 'ShimmerEVM Mainnet',
+    name: 'ShimmerEVM',
+    title: 'ShimmerEVM',
     chain: 'ShimmerEVM',
     rpc: [ 'https://json-rpc.evm.shimmer.network' ],
     faucets: [],
     nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 18 },
     infoURL: 'https://shimmer.network',
-    shortName: 'shimmerevm-mainnet',
+    shortName: 'shimmerevm',
     chainId: 148,
     networkId: 148,
     icon: 'shimmerevm',
@@ -6542,7 +6542,7 @@ const chainArray = [
     chain: 'Oort Mainnet',
     rpc: [ 'https://mainnet-rpc.oortech.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Oort', symbol: 'CCN', decimals: 18 },
+    nativeCurrency: { name: 'Oort', symbol: 'OORT', decimals: 18 },
     infoURL: 'https://oortech.com',
     shortName: 'ccn',
     chainId: 970,
@@ -7766,6 +7766,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Dogether Mainnet',
+    chain: 'Dogether',
+    rpc: [ 'https://rpc.dogether.dog/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dogether', symbol: 'dogeth', decimals: 18 },
+    infoURL: 'https://www.dogether.dog/',
+    shortName: 'Dogether',
+    chainId: 1248,
+    networkId: 1248,
+    explorers: [
+      {
+        name: 'DogetherExplorer',
+        url: 'https://explorer.dogether.dog',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CIC Chain Testnet',
     chain: 'CICT',
     rpc: [ 'https://testapi.cicscan.com' ],
@@ -8780,6 +8798,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ruby Smart Chain MAINNET',
+    chain: 'RUBY',
+    rpc: [
+      'https://mainnet-data.rubychain.io/',
+      'https://mainnet.rubychain.io/'
+    ],
+    nativeCurrency: {
+      name: 'RUBY Smart Chain Native Token',
+      symbol: 'RUBY',
+      decimals: 18
+    },
+    infoURL: 'https://rubychain.io',
+    faucets: [],
+    shortName: 'RUBY',
+    chainId: 1821,
+    networkId: 1821,
+    slip44: 1,
+    icon: 'ruby',
+    explorers: [
+      {
+        name: 'RUBY Smart Chain MAINNET Explorer',
+        icon: 'ruby',
+        url: 'https://rubyscan.net',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Teslafunds',
     chain: 'TSF',
     rpc: [ 'https://tsfapi.europool.me' ],
@@ -8984,6 +9030,31 @@ const chainArray = [
         name: 'scalind',
         url: 'https://explorer.scalind.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Ruby Smart Chain Testnet',
+    chain: 'RUBY',
+    rpc: [ 'https://testnet-rchain.rubychain.io/' ],
+    nativeCurrency: {
+      name: 'RUBY Smart Chain Native Token',
+      symbol: 'tRUBY',
+      decimals: 18
+    },
+    infoURL: 'https://rubychain.io',
+    faucets: [ 'https://claim-faucet.rubychain.io/' ],
+    shortName: 'tRUBY',
+    chainId: 1912,
+    networkId: 1912,
+    slip44: 1,
+    icon: 'ruby',
+    explorers: [
+      {
+        name: 'RUBY Smart Chain Testnet Explorer',
+        icon: 'ruby',
+        url: 'https://testnet.rubyscan.net',
+        standard: 'none'
       }
     ]
   },
@@ -9618,6 +9689,17 @@ const chainArray = [
     shortName: 'ncfg',
     chainId: 2032,
     networkId: 2032
+  },
+  {
+    name: 'Phala Network',
+    chain: 'PHA',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Phala', symbol: 'PHA', decimals: 18 },
+    infoURL: 'https://phala.network',
+    shortName: 'pha',
+    chainId: 2035,
+    networkId: 2035
   },
   {
     name: 'Kiwi Subnet',
@@ -13626,13 +13708,13 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
-    name: 'BitEth',
-    chain: 'BTE',
+    name: 'Bitcoin Chain',
+    chain: 'BTC',
     rpc: [ 'https://rpc.biteth.org' ],
     faucets: [],
-    nativeCurrency: { name: 'BitEth', symbol: 'BTE', decimals: 18 },
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://biteth.org',
-    shortName: 'BitEth',
+    shortName: 'Bitcoin',
     chainId: 8086,
     networkId: 8086,
     explorers: []
@@ -14456,7 +14538,7 @@ const chainArray = [
     chain: 'MainnetDev',
     rpc: [ 'https://dev-rpc.oortech.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Oort', symbol: 'CCN', decimals: 18 },
+    nativeCurrency: { name: 'Oort', symbol: 'OORT', decimals: 18 },
     infoURL: 'https://oortech.com',
     shortName: 'MainnetDev',
     chainId: 9700,
@@ -14907,6 +14989,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Arthera Mainnet',
+    chain: 'AA',
+    icon: 'arthera',
+    rpc: [ 'https://rpc.arthera.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Arthera', symbol: 'AA', decimals: 18 },
+    infoURL: 'https://docs.arthera.net/build/developing-sc/using-hardhat',
+    shortName: 'aa',
+    chainId: 10242,
+    networkId: 10242,
+    slip44: 10242,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.arthera.net',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Arthera Testnet',
     chain: 'AA',
     icon: 'arthera',
@@ -14914,7 +15017,7 @@ const chainArray = [
     faucets: [ 'https://faucet.arthera.net' ],
     nativeCurrency: { name: 'Arthera', symbol: 'AA', decimals: 18 },
     infoURL: 'https://docs.arthera.net',
-    shortName: 'aa',
+    shortName: 'aat',
     chainId: 10243,
     networkId: 10243,
     slip44: 1,
@@ -14951,7 +15054,7 @@ const chainArray = [
     icon: 'worldland',
     rpc: [ 'https://gwangju.worldland.foundation' ],
     faucets: [],
-    nativeCurrency: { name: 'Worldland', symbol: 'WL', decimals: 18 },
+    nativeCurrency: { name: 'Worldland', symbol: 'WLC', decimals: 18 },
     infoURL: 'https://worldland.foundation',
     shortName: 'TWLC',
     chainId: 10395,
