@@ -4829,28 +4829,28 @@ const chainArray = [
     ]
   },
   {
-    name: 'Obscuro Testnet',
-    title: 'Obscuro Sepolia Rollup Testnet',
+    name: 'Ten Testnet',
+    title: 'Ten Sepolia Rollup Testnet',
     chainId: 443,
-    shortName: 'obs-testnet',
+    shortName: 'ten-testnet',
     chain: 'ETH',
     networkId: 443,
     slip44: 1,
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
-    rpc: [ 'https://testnet.obscu.ro' ],
+    rpc: [ 'https://testnet.ten.xyz' ],
     faucets: [],
-    infoURL: 'https://obscu.ro',
+    infoURL: 'https://ten.xyz',
     explorers: [
       {
-        name: 'Obscuro Sepolia Rollup Explorer',
-        url: 'https://testnet.obscuroscan.io',
+        name: 'Ten Sepolia Rollup Explorer',
+        url: 'https://tenscan.io',
         standard: 'none'
       }
     ],
     parent: {
       type: 'L2',
       chain: 'eip155-5',
-      bridges: [ { url: 'https://bridge.obscu.ro' } ]
+      bridges: [ { url: 'https://bridge.ten.xyz' } ]
     }
   },
   {
@@ -12322,6 +12322,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Smart Layer Network',
+    chain: 'SLN',
+    rpc: [ 'https://rpc.main.smartlayer.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Service Unit Token', symbol: 'SU', decimals: 18 },
+    infoURL: 'https://www.smartlayer.network/',
+    shortName: 'SLN',
+    chainId: 5169,
+    networkId: 5169,
+    explorers: [
+      {
+        name: 'SLN Mainnet Explorer',
+        url: 'https://explorer.main.smartlayer.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'TLChain Network Mainnet',
     chain: 'TLC',
     icon: 'tlc',
@@ -13182,6 +13200,20 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Help The Homeless',
+    chain: 'mainnet',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Help The Homeless Coin', symbol: 'HTH', decimals: 18 },
+    infoURL: 'https://hth.world',
+    shortName: 'hth',
+    chainId: 7118,
+    networkId: 7118,
+    icon: 'hth',
+    status: 'incubating',
+    explorers: []
   },
   {
     name: 'Bitrock Mainnet',
@@ -14081,6 +14113,44 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Storagechain Mainnet',
+    chain: 'Storagechain',
+    rpc: [ 'https://mainnet-validator.storagechain.io' ],
+    icon: 'storagechain',
+    faucets: [],
+    shortName: 'stor',
+    nativeCurrency: { name: 'Storagechain', symbol: 'STOR', decimals: 18 },
+    infoURL: 'https://storagechain.io/about-us',
+    chainId: 8726,
+    networkId: 8726,
+    explorers: [
+      {
+        name: 'Storscan',
+        url: 'https://explorer-storagechain.invo.zone/?network=StorageChain',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Storagechain Testnet',
+    chain: 'Storagechain',
+    rpc: [ 'https://testnet-validator.storagechain.io' ],
+    icon: 'storagechain',
+    faucets: [],
+    nativeCurrency: { name: 'Storagechain', symbol: 'STOR', decimals: 18 },
+    shortName: 'tstor',
+    infoURL: 'https://storagechain.io/about-us',
+    chainId: 8727,
+    networkId: 8727,
+    explorers: [
+      {
+        name: 'Storscan',
+        url: 'https://explorer-storagechain.invo.zone/?network=StorageChain%20Testnet',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Alph Network',
     chain: 'ALPH',
     rpc: [ 'https://rpc.alph.network', 'wss://rpc.alph.network' ],
@@ -14695,6 +14765,24 @@ const chainArray = [
         icon: 'imp',
         url: 'https://impscan.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Dogelayer Mainnet',
+    chain: 'Dogelayer',
+    rpc: [ 'https://dl-rpc.dogelayer.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dogecoin', symbol: 'DOGE', decimals: 18 },
+    infoURL: 'https://dogelayer.org',
+    shortName: 'Dogelayer',
+    chainId: 9888,
+    networkId: 9888,
+    explorers: [
+      {
+        name: 'Dogelayer mainnet explorer',
+        url: 'https://dl-explorer.dogelayer.org',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -16392,6 +16480,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'GoldXChain Testnet',
+    chain: 'GoldXTestnet',
+    rpc: [ 'https://testnet-rpc.goldxchain.io' ],
+    faucets: [ 'https://faucet.goldxchain.io' ],
+    nativeCurrency: { name: 'GoldX', symbol: 'GOLDX', decimals: 18 },
+    infoURL: 'https://goldxchain.io',
+    shortName: 'goldx-testnet',
+    chainId: 22324,
+    networkId: 22324,
+    explorers: [
+      {
+        name: 'GoldXChain Testnet Explorer',
+        url: 'https://testnet-explorer.goldxchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'MAP Mainnet',
     chain: 'MAP',
     icon: 'map',
@@ -17308,6 +17414,24 @@ const chainArray = [
       {
         name: 'Oasis Emerald Explorer',
         url: 'https://explorer.emerald.oasis.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GoldXChain Mainnet',
+    chain: 'GoldX',
+    rpc: [ 'https://mainnet-rpc.goldxchain.io' ],
+    faucets: [ 'https://goldx.gold' ],
+    nativeCurrency: { name: 'GoldX', symbol: 'GOLDX', decimals: 18 },
+    infoURL: 'https://goldxchain.io',
+    shortName: 'goldx',
+    chainId: 42355,
+    networkId: 42355,
+    explorers: [
+      {
+        name: 'GoldXChain Explorer',
+        url: 'https://explorer.goldxchain.io',
         standard: 'EIP3091'
       }
     ]
@@ -19030,6 +19154,24 @@ const chainArray = [
       {
         name: 'Quantum Scan Mainnet',
         url: 'https://quantumscan.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Smart Layer Network Testnet',
+    chain: 'SLN',
+    rpc: [ 'https://rpc.test.smartlayer.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Service Unit Token', symbol: 'SU', decimals: 18 },
+    infoURL: 'https://www.smartlayer.network/',
+    shortName: 'tSLN',
+    chainId: 82459,
+    networkId: 82459,
+    explorers: [
+      {
+        name: 'SLN Testnet Explorer',
+        url: 'https://explorer.test.smartlayer.network',
         standard: 'EIP3091'
       }
     ]
