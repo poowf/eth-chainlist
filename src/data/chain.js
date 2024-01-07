@@ -9662,7 +9662,13 @@ const chainArray = [
   {
     name: 'Centrifuge',
     chain: 'CFG',
-    rpc: [ 'wss://fullnode.parachain.centrifuge.io' ],
+    icon: 'centrifuge',
+    rpc: [
+      'wss://fullnode.parachain.centrifuge.io',
+      'wss://centrifuge-parachain.api.onfinality.io/public-ws',
+      'wss://centrifuge-rpc.dwellir.com',
+      'wss://rpc-centrifuge.luckyfriday.io'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Centrifuge', symbol: 'CFG', decimals: 18 },
@@ -9674,7 +9680,8 @@ const chainArray = [
       {
         name: 'subscan',
         url: 'https://centrifuge.subscan.io',
-        standard: 'EIP3091'
+        standard: 'EIP3091',
+        icon: 'subscan'
       }
     ]
   },
@@ -9863,7 +9870,11 @@ const chainArray = [
   {
     name: 'Altair',
     chain: 'AIR',
-    rpc: [ 'wss://fullnode.altair.centrifuge.io' ],
+    icon: 'altair',
+    rpc: [
+      'wss://fullnode.altair.centrifuge.io',
+      'wss://altair.api.onfinality.io/public-ws'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Altair', symbol: 'AIR', decimals: 18 },
@@ -9875,6 +9886,7 @@ const chainArray = [
   {
     name: 'Algol',
     chain: 'algol',
+    status: 'deprecated',
     rpc: [ 'wss://fullnode.algol.cntrfg.com' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -17422,7 +17434,7 @@ const chainArray = [
     name: 'GoldXChain Mainnet',
     chain: 'GoldX',
     rpc: [ 'https://mainnet-rpc.goldxchain.io' ],
-    faucets: [ 'https://goldx.gold' ],
+    faucets: [],
     nativeCurrency: { name: 'GoldX', symbol: 'GOLDX', decimals: 18 },
     infoURL: 'https://goldxchain.io',
     shortName: 'goldx',
