@@ -3760,13 +3760,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Fraxchain Mainnet',
+    name: 'Fraxtal Mainnet',
     chain: 'FRAX',
     rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
     infoURL: 'https://mainnet.frax.com',
-    shortName: 'fraxchain',
+    shortName: 'fraxtal',
     chainId: 252,
     networkId: 252,
     explorers: [],
@@ -5222,6 +5222,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'MetaChain Mainnet',
+    chain: 'MTC',
+    icon: 'metachain',
+    rpc: [ 'https://rpc.metatime.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Metatime Coin', symbol: 'MTC', decimals: 18 },
+    infoURL: 'https://metatime.com/en',
+    shortName: 'metatime',
+    chainId: 571,
+    networkId: 571,
+    slip44: 571,
+    explorers: [
+      {
+        name: 'MetaExplorer',
+        url: 'https://explorer.metatime.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Metis Stardust Testnet',
     chain: 'ETH',
     rpc: [ 'https://stardust.metis.io/?owner=588' ],
@@ -5489,6 +5510,25 @@ const chainArray = [
     shortName: 'kalichain',
     chainId: 653,
     networkId: 653,
+    explorers: [
+      {
+        name: 'kalichain explorer',
+        url: 'https://explorer.kalichain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Kalichain',
+    chain: 'Kalichain',
+    rpc: [ 'https://mainnet.kalichain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'kalis', symbol: 'KALIS', decimals: 18 },
+    infoURL: 'https://kalichain.com',
+    shortName: 'kalichainMainnet',
+    chainId: 654,
+    networkId: 654,
+    icon: 'kalichain',
     explorers: [
       {
         name: 'kalichain explorer',
@@ -10585,13 +10625,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Fraxchain Testnet',
+    name: 'Fraxtal Testnet',
     chain: 'FRAX',
     rpc: [ 'https://rpc.testnet.frax.com' ],
     faucets: [],
     nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
     infoURL: 'https://testnet.frax.com',
-    shortName: 'fraxchain-testnet',
+    shortName: 'fraxtal-testnet',
     chainId: 2522,
     networkId: 2522,
     slip44: 1,
@@ -11900,6 +11940,29 @@ const chainArray = [
     shortName: 'nexi',
     chainId: 4242,
     networkId: 4242,
+    slip44: 2500,
+    explorers: [
+      {
+        name: 'nexiscan',
+        url: 'https://www.nexiscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Nexi V2 Mainnet',
+    chain: 'Nexi V2',
+    icon: 'nexi',
+    rpc: [
+      'https://chain.nexiv2.nexilix.com',
+      'https://rpc.chainv1.nexi.technology'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'NexiV2', symbol: 'NEXI', decimals: 18 },
+    infoURL: 'https://www.nexi.technology/',
+    shortName: 'NexiV2',
+    chainId: 4243,
+    networkId: 4243,
     slip44: 2500,
     explorers: [
       {
@@ -20104,6 +20167,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Etherlink Testnet',
+    chain: 'Etherlink',
+    icon: 'etherlink',
+    chainId: 128123,
+    networkId: 128123,
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://etherlink.com',
+    shortName: 'etlt',
+    nativeCurrency: { name: 'tez', symbol: 'XTZ', decimals: 18 },
+    rpc: [ 'https://node.ghostnet.etherlink.com' ],
+    faucets: [ 'https://faucet.etherlink.com' ],
+    explorers: [
+      {
+        name: 'Etherlink Testnet Explorer',
+        url: 'https://testnet-explorer.etherlink.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ETND Chain Mainnets',
     chain: 'ETND',
     rpc: [ 'https://rpc.node1.etnd.pro/' ],
@@ -20166,7 +20249,7 @@ const chainArray = [
   {
     name: 'Taiko Grimsvotn L2',
     chain: 'ETH',
-    status: 'active',
+    status: 'deprecated',
     icon: 'taiko',
     rpc: [ 'https://rpc.test.taiko.xyz' ],
     faucets: [],
@@ -20186,7 +20269,7 @@ const chainArray = [
   {
     name: 'Taiko Eldfell L3',
     chain: 'ETH',
-    status: 'active',
+    status: 'deprecated',
     icon: 'taiko',
     rpc: [ 'https://rpc.l3test.taiko.xyz' ],
     faucets: [],
@@ -20206,7 +20289,7 @@ const chainArray = [
   {
     name: 'Taiko Jolnir L2',
     chain: 'ETH',
-    status: 'incubating',
+    status: 'deprecated',
     icon: 'taiko',
     rpc: [ 'https://rpc.jolnir.taiko.xyz' ],
     faucets: [],
@@ -20219,6 +20302,26 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://explorer.jolnir.taiko.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Taiko Katla L2',
+    chain: 'ETH',
+    status: 'active',
+    icon: 'taiko',
+    rpc: [ 'https://rpc.katla.taiko.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://taiko.xyz',
+    shortName: 'tko-katla',
+    chainId: 167008,
+    networkId: 167008,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.katla.taiko.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -21766,6 +21869,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'BlocX Mainnet',
+    chain: 'BLX',
+    rpc: [ 'https://mainnet-rpc.blxscan.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BlocX', symbol: 'BLX', decimals: 18 },
+    infoURL: 'https://www.blocxchain.org/',
+    shortName: 'blx',
+    chainId: 879151,
+    networkId: 879151,
+    icon: 'blx',
+    explorers: [
+      {
+        name: 'BlocX Mainnet Explorer',
+        url: 'https://explorer.blxscan.com',
+        icon: 'blx',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Vision - Mainnet',
     chain: 'Vision',
     rpc: [ 'https://infragrid.v.network/ethereum/compatible' ],
@@ -22099,6 +22222,17 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Turkey Demo Dev',
+    chain: 'ETH',
+    rpc: [ 'https://blockscout-poa.huabeizhenxuan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'TDD',
+    chainId: 1731313,
+    networkId: 1731313
   },
   {
     name: 'DeBank Testnet',
