@@ -3304,10 +3304,10 @@ const chainArray = [
   {
     name: 'BitTorrent Chain Mainnet',
     chain: 'BTTC',
-    rpc: [ 'https://rpc.bittorrentchain.io/' ],
+    rpc: [ 'https://rpc.bt.io' ],
     faucets: [],
     nativeCurrency: { name: 'BitTorrent', symbol: 'BTT', decimals: 18 },
-    infoURL: 'https:/bt.io',
+    infoURL: 'https://bt.io',
     shortName: 'BTT',
     chainId: 199,
     networkId: 199,
@@ -22226,7 +22226,7 @@ const chainArray = [
   {
     name: 'Turkey Demo Dev',
     chain: 'ETH',
-    rpc: [ 'https://blockscout-poa.huabeizhenxuan.com' ],
+    rpc: [ 'https://devchain-poa.huabeizhenxuan.com' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: '',
