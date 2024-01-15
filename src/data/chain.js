@@ -2613,6 +2613,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'ProtoJumbo Testnet',
+    chain: 'Jumbo',
+    rpc: [ 'https://testnode.jumbochain.org' ],
+    faucets: [ 'https://protojumbo.jumbochain.org/faucet-smart' ],
+    nativeCurrency: { name: 'JNFTC', symbol: 'JNFTC', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://jumbochain.org',
+    shortName: 'ProtoJumbo',
+    chainId: 129,
+    networkId: 129,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'ProtoJumbo',
+        url: 'https://protojumbo.jumbochain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Engram Testnet',
     chain: 'tGRAM',
     icon: 'engram',
@@ -4932,7 +4952,13 @@ const chainArray = [
     name: 'Areon Network Mainnet',
     chain: 'Areon',
     icon: 'areon',
-    rpc: [ 'https://mainnet-rpc.areon.network' ],
+    rpc: [
+      'https://mainnet-rpc.areon.network',
+      'https://mainnet-rpc2.areon.network',
+      'https://mainnet-rpc3.areon.network',
+      'https://mainnet-rpc4.areon.network',
+      'https://mainnet-rpc5.areon.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Areon', symbol: 'AREA', decimals: 18 },
     infoURL: 'https://areon.network',
@@ -5501,7 +5527,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Kalichain Mainnet',
+    name: 'Kalichain Testnet',
     chain: 'Kalichain',
     rpc: [ 'https://rpc.kalichain.com' ],
     faucets: [],
@@ -5510,6 +5536,7 @@ const chainArray = [
     shortName: 'kalichain',
     chainId: 653,
     networkId: 653,
+    icon: 'kalichain',
     explorers: [
       {
         name: 'kalichain explorer',
@@ -6018,6 +6045,27 @@ const chainArray = [
     networkId: 808,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'Haven1 Testnet',
+    chain: 'haven1',
+    rpc: [ 'https://testnet-rpc.haven1.org' ],
+    faucets: [ 'https://www.haven1.org/faucet' ],
+    nativeCurrency: { name: 'Haven1', symbol: 'H1', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.haven1.org',
+    shortName: 'h1',
+    chainId: 810,
+    networkId: 810,
+    icon: 'haven1',
+    explorers: [
+      {
+        name: 'Haven1 Explorer',
+        url: 'https://testnet-explorer.haven1.org',
+        icon: 'haven1',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Qitmeer',
@@ -11438,6 +11486,35 @@ const chainArray = [
       {
         name: 'AlveyScan',
         url: 'https://alveyscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tangle Testnet',
+    chain: 'Tangle Testnet',
+    icon: 'tangle',
+    rpc: [
+      'https://testnet-rpc.tangle.tools',
+      'https://testnet-rpc-archive.tangle.tools',
+      'wss://testnet-rpc.tangle.tools',
+      'wss://testnet-rpc-archive.tangle.tools'
+    ],
+    faucets: [ 'https://faucet.tangle.tools' ],
+    nativeCurrency: {
+      name: 'Testnet Tangle Network Token',
+      symbol: 'tTNT',
+      decimals: 18
+    },
+    infoURL: 'https://docs.tangle.tools',
+    shortName: 'tTangle',
+    chainId: 3799,
+    networkId: 3799,
+    explorers: [
+      {
+        name: 'ttntscan',
+        url: 'https://testnet-explorer.tangle.tools',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -17749,6 +17826,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Deelance Mainnet',
+    title: 'Deelance Network Mainnet',
+    chain: 'DEE',
+    rpc: [ 'https://rpc.deelance.com' ],
+    faucets: [ 'https://faucet.deelance.com' ],
+    nativeCurrency: { name: 'Deelance', symbol: 'DEE', decimals: 18 },
+    infoURL: 'https://deelance.com',
+    shortName: 'dee',
+    chainId: 45510,
+    networkId: 45510,
+    icon: 'deelance',
+    explorers: [
+      {
+        name: 'Deelance Mainnet Explorer',
+        url: 'https://deescan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Fusion Testnet',
     chain: 'FSN',
     icon: 'fusion',
@@ -24042,19 +24139,27 @@ const chainArray = [
     name: 'Palm Testnet',
     chain: 'Palm',
     icon: 'palm',
-    rpc: [ 'https://palm-testnet.infura.io/v3/${INFURA_API_KEY}' ],
+    rpc: [
+      'https://palm-testnet.infura.io/v3/${INFURA_API_KEY}',
+      'https://palm-testnet.public.blastapi.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'PALM', symbol: 'PALM', decimals: 18 },
-    infoURL: 'https://palm.io',
+    infoURL: 'https://palm.network',
     shortName: 'tpalm',
     chainId: 11297108099,
     networkId: 11297108099,
     slip44: 1,
     explorers: [
       {
-        name: 'Palm Testnet Explorer',
-        url: 'https://explorer.palm-uat.xyz',
+        name: 'Chainlens',
+        url: 'https://testnet.palm.chainlens.com',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Dora',
+        url: 'https://www.ondora.xyz/network/palm-testnet',
+        standard: 'none'
       }
     ]
   },
@@ -24062,18 +24167,26 @@ const chainArray = [
     name: 'Palm',
     chain: 'Palm',
     icon: 'palm',
-    rpc: [ 'https://palm-mainnet.infura.io/v3/${INFURA_API_KEY}' ],
+    rpc: [
+      'https://palm-mainnet.infura.io/v3/${INFURA_API_KEY}',
+      'https://palm-mainnet.public.blastapi.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'PALM', symbol: 'PALM', decimals: 18 },
-    infoURL: 'https://palm.io',
+    infoURL: 'https://palm.network',
     shortName: 'palm',
     chainId: 11297108109,
     networkId: 11297108109,
     explorers: [
       {
-        name: 'Palm Explorer',
-        url: 'https://explorer.palm.io',
+        name: 'Chainlens',
+        url: 'https://palm.chainlens.com',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Dora',
+        url: 'https://www.ondora.xyz/network/palm',
+        standard: 'none'
       }
     ]
   },
