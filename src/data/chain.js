@@ -13163,6 +13163,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'PAXB Mainnet',
+    chain: 'PAXB',
+    rpc: [ 'https://chain.paxb.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PAXB', symbol: 'PAXB', decimals: 18 },
+    infoURL: 'https://paxb.io/',
+    shortName: 'PAXB',
+    chainId: 6701,
+    networkId: 6701,
+    icon: 'paxb',
+    explorers: [
+      {
+        name: 'PAXB Explorer',
+        url: 'https://scan.paxb.io',
+        icon: 'paxb',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Compverse Mainnet',
     chain: 'CPV',
     icon: 'compverse',
@@ -14690,6 +14710,25 @@ const chainArray = [
       {
         name: 'Dogcoin',
         url: 'https://testnet.dogcoin.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Evoke Mainnet',
+    chain: 'MTHN',
+    icon: 'mthn',
+    rpc: [ 'https://mainnet-rpc.evokescan.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'MTHN', symbol: 'MTHN', decimals: 18 },
+    infoURL: 'https://explorer.evokescan.org',
+    shortName: 'MTHN',
+    chainId: 9395,
+    networkId: 9395,
+    explorers: [
+      {
+        name: 'Evoke SmartChain Explorer',
+        url: 'https://explorer.evokescan.org',
         standard: 'EIP3091'
       }
     ]
@@ -17048,6 +17087,25 @@ const chainArray = [
       {
         name: 'GoChain Testnet Explorer',
         url: 'https://testnet-explorer.gochain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Evoke Testnet',
+    chain: 'Evoke',
+    icon: 'mthn',
+    rpc: [ 'https://testnet-rpc.evokescan.org' ],
+    faucets: [ 'https://faucet.evokescan.org' ],
+    nativeCurrency: { name: 'MTHN Testnet', symbol: 'MTHN', decimals: 18 },
+    infoURL: 'https://testnet-explorer.evokescan.org',
+    shortName: 'tmthn',
+    chainId: 31414,
+    networkId: 31414,
+    explorers: [
+      {
+        name: 'Evoke SmartChain Testnet Explorer',
+        url: 'https://testnet-explorer.evokescan.org',
         standard: 'EIP3091'
       }
     ]
@@ -23130,6 +23188,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ancient8 Testnet',
+    chain: 'Ancient8',
+    icon: 'ancient8',
+    rpc: [ 'https://rpcv2-testnet.ancient8.gg' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ancient8.gg/',
+    shortName: 'a8',
+    chainId: 28122024,
+    networkId: 28122024,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'scan-testnet',
+        url: 'https://scanv2-testnet.ancient8.gg',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Auxilium Network Mainnet',
     chain: 'AUX',
     rpc: [ 'https://rpc.auxilium.global' ],
@@ -24084,14 +24162,15 @@ const chainArray = [
     }
   },
   {
-    name: 'Ancient8 Testnet',
+    name: 'Ancient8 Testnet (deprecated)',
+    status: 'deprecated',
     chain: 'Ancient8',
     icon: 'ancient8',
     rpc: [ 'https://rpc-testnet.ancient8.gg' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://ancient8.gg/',
-    shortName: 'a8',
+    shortName: 'a8old',
     chainId: 2863311531,
     networkId: 2863311531,
     slip44: 1,
