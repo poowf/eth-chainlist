@@ -664,7 +664,7 @@ const chainArray = [
     chain: 'SCAI',
     icon: 'scaiIcon',
     rpc: [ 'https://mainnet-rpc.scai.network' ],
-    faucets: [ 'https://faucet.securechain.ai' ],
+    faucets: [],
     nativeCurrency: { name: 'SecureChain', symbol: 'SCAI', decimals: 18 },
     infoURL: 'https://securechain.ai',
     shortName: 'scai',
@@ -3910,7 +3910,7 @@ const chainArray = [
     chain: 'EGON',
     icon: 'egonicon',
     rpc: [ 'https://rpc.egonscan.com' ],
-    faucets: [ 'https://faucet.egonscan.com' ],
+    faucets: [],
     nativeCurrency: { name: 'EgonCoin', symbol: 'EGON', decimals: 18 },
     infoURL: 'https://egonscan.com',
     shortName: 'EGONm',
@@ -9570,10 +9570,10 @@ const chainArray = [
     chain: 'NetZ',
     icon: 'mainnetz',
     rpc: [ 'https://mainnet-rpc.mainnetz.io', 'https://eu-rpc.mainnetz.io' ],
-    faucets: [ 'https://faucet.mainnetz.io' ],
-    nativeCurrency: { name: 'mainnetz', symbol: 'NetZ', decimals: 18 },
+    faucets: [],
+    nativeCurrency: { name: 'MainnetZ', symbol: 'NetZ', decimals: 18 },
     infoURL: 'https://mainnetz.io',
-    shortName: 'NetZm',
+    shortName: 'netz',
     chainId: 2016,
     networkId: 2016,
     explorers: [
@@ -17130,6 +17130,27 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'W3Gamez Holesky Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc-holesky.w3gamez.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'W3Gamez Testnet Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://web3games.com/',
+    shortName: 'w3gamez',
+    chainId: 32001,
+    networkId: 32001,
+    slip44: 1,
+    icon: 'w3gamez',
+    explorers: [
+      {
+        name: 'W3Gamez Holesky Explorer',
+        url: 'https://w3gamez-holesky.web3games.com',
+        icon: 'web3games',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bitgert Mainnet',
     chain: 'Brise',
     rpc: [
@@ -23466,7 +23487,7 @@ const chainArray = [
     name: 'Kanazawa',
     title: 'Meld Testnet Kanazawa',
     chain: 'Kanazawa',
-    rpc: [ 'https://subnets.avax.network/meld/testnet/rpc' ],
+    rpc: [ 'https://testnet-rpc.meld.com' ],
     faucets: [],
     features: [],
     nativeCurrency: { name: 'gMeld', symbol: 'gMELD', decimals: 18 },
@@ -23477,6 +23498,12 @@ const chainArray = [
     networkId: 222000222,
     slip44: 1,
     explorers: [
+      {
+        name: 'explorer',
+        url: 'https://testnet.meldscan.io',
+        icon: 'meld',
+        standard: 'EIP3091'
+      },
       {
         name: 'explorer',
         url: 'https://subnets-test.avax.network/meld',
@@ -23602,7 +23629,7 @@ const chainArray = [
     name: 'Meld',
     title: 'Meld Mainnet',
     chain: 'MELD',
-    rpc: [ 'https://subnets.avax.network/meld/mainnet/rpc' ],
+    rpc: [ 'https://rpc-1.meld.com' ],
     faucets: [],
     features: [],
     nativeCurrency: { name: 'gMeld', symbol: 'gMELD', decimals: 18 },
@@ -23612,6 +23639,12 @@ const chainArray = [
     chainId: 333000333,
     networkId: 333000333,
     explorers: [
+      {
+        name: 'explorer',
+        url: 'https://meldscan.io',
+        icon: 'meld',
+        standard: 'EIP3091'
+      },
       {
         name: 'explorer',
         url: 'https://subnets.avax.network/meld',
