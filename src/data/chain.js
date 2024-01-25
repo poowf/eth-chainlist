@@ -5447,6 +5447,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'EIOB Mainnet',
+    chain: 'EIOB',
+    icon: 'eiob',
+    rpc: [ 'https://rpc.eiob.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'EIOB', symbol: 'EIOB', decimals: 18 },
+    infoURL: '',
+    shortName: 'eiob',
+    chainId: 612,
+    networkId: 612,
+    explorers: [
+      {
+        name: 'EIOB Explorer',
+        url: 'https://explorer.eiob.xyz',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Graphlinq Blockchain Mainnet',
     chain: 'GLQ Blockchain',
     rpc: [ 'https://glq-dataseed.graphlinq.io' ],
@@ -16545,6 +16564,26 @@ const chainArray = [
       {
         name: 'P12 Chain Explorer',
         url: 'https://explorer.p12.games',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Jono11 Subnet',
+    chain: 'JONO11',
+    icon: 'jono11',
+    rpc: [ 'https://subnets.avax.network/jono11/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Jono11 Token', symbol: 'JONO', decimals: 18 },
+    infoURL: '',
+    shortName: 'jono11',
+    chainId: 20765,
+    networkId: 20765,
+    explorers: [
+      {
+        name: 'JONO11 Explorer',
+        url: 'https://subnets-test.avax.network/jono11',
         standard: 'EIP3091'
       }
     ]
