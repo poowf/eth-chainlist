@@ -4622,6 +4622,59 @@ const chainArray = [
     ]
   },
   {
+    name: 'ZKAmoeba Testnet',
+    chain: 'FIL',
+    rpc: [
+      'https://rpc.testnet.zkamoeba.com:4050/',
+      'https://rpc1.testnet.zkamoeba.com:4050/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'filecoin', symbol: 'FIL', decimals: 18 },
+    infoURL: 'https://testnet.zkamoeba.com',
+    shortName: 'zkamoeba-test',
+    chainId: 380,
+    networkId: 380,
+    icon: 'zkamoeba-micro',
+    explorers: [
+      {
+        name: 'ZKAmoeba Test Explorer',
+        url: 'https://testnetexplorer.zkamoeba.com',
+        icon: 'zkamoeba-micro',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-314',
+      bridges: [ { url: 'https://testnet.zkamoeba.com/en/bridge' } ]
+    }
+  },
+  {
+    name: 'ZKAmoeba Mainnet',
+    chain: 'FIL',
+    rpc: [ 'https://rpc.mainnet.zkamoeba.com/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'filecoin', symbol: 'FIL', decimals: 18 },
+    infoURL: 'https://www.zkamoeba.com',
+    shortName: 'zkamoeba',
+    chainId: 381,
+    networkId: 381,
+    icon: 'zkamoeba-micro',
+    explorers: [
+      {
+        name: 'ZKAmoeba Explorer',
+        url: 'https://explorer.zkamoeba.com',
+        icon: 'zkamoeba-micro',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-314',
+      bridges: [ { url: 'https://www.zkamoeba.com/en/bridge' } ]
+    }
+  },
+  {
     name: 'Lisinski',
     chain: 'CRO',
     rpc: [ 'https://rpc-bitfalls1.lisinski.online' ],
@@ -13770,6 +13823,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Kinto Mainnet',
+    chain: 'Kinto Mainnet',
+    rpc: [
+      'https://rpc.kinto.xyz/http',
+      'https://kinto-mainnet.calderachain.xyz/http'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://kinto.xyz',
+    shortName: 'kintoMainnet',
+    chainId: 7887,
+    networkId: 7887,
+    icon: 'kinto',
+    explorers: [
+      {
+        name: 'Kinto Explorer',
+        url: 'https://explorer.kinto.xyz',
+        icon: 'kinto',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ARDENIUM Athena',
     chain: 'ATHENA',
     rpc: [ 'https://rpc-athena.ardescan.com/' ],
@@ -16876,6 +16952,25 @@ const chainArray = [
     networkId: 37480
   },
   {
+    name: 'LiquidLayer Mainnet',
+    chain: 'LiquidLayer',
+    icon: 'lila',
+    rpc: [ 'https://mainnet.liquidlayer.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'LiquidLayer', symbol: 'LILA', decimals: 18 },
+    infoURL: 'https://scan.liquidlayer.network',
+    shortName: 'LILA',
+    chainId: 25186,
+    networkId: 25186,
+    explorers: [
+      {
+        name: 'LiquidLayer Mainnet Explorer',
+        url: 'https://scan.liquidlayer.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hammer Chain Mainnet',
     chain: 'HammerChain',
     rpc: [ 'https://www.hammerchain.io/rpc' ],
@@ -19705,6 +19800,25 @@ const chainArray = [
         url: 'https://explorer.lambda.top',
         standard: 'EIP3091',
         icon: 'lambda'
+      }
+    ]
+  },
+  {
+    name: 'LiquidLayer Testnet',
+    chain: 'LILA',
+    icon: 'lila',
+    rpc: [ 'https://testnet.liquidlayer.network' ],
+    faucets: [ 'https://claim.liquidlayer.network' ],
+    nativeCurrency: { name: 'LiquidLayer Testnet', symbol: 'LILA', decimals: 18 },
+    infoURL: 'https://testnet-scan.liquidlayer.network',
+    shortName: 'tLILA',
+    chainId: 93572,
+    networkId: 93572,
+    explorers: [
+      {
+        name: 'LiquidLayer Testnet Explorer',
+        url: 'https://testnet-scan.liquidlayer.network',
+        standard: 'EIP3091'
       }
     ]
   },
