@@ -16404,6 +16404,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Eclipse Subnet',
+    chain: 'ECLIPSE',
+    rpc: [ 'https://subnets.avax.network/eclipse/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Eclipse', symbol: 'ECLP', decimals: 16 },
+    infoURL: 'http://eclipsenet.io',
+    shortName: 'eclipse',
+    chainId: 17172,
+    networkId: 17172,
+    explorers: [
+      {
+        name: 'ECLIPSE Explorer',
+        url: 'https://subnets-test.avax.network/eclipse',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Palette Chain Testnet',
     chain: 'PLT',
     rpc: [ 'https://palette-opennet.com:22000' ],
@@ -22285,12 +22304,12 @@ const chainArray = [
     infoURL: 'https://docs.astria.org',
     shortName: 'ria-dev',
     nativeCurrency: { name: 'RIA', symbol: 'RIA', decimals: 18 },
-    rpc: [ 'https://rpc.evm.dusk-2.devnet.astria.org' ],
-    faucets: [ 'https://faucet.evm.dusk-2.devnet.astria.org/' ],
+    rpc: [ 'https://rpc.evm.dusk-3.devnet.astria.org' ],
+    faucets: [ 'https://faucet.evm.dusk-3.devnet.astria.org/' ],
     explorers: [
       {
         name: 'Astria EVM Dusknet Explorer',
-        url: 'https://explorer.evm.dusk-2.devnet.astria.org',
+        url: 'https://explorer.evm.dusk-3.devnet.astria.org',
         standard: 'EIP3091'
       }
     ]
