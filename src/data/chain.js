@@ -2613,22 +2613,23 @@ const chainArray = [
     ]
   },
   {
-    name: 'ProtoJumbo Testnet',
-    chain: 'Jumbo',
-    rpc: [ 'https://testnode.jumbochain.org' ],
-    faucets: [ 'https://protojumbo.jumbochain.org/faucet-smart' ],
-    nativeCurrency: { name: 'JNFTC', symbol: 'JNFTC', decimals: 18 },
-    features: [ { name: 'EIP155' } ],
-    infoURL: 'https://jumbochain.org',
-    shortName: 'ProtoJumbo',
+    name: 'Innovator Chain',
+    chain: 'INNOVATOR',
+    rpc: [ 'https://rpc.innovatorchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'INOV8', symbol: 'INOV8', decimals: 18 },
+    features: [],
+    infoURL: 'https://innovatorchain.com',
+    shortName: 'Innovator',
     chainId: 129,
     networkId: 129,
-    slip44: 1,
+    icon: 'innovator',
     explorers: [
       {
-        name: 'ProtoJumbo',
-        url: 'https://protojumbo.jumbochain.org',
-        standard: 'EIP3091'
+        name: 'Innovator Explorer',
+        url: 'https://evm.innovatorchain.com',
+        icon: 'blockscout',
+        standard: 'none'
       }
     ]
   },
@@ -14749,6 +14750,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nexa Block',
+    chain: 'Nexa',
+    rpc: [ 'https://rpc-testnet-nodes.nexablockscan.io' ],
+    faucets: [ 'https://nexablockscan.io/faucet' ],
+    nativeCurrency: { name: 'Nexa Token', symbol: 'NEXB', decimals: 18 },
+    infoURL: 'https://www.nexablock.io/',
+    shortName: 'Nexa',
+    chainId: 9024,
+    networkId: 9024,
+    icon: 'nexaChain',
+    explorers: [
+      {
+        name: 'Nexablock Explorer',
+        url: 'https://nexablockscan.io',
+        standard: 'none',
+        icon: 'nexaChain'
+      }
+    ]
+  },
+  {
     name: 'Genesis Coin',
     chain: 'Genesis',
     rpc: [ 'https://genesis-gn.com', 'wss://genesis-gn.com' ],
@@ -16593,6 +16614,18 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
+    name: 'Magnet Network',
+    chain: 'Magnet',
+    rpc: [ 'https://magnet-rpc.magport.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Magnet Network', symbol: 'DOT', decimals: 18 },
+    infoURL: 'https://magnet.magport.io/',
+    shortName: 'mgt',
+    chainId: 19527,
+    networkId: 19527,
+    explorers: []
   },
   {
     name: 'BTCIX Network',
@@ -19405,6 +19438,29 @@ const chainArray = [
         name: 'polygonscan',
         url: 'https://mumbai.polygonscan.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Berachain Artio',
+    chain: 'Berachain Artio',
+    rpc: [
+      'https://artio.rpc.berachain.com',
+      'https://rpc.ankr.com/berachain_testnet'
+    ],
+    faucets: [ 'https://artio.faucet.berachain.com' ],
+    nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
+    infoURL: 'https://www.berachain.com',
+    shortName: 'berachainArtio',
+    chainId: 80085,
+    networkId: 80085,
+    icon: 'berachain',
+    explorers: [
+      {
+        name: 'Beratrail',
+        url: 'https://artio.beratrail.io',
+        icon: 'berachain',
+        standard: 'none'
       }
     ]
   },
@@ -22372,6 +22428,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Jono12 Subnet',
+    chain: 'JONO12',
+    icon: 'jono12',
+    rpc: [ 'https://subnets.avax.network/jono12/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Jono12 Token', symbol: 'JONO', decimals: 18 },
+    infoURL: '',
+    shortName: 'jono12',
+    chainId: 955081,
+    networkId: 955081,
+    explorers: [
+      {
+        name: 'JONO12 Explorer',
+        url: 'https://subnets-test.avax.network/jono12',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Eluvio Content Fabric',
     chain: 'Eluvio',
     rpc: [
@@ -23634,6 +23710,27 @@ const chainArray = [
     chainId: 99415706,
     networkId: 99415706,
     slip44: 1
+  },
+  {
+    name: 'Blast Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.blast.io' ],
+    faucets: [ 'https://faucet.quicknode.com/blast/sepolia' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://blast.io/',
+    shortName: 'blastsepolia',
+    chainId: 168587773,
+    networkId: 168587773,
+    icon: 'blast',
+    explorers: [
+      {
+        name: 'Blast Sepolia Explorer',
+        url: 'https://testnet.blastscan.io',
+        icon: 'blast',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Gather Mainnet Network',
