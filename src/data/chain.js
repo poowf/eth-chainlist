@@ -4375,6 +4375,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cosvm Mainnet',
+    chain: 'CVM',
+    rpc: [ 'https://rpc.cosvm.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cosvm', symbol: 'CVM', decimals: 18 },
+    infoURL: 'https://cosvm.network',
+    shortName: 'cvm',
+    chainId: 323,
+    networkId: 323,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.cosvm.net',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'zkSync Mainnet',
     chain: 'ETH',
     rpc: [ 'https://mainnet.era.zksync.io' ],
@@ -5828,6 +5847,35 @@ const chainArray = [
         icon: 'highbury'
       }
     ]
+  },
+  {
+    name: 'Vrcscan Mainnet',
+    chain: 'VRC',
+    rpc: [
+      'https://rpc-mainnet-5.vrcscan.com',
+      'https://rpc-mainnet-6.vrcscan.com',
+      'https://rpc-mainnet-7.vrcscan.com',
+      'https://rpc-mainnet-8.vrcscan.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'VRC Chain', symbol: 'VRC', decimals: 18 },
+    infoURL: 'https://vrccoin.com',
+    shortName: 'vrc',
+    chainId: 713,
+    networkId: 713,
+    explorers: [
+      {
+        name: 'vrcscan',
+        url: 'https://vrcscan.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'dxbscan',
+        url: 'https://dxb.vrcscan.com',
+        standard: 'EIP3091'
+      }
+    ],
+    icon: 'vrcscan'
   },
   {
     name: 'Shibarium Beta',
@@ -10383,7 +10431,10 @@ const chainArray = [
       'https://kava-evm.rpc.thirdweb.com',
       'wss://wevm.kava.io',
       'https://kava-evm.publicnode.com',
-      'wss://kava-evm.publicnode.com'
+      'wss://kava-evm.publicnode.com',
+      'https://evm.kava-rpc.com',
+      'https://rpc.ankr.com/kava_evm',
+      'wss://wevm.kava-rpc.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Kava', symbol: 'KAVA', decimals: 18 },
@@ -12085,6 +12136,26 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
   },
   {
+    name: 'Lisk Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.sepolia-api.lisk.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://lisk.com',
+    shortName: 'lisksep',
+    chainId: 4202,
+    networkId: 4202,
+    slip44: 134,
+    explorers: [
+      {
+        name: 'liskscout',
+        url: 'https://sepolia-blockscout.lisk.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Nexi Mainnet',
     chain: 'Nexi',
     icon: 'nexi',
@@ -13387,6 +13458,25 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://zetachain-athens-3.blockscout.com',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'BST Chain',
+    chain: 'BSTC',
+    rpc: [ 'https://rpc.bstchain.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BST Chain', symbol: 'BSTC', decimals: 18 },
+    infoURL: 'https://bstchain.io',
+    shortName: 'BSTC',
+    chainId: 7007,
+    networkId: 7007,
+    icon: 'bstc',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://bstscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -16722,6 +16812,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'All About Healthy',
+    chain: 'AAH',
+    rpc: [ 'https://rpc.c4ex.net' ],
+    faucets: [ 'https://t.me/c4eiAirdrop' ],
+    nativeCurrency: { name: 'AAH', symbol: 'AAH', decimals: 18 },
+    infoURL: 'https://c4ex.net',
+    shortName: 'aah',
+    chainId: 21133,
+    networkId: 21133,
+    explorers: [
+      {
+        name: 'AAH Blockscout',
+        url: 'https://exp.c4ex.net',
+        icon: 'aah',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CENNZnet Azalea',
     chain: 'CENNZnet',
     rpc: [ 'https://cennznet.unfrastructure.io/public' ],
@@ -18361,6 +18470,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'DOID',
+    chain: 'DOID',
+    rpc: [ 'https://rpc.doid.tech' ],
+    faucets: [],
+    nativeCurrency: { name: 'DOID', symbol: 'DOID', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://doid.tech',
+    shortName: 'DOID',
+    chainId: 53277,
+    networkId: 53277,
+    icon: 'doid',
+    explorers: [
+      {
+        name: 'DOID Scan',
+        url: 'https://scan.doid.tech',
+        icon: 'doid',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DFK Chain',
     chain: 'DFK',
     icon: 'dfk',
@@ -18525,6 +18655,27 @@ const chainArray = [
       {
         name: 'novascan',
         url: 'https://novascan.velo.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DOID Testnet',
+    chain: 'DOID',
+    rpc: [ 'https://rpc.testnet.doid.tech' ],
+    faucets: [],
+    nativeCurrency: { name: 'DOID', symbol: 'DOID', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://doid.tech',
+    shortName: 'doidTestnet',
+    chainId: 56797,
+    networkId: 56797,
+    icon: 'doid',
+    explorers: [
+      {
+        name: 'DOID Testnet Scan',
+        url: 'https://scan.testnet.doid.tech',
+        icon: 'doid',
         standard: 'EIP3091'
       }
     ]
@@ -24031,6 +24182,25 @@ const chainArray = [
       {
         name: 'Blockscout',
         url: 'https://staging-faint-slimy-achird.explorer.staging-v3.skalenodes.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Ancient8',
+    chain: 'Ancient8',
+    icon: 'ancient8',
+    rpc: [ 'https://rpc.ancient8.gg' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ancient8.gg/',
+    shortName: 'ancient8',
+    chainId: 888888888,
+    networkId: 888888888,
+    explorers: [
+      {
+        name: 'Ancient8 Explorer',
+        url: 'https://scan.ancient8.gg',
         standard: 'EIP3091'
       }
     ]
