@@ -7369,7 +7369,8 @@ const chainArray = [
       'https://humans-evm-rpc.staketab.org:443',
       'https://evm.humans.stakepool.dev.br',
       'https://mainnet-humans-evm.konsortech.xyz',
-      'https://evm-rpc.mainnet.humans.zone'
+      'https://evm-rpc.mainnet.humans.zone',
+      'https://json-rpc.humans.bh.rocks'
     ],
     faucets: [],
     nativeCurrency: { name: 'HEART', symbol: 'HEART', decimals: 18 },
