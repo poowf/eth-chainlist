@@ -2983,6 +2983,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Puppynet Shibarium',
+    chain: 'Puppynet Shibarium',
+    icon: 'shibarium',
+    rpc: [ 'https://puppynet.shibrpc.com' ],
+    faucets: [ 'https://beta.shibariumtech.com/faucet' ],
+    nativeCurrency: { name: 'BONE', symbol: 'BONE', decimals: 18 },
+    infoURL: 'https://shibariumecosystem.com',
+    shortName: 'puppynet',
+    chainId: 157,
+    networkId: 157,
+    explorers: [
+      {
+        name: 'puppyscan',
+        url: 'https://puppyscan.shib.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Armonia Eva Chain Mainnet',
     chain: 'Eva',
     rpc: [ 'https://evascan.io/api/eth-rpc/' ],
@@ -3950,6 +3969,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'BPX Blockchain',
+    chain: 'BPX',
+    icon: 'bpx',
+    rpc: [
+      'https://rpc.mainnet.bpxchain.cc',
+      'https://bpx-dataseed.infinex.cc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'BPX', symbol: 'BPX', decimals: 18 },
+    infoURL: 'https://bpxchain.cc',
+    shortName: 'bpx',
+    chainId: 279,
+    networkId: 279
+  },
+  {
     name: 'zkSync Era Goerli Testnet (deprecated)',
     status: 'deprecated',
     chain: 'ETH',
@@ -4218,6 +4252,25 @@ const chainArray = [
       {
         name: 'neuroscan',
         url: 'https://testnet.ncnscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lovely Network Testnet',
+    chain: 'Lovely',
+    icon: 'lovely',
+    rpc: [ 'https://trpc.lovely.network' ],
+    faucets: [ 'https://faucet.lovely.network' ],
+    nativeCurrency: { name: 'Lovely', symbol: 'LOVELY', decimals: 18 },
+    infoURL: 'https://lovely.network',
+    shortName: 'LOVELY-Testnet',
+    chainId: 307,
+    networkId: 307,
+    explorers: [
+      {
+        name: 'Lovely Network Testnet',
+        url: 'https://tscan.lovely.network',
         standard: 'EIP3091'
       }
     ]
@@ -5928,6 +5981,25 @@ const chainArray = [
     slip44: 727
   },
   {
+    name: 'Lovely Network Mainnet',
+    chain: 'Lovely',
+    icon: 'lovely',
+    rpc: [ 'https://rpc.lovely.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lovely', symbol: 'LOVELY', decimals: 18 },
+    infoURL: 'https://lovely.network',
+    shortName: 'LOVELY',
+    chainId: 730,
+    networkId: 730,
+    explorers: [
+      {
+        name: 'Lovely Network Mainnet',
+        url: 'https://scan.lovely.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Canto Testnet',
     chain: 'Canto Tesnet',
     rpc: [ 'https://eth.plexnode.wtf/' ],
@@ -7365,7 +7437,7 @@ const chainArray = [
     chain: 'Humans',
     rpc: [
       'https://jsonrpc.humans.nodestake.top',
-      'https://humans-mainnet-evm.itrocket.net:443',
+      'https://humans-mainnet-evm.itrocket.net',
       'https://humans-evm-rpc.staketab.org:443',
       'https://evm.humans.stakepool.dev.br',
       'https://mainnet-humans-evm.konsortech.xyz',
@@ -7407,6 +7479,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Dymension',
+    chain: 'Dymension',
+    rpc: [ 'https://dymension-evm.blockpi.network/v1/rpc/public' ],
+    faucets: [],
+    nativeCurrency: { name: 'DYM', symbol: 'DYM', decimals: 18 },
+    infoURL: 'https://dymension.xyz',
+    shortName: 'dymension',
+    chainId: 1100,
+    networkId: 1100,
+    explorers: [],
+    status: 'incubating'
   },
   {
     name: 'Polygon zkEVM',
@@ -8763,6 +8848,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Mint Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://testnet-rpc.mintchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.mintchain.io',
+    shortName: 'minttest',
+    chainId: 1686,
+    networkId: 1686,
+    icon: 'mintTestnet',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet-explorer.mintchain.io',
+        icon: 'mintTestnet',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://testnet-bridge.mintchain.io' } ]
+    }
   },
   {
     name: 'LUDAN Mainnet',
@@ -11022,6 +11132,29 @@ const chainArray = [
       chain: 'eip155-5',
       bridges: [ { url: 'https://gateway.boba.network' } ]
     }
+  },
+  {
+    name: 'Xenon Chain Testnet',
+    chain: 'XEN',
+    rpc: [
+      'https://testnet-chain.xenonchain.com/',
+      'https://testnet-dev.xenonchain.com/'
+    ],
+    faucets: [ 'https://xfaucet.xenonchain.com' ],
+    nativeCurrency: { name: 'Xenon Testnet', symbol: 'tXEN', decimals: 18 },
+    infoURL: 'https://xenonchain.com',
+    shortName: 'xenon',
+    chainId: 2941,
+    networkId: 2941,
+    icon: 'xenon',
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Xenon testnet Explorer',
+        url: 'https://testnet.xenonchain.com',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'BitYuan Mainnet',
@@ -13420,14 +13553,17 @@ const chainArray = [
     name: 'ZetaChain Mainnet',
     chain: 'ZetaChain',
     icon: 'zetachain',
-    rpc: [ 'https://api.mainnet.zetachain.com/evm' ],
+    rpc: [
+      'https://zetachain-evm.blockpi.network/v1/rpc/public',
+      'https://zetachain-mainnet-archive.allthatnode.com:8545'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Zeta', symbol: 'ZETA', decimals: 18 },
     infoURL: 'https://zetachain.com/docs/',
     shortName: 'zetachain-mainnet',
     chainId: 7000,
     networkId: 7000,
-    status: 'incubating',
+    status: 'active',
     explorers: [
       {
         name: 'ZetaChain Mainnet Explorer',
@@ -20015,6 +20151,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'MetaDAP Enterprise Mainnet',
+    title: 'MetaDAP Enterprise Mainnet',
+    chain: 'MetaDAP',
+    icon: 'metadap',
+    faucets: [],
+    rpc: [ 'https://rpc.chain.metadap.io', 'wss://rpc-ws.chain.metadap.io' ],
+    nativeCurrency: { name: 'DAP', symbol: 'DAP', decimals: 18 },
+    infoURL: 'https://metadap.io/',
+    shortName: 'MetaDAP',
+    chainId: 91120,
+    networkId: 91120,
+    explorers: [
+      {
+        name: 'MetaDAP Enterprise Mainnet explorer',
+        url: 'https://explorer.chain.metadap.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Combo Testnet',
     chain: 'Combo',
     icon: 'combo',
@@ -20728,6 +20884,29 @@ const chainArray = [
         url: 'https://explorer.metachain.one',
         icon: 'blockscout',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MetaDAP Enterprise Testnet',
+    title: 'MetaDAP Enterprise Testnet',
+    chain: 'MetaDAP',
+    icon: 'metadap',
+    faucets: [],
+    rpc: [
+      'https://rpc.testnet.chain.metadap.io',
+      'wss://rpc-ws.testnet.chain.metadap.io'
+    ],
+    nativeCurrency: { name: 'DAP', symbol: 'DAP', decimals: 18 },
+    infoURL: 'https://metadap.io/',
+    shortName: 'MetaDAP-T',
+    chainId: 119139,
+    networkId: 119139,
+    explorers: [
+      {
+        name: 'MetaDAP Enterprise Testnet explorer',
+        url: 'https://explorer.testnet.chain.metadap.io',
+        standard: 'none'
       }
     ]
   },
@@ -21495,6 +21674,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bloom Genesis Testnet',
+    chain: 'Bloom',
+    icon: 'bloom',
+    rpc: [ 'https://testnet-rpc.bloomgenesis.com' ],
+    faucets: [ 'https://faucet.bloomgenesis.com' ],
+    nativeCurrency: { name: 'Bloom', symbol: 'BGBC', decimals: 18 },
+    infoURL: 'https://www.bloomgenesis.com',
+    shortName: 'BGBC-Testnet',
+    chainId: 323213,
+    networkId: 323213,
+    explorers: [
+      {
+        name: 'Bloom Genesis Testnet',
+        url: 'https://testnet.bloomgenesis.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'TTcoin Smart Chain Mainnet',
     chain: 'TSC',
     icon: 'tscscan',
@@ -21511,6 +21709,25 @@ const chainArray = [
         url: 'https://tscscan.com',
         standard: 'EIP3091',
         icon: 'tscscan'
+      }
+    ]
+  },
+  {
+    name: 'Bloom Genesis Mainnet',
+    chain: 'Bloom',
+    icon: 'bloom',
+    rpc: [ 'https://mainnet-rpc.bloomgenesis.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bloom', symbol: 'BGBC', decimals: 18 },
+    infoURL: 'https://www.bloomgenesis.com',
+    shortName: 'BGBC',
+    chainId: 333313,
+    networkId: 333313,
+    explorers: [
+      {
+        name: 'Bloom Genesis Mainnet',
+        url: 'https://explorer.bloomgenesis.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -21959,6 +22176,30 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Syndr L3 Sepolia',
+    title: 'Syndr L3 Sepolia Rollup Testnet',
+    chain: 'SYNDRSEPOLIA',
+    rpc: [ 'https://sepolia.syndr.com/http', 'wss://sepolia.syndr.com/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://syndr.com',
+    shortName: 'syndr',
+    chainId: 444444,
+    networkId: 444444,
+    explorers: [
+      {
+        name: 'Syndr L3 Sepolia Testnet Explorer',
+        url: 'https://sepolia-explorer.syndr.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-421614',
+      bridges: [ { url: 'https://sepolia-bridge.syndr.com' } ]
+    }
   },
   {
     name: 'Weelink Testnet',
@@ -24344,6 +24585,25 @@ const chainArray = [
     shortName: 'aurora-betanet',
     chainId: 1313161556,
     networkId: 1313161556
+  },
+  {
+    name: 'PowerGold',
+    chain: 'NEAR',
+    rpc: [ 'https://powergold.aurora.dev' ],
+    icon: 'powergold',
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.powergold.tech',
+    shortName: 'powergold',
+    chainId: 1313161560,
+    networkId: 1313161560,
+    explorers: [
+      {
+        name: 'PowerGold explorer',
+        url: 'https://explorer.powergold.aurora.dev',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'SKALE Titan Hub',
