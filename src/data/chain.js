@@ -5151,6 +5151,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Syndicate Chain',
+    title: 'Syndicate Chain',
+    chain: 'Syndicate',
+    rpc: [ 'https://rpc-mainnet.syndicate.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://syndicate.io',
+    shortName: 'syndicate-chain-mainnet',
+    chainId: 510,
+    networkId: 510,
+    status: 'incubating',
+    icon: 'syndicate'
+  },
+  {
     name: 'Double-A Chain Mainnet',
     chain: 'AAC',
     rpc: [ 'https://rpc.acuteangle.com' ],
@@ -7488,10 +7502,12 @@ const chainArray = [
     nativeCurrency: { name: 'DYM', symbol: 'DYM', decimals: 18 },
     infoURL: 'https://dymension.xyz',
     shortName: 'dymension',
+    icon: 'dymension',
     chainId: 1100,
     networkId: 1100,
-    explorers: [],
-    status: 'incubating'
+    explorers: [
+      { name: 'dym.fyi', url: 'https://dym.fyi', standard: 'EIP3091' }
+    ]
   },
   {
     name: 'Polygon zkEVM',
@@ -12266,6 +12282,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Merlin Mainnet',
+    title: 'Merlin Mainnet',
+    chain: 'Merlin',
+    rpc: [ 'https://rpc.merlinchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://merlinchain.io',
+    shortName: 'Merlin-Mainnet',
+    chainId: 4200,
+    networkId: 4200,
+    icon: 'merlin',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://scan.merlinchain.io',
+        icon: 'merlin',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'LUKSO Testnet',
     chain: 'LUKSO Testnet',
     icon: 'lukso',
@@ -12751,6 +12788,34 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Syndicate Testnet',
+    title: 'Syndicate Testnet',
+    chain: 'Syndicate',
+    rpc: [ 'https://rpc-testnet.syndicate.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'S-Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://syndicate.io',
+    shortName: 'syndicate-chain-testnet',
+    chainId: 5100,
+    networkId: 5100,
+    status: 'incubating',
+    icon: 'syndicate'
+  },
+  {
+    name: 'Syndicate Frame Chain',
+    title: 'Syndicate Frame Chain',
+    chain: 'Syndicate Frame',
+    rpc: [ 'https://rpc-frame.syndicate.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://syndicate.io',
+    shortName: 'syndicate-chain-frame',
+    chainId: 5101,
+    networkId: 5101,
+    status: 'incubating',
+    icon: 'syndicate'
   },
   {
     name: 'Bahamut',
