@@ -9980,6 +9980,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'Swan Saturn Testnet',
+    chain: 'SWAN',
+    rpc: [ 'https://saturn-rpc.swanchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SWANETH', symbol: 'SWAN', decimals: 18 },
+    infoURL: 'https://swanchain.io/',
+    shortName: 'swan',
+    chainId: 2024,
+    networkId: 2024
+  },
+  {
     name: 'Rangers Protocol Mainnet',
     chain: 'Rangers',
     icon: 'rangers',
@@ -21159,7 +21170,7 @@ const chainArray = [
     chain: 'ETH',
     status: 'active',
     icon: 'taiko',
-    rpc: [ 'https://rpc.katla.taiko.xyz' ],
+    rpc: [ 'https://rpc.katla.taiko.xyz', 'wss://rpc.katla.taiko.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://taiko.xyz',
