@@ -3612,6 +3612,25 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'Viridis Testnet',
+    chain: 'VRD',
+    icon: 'viridis',
+    rpc: [ 'https://testnet-rpc.vrd.network' ],
+    faucets: [ 'https://faucet.vrd.network' ],
+    nativeCurrency: { name: 'Viridis Token', symbol: 'VRD', decimals: 18 },
+    infoURL: 'https://viridis.network',
+    shortName: 'VRD-Testnet',
+    chainId: 224,
+    networkId: 224,
+    explorers: [
+      {
+        name: 'Viridis Testnet',
+        url: 'https://testnet.vrd.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'LACHAIN Mainnet',
     chain: 'LA',
     icon: 'lachain-io',
@@ -4252,6 +4271,27 @@ const chainArray = [
       {
         name: 'neuroscan',
         url: 'https://testnet.ncnscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ZKSats Mainnet',
+    title: 'ZKSats Mainnet',
+    chain: 'ZKSats',
+    rpc: [ 'https://mainnet.zksats.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://zksats.io',
+    shortName: 'ZKSats-Mainnet',
+    chainId: 305,
+    networkId: 305,
+    icon: 'zksats',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.zksats.io',
+        icon: 'zksats',
         standard: 'EIP3091'
       }
     ]
@@ -4907,6 +4947,25 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://optimism-goerli.blockscout.com',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Viridis Mainnet',
+    chain: 'VRD',
+    icon: 'viridis',
+    rpc: [ 'https://mainnet-rpc.vrd.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Viridis Token', symbol: 'VRD', decimals: 18 },
+    infoURL: 'https://viridis.network',
+    shortName: 'vrd',
+    chainId: 422,
+    networkId: 422,
+    explorers: [
+      {
+        name: 'Viridis Mainnet',
+        url: 'https://explorer.vrd.network',
         standard: 'EIP3091'
       }
     ]
@@ -6376,6 +6435,24 @@ const chainArray = [
     networkId: 2,
     slip44: 1,
     status: 'deprecated'
+  },
+  {
+    name: 'CheckDot Blockchain Devnet',
+    chain: 'CDT Blockchain',
+    rpc: [ 'https://devnet.checkdot.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'CDT', symbol: 'CDT', decimals: 18 },
+    infoURL: 'https://checkdot.io',
+    shortName: 'cdt',
+    chainId: 831,
+    networkId: 831,
+    explorers: [
+      {
+        name: 'CDT Explorer',
+        url: 'https://explorer.checkdot.io',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Taraxa Mainnet',
@@ -12436,6 +12513,8 @@ const chainArray = [
     name: 'Beam',
     chain: 'BEAM',
     rpc: [
+      'https://build.onbeam.com/rpc',
+      'wss://build.onbeam.com/ws',
       'https://subnets.avax.network/beam/mainnet/rpc',
       'wss://subnets.avax.network/beam/mainnet/ws'
     ],
@@ -12514,6 +12593,27 @@ const chainArray = [
         name: 'basescout',
         url: 'https://explorerl2new-orderly-l2-4460-sepolia-8tc3sd7dvy.t.conduit.xyz',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Emoney Network Testnet',
+    chain: 'Emoney',
+    rpc: [ 'https://testnet.emoney.network/' ],
+    faucets: [ 'https://faucet.emoney.network/faucet' ],
+    nativeCurrency: { name: 'Emoney Network', symbol: 'EMYC', decimals: 18 },
+    infoURL: 'https://emoney.network/',
+    shortName: 'emoney',
+    chainId: 4544,
+    networkId: 4544,
+    slip44: 118,
+    icon: 'emoney',
+    explorers: [
+      {
+        name: 'EMoney ethscan',
+        url: 'https://ethscan.emoney.network',
+        icon: 'emoney',
         standard: 'EIP3091'
       }
     ]
@@ -15078,19 +15178,39 @@ const chainArray = [
     ]
   },
   {
-    name: 'Nexa Block',
-    chain: 'Nexa',
+    name: 'Nexa Testnet Block',
+    chain: 'Nexa Testnet',
     rpc: [ 'https://rpc-testnet-nodes.nexablockscan.io' ],
-    faucets: [ 'https://nexablockscan.io/faucet' ],
-    nativeCurrency: { name: 'Nexa Token', symbol: 'NEXB', decimals: 18 },
-    infoURL: 'https://www.nexablock.io/',
-    shortName: 'Nexa',
+    faucets: [ 'https://testnet.nexablockscan.io/faucet' ],
+    nativeCurrency: { name: 'Nexa Testnet Token', symbol: 'NEXB', decimals: 18 },
+    infoURL: 'https://www.nexablock.io',
+    shortName: 'NexaTestnet',
     chainId: 9024,
     networkId: 9024,
     icon: 'nexaChain',
     explorers: [
       {
-        name: 'Nexablock Explorer',
+        name: 'Nexablock Testnet Explorer',
+        url: 'https://testnet.nexablockscan.io',
+        standard: 'none',
+        icon: 'nexaChain'
+      }
+    ]
+  },
+  {
+    name: 'Nexa Mainnet Block',
+    chain: 'Nexa Mainnet',
+    rpc: [ 'https://rpc-nodes.nexablockscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Nexa Mainnet Token', symbol: 'NEXB', decimals: 18 },
+    infoURL: 'https://www.nexablock.io',
+    shortName: 'Nexa',
+    chainId: 9025,
+    networkId: 9025,
+    icon: 'nexaChain',
+    explorers: [
+      {
+        name: 'Nexablock Mainnet Explorer',
         url: 'https://nexablockscan.io',
         standard: 'none',
         icon: 'nexaChain'
@@ -16138,6 +16258,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Aternos',
+    chain: 'Aternos',
+    icon: 'aternos',
+    rpc: [ 'https://rpc.aternoschain.com' ],
+    faucets: [ 'https://faucet.aternoschain.com' ],
+    nativeCurrency: { name: 'Aternos', symbol: 'ATR', decimals: 18 },
+    infoURL: 'https://aternoschain.com',
+    shortName: 'ATR',
+    chainId: 12020,
+    networkId: 12020,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.aternoschain.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Singularity ZERO Testnet',
     chain: 'ZERO',
     rpc: [ 'https://betaenv.singularity.gold:18545' ],
@@ -16368,6 +16508,8 @@ const chainArray = [
     name: 'Beam Testnet',
     chain: 'BEAM',
     rpc: [
+      'https://build.onbeam.com/rpc/testnet',
+      'wss://build.onbeam.com/ws/testnet',
       'https://subnets.avax.network/beam/testnet/rpc',
       'wss://subnets.avax.network/beam/testnet/ws'
     ],
@@ -16922,6 +17064,36 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'unreal',
+    title: 'unreal testnet for re.al',
+    chain: 'unreal',
+    rpc: [
+      'https://rpc.unreal.gelato.digital',
+      'wss://ws.unreal.gelato.digital'
+    ],
+    nativeCurrency: { name: 'unreal Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/unreal',
+    faucets: [],
+    shortName: 'unreal',
+    chainId: 18231,
+    networkId: 18231,
+    slip44: 60,
+    icon: 'unreal',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://unreal.blockscout.com',
+        icon: 'unreal',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.unreal.gelato.digital' } ]
+    }
   },
   {
     name: 'MXC zkEVM Mainnet',
@@ -19803,6 +19975,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'Vanguard',
+    title: 'Vanar Testnet Vanguard',
+    chain: 'VANAR',
+    rpc: [
+      'https://rpc-vanguard.vanarchain.com',
+      'wss://ws-vanguard.vanarchain.com'
+    ],
+    faucets: [ 'https://faucet.vanarchain.com' ],
+    nativeCurrency: { name: 'Vanguard Vanry', symbol: 'VG', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://vanarchain.com',
+    shortName: 'vanguard',
+    chainId: 78600,
+    networkId: 78600,
+    icon: 'vanguard',
+    explorers: [
+      {
+        name: 'Vanguard Explorer',
+        url: 'https://explorer-vanguard.vanarchain.com',
+        icon: 'vanguard',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Gold Smart Chain Testnet',
     chain: 'STAND',
     icon: 'standTestnet',
@@ -19868,6 +20065,25 @@ const chainArray = [
         name: 'Beratrail',
         url: 'https://artio.beratrail.io',
         icon: 'berachain',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Hizoco mainnet',
+    chain: 'HZC',
+    icon: 'hizoco',
+    rpc: [ 'https://hizoco.net/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Hizoco', symbol: 'HZC', decimals: 18 },
+    infoURL: 'http://hizoco.net',
+    shortName: 'hzc',
+    chainId: 80096,
+    networkId: 80096,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://hizoco.net:38443',
         standard: 'none'
       }
     ]
@@ -24255,6 +24471,33 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Plume Testnet',
+    title: 'Plume Sepolia Rollup Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://plume-testnet.rpc.caldera.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Plume Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.plumenetwork.xyz/',
+    shortName: 'plume-testnet',
+    chainId: 161221135,
+    networkId: 161221135,
+    slip44: 1,
+    icon: 'plume',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://plume-testnet.explorer.caldera.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://plume-testnet.calderabridge.xyz' } ]
+    }
+  },
+  {
     name: 'Blast Sepolia Testnet',
     chain: 'ETH',
     rpc: [ 'https://sepolia.blast.io' ],
@@ -25155,6 +25398,36 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'GitSwarm Test Network',
+    title: 'GitSwarm Test Network',
+    chain: 'ETH',
+    icon: 'gitswarm',
+    rpc: [ 'https://gitswarm.com:2096' ],
+    faucets: [],
+    nativeCurrency: { name: 'GitSwarm Ether', symbol: 'GS-ETH', decimals: 18 },
+    infoURL: 'https://gitswarm.com/',
+    shortName: 'GS-ETH',
+    chainId: 28872323069,
+    networkId: 28872323069,
+    slip44: 1,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
+    name: 'Kakarot Sepolia',
+    chain: 'ETH',
+    icon: 'kakarot',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://kakarot.org',
+    shortName: 'kkrt-sepolia',
+    chainId: 107107114116,
+    networkId: 107107114116,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
   },
   {
     name: 'Alphabet Mainnet',
