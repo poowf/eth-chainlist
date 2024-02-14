@@ -10927,6 +10927,26 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-248' }
   },
   {
+    name: 'Karak Mainnet',
+    chain: 'Karak',
+    icon: 'karak',
+    rpc: [ 'https://rpc.karak.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Karak', symbol: 'KRK', decimals: 18 },
+    infoURL: 'https://karak.network',
+    shortName: 'karak-mainnet',
+    chainId: 2410,
+    networkId: 2410,
+    explorers: [
+      {
+        name: 'Karak Mainnet Explorer',
+        url: 'https://explorer.karak.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
     name: 'XODEX',
     chain: 'XODEX',
     rpc: [ 'https://mainnet.xo-dex.com/rpc', 'https://xo-dex.io' ],
@@ -11014,6 +11034,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Karak Testnet',
+    chain: 'Karak',
+    icon: 'karak',
+    rpc: [ 'https://goerli.node1.karak.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Karak', symbol: 'KRK', decimals: 18 },
+    infoURL: 'https://karak.network',
+    shortName: 'karak-testnet',
+    chainId: 2511,
+    networkId: 2511,
+    explorers: [
+      {
+        name: 'Karak Testnet Explorer',
+        url: 'https://goerli.scan.karak.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-5' }
   },
   {
     name: 'Fraxtal Testnet',
@@ -15029,6 +15069,30 @@ const chainArray = [
     networkId: 8889
   },
   {
+    name: 'Orenium Testnet Protocol',
+    chain: 'ORE',
+    rpc: [
+      'https://rpc-dev-testnet.orenium.org/',
+      'https://rpc-testnet.orenium.org/'
+    ],
+    nativeCurrency: { name: 'ORENIUM', symbol: 'tORE', decimals: 18 },
+    infoURL: 'https://orenium.org',
+    shortName: 'tore',
+    chainId: 8890,
+    networkId: 8890,
+    slip44: 1,
+    icon: 'ore',
+    faucets: [ 'https://faucetcoin.orenium.org' ],
+    explorers: [
+      {
+        name: 'ORE Testnet Explorer',
+        icon: 'ore',
+        url: 'https://testnet.oreniumscan.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Mammoth Mainnet',
     title: 'Mammoth Chain',
     chain: 'MMT',
@@ -17232,6 +17296,25 @@ const chainArray = [
         name: 'JONO11 Explorer',
         url: 'https://subnets-test.avax.network/jono11',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'C4EI',
+    chain: 'C4EI',
+    rpc: [ 'https://rpc.c4ei.net' ],
+    faucets: [ 'https://play.google.com/store/apps/details?id=net.c4ei.fps2' ],
+    nativeCurrency: { name: 'C4EI', symbol: 'C4EI', decimals: 18 },
+    infoURL: 'https://c4ei.net',
+    shortName: 'c4ei',
+    chainId: 21004,
+    networkId: 21004,
+    explorers: [
+      {
+        name: 'C4EI sirato',
+        url: 'https://exp.c4ei.net',
+        icon: 'c4ei',
+        standard: 'none'
       }
     ]
   },
