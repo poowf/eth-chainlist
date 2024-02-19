@@ -13283,7 +13283,7 @@ const chainArray = [
       'wss://fraa-dancebox-3001-rpc.a.dancebox.tanssi.network'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Unit', symbol: 'Unit', decimals: 18 },
+    nativeCurrency: { name: 'TANGO', symbol: 'TANGO', decimals: 18 },
     infoURL: 'https://tanssi.network',
     shortName: 'TanssiCC',
     chainId: 5678,
@@ -18868,6 +18868,28 @@ const chainArray = [
       {
         name: 'explorer-thebifrost',
         url: 'https://explorer.testnet.thebifrost.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GUNZ Testnet',
+    chain: 'tGUN',
+    rpc: [
+      'https://rpc.gunz.dev/ext/bc/ryk9vkvNuKtewME2PeCgybo9sdWXGmCkBrrx4VPuZPdVdAak8/rpc'
+    ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'GUN', symbol: 'GUN', decimals: 18 },
+    icon: 'guntestnet',
+    infoURL: 'https://gunbygunz.com',
+    shortName: 'Stork',
+    chainId: 49321,
+    networkId: 49321,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.gunzscan.io',
         standard: 'EIP3091'
       }
     ]
