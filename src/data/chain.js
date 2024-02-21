@@ -8,8 +8,8 @@ const chainArray = [
       'wss://mainnet.infura.io/ws/v3/${INFURA_API_KEY}',
       'https://api.mycryptoapi.com/eth',
       'https://cloudflare-eth.com',
-      'https://ethereum.publicnode.com',
-      'wss://ethereum.publicnode.com',
+      'https://ethereum-rpc.publicnode.com',
+      'wss://ethereum-rpc.publicnode.com',
       'https://mainnet.gateway.tenderly.co',
       'wss://mainnet.gateway.tenderly.co',
       'https://rpc.blocknative.com/boost',
@@ -123,8 +123,8 @@ const chainArray = [
       'https://goerli.infura.io/v3/${INFURA_API_KEY}',
       'wss://goerli.infura.io/v3/${INFURA_API_KEY}',
       'https://rpc.goerli.mudit.blog/',
-      'https://ethereum-goerli.publicnode.com',
-      'wss://ethereum-goerli.publicnode.com',
+      'https://ethereum-goerli-rpc.publicnode.com',
+      'wss://ethereum-goerli-rpc.publicnode.com',
       'https://goerli.gateway.tenderly.co',
       'wss://goerli.gateway.tenderly.co'
     ],
@@ -224,8 +224,8 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://mainnet.optimism.io',
-      'https://optimism.publicnode.com',
-      'wss://optimism.publicnode.com',
+      'https://optimism-rpc.publicnode.com',
+      'wss://optimism-rpc.publicnode.com',
       'https://optimism.gateway.tenderly.co',
       'wss://optimism.gateway.tenderly.co'
     ],
@@ -490,8 +490,8 @@ const chainArray = [
     chain: 'CRO',
     rpc: [
       'https://evm.cronos.org',
-      'https://cronos-evm.publicnode.com',
-      'wss://cronos-evm.publicnode.com'
+      'https://cronos-evm-rpc.publicnode.com',
+      'wss://cronos-evm-rpc.publicnode.com'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
@@ -1129,8 +1129,8 @@ const chainArray = [
       'https://bsc-dataseed2.ninicoin.io',
       'https://bsc-dataseed3.ninicoin.io',
       'https://bsc-dataseed4.ninicoin.io',
-      'https://bsc.publicnode.com',
-      'wss://bsc.publicnode.com',
+      'https://bsc-rpc.publicnode.com',
+      'wss://bsc-rpc.publicnode.com',
       'wss://bsc-ws-node.nariox.org'
     ],
     faucets: [],
@@ -1162,8 +1162,8 @@ const chainArray = [
       'https://rpc.ankr.com/syscoin/${ANKR_API_KEY}',
       'https://syscoin.public-rpc.com',
       'wss://rpc.syscoin.org/wss',
-      'https://syscoin-evm.publicnode.com',
-      'wss://syscoin-evm.publicnode.com'
+      'https://syscoin-evm-rpc.publicnode.com',
+      'wss://syscoin-evm-rpc.publicnode.com'
     ],
     faucets: [ 'https://faucet.syscoin.org' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
@@ -1988,8 +1988,8 @@ const chainArray = [
       'https://data-seed-prebsc-2-s2.bnbchain.org:8545',
       'https://data-seed-prebsc-1-s3.bnbchain.org:8545',
       'https://data-seed-prebsc-2-s3.bnbchain.org:8545',
-      'https://bsc-testnet.publicnode.com',
-      'wss://bsc-testnet.publicnode.com'
+      'https://bsc-testnet-rpc.publicnode.com',
+      'wss://bsc-testnet-rpc.publicnode.com'
     ],
     faucets: [ 'https://testnet.bnbchain.org/faucet-smart' ],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'tBNB', decimals: 18 },
@@ -2061,8 +2061,8 @@ const chainArray = [
       'https://web3endpoints.com/gnosischain-mainnet',
       'https://gnosis.oat.farm',
       'wss://rpc.gnosischain.com/wss',
-      'https://gnosis.publicnode.com',
-      'wss://gnosis.publicnode.com'
+      'https://gnosis-rpc.publicnode.com',
+      'wss://gnosis-rpc.publicnode.com'
     ],
     faucets: [
       'https://gnosisfaucet.com',
@@ -2728,8 +2728,8 @@ const chainArray = [
       'https://rpc-mainnet.maticvigil.com',
       'https://rpc-mainnet.matic.quiknode.pro',
       'https://matic-mainnet-full-rpc.bwarelabs.com',
-      'https://polygon-bor.publicnode.com',
-      'wss://polygon-bor.publicnode.com',
+      'https://polygon-bor-rpc.publicnode.com',
+      'wss://polygon-bor-rpc.publicnode.com',
       'https://polygon.gateway.tenderly.co',
       'wss://polygon.gateway.tenderly.co'
     ],
@@ -3407,8 +3407,8 @@ const chainArray = [
       'wss://opbnb-mainnet.nodereal.io/ws/v1/64a9df0874fb4a93b9d0a3849de012d3',
       'https://opbnb-mainnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5',
       'wss://opbnb-mainnet.nodereal.io/ws/v1/e9a36765eb8a40b9bd12e680a1fd2bc5',
-      'https://opbnb.publicnode.com',
-      'wss://opbnb.publicnode.com'
+      'https://opbnb-rpc.publicnode.com',
+      'wss://opbnb-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
@@ -3793,8 +3793,8 @@ const chainArray = [
     chain: 'FTM',
     rpc: [
       'https://rpc.ftm.tools',
-      'https://fantom.publicnode.com',
-      'wss://fantom.publicnode.com'
+      'https://fantom-rpc.publicnode.com',
+      'wss://fantom-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Fantom', symbol: 'FTM', decimals: 18 },
@@ -4689,8 +4689,8 @@ const chainArray = [
     rpc: [
       'https://rpc.pulsechain.com',
       'wss://rpc.pulsechain.com',
-      'https://pulsechain.publicnode.com',
-      'wss://pulsechain.publicnode.com',
+      'https://pulsechain-rpc.publicnode.com',
+      'wss://pulsechain-rpc.publicnode.com',
       'https://rpc-pulsechain.g4mm4.io',
       'wss://rpc-pulsechain.g4mm4.io'
     ],
@@ -4930,8 +4930,8 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://goerli.optimism.io',
-      'https://optimism-goerli.publicnode.com',
-      'wss://optimism-goerli.publicnode.com',
+      'https://optimism-goerli-rpc.publicnode.com',
+      'wss://optimism-goerli-rpc.publicnode.com',
       'https://optimism-goerli.gateway.tenderly.co',
       'wss://optimism-goerli.gateway.tenderly.co'
     ],
@@ -6850,8 +6850,8 @@ const chainArray = [
     rpc: [
       'https://rpc.v4.testnet.pulsechain.com',
       'wss://rpc.v4.testnet.pulsechain.com',
-      'https://pulsechain-testnet.publicnode.com',
-      'wss://pulsechain-testnet.publicnode.com',
+      'https://pulsechain-testnet-rpc.publicnode.com',
+      'wss://pulsechain-testnet-rpc.publicnode.com',
       'https://rpc-testnet-pulsechain.g4mm4.io',
       'wss://rpc-testnet-pulsechain.g4mm4.io'
     ],
@@ -7593,7 +7593,11 @@ const chainArray = [
   {
     name: 'Dymension',
     chain: 'Dymension',
-    rpc: [ 'https://dymension-evm.blockpi.network/v1/rpc/public' ],
+    rpc: [
+      'https://dymension-evm.blockpi.network/v1/rpc/public',
+      'https://dymension-evm-rpc.publicnode.com',
+      'wss://dymension-evm-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'DYM', symbol: 'DYM', decimals: 18 },
     infoURL: 'https://dymension.xyz',
@@ -8030,6 +8034,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Hybrid Testnet',
+    chain: '$HYB',
+    icon: 'hybridIcon',
+    rpc: [ 'https://testnet-rpc.buildonhybrid.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Hybrid', symbol: '$HYB', decimals: 18 },
+    infoURL: 'https://buildonhybrid.com',
+    shortName: 'hyb',
+    chainId: 1224,
+    networkId: 1224,
+    explorers: [
+      {
+        name: 'Hybrid Testnet',
+        url: 'https://alphatestnet.buildonhybrid.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Exzo Network Mainnet',
     chain: 'EXZO',
     icon: 'exzo',
@@ -8235,8 +8258,8 @@ const chainArray = [
     rpc: [
       'https://rpc.api.moonbeam.network',
       'wss://wss.api.moonbeam.network',
-      'https://moonbeam.publicnode.com',
-      'wss://moonbeam.publicnode.com'
+      'https://moonbeam-rpc.publicnode.com',
+      'wss://moonbeam-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Glimmer', symbol: 'GLMR', decimals: 18 },
@@ -8258,8 +8281,8 @@ const chainArray = [
     rpc: [
       'https://rpc.api.moonriver.moonbeam.network',
       'wss://wss.api.moonriver.moonbeam.network',
-      'https://moonriver.publicnode.com',
-      'wss://moonriver.publicnode.com'
+      'https://moonriver-rpc.publicnode.com',
+      'wss://moonriver-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Moonriver', symbol: 'MOVR', decimals: 18 },
@@ -10664,8 +10687,8 @@ const chainArray = [
       'https://kava-rpc.gateway.pokt.network',
       'https://kava-evm.rpc.thirdweb.com',
       'wss://wevm.kava.io',
-      'https://kava-evm.publicnode.com',
-      'wss://kava-evm.publicnode.com',
+      'https://kava-evm-rpc.publicnode.com',
+      'wss://kava-evm-rpc.publicnode.com',
       'https://evm.kava-rpc.com',
       'https://rpc.ankr.com/kava_evm',
       'wss://wevm.kava-rpc.com'
@@ -12190,8 +12213,8 @@ const chainArray = [
     chain: 'FTM',
     rpc: [
       'https://rpc.testnet.fantom.network',
-      'https://fantom-testnet.publicnode.com',
-      'wss://fantom-testnet.publicnode.com'
+      'https://fantom-testnet-rpc.publicnode.com',
+      'wss://fantom-testnet-rpc.publicnode.com'
     ],
     faucets: [ 'https://faucet.fantom.network' ],
     nativeCurrency: { name: 'Fantom', symbol: 'FTM', decimals: 18 },
@@ -12871,8 +12894,8 @@ const chainArray = [
     icon: 'mantle',
     rpc: [
       'https://rpc.mantle.xyz',
-      'https://mantle.publicnode.com',
-      'wss://mantle.publicnode.com'
+      'https://mantle-rpc.publicnode.com',
+      'wss://mantle-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Mantle', symbol: 'MNT', decimals: 18 },
@@ -13022,8 +13045,8 @@ const chainArray = [
       'https://rpc2.bahamut.io',
       'wss://ws1.sahara.bahamutchain.com',
       'wss://ws2.sahara.bahamutchain.com',
-      'https://bahamut.publicnode.com',
-      'wss://bahamut.publicnode.com'
+      'https://bahamut-rpc.publicnode.com',
+      'wss://bahamut-rpc.publicnode.com'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -13260,7 +13283,9 @@ const chainArray = [
       'https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3',
       'wss://opbnb-testnet.nodereal.io/ws/v1/64a9df0874fb4a93b9d0a3849de012d3',
       'https://opbnb-testnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5',
-      'wss://opbnb-testnet.nodereal.io/ws/v1/e9a36765eb8a40b9bd12e680a1fd2bc5'
+      'wss://opbnb-testnet.nodereal.io/ws/v1/e9a36765eb8a40b9bd12e680a1fd2bc5',
+      'https://opbnb-testnet-rpc.publicnode.com',
+      'wss://opbnb-testnet-rpc.publicnode.com'
     ],
     faucets: [ 'https://testnet.bnbchain.org/faucet-smart' ],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'tBNB', decimals: 18 },
@@ -13315,8 +13340,8 @@ const chainArray = [
     rpc: [
       'https://rpc.tanenbaum.io',
       'wss://rpc.tanenbaum.io/wss',
-      'https://syscoin-tanenbaum-evm.publicnode.com',
-      'wss://syscoin-tanenbaum-evm.publicnode.com'
+      'https://syscoin-tanenbaum-evm-rpc.publicnode.com',
+      'wss://syscoin-tanenbaum-evm-rpc.publicnode.com'
     ],
     faucets: [ 'https://faucet.tanenbaum.io' ],
     nativeCurrency: { name: 'Testnet Syscoin', symbol: 'tSYS', decimals: 18 },
@@ -14788,8 +14813,8 @@ const chainArray = [
       'https://developer-access-mainnet.base.org/',
       'https://base.gateway.tenderly.co',
       'wss://base.gateway.tenderly.co',
-      'https://base.publicnode.com',
-      'wss://base.publicnode.com'
+      'https://base-rpc.publicnode.com',
+      'wss://base-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -15916,8 +15941,8 @@ const chainArray = [
       'https://rpc.chiadochain.net',
       'https://rpc.chiado.gnosis.gateway.fm',
       'wss://rpc.chiadochain.net/wss',
-      'https://gnosis-chiado.publicnode.com',
-      'wss://gnosis-chiado.publicnode.com'
+      'https://gnosis-chiado-rpc.publicnode.com',
+      'wss://gnosis-chiado-rpc.publicnode.com'
     ],
     faucets: [ 'https://gnosisfaucet.com' ],
     nativeCurrency: { name: 'Chiado xDAI', symbol: 'XDAI', decimals: 18 },
@@ -16248,8 +16273,8 @@ const chainArray = [
     chain: 'Haqq',
     rpc: [
       'https://rpc.eth.haqq.network',
-      'https://haqq-evm.publicnode.com',
-      'wss://haqq-evm.publicnode.com'
+      'https://haqq-evm-rpc.publicnode.com',
+      'wss://haqq-evm-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Islamic Coin', symbol: 'ISLM', decimals: 18 },
@@ -16966,8 +16991,8 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://rpc.holesky.ethpandaops.io',
-      'https://ethereum-holesky.publicnode.com',
-      'wss://ethereum-holesky.publicnode.com'
+      'https://ethereum-holesky-rpc.publicnode.com',
+      'wss://ethereum-holesky-rpc.publicnode.com'
     ],
     faucets: [
       'https://faucet.holesky.ethpandaops.io',
@@ -18627,8 +18652,8 @@ const chainArray = [
     icon: 'avax',
     rpc: [
       'https://api.avax-test.network/ext/bc/C/rpc',
-      'https://avalanche-fuji-c-chain.publicnode.com',
-      'wss://avalanche-fuji-c-chain.publicnode.com'
+      'https://avalanche-fuji-c-chain-rpc.publicnode.com',
+      'wss://avalanche-fuji-c-chain-rpc.publicnode.com'
     ],
     faucets: [ 'https://faucet.avax-test.network/' ],
     nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
@@ -18651,8 +18676,8 @@ const chainArray = [
     icon: 'avax',
     rpc: [
       'https://api.avax.network/ext/bc/C/rpc',
-      'https://avalanche-c-chain.publicnode.com',
-      'wss://avalanche-c-chain.publicnode.com'
+      'https://avalanche-c-chain-rpc.publicnode.com',
+      'wss://avalanche-c-chain-rpc.publicnode.com'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
@@ -20196,8 +20221,8 @@ const chainArray = [
     icon: 'polygon',
     rpc: [
       'https://rpc-mumbai.maticvigil.com',
-      'https://polygon-mumbai-bor.publicnode.com',
-      'wss://polygon-mumbai-bor.publicnode.com',
+      'https://polygon-mumbai-bor-rpc.publicnode.com',
+      'wss://polygon-mumbai-bor-rpc.publicnode.com',
       'https://polygon-mumbai.gateway.tenderly.co',
       'wss://polygon-mumbai.gateway.tenderly.co'
     ],
@@ -20398,6 +20423,21 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Blast',
+    status: 'incubating',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://blast.io/',
+    shortName: 'blastmainnet',
+    chainId: 81457,
+    networkId: 81457,
+    icon: 'blast',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
     name: 'Quantum Chain Mainnet',
     chain: 'QNET',
     icon: 'qnet',
@@ -20441,8 +20481,8 @@ const chainArray = [
       'https://goerli.base.org',
       'https://base-goerli.gateway.tenderly.co',
       'wss://base-goerli.gateway.tenderly.co',
-      'https://base-goerli.publicnode.com',
-      'wss://base-goerli.publicnode.com'
+      'https://base-goerli-rpc.publicnode.com',
+      'wss://base-goerli-rpc.publicnode.com'
     ],
     faucets: [ 'https://www.coinbase.com/faucets/base-ethereum-goerli-faucet' ],
     nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
@@ -20475,7 +20515,11 @@ const chainArray = [
   {
     name: 'Base Sepolia Testnet',
     chain: 'ETH',
-    rpc: [ 'https://sepolia.base.org' ],
+    rpc: [
+      'https://https://sepolia.base.org',
+      'https://base-sepolia-rpc.publicnode.com',
+      'wss://base-sepolia-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://base.org',
@@ -21085,6 +21129,25 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://scan.crystaleum.org',
         icon: 'crystal',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Masa Testnet',
+    chain: 'MASA',
+    rpc: [ 'https://subnets.avax.network/masatestne/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Masa Token', symbol: 'MASA', decimals: 18 },
+    infoURL: 'https://masa.finance',
+    shortName: 'masa',
+    chainId: 103454,
+    networkId: 103454,
+    explorers: [
+      {
+        name: 'Masa Testnet Explorer',
+        url: 'https://subnets-test.avax.network/masatestnet',
         standard: 'EIP3091'
       }
     ]
@@ -24135,8 +24198,8 @@ const chainArray = [
       'wss://sepolia.infura.io/v3/${INFURA_API_KEY}',
       'https://sepolia.gateway.tenderly.co',
       'wss://sepolia.gateway.tenderly.co',
-      'https://ethereum-sepolia.publicnode.com',
-      'wss://ethereum-sepolia.publicnode.com'
+      'https://ethereum-sepolia-rpc.publicnode.com',
+      'wss://ethereum-sepolia-rpc.publicnode.com'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
