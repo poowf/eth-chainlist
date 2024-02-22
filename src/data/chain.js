@@ -3688,6 +3688,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'ProtoJumbo Testnet',
+    chain: 'Jumbo',
+    rpc: [ 'https://testnode.jumbochain.org' ],
+    faucets: [ 'https://protojumbo.jumbochain.org/faucet-smart' ],
+    nativeCurrency: { name: 'JNFTC', symbol: 'JNFTC', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://jumbochain.org',
+    shortName: 'ProtoJumbo',
+    chainId: 234,
+    networkId: 234,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'ProtoJumbo',
+        url: 'https://protojumbo.jumbochain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Deamchain Testnet',
     chain: 'Deamchain',
     icon: 'deam',
@@ -8805,6 +8825,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Vitruveo Mainnet',
+    title: 'Vitruveo is a blockchain for Creators',
+    chain: 'Vitruveo',
+    rpc: [ 'https://rpc.vitruveo.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Vitruveo Coin', symbol: 'VTRU', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://www.vitruveo.xyz',
+    shortName: 'vitruveo',
+    chainId: 1490,
+    networkId: 1490,
+    icon: 'vitruveo',
+    explorers: [
+      {
+        name: 'Vitruveo Explorer',
+        url: 'https://explorer.vitruveo.xyz',
+        icon: 'vitruveo',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BEVM Canary',
     chain: 'ChainX',
     rpc: [
@@ -9553,6 +9595,21 @@ const chainArray = [
     infoURL: ''
   },
   {
+    name: 'Selendra Network Testnet',
+    chain: 'tSEL',
+    rpc: [
+      'https://rpc0-testnet.selendra.org',
+      'https://rpc1-testnet.selendra.org'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Selendra', symbol: 'tSEL', decimals: 18 },
+    infoURL: 'https://selendra.org',
+    shortName: 'tSEL',
+    chainId: 1953,
+    networkId: 1953,
+    icon: 'selendra'
+  },
+  {
     name: 'Dexilla Testnet',
     chain: 'Dexilla',
     rpc: [ 'https://rpc.dexilla.com' ],
@@ -9576,6 +9633,25 @@ const chainArray = [
       chain: 'eip155-11155111',
       bridges: [ { url: 'https://bridge.dexilla.com' } ]
     }
+  },
+  {
+    name: 'Selendra Network Mainnet',
+    chain: 'SEL',
+    rpc: [ 'https://rpc0.selendra.org', 'https://rpc1.selendra.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Selendra', symbol: 'SEL', decimals: 18 },
+    infoURL: 'https://selendra.org',
+    shortName: 'SEL',
+    chainId: 1961,
+    networkId: 1961,
+    icon: 'selendra',
+    explorers: [
+      {
+        name: 'Selendra Scan',
+        url: 'https://scan.selendra.org',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Eleanor',
@@ -12724,6 +12800,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Gold Chain',
+    title: 'Gold Chain',
+    chain: 'Gold',
+    rpc: [ 'https://chain-rpc.gold.dev' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://gold.dev',
+    shortName: 'gold',
+    chainId: 4653,
+    networkId: 4653,
+    status: 'incubating',
+    icon: 'gold'
   },
   {
     name: 'IoTeX Network Mainnet',
@@ -16787,6 +16877,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Vitruveo Testnet',
+    title: 'Vitruveo is a blockchain for Creators',
+    chain: 'Vitruveo',
+    rpc: [ 'https://test-rpc.vitruveo.xyz' ],
+    faucets: [ 'https://faucet.vitruveo.xyz' ],
+    nativeCurrency: { name: 'Vitruveo Test Coin', symbol: 'tVTRU', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://www.vitruveo.xyz',
+    shortName: 'vitruveo-test',
+    chainId: 14333,
+    networkId: 14333,
+    icon: 'vitruveo',
+    explorers: [
+      {
+        name: 'Vitruveo Testnet Explorer',
+        url: 'https://test-explorer.vitruveo.xyz',
+        icon: 'vitruveo',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Humanode Testnet 5 Israfel',
     chain: 'Humanode Testnet 5',
     rpc: [ 'https://explorer-rpc-http.testnet5.stages.humanode.io' ],
@@ -17105,6 +17217,26 @@ const chainArray = [
         url: 'https://testnet.palettescan.com',
         icon: 'PLT',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'KONET Mainnet',
+    chain: 'KONET',
+    rpc: [ 'https://api.kon-wallet.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'KONET', symbol: 'KONET', decimals: 18 },
+    infoURL: 'https://konetmain.com',
+    shortName: 'KONET',
+    chainId: 17217,
+    networkId: 17217,
+    slip44: 1,
+    icon: 'konet',
+    explorers: [
+      {
+        name: 'konet-explorer',
+        url: 'https://explorer.kon-wallet.com',
+        standard: 'EIP3091'
       }
     ]
   },
