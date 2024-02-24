@@ -3994,7 +3994,7 @@ const chainArray = [
     ],
     faucets: [],
     nativeCurrency: { name: 'LaCoin', symbol: 'LAC', decimals: 18 },
-    features: [ { name: 'EIP155' } ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: '',
     shortName: 'lachain',
     chainId: 274,
@@ -8801,6 +8801,27 @@ const chainArray = [
       {
         name: 'GIL Explorer',
         url: 'https://explorer.giltestnet.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MetaChain Istanbul',
+    title: 'MetaChain Testnet Istanbul',
+    chain: 'MTC',
+    icon: 'metachain',
+    rpc: [ 'https://istanbul-rpc.metachain.dev' ],
+    faucets: [ 'https://istanbul-faucet.metachain.dev' ],
+    nativeCurrency: { name: 'Metatime Coin', symbol: 'MTC', decimals: 18 },
+    infoURL: 'https://metatime.com/en',
+    shortName: 'metatimeistanbul',
+    chainId: 1453,
+    networkId: 1453,
+    slip44: 1453,
+    explorers: [
+      {
+        name: 'MetaExplorer',
+        url: 'https://istanbul-explorer.metachain.dev',
         standard: 'EIP3091'
       }
     ]
@@ -17861,6 +17882,26 @@ const chainArray = [
       {
         name: 'LiquidLayer Mainnet Explorer',
         url: 'https://scan.liquidlayer.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'AlveyChain Testnet',
+    chain: 'tALV',
+    rpc: [ 'https://testnet-rpc.alvey.io' ],
+    faucets: [ 'https://faucet.alveytestnet.com' ],
+    nativeCurrency: { name: 'AlveyCoin Testnet', symbol: 'tALV', decimals: 18 },
+    infoURL: 'https://alveychain.com/',
+    shortName: 'talv',
+    chainId: 25839,
+    networkId: 25839,
+    icon: 'alveychain',
+    explorers: [
+      {
+        name: 'AlveyScan Testnet',
+        url: 'https://alveytestnet.com',
+        icon: 'alveychain',
         standard: 'EIP3091'
       }
     ]
