@@ -300,9 +300,14 @@ const chainArray = [
     icon: 'flare',
     rpc: [
       'https://flare-api.flare.network/ext/C/rpc',
-      'https://flare.public-rpc.com',
-      'https://rpc.ftso.au/flare'
+      'https://flare.rpc.thirdweb.com',
+      'https://flare-bundler.etherspot.io',
+      'https://rpc.ankr.com/flare',
+      'https://rpc.ftso.au/flare',
+      'https://flare.enosys.global/ext/C/rpc',
+      'https://flare.solidifi.app/ext/C/rpc'
     ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Flare', symbol: 'FLR', decimals: 18 },
     infoURL: 'https://flare.network',
@@ -317,7 +322,7 @@ const chainArray = [
       },
       {
         name: 'flarescan',
-        url: 'https://flarescan.com',
+        url: 'https://mainnet.flarescan.com',
         standard: 'EIP3091'
       }
     ]
@@ -337,23 +342,31 @@ const chainArray = [
     networkId: 15
   },
   {
-    name: 'Flare Testnet Coston',
-    chain: 'FLR',
+    name: 'Songbird Testnet Coston',
+    chain: 'SGB',
     icon: 'coston',
-    rpc: [ 'https://coston-api.flare.network/ext/bc/C/rpc' ],
-    faucets: [
-      'https://faucet.towolabs.com',
-      'https://fauceth.komputing.org?chain=16&address=${ADDRESS}'
+    rpc: [
+      'https://coston-api.flare.network/ext/C/rpc',
+      'https://flare-testnet-coston.rpc.thirdweb.com',
+      'https://coston.enosys.global/ext/C/rpc'
     ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.flare.network' ],
     nativeCurrency: { name: 'Coston Flare', symbol: 'CFLR', decimals: 18 },
-    infoURL: 'https://flare.xyz',
+    infoURL: 'https://flare.network',
     shortName: 'cflr',
     chainId: 16,
     networkId: 16,
+    slip44: 1,
     explorers: [
       {
         name: 'blockscout',
         url: 'https://coston-explorer.flare.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'flarescan',
+        url: 'https://coston.testnet.flarescan.com',
         standard: 'EIP3091'
       }
     ]
@@ -394,14 +407,14 @@ const chainArray = [
     icon: 'songbird',
     rpc: [
       'https://songbird-api.flare.network/ext/C/rpc',
-      'https://sgb.ftso.com.au/ext/bc/C/rpc',
-      'https://sgb.lightft.so/rpc',
-      'https://sgb-rpc.ftso.eu',
-      'https://rpc.ftso.au/songbird'
+      'https://rpc.ftso.au/songbird',
+      'https://songbird.enosys.global/ext/C/rpc',
+      'https://songbird.solidifi.app/ext/C/rpc'
     ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Songbird', symbol: 'SGB', decimals: 18 },
-    infoURL: 'https://flare.xyz',
+    infoURL: 'https://flare.network',
     shortName: 'sgb',
     chainId: 19,
     networkId: 19,
@@ -409,6 +422,11 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://songbird-explorer.flare.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'flarescan',
+        url: 'https://songbird.flarescan.com',
         standard: 'EIP3091'
       }
     ]
@@ -839,7 +857,7 @@ const chainArray = [
       {
         name: 'subscan',
         url: 'https://pangolin.subscan.io',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -848,8 +866,7 @@ const chainArray = [
     chain: 'crab',
     rpc: [
       'https://crab-rpc.darwinia.network',
-      'https://crab-rpc.darwiniacommunitydao.xyz',
-      'https://darwiniacrab-rpc.dwellir.com'
+      'https://crab-rpc.darwiniacommunitydao.xyz'
     ],
     faucets: [],
     nativeCurrency: { name: 'Crab Network Native Token', symbol: 'CRAB', decimals: 18 },
@@ -861,7 +878,7 @@ const chainArray = [
       {
         name: 'subscan',
         url: 'https://crab.subscan.io',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -912,7 +929,7 @@ const chainArray = [
       {
         name: 'subscan',
         url: 'https://darwinia.subscan.io',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -2339,10 +2356,16 @@ const chainArray = [
     name: 'Flare Testnet Coston2',
     chain: 'FLR',
     icon: 'coston2',
-    rpc: [ 'https://coston2-api.flare.network/ext/bc/C/rpc' ],
-    faucets: [ 'https://coston2-faucet.towolabs.com' ],
+    rpc: [
+      'https://coston2-api.flare.network/ext/C/rpc',
+      'https://flare-testnet-coston2.rpc.thirdweb.com',
+      'https://flaretestnet-bundler.etherspot.io',
+      'https://coston2.enosys.global/ext/C/rpc'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.flare.network' ],
     nativeCurrency: { name: 'Coston2 Flare', symbol: 'C2FLR', decimals: 18 },
-    infoURL: 'https://flare.xyz',
+    infoURL: 'https://flare.network',
     shortName: 'c2flr',
     chainId: 114,
     networkId: 114,
@@ -2351,6 +2374,11 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://coston2-explorer.flare.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'flarescan',
+        url: 'https://coston2.testnet.flarescan.com',
         standard: 'EIP3091'
       }
     ]
@@ -9359,20 +9387,20 @@ const chainArray = [
     networkId: 1
   },
   {
-    name: 'WhiteBIT Network',
+    name: 'Whitechain',
     chain: 'WBT',
-    rpc: [ 'https://rpc.whitebit.network' ],
+    rpc: [ 'https://rpc.whitechain.io' ],
     faucets: [],
     nativeCurrency: { name: 'WhiteBIT Coin', symbol: 'WBT', decimals: 18 },
-    infoURL: 'https://whitebit.network',
+    infoURL: 'https://whitechain.io',
     shortName: 'wbt',
     chainId: 1875,
     networkId: 1875,
-    icon: 'whitebit',
+    icon: 'whitechain',
     explorers: [
       {
-        name: 'wb-explorer',
-        url: 'https://explorer.whitebit.network',
+        name: 'whitechain-explorer',
+        url: 'https://explorer.whitechain.io',
         standard: 'EIP3091'
       }
     ]
@@ -11347,21 +11375,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'WhiteBIT Network Testnet',
+    name: 'Whitechain Testnet',
     chain: 'WBT',
-    rpc: [ 'https://rpc-testnet.whitebit.network' ],
-    faucets: [ 'https://explorer.whitebit.network/testnet/faucet' ],
+    rpc: [ 'https://rpc-testnet.whitechain.io' ],
+    faucets: [ 'https://testnet.whitechain.io/faucet' ],
     nativeCurrency: { name: 'WhiteBIT Coin', symbol: 'WBT', decimals: 18 },
-    infoURL: 'https://whitebit.com/wbt',
+    infoURL: 'https://whitechain.io',
     shortName: 'twbt',
     chainId: 2625,
     networkId: 2625,
     slip44: 1,
-    icon: 'whitebit-testnet',
+    icon: 'whitechain-testnet',
     explorers: [
       {
-        name: 'wb-explorer-testnet',
-        url: 'https://explorer.whitebit.network/testnet',
+        name: 'whitechain-testnet-explorer',
+        url: 'https://testnet.whitechain.io',
         standard: 'EIP3091'
       }
     ]
@@ -17422,6 +17450,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Titan (TKX) Testnet',
+    chain: 'Titan (TKX)',
+    rpc: [
+      'https://titan-testnet-json-rpc-1.tokenize-dev.com',
+      'https://titan-testnet-json-rpc-2.tokenize-dev.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Titan tkx', symbol: 'TKX', decimals: 18 },
+    infoURL: 'https://tokenize.exchange',
+    shortName: 'titan_tkx-testnet',
+    chainId: 18889,
+    networkId: 18889,
+    slip44: 1,
+    icon: 'titan_tkx',
+    explorers: [
+      {
+        name: 'Titan Explorer',
+        url: 'https://titan-testnet-explorer-light.tokenize-dev.com',
+        standard: 'none',
+        icon: 'titan_tkx'
+      }
+    ]
+  },
+  {
     name: 'HOME Verse Mainnet',
     chain: 'HOME Verse',
     icon: 'home_verse',
@@ -21899,6 +21951,29 @@ const chainArray = [
     chainId: 200625,
     networkId: 200625,
     slip44: 200625
+  },
+  {
+    name: 'Bitlayer Testnet',
+    chain: 'Bitlayer',
+    rpc: [
+      'https://testnet-rpc.bitlayer.org',
+      'wss://testnet-ws.bitlayer.org'
+    ],
+    faucets: [ 'https://www.bitlayer.org/faucet' ],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://docs.bitlayer.org/',
+    shortName: 'Bitlayer',
+    chainId: 200810,
+    networkId: 200810,
+    slip44: 1,
+    icon: 'bitlayer',
+    explorers: [
+      {
+        name: 'bitlayer testnet scan',
+        url: 'https://testnet-scan.bitlayer.org',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Alaya Mainnet',
