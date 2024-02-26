@@ -5355,7 +5355,7 @@ const chainArray = [
     name: 'Firechain Mainnet',
     chain: 'FIRE',
     icon: 'firechain',
-    rpc: [ 'https://mainnet.rpc1.thefirechain.com' ],
+    rpc: [ 'https://rpc-mainnet.thefirechain.com' ],
     faucets: [],
     nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
     infoURL: 'https://thefirechain.com',
@@ -6436,7 +6436,7 @@ const chainArray = [
     name: 'Firechain zkEVM',
     title: 'Firechain zkEVM',
     chain: 'Firechain',
-    rpc: [ 'https://rpc.zkevm.thefirechain.com' ],
+    rpc: [ 'https://rpc-zkevm.thefirechain.com' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://docs.thefirechain.com/',
@@ -6448,7 +6448,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://zkevm.bridge.rpc.thefirechain.com' } ]
+      bridges: [ { url: 'https://zkevm-bridge-rpc.thefirechain.com' } ]
     }
   },
   {
@@ -6784,7 +6784,7 @@ const chainArray = [
     name: 'Rinia Testnet',
     chain: 'FIRE',
     icon: 'rinia',
-    rpc: [ 'https://rinia.rpc1.thefirechain.com' ],
+    rpc: [ 'https://rinia-rpc1.thefirechain.com' ],
     faucets: [ 'https://faucet.thefirechain.com' ],
     nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
     infoURL: 'https://thefirechain.com',
@@ -12143,10 +12143,10 @@ const chainArray = [
     ]
   },
   {
-    name: 'Firechain zkEVM Ghostrider',
+    name: 'Firechain zkEVM Testnet',
     title: 'Firechain zkEVM Ghostrider',
     chain: 'Firechain',
-    rpc: [ 'https://rpc.zkevm.ghostrider.thefirechain.com' ],
+    rpc: [ 'https://rpc-zkevm-ghostrider.thefirechain.com' ],
     faucets: [ 'zkevm-faucet.thefirechain.com' ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://docs.thefirechain.com/',
@@ -12273,6 +12273,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'APEX Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://exp-testnet.apexlayer.xyz' ],
+    faucets: [ 'https://sepoliafaucet.com/' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://docs.apexlayer.xyz/',
+    shortName: 'apexsep',
+    chainId: 3993,
+    networkId: 3993,
+    slip44: 1,
+    icon: 'apextestnet',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://exp-testnet.apexlayer.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://apexlayer.xyz/bridge' } ]
+    }
   },
   {
     name: 'YuanChain Mainnet',
