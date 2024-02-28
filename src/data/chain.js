@@ -11099,7 +11099,7 @@ const chainArray = [
     icon: 'karak',
     rpc: [ 'https://rpc.karak.network' ],
     faucets: [],
-    nativeCurrency: { name: 'Karak', symbol: 'KRK', decimals: 18 },
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://karak.network',
     shortName: 'karak-mainnet',
     chainId: 2410,
