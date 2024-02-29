@@ -12277,7 +12277,7 @@ const chainArray = [
   {
     name: 'APEX Testnet',
     chain: 'ETH',
-    rpc: [ 'https://exp-testnet.apexlayer.xyz' ],
+    rpc: [ 'https://rpc-testnet.apexlayer.xyz' ],
     faucets: [ 'https://sepoliafaucet.com/' ],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://docs.apexlayer.xyz/',
@@ -24902,6 +24902,27 @@ const chainArray = [
   },
   {
     name: 'Autonity Bakerloo (Barada) Testnet',
+    status: 'deprecated',
+    chain: 'AUT',
+    rpc: [],
+    faucets: [ 'https://faucet.autonity.org/' ],
+    nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'bakerloo-01',
+    chainId: 65010001,
+    networkId: 65010001,
+    slip44: 1,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonity-blockscout',
+        url: 'https://bakerloo.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonity Bakerloo (Sumida) Testnet',
     chain: 'AUT',
     rpc: [
       'https://rpc1.bakerloo.autonity.org/',
@@ -24910,9 +24931,9 @@ const chainArray = [
     faucets: [ 'https://faucet.autonity.org/' ],
     nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
-    shortName: 'bakerloo-01',
-    chainId: 65010001,
-    networkId: 65010001,
+    shortName: 'bakerloo-02',
+    chainId: 65010002,
+    networkId: 65010002,
     slip44: 1,
     icon: 'autonity',
     explorers: [
