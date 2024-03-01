@@ -3867,17 +3867,23 @@ const chainArray = [
     ]
   },
   {
-    name: 'Fraxtal Mainnet',
+    name: 'Fraxtal',
     chain: 'FRAX',
-    rpc: [],
+    rpc: [ 'https://rpc.frax.com' ],
     faucets: [],
     nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
     infoURL: 'https://mainnet.frax.com',
     shortName: 'fraxtal',
     chainId: 252,
     networkId: 252,
-    explorers: [],
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'fraxscan',
+        url: 'https://fraxscan.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Kroma',
@@ -8998,6 +9004,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ethereum Inscription Mainnet',
+    chain: 'ETINS',
+    rpc: [ 'https://rpc.etins.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethereum Inscription', symbol: 'ETINS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.etins.org',
+    shortName: 'etins',
+    chainId: 1617,
+    networkId: 1617,
+    explorers: [
+      {
+        name: 'Ethereum Inscription Explorer',
+        url: 'https://explorer.etins.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Catecoin Chain Mainnet',
     chain: 'Catechain',
     rpc: [ 'https://send.catechain.com' ],
@@ -10228,7 +10253,7 @@ const chainArray = [
     chain: 'SWAN',
     rpc: [ 'https://saturn-rpc.swanchain.io' ],
     faucets: [],
-    nativeCurrency: { name: 'SWANETH', symbol: 'SWAN', decimals: 18 },
+    nativeCurrency: { name: 'SWANETH', symbol: 'sETH', decimals: 18 },
     infoURL: 'https://swanchain.io/',
     shortName: 'swan',
     chainId: 2024,
@@ -11258,7 +11283,13 @@ const chainArray = [
     chainId: 2522,
     networkId: 2522,
     slip44: 1,
-    explorers: [],
+    explorers: [
+      {
+        name: 'fraxscan',
+        url: 'https://holesky.fraxscan.com',
+        standard: 'EIP3091'
+      }
+    ],
     status: 'active'
   },
   {
@@ -11393,6 +11424,21 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'APEX',
+    status: 'incubating',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://apexlayer.xyz/',
+    shortName: 'apexmainnet',
+    chainId: 2662,
+    networkId: 2662,
+    icon: 'apexmainnet',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'Morph Testnet',
@@ -11916,6 +11962,11 @@ const chainArray = [
         name: '3xpl',
         url: 'https://3xpl.com/botanix',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Blockscout',
+        url: 'https://blockscout.botanixlabs.dev',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -12088,6 +12139,22 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Astar zkEVM',
+    shortName: 'astrzk',
+    title: 'Astar zkEVM Mainnet',
+    chain: 'ETH',
+    icon: 'astarzk',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://astar.network',
+    chainId: 3776,
+    networkId: 3776,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
+    status: 'incubating'
   },
   {
     name: 'AlveyChain Mainnet',
@@ -16725,22 +16792,6 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-43113' }
-  },
-  {
-    name: 'Astar zkEVM',
-    shortName: 'astrzk',
-    title: 'Astar zkEVM Mainnet',
-    chain: 'ETH',
-    icon: 'astarzk',
-    rpc: [],
-    faucets: [],
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://astar.network',
-    chainId: 12611,
-    networkId: 12611,
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
-    status: 'incubating'
   },
   {
     name: 'Rikeza Network Testnet',
@@ -22173,6 +22224,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Auroria Testnet',
+    title: 'Stratis Testnet Auroria',
+    chain: 'Auroria',
+    rpc: [ 'https://auroria.rpc.stratisevm.com' ],
+    faucets: [ 'https://auroria.faucet.stratisevm.com' ],
+    nativeCurrency: { name: 'Auroria Stratis', symbol: 'tSTRAX', decimals: 18 },
+    infoURL: 'https://www.stratisplatform.com',
+    shortName: 'auroria',
+    chainId: 205205,
+    networkId: 205205,
+    icon: 'auroria',
+    explorers: [
+      {
+        name: 'Auroria Testnet Explorer',
+        url: 'https://auroria.explorer.stratisevm.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PlatON Mainnet',
     chain: 'PlatON',
     rpc: [
@@ -24213,6 +24284,38 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Astar zKyoto',
+    shortName: 'azkyt',
+    title: 'Astar zkEVM Testnet zKyoto',
+    chain: 'ETH',
+    icon: 'astarzk',
+    rpc: [
+      'https://rpc.startale.com/zkyoto',
+      'https://rpc.zkyoto.gelato.digital'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://astar.network',
+    chainId: 6038361,
+    networkId: 6038361,
+    explorers: [
+      {
+        name: 'Blockscout zKyoto chain explorer',
+        url: 'https://astar-zkyoto.blockscout.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        { url: 'https://portal.astar.network' },
+        { url: 'https://bridge.gelato.network/bridge/astar-zkyoto' }
+      ]
+    },
+    status: 'incubating'
   },
   {
     name: 'Saakuru Mainnet',
