@@ -22329,6 +22329,48 @@ const chainArray = [
     ]
   },
   {
+    name: 'DeepL Mainnet',
+    chain: 'DEEPL',
+    rpc: [ 'https://rpc.deeplnetwork.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'DeepL', symbol: 'DEEPL', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://deeplnetwork.org',
+    shortName: 'deepl',
+    chainId: 222555,
+    networkId: 222555,
+    icon: 'deepl',
+    explorers: [
+      {
+        name: 'DeepL Mainnet Explorer',
+        url: 'https://scan.deeplnetwork.org',
+        icon: 'deepl',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DeepL Testnet',
+    chain: 'DEEPL',
+    rpc: [ 'https://testnet.deeplnetwork.org' ],
+    faucets: [ 'https://faucet.deeplnetwork.org' ],
+    nativeCurrency: { name: 'DeepL', symbol: 'DEEPL', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://deeplnetwork.org',
+    shortName: 'tdeepl',
+    chainId: 222666,
+    networkId: 222666,
+    icon: 'deepl',
+    explorers: [
+      {
+        name: 'DeepL Testnet Explorer',
+        url: 'https://testnet-scan.deeplnetwork.org',
+        icon: 'deepl',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Taf ECO Chain Mainnet',
     chain: 'Taf ECO Chain',
     icon: 'taf',
@@ -23463,6 +23505,25 @@ const chainArray = [
       {
         name: 'Hela Official Runtime Testnet Explorer',
         url: 'https://testnet-blockexplorer.helachain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tiltyard Mainnet Subnet',
+    chain: 'TILTYARD',
+    rpc: [ 'https://subnets.avax.network/tiltyard/mainnet/rpc' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'TILT', symbol: 'TILT', decimals: 18 },
+    infoURL: 'https://play.tiltyard.gg/',
+    shortName: 'tiltyardmainnet',
+    chainId: 710420,
+    networkId: 710420,
+    explorers: [
+      {
+        name: 'TILTYARD Explorer',
+        url: 'https://subnets.avax.network/tiltyard',
         standard: 'EIP3091'
       }
     ]
