@@ -20744,9 +20744,15 @@ const chainArray = [
   },
   {
     name: 'Blast',
-    status: 'incubating',
+    status: 'active',
     chain: 'ETH',
-    rpc: [],
+    rpc: [
+      'https://rpc.blast.io',
+      'https://rpc.ankr.com/blast',
+      'https://blast.din.dev/rpc',
+      'https://blastl2-mainnet.public.blastapi.io',
+      'https://blast.blockpi.network/v1/rpc/public'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://blast.io/',
@@ -20754,7 +20760,20 @@ const chainArray = [
     chainId: 81457,
     networkId: 81457,
     icon: 'blast',
-    explorers: [],
+    explorers: [
+      {
+        name: 'Blastscan',
+        url: 'https://blastscan.io',
+        icon: 'blast',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Blast Explorer',
+        url: 'https://blastexplorer.io',
+        icon: 'blast',
+        standard: 'EIP3091'
+      }
+    ],
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
@@ -20836,7 +20855,7 @@ const chainArray = [
     name: 'Base Sepolia Testnet',
     chain: 'ETH',
     rpc: [
-      'https://https://sepolia.base.org',
+      'https://sepolia.base.org',
       'https://base-sepolia-rpc.publicnode.com',
       'wss://base-sepolia-rpc.publicnode.com'
     ],
@@ -25552,6 +25571,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Degen Chain',
+    title: 'Degen Chain',
+    chain: 'Degen',
+    rpc: [ 'https://rpc.degen.tips' ],
+    faucets: [],
+    nativeCurrency: { name: 'DEGEN', symbol: 'DEGEN', decimals: 18 },
+    infoURL: 'https://degen.tips',
+    shortName: 'degen-chain',
+    chainId: 666666666,
+    networkId: 666666666,
+    status: 'incubating',
+    icon: 'degen'
   },
   {
     name: 'Ancient8',
