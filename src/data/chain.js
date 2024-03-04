@@ -6510,6 +6510,27 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'Runic Chain Testnet',
+    chain: 'Runic',
+    rpc: [ 'https://rpc-testnet.runic.build' ],
+    faucets: [ 'https://faucet.runic.build' ],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'rBTC', decimals: 18 },
+    infoURL: 'https://runic.build',
+    shortName: 'runic-testnet',
+    chainId: 822,
+    networkId: 822,
+    status: 'active',
+    icon: 'runic-testnet',
+    explorers: [
+      {
+        name: 'RunicScan',
+        url: 'https://scan.runic.build',
+        icon: 'runic-testnet',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CheckDot Blockchain Devnet',
     chain: 'CDT Blockchain',
     rpc: [ 'https://devnet.checkdot.io' ],
@@ -6798,8 +6819,13 @@ const chainArray = [
     chainId: 917,
     networkId: 917,
     slip44: 1,
-    explorers: [],
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'FireScan',
+        url: 'https://rinia.firescan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Mode Testnet',
@@ -12210,14 +12236,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'Firechain zkEVM Testnet',
-    title: 'Firechain zkEVM Ghostrider',
+    name: 'Firechain zkEVM Ghostrider',
+    title: 'Firechain zkEVM Testnet',
     chain: 'Firechain',
     rpc: [ 'https://rpc-zkevm-ghostrider.thefirechain.com' ],
     faucets: [ 'zkevm-faucet.thefirechain.com' ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://docs.thefirechain.com/',
-    shortName: 'firechain-zkEVM-ghostrider',
+    shortName: 'firechain-zkEVM-testnet',
     chainId: 3885,
     networkId: 3885,
     explorers: []
