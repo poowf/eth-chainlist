@@ -1179,8 +1179,8 @@ const chainArray = [
       'https://rpc.ankr.com/syscoin/${ANKR_API_KEY}',
       'https://syscoin.public-rpc.com',
       'wss://rpc.syscoin.org/wss',
-      'https://syscoin-evm-rpc.publicnode.com',
-      'wss://syscoin-evm-rpc.publicnode.com'
+      'https://syscoin-evm.publicnode.com',
+      'wss://syscoin-evm.publicnode.com'
     ],
     faucets: [ 'https://faucet.syscoin.org' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
@@ -3274,6 +3274,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'FileFileGo',
+    chain: 'FFG',
+    icon: 'ffgIcon',
+    rpc: [ 'https://rpc.filefilego.com/rpc' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'FFG', symbol: 'FFG', decimals: 18 },
+    infoURL: 'https://filefilego.com',
+    shortName: 'ffg',
+    chainId: 191,
+    networkId: 191
   },
   {
     name: 'Crypto Emergency',
@@ -12171,16 +12184,25 @@ const chainArray = [
     shortName: 'astrzk',
     title: 'Astar zkEVM Mainnet',
     chain: 'ETH',
-    icon: 'astarzk',
-    rpc: [],
+    icon: 'astar',
+    rpc: [ 'https://rpc.startale.com/astar-zkevm' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://astar.network',
     chainId: 3776,
     networkId: 3776,
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'Blockscout Astar zkEVM explorer',
+        url: 'https://astar-zkevm.explorer.startale.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portal.astar.network' } ]
+    }
   },
   {
     name: 'AlveyChain Mainnet',
@@ -13597,8 +13619,8 @@ const chainArray = [
     rpc: [
       'https://rpc.tanenbaum.io',
       'wss://rpc.tanenbaum.io/wss',
-      'https://syscoin-tanenbaum-evm-rpc.publicnode.com',
-      'wss://syscoin-tanenbaum-evm-rpc.publicnode.com'
+      'https://syscoin-tanenbaum-evm.publicnode.com',
+      'wss://syscoin-tanenbaum-evm.publicnode.com'
     ],
     faucets: [ 'https://faucet.tanenbaum.io' ],
     nativeCurrency: { name: 'Testnet Syscoin', symbol: 'tSYS', decimals: 18 },
@@ -14466,14 +14488,9 @@ const chainArray = [
     chain: 'Canto',
     rpc: [
       'https://canto.slingshot.finance',
-      'https://canto.neobase.one',
+      'https://canto-rpc.ansybl.io',
       'https://mainnode.plexnode.org:8545',
-      'https://canto.gravitychain.io/',
-      'https://canto.evm.chandrastation.com/',
-      'https://jsonrpc.canto.nodestake.top/',
-      'https://canto.dexvaults.com/',
-      'wss://canto.gravitychain.io:8546',
-      'wss://canto.dexvaults.com/ws'
+      'https://canto.gravitychain.io/'
     ],
     faucets: [],
     nativeCurrency: { name: 'Canto', symbol: 'CANTO', decimals: 18 },
@@ -14483,19 +14500,14 @@ const chainArray = [
     networkId: 7700,
     explorers: [
       {
-        name: 'Canto EVM Explorer (Blockscout)',
-        url: 'https://evm.explorer.canto.io',
-        standard: 'none'
-      },
-      {
-        name: 'Canto Cosmos Explorer',
-        url: 'https://cosmos-explorers.neobase.one',
-        standard: 'none'
+        name: 'Canto Explorer (OKLink)',
+        url: 'https://www.oklink.com/canto',
+        standard: 'EIP3091'
       },
       {
         name: 'Canto EVM Explorer (Blockscout)',
         url: 'https://tuber.build',
-        standard: 'none'
+        standard: 'EIP3091'
       },
       {
         name: 'dexguru',
@@ -24408,7 +24420,7 @@ const chainArray = [
     networkId: 6038361,
     explorers: [
       {
-        name: 'Blockscout zKyoto chain explorer',
+        name: 'Blockscout zKyoto explorer',
         url: 'https://astar-zkyoto.blockscout.com',
         standard: 'EIP3091'
       }
@@ -24420,8 +24432,7 @@ const chainArray = [
         { url: 'https://portal.astar.network' },
         { url: 'https://bridge.gelato.network/bridge/astar-zkyoto' }
       ]
-    },
-    status: 'incubating'
+    }
   },
   {
     name: 'Saakuru Mainnet',
