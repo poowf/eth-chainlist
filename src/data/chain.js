@@ -5498,7 +5498,12 @@ const chainArray = [
   {
     name: 'Rollux Mainnet',
     chain: 'SYS',
-    rpc: [ 'https://rpc.rollux.com', 'wss://rpc.rollux.com/wss' ],
+    rpc: [
+      'https://rpc.rollux.com',
+      'wss://rpc.rollux.com/wss',
+      'https://rollux.rpc.syscoin.org',
+      'wss://rollux.rpc.syscoin.org/wss'
+    ],
     faucets: [ 'https://rollux.id/faucetapp' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
     infoURL: 'https://rollux.com',
@@ -5765,6 +5770,25 @@ const chainArray = [
         name: 'avoscan',
         url: 'https://avoscan.co',
         icon: 'avocado',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'FlowEVM PreviewNet',
+    chain: 'FlowEVM',
+    rpc: [ 'https://previewnet.evm.nodes.onflow.org' ],
+    faucets: [ 'https://previewnet-faucet.onflow.org' ],
+    nativeCurrency: { name: 'FLOW', symbol: 'FLOW', decimals: 18 },
+    infoURL: 'https://developers.flow.com/evm/about',
+    shortName: 'flowevm-preview',
+    chainId: 646,
+    networkId: 646,
+    icon: 'flowevm',
+    explorers: [
+      {
+        name: 'Flow Diver',
+        url: 'https://previewnet.flowdiver.io',
         standard: 'none'
       }
     ]
@@ -6194,6 +6218,25 @@ const chainArray = [
       {
         name: 'Script Explorer',
         url: 'https://explorer.script.tv',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'FlowEVM Mainnet',
+    chain: 'FlowEVM',
+    rpc: [ 'https://mainnet.evm.nodes.onflow.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'FLOW', symbol: 'FLOW', decimals: 18 },
+    infoURL: 'https://developers.flow.com/evm/about',
+    shortName: 'flowevm-mainnet',
+    chainId: 747,
+    networkId: 747,
+    icon: 'flowevm',
+    explorers: [
+      {
+        name: 'Flow Diver',
+        url: 'https://flowdiver.io',
         standard: 'none'
       }
     ]
@@ -11332,6 +11375,20 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'inEVM Mainnet',
+    chain: 'inEVM',
+    icon: 'inevm',
+    rpc: [ 'https://mainnet.rpc.inevm.com/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Injective', symbol: 'INJ', decimals: 18 },
+    infoURL: 'https://inevm.com',
+    shortName: 'inevm',
+    chainId: 2525,
+    networkId: 2525,
+    explorers: [],
+    status: 'active'
+  },
+  {
     name: 'Kortho Mainnet',
     chain: 'Kortho Chain',
     rpc: [ 'https://www.kortho-chain.com' ],
@@ -11712,12 +11769,12 @@ const chainArray = [
     title: 'Bifrost Network Mainnet',
     chain: 'BFC',
     rpc: [
-      'https://public-01.mainnet.thebifrost.io/rpc',
-      'https://public-02.mainnet.thebifrost.io/rpc'
+      'https://public-01.mainnet.bifrostnetwork.com/rpc',
+      'https://public-02.mainnet.bifrostnetwork.com/rpc'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bifrost', symbol: 'BFC', decimals: 18 },
-    infoURL: 'https://thebifrost.io',
+    infoURL: 'https://bifrostnetwork.com',
     shortName: 'bfc',
     chainId: 3068,
     networkId: 3068,
@@ -11725,7 +11782,7 @@ const chainArray = [
     explorers: [
       {
         name: 'explorer-thebifrost',
-        url: 'https://explorer.mainnet.thebifrost.io',
+        url: 'https://explorer.mainnet.bifrostnetwork.com',
         standard: 'EIP3091'
       }
     ]
@@ -19255,12 +19312,12 @@ const chainArray = [
     title: 'Bifrost Network Testnet',
     chain: 'BFC',
     rpc: [
-      'https://public-01.testnet.thebifrost.io/rpc',
-      'https://public-02.testnet.thebifrost.io/rpc'
+      'https://public-01.testnet.bifrostnetwork.com/rpc',
+      'https://public-02.testnet.bifrostnetwork.com/rpc'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bifrost', symbol: 'BFC', decimals: 18 },
-    infoURL: 'https://thebifrost.io',
+    infoURL: 'https://bifrostnetwork.com',
     shortName: 'tbfc',
     chainId: 49088,
     networkId: 49088,
@@ -19269,7 +19326,7 @@ const chainArray = [
     explorers: [
       {
         name: 'explorer-thebifrost',
-        url: 'https://explorer.testnet.thebifrost.io',
+        url: 'https://explorer.testnet.bifrostnetwork.com',
         standard: 'EIP3091'
       }
     ]
@@ -19663,7 +19720,9 @@ const chainArray = [
     rpc: [
       'https://rpc-tanenbaum.rollux.com',
       'https://rpc.ankr.com/rollux_testnet/${ANKR_API_KEY}',
-      'wss://rpc-tanenbaum.rollux.com/wss'
+      'wss://rpc-tanenbaum.rollux.com/wss',
+      'https://rollux.rpc.tanenbaum.io',
+      'wss://rollux.rpc.tanenbaum.io/wss'
     ],
     faucets: [ 'https://rollux.id/faucetapp' ],
     nativeCurrency: { name: 'Testnet Syscoin', symbol: 'TSYS', decimals: 18 },
@@ -23303,22 +23362,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'ethereum Fair',
+    name: 'DisChain',
     chainId: 513100,
     networkId: 513100,
-    shortName: 'ethf',
-    chain: 'ETHF',
-    nativeCurrency: { name: 'EthereumFair', symbol: 'ETHF', decimals: 18 },
-    rpc: [ 'https://rpc.etherfair.org' ],
+    shortName: 'dis',
+    chain: 'DIS',
+    nativeCurrency: { name: 'DisChain', symbol: 'DIS', decimals: 18 },
+    rpc: [ 'https://rpc.dischain.xyz' ],
     faucets: [],
     explorers: [
       {
-        name: 'etherfair',
-        url: 'https://www.oklink.com/ethf',
+        name: 'DisChain',
+        url: 'https://www.oklink.com/dis',
         standard: 'EIP3091'
       }
     ],
-    infoURL: 'https://etherfair.org'
+    infoURL: 'https://dischain.xyz'
   },
   {
     name: 'Scroll Sepolia Testnet',
@@ -25187,6 +25246,27 @@ const chainArray = [
   },
   {
     name: 'Autonity Piccadilly (Barada) Testnet',
+    status: 'deprecated',
+    chain: 'AUT',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'piccadilly-01',
+    chainId: 65100001,
+    networkId: 65100001,
+    slip44: 1,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonity-blockscout',
+        url: 'https://piccadilly.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonity Piccadilly (Sumida) Testnet',
     chain: 'AUT',
     rpc: [
       'https://rpc1.piccadilly.autonity.org/',
@@ -25195,9 +25275,9 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
-    shortName: 'piccadilly-01',
-    chainId: 65100001,
-    networkId: 65100001,
+    shortName: 'piccadilly-02',
+    chainId: 65100002,
+    networkId: 65100002,
     slip44: 1,
     icon: 'autonity',
     explorers: [
