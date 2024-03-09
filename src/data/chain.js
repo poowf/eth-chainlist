@@ -12779,6 +12779,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'CrossFi Testnet',
+    title: 'CrossFi Testnet',
+    chain: 'XFI',
+    rpc: [ 'https://rpc.testnet.ms' ],
+    faucets: [],
+    nativeCurrency: { name: 'XFI', symbol: 'XFI', decimals: 18 },
+    infoURL: 'https://crossfi.org/',
+    shortName: 'crossfi-testnet',
+    chainId: 4157,
+    networkId: 4157,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'CrossFi Testnet Scan',
+        url: 'https://scan.testnet.ms',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PHI Network V1',
     chain: 'PHI V1',
     rpc: [ 'https://rpc1.phi.network', 'https://rpc2.phi.network' ],
@@ -23754,6 +23774,58 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'zkLink Nova Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.zklink.io', 'wss://rpc.zklink.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zklink.io',
+    shortName: 'zklink-nova',
+    chainId: 810180,
+    networkId: 810180,
+    slip44: 1,
+    icon: 'zklink-nova',
+    explorers: [
+      {
+        name: 'zkLink Nova Block Explorer',
+        url: 'https://explorer.zklink.io',
+        icon: 'zklink-nova',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-59144',
+      bridges: [ { url: 'https://portal.zklink.io' } ]
+    }
+  },
+  {
+    name: 'zkLink Nova Goerli Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://goerli.rpc.zklink.io', 'wss://goerli.rpc.zklink.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zklink.io',
+    shortName: 'zklink-nova-goerli',
+    chainId: 810182,
+    networkId: 810182,
+    slip44: 1,
+    icon: 'zklink-nova',
+    explorers: [
+      {
+        name: 'zkLink Nova Block Explorer',
+        url: 'https://goerli.explorer.zklink.io',
+        icon: 'zklink-nova',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-59140',
+      bridges: [ { url: 'https://goerli.portal.zklink.io' } ]
+    }
   },
   {
     name: 'CURVE Mainnet',
