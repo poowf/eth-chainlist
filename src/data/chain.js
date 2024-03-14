@@ -6470,8 +6470,6 @@ const chainArray = [
       'https://evm-dataseed2.meerscan.io',
       'https://evm-dataseed3.meerscan.io',
       'https://evm-dataseed.meerscan.com',
-      'https://evm-dataseed1.meerscan.com',
-      'https://evm-dataseed2.meerscan.com',
       'https://qng.rpc.qitmeer.io',
       'https://mainnet.meerlabs.com',
       'https://rpc.dimai.ai',
@@ -6489,8 +6487,14 @@ const chainArray = [
       {
         name: 'meerscan',
         icon: 'meer',
+        url: 'https://qng.qitmeer.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'meerscan',
+        icon: 'meer',
         url: 'https://qng.meerscan.io',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -13392,6 +13396,24 @@ const chainArray = [
     icon: 'syndicate'
   },
   {
+    name: 'SIC Testnet',
+    chain: 'SIC Testnet',
+    rpc: [ 'https://rpc-sic-testnet-zvr7tlkzsi.t.conduit.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.fwb.help/',
+    shortName: 'sic-testnet',
+    chainId: 5102,
+    networkId: 5102,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorerl2new-sic-testnet-zvr7tlkzsi.t.conduit.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bahamut',
     title: 'Bahamut mainnet',
     chain: 'Bahamut',
@@ -14951,8 +14973,8 @@ const chainArray = [
       {
         name: 'meerscan testnet',
         icon: 'meer',
-        url: 'https://qng-testnet.meerscan.io',
-        standard: 'none'
+        url: 'https://testnet-qng.qitmeer.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -19505,7 +19527,7 @@ const chainArray = [
   {
     name: 'Electroneum Mainnet',
     chain: 'Electroneum',
-    rpc: [ 'https://api.electroneum.com' ],
+    rpc: [ 'https://rpc.electroneum.com' ],
     faucets: [],
     nativeCurrency: { name: 'Electroneum', symbol: 'ETN', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -23646,6 +23668,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Galadriel Testnet',
+    chain: 'Galadriel',
+    rpc: [ 'https://testnet.galadriel.com' ],
+    faucets: [ 'https://docs.galadriel.com/faucet' ],
+    nativeCurrency: { name: 'Galadriel Testnet token', symbol: 'GAL', decimals: 18 },
+    infoURL: 'https://galadriel.com',
+    shortName: 'galadriel-testnet',
+    chainId: 696969,
+    networkId: 696969,
+    explorers: [
+      {
+        name: 'Galadriel Explorer',
+        url: 'https://explorer.galadriel.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Tiltyard Mainnet Subnet',
     chain: 'TILTYARD',
     rpc: [ 'https://subnets.avax.network/tiltyard/mainnet/rpc' ],
@@ -24456,7 +24496,7 @@ const chainArray = [
   {
     name: 'Electroneum Testnet',
     chain: 'Electroneum',
-    rpc: [ 'https://api.electroneum.com' ],
+    rpc: [ 'https://testnet-rpc.electroneum.com' ],
     faucets: [],
     nativeCurrency: { name: 'Electroneum', symbol: 'ETN', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
