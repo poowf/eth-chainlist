@@ -2903,6 +2903,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'SoraAI Testnet',
+    chain: 'SETH',
+    icon: 'ethereum',
+    rpc: [ 'https://rpc-testnet.soraai.bot' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'SoraETH', symbol: 'SETH', decimals: 18 },
+    infoURL: 'https://soraai.bot',
+    shortName: 'SETH',
+    chainId: 145,
+    networkId: 145,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.soraai.bot',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.soraai.bot' } ]
+    }
+  },
+  {
     name: 'ShimmerEVM',
     title: 'ShimmerEVM',
     chain: 'ShimmerEVM',
@@ -6518,7 +6545,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Qitmeer',
+    name: 'Qitmeer Network Mainnet',
     chain: 'MEER',
     rpc: [
       'https://evm-dataseed1.meerscan.io',
@@ -16015,7 +16042,11 @@ const chainArray = [
   {
     name: 'Nexa Mainnet Block',
     chain: 'Nexa Mainnet',
-    rpc: [ 'https://rpc-nodes.nexablockscan.io' ],
+    rpc: [
+      'https://rpc-nodes.nexablockscan.io',
+      'wss://wss-nodes.nexablockscan.io',
+      'https://rpc-nodes-delta.nexablockscan.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Nexa Mainnet Token', symbol: 'NEXB', decimals: 18 },
     infoURL: 'https://www.nexablock.io',
@@ -22025,6 +22056,27 @@ const chainArray = [
       }
     ],
     redFlags: [ 'reusedChainId' ]
+  },
+  {
+    name: 'Creditcoin Testnet',
+    chain: 'CTC',
+    icon: 'creditcoin',
+    rpc: [ 'https://rpc.cc3-testnet.creditcoin.network' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Testnet CTC', symbol: 'tCTC', decimals: 18 },
+    infoURL: 'https://creditcoin.org',
+    shortName: 'ctctest',
+    chainId: 102031,
+    networkId: 102031,
+    faucets: [],
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://creditcoin-testnet.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Crystaleum',
