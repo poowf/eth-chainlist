@@ -2810,14 +2810,11 @@ const chainArray = [
     name: 'Defi Oracle Meta Mainnet',
     chain: 'dfiometa',
     icon: 'defioraclemeta',
-    rpc: [
-      'https://rpc.public-0138.defi-oracle.io',
-      'wss://rpc.public-0138.defi-oracle.io'
-    ],
+    rpc: [ 'https://rpc.defi-oracle.io', 'wss://wss.defi-oracle.io' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://defi-oracle.io/',
+    infoURL: 'https://info.defi-oracle.io/',
     shortName: 'dfio-meta-main',
     chainId: 138,
     networkId: 1,
@@ -2825,8 +2822,13 @@ const chainArray = [
     ens: { registry: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85' },
     explorers: [
       {
+        name: 'Blockscout Explorer',
+        url: 'https://blockscout.defi-oracle.io',
+        standard: 'none'
+      },
+      {
         name: 'Quorum Explorer',
-        url: 'https://public-0138.defi-oracle.io',
+        url: 'https://explorer.defi-oracle.io',
         standard: 'none'
       }
     ]
@@ -21537,6 +21539,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Unit Zero Stagenet',
+    chain: 'Unit Zero',
+    rpc: [ 'https://rpc-stagenet.unit0.dev' ],
+    faucets: [],
+    nativeCurrency: { name: 'UNIT0', symbol: 'UNIT0', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://units.network',
+    shortName: 'unit0-stagenet',
+    chainId: 88819,
+    networkId: 88819,
+    explorers: [
+      {
+        name: 'explorer-stagenet',
+        url: 'https://explorer-stagenet.unit0.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Chiliz Scoville Testnet',
     chain: 'CHZ',
     rpc: [ 'https://scoville-rpc.chiliz.com' ],
@@ -22724,7 +22745,9 @@ const chainArray = [
     chain: 'Bitlayer',
     rpc: [
       'https://testnet-rpc.bitlayer.org',
-      'wss://testnet-ws.bitlayer.org'
+      'wss://testnet-ws.bitlayer.org',
+      'https://testnet-rpc.bitlayer-rpc.com',
+      'wss://testnet-ws.bitlayer-rpc.com'
     ],
     faucets: [ 'https://www.bitlayer.org/faucet' ],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
@@ -22848,6 +22871,24 @@ const chainArray = [
         url: 'https://explorer.x1-devnet.xen.network',
         icon: 'blockscout',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'YMTECH-BESU Testnet',
+    chain: 'YMTECH-BESU',
+    rpc: [ 'http://39.119.118.216:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.ymtech.co.kr',
+    shortName: 'YMTECH-BESU',
+    chainId: 202401,
+    networkId: 202401,
+    explorers: [
+      {
+        name: 'YMTECH-BESU Chainlens',
+        url: 'http://39.119.118.198',
+        standard: 'none'
       }
     ]
   },
