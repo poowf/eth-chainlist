@@ -13961,6 +13961,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Arcturus Testneet',
+    chain: 'Arcturus',
+    rpc: [ 'https://rpc-testnet.arcturuschain.io/' ],
+    faucets: [ 'https://faucet.arcturuschain.io' ],
+    nativeCurrency: { name: 'tARC', symbol: 'tARC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://arcturuschain.io',
+    shortName: 'arcturus-testnet',
+    chainId: 5615,
+    networkId: 5615,
+    explorers: [
+      {
+        name: 'explorer-arcturus-testnet',
+        url: 'https://testnet.arcscan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Arcturus Chain Testnet',
     chain: 'ARCTURUS',
     rpc: [ 'http://185.99.196.3:8545' ],
@@ -19534,6 +19553,20 @@ const chainArray = [
     networkId: 43110
   },
   {
+    name: 'Hemi Network',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://hemi.xyz',
+    shortName: 'hemi',
+    chainId: 43111,
+    networkId: 43111,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1' },
+    status: 'incubating'
+  },
+  {
     name: 'Avalanche Fuji Testnet',
     chain: 'AVAX',
     icon: 'avax',
@@ -22747,7 +22780,8 @@ const chainArray = [
       'https://testnet-rpc.bitlayer.org',
       'wss://testnet-ws.bitlayer.org',
       'https://testnet-rpc.bitlayer-rpc.com',
-      'wss://testnet-ws.bitlayer-rpc.com'
+      'wss://testnet-ws.bitlayer-rpc.com',
+      'https://rpc.ankr.com/bitlayer_testnet'
     ],
     faucets: [ 'https://www.bitlayer.org/faucet' ],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
@@ -24290,6 +24324,27 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Hemi Sepolia',
+    chain: 'ETH',
+    rpc: [ 'https://testnet.rpc.hemi.network/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://hemi.xyz',
+    shortName: 'hemi-sep',
+    chainId: 743111,
+    networkId: 743111,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.explorer.hemi.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' },
+    status: 'active'
   },
   {
     name: 'Bear Network Chain Testnet',
