@@ -13742,6 +13742,24 @@ const chainArray = [
     networkId: 5105
   },
   {
+    name: 'Azra Testnet',
+    chain: 'Azra Testnet',
+    rpc: [ 'https://rpc-azra-testnet-6hz86owb1n.t.conduit.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://azragames.com',
+    shortName: 'azra-testnet',
+    chainId: 5106,
+    networkId: 5106,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorerl2new-azra-testnet-6hz86owb1n.t.conduit.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bahamut',
     title: 'Bahamut mainnet',
     chain: 'Bahamut',
@@ -16522,6 +16540,26 @@ const chainArray = [
       {
         name: 'Larissa Scan',
         url: 'https://scan.larissa.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Espento Mainnet',
+    chain: 'SPENT',
+    rpc: [ 'https://rpc.escscan.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ESPENTO', symbol: 'SPENT', decimals: 18 },
+    infoURL: 'https://espento.network',
+    shortName: 'spent',
+    chainId: 9911,
+    networkId: 9911,
+    icon: 'espento',
+    explorers: [
+      {
+        name: 'escscan',
+        url: 'https://escscan.com',
+        icon: 'espento',
         standard: 'EIP3091'
       }
     ]
@@ -21001,6 +21039,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'CAGA crypto Ankara testnet',
+    chain: 'Ankara',
+    rpc: [
+      'https://www.ankara-cagacrypto.com',
+      'wss://wss.ankara-cagacrypto.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Caga', symbol: 'CAGA', decimals: 18 },
+    infoURL: 'https://www.cagacrypto.com/',
+    shortName: 'caga',
+    chainId: 72778,
+    networkId: 72778,
+    icon: 'ankaracaga',
+    explorers: [
+      {
+        name: 'ankara',
+        url: 'https://explorer.ankara-cagacrypto.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Grok Chain Mainnet',
     chain: 'Grok',
     icon: 'grokicon',
@@ -24897,6 +24957,27 @@ const chainArray = [
       {
         name: 'Ecrox Chain Explorer',
         url: 'https://ecroxscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Netmind Chain Testnet',
+    title: 'NetMind Chain Testnet',
+    chain: 'NetMind',
+    rpc: [ 'https://testblock.protago-dev.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'NMT', symbol: 'NMT', decimals: 18 },
+    infoURL: 'https://netmind.ai',
+    shortName: 'nmtTest',
+    chainId: 1100789,
+    networkId: 1100789,
+    icon: 'netmind',
+    explorers: [
+      {
+        name: 'NetMind Testnet Explorer',
+        url: 'https://testbrower.protago-dev.com',
+        icon: 'netmind',
         standard: 'EIP3091'
       }
     ]
