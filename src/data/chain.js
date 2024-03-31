@@ -7857,7 +7857,8 @@ const chainArray = [
       'https://evm.humans.stakepool.dev.br',
       'https://mainnet-humans-evm.konsortech.xyz',
       'https://evm-rpc.mainnet.humans.zone',
-      'https://json-rpc.humans.bh.rocks'
+      'https://json-rpc.humans.bh.rocks',
+      'https://evm-rpc.humans.huginn.tech'
     ],
     faucets: [],
     nativeCurrency: { name: 'HEART', symbol: 'HEART', decimals: 18 },
@@ -14222,6 +14223,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'BounceBit Testnet',
+    chain: 'BounceBit',
+    rpc: [ 'https://fullnode-testnet.bouncebitapi.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BounceBit', symbol: 'BB', decimals: 18 },
+    infoURL: 'https://bouncebit.io',
+    shortName: 'bouncebit-testnet',
+    chainId: 6000,
+    networkId: 6000,
+    explorers: [
+      {
+        name: 'BBScan Testnet Explorer',
+        url: 'https://bbscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Tres Testnet',
     chain: 'TresLeches',
     rpc: [ 'https://rpc-test.tresleches.finance/' ],
@@ -15091,6 +15110,28 @@ const chainArray = [
         icon: 'ore',
         url: 'https://oreniumscan.org',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'OpenEX LONG Testnet',
+    title: 'OpenEX LONG Testnet',
+    chain: 'OEX',
+    icon: 'oex',
+    rpc: [ 'https://long.rpc.openex.network/' ],
+    faucets: [ 'https://long.hub.openex.network/faucet' ],
+    nativeCurrency: { name: 'USDT Testnet', symbol: 'USDT', decimals: 18 },
+    infoURL: 'https://openex.network',
+    shortName: 'oex',
+    chainId: 7798,
+    networkId: 7798,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'OpenEX Long Testnet Explorer',
+        url: 'https://scan.long.openex.network',
+        icon: 'oex',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -17601,6 +17642,26 @@ const chainArray = [
       {
         name: 'phoenixplorer',
         url: 'https://phoenixplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Masa',
+    chain: 'MASA',
+    icon: 'masa',
+    rpc: [ 'https://subnets.avax.network/masanetwork/mainnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Masa Token', symbol: 'MASA', decimals: 18 },
+    infoURL: 'https://masa.finance',
+    shortName: 'masa',
+    chainId: 13396,
+    networkId: 13396,
+    explorers: [
+      {
+        name: 'Masa Explorer',
+        url: 'https://subnets.avax.network/masa',
         standard: 'EIP3091'
       }
     ]
@@ -20959,6 +21020,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'Proof of Play - Apex',
+    chainId: 70700,
+    shortName: 'pop-apex',
+    chain: 'ETH',
+    networkId: 70700,
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [ 'https://rpc.apex.proofofplay.com' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Proof of Play Apex Explorer',
+        url: 'https://explorer.apex.proofofplay.com',
+        icon: 'pop-apex',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://proofofplay.com',
+    icon: 'pop-apex',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [
+        { url: 'https://bridge.arbitrum.io' },
+        { url: 'https://relay.link/bridge/apex/' }
+      ]
+    }
+  },
+  {
     name: 'GuapcoinX',
     chain: 'GuapcoinX',
     rpc: [
@@ -22336,12 +22425,13 @@ const chainArray = [
   {
     name: 'Masa Testnet',
     chain: 'MASA',
+    icon: 'masa',
     rpc: [ 'https://subnets.avax.network/masatestne/testnet/rpc' ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Masa Token', symbol: 'MASA', decimals: 18 },
     infoURL: 'https://masa.finance',
-    shortName: 'masa',
+    shortName: 'masatest',
     chainId: 103454,
     networkId: 103454,
     explorers: [
