@@ -3216,6 +3216,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Omni',
+    chain: 'Omni',
+    status: 'incubating',
+    rpc: [],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
+    infoURL: 'https://docs.omni.network/',
+    shortName: 'omni',
+    chainId: 166,
+    networkId: 166,
+    slip44: 1
+  },
+  {
     name: 'Atoshi Testnet',
     chain: 'ATOSHI',
     icon: 'atoshi',
@@ -3585,7 +3599,7 @@ const chainArray = [
     chain: 'VinuChain Testnet',
     rpc: [ 'https://vinufoundation-rpc.com' ],
     faucets: [],
-    nativeCurrency: { name: 'VinuChain', symbol: 'VС', decimals: 18 },
+    nativeCurrency: { name: 'VinuChain', symbol: 'VC', decimals: 18 },
     infoURL: 'https://vitainu.org',
     shortName: 'VCTEST',
     chainId: 206,
@@ -3606,7 +3620,7 @@ const chainArray = [
     chain: 'VinuChain',
     rpc: [ 'https://vinuchain-rpc.com' ],
     faucets: [],
-    nativeCurrency: { name: 'VinuChain', symbol: 'VС', decimals: 18 },
+    nativeCurrency: { name: 'VinuChain', symbol: 'VC', decimals: 18 },
     infoURL: 'https://vitainu.org',
     shortName: 'VC',
     chainId: 207,
@@ -4110,6 +4124,56 @@ const chainArray = [
     ]
   },
   {
+    name: 'Neura',
+    title: 'Neura Mainnet',
+    chain: 'NEURA',
+    icon: 'neura',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ankr', symbol: 'ANKR', decimals: 18 },
+    infoURL: 'https://www.neuraprotocol.io/',
+    shortName: 'neura',
+    chainId: 266,
+    networkId: 266,
+    status: 'incubating',
+    explorers: []
+  },
+  {
+    name: 'Neura Testnet',
+    title: 'Neura Testnet',
+    chain: 'NEURA',
+    icon: 'neura',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet Ankr', symbol: 'ANKR', decimals: 18 },
+    infoURL: 'https://www.neuraprotocol.io/',
+    shortName: 'tneura',
+    chainId: 267,
+    networkId: 267,
+    explorers: [],
+    status: 'incubating',
+    slip44: 1
+  },
+  {
+    name: 'Neura Devnet',
+    title: 'Neura Devnet',
+    chain: 'NEURA',
+    icon: 'neura',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Devnet Ankr', symbol: 'ANKR', decimals: 18 },
+    infoURL: 'https://www.neuraprotocol.io/',
+    shortName: 'dneura',
+    chainId: 268,
+    networkId: 268,
+    explorers: [],
+    status: 'incubating',
+    slip44: 1
+  },
+  {
     name: 'High Performance Blockchain',
     chain: 'HPB',
     rpc: [ 'https://hpbnode.com', 'wss://ws.hpbnode.com' ],
@@ -4212,6 +4276,25 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://bridge.zksync.io/' } ]
     }
+  },
+  {
+    name: 'Cronos zkEVM Testnet',
+    chain: 'CronosZkEVMTestnet',
+    rpc: [ 'https://rpc-zkevm-t0.cronos.org' ],
+    faucets: [ 'https://zkevm-t0.cronos.org/faucet' ],
+    nativeCurrency: { name: 'Cronos zkEVM Test Coin', symbol: 'TCRO', decimals: 18 },
+    infoURL: 'https://docs.cronos.org/cronos-zkevm-chain/introduction-to-cronos-zkevm-chain-testnet',
+    shortName: 'zktcro',
+    chainId: 282,
+    networkId: 282,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Cronos zkEVM Testnet Explorer',
+        url: 'https://zkevm-t0.cronos.org/explorer',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Boba Network',
@@ -4501,6 +4584,24 @@ const chainArray = [
       {
         name: 'Lovely Network Testnet',
         url: 'https://tscan.lovely.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Furtheon',
+    chain: 'Furtheon Network',
+    rpc: [ 'https://rpc.furtheon.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Furtheon', symbol: 'FTH', decimals: 18 },
+    infoURL: 'https://furtheon.org/',
+    shortName: 'furtheon',
+    chainId: 308,
+    networkId: 308,
+    explorers: [
+      {
+        name: 'furthscan',
+        url: 'http://furthscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -5613,6 +5714,26 @@ const chainArray = [
         name: 'candleexplorer',
         url: 'https://candleexplorer.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'OpTrust Mainnet',
+    chain: 'OpTrust',
+    rpc: [ 'https://rpc.optrust.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BSC', symbol: 'BNB', decimals: 18 },
+    infoURL: 'https://optrust.io',
+    shortName: 'optrust',
+    chainId: 537,
+    networkId: 537,
+    icon: 'optrust',
+    explorers: [
+      {
+        name: 'OpTrust explorer',
+        url: 'https://scan.optrust.io',
+        icon: 'optrust',
+        standard: 'none'
       }
     ]
   },
@@ -12032,6 +12153,25 @@ const chainArray = [
     }
   },
   {
+    name: 'Elux Chain',
+    chain: 'ELUX',
+    icon: 'eluxchain',
+    rpc: [ 'https://rpc.eluxscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Elux Chain', symbol: 'ELUX', decimals: 18 },
+    infoURL: 'https://eluxscan.com',
+    shortName: 'ELUX',
+    chainId: 2907,
+    networkId: 2907,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://eluxscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'HYCHAIN',
     chainId: 2911,
     shortName: 'hychain',
@@ -13810,6 +13950,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nollie Skatechain Testnet',
+    chain: 'Skatechain',
+    rpc: [ 'https://nollie-rpc.skatechain.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: '',
+    shortName: 'nollie-testnet',
+    chainId: 5051,
+    networkId: 5051,
+    icon: 'nollie',
+    explorers: [
+      {
+        name: 'Nollie Skate Chain Testnet Explorer',
+        url: 'https://nolliescan.skatechain.org',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Syndicate Testnet',
     title: 'Syndicate Testnet',
     chain: 'Syndicate',
@@ -14030,6 +14191,26 @@ const chainArray = [
     shortName: 'UZMI',
     chainId: 5315,
     networkId: 5315
+  },
+  {
+    name: 'OpTrust Testnet',
+    chain: 'OpTrust',
+    rpc: [ 'https://rpctest.optrust.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'TestBSC', symbol: 'tBNB', decimals: 18 },
+    infoURL: 'https://optrust.io',
+    shortName: 'toptrust',
+    chainId: 5317,
+    networkId: 5317,
+    icon: 'optrust',
+    explorers: [
+      {
+        name: 'OpTrust Testnet explorer',
+        url: 'https://scantest.optrust.io',
+        icon: 'optrust',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Tritanium Testnet',
@@ -21473,6 +21654,50 @@ const chainArray = [
         name: 'GrokScan',
         url: 'https://mainnet-explorer.grokchain.dev',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ICB Testnet',
+    chain: 'ICBT',
+    icon: 'icbnetwork',
+    rpc: [
+      'https://rpc1-testnet.icbnetwork.info/',
+      'https://rpc2-testnet.icbnetwork.info/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'ICB Testnet Token', symbol: 'ICBT', decimals: 18 },
+    infoURL: 'https://icb.network',
+    shortName: 'ICBT',
+    chainId: 73114,
+    networkId: 73114,
+    explorers: [
+      {
+        name: 'ICB Tesnet Explorer',
+        url: 'https://testnet.icbscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ICB Network',
+    chain: 'ICB',
+    icon: 'icbnetwork',
+    rpc: [
+      'https://rpc1-mainnet.icbnetwork.info/',
+      'https://rpc2-mainnet.icbnetwork.info/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'ICB Native Token', symbol: 'ICBX', decimals: 18 },
+    infoURL: 'https://icb.network',
+    shortName: 'ICBX',
+    chainId: 73115,
+    networkId: 73115,
+    explorers: [
+      {
+        name: 'ICB Explorer',
+        url: 'https://icbscan.io',
+        standard: 'EIP3091'
       }
     ]
   },
