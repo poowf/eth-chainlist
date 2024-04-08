@@ -9620,6 +9620,31 @@ const chainArray = [
     }
   },
   {
+    name: 'Mint Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia-testnet-rpc.mintchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.mintchain.io',
+    shortName: 'mintsepoliatest',
+    chainId: 1687,
+    networkId: 1687,
+    icon: 'mintTestnet',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://sepolia-testnet-explorer.mintchain.io',
+        icon: 'mintTestnet',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://sepolia-testnet-bridge.mintchain.io' } ]
+    }
+  },
+  {
     name: 'LUDAN Mainnet',
     chain: 'LUDAN',
     rpc: [ 'https://rpc.ludan.org/' ],
@@ -10836,9 +10861,13 @@ const chainArray = [
     chain: 'CFG',
     icon: 'centrifuge',
     rpc: [
-      'wss://fullnode.parachain.centrifuge.io',
+      'https://fullnode.centrifuge.io',
+      'wss://fullnode.centrifuge.io',
+      'https://centrifuge-parachain.api.onfinality.io/public',
       'wss://centrifuge-parachain.api.onfinality.io/public-ws',
+      'https://centrifuge-rpc.dwellir.com',
       'wss://centrifuge-rpc.dwellir.com',
+      'https://rpc-centrifuge.luckyfriday.io',
       'wss://rpc-centrifuge.luckyfriday.io'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -14988,7 +15017,11 @@ const chainArray = [
     name: 'ZetaChain Athens 3 Testnet',
     chain: 'ZetaChain',
     icon: 'zetachain',
-    rpc: [ 'https://rpc.ankr.com/zetachain_evm_athens_testnet' ],
+    rpc: [
+      'https://zetachain-athens-evm.blockpi.network/v1/rpc/public',
+      'wss://zetachain-athens.blockpi.network/rpc/v1/public/websocket',
+      'https://zetachain-testnet-archive.allthatnode.com:8545'
+    ],
     faucets: [ 'https://labs.zetachain.com/get-zeta' ],
     nativeCurrency: { name: 'Zeta', symbol: 'ZETA', decimals: 18 },
     infoURL: 'https://zetachain.com/docs',
@@ -18750,12 +18783,13 @@ const chainArray = [
     name: 'Titan (TKX) Testnet',
     chain: 'Titan (TKX)',
     rpc: [
-      'https://titan-testnet-json-rpc-1.tokenize-dev.com',
-      'https://titan-testnet-json-rpc-2.tokenize-dev.com'
+      'https://titan-testnet-json-rpc.titanlab.io',
+      'https://titan-testnet-json-rpc-1.titanlab.io',
+      'https://titan-testnet-json-rpc-2.titanlab.io'
     ],
     faucets: [],
     nativeCurrency: { name: 'Titan tkx', symbol: 'TKX', decimals: 18 },
-    infoURL: 'https://tokenize.exchange',
+    infoURL: 'https://titanlab.io',
     shortName: 'titan_tkx-testnet',
     chainId: 18889,
     networkId: 18889,
@@ -18764,7 +18798,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Titan Explorer',
-        url: 'https://titan-testnet-explorer-light.tokenize-dev.com',
+        url: 'https://titan-testnet-explorer-light.titanlab.io/Titan%20Testnet',
         standard: 'none',
         icon: 'titan_tkx'
       }
@@ -27576,6 +27610,25 @@ const chainArray = [
       {
         name: 'Ancient8 Explorer',
         url: 'https://scan.ancient8.gg',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'PTCESCAN Testnet',
+    title: 'PTCESCAN Testnet',
+    chain: 'PTCE',
+    rpc: [ 'https://rpc-testnet.ptcscan.io' ],
+    faucets: [ 'https://faucet.ptcscan.io/' ],
+    nativeCurrency: { name: 'PTCE', symbol: 'PTCE', decimals: 18 },
+    infoURL: 'https://ptcscan.io',
+    shortName: 'PTCE',
+    chainId: 889910245,
+    networkId: 889910245,
+    explorers: [
+      {
+        name: 'PTCESCAN Testnet Explorer',
+        url: 'https://explorer-testnet.ptcscan.io',
         standard: 'EIP3091'
       }
     ]
