@@ -8247,6 +8247,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'B2 Hub Habitat Testnet',
+    chain: 'BSQ',
+    rpc: [ 'https://habitat-hub-rpc.bsquared.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'BSquared Token', symbol: 'BSQ', decimals: 18 },
+    infoURL: 'https://www.bsquared.network',
+    shortName: 'B2Hub-testnet',
+    chainId: 1113,
+    networkId: 1113,
+    icon: 'bsquare',
+    explorers: [
+      {
+        name: 'B2 Hub Habitat Testnet Explorer',
+        url: 'https://habitat-hub-explorer.bsquared.network',
+        icon: 'bsquare',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Core Blockchain Testnet',
     chain: 'Core',
     icon: 'core',
@@ -8318,6 +8338,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'B2 Habitat Testnet',
+    title: 'B2 Habitat Testnet',
+    chain: 'Habitat',
+    rpc: [
+      'https://b2habitat-testnet.alt.technology',
+      'https://habitat-rpc.bsquared.network',
+      'https://habitat-rpc-public.bsquared.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://www.bsquared.network',
+    shortName: 'B2-testnet',
+    chainId: 1123,
+    networkId: 1123,
+    icon: 'bsquare',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://habitat-explorer.bsquared.network',
+        icon: 'bsquare',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1113' }
   },
   {
     name: 'DeFiChain EVM Network Mainnet',
@@ -21793,13 +21839,14 @@ const chainArray = [
     name: 'BORAchain mainnet',
     chain: 'BORA',
     icon: 'bora',
-    rpc: [ 'https://public-node.api.boraportal.io/bora/mainnet' ],
+    rpc: [ 'https://public-node.api.boraportal.com/bora/mainnet' ],
     faucets: [],
     nativeCurrency: { name: 'BGAS', symbol: 'BGAS', decimals: 18 },
     infoURL: 'https://www.boraportal.com',
     shortName: 'BORAchain',
     chainId: 77001,
     networkId: 77001,
+    slip44: 8217,
     explorers: [
       {
         name: 'BORAchainscope',
@@ -24269,6 +24316,20 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
+    name: 'SaharaAI Testnet',
+    chain: 'Sahara',
+    rpc: [ 'https://testnet.saharalabs.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'SAHARA', symbol: 'SAH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://saharalabs.ai',
+    shortName: 'saharatest',
+    chainId: 313313,
+    networkId: 313313,
+    icon: 'sahara',
+    explorers: []
+  },
+  {
     name: 'Filecoin - Calibration testnet',
     chain: 'FIL',
     icon: 'filecoin',
@@ -25980,6 +26041,20 @@ const chainArray = [
     shortName: 'DPU',
     chainId: 2611555,
     networkId: 2611555
+  },
+  {
+    name: 'SaharaAI Network',
+    chain: 'Sahara',
+    rpc: [ 'https://mainnet.saharalabs.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'SAHARA', symbol: 'SAH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://saharalabs.ai',
+    shortName: 'sahara',
+    chainId: 3132023,
+    networkId: 3132023,
+    icon: 'sahara',
+    explorers: []
   },
   {
     name: 'Filecoin - Butterfly testnet',
