@@ -584,6 +584,7 @@ const chainArray = [
   {
     name: 'Boba Network Rinkeby Testnet',
     chain: 'ETH',
+    status: 'deprecated',
     rpc: [ 'https://rinkeby.boba.network/' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -4349,11 +4350,6 @@ const chainArray = [
         name: 'Bobascan',
         url: 'https://bobascan.com',
         standard: 'none'
-      },
-      {
-        name: 'Blockscout',
-        url: 'https://blockexplorer.boba.network',
-        standard: 'none'
       }
     ],
     parent: {
@@ -4537,6 +4533,7 @@ const chainArray = [
   {
     name: 'Bobaopera',
     chain: 'Bobaopera',
+    status: 'deprecated',
     rpc: [
       'https://bobaopera.boba.network',
       'wss://wss.bobaopera.boba.network',
@@ -5943,6 +5940,26 @@ const chainArray = [
         name: 'MetaExplorer',
         url: 'https://explorer.metatime.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Filenova Mainnet',
+    chain: 'Filenova',
+    rpc: [ 'https://rpc.filenova.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Filecoin', symbol: 'FIL', decimals: 18 },
+    infoURL: 'https://filenova.org',
+    shortName: 'filenova',
+    chainId: 579,
+    networkId: 579,
+    icon: 'filenova',
+    explorers: [
+      {
+        name: 'filenova explorer',
+        url: 'https://scan.filenova.org',
+        icon: 'filenova',
+        standard: 'none'
       }
     ]
   },
@@ -8711,11 +8728,11 @@ const chainArray = [
   },
   {
     name: 'Hybrid Testnet',
-    chain: '$HYB',
+    chain: 'HYB',
     icon: 'hybridIcon',
     rpc: [ 'https://testnet-rpc.buildonhybrid.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Hybrid', symbol: '$HYB', decimals: 18 },
+    nativeCurrency: { name: 'Hybrid', symbol: 'HYB', decimals: 18 },
     infoURL: 'https://buildonhybrid.com',
     shortName: 'hyb',
     chainId: 1224,
@@ -8723,7 +8740,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Hybrid Testnet',
-        url: 'https://alphatestnet.buildonhybrid.com',
+        url: 'https://explorer.buildonhybrid.com',
         standard: 'EIP3091'
       }
     ]
@@ -9052,6 +9069,7 @@ const chainArray = [
   {
     name: 'Bobabeam',
     chain: 'Bobabeam',
+    status: 'deprecated',
     rpc: [
       'https://bobabeam.boba.network',
       'wss://wss.bobabeam.boba.network',
@@ -9075,6 +9093,7 @@ const chainArray = [
   {
     name: 'Bobabase Testnet',
     chain: 'Bobabase Testnet',
+    status: 'deprecated',
     rpc: [
       'https://bobabase.boba.network',
       'wss://wss.bobabase.boba.network',
@@ -12355,6 +12374,7 @@ const chainArray = [
   {
     name: 'Boba Network Goerli Testnet',
     chain: 'ETH',
+    status: 'deprecated',
     rpc: [
       'https://goerli.boba.network/',
       'wss://wss.goerli.boba.network/'
@@ -13396,6 +13416,7 @@ const chainArray = [
   {
     name: 'Bobaopera Testnet',
     chain: 'Bobaopera Testnet',
+    status: 'deprecated',
     rpc: [
       'https://testnet.bobaopera.boba.network',
       'wss://wss.testnet.bobaopera.boba.network',
@@ -13751,6 +13772,7 @@ const chainArray = [
   {
     name: 'Bobafuji Testnet',
     chain: 'Bobafuji Testnet',
+    status: 'deprecated',
     rpc: [
       'https://testnet.avax.boba.network',
       'wss://wss.testnet.avax.boba.network',
@@ -14682,6 +14704,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Filenova Testnet',
+    chain: 'Filenova',
+    rpc: [ 'https://rpctest.filenova.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Test Filecoin', symbol: 'tFIL', decimals: 18 },
+    infoURL: 'https://filenova.org',
+    shortName: 'tfilenova',
+    chainId: 5675,
+    networkId: 5675,
+    icon: 'filenova',
+    explorers: [
+      {
+        name: 'filenova testnet explorer',
+        url: 'https://scantest.filenova.org',
+        icon: 'filenova',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Tanssi EVM ContainerChain',
     chain: 'EVMCC',
     rpc: [
@@ -14855,6 +14897,24 @@ const chainArray = [
     explorers: [
       {
         name: 'BBScan Testnet Explorer',
+        url: 'https://bbscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'BounceBit Mainnet',
+    chain: 'BounceBit',
+    rpc: [ 'https://fullnode-mainnet.bouncebitapi.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BounceBit', symbol: 'BB', decimals: 18 },
+    infoURL: 'https://bouncebit.io',
+    shortName: 'bouncebit-mainnet',
+    chainId: 6001,
+    networkId: 6001,
+    explorers: [
+      {
+        name: 'BBScan Mainnet Explorer',
         url: 'https://bbscan.io',
         standard: 'none'
       }
@@ -17118,7 +17178,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Boba BNB Testnet block explorer',
-        url: 'https://blockexplorer.testnet.bnb.boba.network',
+        url: 'https://testnet.bobascan.com',
         standard: 'none'
       }
     ],
@@ -19545,6 +19605,46 @@ const chainArray = [
     ]
   },
   {
+    name: 'DreyerX Mainnet',
+    chain: 'DreyerX',
+    rpc: [ 'https://rpc.dreyerx.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'DreyerX', symbol: 'DRX', decimals: 18 },
+    infoURL: 'https://dreyerx.com',
+    shortName: 'dreyerx',
+    chainId: 23451,
+    networkId: 23451,
+    icon: 'dreyerx',
+    explorers: [
+      {
+        name: 'drxscan',
+        url: 'https://scan.dreyerx.com',
+        icon: 'dreyerx',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DreyerX Testnet',
+    chain: 'DreyerX',
+    rpc: [ 'https://testnet-rpc.dreyerx.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'DreyerX', symbol: 'DRX', decimals: 18 },
+    infoURL: 'https://dreyerx.com',
+    shortName: 'dreyerx-testnet',
+    chainId: 23452,
+    networkId: 23452,
+    icon: 'dreyerx',
+    explorers: [
+      {
+        name: 'drxscan',
+        url: 'https://testnet-scan.dreyerx.com',
+        icon: 'dreyerx',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Blast Testnet',
     chain: 'ETH',
     icon: 'blastIcon',
@@ -19755,6 +19855,35 @@ const chainArray = [
     ]
   },
   {
+    name: 'Boba Sepolia',
+    chain: 'ETH',
+    rpc: [
+      'https://sepolia.boba.network',
+      'https://boba-sepolia.gateway.tenderly.co',
+      'https://gateway.tenderly.co/public/boba-sepolia',
+      'wss://boba-sepolia.gateway.tenderly.co/',
+      'wss://gateway.tenderly.co/public/boba-sepolia'
+    ],
+    faucets: [ 'https://www.l2faucet.com/boba' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://boba.network',
+    shortName: 'BobaSepolia',
+    chainId: 28882,
+    networkId: 28882,
+    explorers: [
+      {
+        name: 'Bobascan',
+        url: 'https://testnet.bobascan.com',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://gateway.boba.network' } ]
+    }
+  },
+  {
     name: 'HYCHAIN Testnet',
     chainId: 29112,
     shortName: 'hychain-testnet',
@@ -19774,6 +19903,28 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-58008', bridges: [] }
+  },
+  {
+    name: 'KaiChain Testnet',
+    chain: 'KaiChain',
+    rpc: [ 'https://testnet-rpc.kaichain.net' ],
+    faucets: [ 'https://faucet.kaichain.net' ],
+    nativeCurrency: {
+      name: 'KaiChain Testnet Native Token',
+      symbol: 'KEC',
+      decimals: 18
+    },
+    infoURL: 'https://kaichain.net',
+    shortName: 'tkec',
+    chainId: 29536,
+    networkId: 29536,
+    explorers: [
+      {
+        name: 'KaiChain Explorer',
+        url: 'https://testnet-explorer.kaichain.net',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MCH Verse Mainnet',
@@ -20629,6 +20780,7 @@ const chainArray = [
   {
     name: 'Boba Avax',
     chain: 'Boba Avax',
+    status: 'deprecated',
     rpc: [
       'https://avax.boba.network',
       'wss://wss.avax.boba.network',
@@ -21220,7 +21372,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Boba BNB block explorer',
-        url: 'https://blockexplorer.bnb.boba.network',
+        url: 'https://bobascan.com',
         standard: 'none'
       }
     ],
@@ -21539,6 +21691,36 @@ const chainArray = [
       {
         name: 'thinkiumscan',
         url: 'https://test103.thinkiumscan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'BOB',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://gobob.xyz',
+    shortName: 'bob',
+    chainId: 60808,
+    networkId: 60808,
+    status: 'incubating'
+  },
+  {
+    name: 'KaiChain',
+    chain: 'KaiChain',
+    rpc: [ 'https://mainnet-rpc.kaichain.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'KaiChain Native Token', symbol: 'KEC', decimals: 18 },
+    infoURL: 'https://kaichain.net',
+    shortName: 'kec',
+    chainId: 61406,
+    networkId: 61406,
+    explorers: [
+      {
+        name: 'KaiChain Explorer',
+        url: 'https://explorer.kaichain.net',
         standard: 'EIP3091'
       }
     ]
@@ -23830,6 +24012,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Odyssey Chain (Testnet)',
+    chain: 'DIONE',
+    rpc: [ 'https://testnode.dioneprotocol.com/ext/bc/D/rpc' ],
+    faucets: [ 'https://faucet.dioneprotocol.com/' ],
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://www.dioneprotocol.com/',
+    shortName: 'DIONE',
+    chainId: 131313,
+    networkId: 131313,
+    icon: 'odyssey',
+    nativeCurrency: { name: 'DIONE', symbol: 'DIONE', decimals: 18 }
+  },
+  {
     name: 'ETND Chain Mainnets',
     chain: 'ETND',
     rpc: [ 'https://rpc.node1.etnd.pro/' ],
@@ -25409,6 +25604,25 @@ const chainArray = [
     infoURL: 'https://dischain.xyz'
   },
   {
+    name: 'DoCoin Community Chain',
+    title: 'DoCoin Community Chain',
+    chain: 'DoCoin',
+    rpc: [ 'https://rpc.docoin.shop' ],
+    faucets: [],
+    nativeCurrency: { name: 'DO', symbol: 'DCT', decimals: 18 },
+    infoURL: 'https://docoin.network',
+    shortName: 'DoCoin',
+    chainId: 526916,
+    networkId: 526916,
+    explorers: [
+      {
+        name: 'DoCoin Community Chain Explorer',
+        url: 'https://explorer.docoin.shop',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Scroll Sepolia Testnet',
     chain: 'ETH',
     status: 'active',
@@ -25430,11 +25644,6 @@ const chainArray = [
         name: 'Scroll Sepolia Etherscan',
         url: 'https://sepolia.scrollscan.com',
         standard: 'EIP3091'
-      },
-      {
-        name: 'Scroll Sepolia Blockscout',
-        url: 'https://sepolia-blockscout.scroll.io',
-        standard: 'EIP3091'
       }
     ],
     parent: {
@@ -25449,7 +25658,6 @@ const chainArray = [
     status: 'active',
     rpc: [
       'https://rpc.scroll.io',
-      'https://rpc-scroll.icecreamswap.com',
       'https://rpc.ankr.com/scroll',
       'https://scroll-mainnet.chainstacklabs.com'
     ],
@@ -25463,11 +25671,6 @@ const chainArray = [
       {
         name: 'Scrollscan',
         url: 'https://scrollscan.com',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'Blockscout',
-        url: 'https://blockscout.scroll.io',
         standard: 'EIP3091'
       }
     ],
@@ -25985,6 +26188,25 @@ const chainArray = [
         url: 'https://explorer.blxscan.com',
         icon: 'blx',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'REXX Mainnet',
+    title: 'REXX Mainnet',
+    chain: 'REXX',
+    rpc: [ 'https://rpc.rexxnetwork.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'REXX', symbol: 'REXX', decimals: 18 },
+    infoURL: 'https://rexxnetwork.com',
+    shortName: 'REXX',
+    chainId: 888882,
+    networkId: 888882,
+    explorers: [
+      {
+        name: 'REXX Mainnet Explorer',
+        url: 'https://rexxnetwork.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -27414,6 +27636,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Kingdom Chain',
+    chain: 'KingdomChain',
+    rpc: [ 'https://kingdomchain.observer/rpc' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Kozi', symbol: 'KOZI', decimals: 18 },
+    infoURL: 'https://www.beastkingdom.io/',
+    shortName: 'kchain',
+    chainId: 39916801,
+    networkId: 39916801,
+    explorers: [
+      {
+        name: 'TravelSong',
+        url: 'https://www.beastkingdom.io/travelsong',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'maistestsubnet',
     chain: 'MAI',
     rpc: [
@@ -28135,6 +28376,25 @@ const chainArray = [
       {
         name: 'PTCESCAN Testnet Explorer',
         url: 'https://explorer-testnet.ptcscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'PTCESCAN Mainnet',
+    title: 'PTCESCAN Mainnet',
+    chain: 'PTCE',
+    rpc: [ 'https://rpc.ptcscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PTCE', symbol: 'PTCE', decimals: 18 },
+    infoURL: 'https://ptcscan.io',
+    shortName: 'POLYTECH',
+    chainId: 889910246,
+    networkId: 889910246,
+    explorers: [
+      {
+        name: 'PTCESCAN Explorer',
+        url: 'https://ptcscan.io',
         standard: 'EIP3091'
       }
     ]
