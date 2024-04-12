@@ -15905,6 +15905,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Dot Blox',
+    chain: 'DTBX',
+    icon: 'dotblox',
+    rpc: [ 'https://rpc.dotblox.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dot Blox', symbol: 'DTBX', decimals: 18 },
+    infoURL: 'https://explorer.dotblox.io',
+    shortName: 'DTBX',
+    chainId: 7923,
+    networkId: 7923,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.dotblox.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'DOS Chain',
     chain: 'DOS',
     rpc: [ 'https://main.doschain.com' ],
@@ -19829,6 +19848,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Vizing Mainnet',
+    title: 'Vizing Mainnet',
+    chain: 'Vizing Mainnet',
+    rpc: [ 'https://rpc.vizing.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://vizing.com',
+    shortName: 'Vizing',
+    chainId: 28518,
+    networkId: 28518,
+    icon: 'vizing',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.vizing.com',
+        icon: 'vizing',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.vizing.com' } ]
+    }
   },
   {
     name: 'Optimism Bedrock (Goerli Alpha Testnet)',
@@ -25754,6 +25799,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Eclipse Testnet',
+    chain: 'ECLIPSE',
+    rpc: [ 'https://subnets.avax.network/eclipsecha/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Eclipse', symbol: 'ECLP', decimals: 18 },
+    infoURL: 'http://eclipsenet.io',
+    shortName: 'eclipset',
+    chainId: 555666,
+    networkId: 555666,
+    explorers: [
+      {
+        name: 'ECLIPSE Explorer',
+        url: 'https://subnets-test.avax.network/eclipsecha',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hypra Mainnet',
     chain: 'HYP',
     rpc: [
@@ -26090,6 +26154,32 @@ const chainArray = [
       type: 'L2',
       chain: 'eip155-59144',
       bridges: [ { url: 'https://portal.zklink.io' } ]
+    }
+  },
+  {
+    name: 'zkLink Nova Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.rpc.zklink.io', 'wss://sepolia.rpc.zklink.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zklink.io',
+    shortName: 'zklink-nova-sepolia',
+    chainId: 810181,
+    networkId: 810181,
+    slip44: 1,
+    icon: 'zklink-nova',
+    explorers: [
+      {
+        name: 'zkLink Nova Block Explorer',
+        url: 'https://sepolia.explorer.zklink.io',
+        icon: 'zklink-nova',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-59141',
+      bridges: [ { url: 'https://sepolia.portal.zklink.io' } ]
     }
   },
   {
