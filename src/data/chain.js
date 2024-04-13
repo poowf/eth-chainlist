@@ -12781,6 +12781,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'EVOLVE Mainnet',
+    chain: 'EVO',
+    icon: 'evolveIcon',
+    rpc: [ 'https://rpc.evolveblockchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Evolve', symbol: 'EVO', decimals: 18 },
+    infoURL: 'https://evolveblockchain.io',
+    shortName: 'EVOm',
+    chainId: 3424,
+    networkId: 3424,
+    explorers: [
+      {
+        name: 'Evolve Mainnet Explorer',
+        url: 'https://evoexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SecureChain Testnet',
     chain: 'SCAI',
     icon: 'scaiIcon',
@@ -24230,6 +24249,11 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://blockscoutapi.hekla.taiko.xyz',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'routescan',
+        url: 'https://hekla.taikoscan.network',
         standard: 'EIP3091'
       }
     ]
