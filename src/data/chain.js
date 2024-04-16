@@ -11126,6 +11126,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Vanar Mainnet',
+    title: 'Vanarchain',
+    chain: 'VANAR',
+    rpc: [ 'https://rpc.vanarchain.com', 'wss://ws.vanarchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'VANRY', symbol: 'VANRY', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://vanarchain.com',
+    shortName: 'Vanar',
+    chainId: 2040,
+    networkId: 2040,
+    icon: 'vanar'
+  },
+  {
     name: 'OriginTrail Parachain',
     chain: 'OTP',
     rpc: [
@@ -16049,6 +16063,7 @@ const chainArray = [
   },
   {
     name: 'Karak Sepolia',
+    title: 'Karak Testnet Sepolia',
     chain: 'Karak',
     icon: 'karak',
     rpc: [ 'https://rpc.sepolia.karak.network' ],
@@ -22612,7 +22627,7 @@ const chainArray = [
       'wss://ws-vanguard.vanarchain.com'
     ],
     faucets: [ 'https://faucet.vanarchain.com' ],
-    nativeCurrency: { name: 'Vanguard Vanry', symbol: 'VG', decimals: 18 },
+    nativeCurrency: { name: 'Vanguard Vanry', symbol: 'VANRY', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://vanarchain.com',
     shortName: 'vanguard',
@@ -22681,7 +22696,7 @@ const chainArray = [
     chain: 'Polygon',
     icon: 'polygon',
     rpc: [
-      'https://https://rpc-amoy.polygon.technology',
+      'https://rpc-amoy.polygon.technology',
       'https://polygon-amoy-bor-rpc.publicnode.com',
       'wss://polygon-amoy-bor-rpc.publicnode.com'
     ],
@@ -24164,6 +24179,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'PlayFi Mainnet',
+    chain: 'PLAY',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Play', symbol: 'PLAY', decimals: 18 },
+    infoURL: 'https://www.playfi.ai/',
+    shortName: 'playfi',
+    chainId: 161212,
+    networkId: 161212,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'Taiko (Alpha-2 Testnet)',
     chain: 'ETH',
     status: 'deprecated',
@@ -25342,6 +25370,26 @@ const chainArray = [
         name: 'Tipboxcoin',
         url: 'https://tipboxcoin.net',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'AIE Testnet',
+    chain: 'AIE',
+    rpc: [ 'https://rpc1-testnet.aiechain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'AIE', symbol: 'tAIE', decimals: 18 },
+    infoURL: 'https://testnet.aiescan.io',
+    shortName: 'aiet',
+    chainId: 413413,
+    networkId: 413413,
+    icon: 'aie',
+    explorers: [
+      {
+        name: 'aiescan-testnet',
+        icon: 'aie',
+        url: 'https://testnet.aiescan.io',
+        standard: 'none'
       }
     ]
   },
@@ -26737,6 +26785,30 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'PlayFi Albireo Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://albireo-rpc.playfi.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.playfi.ai/',
+    shortName: 'alberio',
+    chainId: 1612127,
+    networkId: 1612127,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'PlayFi Block Explorer',
+        url: 'https://albireo-explorer.playfi.ai',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portal.playfi.ai/bridge' } ]
+    }
   },
   {
     name: 'Turkey Demo Dev',
