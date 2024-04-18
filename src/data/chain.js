@@ -3729,6 +3729,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'B2 Hub Mainnet',
+    chain: 'B2',
+    rpc: [ 'https://hub-rpc.bsquared.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'BSquared Token', symbol: 'B2', decimals: 18 },
+    infoURL: 'https://www.bsquared.network',
+    shortName: 'B2Hub-mainnet',
+    chainId: 213,
+    networkId: 213,
+    icon: 'bsquare',
+    explorers: [
+      {
+        name: 'B2 Hub Mainnet Explorer',
+        url: 'https://hub-explorer.bsquared.network',
+        icon: 'bsquare',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Shinarium Mainnet',
     chain: 'Shinarium',
     icon: 'shinarium',
@@ -3809,6 +3829,35 @@ const chainArray = [
     networkId: 2221,
     slip44: 2221,
     status: 'deprecated'
+  },
+  {
+    name: 'B2 Mainnet',
+    title: 'B2 Mainnet',
+    chain: 'B2',
+    rpc: [
+      'https://rpc.bsquared.network',
+      'https://b2-mainnet.alt.technology'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://www.bsquared.network',
+    shortName: 'B2-mainnet',
+    chainId: 223,
+    networkId: 223,
+    icon: 'bsquare',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.bsquared.network',
+        icon: 'bsquare',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-213',
+      bridges: [ { url: 'https://www.bsquared.network/bridge' } ]
+    }
   },
   {
     name: 'Viridis Testnet',
@@ -4174,16 +4223,29 @@ const chainArray = [
     title: 'Neura Testnet',
     chain: 'NEURA',
     icon: 'neura',
-    rpc: [],
+    rpc: [ 'https://rpc.ankr.com/neura_testnet' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    faucets: [],
+    faucets: [ 'https://testnet.neuraprotocol.io/faucet' ],
     nativeCurrency: { name: 'Testnet Ankr', symbol: 'ANKR', decimals: 18 },
     infoURL: 'https://www.neuraprotocol.io/',
     shortName: 'tneura',
     chainId: 267,
     networkId: 267,
-    explorers: [],
-    status: 'incubating',
+    explorers: [
+      {
+        name: 'ankrscan-neura',
+        url: 'https://testnet.neuraprotocol.io/explorer',
+        icon: 'neura',
+        standard: 'none'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://explorer.neura-testnet.ankr.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active',
     slip44: 1
   },
   {
@@ -11405,6 +11467,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'BigShortBets Testnet',
+    chain: 'BIGSB Testnet',
+    rpc: [ 'https://test-market.bigsb.io', 'wss://test-market.bigsb.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dolarz', symbol: 'Dolarz', decimals: 18 },
+    infoURL: 'https://bigshortbets.com/',
+    shortName: 'bigsb_testnet',
+    chainId: 2136,
+    networkId: 2136,
+    explorers: [
+      {
+        name: 'Polkadot.js',
+        url: 'https://polkadot.js.org/apps/?rpc=wss://test-market.bigsb.network#/explorer',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'BigShortBets',
     chain: 'BIGSB',
     rpc: [ 'https://market.bigsb.io', 'wss://market.bigsb.io' ],
@@ -15666,6 +15746,20 @@ const chainArray = [
         icon: 'meverse'
       }
     ]
+  },
+  {
+    name: 'Cyber Mainnet',
+    chain: 'Cyber',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    icon: 'cyber',
+    infoURL: 'https://cyber.co/',
+    shortName: 'cyeth',
+    chainId: 7560,
+    networkId: 7560,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'ADIL Testnet',
@@ -26029,7 +26123,7 @@ const chainArray = [
     rpc: [ 'https://subnets.avax.network/eclipsecha/testnet/rpc' ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'Eclipse', symbol: 'ECLP', decimals: 18 },
+    nativeCurrency: { name: 'Eclipse', symbol: 'ECLPS', decimals: 18 },
     infoURL: 'http://eclipsenet.io',
     shortName: 'eclipset',
     chainId: 555666,
@@ -28308,6 +28402,38 @@ const chainArray = [
     chainId: 99415706,
     networkId: 99415706,
     slip44: 1
+  },
+  {
+    name: 'Cyber Testnet',
+    chain: 'Cyber',
+    rpc: [
+      'https://cyber-testnet.alt.technology/',
+      'wss://cyber-testnet.alt.technology/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    icon: 'cyber',
+    infoURL: 'https://cyber.co/',
+    shortName: 'cysep',
+    chainId: 111557560,
+    networkId: 111557560,
+    explorers: [
+      {
+        name: 'Cyber Testnet Explorer',
+        url: 'https://testnet.cyberscan.co',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://op-bridge.alt.technology/deposit?id=111557560'
+        }
+      ]
+    }
   },
   {
     name: 'OP Celestia Raspberry',
