@@ -4234,9 +4234,9 @@ const chainArray = [
     explorers: [
       {
         name: 'ankrscan-neura',
-        url: 'https://testnet.neuraprotocol.io/explorer',
+        url: 'https://testnet.explorer.neuraprotocol.io',
         icon: 'neura',
-        standard: 'none'
+        standard: 'EIP3091'
       },
       {
         name: 'blockscout',
@@ -8174,6 +8174,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'IOTA EVM Testnet',
+    title: 'IOTA EVM Testnet',
+    chain: 'IOTA EVM',
+    icon: 'iotaevm',
+    rpc: [ 'https://json-rpc.evm.testnet.iotaledger.net' ],
+    faucets: [ 'https://evm-toolkit.evm.testnet.iotaledger.net' ],
+    nativeCurrency: { name: 'IOTA', symbol: 'IOTA', decimals: 18 },
+    infoURL: 'https://www.iota.org',
+    shortName: 'iotaevm-testnet',
+    chainId: 1075,
+    networkId: 1075
+  },
+  {
     name: 'Mintara Testnet',
     title: 'Mintara Testnet',
     chain: 'Mintara',
@@ -8702,6 +8715,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'ClubMos Mainnet',
+    chain: 'MOS',
+    rpc: [ 'https://mainnet.mosscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'ClubMos', symbol: 'MOS', decimals: 18 },
+    infoURL: 'https://www.mosscan.com',
+    shortName: 'MOS',
+    chainId: 1188,
+    networkId: 1188,
+    icon: 'clubmos',
+    explorers: [
+      {
+        name: 'mosscan',
+        url: 'https://www.mosscan.com',
+        icon: 'clubmos',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Iora Chain',
     chain: 'IORA',
     icon: 'iorachain',
@@ -8787,6 +8820,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Cycle Network Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc-testnet.cyclenetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.cyclenetwork.io/',
+    shortName: 'Cycle',
+    chainId: 1221,
+    networkId: 1221,
+    icon: 'cycle'
   },
   {
     name: 'Hybrid Testnet',
@@ -12017,6 +12062,25 @@ const chainArray = [
     }
   },
   {
+    name: 'Nexis Network Testnet',
+    chain: 'Nexis Network',
+    icon: 'nexis',
+    rpc: [ 'https://evm-testnet.nexis.network' ],
+    faucets: [ 'https://evm-faucet.nexis.network' ],
+    nativeCurrency: { name: 'Nexis', symbol: 'NZT', decimals: 18 },
+    infoURL: 'https://nexis.network/',
+    shortName: 'nzt',
+    chainId: 2370,
+    networkId: 2370,
+    explorers: [
+      {
+        name: 'Nexis Testnet Explorer',
+        url: 'https://evm-testnet.nexscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BOMB Chain Testnet',
     chain: 'BOMB',
     rpc: [ 'https://bombchain-testnet.ankr.com/bas_full_rpc_1' ],
@@ -12512,6 +12576,31 @@ const chainArray = [
         icon: 'timenet'
       }
     ]
+  },
+  {
+    name: 'Morph Holesky',
+    title: 'Morph Holesky Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc-holesky.morphl2.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://morphl2.io',
+    shortName: 'hmorph',
+    chainId: 2810,
+    networkId: 2810,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Morph Holesky Testnet Explorer',
+        url: 'https://explorer-holesky.morphl2.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge-holesky.morphl2.io' } ]
+    }
   },
   {
     name: 'Boba Network Goerli Testnet',
@@ -15590,6 +15679,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Planq Atlas Testnet',
+    chain: 'Planq',
+    icon: 'planq',
+    rpc: [ 'https://evm-rpc-atlas.planq.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Planq', symbol: 'tPLQ', decimals: 18 },
+    infoURL: 'https://planq.network',
+    shortName: 'planq-atlas-testnet',
+    chainId: 7077,
+    networkId: 7077,
+    explorers: []
   },
   {
     name: 'Nume',
@@ -24329,6 +24431,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'MagApe Testnet',
+    title: 'MagApeChain',
+    chain: 'MagApe',
+    rpc: [ 'https://testnet-api.magape.io/chain/' ],
+    faucets: [],
+    nativeCurrency: { name: 'MagApe', symbol: 'MAG', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://magape.io',
+    shortName: 'mag',
+    chainId: 141319,
+    networkId: 141319,
+    icon: 'magape',
+    explorers: [
+      {
+        name: 'etherscan',
+        url: 'http://testnet-api.magape.io:81',
+        icon: 'magape',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ICPlaza Mainnet',
     chain: 'ICPlaza',
     icon: 'icplaza',
@@ -24359,6 +24483,20 @@ const chainArray = [
     networkId: 161212,
     explorers: [],
     status: 'incubating'
+  },
+  {
+    name: 'Taiko Mainnet',
+    chain: 'ETH',
+    status: 'incubating',
+    icon: 'taiko',
+    rpc: [ 'https://rpc.taiko.xyz', 'wss://ws.taiko.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://taiko.xyz',
+    shortName: 'tko-mainnet',
+    chainId: 167000,
+    networkId: 167000,
+    explorers: []
   },
   {
     name: 'Taiko (Alpha-2 Testnet)',
@@ -24448,7 +24586,7 @@ const chainArray = [
     icon: 'taiko',
     rpc: [
       'https://rpc.katla.taiko.xyz',
-      'wss://rpc.katla.taiko.xyz',
+      'wss://ws.katla.taiko.xyz',
       'https://taiko-katla.drpc.org',
       'wss://taiko-katla.drpc.org'
     ],
