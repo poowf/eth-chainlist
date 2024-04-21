@@ -10454,6 +10454,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'UPB CRESCDI Testnet',
+    chain: 'UPBEth',
+    rpc: [ 'https://testnet.crescdi.pub.ro' ],
+    infoURL: 'https://mobylab.docs.crescdi.pub.ro/blog/UPB-CRESCDI-Testnet',
+    faucets: [],
+    nativeCurrency: { name: 'UPBEth', symbol: 'UPBEth', decimals: 18 },
+    shortName: 'UPBEth',
+    chainId: 1918,
+    networkId: 1918,
+    explorers: []
+  },
+  {
     name: 'ONUS Chain Testnet',
     title: 'ONUS Chain Testnet',
     chain: 'onus',
@@ -13911,7 +13923,10 @@ const chainArray = [
     name: 'Merlin Mainnet',
     title: 'Merlin Mainnet',
     chain: 'Merlin',
-    rpc: [ 'https://rpc.merlinchain.io' ],
+    rpc: [
+      'https://rpc.merlinchain.io',
+      'https://merlin-mainnet-enterprise.unifra.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://merlinchain.io',
@@ -13921,7 +13936,7 @@ const chainArray = [
     icon: 'merlin',
     explorers: [
       {
-        name: 'blockscout',
+        name: 'L2scan',
         url: 'https://scan.merlinchain.io',
         icon: 'merlin',
         standard: 'EIP3091'
@@ -14974,19 +14989,25 @@ const chainArray = [
     ]
   },
   {
-    name: 'Tanssi EVM ContainerChain',
-    chain: 'EVMCC',
+    name: 'Tanssi Demo',
+    chain: 'TANGO',
     rpc: [
       'https://fraa-dancebox-3001-rpc.a.dancebox.tanssi.network',
       'wss://fraa-dancebox-3001-rpc.a.dancebox.tanssi.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'TANGO', symbol: 'TANGO', decimals: 18 },
-    infoURL: 'https://tanssi.network',
-    shortName: 'TanssiCC',
+    infoURL: 'https://docs.tanssi.network/builders/tanssi-network/networks/dancebox/demo-evm-containerchain',
+    shortName: 'tango',
     chainId: 5678,
     networkId: 5678,
-    explorers: []
+    explorers: [
+      {
+        name: 'BlockScout',
+        url: 'https://3001-blockscout.a.dancebox.tanssi.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Syscoin Tanenbaum Testnet',
@@ -24964,6 +24985,17 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'GitAGI Atlas Testnet',
+    chain: 'GitAGI',
+    rpc: [ 'https://rpc.gitagi.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'GitAGI', symbol: 'tGAGI', decimals: 18 },
+    infoURL: 'https://gitagi.org/',
+    shortName: 'atlas',
+    chainId: 210049,
+    networkId: 210049
   },
   {
     name: 'PlatON Mainnet',
