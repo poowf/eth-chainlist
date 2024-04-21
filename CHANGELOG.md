@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.383 (2024-04-21)
+
+
+### Maintenance
+
+* **release:** 0.0.382 ([8771308](https://github.com/poowf/eth-chainlist/commit/8771308308ee9a912b9996e011332150463e1d17))
+* update chain data ([daac480](https://github.com/poowf/eth-chainlist/commit/daac480a9f4c09b2b9c9db925c78f7a303da5f86))
+
 ### 0.0.382 (2024-04-19)
 
 
