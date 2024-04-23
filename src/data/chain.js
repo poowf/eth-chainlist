@@ -2169,10 +2169,13 @@ const chainArray = [
     slip44: 1
   },
   {
-    name: 'Worldland Mainnet',
+    name: 'WorldLand Mainnet',
     chain: 'Worldland',
     icon: 'worldland',
-    rpc: [ 'https://seoul.worldland.foundation' ],
+    rpc: [
+      'https://seoul.worldland.foundation',
+      'https://seoul2.worldland.foundation'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Worldland', symbol: 'WLC', decimals: 18 },
     infoURL: 'https://worldland.foundation',
@@ -9679,6 +9682,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'iDos Games Chain Testnet',
+    chain: 'IGC',
+    icon: 'igc-testnet',
+    rpc: [ 'https://rpc-testnet.idos.games' ],
+    faucets: [],
+    nativeCurrency: { name: 'iDos Games Coin', symbol: 'IGC', decimals: 18 },
+    infoURL: 'https://idosgames.com/',
+    shortName: 'IGC',
+    chainId: 1499,
+    networkId: 1499,
+    explorers: [
+      {
+        name: 'IGC-Scan',
+        url: 'https://igcscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BEVM Canary',
     chain: 'ChainX',
     rpc: [
@@ -11039,15 +11061,15 @@ const chainArray = [
     icon: 'edgeware',
     rpc: [
       'https://edgeware-evm.jelliedowl.net',
-      'https://mainnet2.edgewa.re/evm',
-      'https://mainnet3.edgewa.re/evm',
-      'https://mainnet4.edgewa.re/evm',
-      'https://mainnet5.edgewa.re/evm',
+      'https://edgeware-evm0.jelliedowl.net',
+      'https://edgeware-evm1.jelliedowl.net',
+      'https://edgeware-evm2.jelliedowl.net',
+      'https://edgeware-evm3.jelliedowl.net',
       'wss://edgeware.jelliedowl.net',
-      'wss://mainnet2.edgewa.re',
-      'wss://mainnet3.edgewa.re',
-      'wss://mainnet4.edgewa.re',
-      'wss://mainnet5.edgewa.re'
+      'wss://edgeware-rpc0.jelliedowl.net',
+      'wss://edgeware-rpc1.jelliedowl.net',
+      'wss://edgeware-rpc2.jelliedowl.net',
+      'wss://edgeware-rpc3.jelliedowl.net'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -11059,15 +11081,15 @@ const chainArray = [
     slip44: 523,
     explorers: [
       {
-        name: 'Edgscan by Bharathcoorg',
+        name: 'Edgscan EdgeEVM explorer by Bharathcoorg',
         url: 'https://edgscan.live',
         standard: 'EIP3091'
       },
       {
-        name: 'Subscan',
-        url: 'https://edgeware.subscan.io',
+        name: 'Edgscan EdgeWASM explorer by Bharathcoorg',
+        url: 'https://edgscan.ink',
         standard: 'none',
-        icon: 'subscan'
+        icon: 'edgscan'
       }
     ]
   },
@@ -18063,7 +18085,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Worldland Testnet',
+    name: 'WorldLand Testnet',
     chain: 'Worldland',
     icon: 'worldland',
     rpc: [ 'https://gwangju.worldland.foundation' ],
@@ -20354,6 +20376,31 @@ const chainArray = [
       {
         name: 'Piece Scan',
         url: 'https://testnet-scan.piecenetwork.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MiYou Mainnet',
+    chain: 'MiYou Chain',
+    icon: 'miyou',
+    faucets: [],
+    rpc: [
+      'https://blockchain.miyou.io',
+      'https://blockchain.miyoulab.com'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Miyou', symbol: 'MY', decimals: 18 },
+    infoURL: 'https://www.miyou.io',
+    shortName: 'MiYou',
+    chainId: 30088,
+    networkId: 30088,
+    slip44: 60,
+    ens: { registry: '0xFEfa9B3061435977424DD947E756566cFB60473E' },
+    explorers: [
+      {
+        name: 'MiYou block explorer',
+        url: 'https://myscan.miyou.io',
         standard: 'EIP3091'
       }
     ]
