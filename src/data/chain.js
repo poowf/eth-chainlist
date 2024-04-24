@@ -3448,6 +3448,7 @@ const chainArray = [
     chainId: 195,
     networkId: 195,
     slip44: 1,
+    icon: 'xlayerTestnet',
     explorers: [
       {
         name: 'OKLink',
@@ -3472,6 +3473,7 @@ const chainArray = [
     shortName: 'okb',
     chainId: 196,
     networkId: 196,
+    icon: 'xlayer',
     explorers: [
       {
         name: 'OKLink',
@@ -8806,6 +8808,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'SaitaBlockChain(SBC)',
+    chain: 'SaitaBlockChain(SBC)',
+    rpc: [ 'https://rpc-nodes.saitascan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SaitaBlockChain(SBC)', symbol: 'STC', decimals: 18 },
+    infoURL: 'https://saitachain.com',
+    shortName: 'SBC',
+    chainId: 1209,
+    networkId: 1209,
+    icon: 'SaitaBlockChain(SBC)',
+    explorers: [
+      {
+        name: 'Saitascan explorer',
+        url: 'https://saitascan.io',
+        standard: 'none',
+        icon: 'SaitaBlockChain(SBC)'
+      }
+    ]
+  },
+  {
     name: 'Popcateum Mainnet',
     chain: 'POPCATEUM',
     rpc: [ 'https://dataseed.popcateum.org' ],
@@ -11297,7 +11319,15 @@ const chainArray = [
     shortName: 'Vanar',
     chainId: 2040,
     networkId: 2040,
-    icon: 'vanar'
+    icon: 'vanar',
+    explorers: [
+      {
+        name: 'Vanar Explorer',
+        url: 'https://explorer.vanarchain.com',
+        icon: 'vanar',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'OriginTrail Parachain',
@@ -15914,7 +15944,10 @@ const chainArray = [
   {
     name: 'Cyber Mainnet',
     chain: 'Cyber',
-    rpc: [],
+    rpc: [
+      'https://cyber.alt.technology/',
+      'wss://cyber-ws.alt.technology/'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     icon: 'cyber',
@@ -15922,8 +15955,19 @@ const chainArray = [
     shortName: 'cyeth',
     chainId: 7560,
     networkId: 7560,
-    status: 'incubating',
-    parent: { type: 'L2', chain: 'eip155-1' }
+    explorers: [
+      {
+        name: 'Cyber Mainnet Explorer',
+        url: 'https://cyberscan.co',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://cyber-bridge.alt.technology/deposit' } ]
+    }
   },
   {
     name: 'ADIL Testnet',
@@ -25252,7 +25296,7 @@ const chainArray = [
   {
     name: 'CONET Holesky',
     chain: 'CONET Holesky',
-    rpc: [ 'https://holeskyrpc1.conet.network' ],
+    rpc: [ 'https://rpc.conet.network' ],
     faucets: [],
     nativeCurrency: { name: 'CONET Holesky', symbol: 'CONET', decimals: 18 },
     features: [ { name: 'EIP155' } ],
