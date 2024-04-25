@@ -8183,7 +8183,7 @@ const chainArray = [
       'https://evm-toolkit.evm.testnet.shimmer.network',
       'https://evm-faucet.testnet.shimmer.network'
     ],
-    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 6 },
+    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 18 },
     infoURL: 'https://shimmer.network',
     shortName: 'shimmerevm-testnet',
     chainId: 1073,
@@ -8208,7 +8208,14 @@ const chainArray = [
     infoURL: 'https://www.iota.org',
     shortName: 'iotaevm-testnet',
     chainId: 1075,
-    networkId: 1075
+    networkId: 1075,
+    explorers: [
+      {
+        name: 'explorer',
+        url: 'https://explorer.evm.testnet.iotaledger.net',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Mintara Testnet',
@@ -16922,7 +16929,10 @@ const chainArray = [
     name: 'IOTA EVM',
     title: 'IOTA EVM',
     chain: 'IOTA EVM',
-    rpc: [ 'https://json-rpc.evm.iotaledger.net' ],
+    rpc: [
+      'https://json-rpc.evm.iotaledger.net',
+      'https://ws.json-rpc.evm.iotaledger.net'
+    ],
     faucets: [],
     nativeCurrency: { name: 'IOTA', symbol: 'IOTA', decimals: 18 },
     infoURL: 'https://www.iota.org',
@@ -16933,7 +16943,7 @@ const chainArray = [
     explorers: [
       {
         name: 'explorer',
-        url: 'https://iota-evm.blockscout.com',
+        url: 'https://explorer.evm.iota.org',
         icon: 'iotaevm',
         standard: 'EIP3091'
       }
@@ -20261,6 +20271,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Nanon Sepolia',
+    title: 'Nanon Sepolia Rollup Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia-rpc.nanon.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.nanon.network',
+    shortName: 'Nanon-Testnet',
+    chainId: 27483,
+    networkId: 27483,
+    slip44: 1,
+    icon: 'nanon',
+    explorers: [
+      {
+        name: 'Nanon Sepolia Rollup Testnet Explorer',
+        url: 'https://sepolia-explorer.nanon.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://sepolia-bridge.nanon.network' } ]
+    }
   },
   {
     name: 'Vizing Mainnet',
