@@ -3840,8 +3840,10 @@ const chainArray = [
     title: 'B2 Mainnet',
     chain: 'B2',
     rpc: [
+      'https://mainnet.b2-rpc.com',
       'https://rpc.bsquared.network',
-      'https://b2-mainnet.alt.technology'
+      'https://b2-mainnet.alt.technology',
+      'https://b2-mainnet-public.s.chainbase.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
@@ -4620,6 +4622,32 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'zkCandy Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.rpc.zkcandy.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zkcandy.io/',
+    shortName: 'zkcandy-sepolia',
+    chainId: 302,
+    networkId: 302,
+    icon: 'zkcandy',
+    explorers: [
+      {
+        name: 'zkCandy Block Explorer',
+        url: 'https://sepolia.explorer.zkcandy.io',
+        icon: 'zkcandy',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://sepolia.bridge.zkcandy.io/' } ]
+    },
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Neurochain Testnet',
@@ -8462,11 +8490,11 @@ const chainArray = [
     ]
   },
   {
-    name: 'B2 Hub Habitat Testnet',
+    name: 'B2 Hub Testnet',
     chain: 'BSQ',
-    rpc: [ 'https://habitat-hub-rpc.bsquared.network' ],
+    rpc: [ 'https://testnet-hub-rpc.bsquared.network' ],
     faucets: [],
-    nativeCurrency: { name: 'BSquared Token', symbol: 'BSQ', decimals: 18 },
+    nativeCurrency: { name: 'BSquared Token', symbol: 'B2', decimals: 18 },
     infoURL: 'https://www.bsquared.network',
     shortName: 'B2Hub-testnet',
     chainId: 1113,
@@ -8475,7 +8503,7 @@ const chainArray = [
     explorers: [
       {
         name: 'B2 Hub Habitat Testnet Explorer',
-        url: 'https://habitat-hub-explorer.bsquared.network',
+        url: 'https://testnet-hub-explorer.bsquared.network',
         icon: 'bsquare',
         standard: 'EIP3091'
       }
@@ -8555,14 +8583,10 @@ const chainArray = [
     ]
   },
   {
-    name: 'B2 Habitat Testnet',
-    title: 'B2 Habitat Testnet',
+    name: 'B2 Testnet',
+    title: 'B2 Testnet',
     chain: 'Habitat',
-    rpc: [
-      'https://b2habitat-testnet.alt.technology',
-      'https://habitat-rpc.bsquared.network',
-      'https://habitat-rpc-public.bsquared.network'
-    ],
+    rpc: [ 'https://b2-testnet.alt.technology' ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://www.bsquared.network',
@@ -8573,7 +8597,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://habitat-explorer.bsquared.network',
+        url: 'https://testnet-explorer.bsquared.network',
         icon: 'bsquare',
         standard: 'EIP3091'
       }
@@ -12668,6 +12692,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nanon',
+    title: 'Nanon Rollup',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.nanon.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.nanon.network',
+    shortName: 'Nanon',
+    chainId: 2748,
+    networkId: 2748,
+    slip44: 1,
+    icon: 'nanon',
+    explorers: [
+      {
+        name: 'Nanon Rollup Explorer',
+        url: 'https://explorer.nanon.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.nanon.network' } ]
+    }
+  },
+  {
     name: 'Morph Holesky',
     title: 'Morph Holesky Testnet',
     chain: 'ETH',
@@ -14251,6 +14301,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'VERY Mainnet',
+    title: 'VERY Mainnet',
+    chain: 'VERY Mainnet',
+    icon: 'very',
+    rpc: [ 'https://rpc.verylabs.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'VERY', symbol: 'VERY', decimals: 18 },
+    infoURL: 'https://www.verylabs.io/',
+    shortName: 'very',
+    chainId: 4613,
+    networkId: 4613,
+    explorers: [
+      {
+        name: 'VERY explorer',
+        url: 'https://www.veryscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Gold Chain',
     title: 'Gold Chain',
     chain: 'Gold',
@@ -14853,6 +14924,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'edeXa Mainnet',
+    chain: 'edeXa Network',
+    rpc: [
+      'https://mainnet.edexa.com/rpc',
+      'https://io-dataseed1.mainnet.edexa.io-market.com/rpc'
+    ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'EDEXA', symbol: 'EDX', decimals: 18 },
+    infoURL: 'https://edexa.network/',
+    shortName: 'edeXa',
+    chainId: 5424,
+    networkId: 5424,
+    slip44: 1,
+    icon: 'edexa',
+    explorers: [
+      {
+        name: 'edexa-mainnet',
+        url: 'https://explorer.edexa.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Egochain',
     chainId: 5439,
     shortName: 'egax',
@@ -15374,6 +15469,27 @@ const chainArray = [
         name: 'UPTN Explorer',
         url: 'https://explorer.uptn.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Aura Euphoria Testnet',
+    chain: 'Aura',
+    rpc: [ 'https://jsonrpc.euphoria.aura.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'test-EAura', symbol: 'eAura', decimals: 18 },
+    infoURL: 'https://aura.network',
+    shortName: 'eaura',
+    chainId: 6321,
+    networkId: 6321,
+    slip44: 1,
+    icon: 'aura',
+    explorers: [
+      {
+        name: 'Aurascan Explorer',
+        url: 'https://euphoria.aurascan.io',
+        standard: 'none',
+        icon: 'aura'
       }
     ]
   },
@@ -20299,6 +20415,27 @@ const chainArray = [
     }
   },
   {
+    name: 'Vizing Testnet',
+    title: 'Vizing Testnet',
+    chain: 'Vizing Testnet',
+    rpc: [ 'https://rpc-sepolia.vizing.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://vizing.com',
+    shortName: 'Vizing-Testnet',
+    chainId: 28516,
+    networkId: 28516,
+    icon: 'vizing',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer-sepolia.vizing.com',
+        icon: 'vizing',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Vizing Mainnet',
     title: 'Vizing Mainnet',
     chain: 'Vizing Mainnet',
@@ -21885,6 +22022,26 @@ const chainArray = [
       {
         name: 'reiscan',
         url: 'https://testnet.reiscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lambda Chain Mainnet',
+    chain: 'Lambda Chain',
+    rpc: [ 'https://nrpc.lambda.im/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://lambda.im',
+    shortName: 'lambda',
+    chainId: 56026,
+    networkId: 56026,
+    slip44: 1,
+    icon: 'lambda-chain',
+    explorers: [
+      {
+        name: 'Lambda Chain Mainnet Explorer',
+        url: 'https://scan.lambda.im',
         standard: 'EIP3091'
       }
     ]
@@ -27617,6 +27774,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Reactive Network Testnet Kopli',
+    chain: 'REACT',
+    rpc: [ 'https://kopli-rpc.reactive.network' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'React', symbol: 'REACT', decimals: 18 },
+    infoURL: 'https://reactive.network',
+    shortName: 'react',
+    chainId: 5318008,
+    networkId: 5318008,
+    explorers: [
+      {
+        name: 'reactscan',
+        url: 'https://kopli.reactscan.net',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Imversed Mainnet',
     chain: 'Imversed',
     rpc: [
@@ -28118,6 +28294,26 @@ const chainArray = [
       {
         name: 'piscan',
         url: 'https://testnet.plian.org/testnet',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lambda Chain Testnet',
+    chain: 'Lambda Chain',
+    rpc: [ 'https://testnrpc.lambda.im/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://lambda.im',
+    shortName: 'tlambda',
+    chainId: 17000920,
+    networkId: 17000920,
+    slip44: 1,
+    icon: 'lambda-chain',
+    explorers: [
+      {
+        name: 'Lambda Chain Testnet Explorer',
+        url: 'https://testscan.lambda.im',
         standard: 'EIP3091'
       }
     ]
