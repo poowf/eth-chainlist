@@ -16069,7 +16069,9 @@ const chainArray = [
     chain: 'Cyber',
     rpc: [
       'https://cyber.alt.technology/',
-      'wss://cyber-ws.alt.technology/'
+      'wss://cyber-ws.alt.technology/',
+      'https://rpc.cyber.co/',
+      'wss://rpc.cyber.co/'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -28920,7 +28922,9 @@ const chainArray = [
     chain: 'Cyber',
     rpc: [
       'https://cyber-testnet.alt.technology/',
-      'wss://cyber-testnet.alt.technology/ws'
+      'wss://cyber-testnet.alt.technology/ws',
+      'https://rpc.testnet.cyber.co/',
+      'wss://rpc.testnet.cyber.co/'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -28941,9 +28945,7 @@ const chainArray = [
       type: 'L2',
       chain: 'eip155-11155111',
       bridges: [
-        {
-          url: 'https://op-bridge.alt.technology/deposit?id=111557560'
-        }
+        { url: 'https://cyber-testnet-bridge.alt.technology/deposit' }
       ]
     }
   },
@@ -30286,6 +30288,29 @@ const chainArray = [
         name: 'GWScan Block Explorer',
         url: 'https://v1.aggron.gwscan.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'DCHAIN Testnet',
+    title: 'DCHAIN Testnet',
+    chain: 'dchaint',
+    icon: 'dchaint',
+    rpc: [
+      'https://dchaintestnet-2713017997578000-1.jsonrpc.testnet.sagarpc.io'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.dchain.foundation/',
+    shortName: 'dchaint',
+    chainId: 2713017997578000,
+    networkId: 2713017997578000,
+    explorers: [
+      {
+        name: 'dchaint scan',
+        url: 'https://dchaintestnet-2713017997578000-1.testnet.sagaexplorer.io',
+        standard: 'EIP3091'
       }
     ]
   }
