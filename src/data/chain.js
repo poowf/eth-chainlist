@@ -3200,6 +3200,32 @@ const chainArray = [
     networkId: 163
   },
   {
+    name: 'Omni Testnet (incubating)',
+    chain: 'Omni',
+    status: 'incubating',
+    rpc: [],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
+    infoURL: 'https://docs.omni.network',
+    shortName: 'omni_testnet_164',
+    chainId: 164,
+    networkId: 164,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Omni X-Explorer',
+        url: 'https://explorer.testnet.omni.network',
+        standard: 'none'
+      },
+      {
+        name: 'Omni EVM Explorer on Blockscout',
+        url: 'https://omni-testnet.blockscout.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Omni Testnet',
     chain: 'Omni',
     rpc: [ 'https://testnet.omni.network' ],
@@ -16256,6 +16282,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'GDCC TESTNET',
+    chain: 'GDCC',
+    icon: 'gdcc',
+    rpc: [ 'https://testnet-rpc1.gdccscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'GDCC', symbol: 'GDCC', decimals: 18 },
+    infoURL: 'https://gdcchain.com',
+    shortName: 'GDCC',
+    chainId: 7775,
+    networkId: 7775,
+    explorers: [
+      {
+        name: 'GDCC',
+        url: 'https://testnet.gdccscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Rise of the Warbots Testnet',
     chain: 'nmactest',
     rpc: [
@@ -23811,6 +23856,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'Camp Testnet',
+    chain: 'ETH',
+    icon: 'camp',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    rpc: [ 'https://rpc-camp-network-4xje7wy105.t.conduit.xyz' ],
+    faucets: [ 'https://www.campnetwork.xyz/faucet' ],
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://campaign-1.gitbook.io/camp-technical-docså',
+    shortName: 'camp',
+    chainId: 90354,
+    networkId: 90354,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorerl2new-camp-network-4xje7wy105.t.conduit.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://camp-testnet-bridge.vercel.app/' } ]
+    }
+  },
+  {
     name: 'Nautilus Trition Chain',
     title: 'Nautilus Trition Testnet',
     chain: 'ETH',
@@ -27291,6 +27363,27 @@ const chainArray = [
         name: 'Ecrox Chain Explorer',
         url: 'https://ecroxscan.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'AmChain',
+    title: 'AMC',
+    chain: 'AmChain',
+    icon: 'amc',
+    rpc: [ 'https://node1.amchain.net' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'AMC', symbol: 'AMC', decimals: 18 },
+    infoURL: 'https://hewe.io/',
+    shortName: 'AMC',
+    chainId: 999999,
+    networkId: 999999,
+    explorers: [
+      {
+        name: 'AMCAmChain explorer',
+        url: 'https://explorer.amchain.net',
+        standard: 'none'
       }
     ]
   },
