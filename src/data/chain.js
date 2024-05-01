@@ -8035,6 +8035,33 @@ const chainArray = [
     slip44: 1020
   },
   {
+    name: 'Rebus Mainnet',
+    title: 'Rebuschain Mainnet',
+    chain: 'REBUS',
+    rpc: [ 'https://apievm.rebuschain.com/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Rebus', symbol: 'REBUS', decimals: 18 },
+    infoURL: 'https://www.rebuschain.com',
+    shortName: 'rebus',
+    chainId: 1011,
+    networkId: 1011,
+    icon: 'rebus',
+    explorers: [
+      {
+        name: 'Rebus EVM Explorer (Blockscout)',
+        url: 'https://evm.rebuschain.com',
+        icon: 'rebus',
+        standard: 'none'
+      },
+      {
+        name: 'Rebus Cosmos Explorer (ping.pub)',
+        url: 'https://cosmos.rebuschain.com',
+        icon: 'rebus',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Newton',
     chain: 'NEW',
     rpc: [ 'https://global.rpc.mainnet.newtonproject.org' ],
@@ -11707,6 +11734,42 @@ const chainArray = [
     ]
   },
   {
+    name: 'Oneness Network',
+    chain: 'Oneness',
+    rpc: [ 'https://rpc.onenesslabs.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: '',
+    shortName: 'oneness',
+    chainId: 2140,
+    networkId: 2140,
+    explorers: [
+      {
+        name: 'oneness-mainnet',
+        url: 'https://scan.onenesslabs.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Oneness TestNet',
+    chain: 'Oneness-Testnet',
+    rpc: [ 'https://rpc.testnet.onenesslabs.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: '',
+    shortName: 'oneness-testnet',
+    chainId: 2141,
+    networkId: 2141,
+    explorers: [
+      {
+        name: 'oneness-testnet',
+        url: 'https://scan.testnet.onenesslabs.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BOSagora Mainnet',
     chain: 'ETH',
     rpc: [ 'https://mainnet.bosagora.org', 'https://rpc.bosagora.org' ],
@@ -12974,6 +13037,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'Rebus Testnet',
+    title: 'Rebuschain Testnet',
+    chain: 'REBUS',
+    rpc: [ 'https://testnet.rebus.money/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Rebus', symbol: 'REBUS', decimals: 18 },
+    infoURL: 'https://www.rebuschain.com',
+    shortName: 'rebus-testnet',
+    chainId: 3033,
+    networkId: 3033,
+    icon: 'rebus',
+    explorers: [
+      {
+        name: 'Rebus EVM Explorer (Blockscout)',
+        url: 'https://evm.testnet.rebus.money',
+        icon: 'rebus',
+        standard: 'none'
+      },
+      {
+        name: 'Rebus Cosmos Explorer (ping.pub)',
+        url: 'https://testnet.rebus.money/rebustestnet',
+        icon: 'rebus',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Bifrost Mainnet',
     title: 'Bifrost Network Mainnet',
     chain: 'BFC',
@@ -12995,6 +13085,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Movement EVM',
+    chain: 'MOVE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Move', symbol: 'MOVE', decimals: 18 },
+    infoURL: 'https://movementlabs.xyz',
+    shortName: 'move',
+    chainId: 3073,
+    networkId: 3073,
+    icon: 'move',
+    explorers: [
+      {
+        name: 'mevm explorer',
+        url: 'https://explorer.movementlabs.xyz',
+        standard: 'none'
+      }
+    ],
+    status: 'incubating'
   },
   {
     name: 'Immu3 EVM',
@@ -20462,6 +20572,25 @@ const chainArray = [
     }
   },
   {
+    name: 'zeroone Mainnet Subnet',
+    chain: 'ZEROONEMAI',
+    rpc: [ 'https://subnets.avax.network/zeroonemai/mainnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'ZERO', symbol: 'ZERO', decimals: 18 },
+    infoURL: 'https://zeroone.art/',
+    shortName: 'zeroonemai',
+    chainId: 27827,
+    networkId: 27827,
+    explorers: [
+      {
+        name: 'ZEROONEMAI Explorer',
+        url: 'https://subnets.avax.network/zeroonemai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Vizing Testnet',
     title: 'Vizing Testnet',
     chain: 'Vizing Testnet',
@@ -20688,6 +20817,66 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Movement EVM Legacy',
+    chain: 'MOVE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Move', symbol: 'MOVE', decimals: 18 },
+    infoURL: 'https://movementlabs.xyz',
+    shortName: 'moveleg',
+    chainId: 30730,
+    networkId: 30730,
+    icon: 'move',
+    explorers: [
+      {
+        name: 'mevm explorer',
+        url: 'https://explorer.movementlabs.xyz',
+        standard: 'none'
+      }
+    ],
+    status: 'incubating'
+  },
+  {
+    name: 'Movement EVM Devnet',
+    chain: 'MOVE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Move', symbol: 'MOVE', decimals: 18 },
+    infoURL: 'https://movementlabs.xyz',
+    shortName: 'movedev',
+    chainId: 30731,
+    networkId: 30731,
+    icon: 'move',
+    explorers: [
+      {
+        name: 'mevm explorer',
+        url: 'https://explorer.movementlabs.xyz',
+        standard: 'none'
+      }
+    ],
+    status: 'incubating'
+  },
+  {
+    name: 'Movement EVM Testnet',
+    chain: 'MOVE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Move', symbol: 'MOVE', decimals: 18 },
+    infoURL: 'https://movementlabs.xyz',
+    shortName: 'movetest',
+    chainId: 30732,
+    networkId: 30732,
+    icon: 'move',
+    explorers: [
+      {
+        name: 'mevm explorer',
+        url: 'https://explorer.movementlabs.xyz',
+        standard: 'none'
+      }
+    ],
+    status: 'incubating'
   },
   {
     name: 'Ethersocial Network',
@@ -21936,6 +22125,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'DODOchain testnet',
+    title: 'DODOchain testnet',
+    chain: 'DODOchain',
+    icon: 'dodochain_testnet',
+    rpc: [
+      'https://dodochain-testnet.alt.technology',
+      'wss://dodochain-testnet.alt.technology/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Berd', symbol: 'BERD', decimals: 18 },
+    infoURL: 'https://www.dodochain.com',
+    shortName: 'dodochain',
+    chainId: 53457,
+    networkId: 53457,
+    explorers: [
+      {
+        name: 'DODOchain Testnet (Sepolia) Explorer',
+        url: 'https://testnet-scan.dodochain.com',
+        icon: 'dodochain_testnet',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DFK Chain',
     chain: 'DFK',
     icon: 'dfk',
@@ -22122,6 +22335,25 @@ const chainArray = [
       chain: 'eip155-5',
       bridges: [ { url: 'https://gateway.boba.network' } ]
     }
+  },
+  {
+    name: 'Testnet Zeroone Subnet',
+    chain: 'TESTNETZER',
+    rpc: [ 'https://subnets.avax.network/testnetzer/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'ZERO', symbol: 'ZERO', decimals: 18 },
+    infoURL: 'https://zeroone.art/',
+    shortName: 'testnetzer',
+    chainId: 56400,
+    networkId: 56400,
+    explorers: [
+      {
+        name: 'TESTNETZER Explorer',
+        url: 'https://subnets-test.avax.network/testnetzer',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'VELO Labs Mainnet',
@@ -22439,14 +22671,28 @@ const chainArray = [
   {
     name: 'BOB',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://rpc.gobob.xyz', 'wss://rpc.gobob.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://gobob.xyz',
     shortName: 'bob',
     chainId: 60808,
     networkId: 60808,
-    status: 'incubating'
+    icon: 'bob',
+    explorers: [
+      {
+        name: 'bobscout',
+        url: 'https://explorer.gobob.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://app.gobob.xyz' } ]
+    }
   },
   {
     name: 'KaiChain',
@@ -27869,14 +28115,19 @@ const chainArray = [
     ]
   },
   {
-    name: 'Reactive Network Testnet Kopli',
+    name: 'Reactive Kopli',
+    title: 'Reactive Network Testnet Kopli',
     chain: 'REACT',
-    rpc: [ 'https://kopli-rpc.reactive.network' ],
+    rpc: [
+      'https://kopli-rpc.reactive.network',
+      'http://kopli-rpc.rkt.ink'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    faucets: [],
-    nativeCurrency: { name: 'React', symbol: 'REACT', decimals: 18 },
+    faucets: [ 'https://dev.reactive.network/docs/kopli-testnet#faucet' ],
+    nativeCurrency: { name: 'Kopli React', symbol: 'REACT', decimals: 18 },
     infoURL: 'https://reactive.network',
-    shortName: 'react',
+    shortName: 'kreact',
+    icon: 'reactive',
     chainId: 5318008,
     networkId: 5318008,
     explorers: [
@@ -30026,6 +30277,26 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Kakarot Sepolia',
+    chain: 'ETH',
+    icon: 'kakarot',
+    rpc: [ 'https://sepolia-rpc.kakarot.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://kakarot.org',
+    shortName: 'kkrt-sepolia',
+    chainId: 1802203764,
+    networkId: 1802203764,
+    explorers: [
+      {
+        name: 'Kakarot Scan',
+        url: 'https://sepolia.kakarotscan.org',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
+  },
+  {
     name: 'RARI Chain Testnet',
     chain: 'RARI',
     rpc: [ 'https://testnet.rpc.rarichain.org/http' ],
@@ -30239,14 +30510,14 @@ const chainArray = [
     status: 'active'
   },
   {
-    name: 'Kakarot Sepolia',
+    name: 'Kakarot Sepolia Deprecated',
     chain: 'ETH',
     icon: 'kakarot',
     rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://kakarot.org',
-    shortName: 'kkrt-sepolia',
+    shortName: 'kkrt-sepolia-deprecated',
     chainId: 107107114116,
     networkId: 107107114116,
     explorers: [],
