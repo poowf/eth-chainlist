@@ -11102,6 +11102,35 @@ const chainArray = [
     ]
   },
   {
+    name: 'Adiri',
+    title: 'Telcoin Network Testnet',
+    chain: 'TEL',
+    icon: 'telcoin',
+    rpc: [
+      'https://rpc.telcoin.network',
+      'https://adiri.tel',
+      'https://node1.telcoin.network',
+      'https://node2.telcoin.network',
+      'https://node3.telcoin.network',
+      'https://node4.telcoin.network'
+    ],
+    faucets: [ 'https://telcoin.network/faucet' ],
+    nativeCurrency: { name: 'Telcoin', symbol: 'TEL', decimals: 18 },
+    infoURL: 'https://telcoin.network',
+    shortName: 'tel',
+    chainId: 2017,
+    networkId: 2017,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'telscan',
+        url: 'https://telscan.io',
+        icon: 'telcoin',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PublicMint Devnet',
     title: 'Public Mint Devnet',
     chain: 'PublicMint',
@@ -13110,8 +13139,8 @@ const chainArray = [
     name: 'Immu3 EVM',
     chain: 'EVMCC',
     rpc: [
-      'https://fraa-dancebox-3043-rpc.a.dancebox.tanssi.network',
-      'wss://fraa-dancebox-3043-rpc.a.dancebox.tanssi.network'
+      'https://fraa-flashbox-2800-rpc.a.stagenet.tanssi.network',
+      'wss://fraa-flashbox-2800-rpc.a.stagenet.tanssi.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'IMMU', symbol: 'IMMU', decimals: 18 },
@@ -13232,23 +13261,16 @@ const chainArray = [
     slip44: 1
   },
   {
-    name: 'Web3Q Testnet',
-    chain: 'Web3Q',
-    rpc: [ 'https://testnet.web3q.io:8545' ],
+    name: 'EthStorage Testnet',
+    chain: 'EthStorage',
+    rpc: [ 'http://testnet.ethstorage.io:9540' ],
     faucets: [],
-    nativeCurrency: { name: 'Web3Q', symbol: 'W3Q', decimals: 18 },
-    infoURL: 'https://testnet.web3q.io/home.w3q/',
-    shortName: 'w3q-t',
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ethstorage.io/',
+    shortName: 'es-t',
     chainId: 3333,
     networkId: 3333,
-    slip44: 1,
-    explorers: [
-      {
-        name: 'w3q-testnet',
-        url: 'https://explorer.testnet.web3q.io',
-        standard: 'EIP3091'
-      }
-    ]
+    slip44: 1
   },
   {
     name: 'Web3Q Galileo',
@@ -13936,6 +13958,25 @@ const chainArray = [
         url: 'https://explorer.x1-fastnet.xen.network',
         icon: 'blockscout',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GAN Testnet',
+    chain: 'GAN',
+    icon: 'gpu',
+    rpc: [ 'https://rpc.gpu.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'GP Token', symbol: 'GP', decimals: 18 },
+    infoURL: 'https://docs.gpu.net/',
+    shortName: 'GANTestnet',
+    chainId: 4048,
+    networkId: 4048,
+    explorers: [
+      {
+        name: 'ganscan',
+        url: 'https://ganscan.gpu.net',
+        standard: 'none'
       }
     ]
   },
