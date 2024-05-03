@@ -10939,12 +10939,12 @@ const chainArray = [
     name: 'edeXa Testnet',
     chain: 'edeXa TestNetwork',
     rpc: [
-      'https://testnet.edexa.com/rpc',
+      'https://testnet.edexa.network/rpc',
       'https://io-dataseed1.testnet.edexa.io-market.com/rpc'
     ],
     faucets: [ 'https://faucet.edexa.com/' ],
     nativeCurrency: { name: 'EDEXA', symbol: 'EDX', decimals: 18 },
-    infoURL: 'https://edexa.com/',
+    infoURL: 'https://edexa.network/',
     shortName: 'edx',
     chainId: 1995,
     networkId: 1995,
@@ -10953,7 +10953,7 @@ const chainArray = [
     explorers: [
       {
         name: 'edexa-testnet',
-        url: 'https://explorer.testnet.edexa.com',
+        url: 'https://explorer.testnet.edexa.network',
         standard: 'EIP3091'
       }
     ]
@@ -15104,6 +15104,7 @@ const chainArray = [
     name: 'edeXa Mainnet',
     chain: 'edeXa Network',
     rpc: [
+      'https://mainnet.edexa.network/rpc',
       'https://mainnet.edexa.com/rpc',
       'https://io-dataseed1.mainnet.edexa.io-market.com/rpc'
     ],
