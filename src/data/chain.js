@@ -7745,6 +7745,25 @@ const chainArray = [
     networkId: 977
   },
   {
+    name: 'EthXY Testnet',
+    chain: 'EthXY',
+    rpc: [ 'https://rpc.testnet.ethxy.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Settled EthXY Token', symbol: 'SEXY', decimals: 18 },
+    icon: 'sexyTestnet',
+    infoURL: 'https://ethxy.com',
+    shortName: 'sexyTestnet',
+    chainId: 979,
+    networkId: 979,
+    explorers: [
+      {
+        name: 'EthXY Testnet Network Explorer',
+        url: 'https://explorer.testnet.ethxy.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'TOP Mainnet EVM',
     chain: 'TOP',
     icon: 'top',
@@ -8705,6 +8724,26 @@ const chainArray = [
       {
         name: 'MetaScan',
         url: 'https://meta.defiscan.live',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lisk',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.api.lisk.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://lisk.com',
+    shortName: 'lisk',
+    chainId: 1135,
+    networkId: 1135,
+    slip44: 134,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.lisk.com',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -12199,9 +12238,12 @@ const chainArray = [
     ]
   },
   {
-    name: 'Atleta Testnet',
+    name: 'Atleta Olympia',
     chain: 'Atleta',
-    rpc: [ 'wss://testnet-rpc.atleta.network:9944' ],
+    rpc: [
+      'wss://testnet-rpc.atleta.network:9944',
+      'https://testnet-rpc.atleta.network:9944'
+    ],
     faucets: [ 'https://faucet.atleta.network' ],
     nativeCurrency: { name: 'Atla', symbol: 'ATLA', decimals: 18 },
     infoURL: 'https://atleta.network',
