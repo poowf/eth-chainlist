@@ -25396,6 +25396,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'Mind Network Testnet',
+    chain: 'FHET',
+    rpc: [
+      'https://rpc_testnet.mindnetwork.xyz',
+      'wss://rpc_testnet.mindnetwork.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'FHE', symbol: 'FHE', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://mindnetwork.xyz',
+    shortName: 'fhet',
+    chainId: 192940,
+    networkId: 192940
+  },
+  {
     name: 'Milkomeda C1 Testnet',
     chain: 'milkTAda',
     icon: 'milkomeda',
@@ -27084,6 +27099,24 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Xai Mainnet',
+    chainId: 660279,
+    shortName: 'xai',
+    chain: 'XAI',
+    networkId: 660279,
+    nativeCurrency: { name: 'Xai', symbol: 'XAI', decimals: 18 },
+    rpc: [ 'https://xai-chain.net/rpc' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.xai-chain.net',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://xai.games'
   },
   {
     name: 'Vision - Vpioneer Test Chain',
@@ -30562,6 +30595,24 @@ const chainArray = [
     slip44: 1,
     explorers: [],
     status: 'incubating'
+  },
+  {
+    name: 'Xai Testnet v2',
+    chainId: 37714555429,
+    shortName: 'xaitestnet',
+    chain: 'XAI Testnet',
+    networkId: 37714555429,
+    nativeCurrency: { name: 'sXai', symbol: 'sXAI', decimals: 18 },
+    rpc: [ 'https://testnet-v2.xai-chain.net/rpc' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://testnet-explorer-v2.xai-chain.net',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://xai.games'
   },
   {
     name: 'Arbitrum Blueberry',
