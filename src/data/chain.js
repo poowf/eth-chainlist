@@ -2723,6 +2723,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'HashKey Chain Testnet',
+    title: 'HashKey Chain Testnet',
+    chain: 'HashKey Chain Testnet',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'HashKey EcoPoints', symbol: 'HSK', decimals: 18 },
+    infoURL: 'https://hashkey.cloud',
+    shortName: 'HSKT',
+    chainId: 133,
+    networkId: 133,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
     name: 'iExec Sidechain',
     chain: 'Bellecour',
     icon: 'rlc',
@@ -3951,6 +3965,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'Mind Network Mainnet',
+    chain: 'FHE',
+    rpc: [
+      'https://rpc_mainnet.mindnetwork.xyz',
+      'wss://rpc_mainnet.mindnetwork.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'FHE', symbol: 'FHE', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://mindnetwork.xyz',
+    shortName: 'fhe',
+    chainId: 228,
+    networkId: 228
+  },
+  {
     name: 'SwapDEX',
     chain: 'SDX',
     rpc: [ 'https://rpc.swapdex.network', 'wss://ss.swapdex.network' ],
@@ -4359,6 +4388,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'xFair.AI Mainnet',
+    chain: 'FAI',
+    rpc: [ 'https://rpc_mainnet.xfair.ai', 'wss://rpc_mainnet.xfair.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'FAI', symbol: 'FAI', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://xfair.ai',
+    shortName: 'fai',
+    chainId: 278,
+    networkId: 278
   },
   {
     name: 'BPX Blockchain',
@@ -6546,6 +6587,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Redstone',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.redstonechain.com', 'wss://rpc.redstonechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://redstone.xyz',
+    shortName: 'redstone',
+    chainId: 690,
+    networkId: 690,
+    icon: 'redstone',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.redstone.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://redstone.xyz/deposit' } ]
+    }
   },
   {
     name: 'Star Social Testnet',
@@ -19624,7 +19690,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Redstone Testnet Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://redstone.xyz/docs/network-info',
-    shortName: 'redstone',
+    shortName: 'redstone-holesky',
     chainId: 17001,
     networkId: 17001,
     slip44: 1,
@@ -19636,7 +19702,33 @@ const chainArray = [
         icon: 'ethereum',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'deprecated'
+  },
+  {
+    name: 'Garnet Holesky',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.garnetchain.com', 'wss://rpc.garnetchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://redstone.xyz',
+    shortName: 'garnet',
+    chainId: 17069,
+    networkId: 17069,
+    icon: 'garnet',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.garnetchain.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-17000',
+      bridges: [ { url: 'https://garnetchain.com/deposit' } ]
+    }
   },
   {
     name: 'G8Chain Mainnet',
@@ -20006,6 +20098,28 @@ const chainArray = [
     chainId: 19527,
     networkId: 19527,
     explorers: []
+  },
+  {
+    name: 'LBRY Mainnet',
+    chain: 'LBRY',
+    icon: 'lbry',
+    rpc: [ 'https://lbry.nl/rpc' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'LBRY Credits', symbol: 'LBC', decimals: 8 },
+    infoURL: 'https://lbry.com',
+    shortName: 'LBRY',
+    chainId: 19600,
+    networkId: 19600,
+    slip44: 140,
+    explorers: [
+      {
+        name: 'LBRY Block Explorer',
+        url: 'https://explorer.lbry.com',
+        icon: 'lbry',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'BTCIX Network',
@@ -24735,6 +24849,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'KaspaClassic Mainnet',
+    chain: 'KaspaClassic',
+    icon: 'kaspaclassic',
+    rpc: [
+      'https://api.kaspaclassic.world/',
+      'http://80.178.101.118:8000/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'KaspaClassic', symbol: 'CAS', decimals: 18 },
+    infoURL: 'https://kaspaclassic.com/',
+    shortName: 'cas',
+    chainId: 104566,
+    networkId: 104566,
+    explorers: [
+      {
+        name: 'KaspaClassic Explorer',
+        url: 'https://explorer.kaspaclassic.world',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Stratis Mainnet',
     chain: 'Stratis',
     rpc: [ 'https://rpc.stratisevm.com' ],
@@ -25411,6 +25547,18 @@ const chainArray = [
     networkId: 192940
   },
   {
+    name: 'xFair.AI Testnet',
+    chain: 'FAIT',
+    rpc: [ 'https://rpc_testnet.xfair.ai', 'wss://rpc_testnet.xfair.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'FAI', symbol: 'FAI', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://xfair.ai',
+    shortName: 'fait',
+    chainId: 200000,
+    networkId: 200000
+  },
+  {
     name: 'Milkomeda C1 Testnet',
     chain: 'milkTAda',
     icon: 'milkomeda',
@@ -25927,7 +26075,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'HashKey Chain Testnet',
+    name: 'HashKey Chain Testnet(discard)',
     chain: 'HashKey',
     rpc: [ 'https://testnet.hashkeychain/rpc' ],
     faucets: [ 'https://testnet.hashkeychain/faucet' ],
