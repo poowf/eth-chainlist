@@ -25535,8 +25535,8 @@ const chainArray = [
     name: 'Mind Network Testnet',
     chain: 'FHET',
     rpc: [
-      'https://rpc_testnet.mindnetwork.xyz',
-      'wss://rpc_testnet.mindnetwork.xyz'
+      'https://rpc-testnet.mindnetwork.xyz',
+      'wss://rpc-testnet.mindnetwork.xyz'
     ],
     faucets: [],
     nativeCurrency: { name: 'FHE', symbol: 'FHE', decimals: 18 },
@@ -26244,6 +26244,25 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
+    name: 'One World Chain Mainnet',
+    chain: 'One World Chain',
+    icon: 'oneWorldChainIcon',
+    rpc: [ 'https://mainnet-rpc.oneworldchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'OWCT', symbol: 'OWCT', decimals: 18 },
+    infoURL: 'https://oneworldchain.org',
+    shortName: 'OWCTm',
+    chainId: 309075,
+    networkId: 309075,
+    explorers: [
+      {
+        name: 'One World Chain Mainnet Explorer',
+        url: 'https://mainnet.oneworldchain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SaharaAI Testnet',
     chain: 'Sahara',
     rpc: [ 'https://testnet.saharalabs.ai' ],
@@ -26302,6 +26321,27 @@ const chainArray = [
         name: 'Beryx',
         url: 'https://beryx.zondax.ch',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Parex Mainnet',
+    title: 'Parex Mainnet',
+    chain: 'Parex',
+    rpc: [ 'https://mainnet-rpc.parex.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'PAREX', symbol: 'PRX', decimals: 18 },
+    infoURL: 'https://parex.network',
+    shortName: 'parex',
+    chainId: 322202,
+    networkId: 322202,
+    icon: 'parexmain',
+    explorers: [
+      {
+        name: 'Parex Mainnet Explorer',
+        url: 'https://scan.parex.network',
+        icon: 'parexmain',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -27153,6 +27193,25 @@ const chainArray = [
       {
         name: 'bescscan',
         url: 'https://Bescscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'One World Chain Testnet',
+    chain: 'One World Chain',
+    icon: 'oneWorldChainIcon',
+    rpc: [ 'https://testnet-rpc.oneworldchain.org' ],
+    faucets: [ 'https://faucet.oneworldchain.org' ],
+    nativeCurrency: { name: 'OWCT', symbol: 'OWCT', decimals: 18 },
+    infoURL: 'https://oneworldchain.org',
+    shortName: 'OWCTt',
+    chainId: 552981,
+    networkId: 552981,
+    explorers: [
+      {
+        name: 'One World Chain Testnet Explorer',
+        url: 'https://testnet.oneworldchain.org',
         standard: 'EIP3091'
       }
     ]
