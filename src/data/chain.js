@@ -10793,6 +10793,25 @@ const chainArray = [
     }
   },
   {
+    name: 'AIW3 Testnet',
+    chain: 'AIW3',
+    rpc: [ 'https://rpc-testnet.aiw3.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://aiw3.io/',
+    shortName: 'AIW3-Testnet',
+    chainId: 1956,
+    networkId: 1956,
+    icon: 'aiw3',
+    explorers: [
+      {
+        name: 'aiw3 testnet scan',
+        url: 'https://scan-testnet.aiw3.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Selendra Network Mainnet',
     chain: 'SEL',
     rpc: [ 'https://rpc0.selendra.org', 'https://rpc1.selendra.org' ],
@@ -11575,6 +11594,20 @@ const chainArray = [
     shortName: 'Shrapnel',
     chainId: 2044,
     networkId: 2044
+  },
+  {
+    name: 'AIW3 Mainnet',
+    chain: 'AIW3',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://aiw3.io/',
+    shortName: 'AIW3',
+    chainId: 2045,
+    networkId: 2045,
+    icon: 'aiw3',
+    explorers: []
   },
   {
     name: 'Stratos Testnet',
@@ -12947,7 +12980,10 @@ const chainArray = [
     name: 'Morph Holesky',
     title: 'Morph Holesky Testnet',
     chain: 'ETH',
-    rpc: [ 'https://rpc-holesky.morphl2.io' ],
+    rpc: [
+      'https://rpc-holesky.morphl2.io',
+      'https://rpc-quicknode-holesky.morphl2.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://morphl2.io',
@@ -22332,7 +22368,7 @@ const chainArray = [
       'wss://dodochain-testnet.alt.technology/ws'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Berd', symbol: 'BERD', decimals: 18 },
+    nativeCurrency: { name: 'DODO', symbol: 'DODO', decimals: 18 },
     infoURL: 'https://www.dodochain.com',
     shortName: 'dodochain',
     chainId: 53457,
