@@ -4173,7 +4173,7 @@ const chainArray = [
   {
     name: 'Kroma',
     chain: 'ETH',
-    rpc: [ 'https://api.kroma.network' ],
+    rpc: [ 'https://api.kroma.network', 'https://rpc-kroma.rockx.com' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://kroma.network',
@@ -9291,6 +9291,14 @@ const chainArray = [
     rpc: [
       'https://rpc.api.moonbeam.network',
       'wss://wss.api.moonbeam.network',
+      'https://moonbeam.public.blastapi.io',
+      'wss://moonbeam.public.blastapi.io',
+      'https://moonbeam-rpc.dwellir.com',
+      'wss://moonbeam-rpc.dwellir.com',
+      'https://moonbeam.api.onfinality.io/public',
+      'wss://moonbeam.api.onfinality.io/public-ws',
+      'https://moonbeam.unitedbloc.com',
+      'wss://moonbeam.unitedbloc.com',
       'https://moonbeam-rpc.publicnode.com',
       'wss://moonbeam-rpc.publicnode.com',
       'https://moonbeam.drpc.org',
@@ -9316,6 +9324,14 @@ const chainArray = [
     rpc: [
       'https://rpc.api.moonriver.moonbeam.network',
       'wss://wss.api.moonriver.moonbeam.network',
+      'https://moonriver.public.blastapi.io',
+      'wss://moonriver.public.blastapi.io',
+      'https://moonriver-rpc.dwellir.com',
+      'wss://moonriver-rpc.dwellir.com',
+      'https://moonriver.api.onfinality.io/public',
+      'wss://moonriver.api.onfinality.io/public-ws',
+      'https://moonriver.unitedbloc.com',
+      'wss://moonriver.unitedbloc.com',
       'https://moonriver-rpc.publicnode.com',
       'wss://moonriver-rpc.publicnode.com',
       'https://moonriver.drpc.org',
@@ -9353,12 +9369,20 @@ const chainArray = [
     rpc: [
       'https://rpc.api.moonbase.moonbeam.network',
       'wss://wss.api.moonbase.moonbeam.network',
+      'https://moonbase-alpha.public.blastapi.io',
+      'wss://moonbase-alpha.public.blastapi.io',
+      'https://moonbase-rpc.dwellir.com',
+      'wss://moonbase-rpc.dwellir.com',
+      'https://moonbeam-alpha.api.onfinality.io/public',
+      'wss://moonbeam-alpha.api.onfinality.io/public-ws',
+      'https://moonbase.unitedbloc.com',
+      'wss://moonbase.unitedbloc.com',
       'https://moonbase-alpha.drpc.org',
       'wss://moonbase-alpha.drpc.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'Dev', symbol: 'DEV', decimals: 18 },
-    infoURL: 'https://docs.moonbeam.network/networks/testnet/',
+    infoURL: 'https://docs.moonbeam.network/learn/platform/networks/moonbase/',
     shortName: 'mbase',
     chainId: 1287,
     networkId: 1287,
@@ -14374,7 +14398,8 @@ const chainArray = [
     chain: 'Merlin',
     rpc: [
       'https://rpc.merlinchain.io',
-      'https://merlin-mainnet-enterprise.unifra.io'
+      'https://merlin-mainnet-enterprise.unifra.io',
+      'https://rpc-merlin.rockx.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
@@ -15798,7 +15823,7 @@ const chainArray = [
     name: 'Aura Euphoria Testnet',
     chain: 'Aura',
     rpc: [ 'https://jsonrpc.euphoria.aura.network' ],
-    faucets: [],
+    faucets: [ 'https://aura.faucetme.pro' ],
     nativeCurrency: { name: 'test-EAura', symbol: 'eAura', decimals: 18 },
     infoURL: 'https://aura.network',
     shortName: 'eaura',
@@ -19684,7 +19709,8 @@ const chainArray = [
       'https://ethereum-holesky-rpc.publicnode.com',
       'wss://ethereum-holesky-rpc.publicnode.com',
       'https://holesky.drpc.org',
-      'wss://holesky.drpc.org'
+      'wss://holesky.drpc.org',
+      'https://rpc-holesky.rockx.com'
     ],
     faucets: [
       'https://faucet.holesky.ethpandaops.io',
@@ -21541,6 +21567,25 @@ const chainArray = [
         name: 'rangersscan-robin',
         url: 'https://robin-rangersscan.rangersprotocol.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'PRM Mainnet',
+    chain: 'prm',
+    icon: 'prmIcon',
+    rpc: [ 'https://mainnet-rpc.prmscan.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Primal Network', symbol: 'PRM', decimals: 18 },
+    infoURL: 'https://primalnetwork.org',
+    shortName: 'prm',
+    chainId: 39656,
+    networkId: 39656,
+    explorers: [
+      {
+        name: 'Primal Network',
+        url: 'https://prmscan.org',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -25682,6 +25727,7 @@ const chainArray = [
       'https://rpc.bitlayer.org',
       'https://rpc.bitlayer-rpc.com',
       'https://rpc.ankr.com/bitlayer',
+      'https://rpc-bitlayer.rockx.com',
       'wss://ws.bitlayer.org',
       'wss://ws.bitlayer-rpc.com'
     ],
@@ -27700,6 +27746,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'PRM Testnet',
+    chain: 'prm',
+    icon: 'prmIcon',
+    rpc: [ 'https://testnet-rpc.prmscan.org' ],
+    faucets: [ 'https://faucet.prmscan.org' ],
+    nativeCurrency: { name: 'Primal Network', symbol: 'PRM', decimals: 18 },
+    infoURL: 'https://primalnetwork.org',
+    shortName: 'prmtest',
+    chainId: 839320,
+    networkId: 839320,
+    explorers: [
+      {
+        name: 'Primal Network Testnet',
+        url: 'https://testnet-explorer.prmscan.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: '4GoodNetwork',
     chain: '4GN',
     rpc: [ 'https://chain.deptofgood.com' ],
@@ -28907,7 +28972,8 @@ const chainArray = [
       'https://ethereum-sepolia-rpc.publicnode.com',
       'wss://ethereum-sepolia-rpc.publicnode.com',
       'https://sepolia.drpc.org',
-      'wss://sepolia.drpc.org'
+      'wss://sepolia.drpc.org',
+      'https://rpc-sepolia.rockx.com'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
@@ -28954,6 +29020,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'COTI Devnet',
+    title: 'COTI Devnet',
+    chain: 'COTI',
+    icon: 'coti',
+    rpc: [ 'https://devnet.coti.io' ],
+    faucets: [ 'https://faucet.coti.io' ],
+    nativeCurrency: { name: 'COTI2', symbol: 'COTI2', decimals: 18 },
+    infoURL: 'https://coti.io/',
+    shortName: 'coti-devnet',
+    chainId: 13068200,
+    networkId: 13068200,
+    explorers: []
   },
   {
     name: 'PepChain Churchill',
