@@ -3214,15 +3214,15 @@ const chainArray = [
     networkId: 163
   },
   {
-    name: 'Omni Testnet (incubating)',
+    name: 'Omni Testnet',
     chain: 'Omni',
-    status: 'incubating',
-    rpc: [],
+    status: 'active',
+    rpc: [ 'https://testnet.omni.network' ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
     nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
     infoURL: 'https://docs.omni.network',
-    shortName: 'omni_testnet_164',
+    shortName: 'omni_testnet',
     chainId: 164,
     networkId: 164,
     slip44: 1,
@@ -3236,28 +3236,28 @@ const chainArray = [
         name: 'Omni EVM Explorer on Blockscout',
         url: 'https://omni-testnet.blockscout.com',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Omni EVM Explorer on Routescan',
+        url: 'https://testnet.omniscan.network',
+        standard: 'EIP3091'
       }
     ]
   },
   {
-    name: 'Omni Testnet',
+    name: 'Omni Testnet (Deprecated)',
     chain: 'Omni',
-    rpc: [ 'https://testnet.omni.network' ],
+    rpc: [],
     features: [ { name: 'EIP155' } ],
     faucets: [],
     nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
     infoURL: 'https://docs.omni.network/',
-    shortName: 'omni_testnet',
+    shortName: 'omni_testnet_deprecated',
     chainId: 165,
     networkId: 165,
     slip44: 1,
-    explorers: [
-      {
-        name: 'Omni Explorer',
-        url: 'https://testnet.explorer.omni.network',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Omni',
@@ -11231,6 +11231,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'NOW Chain',
+    chain: 'NOW',
+    icon: 'nowchain',
+    rpc: [ 'https://rpc.nowscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'NOW Coin', symbol: 'NOW', decimals: 18 },
+    infoURL: 'https://nowchain.co',
+    shortName: 'now',
+    chainId: 2014,
+    networkId: 2014,
+    explorers: [
+      {
+        name: 'nowscan',
+        url: 'https://nowscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'MainnetZ Mainnet',
     chain: 'NetZ',
     icon: 'mainnetz',
@@ -18126,6 +18145,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tabi Testnet',
+    chain: 'TabiNetwork',
+    rpc: [ 'https://rpc.testnet.tabichain.com' ],
+    faucets: [ 'https://faucet.testnet.tabichain.com' ],
+    nativeCurrency: { name: 'Tabi', symbol: 'TABI', decimals: 18 },
+    infoURL: 'https://www.tabichain.com',
+    shortName: 'tabitest',
+    chainId: 9789,
+    networkId: 9789,
+    explorers: [
+      {
+        name: 'Tabi Testnet Explorer',
+        url: 'https://testnet.tabiscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Carbon EVM',
     chain: 'Carbon',
     icon: 'carbon',
@@ -19225,6 +19262,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Playdapp Testnet',
+    chain: 'PDA',
+    icon: 'pda',
+    rpc: [ 'https://subnets.avax.network/playdappte/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Playdapp', symbol: 'PDA', decimals: 18 },
+    infoURL: 'https://playdapp.io',
+    shortName: 'PDA-TESTNET',
+    chainId: 12781,
+    networkId: 12781,
+    explorers: [
+      {
+        name: 'Playdapp Testnet Explorer',
+        url: 'https://subnets-test.avax.network/playdappte',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Quantum Chain Testnet',
     chain: 'tQNET',
     icon: 'qnet',
@@ -20306,6 +20363,25 @@ const chainArray = [
         name: 'AAH Blockscout',
         url: 'https://exp.c4ex.net',
         icon: 'aah',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DCpay Mainnet',
+    chain: 'DCpay',
+    icon: 'dcpayIcon',
+    rpc: [ 'https://rpc.dcpay.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'DCP', symbol: 'DCP', decimals: 18 },
+    infoURL: 'https://dcpay.io',
+    shortName: 'DCPm',
+    chainId: 21223,
+    networkId: 21223,
+    explorers: [
+      {
+        name: 'DCpay Mainnet Explorer',
+        url: 'https://mainnet.dcpay.io',
         standard: 'EIP3091'
       }
     ]
@@ -21449,6 +21525,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Funki',
+    chain: 'ETH',
+    icon: 'funki',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://funkichain.com',
+    shortName: 'funki',
+    chainId: 33979,
+    networkId: 33979,
+    explorers: [
+      {
+        name: 'Funki Mainnet Explorer',
+        url: 'https://mainnet.funkichain.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Mode',
     chain: 'ETH',
     rpc: [
@@ -21832,6 +21927,26 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://wallet.zkfair.io' } ]
     }
+  },
+  {
+    name: 'Etherlink Mainnet',
+    chain: 'Etherlink',
+    icon: 'etherlink',
+    chainId: 42793,
+    networkId: 42793,
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://etherlink.com',
+    shortName: 'etlk',
+    nativeCurrency: { name: 'tez', symbol: 'XTZ', decimals: 18 },
+    rpc: [ 'https://node.mainnet.etherlink.com' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Etherlink Explorer',
+        url: 'https://explorer.etherlink.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Gesoten Verse Testnet',
@@ -27090,6 +27205,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Playdapp Network',
+    chain: 'PDA',
+    icon: 'pda',
+    rpc: [ 'https://subnets.avax.network/playdappne/mainnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Playdapp', symbol: 'PDA', decimals: 18 },
+    infoURL: 'https://playdapp.io',
+    shortName: 'PDA',
+    chainId: 504441,
+    networkId: 504441,
+    explorers: [
+      {
+        name: 'Playdapp Explorer',
+        url: 'https://subnets.avax.network/playdappne',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CMP-Testnet',
     chain: 'CMP',
     rpc: [
@@ -28395,6 +28530,25 @@ const chainArray = [
     networkId: 3141592,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'Funki Sepolia Sandbox',
+    chain: 'ETH',
+    icon: 'funki',
+    rpc: [ 'https://funki-testnet.alt.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://funkichain.com',
+    shortName: 'funkisepolia',
+    chainId: 3397901,
+    networkId: 3397901,
+    explorers: [
+      {
+        name: 'Funki Sepolia Sandbox Explorer',
+        url: 'https://sepolia-sandbox.funkichain.com',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Manta Pacific Testnet',
