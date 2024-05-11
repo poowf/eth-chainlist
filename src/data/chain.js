@@ -9755,6 +9755,22 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'Silicon zkEVM Sepolia Testnet',
+    title: 'Silicon zkEVM Sepolia Testnet',
+    chain: 'Silicon',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'silicon-sepolia-testnet',
+    chainId: 1414,
+    networkId: 1414,
+    icon: 'silicon',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] },
+    status: 'incubating'
+  },
+  {
     name: 'Polygon zkEVM Testnet Pre Audit-Upgraded',
     title: 'Polygon zkEVM Testnet Pre Audit-Upgraded',
     chain: 'Polygon',
@@ -12421,6 +12437,22 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Silicon zkEVM',
+    title: 'Silicon zkEVM Mainnet',
+    chain: 'Silicon',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'silicon-zk',
+    chainId: 2355,
+    networkId: 2355,
+    icon: 'silicon',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
+    status: 'incubating'
   },
   {
     name: '(deprecated) Kroma Sepolia',
