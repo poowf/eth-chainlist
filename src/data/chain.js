@@ -13056,8 +13056,9 @@ const chainArray = [
     title: 'Morph Holesky Testnet',
     chain: 'ETH',
     rpc: [
-      'https://rpc-holesky.morphl2.io',
-      'https://rpc-quicknode-holesky.morphl2.io'
+      'https://rpc-quicknode-holesky.morphl2.io',
+      'wss://rpc-quicknode-holesky.morphl2.io',
+      'https://rpc-holesky.morphl2.io'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
