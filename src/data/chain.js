@@ -14290,6 +14290,25 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-42161', bridges: [] }
   },
   {
+    name: 'Tobe Chain',
+    chain: 'TBC',
+    icon: 'tobe',
+    rpc: [ 'https://rpc.tobescan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Tobe Coin', symbol: 'TBC', decimals: 18 },
+    infoURL: 'https://tobechain.net',
+    shortName: 'tbc',
+    chainId: 4080,
+    networkId: 4080,
+    explorers: [
+      {
+        name: 'tobescan',
+        url: 'https://tobescan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Fastex Chain (Bahamut) Oasis Testnet',
     title: 'Bahamut testnet Oasis',
     icon: 'bahamut',
@@ -21461,6 +21480,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Entangle Mainnet',
+    chain: 'NGL',
+    icon: 'ngl',
+    rpc: [ 'https://json-rpc.entangle.fi' ],
+    faucets: [],
+    nativeCurrency: { name: 'Entangle', symbol: 'NGL', decimals: 18 },
+    infoURL: 'https://www.entangle.fi',
+    shortName: 'ngl',
+    chainId: 33033,
+    networkId: 33033,
+    explorers: [
+      {
+        name: 'Entangle Mainnet Explorer',
+        url: 'https://explorer.entangle.fi',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Zilliqa EVM Testnet',
     chain: 'ZIL',
     rpc: [ 'https://dev-api.zilliqa.com' ],
@@ -21478,6 +21516,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Entangle Testnet',
+    chain: 'NGL',
+    icon: 'ngl',
+    rpc: [ 'https://evm-testnet.entangle.fi' ],
+    faucets: [],
+    nativeCurrency: { name: 'Entangle', symbol: 'NGL', decimals: 18 },
+    infoURL: 'https://www.entangle.fi',
+    shortName: 'tngl',
+    chainId: 33133,
+    networkId: 33133,
+    explorers: []
   },
   {
     name: 'Cloudverse Subnet',
@@ -22043,6 +22094,7 @@ const chainArray = [
     shortName: 'hemi',
     chainId: 43111,
     networkId: 43111,
+    icon: 'hemi',
     explorers: [],
     parent: { type: 'L2', chain: 'eip155-1' },
     status: 'incubating'
@@ -23237,9 +23289,11 @@ const chainArray = [
   },
   {
     name: 'Optopia Mainnet',
-    status: 'incubating',
     chain: 'ETH',
-    rpc: [],
+    rpc: [
+      'https://rpc-mainnet.optopia.ai',
+      'https://rpc-mainnet-2.optopia.ai'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     features: [ { name: 'EIP1559' } ],
@@ -23248,8 +23302,19 @@ const chainArray = [
     chainId: 62050,
     networkId: 62050,
     icon: 'optopia',
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1' }
+    explorers: [
+      {
+        name: 'optopia-scan',
+        url: 'https://scan.optopia.ai',
+        icon: 'optopia',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.optopia.ai' } ]
+    }
   },
   {
     name: 'Celo Baklava Testnet',
@@ -26814,7 +26879,14 @@ const chainArray = [
     infoURL: '',
     shortName: 'DS2',
     chainId: 363636,
-    networkId: 363636
+    networkId: 363636,
+    explorers: [
+      {
+        name: 'Digit Soul Explorer',
+        url: 'https://dgs-exp.digitsoul.co.th',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'HAPchain Testnet',
@@ -27703,10 +27775,11 @@ const chainArray = [
     shortName: 'hemi-sep',
     chainId: 743111,
     networkId: 743111,
+    icon: 'hemi',
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://testnet.explorer.hemi.network',
+        url: 'https://testnet.explorer.hemi.xyz',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
