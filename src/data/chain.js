@@ -3369,6 +3369,25 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'DC Mainnet',
+    chain: 'dcchain',
+    icon: 'dcchain',
+    rpc: [ 'https://rpc.dcnetio.cloud', 'wss://ws.dcnetio.cloud' ],
+    faucets: [],
+    nativeCurrency: { name: 'DC Native Token', symbol: 'DCT', decimals: 18 },
+    infoURL: 'https://www.dcnetio.cloud',
+    shortName: 'dcchain',
+    chainId: 176,
+    networkId: 176,
+    explorers: [
+      {
+        name: 'dcscan',
+        url: 'https://exp.dcnetio.cloud',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'AME Chain Mainnet',
     chain: 'AME',
     rpc: [ 'https://node1.amechain.io/' ],
@@ -3382,6 +3401,26 @@ const chainArray = [
       {
         name: 'AME Scan',
         url: 'https://amescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mint Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.mintchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.mintchain.io',
+    shortName: 'mint',
+    chainId: 185,
+    networkId: 185,
+    icon: 'mint',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.mintchain.io',
+        icon: 'mint',
         standard: 'EIP3091'
       }
     ]
@@ -21371,6 +21410,44 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Xchain Mainnet',
+    chain: 'Xchain',
+    icon: 'intd',
+    rpc: [ 'https://rpc.xchainscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Intdestcoin', symbol: 'INTD', decimals: 18 },
+    infoURL: 'https://xchainscan.com',
+    shortName: 'INTD',
+    chainId: 31753,
+    networkId: 31753,
+    explorers: [
+      {
+        name: 'Xchain Mainnet Explorer',
+        url: 'https://xchainscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Xchain Testnet',
+    chain: 'Xchain',
+    icon: 'intd',
+    rpc: [ 'https://rpc.xchaintest.net' ],
+    faucets: [ 'https://xchainfaucet.net' ],
+    nativeCurrency: { name: 'Intdestcoin Testnet', symbol: 'INTD', decimals: 18 },
+    infoURL: 'https://xchaintest.net',
+    shortName: 'tINTD',
+    chainId: 31754,
+    networkId: 31754,
+    explorers: [
+      {
+        name: 'Xchain Testnet Explorer',
+        url: 'https://xchaintest.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'W3Gamez Holesky Testnet',
     chain: 'ETH',
     rpc: [ 'https://rpc-holesky.w3gamez.network' ],
@@ -23351,6 +23428,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'PLYR TAU Testnet',
+    chain: 'PLYR',
+    icon: 'plyr',
+    rpc: [ 'https://subnets.avax.network/plyr/testnet/rpc' ],
+    faucets: [ 'https://faucet.avax.network/?subnet=plyr' ],
+    nativeCurrency: { name: 'PLYR', symbol: 'PLYR', decimals: 18 },
+    infoURL: 'https://plyr.network',
+    shortName: 'plyr-tau-testnet',
+    chainId: 62831,
+    networkId: 62831,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Avalanche Subnet Testnet Explorer',
+        url: 'https://subnets-test.avax.network/plyr',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'eCredits Mainnet',
     chain: 'ECS',
     rpc: [ 'https://rpc.ecredits.com' ],
@@ -24477,6 +24574,24 @@ const chainArray = [
         url: 'https://proteus.nautscan.com',
         standard: 'EIP3091',
         icon: 'nautilus'
+      }
+    ]
+  },
+  {
+    name: 'Inoai Network',
+    chain: 'INOAI',
+    faucets: [],
+    rpc: [ 'https://inoai-network.com' ],
+    nativeCurrency: { name: 'Inoai', symbol: 'INO', decimals: 18 },
+    infoURL: 'https://inoai.info',
+    shortName: 'INOAI',
+    chainId: 88559,
+    networkId: 88559,
+    explorers: [
+      {
+        name: 'inoai live',
+        url: 'https://inoai.live',
+        standard: 'none'
       }
     ]
   },
@@ -25643,6 +25758,25 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Eclat Mainnet',
+    chain: 'Eclat',
+    icon: 'eclat',
+    rpc: [ 'https://mainnet-rpc.eclatscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Eclat', symbol: 'ECLAT', decimals: 18 },
+    infoURL: 'https://eclatscan.com',
+    shortName: 'ECLAT',
+    chainId: 165279,
+    networkId: 165279,
+    explorers: [
+      {
+        name: 'Eclat Mainnet Explorer',
+        url: 'https://eclatscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Taiko Mainnet',
     chain: 'ETH',
     status: 'incubating',
@@ -26463,6 +26597,25 @@ const chainArray = [
         name: 'Mainnet Scan',
         url: 'https://mainnet.scan.caduceus.foundation',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Eclat Testnet',
+    chain: 'Eclat',
+    icon: 'eclat',
+    rpc: [ 'https://testnet-rpc.eclatscan.com' ],
+    faucets: [ 'https://faucet.eclatscan.com' ],
+    nativeCurrency: { name: 'Eclat Testnet', symbol: 'ECLAT', decimals: 18 },
+    infoURL: 'https://testnet-explorer.eclatscan.com',
+    shortName: 'tECLAT',
+    chainId: 262371,
+    networkId: 262371,
+    explorers: [
+      {
+        name: 'Eclat Testnet Explorer',
+        url: 'https://testnet-explorer.eclatscan.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -28476,6 +28629,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Automata Testnet',
+    chain: 'Automata Testnet',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ata.network',
+    shortName: 'automatatest',
+    chainId: 1398243,
+    networkId: 1398243,
+    icon: 'automata',
+    explorers: []
   },
   {
     name: 'PlayFi Albireo Testnet',
