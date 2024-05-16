@@ -16541,14 +16541,13 @@ const chainArray = [
       {
         name: 'Cyber Mainnet Explorer',
         url: 'https://cyberscan.co',
-        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ],
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://cyber-bridge.alt.technology/deposit' } ]
+      bridges: [ { url: 'https://cyber.co/bridge' } ]
     }
   },
   {
@@ -29452,14 +29451,21 @@ const chainArray = [
     title: 'COTI Devnet',
     chain: 'COTI',
     icon: 'coti',
-    rpc: [ 'https://devnet.coti.io' ],
+    rpc: [ 'https://devnet.coti.io/rpc' ],
     faucets: [ 'https://faucet.coti.io' ],
     nativeCurrency: { name: 'COTI2', symbol: 'COTI2', decimals: 18 },
     infoURL: 'https://coti.io/',
     shortName: 'coti-devnet',
     chainId: 13068200,
     networkId: 13068200,
-    explorers: []
+    explorers: [
+      {
+        name: 'coti devnet explorer',
+        url: 'https://explorer-devnet.coti.io',
+        icon: 'ethernal',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'PepChain Churchill',
@@ -30147,16 +30153,13 @@ const chainArray = [
       {
         name: 'Cyber Testnet Explorer',
         url: 'https://testnet.cyberscan.co',
-        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ],
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
-      bridges: [
-        { url: 'https://cyber-testnet-bridge.alt.technology/deposit' }
-      ]
+      bridges: [ { url: 'https://cyber-testnet.testnets.rollbridge.app/' } ]
     }
   },
   {
