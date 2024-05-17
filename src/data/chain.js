@@ -11885,6 +11885,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'UCHAIN Mainnet',
+    chain: 'UCHAIN',
+    rpc: [ 'https://rpc.uchain.link/' ],
+    faucets: [],
+    nativeCurrency: { name: 'UCASH', symbol: 'UCASH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://u.cash/',
+    shortName: 'uchain',
+    chainId: 2112,
+    networkId: 2112,
+    icon: 'ucash',
+    explorers: [
+      {
+        name: 'uchain.info',
+        url: 'https://uchain.info',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Catena Mainnet',
     chain: 'CMCX',
     rpc: [ 'https://rpc1.catenarpc.com' ],
@@ -18750,6 +18770,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'TAO EVM Testnet',
+    chain: 'TAO EVM',
+    icon: 'taoevmIcon',
+    rpc: [ 'https://testnet-rpc.taoevm.io' ],
+    faucets: [ 'https://faucet.taoevm.io' ],
+    nativeCurrency: { name: 'TAO', symbol: 'TAO', decimals: 18 },
+    infoURL: 'https://taoevm.io',
+    shortName: 'TAOt',
+    chainId: 10324,
+    networkId: 10324,
+    explorers: [
+      {
+        name: 'TAO Testnet Explorer',
+        url: 'https://testnet.taoscan.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'WorldLand Testnet',
     chain: 'Worldland',
     icon: 'worldland',
@@ -24635,6 +24674,7 @@ const chainArray = [
   {
     name: 'Chiliz Scoville Testnet',
     chain: 'CHZ',
+    status: 'deprecated',
     rpc: [ 'https://scoville-rpc.chiliz.com' ],
     faucets: [ 'https://scoville-faucet.chiliz.com' ],
     nativeCurrency: { name: 'Chiliz', symbol: 'CHZ', decimals: 18 },
@@ -24653,20 +24693,56 @@ const chainArray = [
     ]
   },
   {
-    name: 'IVAR Chain Mainnet',
-    chain: 'IVAR',
-    icon: 'ivar',
-    rpc: [ 'https://mainnet-rpc.ivarex.com' ],
-    faucets: [ 'https://faucet.ivarex.com/' ],
-    nativeCurrency: { name: 'Ivar', symbol: 'IVAR', decimals: 18 },
-    infoURL: 'https://ivarex.com',
-    shortName: 'ivar',
-    chainId: 88888,
-    networkId: 88888,
+    name: 'Chiliz Spicy Testnet',
+    chain: 'CHZ',
+    rpc: [ 'https://spicy-rpc.chiliz.com' ],
+    faucets: [
+      'https://spicy-faucet.chiliz.com',
+      'https://tatum.io/faucets/chiliz'
+    ],
+    nativeCurrency: { name: 'Chiliz', symbol: 'CHZ', decimals: 18 },
+    icon: 'chilizspicy',
+    infoURL: 'https://www.chiliz.com/en/chain',
+    shortName: 'chzspicy',
+    chainId: 88882,
+    networkId: 88882,
+    slip44: 1,
     explorers: [
       {
-        name: 'ivarscan',
-        url: 'https://ivarscan.com',
+        name: 'spicy-explorer',
+        url: 'https://testnet.chiliscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Chiliz Chain Mainnet',
+    chain: 'CHZ',
+    icon: 'chilizchain',
+    rpc: [
+      'https://rpc.chiliz.com',
+      'https://rpc.ankr.com/chiliz',
+      'https://chiliz.publicnode.com'
+    ],
+    faucets: [
+      'https://spicy-faucet.chiliz.com',
+      'https://tatum.io/faucets/chiliz'
+    ],
+    nativeCurrency: { name: 'Chiliz', symbol: 'CHZ', decimals: 18 },
+    infoURL: 'https://chiliz.com',
+    shortName: 'chzmainnet',
+    chainId: 88888,
+    networkId: 88888,
+    redFlags: [ 'reusedChainId' ],
+    explorers: [
+      {
+        name: 'chiliscan',
+        url: 'https://chiliscan.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'chilizscan',
+        url: 'https://scan.chiliz.com',
         standard: 'EIP3091'
       }
     ]
@@ -24885,6 +24961,25 @@ const chainArray = [
       }
     ],
     status: 'deprecated'
+  },
+  {
+    name: 'Green Chain Testnet',
+    chain: 'Green Chain',
+    icon: 'greenchain',
+    rpc: [ 'https://node.greenchain.app/rpc/' ],
+    faucets: [],
+    nativeCurrency: { name: 'GREEN', symbol: 'GREEN', decimals: 18 },
+    infoURL: 'https://www.greenchain.app',
+    shortName: 'greenchain',
+    chainId: 97531,
+    networkId: 97531,
+    explorers: [
+      {
+        name: 'Green Chain Explorer',
+        url: 'https://explorer.greenchain.app',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'eLiberty Testnet',
@@ -31160,6 +31255,11 @@ const chainArray = [
       {
         name: 'Kakarot Scan',
         url: 'https://sepolia.kakarotscan.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Kakarot Explorer',
+        url: 'https://sepolia-explorer.kakarot.org',
         standard: 'EIP3091'
       }
     ],
