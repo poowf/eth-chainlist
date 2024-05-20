@@ -2723,6 +2723,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'Namefi Chain Mainnet',
+    chain: 'NFIC',
+    rpc: [ 'https://rpc.chain.namefi.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Namefi Coin', symbol: 'NFIC', decimals: 18 },
+    infoURL: 'https://namefi.io/',
+    shortName: 'nfic',
+    chainId: 132,
+    networkId: 132
+  },
+  {
     name: 'HashKey Chain Testnet',
     title: 'HashKey Chain Testnet',
     chain: 'HashKey Chain Testnet',
@@ -11346,6 +11357,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'Panarchy',
+    chain: 'Panarchy',
+    rpc: [ 'https://polytopia.org:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'GAS', symbol: 'GAS', decimals: 18 },
+    infoURL: 'https://polytopia.org/',
+    shortName: 'panarchy',
+    chainId: 2013,
+    networkId: 1
+  },
+  {
     name: 'NOW Chain',
     chain: 'NOW',
     icon: 'nowchain',
@@ -11699,6 +11721,29 @@ const chainArray = [
         name: 'SHRAPNEL Explorer',
         url: 'https://subnets-test.avax.network/shrapnel',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Aleph Zero Testnet',
+    chain: 'Aleph Zero Testnet',
+    icon: 'aleph',
+    rpc: [
+      'https://rpc.alephzero-testnet.gelato.digital',
+      'wss://rpc.alephzero-testnet.gelato.digital'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'TZERO', symbol: 'TZERO', decimals: 18 },
+    infoURL: 'https://testnet.alephzero.org',
+    shortName: 'aleph',
+    chainId: 2039,
+    networkId: 2039,
+    explorers: [
+      {
+        name: 'Aleph Zero Testnet',
+        url: 'https://test.azero.dev/#/explorer',
+        icon: 'aleph',
+        standard: 'none'
       }
     ]
   },
@@ -19555,6 +19600,27 @@ const chainArray = [
       {
         name: 'Quantum Scan Testnet',
         url: 'https://testnet.quantumscan.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'PlayFair Testnet Subnet',
+    chain: 'PLAYFAIR',
+    icon: 'playfair',
+    rpc: [
+      'https://rpc.letsplayfair.ai/ext/bc/2hhXFNp1jR4RuqvCmWQnBtt9CZnCmmyGr7TNTkxt7XY7pAzHMY/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'BTLT Token', symbol: 'BTLT', decimals: 18 },
+    infoURL: 'https://letsplayfair.ai',
+    shortName: 'playfair',
+    chainId: 12898,
+    networkId: 12898,
+    explorers: [
+      {
+        name: 'Avalanche Subnet Explorer',
+        url: 'https://subnets-test.avax.network/letsplayfair',
         standard: 'EIP3091'
       }
     ]
@@ -29511,6 +29577,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Waterfall 8 Test Network',
+    chain: 'Waterfall Testnet8',
+    rpc: [ 'https://rpc.testnet8.waterfall.network/' ],
+    faucets: [ 'https://faucet.testnet8.waterfall.network' ],
+    nativeCurrency: { name: 'WATER', symbol: 'WATER', decimals: 18 },
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://waterfall.network',
+    shortName: 'waterfall',
+    chainId: 8601152,
+    networkId: 8601152,
+    icon: 'waterfall',
+    explorers: []
   },
   {
     name: 'HAPchain',
