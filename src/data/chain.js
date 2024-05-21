@@ -27333,21 +27333,47 @@ const chainArray = [
     ]
   },
   {
-    name: 'Bitfinity Network Testnet',
+    name: 'Bitfinity Network Mainnet',
     chain: 'BFT',
-    rpc: [ 'https://testnet.bitfinity.network' ],
-    faucets: [ 'https://bitfinity.network/faucet' ],
-    nativeCurrency: { name: 'BITFINITY', symbol: 'BFT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    rpc: [ 'https://mainnet.bitfinity.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitfinity Token', symbol: 'BFT', decimals: 18 },
     infoURL: 'https://bitfinity.network',
-    shortName: 'Bitfinity',
-    chainId: 355113,
-    networkId: 355113,
-    slip44: 1,
+    shortName: 'bitfinity-mainnet',
+    chainId: 355110,
+    networkId: 355110,
     explorers: [
       {
-        name: 'Bitfinity Block Explorer',
-        url: 'https://explorer.bitfinity.network',
+        name: 'Bitfinity Mainnet Block Explorer',
+        url: 'https://explorer.testnet.bitfinity.network',
         icon: 'bitfinity',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Bitfinity Network Testnet',
+    chain: 'BFT',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    rpc: [ 'https://testnet.bitfinity.network' ],
+    faucets: [ 'https://bitfinity.network/faucet' ],
+    nativeCurrency: { name: 'Bitfinity Token', symbol: 'BFT', decimals: 18 },
+    infoURL: 'https://bitfinity.network',
+    shortName: 'bitfinity-testnet',
+    chainId: 355113,
+    networkId: 355113,
+    explorers: [
+      {
+        name: 'Bitfinity Testnet Block Explorer',
+        url: 'https://explorer.testnet.bitfinity.network',
+        icon: 'bitfinity',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Bitfinity Testnet Block Explorer',
+        url: 'https://bitfinity-test.dex.guru',
+        icon: 'dexguru',
         standard: 'EIP3091'
       }
     ]
