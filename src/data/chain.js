@@ -19064,6 +19064,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'TAO EVM Mainnet',
+    chain: 'TAO EVM',
+    icon: 'taoevmIcon',
+    rpc: [ 'https://rpc.taoevm.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'TAO', symbol: 'TAO', decimals: 18 },
+    infoURL: 'https://taoevm.io',
+    shortName: 'TAOm',
+    chainId: 10321,
+    networkId: 10321,
+    explorers: [
+      {
+        name: 'TAO Mainnet Explorer',
+        url: 'https://taoscan.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'TAO EVM Testnet',
     chain: 'TAO EVM',
     icon: 'taoevmIcon',
@@ -20915,6 +20934,25 @@ const chainArray = [
       {
         name: 'DCpay Mainnet Explorer',
         url: 'https://mainnet.dcpay.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DCpay Testnet',
+    chain: 'DCpay',
+    icon: 'dcpayIcon',
+    rpc: [ 'https://testnet-rpc.dcpay.io' ],
+    faucets: [ 'https://faucet.dcpay.io' ],
+    nativeCurrency: { name: 'DCP', symbol: 'DCP', decimals: 18 },
+    infoURL: 'https://dcpay.io',
+    shortName: 'DCPt',
+    chainId: 21224,
+    networkId: 21224,
+    explorers: [
+      {
+        name: 'DCpay Testnet Explorer',
+        url: 'https://testnet.dcpay.io',
         standard: 'EIP3091'
       }
     ]
@@ -25029,6 +25067,7 @@ const chainArray = [
     shortName: 'INOAI',
     chainId: 88559,
     networkId: 88559,
+    icon: 'inoai',
     explorers: [
       {
         name: 'inoai live',
