@@ -3434,7 +3434,7 @@ const chainArray = [
     rpc: [
       'https://rpc.mintchain.io',
       'https://global.rpc.mintchain.io',
-      'https://asia.rpc.minchain.io'
+      'https://asia.rpc.mintchain.io'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -6813,7 +6813,14 @@ const chainArray = [
   {
     name: 'Lycan Chain',
     chain: 'LYC',
-    rpc: [ 'https://rpc.lycanchain.com/' ],
+    rpc: [
+      'https://rpc.lycanchain.com/',
+      'https://us-east.lycanchain.com',
+      'https://us-west.lycanchain.com',
+      'https://eu-north.lycanchain.com',
+      'https://eu-west.lycanchain.com',
+      'https://asia-southeast.lycanchain.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Lycan', symbol: 'LYC', decimals: 18 },
     infoURL: 'https://lycanchain.com',
@@ -13735,6 +13742,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'EthStorage Mainnet',
+    chain: 'EthStorage',
+    rpc: [ 'http://mainnet.ethstorage.io:9540' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ethstorage.io/',
+    shortName: 'es-m',
+    chainId: 3335,
+    networkId: 3335,
+    slip44: 1
+  },
+  {
     name: 'Paribu Net Mainnet',
     chain: 'PRB',
     rpc: [ 'https://rpc.paribu.network' ],
@@ -13868,6 +13887,17 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Tycooncoin',
+    chain: 'TYCON',
+    rpc: [ 'https://mainnet-rpc.tycoscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Tycooncoin', symbol: 'TYCO', decimals: 18 },
+    infoURL: '',
+    shortName: 'TYCON',
+    chainId: 3630,
+    networkId: 3630
   },
   {
     name: 'Botanix Testnet',
@@ -27618,6 +27648,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'LAVITA Mainnet',
+    chain: 'LAVITA',
+    icon: 'lavita',
+    rpc: [ 'https://tsub360890-eth-rpc.thetatoken.org/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'vTFUEL', symbol: 'vTFUEL', decimals: 18 },
+    infoURL: 'https://www.lavita.ai',
+    shortName: 'lavita-mainnet',
+    chainId: 360890,
+    networkId: 360890,
+    explorers: [
+      {
+        name: 'LAVITA Mainnet Explorer',
+        url: 'https://tsub360890-explorer.thetatoken.org',
+        icon: 'lavita',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Digit Soul Smart Chain 2',
     chain: 'DS2',
     rpc: [ 'https://dgs-rpc.digitsoul.co.th' ],
@@ -32216,6 +32266,27 @@ const chainArray = [
       {
         name: 'dchaint scan',
         url: 'https://dchaintestnet-2713017997578000-1.testnet.sagaexplorer.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DCHAIN',
+    title: 'DCHAIN Mainnet',
+    chain: 'dchainmainnet',
+    icon: 'dchainmainnet',
+    rpc: [ 'https://dchain-2716446429837000-1.jsonrpc.sagarpc.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.dchain.foundation/',
+    shortName: 'dchainmainnet',
+    chainId: 2716446429837000,
+    networkId: 2716446429837000,
+    explorers: [
+      {
+        name: 'dchain scan',
+        url: 'https://dchain-2716446429837000-1.sagaexplorer.io',
         standard: 'EIP3091'
       }
     ]
