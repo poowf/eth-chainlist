@@ -27321,7 +27321,13 @@ const chainArray = [
     chainId: 313313,
     networkId: 313313,
     icon: 'sahara',
-    explorers: []
+    explorers: [
+      {
+        name: 'Testnet Scan',
+        url: 'https://explorer.saharaa.info',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Filecoin - Calibration testnet',
