@@ -17273,6 +17273,28 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'BOAT Mainnet',
+    title: 'BOAT Mainnet',
+    chain: 'BOAT',
+    icon: 'boat',
+    rpc: [ 'https://rpc0.come.boat/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Best Of All Time Token', symbol: 'BOAT', decimals: 18 },
+    infoURL: 'https://come.boats',
+    shortName: 'boat',
+    chainId: 8047,
+    networkId: 8047,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'BOAT Mainnet Explorer',
+        url: 'https://scan.come.boats',
+        icon: 'boat',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Karak Sepolia',
     title: 'Karak Testnet Sepolia',
     chain: 'Karak',
@@ -20018,6 +20040,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Gravity Alpha Testnet Sepolia',
+    chain: 'Gravity',
+    rpc: [ 'https://rpc-sepolia.gravity.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Gravity', symbol: 'G.', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP1108' } ],
+    infoURL: 'https://gravity.xyz',
+    shortName: 'gravitysep',
+    chainId: 13505,
+    networkId: 13505,
+    icon: 'gravity',
+    explorers: [
+      {
+        name: 'Gravity Alpha Testnet Sepolia Explorer',
+        url: 'https://explorer-sepolia.gravity.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
+  },
+  {
     name: 'Kronobit Mainnet',
     title: 'Kronobit Mainnet',
     chain: 'KNB',
@@ -20149,6 +20192,44 @@ const chainArray = [
         url: 'https://explorer.dev.immutable.com',
         standard: 'EIP3091',
         icon: 'immutable'
+      }
+    ]
+  },
+  {
+    name: 'Poodl Testnet',
+    chain: 'Poodl',
+    icon: 'poodlIcon',
+    rpc: [ 'https://testnet-rpc.poodl.org' ],
+    faucets: [ 'https://faucet.poodl.org' ],
+    nativeCurrency: { name: 'Poodl', symbol: 'POODL', decimals: 18 },
+    infoURL: 'https://poodl.org',
+    shortName: 'poodlt',
+    chainId: 15257,
+    networkId: 15257,
+    explorers: [
+      {
+        name: 'Poodl Testnet Explorer',
+        url: 'https://testnet.poodl.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Poodl Mainnet',
+    chain: 'Poodl',
+    icon: 'poodlIcon',
+    rpc: [ 'https://rpc.poodl.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Poodl', symbol: 'POODL', decimals: 18 },
+    infoURL: 'https://poodl.org',
+    shortName: 'poodle',
+    chainId: 15259,
+    networkId: 15259,
+    explorers: [
+      {
+        name: 'Poodl Mainnet Explorer',
+        url: 'https://explorer.poodl.org',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -22434,6 +22515,25 @@ const chainArray = [
     shortName: 'PC',
     chainId: 42069,
     networkId: 42069
+  },
+  {
+    name: 'AgentLayer Testnet',
+    chain: 'AgentLayer',
+    icon: 'agentLayerIcon',
+    rpc: [ 'https://testnet-rpc.agentlayer.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Agent', symbol: 'AGENT', decimals: 18 },
+    infoURL: 'https://agentlayer.xyz/home',
+    shortName: 'agent',
+    chainId: 42072,
+    networkId: 42072,
+    explorers: [
+      {
+        name: 'AgentLayer Testnet Explorer',
+        url: 'https://testnet-explorer.agentlayer.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Arbitrum One',
