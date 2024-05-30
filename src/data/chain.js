@@ -2984,6 +2984,25 @@ const chainArray = [
     }
   },
   {
+    name: 'Flag Mainnet',
+    chain: 'Flag',
+    icon: 'flag',
+    rpc: [ 'https://mainnet-rpc.flagscan.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Flag', symbol: 'FLAG', decimals: 18 },
+    infoURL: 'https://flagscan.xyz',
+    shortName: 'FLAG',
+    chainId: 147,
+    networkId: 147,
+    explorers: [
+      {
+        name: 'Flag Mainnet Explorer',
+        url: 'https://flagscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ShimmerEVM',
     title: 'ShimmerEVM',
     chain: 'ShimmerEVM',
@@ -8954,6 +8973,25 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Flag Testnet',
+    chain: 'Flag',
+    icon: 'flag',
+    rpc: [ 'https://testnet-rpc.flagscan.xyz' ],
+    faucets: [ 'https://faucet.flagscan.xyz' ],
+    nativeCurrency: { name: 'Flag Testnet', symbol: 'FLAG', decimals: 18 },
+    infoURL: 'https://testnet-explorer.flagscan.xyz',
+    shortName: 'tFLAG',
+    chainId: 1147,
+    networkId: 1147,
+    explorers: [
+      {
+        name: 'Flag Testnet Explorer',
+        url: 'https://testnet-explorer.flagscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Symplexia Smart Chain',
     chain: 'Plexchain',
     rpc: [ 'https://plex-rpc.plexfinance.us' ],
@@ -9769,6 +9807,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ramestta Mainnet',
+    chain: 'Ramestta',
+    icon: 'ramestta',
+    rpc: [
+      'https://blockchain.ramestta.com',
+      'https://blockchain2.ramestta.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Rama', symbol: 'RAMA', decimals: 18 },
+    infoURL: 'https://www.ramestta.com',
+    shortName: 'RAMA',
+    chainId: 1370,
+    networkId: 1370,
+    explorers: [
+      {
+        name: 'ramascan',
+        url: 'https://ramascan.com',
+        icon: 'ramestta',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Kalar Chain',
     chain: 'KLC',
     icon: 'kalarchain',
@@ -10529,6 +10590,33 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'ZKBase Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia-rpc.zkbase.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zkbase.org/',
+    shortName: 'zkbase-sepolia',
+    chainId: 1789,
+    networkId: 1789,
+    slip44: 1,
+    icon: 'zkbase',
+    explorers: [
+      {
+        name: 'ZKbase Block Explorer',
+        url: 'https://sepolia-explorer.zkbase.app',
+        icon: 'zkbase',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portral.zkbase.app/' } ]
+    },
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Kerleano',
@@ -15640,6 +15728,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Settlus Testnet',
+    chain: 'Settlus',
+    rpc: [ 'https://settlus-test-eth.settlus.io' ],
+    faucets: [ 'https://faucet.settlus.io' ],
+    nativeCurrency: { name: 'Setl', symbol: 'SETL', decimals: 18 },
+    infoURL: 'https://settlus.org',
+    shortName: 'settlus-testnet',
+    chainId: 5372,
+    networkId: 5372,
+    explorers: [
+      {
+        name: 'Settlus Scan',
+        url: 'https://testnet.settlus.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'edeXa Mainnet',
     chain: 'edeXa Network',
     rpc: [
@@ -16701,6 +16807,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'XPLA Verse',
+    chain: 'XPLA Verse',
+    icon: 'xpla_verse',
+    rpc: [ 'https://rpc-xpla-verse.xpla.dev' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://www.xpla.io',
+    shortName: 'XPLAVERSE',
+    chainId: 7300,
+    networkId: 7300,
+    explorers: [
+      {
+        name: 'XPLA Verse Explorer',
+        url: 'https://explorer-xpla-verse.xpla.dev',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
     name: 'KLYNTAR',
     chain: 'KLY',
     rpc: [
@@ -17618,6 +17744,27 @@ const chainArray = [
     chainId: 8285,
     networkId: 8285,
     slip44: 1
+  },
+  {
+    name: 'Lorenzo',
+    chain: 'Lorenzo',
+    rpc: [ 'https://rpc.lorenzo-protocol.xyz' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Lorenzo stBTC', symbol: 'stBTC', decimals: 18 },
+    infoURL: 'https://www.lorenzo-protocol.xyz/',
+    shortName: 'lrz',
+    chainId: 8329,
+    networkId: 8329,
+    icon: 'lorenzo',
+    explorers: [
+      {
+        name: 'Lorenzo Explorer',
+        url: 'https://scan.lorenzo-protocol.xyz',
+        standard: 'none',
+        icon: 'lorenzo'
+      }
+    ]
   },
   {
     name: 'Dracones Financial Services',
@@ -19408,6 +19555,25 @@ const chainArray = [
         url: 'https://shinescan.io',
         icon: 'shine',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Jiritsu Testnet Subnet',
+    chain: 'JIRITSUTES',
+    rpc: [ 'https://subnets.avax.network/jiritsutes/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'JIRI', symbol: 'TZW', decimals: 18 },
+    infoURL: 'https://jiritsu.network',
+    shortName: 'jiritsutes',
+    chainId: 11227,
+    networkId: 11227,
+    explorers: [
+      {
+        name: 'JIRITSUTES Explorer',
+        url: 'https://subnets-test.avax.network/jiritsutes',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -26478,16 +26644,22 @@ const chainArray = [
   {
     name: 'Taiko Mainnet',
     chain: 'ETH',
-    status: 'incubating',
+    status: 'active',
     icon: 'taiko',
-    rpc: [ 'https://rpc.taiko.xyz', 'wss://ws.taiko.xyz' ],
+    rpc: [ 'https://rpc.mainnet.taiko.xyz', 'wss://ws.mainnet.taiko.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://taiko.xyz',
     shortName: 'tko-mainnet',
     chainId: 167000,
     networkId: 167000,
-    explorers: []
+    explorers: [
+      {
+        name: 'etherscan',
+        url: 'https://taikoscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Taiko (Alpha-2 Testnet)',
@@ -30938,6 +31110,19 @@ const chainArray = [
     chainId: 99415706,
     networkId: 99415706,
     slip44: 1
+  },
+  {
+    name: 'Oraichain Mainnet',
+    title: 'Oraichain Mainnet',
+    chain: 'Oraichain',
+    rpc: [ 'https://evm.orai.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Oraichain Token', symbol: 'ORAI', decimals: 18 },
+    infoURL: 'https://orai.io',
+    shortName: 'Oraichain',
+    chainId: 108160679,
+    networkId: 108160679
   },
   {
     name: 'Cyber Testnet',
