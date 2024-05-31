@@ -3049,6 +3049,7 @@ const chainArray = [
     chain: 'RBN',
     chainId: 151,
     networkId: 151,
+    slip44: 824,
     rpc: [],
     faucets: [],
     infoURL: 'https://redbelly.network',
@@ -3074,11 +3075,18 @@ const chainArray = [
     chainId: 153,
     networkId: 153,
     slip44: 1,
-    rpc: [],
+    rpc: [ 'https://governors.testnet.redbelly.network' ],
     faucets: [],
     infoURL: 'https://redbelly.network',
     nativeCurrency: { name: 'Redbelly Network Coin', symbol: 'RBNT', decimals: 18 },
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'Redbelly Network Testnet Explorer',
+        url: 'https://explorer.testnet.redbelly.network',
+        standard: 'none'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Redbelly Network TGE',
@@ -9824,6 +9832,26 @@ const chainArray = [
       {
         name: 'ramascan',
         url: 'https://ramascan.com',
+        icon: 'ramestta',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Pingaksha testnet',
+    chain: 'Pingaksha',
+    icon: 'ramestta',
+    rpc: [ 'https://testnet.ramestta.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Rama', symbol: 'tRAMA', decimals: 18 },
+    infoURL: 'https://www.ramestta.com',
+    shortName: 'tRAMA',
+    chainId: 1377,
+    networkId: 1377,
+    explorers: [
+      {
+        name: 'Pingaksha',
+        url: 'https://pingaksha.ramascan.com',
         icon: 'ramestta',
         standard: 'EIP3091'
       }
@@ -24711,6 +24739,24 @@ const chainArray = [
         name: 'ResinScan',
         url: 'https://explorer.resincoin.dev',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'GEEK Verse Mainnet',
+    chain: 'GEEK',
+    rpc: [ 'https://rpc.geekout-pte.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Geek', symbol: 'GEEK', decimals: 18 },
+    infoURL: 'https://www.geekout-pte.com',
+    shortName: 'GEEK',
+    chainId: 75512,
+    networkId: 75512,
+    explorers: [
+      {
+        name: 'Geek Explorer',
+        url: 'https://explorer.geekout-pte.com',
+        standard: 'EIP3091'
       }
     ]
   },
