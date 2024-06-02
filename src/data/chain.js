@@ -14641,8 +14641,8 @@ const chainArray = [
   {
     name: 'Nahmii 3 Mainnet',
     chain: 'Nahmii',
-    rpc: [],
-    status: 'incubating',
+    rpc: [ 'https://rpc.n3.nahmii.io' ],
+    status: 'active',
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://nahmii.io',
@@ -14650,18 +14650,27 @@ const chainArray = [
     chainId: 4061,
     networkId: 4061,
     icon: 'nahmii',
+    explorers: [
+      {
+        name: 'Nahmii 3 Mainnet Explorer',
+        url: 'https://explorer.nahmii.io',
+        icon: 'nahmii',
+        standard: 'EIP3091'
+      }
+    ],
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://bridge.nahmii.io' } ]
+      bridges: [ { url: 'https://accounts.nahmii.io' } ]
     }
   },
   {
     name: 'Nahmii 3 Testnet',
     chain: 'Nahmii',
-    rpc: [ 'https://ngeth.testnet.n3.nahmii.io' ],
+    rpc: [ 'https://rpc.testnet.nahmii.io' ],
+    status: 'active',
     faucets: [],
-    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://nahmii.io',
     shortName: 'Nahmii3Testnet',
     chainId: 4062,
@@ -14671,15 +14680,15 @@ const chainArray = [
     explorers: [
       {
         name: 'Nahmii 3 Testnet Explorer',
-        url: 'https://explorer.testnet.n3.nahmii.io',
+        url: 'https://explorer.testnet.nahmii.io',
         icon: 'nahmii',
         standard: 'EIP3091'
       }
     ],
     parent: {
       type: 'L2',
-      chain: 'eip155-3',
-      bridges: [ { url: 'https://bridge.testnet.n3.nahmii.io' } ]
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://accounts.testnet.nahmii.io' } ]
     }
   },
   {
@@ -15856,9 +15865,10 @@ const chainArray = [
     ]
   },
   {
-    name: 'Nahmii Mainnet',
+    name: 'Nahmii 2 Mainnet',
     chain: 'Nahmii',
     rpc: [ 'https://l2.nahmii.io' ],
+    status: 'active',
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://nahmii.io',
@@ -15868,8 +15878,8 @@ const chainArray = [
     icon: 'nahmii',
     explorers: [
       {
-        name: 'Nahmii mainnet explorer',
-        url: 'https://explorer.nahmii.io',
+        name: 'Nahmii 2 Mainnet Explorer',
+        url: 'https://explorer.n2.nahmii.io',
         icon: 'nahmii',
         standard: 'EIP3091'
       }
@@ -15877,13 +15887,14 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://bridge.nahmii.io' } ]
+      bridges: [ { url: 'https://n2.bridge.nahmii.io' } ]
     }
   },
   {
-    name: 'Nahmii Testnet',
+    name: 'Nahmii 2 Testnet',
     chain: 'Nahmii',
     rpc: [ 'https://l2.testnet.nahmii.io' ],
+    status: 'deprecated',
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://nahmii.io',
@@ -16358,6 +16369,27 @@ const chainArray = [
       {
         name: 'Aurascan Explorer',
         url: 'https://euphoria.aurascan.io',
+        standard: 'none',
+        icon: 'aura'
+      }
+    ]
+  },
+  {
+    name: 'Aura Mainnet',
+    chain: 'Aura',
+    rpc: [ 'https://jsonrpc.aura.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Aura', symbol: 'AURA', decimals: 18 },
+    infoURL: 'https://aura.network',
+    shortName: 'aura',
+    chainId: 6322,
+    networkId: 6322,
+    slip44: 1,
+    icon: 'aura',
+    explorers: [
+      {
+        name: 'Aurascan Explorer',
+        url: 'https://aurascan.io',
         standard: 'none',
         icon: 'aura'
       }
