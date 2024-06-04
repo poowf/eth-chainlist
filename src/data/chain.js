@@ -12766,9 +12766,10 @@ const chainArray = [
     chain: 'Atleta',
     rpc: [
       'wss://testnet-rpc.atleta.network:9944',
-      'https://testnet-rpc.atleta.network:9944'
+      'https://testnet-rpc.atleta.network:9944',
+      'https://testnet-rpc.atleta.network'
     ],
-    faucets: [ 'https://faucet.atleta.network' ],
+    faucets: [ 'https://app-olympia.atleta.network/faucet' ],
     nativeCurrency: { name: 'Atla', symbol: 'ATLA', decimals: 18 },
     infoURL: 'https://atleta.network',
     shortName: 'atla',
@@ -12778,7 +12779,13 @@ const chainArray = [
     icon: 'atleta',
     explorers: [
       {
-        name: 'Atleta Testnet Explorer',
+        name: 'Atleta Olympia Explorer',
+        icon: 'atleta',
+        url: 'https://blockscout.atleta.network',
+        standard: 'none'
+      },
+      {
+        name: 'Atleta Olympia Polka Explorer',
         icon: 'atleta',
         url: 'https://polkadot-explorer.atleta.network/#/explorer',
         standard: 'none'
@@ -16720,7 +16727,7 @@ const chainArray = [
     explorers: [
       {
         name: 'ZetaChain Mainnet Explorer',
-        url: 'https://explorer.mainnet.zetachain.com',
+        url: 'https://explorer.zetachain.com',
         standard: 'none'
       }
     ]
@@ -19478,6 +19485,46 @@ const chainArray = [
       {
         name: 'CCP Explorer',
         url: 'https://cryptocoinpay.info',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lamina1',
+    chain: 'Lamina1',
+    rpc: [ 'https://subnets.avax.network/lamina1/mainnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'L1', symbol: 'L1', decimals: 18 },
+    infoURL: 'https://www.lamina1.com/',
+    shortName: 'lamina1',
+    chainId: 10849,
+    networkId: 10849,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Lamina1 Explorer',
+        url: 'https://subnets.avax.network/lamina1',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lamina1 Identity',
+    chain: 'Lamina1 Identity',
+    rpc: [ 'https://subnets.avax.network/lamina1id/mainnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'L1 ID', symbol: 'L1ID', decimals: 18 },
+    infoURL: 'https://www.lamina1.com/',
+    shortName: 'lamina1id',
+    chainId: 10850,
+    networkId: 10850,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Lamina1 Identity Explorer',
+        url: 'https://subnets.avax.network/lamina1id',
         standard: 'EIP3091'
       }
     ]
@@ -27504,6 +27551,27 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Orange Chain Testnet',
+    title: 'Orange Chain Testnet',
+    chain: 'Orange Chain',
+    rpc: [ 'https://testnet-rpc.orangechain.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://orangechain.xyz',
+    shortName: 'Orange-Chain-Testnet',
+    chainId: 240515,
+    networkId: 240515,
+    icon: 'orange',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://testnet-scan.orangechain.xyz',
+        icon: 'orange',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ARTIS sigma1',
     chain: 'ARTIS',
     rpc: [ 'https://rpc.sigma1.artis.network' ],
@@ -29004,6 +29072,46 @@ const chainArray = [
     ]
   },
   {
+    name: 'Lamina1 Testnet',
+    chain: 'Lamina1 Testnet',
+    rpc: [ 'https://subnets.avax.network/lamina1tes/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Lamina1 Test', symbol: 'L1T', decimals: 18 },
+    infoURL: 'https://fuji.lamina1.com/',
+    shortName: 'lamina1test',
+    chainId: 764984,
+    networkId: 764984,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Lamina1 Test Explorer',
+        url: 'https://subnets-test.avax.network/lamina1tes',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lamina1 Identity Testnet',
+    chain: 'Lamina1 Identity Testnet',
+    rpc: [ 'https://subnets.avax.network/lamina1id/testnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'L1ID Test', symbol: 'L1IDT', decimals: 18 },
+    infoURL: 'https://fuji.lamina1.com/',
+    shortName: 'lamina1idtest',
+    chainId: 767368,
+    networkId: 767368,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Lamina1 Identity Testnet Explorer',
+        url: 'https://subnets-test.avax.network/lamina1id',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Modularium',
     chain: 'EVMCC',
     rpc: [ 'https://fraa-dancebox-3035-rpc.a.dancebox.tanssi.network' ],
@@ -29964,6 +30072,26 @@ const chainArray = [
     networkId: 4281033,
     icon: 'ethereum',
     explorers: []
+  },
+  {
+    name: 'NumBlock Chain',
+    chain: 'NumBlock',
+    rpc: [ 'https://rpc-mainnet.numblock.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'NUMB Token', symbol: 'NUMB', decimals: 18 },
+    infoURL: 'https://numblock.org',
+    shortName: 'NUMB',
+    chainId: 5112023,
+    networkId: 5112023,
+    icon: 'NumBlock',
+    explorers: [
+      {
+        name: 'NumBlock Explorer',
+        url: 'https://mainnet.numblock.org',
+        standard: 'none',
+        icon: 'NumBlock'
+      }
+    ]
   },
   {
     name: 'MXC Wannsee zkEVM Testnet',
