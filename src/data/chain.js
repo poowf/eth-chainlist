@@ -3456,6 +3456,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Waterfall Network',
+    chain: 'Waterfall Network',
+    rpc: [ 'https://rpc.waterfall.network/' ],
+    faucets: [],
+    nativeCurrency: { name: 'WATER', symbol: 'WATER', decimals: 18 },
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://waterfall.network',
+    shortName: 'water',
+    chainId: 181,
+    networkId: 181,
+    icon: 'waterfall-main',
+    explorers: []
+  },
+  {
     name: 'Mint Mainnet',
     chain: 'ETH',
     rpc: [
@@ -5182,6 +5196,26 @@ const chainArray = [
       {
         name: 'Cronos Testnet Explorer',
         url: 'https://explorer.cronos.org/testnet',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'TSC Mainnet',
+    chain: 'Trust Smart Chain',
+    rpc: [ 'https://rpc01.trias.one' ],
+    faucets: [],
+    nativeCurrency: { name: 'TAS', symbol: 'TAS', decimals: 18 },
+    infoURL: 'https://www.trias.one',
+    shortName: 'TSC',
+    icon: 'netx',
+    chainId: 345,
+    networkId: 16,
+    explorers: [
+      {
+        name: 'tscscan',
+        url: 'https://www.tscscan.io',
+        icon: 'netxscan',
         standard: 'none'
       }
     ]
@@ -11972,20 +12006,16 @@ const chainArray = [
     ]
   },
   {
-    name: 'OriginTrail Parachain',
-    chain: 'OTP',
+    name: 'NeuroWeb',
+    chain: 'NEUROWEB',
     rpc: [
       'https://astrosat.origintrail.network',
       'wss://parachain-rpc.origin-trail.network'
     ],
     faucets: [],
-    nativeCurrency: {
-      name: 'OriginTrail Parachain Token',
-      symbol: 'OTP',
-      decimals: 12
-    },
-    infoURL: 'https://parachain.origintrail.io',
-    shortName: 'otp',
+    nativeCurrency: { name: 'NeuroWeb Token', symbol: 'NEURO', decimals: 12 },
+    infoURL: 'https://neuroweb.ai',
+    shortName: 'NEURO',
     chainId: 2043,
     networkId: 2043
   },
@@ -13423,6 +13453,19 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://bridge.nanon.network' } ]
     }
+  },
+  {
+    name: 'GM Network Mainnet',
+    chain: 'GM Network Mainnet',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://gmnetwork.ai',
+    shortName: 'gmnetwork-mainnet',
+    chainId: 2777,
+    networkId: 2777,
+    explorers: [],
+    status: 'incubating'
   },
   {
     name: 'Morph Holesky',
@@ -15126,6 +15169,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'Hydra Chain',
+    chain: 'HYDRA',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Hydra', symbol: 'HYDRA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://hydrachain.org',
+    shortName: 'hydra',
+    chainId: 4488,
+    networkId: 4488,
+    icon: 'hydra',
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'Emoney Network Testnet',
     chain: 'Emoney',
     rpc: [ 'https://testnet.emoney.network/' ],
@@ -16226,6 +16284,7 @@ const chainArray = [
     shortName: 'bouncebit-testnet',
     chainId: 6000,
     networkId: 6000,
+    icon: 'bouncebit',
     explorers: [
       {
         name: 'BBScan Testnet Explorer',
@@ -16244,6 +16303,7 @@ const chainArray = [
     shortName: 'bouncebit-mainnet',
     chainId: 6001,
     networkId: 6001,
+    icon: 'bouncebit',
     explorers: [
       {
         name: 'BBScan Mainnet Explorer',
@@ -17801,6 +17861,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Space Subnet',
+    chain: 'SPACE',
+    rpc: [ 'https://subnets.avax.network/space/mainnet/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'FUEL', symbol: 'FUEL', decimals: 18 },
+    infoURL: 'https://otherworld.network',
+    shortName: 'space',
+    chainId: 8227,
+    networkId: 8227,
+    explorers: [
+      {
+        name: 'SPACE Explorer',
+        url: 'https://subnets.avax.network/space',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Blockton Blockchain',
     chain: 'Blockton Blockchain',
     icon: 'bton',
@@ -18074,6 +18153,27 @@ const chainArray = [
         name: 'explorer',
         url: 'https://explorer.evm.iota.org',
         icon: 'iotaevm',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Hydra Chain Testnet',
+    chain: 'HYDRA',
+    rpc: [ 'https://rpc.testnet.hydrachain.org' ],
+    faucets: [ 'https://app.testnet.hydrachain.org/faucet' ],
+    nativeCurrency: { name: 'tHydra', symbol: 'tHYDRA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://hydrachain.org',
+    shortName: 'thydra',
+    chainId: 8844,
+    networkId: 8844,
+    icon: 'hydra',
+    explorers: [
+      {
+        name: 'Hydra Chain Testnet explorer',
+        url: 'https://hydragon.hydrachain.org',
+        icon: 'hydra',
         standard: 'EIP3091'
       }
     ]
@@ -21252,6 +21352,44 @@ const chainArray = [
     infoURL: 'https://www.camelark.com'
   },
   {
+    name: 'Niza Chain Mainnet',
+    chain: 'NIZA',
+    icon: 'niza',
+    rpc: [ 'https://nizascan.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Niza Global', symbol: 'NIZA', decimals: 18 },
+    infoURL: 'https://niza.io',
+    shortName: 'niza',
+    chainId: 20041,
+    networkId: 20041,
+    explorers: [
+      {
+        name: 'NizaScan',
+        url: 'https://nizascan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Niza Chain Testnet',
+    chain: 'NIZA',
+    icon: 'niza',
+    rpc: [ 'https://testnet.nizascan.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Niza Global', symbol: 'NIZA', decimals: 18 },
+    infoURL: 'https://niza.io',
+    shortName: 'niza_testnet',
+    chainId: 20073,
+    networkId: 20073,
+    explorers: [
+      {
+        name: 'NizaScan',
+        url: 'https://testnet.nizascan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Callisto Testnet',
     chain: 'CLO',
     rpc: [ 'https://testnet-rpc.callisto.network/' ],
@@ -24148,7 +24286,12 @@ const chainArray = [
   {
     name: 'BOB',
     chain: 'ETH',
-    rpc: [ 'https://rpc.gobob.xyz', 'wss://rpc.gobob.xyz' ],
+    rpc: [
+      'https://rpc.gobob.xyz',
+      'wss://rpc.gobob.xyz',
+      'https://bob-mainnet.public.blastapi.io',
+      'wss://bob-mainnet.public.blastapi.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://gobob.xyz',
@@ -24313,6 +24456,27 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://bridge.optopia.ai' } ]
     }
+  },
+  {
+    name: 'Citrea Devnet',
+    chain: 'Citrea',
+    rpc: [ 'https://rpc.devnet.citrea.xyz' ],
+    faucets: [ 'https://citrea.xyz/bridge' ],
+    nativeCurrency: { name: 'Citrea BTC', symbol: 'cBTC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://citrea.xyz',
+    shortName: 'citrea-devnet',
+    chainId: 62298,
+    networkId: 62298,
+    icon: 'citrea',
+    explorers: [
+      {
+        name: 'Citrea Devnet Explorer',
+        url: 'https://explorer.devnet.citrea.xyz',
+        icon: 'citrea',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Celo Baklava Testnet',
@@ -24854,6 +25018,24 @@ const chainArray = [
       {
         name: 'Geek Explorer',
         url: 'https://explorer.geekout-pte.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GEEK Verse Testnet',
+    chain: 'GEEK Test',
+    rpc: [ 'https://rpc-testnet.geekout-pte.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Geek', symbol: 'GEEK', decimals: 18 },
+    infoURL: 'https://www.geekout-pte.com',
+    shortName: 'GEEK_Test',
+    chainId: 75513,
+    networkId: 75513,
+    explorers: [
+      {
+        name: 'Geek Testnet Explorer',
+        url: 'https://explorer-testnet.geekout-pte.com',
         standard: 'EIP3091'
       }
     ]
@@ -26169,6 +26351,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'QuarkChain L2 Mainnet',
+    chain: 'QuarkChain',
+    rpc: [ 'https://mainnet-l2-ethapi.quarkchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'QKC', symbol: 'QKC', decimals: 18 },
+    infoURL: 'https://www.quarkchain.io',
+    shortName: 'qkc-l2',
+    chainId: 100011,
+    networkId: 100011,
+    parent: { type: 'L2', chain: 'eip155-100000' }
+  },
+  {
     name: 'Deprecated CHI',
     chain: 'CHI1',
     icon: 'gnosis',
@@ -26516,6 +26710,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'QuarkChain L2 Testnet',
+    chain: 'QuarkChain',
+    rpc: [ 'https://testnet-l2-ethapi.quarkchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'QKC', symbol: 'QKC', decimals: 18 },
+    infoURL: 'https://www.quarkchain.io',
+    shortName: 'qkc-l2-t',
+    chainId: 110011,
+    networkId: 110011,
+    parent: { type: 'L2', chain: 'eip155-110000' }
   },
   {
     name: 'Siberium Test Network',
@@ -27077,8 +27283,8 @@ const chainArray = [
     explorers: [
       {
         name: 'bitlayer testnet scan',
-        url: 'https://testnet-scan.bitlayer.org',
-        standard: 'none'
+        url: 'https://testnet.btrscan.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -29247,6 +29453,26 @@ const chainArray = [
       chain: 'eip155-59140',
       bridges: [ { url: 'https://goerli.portal.zklink.io' } ]
     }
+  },
+  {
+    name: 'TSC Testnet',
+    chain: 'Trust Smart Chain Testnet',
+    rpc: [ 'https://testnet.tscscan.io/testrpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'TAS', symbol: 'tTAS', decimals: 18 },
+    infoURL: 'https://www.trias.one',
+    shortName: 'tTSC',
+    icon: 'netx',
+    chainId: 820522,
+    networkId: 820025,
+    explorers: [
+      {
+        name: 'tscscan',
+        url: 'https://testnet.tscscan.io',
+        icon: 'netxscan',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'CURVE Mainnet',
