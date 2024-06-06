@@ -4553,18 +4553,18 @@ const chainArray = [
   {
     name: 'Cronos zkEVM Testnet',
     chain: 'CronosZkEVMTestnet',
-    rpc: [ 'https://rpc-zkevm-t0.cronos.org' ],
-    faucets: [ 'https://zkevm-t0.cronos.org/faucet' ],
-    nativeCurrency: { name: 'Cronos zkEVM Test Coin', symbol: 'TCRO', decimals: 18 },
-    infoURL: 'https://docs.cronos.org/cronos-zkevm-chain/introduction-to-cronos-zkevm-chain-testnet',
-    shortName: 'zktcro',
+    rpc: [ 'https://testnet.zkevm.cronos.org' ],
+    faucets: [ 'https://zkevm.cronos.org/faucet' ],
+    nativeCurrency: { name: 'Cronos zkEVM Test Coin', symbol: 'zkTCRO', decimals: 18 },
+    infoURL: 'https://docs-zkevm.cronos.org',
+    shortName: 'zkTCRO',
     chainId: 282,
     networkId: 282,
     slip44: 1,
     explorers: [
       {
         name: 'Cronos zkEVM Testnet Explorer',
-        url: 'https://zkevm-t0.cronos.org/explorer',
+        url: 'https://explorer.zkevm.cronos.org/testnet',
         standard: 'none'
       }
     ]
@@ -17460,6 +17460,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'MO Mainnet',
+    chainId: 7924,
+    shortName: 'MO',
+    chain: 'MO',
+    icon: 'mo',
+    networkId: 7924,
+    nativeCurrency: { name: 'MO', symbol: 'MO', decimals: 18 },
+    rpc: [ 'https://mainnet-rpc.mochain.app/' ],
+    faucets: [ 'https://faucet.mochain.app/' ],
+    explorers: [
+      {
+        name: 'MO Explorer',
+        url: 'https://moscan.app',
+        standard: 'none'
+      }
+    ],
+    infoURL: 'https://mochain.app'
+  },
+  {
     name: 'DOS Chain',
     chain: 'DOS',
     rpc: [ 'https://main.doschain.com' ],
@@ -18996,6 +19015,25 @@ const chainArray = [
     networkId: 9792,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'OptimusZ7 Mainnet',
+    chain: 'OptimusZ7',
+    icon: 'OZ7Icon',
+    rpc: [ 'https://rpc.optimusz7.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'OptimusZ7', symbol: 'OZ7', decimals: 18 },
+    infoURL: 'http://optimusz7.com',
+    shortName: 'OZ7m',
+    chainId: 9797,
+    networkId: 9797,
+    explorers: [
+      {
+        name: 'OptimusZ7 Mainnet Explorer',
+        url: 'https://explorer.optimusz7.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'IMPERIUM TESTNET',
@@ -25568,9 +25606,10 @@ const chainArray = [
   {
     name: 'ZEDXION',
     chain: 'ZEDXION',
+    icon: 'zedx',
     rpc: [ 'https://mainnet-rpc.zedscan.net' ],
     faucets: [],
-    nativeCurrency: { name: 'Zedxion', symbol: 'zedx', decimals: 9 },
+    nativeCurrency: { name: 'Zedxion', symbol: 'ZEDX', decimals: 9 },
     infoURL: 'https://docs.zedscan.net',
     shortName: 'ZEDX',
     chainId: 83872,
@@ -26061,6 +26100,25 @@ const chainArray = [
       {
         name: 'Green Chain Explorer',
         url: 'https://explorer.greenchain.app',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'OptimusZ7 Testnet',
+    chain: 'OptimusZ7',
+    icon: 'OZ7Icon',
+    rpc: [ 'https://testnet-rpc.optimusz7.com' ],
+    faucets: [ 'https://faucet.optimusz7.com' ],
+    nativeCurrency: { name: 'OptimusZ7', symbol: 'OZ7', decimals: 18 },
+    infoURL: 'http://optimusz7.com',
+    shortName: 'OZ7t',
+    chainId: 97970,
+    networkId: 97970,
+    explorers: [
+      {
+        name: 'OptimusZ7 Testnet Explorer',
+        url: 'https://testnet.optimusz7.com',
         standard: 'EIP3091'
       }
     ]
