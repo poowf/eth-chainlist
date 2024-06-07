@@ -18555,7 +18555,9 @@ const chainArray = [
     chain: 'Evmos',
     rpc: [
       'https://evmos-testnet.lava.build',
-      'https://eth.bd.evmos.dev:8545'
+      'https://eth.bd.evmos.dev:8545',
+      'https://evmos-testnet-evm-rpc.publicnode.com',
+      'wss://evmos-testnet-evm-rpc.publicnode.com'
     ],
     faucets: [ 'https://faucet.evmos.dev' ],
     nativeCurrency: { name: 'test-Evmos', symbol: 'tEVMOS', decimals: 18 },
@@ -18580,8 +18582,8 @@ const chainArray = [
     rpc: [
       'https://evmos.lava.build',
       'wss://evmos.lava.build/websocket',
-      'https://evmos-evm.publicnode.com',
-      'wss://evmos-evm.publicnode.com'
+      'https://evmos-evm-rpc.publicnode.com',
+      'wss://evmos-evm-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Evmos', symbol: 'EVMOS', decimals: 18 },
@@ -25541,7 +25543,8 @@ const chainArray = [
       'https://rpc.ankr.com/blast',
       'https://blast.din.dev/rpc',
       'https://blastl2-mainnet.public.blastapi.io',
-      'https://blast.blockpi.network/v1/rpc/public'
+      'https://blast.blockpi.network/v1/rpc/public',
+      'https://blast-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -26975,6 +26978,34 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Form Testnet',
+    title: 'Form Testnet',
+    chain: 'formtestnet',
+    rpc: [
+      'https://testnet-rpc.form.network/http',
+      'wss://testnet-rpc.form.network/ws'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://info.form.network/faucet' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://form.network/details',
+    shortName: 'formtestnet',
+    chainId: 132902,
+    networkId: 132902,
+    explorers: [
+      {
+        name: 'Form Testnet explorer',
+        url: 'https://testnet-explorer.form.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.form.network/' } ]
+    }
   },
   {
     name: 'MagApe Testnet',
@@ -29090,6 +29121,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Atlas',
+    title: 'Atlas Testnet',
+    chain: 'ATLAS',
+    icon: 'atlas',
+    rpc: [ 'https://rpc.testnet.atl.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'ATLAS', symbol: 'ATLAS', decimals: 18 },
+    infoURL: 'https://atl.network',
+    shortName: 'atlas-testnet',
+    chainId: 622463,
+    networkId: 622463,
+    explorers: [
+      {
+        name: 'Atlas Testnet Scan',
+        url: 'https://explorer.testnet.atl.network',
+        icon: 'atlas',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bear Network Chain Mainnet',
     chain: 'BRNKC',
     icon: 'brnkc',
@@ -29266,6 +29318,25 @@ const chainArray = [
       {
         name: 'Seitrace',
         url: 'https://seitrace.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ERAM Mainnet',
+    chain: 'ERAM',
+    icon: 'eram',
+    rpc: [ 'https://mainnet-rpc.eramscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'ERAM', symbol: 'ERAM', decimals: 18 },
+    infoURL: 'http://doc.eramscan.com/',
+    shortName: 'ERAM',
+    chainId: 721529,
+    networkId: 721529,
+    explorers: [
+      {
+        name: 'Eramscan',
+        url: 'https://eramscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -29823,6 +29894,36 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Treasure Ruby',
+    chainId: 978657,
+    shortName: 'treasure-ruby',
+    chain: 'TRS',
+    networkId: 978657,
+    nativeCurrency: { name: 'Testnet MAGIC', symbol: 'MAGIC', decimals: 18 },
+    slip44: 1,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://portal.treasure.lol',
+    icon: 'treasureruby',
+    rpc: [
+      'https://rpc-testnet.treasure.lol/http',
+      'wss://rpc-testnet.treasure.lol/ws'
+    ],
+    faucets: [ 'https://portal.treasure.lol/faucet' ],
+    explorers: [
+      {
+        name: 'treasurescan',
+        url: 'https://testnet.treasurescan.io',
+        icon: 'treasure',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portal.treasure.lol/bridge' } ]
+    }
   },
   {
     name: 'Forma',
