@@ -14043,6 +14043,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'LayerEdge testnet',
+    chain: 'LayerEdge',
+    rpc: [ 'https://testnet-rpc.layeredge.io' ],
+    faucets: [ 'https://testnet-faucet.layeredge.io' ],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://www.layeredge.io',
+    shortName: 'LayerEdge-testnet',
+    chainId: 3456,
+    networkId: 3456,
+    icon: 'layerEdge',
+    explorers: [
+      {
+        name: 'LayerEdge Testnet Explorer',
+        url: 'https://testnet-explorer.layeredge.io',
+        icon: 'layerEdge',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Paribu Net Testnet',
     chain: 'PRB',
     rpc: [ 'https://rpc.testnet.paribuscan.com' ],
@@ -30367,6 +30387,24 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://portal.playfi.ai/bridge' } ]
     }
+  },
+  {
+    name: 'Xterio Testnet',
+    chain: 'Xterio Testnet',
+    rpc: [ 'https://xterio-testnet.alt.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'tBNB', symbol: 'tBNB', decimals: 18 },
+    infoURL: 'https://xter.io',
+    shortName: 'xteriotest',
+    chainId: 1637450,
+    networkId: 1637450,
+    explorers: [
+      {
+        name: 'Xterio Testnet Explorer',
+        url: 'https://testnet.xterscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Turkey Demo Dev',
