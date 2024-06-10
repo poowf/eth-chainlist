@@ -2891,7 +2891,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'EternalCoin Mainnet',
+    name: 'Eternal Mainnet',
     chain: 'Eter',
     icon: 'eternal',
     rpc: [
@@ -20076,13 +20076,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'Santiment Intelligence Network',
-    chain: 'Santiment Intelligence Network',
+    status: 'deprecated',
+    name: 'Santiment Intelligence Network DEPRECATED',
+    chain: 'Santiment Intelligence Network DEPRECATED',
     rpc: [ 'https://sanrchain-node.santiment.net' ],
     faucets: [],
-    nativeCurrency: { name: 'SANR', symbol: 'SANR', decimals: 18 },
+    nativeCurrency: { name: 'SANold', symbol: 'SANold', decimals: 18 },
     infoURL: 'https://sanr.app',
-    shortName: 'SAN',
+    shortName: 'SANold',
     chainId: 11888,
     networkId: 11888,
     icon: 'sanrchain',
@@ -22672,6 +22673,30 @@ const chainArray = [
         url: 'https://w3gamez-holesky.web3games.com',
         icon: 'web3games',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Santiment Intelligence Network',
+    chain: 'Santiment Intelligence Network',
+    rpc: [ 'https://node.sanr.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'SANR', symbol: 'SANR', decimals: 18 },
+    infoURL: 'https://sanr.app',
+    shortName: 'SANR',
+    chainId: 32382,
+    networkId: 32382,
+    icon: 'sanrchain',
+    parent: {
+      chain: 'eip155-1',
+      type: 'L2',
+      bridges: [ { url: 'https://sanr.app' } ]
+    },
+    explorers: [
+      {
+        name: 'Santiment Intelligence Explorer',
+        url: 'https://app-explorer-pos.sanr.app',
+        standard: 'none'
       }
     ]
   },
