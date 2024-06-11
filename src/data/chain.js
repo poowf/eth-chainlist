@@ -11596,6 +11596,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'MetaLink Network',
+    chain: 'MetaLink',
+    rpc: [ 'http://77.237.237.69:9933' ],
+    icon: 'metaLink',
+    faucets: [],
+    shortName: 'mtl',
+    nativeCurrency: { name: 'MetaLink', symbol: 'MTL', decimals: 18 },
+    infoURL: 'http://totwo3.com:3000',
+    chainId: 2004,
+    networkId: 2004,
+    explorers: [
+      {
+        name: 'MetaScan',
+        url: 'http://twoto3.com:3000',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'CloudWalk Testnet',
     chain: 'CloudWalk Testnet',
     rpc: [],
@@ -14965,10 +14984,11 @@ const chainArray = [
     name: 'CrossFi Testnet',
     title: 'CrossFi Testnet',
     chain: 'XFI',
+    icon: 'crossfi',
     rpc: [ 'https://rpc.testnet.ms' ],
     faucets: [],
     nativeCurrency: { name: 'XFI', symbol: 'XFI', decimals: 18 },
-    infoURL: 'https://crossfi.org/',
+    infoURL: 'https://crossfi.org',
     shortName: 'crossfi-testnet',
     chainId: 4157,
     networkId: 4157,
@@ -14976,8 +14996,9 @@ const chainArray = [
     explorers: [
       {
         name: 'CrossFi Testnet Scan',
-        url: 'https://scan.testnet.ms',
-        standard: 'EIP3091'
+        url: 'https://test.xfiscan.com',
+        standard: 'EIP3091',
+        icon: 'crossfi'
       }
     ]
   },
@@ -19288,6 +19309,25 @@ const chainArray = [
       {
         name: 'combotrace explorer',
         url: 'https://combotrace.nodereal.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Volley Mainnet',
+    chain: 'Volley',
+    icon: 'volley',
+    rpc: [ 'https://main-rpc.volleychain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'V2X', symbol: 'V2X', decimals: 18 },
+    infoURL: 'https://www.volleychain.com',
+    shortName: 'volley-mainnet',
+    chainId: 9981,
+    networkId: 9981,
+    explorers: [
+      {
+        name: 'Volley Mainnet Explorer',
+        url: 'https://volleyscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -23969,6 +24009,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Superseed Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.superseed.xyz', 'wss://sepolia.superseed.xyz' ],
+    faucets: [ 'https://sepoliafaucet.com' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.superseed.xyz',
+    shortName: 'seedsep',
+    chainId: 53302,
+    networkId: 53302,
+    slip44: 1,
+    icon: 'seedTestnet',
+    explorers: [
+      {
+        name: 'seedscout',
+        url: 'https://sepolia-explorer.superseed.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://sepolia-bridge.superseed.xyz/' } ]
+    }
   },
   {
     name: 'DODOchain testnet',
