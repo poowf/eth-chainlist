@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.429 (2024-06-12)
+
+
+### Maintenance
+
+* **release:** 0.0.428 ([e490bbb](https://github.com/poowf/eth-chainlist/commit/e490bbb2a7831aad8e6f5a696c03b9cab1f934b9))
+* update chain data ([c999c49](https://github.com/poowf/eth-chainlist/commit/c999c4932ff9cca724542fa5e905c77d44a5811c))
+
 ### 0.0.428 (2024-06-11)
 
 
