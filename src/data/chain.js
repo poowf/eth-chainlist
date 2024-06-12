@@ -9212,6 +9212,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cuckoo Sepolia',
+    title: 'Cuckoo AI Testnet Sepolia',
+    chain: 'CuckooAI',
+    icon: 'cuckoo-ai',
+    rpc: [
+      'https://testnet-rpc.cuckoo.network',
+      'wss://testnet-rpc.cuckoo.network'
+    ],
+    faucets: [ 'https://cuckoo.network/portal/faucet/' ],
+    nativeCurrency: { name: 'CuckooAI', symbol: 'CAI', decimals: 18 },
+    infoURL: 'https://cuckoo.network',
+    shortName: 'caisepolia',
+    chainId: 1210,
+    networkId: 1210,
+    explorers: [
+      {
+        name: 'Cuckoo Sepolia Explorer',
+        url: 'https://testnet-scan.cuckoo.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Popcateum Mainnet',
     chain: 'POPCATEUM',
     rpc: [ 'https://dataseed.popcateum.org' ],
@@ -24327,6 +24350,26 @@ const chainArray = [
       {
         name: 'Rollux Testnet Explorer',
         url: 'https://rollux.tanenbaum.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'COINSEC',
+    title: 'COINSEC Network',
+    chain: 'coinsecnetwork',
+    icon: 'coinsec',
+    rpc: [ 'https://mainnet-rpc.coinsec.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'COINSEC', symbol: 'SEC', decimals: 18 },
+    infoURL: 'https://explorer.coinsec.network/',
+    shortName: 'coinsecnetwork',
+    chainId: 57451,
+    networkId: 57451,
+    explorers: [
+      {
+        name: 'coinsec network',
+        url: 'https://explorer.coinsec.network',
         standard: 'EIP3091'
       }
     ]
