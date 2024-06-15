@@ -6762,6 +6762,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Darwinia Koi Testnet',
+    chain: 'Darwinia Koi',
+    rpc: [ 'https://koi-rpc.darwinia.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Koi Network Native Token', symbol: 'KRING', decimals: 18 },
+    infoURL: 'https://darwinia.network/',
+    shortName: 'darwinia-koi',
+    chainId: 701,
+    networkId: 701,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://koi-scan.darwinia.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BlockChain Station Mainnet',
     chain: 'BCS',
     rpc: [
@@ -16840,6 +16859,19 @@ const chainArray = [
         icon: 'irishub'
       }
     ]
+  },
+  {
+    name: 'OX Chain',
+    title: 'OX Chain',
+    chain: 'OX',
+    rpc: [ 'https://rpc.oxscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'OX', symbol: 'OX', decimals: 18 },
+    infoURL: 'https://ox.fun/chain',
+    shortName: 'ox-chain',
+    chainId: 6699,
+    networkId: 6699,
+    status: 'incubating'
   },
   {
     name: 'PAXB Mainnet',
@@ -29564,6 +29596,26 @@ const chainArray = [
         name: 'Alltra SmartChain Explorer',
         url: 'https://alltra.global',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Open Campus Codex',
+    chain: 'Open Campus Codex',
+    icon: 'open-campus-codex',
+    rpc: [ 'https://rpc.open-campus-codex.gelato.digital' ],
+    faucets: [],
+    nativeCurrency: { name: 'EDU', symbol: 'EDU', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/open-campus-codex',
+    shortName: 'open-campus-codex',
+    chainId: 656476,
+    networkId: 656476,
+    explorers: [
+      {
+        name: 'Open Campus Codex',
+        url: 'https://opencampus-codex.blockscout.com',
+        icon: 'open-campus-codex',
+        standard: 'none'
       }
     ]
   },
