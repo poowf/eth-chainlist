@@ -12426,7 +12426,10 @@ const chainArray = [
   {
     name: 'BigShortBets Testnet',
     chain: 'BIGSB Testnet',
-    rpc: [ 'https://test-market.bigsb.io', 'wss://test-market.bigsb.io' ],
+    rpc: [
+      'https://test-market.bigsb.network',
+      'wss://test-market.bigsb.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Dolarz', symbol: 'Dolarz', decimals: 18 },
     infoURL: 'https://bigshortbets.com/',
@@ -24461,7 +24464,7 @@ const chainArray = [
     networkId: 57451,
     explorers: [
       {
-        name: 'coinsec network',
+        name: 'coinsecnetwork',
         url: 'https://explorer.coinsec.network',
         standard: 'EIP3091'
       }
@@ -25476,7 +25479,10 @@ const chainArray = [
     name: 'BORAchain mainnet',
     chain: 'BORA',
     icon: 'bora',
-    rpc: [ 'https://public-node.api.boraportal.com/bora/mainnet' ],
+    rpc: [
+      'https://public-node.api.boraportal.com/bora/mainnet',
+      'https://public-node.api.boraportal.io/bora/mainnet'
+    ],
     faucets: [],
     nativeCurrency: { name: 'BORA', symbol: 'BORA', decimals: 18 },
     infoURL: 'https://www.boraportal.com',
