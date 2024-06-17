@@ -3990,7 +3990,8 @@ const chainArray = [
       'https://mainnet.b2-rpc.com',
       'https://rpc.bsquared.network',
       'https://b2-mainnet.alt.technology',
-      'https://b2-mainnet-public.s.chainbase.com'
+      'https://b2-mainnet-public.s.chainbase.com',
+      'https://rpc.ankr.com/b2'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
@@ -8918,7 +8919,11 @@ const chainArray = [
     name: 'B2 Testnet',
     title: 'B2 Testnet',
     chain: 'Habitat',
-    rpc: [ 'https://b2-testnet.alt.technology' ],
+    rpc: [
+      'https://b2-testnet.alt.technology',
+      'https://rpc.ankr.com/b2_testnet',
+      'https://testnet-rpc.bsquared.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://www.bsquared.network',
@@ -9304,15 +9309,16 @@ const chainArray = [
     icon: 'cycle'
   },
   {
-    name: 'Hybrid Testnet',
+    name: 'Hybrid Testnet (Deprecated)',
     chain: 'HYB',
     icon: 'hybridIcon',
     rpc: [ 'https://testnet-rpc.buildonhybrid.com' ],
     faucets: [],
     nativeCurrency: { name: 'Hybrid', symbol: 'HYB', decimals: 18 },
     infoURL: 'https://buildonhybrid.com',
-    shortName: 'hyb',
+    shortName: 'hyb_deprecated',
     chainId: 1224,
+    status: 'deprecated',
     networkId: 1224,
     explorers: [
       {
@@ -9321,6 +9327,29 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Hybrid Testnet',
+    chain: 'HYB',
+    icon: 'hybridIcon',
+    rpc: [
+      'https://hybrid-testnet.rpc.caldera.xyz/http',
+      'wss://hybrid-testnet.rpc.caldera.xyz/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Hybrid', symbol: 'HYB', decimals: 18 },
+    infoURL: 'https://buildonhybrid.com',
+    shortName: 'hyb',
+    chainId: 1225,
+    networkId: 1225,
+    explorers: [
+      {
+        name: 'Hybrid Testnet',
+        url: 'https://explorer.buildonhybrid.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Exzo Network Mainnet',
@@ -14283,6 +14312,7 @@ const chainArray = [
   {
     name: 'iChain Network',
     chain: 'iChain',
+    icon: 'iChain',
     rpc: [ 'https://rpc.ichainscan.com' ],
     faucets: [],
     nativeCurrency: { name: 'ISLAMICOIN', symbol: 'ISLAMI', decimals: 18 },
@@ -14294,6 +14324,25 @@ const chainArray = [
       {
         name: 'iChainscan',
         url: 'https://ichainscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'iChain Testnet',
+    chain: 'iChain Testnet',
+    icon: 'iChain',
+    rpc: [ 'https://istanbul.ichainscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'ISLAMICOIN', symbol: 'ISLAMI', decimals: 18 },
+    infoURL: 'https://islamicoin.finance',
+    shortName: 'ISLAMIT',
+    chainId: 3645,
+    networkId: 3645,
+    explorers: [
+      {
+        name: 'iChainscan',
+        url: 'https://test.ichainscan.com',
         standard: 'EIP3091'
       }
     ]
