@@ -903,8 +903,8 @@ const chainArray = [
     networkId: 44,
     explorers: [
       {
-        name: 'subscan',
-        url: 'https://crab.subscan.io',
+        name: 'blockscout',
+        url: 'https://crab-scan.darwinia.network',
         standard: 'EIP3091'
       }
     ]
@@ -9186,6 +9186,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cuckoo Chain',
+    title: 'Cuckoo Chain',
+    chain: 'CuckooAI',
+    icon: 'cuckoo-ai',
+    rpc: [
+      'https://mainnet-rpc.cuckoo.network',
+      'wss://mainnet-rpc.cuckoo.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'CuckooAI', symbol: 'CAI', decimals: 18 },
+    infoURL: 'https://cuckoo.network',
+    shortName: 'cai',
+    chainId: 1200,
+    networkId: 1200,
+    explorers: [
+      {
+        name: 'Cuckoo Chain Explorer',
+        url: 'https://mainnet-scan.cuckoo.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Evanesco Testnet',
     chain: 'Evanesco Testnet',
     rpc: [ 'https://seed5.evanesco.org:8547' ],
@@ -11602,6 +11625,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Kyoto',
+    chain: 'KYOTO',
+    rpc: [ 'https://rpc.kyotochain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Kyoto', symbol: 'KYOTO', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://kyotoprotocol.io',
+    shortName: 'kyoto',
+    chainId: 1997,
+    networkId: 1997,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Kyotoscan',
+        url: 'https://kyotoscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Kyoto Testnet',
     chain: 'KYOTO',
     rpc: [ 'https://rpc.testnet.kyotoprotocol.io:8545' ],
@@ -13473,6 +13516,52 @@ const chainArray = [
     ]
   },
   {
+    name: 'AILayer Testnet',
+    chain: 'AILayer',
+    rpc: [
+      'https://testnet-rpc.ailayer.xyz',
+      'wss://testnet-rpc.ailayer.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://ailayer.xyz/',
+    shortName: 'ailayer-testnet',
+    chainId: 2648,
+    networkId: 2648,
+    icon: 'ailayer',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet-explorer.ailayer.xyz',
+        icon: 'ailayer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'AILayer Mainnet',
+    chain: 'AILayer',
+    rpc: [
+      'https://mainnet-rpc.ailayer.xyz',
+      'wss://mainnet-rpc.ailayer.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://ailayer.xyz/',
+    shortName: 'ailayer-mainnet',
+    chainId: 2649,
+    networkId: 2649,
+    icon: 'ailayer',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://mainnet-explorer.ailayer.xyz',
+        icon: 'ailayer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'APEX',
     status: 'incubating',
     chain: 'ETH',
@@ -14174,6 +14263,27 @@ const chainArray = [
         url: 'https://testnet-explorer.layeredge.io',
         icon: 'layerEdge',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GTCSCAN',
+    chain: 'GTC',
+    icon: 'gtc',
+    rpc: [ 'https://gtc-dataseed.gtcscan.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'GTC', symbol: 'GTC', decimals: 18 },
+    infoURL: 'https://gtcscan.io/',
+    shortName: 'gtc',
+    chainId: 3490,
+    networkId: 3490,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'GTCScan Explorer',
+        url: 'https://gtcscan.io',
+        standard: 'none',
+        icon: 'gtc'
       }
     ]
   },
@@ -20266,6 +20376,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Artela Testnet',
+    chain: 'Artela',
+    rpc: [ 'https://betanet-rpc1.artela.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'ART', symbol: 'ART', decimals: 18 },
+    infoURL: 'https://artela.network/',
+    shortName: 'Artela',
+    chainId: 11822,
+    networkId: 11822,
+    explorers: [
+      {
+        name: 'ArtelaScan',
+        url: 'https://betanet-scan.artela.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     status: 'deprecated',
     name: 'Santiment Intelligence Network DEPRECATED',
     chain: 'Santiment Intelligence Network DEPRECATED',
@@ -25797,6 +25925,29 @@ const chainArray = [
         name: 'polygonamoy',
         url: 'https://www.oklink.com/amoy',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Berachain bArtio',
+    chain: 'Berachain bArtio',
+    rpc: [
+      'https://bartio.rpc.berachain.com',
+      'https://bera-testnet.nodeinfra.com'
+    ],
+    faucets: [ 'https://bartio.faucet.berachain.com' ],
+    nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
+    infoURL: 'https://www.berachain.com',
+    shortName: 'berachainbArtio',
+    chainId: 80084,
+    networkId: 80084,
+    icon: 'berachain',
+    explorers: [
+      {
+        name: 'Beratrail',
+        url: 'https://bartio.beratrail.io',
+        icon: 'berachain',
+        standard: 'none'
       }
     ]
   },
