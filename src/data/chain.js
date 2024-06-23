@@ -5222,6 +5222,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Shape',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://shape.us',
+    shortName: 'shape',
+    chainId: 360,
+    networkId: 360,
+    status: 'incubating'
+  },
+  {
     name: 'Theta Mainnet',
     chain: 'Theta',
     rpc: [ 'https://eth-rpc-api.thetatoken.org/rpc' ],
@@ -23163,6 +23175,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zilliqa 2 EVM proto-testnet',
+    chain: 'ZIL',
+    rpc: [ 'https://api.zq2-prototestnet.zilliqa.com' ],
+    faucets: [ 'https://faucet.zq2-prototestnet.zilliqa.com' ],
+    nativeCurrency: { name: 'Zilliqa', symbol: 'ZIL', decimals: 18 },
+    infoURL: 'https://www.zilliqa.com/',
+    shortName: 'zq2-proto-testnet',
+    chainId: 33103,
+    networkId: 33103,
+    icon: 'zilliqa',
+    explorers: [
+      {
+        name: 'Zilliqa 2 EVM proto-testnet explorer',
+        url: 'https://explorer.zq2-prototestnet.zilliqa.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Entangle Testnet',
     chain: 'NGL',
     icon: 'ngl',
@@ -29440,6 +29471,26 @@ const chainArray = [
         name: 'SIDE SCAN',
         url: 'https://sidescan.luniverse.io/1641349324562974539',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Autonomys Testnet Nova Domain',
+    chain: 'TATC',
+    rpc: [ 'https://nova-0.gemini-3h.subspace.network/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'Test Auto Coin', symbol: 'TATC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.autonomys.net',
+    shortName: 'ATN',
+    chainId: 490000,
+    networkId: 490000,
+    explorers: [
+      {
+        name: 'astral',
+        url: 'https://nova.subspace.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
