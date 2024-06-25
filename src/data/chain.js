@@ -5893,6 +5893,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'World Chain',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://worldcoin.org',
+    shortName: 'wc',
+    chainId: 480,
+    networkId: 480,
+    status: 'incubating'
+  },
+  {
     name: 'Rupaya',
     chain: 'RUPX',
     rpc: [],
@@ -8074,6 +8086,25 @@ const chainArray = [
         name: 'Memo Mainnet Explorer',
         url: 'https://scan.metamemo.one:8080',
         icon: 'memo',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'BinaryChain Mainnet',
+    chain: 'BinaryChain',
+    icon: 'binary',
+    rpc: [ 'https://rpc.binarychain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'BINARY', symbol: 'BNRY', decimals: 18 },
+    infoURL: 'https://binarychain.org',
+    shortName: 'binary',
+    chainId: 987,
+    networkId: 987,
+    explorers: [
+      {
+        name: 'BinaryChain Explorer',
+        url: 'https://explorer.binarychain.org',
         standard: 'EIP3091'
       }
     ]
@@ -19484,6 +19515,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'BinaryChain Testnet',
+    chain: 'BinaryChain',
+    icon: 'binary',
+    rpc: [ 'https://rpctestnet.binarychain.org' ],
+    faucets: [ 'https://faucet.testnet.binarychain.org' ],
+    nativeCurrency: { name: 'BINARY', symbol: 'BNRY', decimals: 18 },
+    infoURL: 'https://binarychain.org',
+    shortName: 'binarytestnet',
+    chainId: 9876,
+    networkId: 9876,
+    explorers: [
+      {
+        name: 'BinaryChain Testnet Explorer',
+        url: 'https://explorer.testnet.binarychain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Dogelayer Mainnet',
     chain: 'Dogelayer',
     rpc: [ 'https://dl-rpc.dogelayer.org' ],
@@ -25964,7 +26014,8 @@ const chainArray = [
     chain: 'Berachain bArtio',
     rpc: [
       'https://bartio.rpc.berachain.com',
-      'https://bera-testnet.nodeinfra.com'
+      'https://bera-testnet.nodeinfra.com',
+      'https://bartio.rpc.b-harvest.io'
     ],
     faucets: [ 'https://bartio.faucet.berachain.com' ],
     nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
@@ -30754,6 +30805,27 @@ const chainArray = [
         name: 'TILTYARD Explorer',
         url: 'http://testnet-explorer.tiltyard.gg',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Sharecle Mainnet',
+    chain: 'SHARECLE',
+    icon: 'sharecle',
+    rpc: [ 'https://mainnet.sharecle.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'SHARECLE COIN', symbol: 'SHR', decimals: 18 },
+    infoURL: 'https://sharecle.com/',
+    shortName: 'shr',
+    chainId: 1234567,
+    networkId: 1234567,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Etherscan',
+        url: 'https://etherscan.io',
+        standard: 'none',
+        icon: 'sharecle'
       }
     ]
   },
