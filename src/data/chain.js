@@ -3549,6 +3549,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'CMDAO BBQ Chain',
+    chain: 'Underchain 1',
+    rpc: [ 'https://bbqchain-rpc.commudao.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'CommuDAO', symbol: 'CMD', decimals: 18 },
+    infoURL: 'https://commudao.xyz',
+    shortName: 'cmdao-bbq-chain',
+    chainId: 190,
+    networkId: 190,
+    explorers: [
+      {
+        name: 'bbqchain-explorer',
+        url: 'https://bbqchain-exp.commudao.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'FileFileGo',
     chain: 'FFG',
     icon: 'ffgIcon',
@@ -7458,6 +7476,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'HongKong Mainnet',
+    chain: 'HONGKONG',
+    rpc: [ 'https://eth.jegotrip.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'HongKong', symbol: 'HK', decimals: 18 },
+    infoURL: 'https://www.cmi.chinamobile.com/',
+    shortName: 'HongKong',
+    chainId: 852,
+    networkId: 852,
+    explorers: [
+      {
+        name: 'HongKong Mainnet Explorer',
+        url: 'http://47.238.205.52',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Zeeth Chain Dev',
     chain: 'ZeethChainDev',
     rpc: [ 'https://rpc.dev.zeeth.io' ],
@@ -9848,6 +9884,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'JaiHo Chain',
+    chain: 'JaiHoChain',
+    icon: 'jaihoIcon',
+    rpc: [ 'https://rpc.jaihochain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'JaiHo', symbol: 'JaiHo', decimals: 18 },
+    infoURL: 'https://jaihochain.com',
+    shortName: 'JHC',
+    chainId: 1313,
+    networkId: 1313,
+    explorers: [
+      {
+        name: 'JaiHo Chain Explorer',
+        url: 'https://jaihochain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Alyx Mainnet',
     chain: 'ALYX',
     rpc: [ 'https://rpc.alyxchain.com' ],
@@ -10964,6 +11019,25 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://rabbit.analogscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Lif3 Chain Testnet',
+    chain: 'lif3chain',
+    rpc: [ 'https://testnet-evm.lif3.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'LIF3', symbol: 'LIF3', decimals: 18 },
+    infoURL: 'https://docs.lif3.com/',
+    shortName: 'lif3-testnet',
+    chainId: 1811,
+    networkId: 1811,
+    explorers: [
+      {
+        name: 'lif3scout',
+        url: 'https://testnet.lif3scout.com',
         standard: 'none'
       }
     ]
@@ -17733,6 +17807,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'GDCC MAINNET',
+    chain: 'GDCC',
+    icon: 'gdcc',
+    rpc: [ 'https://mainnet-rpc-1.gdccscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'GDCC', symbol: 'GDCC', decimals: 18 },
+    infoURL: 'https://gdcchain.com',
+    shortName: 'GdccMainnet',
+    chainId: 7774,
+    networkId: 7774,
+    explorers: [ { name: 'GDCC', url: 'https://gdccscan.io', standard: 'none' } ]
+  },
+  {
     name: 'GDCC TESTNET',
     chain: 'GDCC',
     icon: 'gdcc',
@@ -18704,6 +18791,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Lif3 Chain',
+    chain: 'lif3chain',
+    rpc: [ 'https://rpc.lif3.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'LIF3', symbol: 'LIF3', decimals: 18 },
+    infoURL: 'https://docs.lif3.com/',
+    shortName: 'lif3-mainnet',
+    chainId: 8869,
+    networkId: 8869,
+    explorers: [
+      {
+        name: 'lif3scout',
+        url: 'https://lif3scout.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Unique',
     icon: 'unique',
     chain: 'UNQ',
@@ -19245,6 +19351,25 @@ const chainArray = [
       {
         name: 'Dogcoin',
         url: 'https://testnet.dogcoin.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Oasys Testnet',
+    chain: 'Oasys',
+    icon: 'oasys',
+    rpc: [ 'https://rpc.testnet.oasys.games' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://oasys.games',
+    shortName: 'OAS_TEST',
+    chainId: 9372,
+    networkId: 9372,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.testnet.oasys.games',
         standard: 'EIP3091'
       }
     ]
@@ -21334,6 +21459,18 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
+    name: 'Incentiv Devnet',
+    chain: 'Incentiv',
+    rpc: [ 'https://rpc.ankr.com/incentiv_devnet' ],
+    faucets: [ 'https://faucet.incentiv-dev.ankr.network' ],
+    nativeCurrency: { name: 'Testnet INC', symbol: 'INC', decimals: 18 },
+    infoURL: 'https://incentiv.net',
+    shortName: 'tIncentiv',
+    chainId: 16350,
+    networkId: 16350,
+    slip44: 1
   },
   {
     name: 'Pivotal Sepolia',
@@ -24201,6 +24338,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Zircuit Mainnet',
+    chain: 'Zircuit Mainnet',
+    icon: 'zircuit',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.zircuit.com/',
+    shortName: 'zircuit-mainnet',
+    chainId: 48900,
+    networkId: 48900,
+    explorers: []
   },
   {
     name: 'Wireshape Floripa Testnet',
@@ -27108,7 +27258,7 @@ const chainArray = [
   {
     name: 'VeChain',
     chain: 'VeChain',
-    rpc: [],
+    rpc: [ 'https://rpc-mainnet.vechain.energy' ],
     faucets: [],
     nativeCurrency: { name: 'VeChain', symbol: 'VET', decimals: 18 },
     infoURL: 'https://vechain.org',
@@ -27640,6 +27790,25 @@ const chainArray = [
         name: 'MetaDAP Enterprise Testnet explorer',
         url: 'https://explorer.testnet.chain.metadap.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Gemchain',
+    chain: 'Gemchain',
+    rpc: [ 'https://evm-rpc.gemchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'GEM', symbol: 'GEM', decimals: 18 },
+    infoURL: 'https://gemchain.org',
+    shortName: 'gemchain',
+    chainId: 123321,
+    networkId: 123321,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Gemchain Scan',
+        url: 'https://scan.gemchain.org',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -29263,9 +29432,9 @@ const chainArray = [
     chain: 'AIE',
     rpc: [ 'https://rpc1-testnet.aiechain.io' ],
     faucets: [],
-    nativeCurrency: { name: 'AIE', symbol: 'tAIE', decimals: 18 },
+    nativeCurrency: { name: 'AIE', symbol: 'AIE', decimals: 18 },
     infoURL: 'https://testnet.aiescan.io',
-    shortName: 'aiet',
+    shortName: 'aie',
     chainId: 413413,
     networkId: 413413,
     icon: 'aie',
@@ -31952,6 +32121,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'NeoX Testnet',
+    chain: 'NeoX',
+    rpc: [ 'https://testnet.rpc.banelabs.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
+    infoURL: 'https://neo.org/',
+    shortName: 'neox',
+    chainId: 12227331,
+    networkId: 12227331,
+    icon: 'neox',
+    explorers: [
+      {
+        name: 'neox-scan',
+        url: 'https://testnet.scan.banelabs.org',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'COTI Devnet',
