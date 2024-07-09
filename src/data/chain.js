@@ -9282,7 +9282,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Cuckoo Chain Explorer',
-        url: 'https://mainnet-scan.cuckoo.network',
+        url: 'https://scan.cuckoo.network',
         standard: 'EIP3091'
       }
     ]
@@ -10400,6 +10400,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'ZKBase Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://mainnet-rpc.zkbase.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zkbase.org/',
+    shortName: 'zkbase',
+    chainId: 1456,
+    networkId: 1456,
+    slip44: 1,
+    icon: 'zkbase',
+    explorers: [
+      {
+        name: 'ZKbase Block Explorer',
+        url: 'https://explorer.zkbase.app',
+        icon: 'zkbase',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portal.zkbase.app/' } ]
+    },
+    redFlags: [ 'reusedChainId' ]
+  },
+  {
     name: 'Vitruveo Mainnet',
     title: 'Vitruveo is a blockchain for Creators',
     chain: 'Vitruveo',
@@ -10967,7 +10994,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://portral.zkbase.app/' } ]
+      bridges: [ { url: 'https://portal.zkbase.app/' } ]
     },
     redFlags: [ 'reusedChainId' ]
   },
@@ -14342,6 +14369,33 @@ const chainArray = [
     chainId: 3335,
     networkId: 3335,
     slip44: 1
+  },
+  {
+    name: 'The peaq Network',
+    chain: 'peaq',
+    icon: 'peaq',
+    rpc: [
+      'https://peaq.api.onfinality.io/public',
+      'https://peaq-rpc.dwellir.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'peaq', symbol: 'PEAQ', decimals: 18 },
+    infoURL: 'https://www.peaq.network',
+    shortName: 'PEAQ',
+    chainId: 3338,
+    networkId: 3338,
+    explorers: [
+      {
+        name: 'Polkadot.js',
+        url: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpeaq.api.onfinality.io%2Fpublic-ws#/explorer',
+        standard: 'none'
+      },
+      {
+        name: 'Subscan',
+        url: 'https://peaq.subscan.io',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Paribu Net Mainnet',
@@ -21461,6 +21515,25 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-248' }
   },
   {
+    name: 'PLYR PHI',
+    chain: 'PLYR',
+    icon: 'plyr',
+    rpc: [ 'https://subnets.avax.network/plyr/mainnet/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'PLYR', symbol: 'PLYR', decimals: 18 },
+    infoURL: 'https://plyr.network',
+    shortName: 'plyr-phi',
+    chainId: 16180,
+    networkId: 16180,
+    explorers: [
+      {
+        name: 'Avalanche Subnet Explorer',
+        url: 'https://subnets.avax.network/plyr',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Incentiv Devnet',
     chain: 'Incentiv',
     rpc: [ 'https://rpc.ankr.com/incentiv_devnet' ],
@@ -25087,6 +25160,29 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Metis Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.metisdevops.link' ],
+    faucets: [ 'https://sepolia.faucet.metisdevops.link' ],
+    nativeCurrency: { name: 'tMetis', symbol: 'tMETIS', decimals: 18 },
+    infoURL: 'https://www.metis.io',
+    shortName: 'metis-sepolia',
+    chainId: 59902,
+    networkId: 59902,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://sepolia-explorer.metisdevops.link',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.metis.io' } ]
+    }
+  },
+  {
     name: 'Genesys Code Mainnet',
     chain: 'GCODE',
     rpc: [ 'https://mainnet.genesyscode.io/' ],
@@ -25908,7 +26004,7 @@ const chainArray = [
     chain: 'GEEK',
     rpc: [ 'https://rpc.geekout-pte.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Geek', symbol: 'GEEK', decimals: 18 },
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
     infoURL: 'https://www.geekout-pte.com',
     shortName: 'GEEK',
     chainId: 75512,
@@ -25926,7 +26022,7 @@ const chainArray = [
     chain: 'GEEK Test',
     rpc: [ 'https://rpc-testnet.geekout-pte.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Geek', symbol: 'GEEK', decimals: 18 },
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
     infoURL: 'https://www.geekout-pte.com',
     shortName: 'GEEK_Test',
     chainId: 75513,
@@ -28210,6 +28306,25 @@ const chainArray = [
     networkId: 192940
   },
   {
+    name: 'MAZZE Testnet',
+    chain: 'MAZZE Testnet',
+    icon: 'mazze',
+    rpc: [ 'https://testnet-rpc.mazze.io/' ],
+    faucets: [ 'https://faucet.mazze.io/' ],
+    nativeCurrency: { name: 'MAZZE Testnet', symbol: 'MAZZE', decimals: 18 },
+    infoURL: 'https://mazze.io/',
+    shortName: 'MAZZE',
+    chainId: 199991,
+    networkId: 199991,
+    explorers: [
+      {
+        name: 'MAZZE Testnet Explorer',
+        url: 'https://mazzescan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'xFair.AI Testnet',
     chain: 'FAIT',
     rpc: [ 'https://rpc_testnet.xfair.ai', 'wss://rpc_testnet.xfair.ai' ],
@@ -29769,6 +29884,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'World Chain Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://worldcoin.org/',
+    shortName: 'wcsep',
+    chainId: 484752,
+    networkId: 484752,
+    slip44: 1,
+    explorers: []
   },
   {
     name: 'Autonomys Testnet Nova Domain',
@@ -31375,6 +31503,24 @@ const chainArray = [
     networkId: 2611555
   },
   {
+    name: 'Xterio Chain',
+    chain: 'Xterio',
+    rpc: [ 'https://xterio-eth.alt.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://xter.io',
+    shortName: 'xterio',
+    chainId: 2702128,
+    networkId: 2702128,
+    explorers: [
+      {
+        name: 'Xterio Chain Explorer',
+        url: 'https://eth.xterscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SaharaAI Network',
     chain: 'Sahara',
     rpc: [ 'https://mainnet.saharalabs.ai' ],
@@ -32648,6 +32794,27 @@ const chainArray = [
   },
   {
     name: 'Autonity Bakerloo (Sumida) Testnet',
+    status: 'deprecated',
+    chain: 'AUT',
+    rpc: [],
+    faucets: [ 'https://faucet.autonity.org/' ],
+    nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'bakerloo-02',
+    chainId: 65010002,
+    networkId: 65010002,
+    slip44: 1,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonity-blockscout',
+        url: 'https://bakerloo.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonity Bakerloo (Yamuna) Testnet',
     chain: 'AUT',
     rpc: [
       'https://rpc1.bakerloo.autonity.org/',
@@ -32656,9 +32823,9 @@ const chainArray = [
     faucets: [ 'https://faucet.autonity.org/' ],
     nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
-    shortName: 'bakerloo-02',
-    chainId: 65010002,
-    networkId: 65010002,
+    shortName: 'bakerloo-03',
+    chainId: 65010003,
+    networkId: 65010003,
     slip44: 1,
     icon: 'autonity',
     explorers: [
@@ -32713,6 +32880,27 @@ const chainArray = [
   },
   {
     name: 'Autonity Piccadilly (Sumida) Testnet',
+    status: 'deprecated',
+    chain: 'AUT',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'piccadilly-02',
+    chainId: 65100002,
+    networkId: 65100002,
+    slip44: 1,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonity-blockscout',
+        url: 'https://piccadilly.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonity Piccadilly (Yamuna) Testnet',
     chain: 'AUT',
     rpc: [
       'https://rpc1.piccadilly.autonity.org/',
@@ -32721,9 +32909,9 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
-    shortName: 'piccadilly-02',
-    chainId: 65100002,
-    networkId: 65100002,
+    shortName: 'piccadilly-03',
+    chainId: 65100003,
+    networkId: 65100003,
     slip44: 1,
     icon: 'autonity',
     explorers: [
@@ -33915,6 +34103,29 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
+  },
+  {
+    name: 'Gemuchain Testnet',
+    chain: 'Gemuchain',
+    rpc: [ 'https://gemutest-rpc.gemuchain.io' ],
+    faucets: [ 'https://faucet.gemuchain.io/' ],
+    nativeCurrency: { name: 'Gemuchain', symbol: 'GEMU', decimals: 18 },
+    infoURL: 'https://gemuchain.io/',
+    shortName: 'Gemuchain',
+    chainId: 1903648807,
+    networkId: 1903648807,
+    explorers: [
+      {
+        name: 'Gemuchain Explorer (Blockscout)',
+        url: 'https://gemutest-explorer.gemuchain.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://gemutest-bridge.gemuchain.io/login' } ]
+    }
   },
   {
     name: 'RARI Chain Testnet',
