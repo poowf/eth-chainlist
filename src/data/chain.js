@@ -893,7 +893,7 @@ const chainArray = [
     chain: 'crab',
     rpc: [
       'https://crab-rpc.darwinia.network',
-      'https://crab-rpc.darwiniacommunitydao.xyz'
+      'https://crab-rpc.dcdao.box'
     ],
     faucets: [],
     nativeCurrency: { name: 'Crab Network Native Token', symbol: 'CRAB', decimals: 18 },
@@ -939,7 +939,7 @@ const chainArray = [
     chain: 'darwinia',
     rpc: [
       'https://rpc.darwinia.network',
-      'https://darwinia-rpc.darwiniacommunitydao.xyz',
+      'https://darwinia-rpc.dcdao.box',
       'https://darwinia-rpc.dwellir.com'
     ],
     faucets: [],
@@ -948,14 +948,14 @@ const chainArray = [
       symbol: 'RING',
       decimals: 18
     },
-    infoURL: 'https://darwinia.network/',
+    infoURL: 'https://darwinia.network',
     shortName: 'darwinia',
     chainId: 46,
     networkId: 46,
     explorers: [
       {
-        name: 'subscan',
-        url: 'https://darwinia.subscan.io',
+        name: 'blockscout',
+        url: 'https://explorer.darwinia.network',
         standard: 'EIP3091'
       }
     ]
@@ -25588,6 +25588,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Automata Mainnet',
+    chain: 'Automata Mainnet',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ATA', symbol: 'ATA', decimals: 18 },
+    infoURL: 'https://ata.network',
+    shortName: 'automatamainnet',
+    chainId: 65536,
+    networkId: 65536,
+    icon: 'automata',
+    explorers: []
+  },
+  {
     name: 'Janus Testnet',
     chain: 'JanusNetwork',
     icon: 'janusnetwork',
@@ -29063,6 +29076,27 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
+    name: 'Cipherem Testnet',
+    chain: 'Cipherem',
+    rpc: [ 'https://testnet.cipherem.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'CIP', symbol: 'CIP', decimals: 18 },
+    infoURL: 'https://www.cipherem.com',
+    shortName: 'CIP',
+    chainId: 292003,
+    networkId: 292003,
+    slip44: 1,
+    icon: 'cipherem',
+    explorers: [
+      {
+        name: 'Cipherscan Testnet Explorer',
+        icon: 'cipherscan',
+        url: 'https://cipherscan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'One World Chain Mainnet',
     chain: 'One World Chain',
     icon: 'oneWorldChainIcon',
@@ -29185,6 +29219,25 @@ const chainArray = [
       {
         name: 'Bloom Genesis Testnet',
         url: 'https://testnet.bloomgenesis.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Nal Mainnet',
+    chain: 'ETH',
+    icon: 'nal',
+    rpc: [ 'https://rpc.nal.network', 'wss://wss.nal.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.nal.network',
+    shortName: 'nal',
+    chainId: 328527,
+    networkId: 328527,
+    explorers: [
+      {
+        name: 'Nal Network Explorer',
+        url: 'https://scan.nal.network',
         standard: 'EIP3091'
       }
     ]
@@ -31343,15 +31396,21 @@ const chainArray = [
   {
     name: 'Automata Testnet',
     chain: 'Automata Testnet',
-    rpc: [],
+    rpc: [ 'https://automata-testnet.alt.technology' ],
     faucets: [],
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ATA', symbol: 'ATA', decimals: 18 },
     infoURL: 'https://ata.network',
     shortName: 'automatatest',
     chainId: 1398243,
     networkId: 1398243,
     icon: 'automata',
-    explorers: []
+    explorers: [
+      {
+        name: 'Automata Testnet Explorer',
+        url: 'https://automata-testnet-explorer.alt.technology',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'PlayFi Albireo Testnet',
@@ -32177,6 +32236,25 @@ const chainArray = [
       {
         name: 'Soverun',
         url: 'https://explorer.soverun.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'AlienX Mainnet',
+    chain: 'AlienX Mainnet',
+    rpc: [ 'https://rpc.alienxchain.io/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://alienxchain.io/home',
+    shortName: 'AlienX',
+    chainId: 10241024,
+    networkId: 10241024,
+    icon: 'alienx',
+    explorers: [
+      {
+        name: 'AlienXChain Explorer',
+        url: 'https://explorer.alienxchain.io',
         standard: 'EIP3091'
       }
     ]
