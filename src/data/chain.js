@@ -18617,6 +18617,18 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Chakra Testnet',
+    chain: 'Chakra Testnet',
+    rpc: [ 'https://rpcv1-dn-1.chakrachain.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Chakra', symbol: 'CKR', decimals: 18 },
+    infoURL: '',
+    shortName: 'ChakraTN',
+    chainId: 8545,
+    networkId: 8545,
+    explorers: []
+  },
+  {
     name: 'Toki Network',
     chain: 'TOKI',
     rpc: [ 'https://mainnet.buildwithtoki.com/v0/rpc' ],
@@ -21734,6 +21746,30 @@ const chainArray = [
       chain: 'eip155-17000',
       bridges: [ { url: 'https://garnetchain.com/deposit' } ]
     }
+  },
+  {
+    name: 'Onchain Points',
+    chain: 'POP',
+    rpc: [
+      'https://rpc.onchainpoints.xyz',
+      'https://rpc-onchain-points-8n0qkkpr2j.t.conduit.xyz/{CONDUIT_API_KEY}'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'OnchainPoints.xyz', symbol: 'POP', decimals: 18 },
+    infoURL: 'https://onchainpoints.xyz',
+    shortName: 'pop',
+    chainId: 17071,
+    networkId: 17071,
+    icon: 'pop',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.onchainpoints.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'DeFiVerse Testnet',
@@ -25564,6 +25600,27 @@ const chainArray = [
         name: 'eCredits TestNet Explorer',
         url: 'https://explorer.tst.ecredits.com',
         icon: 'ecredits',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Vecno Mainnet',
+    chain: 'VE',
+    rpc: [ 'https://rpc.vecno.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Vecno', symbol: 'VE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://vecno.org',
+    shortName: 've',
+    chainId: 65357,
+    networkId: 65357,
+    icon: 'vecno',
+    explorers: [
+      {
+        name: 'vecno',
+        url: 'https://explorer.vecno.org',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
