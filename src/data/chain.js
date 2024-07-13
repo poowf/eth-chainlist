@@ -4371,6 +4371,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Guru Network Testnet',
+    chain: 'tGURU',
+    icon: 'GuruNetwork',
+    rpc: [ 'https://rpc.gurunetwork.ai/archive/261' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://v2.dex.guru/season-pass/faucet' ],
+    nativeCurrency: { name: 'testGURU', symbol: 'tGURU', decimals: 18 },
+    infoURL: 'https://gurunetwork.ai',
+    shortName: 'tguru',
+    chainId: 261,
+    networkId: 261,
+    explorers: [
+      {
+        name: 'guruscan',
+        url: 'https://scan.gurunetwork.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SUR Blockchain Network',
     chain: 'SUR',
     rpc: [ 'https://sur.nilin.org' ],
@@ -19481,6 +19501,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'WeaveVM Testnet',
+    chain: 'WVM',
+    rpc: [ 'https://testnet.wvm.dev' ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet WeaveVM Token', symbol: 'tWVM', decimals: 18 },
+    infoURL: 'https://wvm.dev',
+    shortName: 'twvm',
+    chainId: 9496,
+    networkId: 9496,
+    icon: 'weavevm',
+    explorers: [
+      {
+        name: 'WeaveVM Explorer',
+        url: 'https://explorer.wvm.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Rangers Protocol Testnet Robin',
     chain: 'Rangers',
     icon: 'rangers',
@@ -22128,6 +22167,30 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
+    name: 'BlockX Atlantis Testnet',
+    chain: 'blockx',
+    rpc: [ 'https://atlantis-web3.blockxnet.com' ],
+    faucets: [ 'https://ping.blockxnet.com/blockx-atlantis-testnet/faucet' ],
+    nativeCurrency: { name: 'BCX', symbol: 'BCX', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.blockxnet.com/',
+    shortName: 'tbcx',
+    chainId: 19077,
+    networkId: 19077,
+    explorers: [
+      {
+        name: 'BlockX EVM Explorer (Blockscout)',
+        url: 'https://testnet-explorer.blockxnet.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'BlockX Cosmos Explorer (Ping)',
+        url: 'https://ping.blockxnet.com/blockx-atlantis-testnet',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Decentraconnect Social',
@@ -27447,7 +27510,7 @@ const chainArray = [
   {
     name: 'VeChain Testnet',
     chain: 'VeChain',
-    rpc: [],
+    rpc: [ 'https://rpc-testnet.vechain.energy' ],
     faucets: [ 'https://faucet.vecha.in' ],
     nativeCurrency: { name: 'VeChain', symbol: 'VET', decimals: 18 },
     infoURL: 'https://vechain.org',
@@ -30007,6 +30070,25 @@ const chainArray = [
     networkId: 484752,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'Gobbl Testnet',
+    chain: 'Gobbl Testnet',
+    rpc: [ 'https://rpc.gobbl.io' ],
+    faucets: [ 'https://faucet.gobbl.io' ],
+    nativeCurrency: { name: 'Gobbl Token', symbol: 'GOBBL', decimals: 18 },
+    infoURL: 'https://www.gobbl.io/',
+    shortName: 'gbl-testnet',
+    chainId: 486487,
+    networkId: 486487,
+    icon: 'gobbl',
+    explorers: [
+      {
+        name: 'Gobbl Testnet Explorer',
+        url: 'https://explorer.gobbl.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Autonomys Testnet Nova Domain',
