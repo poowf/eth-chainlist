@@ -3438,6 +3438,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'ABEY Testnet',
+    chain: 'ABEY',
+    rpc: [ 'https://testrpc.abeychain.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [ 'https://testnet-faucet.abeychain.com' ],
+    nativeCurrency: { name: 'ABEY', symbol: 'tABEY', decimals: 18 },
+    infoURL: 'https://abey.com',
+    shortName: 'abeyt',
+    chainId: 178,
+    networkId: 178,
+    explorers: [
+      {
+        name: 'abeyscan-testnet',
+        url: 'https://testnet.abeyscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ABEY Mainnet',
+    chain: 'ABEY',
+    rpc: [ 'https://rpc.abeychain.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'ABEY', symbol: 'ABEY', decimals: 18 },
+    infoURL: 'https://abey.com',
+    shortName: 'abey',
+    chainId: 179,
+    networkId: 179,
+    explorers: [
+      {
+        name: 'abeyscan',
+        url: 'https://abeyscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'AME Chain Mainnet',
     chain: 'AME',
     rpc: [ 'https://node1.amechain.io/' ],
@@ -10590,6 +10628,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'StarCHAIN Testnet',
+    chain: 'StarCHAIN',
+    rpc: [ 'https://testnet-rpc1.starworksglobal.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'STARX', symbol: 'STARX', decimals: 18 },
+    infoURL: 'https://www.starworksglobal.com',
+    shortName: 'starchain-testnet',
+    chainId: 1570,
+    networkId: 1570,
+    explorers: [
+      {
+        name: 'StarCHAIN Explorer',
+        url: 'https://testnet.starchainscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'StarCHAIN',
+    chain: 'StarCHAIN',
+    rpc: [ 'https://rpc.starworksglobal.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'STARX', symbol: 'STARX', decimals: 18 },
+    infoURL: 'https://www.starworksglobal.com',
+    shortName: 'starchain',
+    chainId: 1578,
+    networkId: 1578,
+    explorers: [
+      {
+        name: 'StarCHAIN Explorer',
+        url: 'https://starchainscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Ethereum Inscription Mainnet',
     chain: 'ETINS',
     rpc: [ 'https://rpc.etins.org' ],
@@ -17327,6 +17403,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'RACE Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://racetestnet.io/' ],
+    faucets: [ 'https://faucet.racetestnet.io/' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://race.foundation/',
+    shortName: 'racesep',
+    chainId: 6806,
+    networkId: 6806,
+    slip44: 1,
+    icon: 'race',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.racescan.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://testnet-bridge.raceconomy.com/' } ]
+    }
+  },
+  {
     name: 'Pools Mainnet',
     chain: 'Pools',
     rpc: [ 'https://rpc.poolsmobility.com' ],
@@ -21460,6 +21562,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'KYMTC Mainnet',
+    chain: 'KYMTC',
+    icon: 'kymtc',
+    rpc: [ 'https://mainnet-rpc.kymaticscan.online' ],
+    faucets: [],
+    nativeCurrency: { name: 'KYMTC', symbol: 'KYMTC', decimals: 18 },
+    infoURL: 'https://kymaticscan.online',
+    shortName: 'KYMTC',
+    chainId: 15430,
+    networkId: 15430,
+    explorers: [
+      {
+        name: 'KYMTC Mainnet Explorer',
+        url: 'https://kymaticscan.online',
+        icon: 'kymtc',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'LoopNetwork Mainnet',
     chain: 'LoopNetwork',
     rpc: [ 'https://api.mainnetloop.com' ],
@@ -22193,6 +22315,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'BlockX Mainnet',
+    chain: 'blockx',
+    rpc: [],
+    faucets: [ 'https://ping.blockxnet.com/blockx/faucet' ],
+    nativeCurrency: { name: 'BCXT', symbol: 'BCXT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.blockxnet.com/',
+    shortName: 'bcxt',
+    chainId: 19191,
+    networkId: 19191,
+    explorers: [
+      {
+        name: 'BlockX EVM Explorer (Blockscout)',
+        url: 'https://explorer.blockxnet.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'BlockX Cosmos Explorer (Ping)',
+        url: 'https://ping.blockxnet.com/blockx',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Decentraconnect Social',
     chain: 'DCSM',
     icon: 'dcsmIcon',
@@ -22748,6 +22894,26 @@ const chainArray = [
       {
         name: 'Blast Testnet',
         url: 'http://testnet-explorer.blastblockchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'KYMTC Testnet',
+    chain: 'KYMTC',
+    icon: 'kymtc',
+    rpc: [ 'https://testnet-rpc.kymaticscan.online' ],
+    faucets: [ 'https://faucet.kymaticscan.online' ],
+    nativeCurrency: { name: 'KYMTC', symbol: 'KYMTC', decimals: 18 },
+    infoURL: 'https://testnet-explorer.kymaticscan.online',
+    shortName: 'tKYMTC',
+    chainId: 24076,
+    networkId: 24076,
+    explorers: [
+      {
+        name: 'KYMTC Testnet Explorer',
+        url: 'https://testnet-explorer.kymaticscan.online',
+        icon: 'kymtc',
         standard: 'EIP3091'
       }
     ]
@@ -32712,6 +32878,25 @@ const chainArray = [
       {
         name: 'DeBank Chain Explorer',
         url: 'https://sepolia-explorer.testnet.debank.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DBK Chain',
+    chain: 'DBK Chain',
+    rpc: [ 'https://rpc.mainnet.dbkchain.io' ],
+    icon: 'dbkchain',
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://docs.dbkchain.io',
+    shortName: 'dbkchain',
+    chainId: 20240603,
+    networkId: 20240603,
+    explorers: [
+      {
+        name: 'DBK Chain Explorer',
+        url: 'https://scan.dbkchain.io',
         standard: 'EIP3091'
       }
     ]
