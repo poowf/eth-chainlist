@@ -3508,6 +3508,25 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Dojima Testnet',
+    chain: 'Dojima',
+    rpc: [ 'https://rpc-test-d11k.dojima.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dojima', symbol: 'DOJ', decimals: 18 },
+    icon: 'dojima',
+    infoURL: 'https://www.dojima.network/',
+    shortName: 'dojtestnet',
+    chainId: 184,
+    networkId: 184,
+    explorers: [
+      {
+        name: 'Dojima Testnet Explorer',
+        url: 'https://explorer-test.dojima.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Mint Mainnet',
     chain: 'ETH',
     rpc: [
@@ -3545,6 +3564,25 @@ const chainArray = [
       {
         name: 'seeleview',
         url: 'https://seeleview.net',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Dojima',
+    chain: 'Dojima',
+    rpc: [ 'https://rpc-d11k.dojima.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dojima', symbol: 'DOJ', decimals: 18 },
+    icon: 'dojima',
+    infoURL: 'https://www.dojima.network/',
+    shortName: 'dojima',
+    chainId: 187,
+    networkId: 187,
+    explorers: [
+      {
+        name: 'Dojima Explorer',
+        url: 'https://explorer.dojima.network',
         standard: 'none'
       }
     ]
@@ -9466,6 +9504,18 @@ const chainArray = [
     shortName: 'Cycle',
     chainId: 1221,
     networkId: 1221,
+    icon: 'cycle'
+  },
+  {
+    name: 'Cycle Network Testnet Jellyfish',
+    chain: 'ETH',
+    rpc: [ 'https://jellyfish-rpc-testnet.cyclenetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.cyclenetwork.io/',
+    shortName: 'cyclej',
+    chainId: 1223,
+    networkId: 1223,
     icon: 'cycle'
   },
   {
@@ -17493,7 +17543,10 @@ const chainArray = [
     icon: 'zetachain',
     rpc: [
       'https://zetachain-evm.blockpi.network/v1/rpc/public',
-      'https://zetachain-mainnet-archive.allthatnode.com:8545'
+      'https://zetachain-mainnet.g.allthatnode.com/archive/evm',
+      'https://zeta-chain.drpc.org',
+      'https://zetachain-mainnet.public.blastapi.io',
+      'https://7000.rpc.thirdweb.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Zeta', symbol: 'ZETA', decimals: 18 },
@@ -17511,30 +17564,34 @@ const chainArray = [
     ]
   },
   {
-    name: 'ZetaChain Athens 3 Testnet',
+    name: 'ZetaChain Testnet',
     chain: 'ZetaChain',
     icon: 'zetachain',
     rpc: [
       'https://zetachain-athens-evm.blockpi.network/v1/rpc/public',
-      'wss://zetachain-athens.blockpi.network/rpc/v1/public/websocket',
-      'https://zetachain-testnet-archive.allthatnode.com:8545'
+      'https://zetachain-testnet.public.blastapi.io',
+      'https://zetachain-athens.g.allthatnode.com/archive/evm',
+      'https://7001.rpc.thirdweb.com',
+      'https://zeta-chain-testnet.drpc.org'
     ],
-    faucets: [ 'https://labs.zetachain.com/get-zeta' ],
+    faucets: [
+      'https://www.zetachain.com/docs/reference/apps/get-testnet-zeta/'
+    ],
     nativeCurrency: { name: 'Zeta', symbol: 'ZETA', decimals: 18 },
     infoURL: 'https://zetachain.com/docs',
-    shortName: 'zetachain-athens',
+    shortName: 'zetachain-testnet',
     chainId: 7001,
     networkId: 7001,
     slip44: 1,
     status: 'active',
     explorers: [
       {
-        name: 'ZetaChain Athens Testnet Explorer',
-        url: 'https://athens3.explorer.zetachain.com',
+        name: 'ZetaScan',
+        url: 'https://athens.explorer.zetachain.com',
         standard: 'none'
       },
       {
-        name: 'blockscout',
+        name: 'Blockscout',
         url: 'https://zetachain-athens-3.blockscout.com',
         icon: 'blockscout',
         standard: 'EIP3091'
@@ -19091,6 +19148,30 @@ const chainArray = [
       {
         name: 'Unique Scan / Sapphire',
         url: 'https://uniquescan.io/sapphire',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Avenium Testnet',
+    chain: 'AVE',
+    rpc: [
+      'https://eu-testnet.avenium.io/',
+      'https://connect-testnet.avenium.io'
+    ],
+    faucets: [ 'https://faucet-testnet.avenium.io' ],
+    nativeCurrency: { name: 'Ave Native Token', symbol: 'tAVE', decimals: 18 },
+    infoURL: 'https://avenium.io',
+    shortName: 'tave',
+    chainId: 8886,
+    networkId: 8886,
+    icon: 'avenium',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'Avenium Explorer Testnet',
+        icon: 'avenium',
+        url: 'https://testnet.avescan.net',
         standard: 'none'
       }
     ]
@@ -26397,6 +26478,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cycle Network Mainnet Sailboat',
+    chain: 'ETH',
+    rpc: [ 'https://sailboat-rpc-mainnet.cyclenetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.cyclenetwork.io/',
+    shortName: 'cycles',
+    chainId: 77677,
+    networkId: 77677,
+    icon: 'cycle'
+  },
+  {
     name: 'Toronet Mainnet',
     chain: 'Toronet',
     icon: 'toronet',
@@ -29510,6 +29603,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'WABA Chain Testnet',
+    chain: 'WABA Testnet',
+    icon: 'waba',
+    rpc: [ 'https://rpc.wabaworld.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'WABA', symbol: 'WABA', decimals: 18 },
+    infoURL: 'https://www.wabanetwork.org',
+    shortName: 'waba',
+    chainId: 327126,
+    networkId: 327126,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.wabaworld.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Nal Mainnet',
     chain: 'ETH',
     icon: 'nal',
@@ -32012,6 +32124,35 @@ const chainArray = [
     networkId: 4281033,
     icon: 'ethereum',
     explorers: []
+  },
+  {
+    name: 'Altar Testnet',
+    chain: 'Altar',
+    rpc: [ 'https://altar-rpc.ceremonies.ai/' ],
+    faucets: [ 'https://sepoliafaucet.com/' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ceremonies.gitbook.io',
+    shortName: 'altarTestnet',
+    chainId: 4444444,
+    networkId: 4444444,
+    slip44: 1,
+    icon: 'altarTestnet',
+    explorers: [
+      {
+        name: 'altar testnet explorer',
+        url: 'https://altar-explorer.ceremonies.ai',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://altar-testnet-yzxhzk61ck-b7590e4db247a680.testnets.rollbridge.app/'
+        }
+      ]
+    }
   },
   {
     name: 'NumBlock Chain',
