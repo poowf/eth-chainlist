@@ -7695,7 +7695,16 @@ const chainArray = [
     shortName: 'wan',
     chainId: 888,
     networkId: 888,
-    slip44: 5718350
+    slip44: 5718350,
+    icon: 'wanchain',
+    explorers: [
+      {
+        name: 'wanscan',
+        icon: 'wanchain',
+        url: 'https://wanscan.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MAXI Chain Testnet',
@@ -8337,7 +8346,16 @@ const chainArray = [
     shortName: 'twan',
     chainId: 999,
     networkId: 999,
-    slip44: 1
+    slip44: 1,
+    icon: 'wanchain',
+    explorers: [
+      {
+        name: 'wanscan',
+        icon: 'wanchain',
+        url: 'https://testnet.wanscan.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'GTON Mainnet',
@@ -11205,6 +11223,7 @@ const chainArray = [
     nativeCurrency: { name: 'LIF3', symbol: 'LIF3', decimals: 18 },
     infoURL: 'https://docs.lif3.com/',
     shortName: 'lif3-testnet',
+    icon: 'lif3',
     chainId: 1811,
     networkId: 1811,
     explorers: [
@@ -16109,6 +16128,11 @@ const chainArray = [
     networkId: 5000,
     explorers: [
       {
+        name: 'mantlescan',
+        url: 'https://mantlescan.xyz',
+        standard: 'EIP3091'
+      },
+      {
         name: 'Mantle Explorer',
         url: 'https://explorer.mantle.xyz',
         standard: 'EIP3091'
@@ -19044,6 +19068,7 @@ const chainArray = [
     nativeCurrency: { name: 'LIF3', symbol: 'LIF3', decimals: 18 },
     infoURL: 'https://docs.lif3.com/',
     shortName: 'lif3-mainnet',
+    icon: 'lif3',
     chainId: 8869,
     networkId: 8869,
     explorers: [
@@ -20292,6 +20317,25 @@ const chainArray = [
     shortName: 'SJ',
     chainId: 10086,
     networkId: 10086
+  },
+  {
+    name: 'MetaNova Verse',
+    chain: 'MNV',
+    rpc: [ 'https://web3.metanovaverse.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'MNV', symbol: 'MNV', decimals: 18 },
+    features: [],
+    infoURL: 'https://www.blockxnet.com/',
+    shortName: 'mnv',
+    chainId: 10096,
+    networkId: 10096,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.blockxnet.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Blockchain Genesis Mainnet',
@@ -33786,6 +33830,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Neon EVM Devnet Rollup',
+    chain: 'Solana',
+    rpc: [ 'https://devnet.rollup.neonevm.org/' ],
+    faucets: [],
+    icon: 'neon',
+    nativeCurrency: { name: 'Neon', symbol: 'NEON', decimals: 18 },
+    infoURL: 'https://neonevm.org/',
+    shortName: 'neonevm-devnet-rollup',
+    chainId: 245022929,
+    networkId: 245022929,
+    explorers: []
   },
   {
     name: 'Neon EVM Mainnet',
