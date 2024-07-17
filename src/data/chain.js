@@ -5219,6 +5219,32 @@ const chainArray = [
     }
   },
   {
+    name: 'GRVT Mainnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://grvt.io/',
+    shortName: 'grvt',
+    chainId: 325,
+    networkId: 325,
+    icon: 'grvt',
+    explorers: []
+  },
+  {
+    name: 'GRVT Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://grvt.io/',
+    shortName: 'grvt-sepolia',
+    chainId: 326,
+    networkId: 326,
+    icon: 'grvt',
+    explorers: []
+  },
+  {
     name: 'Web3Q Mainnet',
     chain: 'Web3Q',
     rpc: [ 'https://mainnet.web3q.io:8545' ],
@@ -17477,6 +17503,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'RACE Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://racemainnet.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://race.foundation/',
+    shortName: 'raceeth',
+    chainId: 6805,
+    networkId: 6805,
+    slip44: 1,
+    icon: 'race',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://racescan.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.race.foundation/' } ]
+    }
+  },
+  {
     name: 'RACE Testnet',
     chain: 'ETH',
     rpc: [ 'https://racetestnet.io/' ],
@@ -17499,7 +17551,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
-      bridges: [ { url: 'https://testnet-bridge.raceconomy.com/' } ]
+      bridges: [ { url: 'https://testnet-bridge.race.foundation/' } ]
     }
   },
   {
@@ -23994,7 +24046,10 @@ const chainArray = [
     name: 'Funki',
     chain: 'ETH',
     icon: 'funki',
-    rpc: [],
+    rpc: [
+      'https://rpc-mainnet.funkichain.com',
+      'wss://rpc-mainnet.funkichain.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://funkichain.com',
@@ -24004,7 +24059,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Funki Mainnet Explorer',
-        url: 'https://mainnet.funkichain.com',
+        url: 'https://funki.superscan.network',
         standard: 'none'
       }
     ]
@@ -25698,6 +25753,27 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://app.gobob.xyz' } ]
     }
+  },
+  {
+    name: 'Orange Chain Mainnet',
+    title: 'Orange Chain Mainnet',
+    chain: 'Orange Chain',
+    rpc: [ 'https://rpc.orangechain.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://orangechain.xyz',
+    shortName: 'Orange-Chain-Mainnet',
+    chainId: 61022,
+    networkId: 61022,
+    icon: 'orange',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://scan.orangechain.xyz',
+        icon: 'orange',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'KaiChain',
@@ -32199,6 +32275,31 @@ const chainArray = [
     }
   },
   {
+    name: 'ZERO Testnet (Sepolia)',
+    chain: 'ETH',
+    icon: 'zero-sepolia',
+    rpc: [ 'https://rpc.zerion.io/v1/zero-sepolia' ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.zero.network' } ]
+    },
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://docs.zero.network',
+    shortName: 'zero-sepolia',
+    chainId: 4457845,
+    networkId: 4457845,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'ZERO Testnet Explorer',
+        url: 'https://explorer.zero.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'NumBlock Chain',
     chain: 'NumBlock',
     rpc: [ 'https://rpc-mainnet.numblock.org' ],
@@ -32837,15 +32938,35 @@ const chainArray = [
     ]
   },
   {
-    name: 'NeoX Testnet',
+    name: 'NeoX Testnet T3',
     chain: 'NeoX',
-    rpc: [ 'https://testnet.rpc.banelabs.org/' ],
+    rpc: [ 'https://neoxseed1.ngd.network/' ],
     faucets: [],
     nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
     infoURL: 'https://neo.org/',
     shortName: 'neox',
     chainId: 12227331,
     networkId: 12227331,
+    icon: 'neox',
+    explorers: [
+      {
+        name: 'neox-scan',
+        url: 'https://testnet.scan.banelabs.org',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'deprecated'
+  },
+  {
+    name: 'NeoX Testnet T4',
+    chain: 'NeoX',
+    rpc: [ 'https://testnet.rpc.banelabs.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
+    infoURL: 'https://neo.org/',
+    shortName: 'neox-t4',
+    chainId: 12227332,
+    networkId: 12227332,
     icon: 'neox',
     explorers: [
       {
