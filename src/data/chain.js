@@ -6667,9 +6667,9 @@ const chainArray = [
     icon: 'flowevm',
     explorers: [
       {
-        name: 'Flow Diver',
-        url: 'https://previewnet.flowdiver.io',
-        standard: 'none'
+        name: 'EVM on Flow Block Explorer (PreviewNet)',
+        url: 'https://eth.flowscan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -8315,13 +8315,33 @@ const chainArray = [
     ]
   },
   {
-    name: '5ireChain Thunder',
+    name: '5ireChain Mainnet',
     chain: '5ireChain',
-    rpc: [ 'https://rpc-testnet.5ire.network' ],
-    faucets: [ 'https://explorer.5ire.network/faucet' ],
-    nativeCurrency: { name: '5ire Token', symbol: '5ire', decimals: 18 },
+    rpc: [ 'https://rpc.5ire.network' ],
+    faucets: [],
+    nativeCurrency: { name: '5ire Token', symbol: '5IRE', decimals: 18 },
     infoURL: 'https://5ire.org',
     shortName: '5ire',
+    chainId: 995,
+    networkId: 995,
+    icon: '5ireChain',
+    explorers: [
+      {
+        name: '5ireChain Explorer',
+        url: 'https://5irescan.io',
+        standard: 'none',
+        icon: '5ireChain'
+      }
+    ]
+  },
+  {
+    name: '5ireChain Thunder',
+    chain: '5ireChain Testnet',
+    rpc: [ 'https://rpc-testnet.5ire.network' ],
+    faucets: [ 'https://explorer.5ire.network/faucet' ],
+    nativeCurrency: { name: '5ire Testnet Token', symbol: 'T5IRE', decimals: 18 },
+    infoURL: 'https://5ire.org',
+    shortName: 'T5ire',
     chainId: 997,
     networkId: 997,
     icon: '5ireChain',
@@ -11916,6 +11936,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'B3 Sepolia Testnet',
+    chain: 'B3 Sepolia Testnet',
+    icon: 'b3',
+    rpc: [ 'https://sepolia.b3.fun' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://b3.fun',
+    shortName: 'b3-sepolia',
+    chainId: 1993,
+    networkId: 1993,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://sepolia.explorer.b3.fun',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Ekta',
     chain: 'EKTA',
     rpc: [ 'https://main.ekta.io' ],
@@ -13584,22 +13623,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'King Of Legends Devnet',
-    title: 'King Of Legends Devnet',
-    chain: 'KOL',
+    name: 'King Of Legends Mainnet',
+    title: 'King Of Legends Mainnet',
+    chain: 'KCC',
     icon: 'kol',
-    rpc: [ 'https://rpc-devnet.kinggamer.org/' ],
+    rpc: [ 'https://rpc-mainnet.kinggamer.org/' ],
     faucets: [],
-    nativeCurrency: { name: 'King Of Legends', symbol: 'KOL', decimals: 18 },
+    nativeCurrency: { name: 'King Of Legends', symbol: 'KCC', decimals: 18 },
     infoURL: 'https://kingoflegends.net/',
-    shortName: 'kol',
+    shortName: 'kcc',
     chainId: 2425,
     networkId: 2425,
     slip44: 1,
     explorers: [
       {
-        name: 'King Of Legends Devnet Explorer',
-        url: 'https://devnet.kingscan.org',
+        name: 'King Of Legends Mainnet Explorer',
+        url: 'https://kingscan.org',
         icon: 'kol',
         standard: 'EIP3091'
       }
@@ -24058,6 +24097,11 @@ const chainArray = [
     networkId: 33979,
     explorers: [
       {
+        name: 'FunkiScan',
+        url: 'https://funkiscan.io',
+        standard: 'none'
+      },
+      {
         name: 'Funki Mainnet Explorer',
         url: 'https://funki.superscan.network',
         standard: 'none'
@@ -28759,6 +28803,26 @@ const chainArray = [
       {
         name: 'Lit Chronicle Explorer',
         url: 'https://chain.litprotocol.com',
+        icon: 'lit',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Chronicle Yellowstone - Lit Protocol Testnet',
+    chain: 'LPY',
+    icon: 'lit',
+    rpc: [ 'https://yellowstone-rpc.litprotocol.com' ],
+    faucets: [ 'https://developer.litprotocol.com/support/intro' ],
+    nativeCurrency: { name: 'Test LPX', symbol: 'tstLPX', decimals: 18 },
+    infoURL: 'https://litprotocol.com',
+    shortName: 'lpy',
+    chainId: 175188,
+    networkId: 175188,
+    explorers: [
+      {
+        name: 'Lit Chronicle Yellowstone Explorer',
+        url: 'https://yellowstone-explorer.litprotocol.com',
         icon: 'lit',
         standard: 'EIP3091'
       }
