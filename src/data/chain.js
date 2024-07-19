@@ -4373,6 +4373,24 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Swan Chain Mainnet',
+    chain: 'SWAN',
+    rpc: [ 'https://mainnet-rpc01.swanchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SWANETH', symbol: 'sETH', decimals: 18 },
+    infoURL: 'https://swanchain.io/',
+    shortName: 'Swan',
+    chainId: 254,
+    networkId: 254,
+    explorers: [
+      {
+        name: 'Swanchain Explorer',
+        url: 'https://swanscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Kroma',
     chain: 'ETH',
     rpc: [ 'https://api.kroma.network', 'https://rpc-kroma.rockx.com' ],
@@ -12411,7 +12429,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'SWANETH', symbol: 'sETH', decimals: 18 },
     infoURL: 'https://swanchain.io/',
-    shortName: 'swan',
+    shortName: 'saturn',
     chainId: 2024,
     networkId: 2024
   },
@@ -17234,6 +17252,30 @@ const chainArray = [
       {
         name: 'UPTN Explorer',
         url: 'https://explorer.uptn.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'LAOS',
+    title: 'LAOS Mainnet',
+    chain: 'LAOS',
+    icon: 'laosnetwork',
+    rpc: [
+      'https://rpc.laos.laosfoundation.io',
+      'wss://rpc.laos.laosfoundation.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'LAOS', symbol: 'LAOS', decimals: 18 },
+    infoURL: 'https://laosnetwork.io',
+    shortName: 'laosnetwork',
+    chainId: 6283,
+    networkId: 6283,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.laos.laosfoundation.io',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -33132,6 +33174,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Mande Network Mainnet',
+    chain: 'Mande',
+    rpc: [ 'https://mande-mainnet.public.blastapi.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Mand', symbol: 'MAND', decimals: 18 },
+    infoURL: 'https://mande.network/',
+    shortName: 'Mande',
+    chainId: 18071918,
+    networkId: 18071918,
+    icon: 'mande',
+    explorers: [
+      {
+        name: 'FYI',
+        url: 'https://dym.fyi/r/mande',
+        icon: 'fyi',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'IOLite',
     chain: 'ILT',
     rpc: [ 'https://net.iolite.io' ],
@@ -33228,6 +33290,25 @@ const chainArray = [
       {
         name: 'Pego Network Explorer',
         url: 'https://scan.pego.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Vcity Testnet',
+    chain: 'VCITY',
+    rpc: [ 'https://testnet.vcity.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet Vcity Token', symbol: 'VCITY', decimals: 18 },
+    features: [],
+    infoURL: 'https://vcity.app',
+    shortName: 'Vcity',
+    chainId: 20230825,
+    networkId: 20230825,
+    explorers: [
+      {
+        name: 'Vcity Explorer',
+        url: 'https://scan.vcity.app',
         standard: 'EIP3091'
       }
     ]
@@ -33739,6 +33820,23 @@ const chainArray = [
       type: 'L2',
       chain: 'eip155-1',
       bridges: [ { url: 'https://app.optimism.io/bridge/deposit' } ]
+    }
+  },
+  {
+    name: 'Backstop Testnet',
+    chain: 'backstopTestnet',
+    icon: 'backstop',
+    rpc: [ 'https://testnet.rpc.backstop.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'Backstop Testnet 1', symbol: 'ZBS', decimals: 18 },
+    infoURL: 'https://backstop.technology/testnet',
+    shortName: 'backstop-testnet',
+    chainId: 88558801,
+    networkId: 88558801,
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://testnet.bridge.backstop.technology' } ]
     }
   },
   {
