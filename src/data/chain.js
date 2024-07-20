@@ -4064,6 +4064,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'BlockEx Mainnet',
+    chain: 'BlockEx',
+    rpc: [ 'https://rpc.blockex.biz' ],
+    faucets: [],
+    nativeCurrency: { name: 'BlockEx', symbol: 'XBE', decimals: 18 },
+    infoURL: 'https://blockex.biz',
+    shortName: 'BlockEx',
+    chainId: 221,
+    networkId: 221,
+    explorers: [
+      {
+        name: 'BlockEx Scan',
+        url: 'http://explorer.blockex.biz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Permission',
     chain: 'ASK',
     rpc: [ 'https://blockchain-api-mainnet.permission.io/rpc' ],
@@ -6612,6 +6630,26 @@ const chainArray = [
         url: 'https://vne.network/rose',
         standard: 'none',
         icon: 'vine'
+      }
+    ]
+  },
+  {
+    name: 'Darwin Devnet',
+    chain: 'Darwin',
+    rpc: [ 'https://devnet.darwinchain.ai' ],
+    faucets: [ 'https://devnet.darwinchain.ai/faucet' ],
+    nativeCurrency: { name: 'Darwin Devnet token', symbol: 'DNA', decimals: 18 },
+    infoURL: 'https://darwinchain.ai',
+    shortName: 'darwin-devnet',
+    chainId: 610,
+    networkId: 610,
+    icon: 'darwin',
+    explorers: [
+      {
+        name: 'Darwin Explorer',
+        url: 'https://explorer.darwinchain.ai',
+        icon: 'darwin',
+        standard: 'none'
       }
     ]
   },
@@ -16661,6 +16699,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Netsbo',
+    chain: 'NETSBO',
+    rpc: [ 'https://rpc1.netsbo.io', 'https://rpc2.netsbo.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Netsbo', symbol: 'NETS', decimals: 18 },
+    infoURL: 'https://netsbo.io',
+    shortName: 'nets',
+    chainId: 5333,
+    networkId: 5333,
+    icon: 'netsbo',
+    explorers: [
+      {
+        name: 'netsbo',
+        url: 'https://explorer.netsbo.io',
+        icon: 'netsbo',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Tritanium Testnet',
     chain: 'TRITANIUM',
     rpc: [
@@ -21046,6 +21104,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'SatsChain',
+    chain: 'SatsChain',
+    rpc: [ 'https://rpc-satschain-1.bevm.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SATS', symbol: 'SATS', decimals: 18 },
+    infoURL: 'https://github.com/BTCSatsNetwork',
+    shortName: 'satschain',
+    chainId: 11521,
+    networkId: 11521,
+    icon: 'satschain',
+    explorers: [
+      {
+        name: 'satschain scan',
+        url: 'https://scan-satschain.bevm.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Sardis Testnet',
     chain: 'SRDX',
     icon: 'sardisTestnet',
@@ -22010,6 +22087,25 @@ const chainArray = [
         name: 'GchainExplorer',
         url: 'https://gchainexplorer.genesys.network',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: '0G-Newton-Testnet',
+    chain: '0G-Testnet',
+    rpc: [ 'https://rpc-testnet.0g.ai' ],
+    faucets: [ 'https://faucet.0g.ai' ],
+    nativeCurrency: { name: 'A0GI', symbol: 'A0GI', decimals: 18 },
+    infoURL: 'https://0g.ai',
+    shortName: '0gai-testnet',
+    chainId: 16600,
+    networkId: 16600,
+    icon: '0gai',
+    explorers: [
+      {
+        name: '0G Chain Explorer',
+        url: 'https://chainscan-newton.0g.ai',
+        standard: 'none'
       }
     ]
   },
@@ -33203,6 +33299,48 @@ const chainArray = [
     shortName: 'ilt',
     chainId: 18289463,
     networkId: 18289463
+  },
+  {
+    name: 'DeepBrainChain Testnet',
+    chain: 'DeepBrainChain',
+    rpc: [ 'https://rpc-testnet.dbcwallet.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'DeepBrainChain', symbol: 'DBC', decimals: 18 },
+    infoURL: 'https://www.deepbrainchain.org',
+    shortName: 'tDBC',
+    chainId: 19850818,
+    icon: 'dbc',
+    networkId: 19850818,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'DeepBrainChain Testnet',
+        url: 'https://blockscout-testnet.dbcscan.io',
+        icon: 'dbc',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DeepBrainChain Mainnet',
+    chain: 'DeepBrainChain',
+    rpc: [ 'https://rpc.dbcwallet.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'DeepBrainChain', symbol: 'DBC', decimals: 18 },
+    infoURL: 'https://www.deepbrainchain.org',
+    shortName: 'DBC',
+    chainId: 19880818,
+    networkId: 19880818,
+    icon: 'dbc',
+    slip44: 1,
+    explorers: [
+      {
+        name: 'DeepBrainChain Mainnet',
+        url: 'https://blockscout.dbcscan.io',
+        icon: 'dbc',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Stability Testnet',
