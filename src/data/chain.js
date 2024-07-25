@@ -13114,6 +13114,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Animechain Testnet',
+    chain: 'Animechain',
+    rpc: [ 'https://rpc.kanda.animechain.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'Coin', symbol: 'COIN', decimals: 18 },
+    infoURL: 'https://animechain.ai',
+    shortName: 'animechaint',
+    chainId: 2162,
+    networkId: 2162,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.kanda.animechain.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Moonsama Network',
     chain: 'MSN',
     rpc: [ 'https://rpc.moonsama.com', 'wss://rpc.moonsama.com/ws' ],
@@ -25940,7 +25958,7 @@ const chainArray = [
     name: 'Orange Chain Mainnet',
     title: 'Orange Chain Mainnet',
     chain: 'Orange Chain',
-    rpc: [ 'https://rpc.orangechain.xyz' ],
+    rpc: [ 'https://rpc.orangechain.xyz', 'https://hk-rpc.orangechain.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://orangechain.xyz',
@@ -26171,6 +26189,29 @@ const chainArray = [
       {
         name: 'Avalanche Subnet Testnet Explorer',
         url: 'https://subnets-test.avax.network/plyr',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'LAOS Sigma Testnet',
+    title: 'LAOS Sigma Testnet',
+    chain: 'LAOS Sigma Testnet',
+    rpc: [
+      'https://rpc.laossigma.laosfoundation.io',
+      'wss://rpc.laossigma.laosfoundation.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'SIGMA', symbol: 'SIGMA', decimals: 18 },
+    infoURL: 'https://laosnetwork.io',
+    shortName: 'laossigma',
+    chainId: 62850,
+    networkId: 62850,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://sigma.explorer.laosnetwork.io',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -28459,6 +28500,21 @@ const chainArray = [
     chainId: 110011,
     networkId: 110011,
     parent: { type: 'L2', chain: 'eip155-110000' }
+  },
+  {
+    name: 'MARS Credit',
+    chain: 'MARS',
+    rpc: [ 'https://node99-production-dd5f.up.railway.app:443' ],
+    faucets: [],
+    nativeCurrency: { name: 'Mars', symbol: 'MARS', decimals: 18 },
+    infoURL: 'https://marscredit.xyz/',
+    shortName: 'mars',
+    chainId: 110110,
+    networkId: 110110,
+    slip44: 1,
+    icon: 'marscredit',
+    explorers: [],
+    redFlags: []
   },
   {
     name: 'Siberium Test Network',
@@ -35320,7 +35376,7 @@ const chainArray = [
     title: 'GitSwarm Test Network',
     chain: 'ETH',
     icon: 'gitswarm',
-    rpc: [ 'https://gitswarm.com:2096' ],
+    rpc: [ 'https://testnet.gitswarm.com:2096' ],
     faucets: [],
     nativeCurrency: { name: 'GitSwarm Ether', symbol: 'GS-ETH', decimals: 18 },
     infoURL: 'https://gitswarm.com/',
