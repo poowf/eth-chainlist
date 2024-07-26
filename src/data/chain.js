@@ -23797,7 +23797,7 @@ const chainArray = [
   {
     name: 'Movement EVM Testnet',
     chain: 'MOVE',
-    rpc: [],
+    rpc: [ 'https://mevm.testnet.imola.movementlabs.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Move', symbol: 'MOVE', decimals: 18 },
     infoURL: 'https://movementlabs.xyz',
@@ -23808,7 +23808,7 @@ const chainArray = [
     explorers: [
       {
         name: 'mevm explorer',
-        url: 'https://explorer.movementlabs.xyz',
+        url: 'https://explorer.testnet.imola.movementlabs.xyz',
         standard: 'none'
       }
     ],
@@ -24999,6 +24999,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Neo X Mainnet',
+    chain: 'Neo X',
+    rpc: [ 'https://mainnet-1.rpc.banelabs.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
+    infoURL: 'https://neo.org/',
+    shortName: 'neox-mainnet',
+    chainId: 47763,
+    networkId: 47763,
+    icon: 'neox',
+    explorers: [
+      {
+        name: 'Neo X - Explorer',
+        url: 'https://xexplorer.neo.org',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'REI Network',
@@ -28570,7 +28590,12 @@ const chainArray = [
     name: 're.al',
     title: 're.al Real-World Assets network',
     chain: 're.al',
-    rpc: [ 'https://real.drpc.org', 'wss://real.drpc.org' ],
+    rpc: [
+      'https://tangible-real.gateway.tenderly.co',
+      'wss://tangible-real.gateway.tenderly.co',
+      'https://real.drpc.org',
+      'wss://real.drpc.org'
+    ],
     nativeCurrency: { name: 're.al Ether', symbol: 'reETH', decimals: 18 },
     infoURL: 'https://re.al',
     faucets: [],
