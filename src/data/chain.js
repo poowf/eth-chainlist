@@ -6636,8 +6636,8 @@ const chainArray = [
   {
     name: 'Darwin Devnet',
     chain: 'Darwin',
-    rpc: [ 'https://devnet.darwinchain.ai' ],
-    faucets: [ 'https://devnet.darwinchain.ai/faucet' ],
+    rpc: [ 'https://devnet-rpc.darwinchain.ai' ],
+    faucets: [ 'https://devnet-rpc.darwinchain.ai/faucet' ],
     nativeCurrency: { name: 'Darwin Devnet token', symbol: 'DNA', decimals: 18 },
     infoURL: 'https://darwinchain.ai',
     shortName: 'darwin-devnet',
@@ -16168,6 +16168,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'World Chain Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://worldcoin.org/',
+    shortName: 'wcsep',
+    chainId: 4801,
+    networkId: 4801,
+    slip44: 1,
+    explorers: []
+  },
+  {
     name: 'Globel Chain',
     chain: 'GC',
     icon: 'globelchain',
@@ -19920,7 +19933,7 @@ const chainArray = [
   {
     name: 'WeaveVM Testnet',
     chain: 'WVM',
-    rpc: [ 'https://testnet.wvm.dev' ],
+    rpc: [ 'https://testnet.wvm.dev', 'https://testnet-rpc.wvm.dev' ],
     faucets: [],
     nativeCurrency: { name: 'Testnet WeaveVM Token', symbol: 'tWVM', decimals: 18 },
     infoURL: 'https://wvm.dev',
@@ -30740,17 +30753,17 @@ const chainArray = [
     ]
   },
   {
-    name: 'World Chain Sepolia Testnet',
+    name: 'World Chain Sepolia Testnet Deprecated',
+    status: 'deprecated',
     chain: 'ETH',
-    rpc: [],
-    faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://worldcoin.org/',
-    shortName: 'wcsep',
+    shortName: 'wcsep-dep',
+    rpc: [],
+    faucets: [],
     chainId: 484752,
     networkId: 484752,
-    slip44: 1,
-    explorers: []
+    slip44: 1
   },
   {
     name: 'Gobbl Testnet',
