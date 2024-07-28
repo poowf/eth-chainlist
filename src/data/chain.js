@@ -5604,6 +5604,24 @@ const chainArray = [
     networkId: 385
   },
   {
+    name: 'Cronos zkEVM Mainnet',
+    chain: 'CronosZkEVMMainnet',
+    rpc: [ 'https://mainnet.zkevm.cronos.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cronos zkEVM CRO', symbol: 'zkCRO', decimals: 18 },
+    infoURL: 'https://cronos.org/zkevm',
+    shortName: 'zkCRO',
+    chainId: 388,
+    networkId: 388,
+    explorers: [
+      {
+        name: 'Cronos zkEVM (Mainnet) Chain Explorer',
+        url: 'https://explorer.zkevm.cronos.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'CamDL Testnet',
     chain: 'CADL',
     rpc: [ 'https://rpc1.testnet.camdl.gov.kh/' ],
@@ -20921,6 +20939,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Shape Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.shape.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://shape.network',
+    shortName: 'shapesep',
+    chainId: 11011,
+    networkId: 11011,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://shape-sepolia-explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ],
+    slip44: 1
+  },
+  {
     name: 'Astra',
     chain: 'Astra',
     rpc: [ 'https://rpc.astranaut.io', 'https://rpc1.astranaut.io' ],
@@ -34568,6 +34605,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'Skopje Testnet',
+    chain: 'Skopje Testnet',
+    icon: 'skopje-gpt',
+    rpc: [ 'https://skopje-rpc.gptprotocol.io' ],
+    faucets: [ 'https://skopje-faucet.gptprotocol.io' ],
+    chainId: 476462898,
+    networkId: 476462898,
+    nativeCurrency: { name: 'SkpGPT', symbol: 'SkpGPT', decimals: 18 },
+    infoURL: 'https://gptprotocol.com',
+    shortName: 'Skopje',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://skopje-bridge.gptprotocol.io' } ]
+    },
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://skopje-explorer.gptprotocol.io',
+        standard: 'EIP3091',
+        icon: 'blockscout'
+      }
+    ]
+  },
+  {
     name: 'Gather Devnet Network',
     chain: 'GTH',
     rpc: [ 'https://devnet.gather.network' ],
@@ -34996,6 +35058,31 @@ const chainArray = [
         name: 'Blockscout',
         url: 'https://green-giddy-denebola.explorer.mainnet.skalenodes.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GPT Mainnet',
+    chain: 'GPT Protocol',
+    icon: 'gpt',
+    rpc: [ 'https://rpc.gptprotocol.io' ],
+    faucets: [],
+    chainId: 1511670449,
+    networkId: 1511670449,
+    nativeCurrency: { name: 'GPT', symbol: 'GPT', decimals: 18 },
+    infoURL: 'https://gptprotocol.com',
+    shortName: 'GPT',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.gptprotocol.io' } ]
+    },
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.gptprotocol.io',
+        standard: 'EIP3091',
+        icon: 'blockscout'
       }
     ]
   },
