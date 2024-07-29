@@ -19527,7 +19527,7 @@ const chainArray = [
   {
     name: 'JIBCHAIN L1',
     chain: 'JBC',
-    rpc: [ 'https://rpc-l1.jibchain.net', 'https://jib-rpc.inan.in.th' ],
+    rpc: [ 'https://rpc-l1.jibchain.net', 'https://rpc-l1.inan.in.th' ],
     faucets: [],
     icon: 'jbc',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -23696,6 +23696,27 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-58008', bridges: [] }
+  },
+  {
+    name: 'Nexa MetaNet',
+    chain: 'NEXA',
+    rpc: [ 'https://nexa.sh/metanet' ],
+    faucets: [],
+    nativeCurrency: { name: 'Nexa', symbol: 'NEXA', decimals: 18 },
+    infoURL: 'https://nexa.sh/meta',
+    shortName: 'nexameta',
+    chainId: 29223,
+    networkId: 29223,
+    slip44: 29223,
+    icon: 'nexameta',
+    explorers: [
+      {
+        name: 'NexaShell',
+        url: 'https://nexa.sh',
+        standard: 'none',
+        icon: 'nexashell'
+      }
+    ]
   },
   {
     name: 'KaiChain Testnet',
