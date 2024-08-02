@@ -6709,6 +6709,42 @@ const chainArray = [
     ]
   },
   {
+    name: 'Binary Mainnet',
+    chain: 'The Binary Holdings',
+    rpc: [ 'https://rpc.zero.thebinaryholdings.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Binary Token', symbol: 'BNRY', decimals: 18 },
+    infoURL: '',
+    shortName: 'thebinaryholdings-mainnet',
+    chainId: 624,
+    networkId: 624,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://explorer.thebinaryholdings.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Binary Sepolia',
+    chain: 'The Binary Holdings',
+    rpc: [ 'https://rpc.testnet.thebinaryholdings.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Test BNRY', symbol: 'BNRY', decimals: 18 },
+    infoURL: '',
+    shortName: 'thebinaryholdings-sepolia',
+    chainId: 625,
+    networkId: 625,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://explorer.sepolia.thebinaryholdings.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Avocado',
     chain: 'Avocado',
     rpc: [ 'https://rpc.avocado.instadapp.io' ],
@@ -14526,6 +14562,29 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'XL Network Testnet',
+    chain: 'XL Network Testnet',
+    rpc: [
+      'https://subnets.avax.network/xlnetworkt/testnet/rpc',
+      'wss://subnets.avax.network/xlnetworkt/testnet/ws'
+    ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'XLNetwork', symbol: 'XLN', decimals: 18 },
+    infoURL: 'https://www.nysl.io/',
+    shortName: 'nysl',
+    icon: 'nysl',
+    chainId: 3084,
+    networkId: 3084,
+    explorers: [
+      {
+        name: 'XL Network Explorer',
+        url: 'https://subnets-test.avax.network/xlnetworkt',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Immu3 EVM',
     chain: 'EVMCC',
     rpc: [
@@ -15779,6 +15838,27 @@ const chainArray = [
         icon: 'crossfi'
       }
     ]
+  },
+  {
+    name: 'SX Rollup',
+    chain: 'SX',
+    icon: 'SX',
+    rpc: [ 'https://rpc.sx-rollup.gelato.digital' ],
+    faucets: [],
+    nativeCurrency: { name: 'SX Network', symbol: 'SX', decimals: 18 },
+    infoURL: 'https://www.sx.technology',
+    shortName: 'SXR',
+    chainId: 4162,
+    networkId: 4162,
+    explorers: [
+      {
+        name: 'SX L2 Explorer',
+        url: 'https://explorerl2.sx.technology',
+        standard: 'EIP3091',
+        icon: 'SX'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'PHI Network V1',
@@ -21044,6 +21124,29 @@ const chainArray = [
         name: 'hashbitscan',
         url: 'https://explorer.hashbit.org',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Abstract Testnet',
+    chain: 'Abstract Testnet',
+    rpc: [ 'https://api.testnet.abs.xyz' ],
+    faucets: [ 'https://faucet.triangleplatform.com/abstract/testnet' ],
+    chainId: 11124,
+    networkId: 11124,
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://abs.xyz/',
+    shortName: 'Abstract',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://portal.testnet.abs.xyz/bridge' } ]
+    },
+    explorers: [
+      {
+        name: 'Abstract Block Explorer',
+        url: 'https://explorer.testnet.abs.xyz',
+        standard: 'none'
       }
     ]
   },
@@ -27563,6 +27666,24 @@ const chainArray = [
       {
         name: 'inoai live',
         url: 'https://inoai.live',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ZKasino Mainnet',
+    chain: 'ZKasino',
+    rpc: [ 'https://rpc.zkas.zeeve.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'ZKAS', symbol: 'ZKAS', decimals: 18 },
+    infoURL: '',
+    shortName: 'ZKasino',
+    chainId: 88800,
+    networkId: 88800,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://explorer.zkas.zeeve.net',
         standard: 'none'
       }
     ]
@@ -34111,6 +34232,27 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://app.optimism.io/bridge/deposit' } ]
     }
+  },
+  {
+    name: 'SX Toronto Rollup',
+    chain: 'SX',
+    icon: 'SX',
+    rpc: [ 'https://rpc.sx-rollup-testnet.t.raas.gelato.cloud' ],
+    faucets: [ 'https://faucet.toronto.sx.technology' ],
+    nativeCurrency: { name: 'SX Network', symbol: 'SX', decimals: 18 },
+    infoURL: 'https://www.sx.technology',
+    shortName: 'SXR-Testnet',
+    chainId: 79479957,
+    networkId: 79479957,
+    explorers: [
+      {
+        name: 'SX Toronto L2 Explorer',
+        url: 'https://explorerl2.toronto.sx.technology',
+        standard: 'EIP3091',
+        icon: 'SX'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Backstop Testnet',
