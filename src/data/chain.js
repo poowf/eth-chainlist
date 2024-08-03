@@ -3264,32 +3264,22 @@ const chainArray = [
     networkId: 163
   },
   {
-    name: 'Omni Testnet',
+    name: 'Omni Omega',
     chain: 'Omni',
     status: 'active',
-    rpc: [ 'https://testnet.omni.network' ],
+    rpc: [ 'https://omega.omni.network' ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
     nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
     infoURL: 'https://docs.omni.network',
-    shortName: 'omni_testnet',
+    shortName: 'omni_omega',
     chainId: 164,
     networkId: 164,
     slip44: 1,
     explorers: [
       {
-        name: 'Omni X-Explorer',
-        url: 'https://explorer.testnet.omni.network',
-        standard: 'none'
-      },
-      {
-        name: 'Omni EVM Explorer on Blockscout',
-        url: 'https://omni-testnet.blockscout.com',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'Omni EVM Explorer on Routescan',
-        url: 'https://testnet.omniscan.network',
+        name: 'Omni EVM and cross-chain Explorer',
+        url: 'https://omega.omniscan.network',
         standard: 'EIP3091'
       }
     ]
@@ -19083,6 +19073,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'B3',
+    chain: 'B3',
+    icon: 'b3',
+    rpc: [ 'https://mainnet-rpc.b3.fun' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://b3.fun',
+    shortName: 'b3',
+    chainId: 8333,
+    networkId: 8333,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.b3.fun',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Dracones Financial Services',
     title: 'The Dracones Mainnet',
     chain: 'FUCK',
@@ -27969,6 +27978,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'StratoVM Testnet',
+    chain: 'StratoVM',
+    rpc: [ 'https://rpc.stratovm.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SVM', symbol: 'SVM', decimals: 18 },
+    infoURL: 'https://www.stratovm.io/',
+    shortName: 'stratovm',
+    chainId: 93747,
+    networkId: 93747,
+    explorers: [
+      {
+        name: 'StratoVM Block Explorer',
+        url: 'https://explorer.stratovm.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Mantis Testnet (Hexapod)',
     chain: 'Mantis',
     icon: 'mantis',
@@ -31683,6 +31710,35 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'BOB Sepolia',
+    chain: 'ETH',
+    rpc: [
+      'https://bob-sepolia.rpc.gobob.xyz',
+      'wss://bob-sepolia.rpc.gobob.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://gobob.xyz',
+    shortName: 'bob-sepolia',
+    chainId: 808813,
+    networkId: 808813,
+    icon: 'bob',
+    explorers: [
+      {
+        name: 'bobscout',
+        url: 'https://bob-sepolia.explorer.gobob.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bob-sepolia.gobob.xyz/' } ]
+    }
   },
   {
     name: 'zkLink Nova Mainnet',
@@ -35760,6 +35816,28 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Fluence Stage',
+    chain: 'Fluence Stage (Testnet)',
+    rpc: [
+      'https://rpc-123420000220.raas-testnet.gelato.digital/',
+      'wss://ws-123420000220.raas-testnet.gelato.digital/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'tFLT', symbol: 'tFLT', decimals: 18 },
+    infoURL: 'https://fluence.network/',
+    shortName: 'fluence-stage',
+    chainId: 123420000220,
+    networkId: 123420000220,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout-123420000220.raas-testnet.gelato.digital',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Ntity Mainnet',
