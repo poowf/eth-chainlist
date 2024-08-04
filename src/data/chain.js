@@ -2734,14 +2734,21 @@ const chainArray = [
     name: 'HashKey Chain Testnet',
     title: 'HashKey Chain Testnet',
     chain: 'HashKey Chain Testnet',
-    rpc: [],
+    rpc: [ 'https://hashkeychain-testnet.alt.technology' ],
     faucets: [],
     nativeCurrency: { name: 'HashKey EcoPoints', symbol: 'HSK', decimals: 18 },
     infoURL: 'https://hashkey.cloud',
     shortName: 'HSKT',
     chainId: 133,
     networkId: 133,
-    explorers: [],
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://hashkeychain-testnet-explorer.alt.technology',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
@@ -8523,16 +8530,13 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
-    name: 'Klaytn Testnet Baobab',
-    chain: 'KLAY',
-    rpc: [
-      'https://public-en-baobab.klaytn.net',
-      'https://api.baobab.klaytn.net:8651'
-    ],
-    faucets: [ 'https://baobab.wallet.klaytn.com/access?next=faucet' ],
-    nativeCurrency: { name: 'KLAY', symbol: 'KLAY', decimals: 18 },
-    infoURL: 'https://klaytn.foundation',
-    shortName: 'Baobab',
+    name: 'Kaia Testnet Kairos',
+    chain: 'KAIA',
+    rpc: [ 'https://public-en.kairos.node.kaia.io' ],
+    faucets: [ 'https://faucet.kaia.io' ],
+    nativeCurrency: { name: 'KAIA', symbol: 'KAIA', decimals: 18 },
+    infoURL: 'https://kaia.io/',
+    shortName: 'kaia-kairos',
     chainId: 1001,
     networkId: 1001,
     slip44: 1,
@@ -18978,13 +18982,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Klaytn Mainnet Cypress',
-    chain: 'KLAY',
+    name: 'Kaia Mainnet',
+    chain: 'KAIA',
     rpc: [ 'https://public-en-cypress.klaytn.net' ],
     faucets: [],
-    nativeCurrency: { name: 'KLAY', symbol: 'KLAY', decimals: 18 },
-    infoURL: 'https://klaytn.foundation',
-    shortName: 'Cypress',
+    nativeCurrency: { name: 'KAIA', symbol: 'KAIA', decimals: 18 },
+    infoURL: 'https://kaia.io',
+    shortName: 'kaia-mainnet',
     chainId: 8217,
     networkId: 8217,
     slip44: 8217,
@@ -19272,6 +19276,25 @@ const chainArray = [
         name: 'Storscan',
         url: 'https://explorer-storagechain.invo.zone/?network=StorageChain%20Testnet',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Bullions Smart Chain',
+    chain: 'Bullions',
+    rpc: [ 'https://rpc.bullionsx.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bullions', symbol: 'BLN', decimals: 18 },
+    infoURL: 'https://www.bullionsx.io',
+    shortName: 'bln',
+    chainId: 8732,
+    networkId: 8732,
+    slip44: 8732,
+    explorers: [
+      {
+        name: 'Bullionscan',
+        url: 'https://bullionscan.org',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -22851,12 +22874,12 @@ const chainArray = [
   {
     name: 'BlockX Mainnet',
     chain: 'blockx',
-    rpc: [],
+    rpc: [ 'https://web3.blockxnet.com' ],
     faucets: [ 'https://ping.blockxnet.com/blockx/faucet' ],
-    nativeCurrency: { name: 'BCXT', symbol: 'BCXT', decimals: 18 },
+    nativeCurrency: { name: 'BCX', symbol: 'BCX', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://www.blockxnet.com/',
-    shortName: 'bcxt',
+    shortName: 'bcx',
     chainId: 19191,
     networkId: 19191,
     explorers: [
@@ -27525,6 +27548,25 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Xprotocol Testnet',
+    chainId: 83144,
+    shortName: 'xprotocoltestnet',
+    chain: 'Xprotocol Testnet',
+    networkId: 83144,
+    nativeCurrency: { name: 'KICK Testnet Token', symbol: 'KICK', decimals: 18 },
+    rpc: [ 'https://rpc.testnet.xprotocol.org' ],
+    faucets: [ 'https://xprotocol.org/faucets' ],
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.testnet.xprotocol.org',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-84532' },
+    infoURL: 'https://xprotocol.org/'
   },
   {
     name: 'ZEDXION',
