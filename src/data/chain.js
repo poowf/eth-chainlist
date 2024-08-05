@@ -12295,11 +12295,11 @@ const chainArray = [
     networkId: 1
   },
   {
-    name: 'NOW Chain',
+    name: 'NOW Chain Testnet',
     chain: 'NOW',
     icon: 'nowchain',
-    rpc: [ 'https://rpc.nowscan.io' ],
-    faucets: [],
+    rpc: [ 'https://rpc-testnet.nowscan.io' ],
+    faucets: [ 'https://faucet.nowchain.co' ],
     nativeCurrency: { name: 'NOW Coin', symbol: 'NOW', decimals: 18 },
     infoURL: 'https://nowchain.co',
     shortName: 'now',
@@ -12308,7 +12308,7 @@ const chainArray = [
     explorers: [
       {
         name: 'nowscan',
-        url: 'https://nowscan.io',
+        url: 'https://testnet.nowscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -14279,6 +14279,19 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://bridge-holesky.morphl2.io' } ]
     }
+  },
+  {
+    name: 'Chips Network',
+    chain: 'CHIPS',
+    rpc: [
+      'https://node.chips.ooo/wasp/api/v1/chains/iota1pp3d3mnap3ufmgqnjsnw344sqmf5svjh26y2khnmc89sv6788y3r207a8fn/evm'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'IOTA', symbol: 'IOTA', decimals: 18 },
+    infoURL: 'https://www.chips.ooo',
+    shortName: 'chips',
+    chainId: 2882,
+    networkId: 2882
   },
   {
     name: 'Boba Network Goerli Testnet',
@@ -20677,15 +20690,20 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'MNV', symbol: 'MNV', decimals: 18 },
     features: [],
-    infoURL: 'https://www.blockxnet.com/',
+    infoURL: 'https://metanovaverse.com/',
     shortName: 'mnv',
     chainId: 10096,
     networkId: 10096,
     explorers: [
       {
         name: 'Blockscout',
-        url: 'https://explorer.blockxnet.com',
+        url: 'https://explorer.metanovaverse.com',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Cosmos Explorer (Ping)',
+        url: 'https://ping.metanovaverse.com/metanovaverse',
+        standard: 'none'
       }
     ]
   },
@@ -24425,6 +24443,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'SlingShot',
+    chain: 'SLING',
+    rpc: [ 'https://rpc.slingshotdao.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sling', symbol: 'SLING', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://slingshotdao.com',
+    shortName: 'slingshot',
+    chainId: 33401,
+    networkId: 33401,
+    icon: 'slingshot',
+    explorers: [
+      {
+        name: 'SlingShot Explorer',
+        url: 'https://explore.slingshotdao.com',
+        icon: 'slingshot',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Zilliqa-2 EVM Devnet',
     chain: 'ZIL',
     rpc: [ 'https://api.zq2-devnet.zilliqa.com' ],
@@ -28085,6 +28124,29 @@ const chainArray = [
       }
     ],
     status: 'deprecated'
+  },
+  {
+    name: 'SlingShot Testnet',
+    chain: 'SLING',
+    rpc: [
+      'https://rpc-dependent-emerald-whippet-gh6kch3nen.t.conduit.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Sling Test', symbol: 'SLINGT', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://slingshotdao.com',
+    shortName: 'sling',
+    chainId: 97435,
+    networkId: 97435,
+    icon: 'slingshot',
+    explorers: [
+      {
+        name: 'SlingShot Test Explorer',
+        url: 'https://explorer-dependent-emerald-whippet-gh6kch3nen.t.conduit.xyz',
+        icon: 'slingshot',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Green Chain Testnet',
