@@ -11585,6 +11585,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'ReDeFi Layer 2',
+    chain: 'ReDeFi',
+    icon: 'redefi',
+    rpc: [ 'https://layer2.redefi.world' ],
+    faucets: [],
+    nativeCurrency: { name: 'RED', symbol: 'RED', decimals: 18 },
+    infoURL: 'https://redefi.world',
+    shortName: 'red',
+    chainId: 1899,
+    networkId: 1899,
+    slip44: 1899,
+    explorers: [
+      {
+        name: 'ReDeFi Scan',
+        url: 'https://scanlayer2.redefi.world',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Sports Chain Network',
     chain: 'SCN',
     rpc: [ 'https://rpc.sportschainnetwork.xyz/' ],
@@ -14759,12 +14779,14 @@ const chainArray = [
     slip44: 1
   },
   {
-    name: 'The peaq Network',
+    name: 'peaq',
     chain: 'peaq',
     icon: 'peaq',
     rpc: [
       'https://peaq.api.onfinality.io/public',
-      'https://peaq-rpc.dwellir.com'
+      'https://peaq-rpc.dwellir.com',
+      'https://peaq-rpc.publicnode.com',
+      'https://evm.peaq.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'peaq', symbol: 'PEAQ', decimals: 18 },
@@ -14773,11 +14795,6 @@ const chainArray = [
     chainId: 3338,
     networkId: 3338,
     explorers: [
-      {
-        name: 'Polkadot.js',
-        url: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpeaq.api.onfinality.io%2Fpublic-ws#/explorer',
-        standard: 'none'
-      },
       {
         name: 'Subscan',
         url: 'https://peaq.subscan.io',
@@ -17527,6 +17544,25 @@ const chainArray = [
     shortName: 'DGS',
     chainId: 6363,
     networkId: 6363
+  },
+  {
+    name: 'Connext Sepolia',
+    chain: 'Connext Sepolia',
+    rpc: [ 'https://rpc.connext-sepolia.gelato.digital/' ],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    faucets: [],
+    infoURL: '',
+    shortName: 'connext-sepolia',
+    chainId: 6398,
+    networkId: 6398,
+    explorers: [
+      {
+        name: 'Connext Sepolia',
+        url: 'https://connext-sepolia.blockscout.com',
+        icon: 'connext',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Peerpay',
@@ -25266,6 +25302,26 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'ReDeFi Layer 1',
+    chain: 'ReDeFi',
+    icon: 'redefi',
+    rpc: [ 'https://layer1.redefi.world' ],
+    faucets: [],
+    nativeCurrency: { name: 'BAX', symbol: 'BAX', decimals: 18 },
+    infoURL: 'https://redefi.world',
+    shortName: 'bax',
+    chainId: 47803,
+    networkId: 47803,
+    slip44: 47803,
+    explorers: [
+      {
+        name: 'ReDeFi Scan',
+        url: 'https://scanlayer1.redefi.world',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'REI Network',
     chain: 'REI',
     rpc: [ 'https://rpc.rei.network', 'wss://rpc.rei.network' ],
@@ -25686,24 +25742,6 @@ const chainArray = [
     ]
   },
   {
-    name: 'Photon Testnet',
-    chain: 'Photon',
-    rpc: [ 'https://rpc-test.photonchain.io' ],
-    faucets: [ 'https://photonchain.io/airdrop' ],
-    nativeCurrency: { name: 'Photon', symbol: 'PTON', decimals: 18 },
-    infoURL: 'https://photonchain.io',
-    shortName: 'pton',
-    chainId: 54555,
-    networkId: 54555,
-    explorers: [
-      {
-        name: 'photon_testnet_explorer',
-        url: 'https://testnet.photonchain.io',
-        standard: 'none'
-      }
-    ]
-  },
-  {
     name: 'Titan',
     chain: 'ETH',
     rpc: [
@@ -25721,6 +25759,24 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://explorer.titan.tokamak.network',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Photon Aurora Testnet',
+    chain: 'Photon',
+    rpc: [ 'https://rpc-test2.photonchain.io' ],
+    faucets: [ 'https://photonchain.io/testnet2' ],
+    nativeCurrency: { name: 'Photon', symbol: 'PTON', decimals: 18 },
+    infoURL: 'https://photonchain.io',
+    shortName: 'pton',
+    chainId: 55551,
+    networkId: 55551,
+    explorers: [
+      {
+        name: 'photon_testnet2_explorer',
+        url: 'https://testnet2.photonchain.io',
+        standard: 'none'
       }
     ]
   },
@@ -26518,6 +26574,28 @@ const chainArray = [
         name: 'eCredits TestNet Explorer',
         url: 'https://explorer.tst.ecredits.com',
         icon: 'ecredits',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CratD2C Testnet',
+    chain: 'CRATD2C',
+    rpc: [
+      'https://cratd2c-testnet-node1.cratd2csmartchain.io/',
+      'https://cratd2c-testnet-node2.cratd2csmartchain.io/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'CRATD2C', symbol: 'CRATD', decimals: 18 },
+    infoURL: 'https://cratd2csmartchain.io',
+    shortName: 'cratd2c-testnet',
+    chainId: 65349,
+    networkId: 65349,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer-testnet.cratd2csmartchain.io',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
