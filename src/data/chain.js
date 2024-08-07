@@ -1714,7 +1714,8 @@ const chainArray = [
     chain: 'JOC',
     rpc: [
       'https://rpc-1.japanopenchain.org:8545',
-      'https://rpc-2.japanopenchain.org:8545'
+      'https://rpc-2.japanopenchain.org:8545',
+      'https://rpc-3.japanopenchain.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'Japan Open Chain Token', symbol: 'JOC', decimals: 18 },
@@ -18459,6 +18460,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'PandaSea Mainnet',
+    chain: 'PandaSea',
+    rpc: [ 'https://rpc1.pandasea.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PandaSea Coin', symbol: 'PANDA', decimals: 18 },
+    infoURL: '',
+    shortName: 'pandaSea-mainnet',
+    chainId: 7776,
+    networkId: 7776,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://pandaseascan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Rise of the Warbots Testnet',
     chain: 'nmactest',
     rpc: [
@@ -20687,7 +20706,8 @@ const chainArray = [
     chain: 'JOCT',
     rpc: [
       'https://rpc-1.testnet.japanopenchain.org:8545',
-      'https://rpc-2.testnet.japanopenchain.org:8545'
+      'https://rpc-2.testnet.japanopenchain.org:8545',
+      'https://rpc-3.testnet.japanopenchain.org'
     ],
     faucets: [],
     nativeCurrency: {
@@ -21460,6 +21480,24 @@ const chainArray = [
       }
     ],
     parent: { chain: 'eip155-1', type: 'L2' }
+  },
+  {
+    name: 'Fuse Testnet',
+    chain: 'Fuse',
+    rpc: [ 'https://rpc.flash.fuse.io' ],
+    faucets: [ 'https://faucet.flash.fuse.io' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'fuseZK',
+    chainId: 12001,
+    networkId: 12001,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.flash.fuse.io',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'SatoshiChain Mainnet',
@@ -26586,7 +26624,7 @@ const chainArray = [
       'https://cratd2c-testnet-node2.cratd2csmartchain.io/'
     ],
     faucets: [],
-    nativeCurrency: { name: 'CRATD2C', symbol: 'CRATD', decimals: 18 },
+    nativeCurrency: { name: 'CRATD2C', symbol: 'CRAT', decimals: 18 },
     infoURL: 'https://cratd2csmartchain.io',
     shortName: 'cratd2c-testnet',
     chainId: 65349,
@@ -30050,6 +30088,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Abyss Protocol',
+    chain: 'Abyss Protocol Testnet',
+    rpc: [ 'https://testnet.rpc.abyssprotocol.ai/' ],
+    faucets: [ 'https://faucet.abyssprotocol.ai/' ],
+    nativeCurrency: { name: 'AbyssETH', symbol: 'aETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://abyssprotocol.ai/',
+    shortName: 'abyss',
+    chainId: 229772,
+    networkId: 229772,
+    icon: 'abyss',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.abyssprotocol.ai',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'HashKey Chain Testnet(discard)',
     chain: 'HashKey',
     rpc: [ 'https://testnet.hashkeychain/rpc' ],
@@ -31772,6 +31831,24 @@ const chainArray = [
         name: 'brnktestscan',
         url: 'https://brnktest-scan.bearnetwork.net',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Ternoa Testnet',
+    chain: 'Ternoa',
+    rpc: [ 'https://rpc.zkevm.ternoa.network' ],
+    faucets: [ 'https://faucet.zkevm.ternoa.network' ],
+    nativeCurrency: { name: 'Capsule Coin', symbol: 'CAPS', decimals: 18 },
+    infoURL: '',
+    shortName: 'ternoa',
+    chainId: 752024,
+    networkId: 7502024,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://explorer.zkevm.ternoa.network',
+        standard: 'none'
       }
     ]
   },
