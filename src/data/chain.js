@@ -10931,7 +10931,7 @@ const chainArray = [
     chain: 'Gravity',
     rpc: [ 'https://rpc.gravity.xyz' ],
     faucets: [],
-    nativeCurrency: { name: 'Gravity', symbol: 'G.', decimals: 18 },
+    nativeCurrency: { name: 'Gravity', symbol: 'G', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP1108' } ],
     infoURL: 'https://gravity.xyz',
     shortName: 'gravity',
@@ -17715,6 +17715,25 @@ const chainArray = [
     }
   },
   {
+    name: 'EdgaMatrix Chain',
+    chain: 'EMC',
+    icon: 'emc',
+    rpc: [ 'https://rpc1-mainnet.emc.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'EdgaMatrix Chain Token', symbol: 'EMC', decimals: 18 },
+    infoURL: '',
+    shortName: 'EMC',
+    chainId: 6678,
+    networkId: 6678,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://emcscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'IRIShub',
     chain: 'IRIShub',
     rpc: [
@@ -18111,6 +18130,26 @@ const chainArray = [
       {
         name: 'Bitrock Explorer',
         url: 'https://explorer.bit-rock.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ZEUS Testnet',
+    chain: 'tZEUS',
+    icon: 'zeusicon',
+    rpc: [ 'https://testnet-rpc.zeuschainscan.io' ],
+    nativeCurrency: { name: 'The ZEUS Token', symbol: 'ZEUS', decimals: 18 },
+    infoURL: 'https://testnet-explorer.zeuschainscan.io',
+    shortName: 'ZEUS-Testnet',
+    chainId: 7244,
+    networkId: 7244,
+    faucets: [ 'https://faucet.zeuschainscan.io' ],
+    explorers: [
+      {
+        name: 'ZEUS Testnet Explorer',
+        url: 'https://testnet-explorer.zeuschainscan.io',
+        icon: 'zeusicon',
         standard: 'EIP3091'
       }
     ]
@@ -18570,6 +18609,52 @@ const chainArray = [
     ]
   },
   {
+    name: 'MaalChain V2',
+    chain: 'MAAL',
+    icon: 'maal',
+    rpc: [
+      'https://node1-mainnet-new.maalscan.io/',
+      'https://node2-mainnet-new.maalscan.io/',
+      'https://node3-mainnet-new.maalscan.io/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'MAAL', symbol: 'MAAL', decimals: 18 },
+    infoURL: 'https://www.maalchain.com/',
+    shortName: 'maal-v2',
+    chainId: 7862,
+    networkId: 7862,
+    explorers: [
+      {
+        name: 'maalscan',
+        url: 'https://maalscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MaalChain Testnet V2',
+    chain: 'MaalChain Testnet V2',
+    icon: 'maal-test',
+    rpc: [
+      'https://node-testnet.maalscan.io/',
+      'https://node2-testnet.maalscan.io/'
+    ],
+    faucets: [ 'https://faucet-new-testnet.maalscan.io/' ],
+    nativeCurrency: { name: 'MAAL', symbol: 'MAAL', decimals: 18 },
+    infoURL: 'https://www.maalchain.com/',
+    shortName: 'maal-test-v2',
+    chainId: 7863,
+    networkId: 7863,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'maalscan testnet',
+        url: 'https://new-testnet.maalscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hazlor Testnet',
     chain: 'SCAS',
     rpc: [
@@ -18742,6 +18827,26 @@ const chainArray = [
         url: 'https://explorer.testnet.teleport.network',
         standard: 'none',
         icon: 'teleport'
+      }
+    ]
+  },
+  {
+    name: 'Polynomial',
+    chain: 'Polynomial',
+    rpc: [ 'https://rpc.polynomial.fi' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://polynomial.fi',
+    shortName: 'polynomial',
+    chainId: 8008,
+    networkId: 8008,
+    icon: 'polynomial',
+    explorers: [
+      {
+        name: 'Polynomial Explorer',
+        url: 'https://polynomialscan.io',
+        standard: 'none',
+        icon: 'polynomial'
       }
     ]
   },
@@ -24607,6 +24712,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'ZEUS Mainnet',
+    chain: 'ZEUS',
+    icon: 'zeusicon',
+    rpc: [ 'https://mainnet-rpc.zeuschainscan.io' ],
+    nativeCurrency: { name: 'The ZEUS Token', symbol: 'ZEUS', decimals: 18 },
+    infoURL: 'https://zeuschainscan.io',
+    shortName: 'ZEUS',
+    chainId: 34504,
+    networkId: 34504,
+    faucets: [],
+    explorers: [
+      {
+        name: 'ZEUS Mainnet Explorer',
+        url: 'https://zeuschainscan.io',
+        icon: 'zeusicon',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'J2O Taro',
     chain: 'TARO',
     rpc: [ 'https://rpc.j2o.io' ],
@@ -27428,6 +27553,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Polynomia Sepolia',
+    chain: 'polynomialSepolia',
+    rpc: [ 'https://rpc.sepolia.polynomial.fi' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://polynomial.fi',
+    shortName: 'polynomialSepolia',
+    chainId: 80008,
+    networkId: 80008,
+    icon: 'polynomialSepolia',
+    explorers: [
+      {
+        name: 'Polynomial Sepolia Explorer',
+        url: 'https://sepolia.polynomialscan.io',
+        standard: 'none',
+        icon: 'polynomialSepolia'
+      }
+    ]
+  },
+  {
     name: 'Berachain bArtio',
     chain: 'Berachain bArtio',
     rpc: [
@@ -28961,11 +29106,14 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-110000' }
   },
   {
-    name: 'MARS Credit',
+    name: 'Mars Credit',
     chain: 'MARS',
-    rpc: [ 'https://node99-production-dd5f.up.railway.app:443' ],
+    rpc: [
+      'https://node99-production-dd5f.up.railway.app:443',
+      'https://rpc.marscredit.xyz:443'
+    ],
     faucets: [],
-    nativeCurrency: { name: 'Mars', symbol: 'MARS', decimals: 18 },
+    nativeCurrency: { name: 'Mars Credit', symbol: 'MARS', decimals: 18 },
     infoURL: 'https://marscredit.xyz/',
     shortName: 'mars',
     chainId: 110110,
@@ -32136,6 +32284,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'RUNEVM Testnet',
+    chain: 'RuneVM',
+    rpc: [ 'https://rpc.runevm.io/' ],
+    faucets: [ 'https://faucet.runevm.io/' ],
+    nativeCurrency: { name: 'Test Bitcoin', symbol: 'tBTC', decimals: 8 },
+    infoURL: '',
+    shortName: 'runevm-test',
+    chainId: 840000,
+    networkId: 840000,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://explorer.runevm.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: '4GoodNetwork',
     chain: '4GN',
     rpc: [ 'https://chain.deptofgood.com' ],
@@ -33724,6 +33890,26 @@ const chainArray = [
         url: 'https://optimism-sepolia.blockscout.com',
         icon: 'blockscout',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Memento Testnet',
+    chain: 'Memento',
+    rpc: [
+      'https://test-rpc.mementoblockchain.com/IRkghvI3FfEArEJMr4zC/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'memento-test',
+    chainId: 12052024,
+    networkId: 12052024,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://test-explorer.mementoblockchain.com',
+        standard: 'none'
       }
     ]
   },
