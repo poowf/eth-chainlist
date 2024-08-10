@@ -22089,7 +22089,7 @@ const chainArray = [
     chain: 'Gravity',
     rpc: [ 'https://rpc-sepolia.gravity.xyz' ],
     faucets: [],
-    nativeCurrency: { name: 'Sepolia Gravity', symbol: 'G.', decimals: 18 },
+    nativeCurrency: { name: 'Sepolia Gravity', symbol: 'G', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP1108' } ],
     infoURL: 'https://gravity.xyz',
     shortName: 'gravitysep',
@@ -24545,6 +24545,25 @@ const chainArray = [
       {
         name: 'Zilliqa 2 EVM proto-testnet explorer',
         url: 'https://explorer.zq2-prototestnet.zilliqa.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Curtis',
+    chain: 'Curtis',
+    rpc: [ 'https://curtis.rpc.caldera.xyz/http' ],
+    faucets: [ 'https://curtis.hub.caldera.xyz' ],
+    nativeCurrency: { name: 'ApeCoin', symbol: 'APE', decimals: 18 },
+    infoURL: 'https://curtis.hub.caldera.xyz',
+    shortName: 'curtis',
+    chainId: 33111,
+    networkId: 33111,
+    icon: 'curtis',
+    explorers: [
+      {
+        name: 'Curtis Explorer',
+        url: 'https://curtis.explorer.caldera.xyz',
         standard: 'EIP3091'
       }
     ]
