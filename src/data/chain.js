@@ -9731,6 +9731,26 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Bitcoin Protocol Testnet',
+    chain: 'BTCP Testnet',
+    icon: 'btcprotocol',
+    rpc: [ 'https://testnet-chain.btcprotocol.io/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC Protocol', symbol: 'BTCP', decimals: 18 },
+    infoURL: 'https://btcprotocol.io/',
+    shortName: 'BTCP',
+    chainId: 1227,
+    networkId: 1227,
+    explorers: [
+      {
+        name: 'BTCP explorer',
+        url: 'https://explorer.btcprotocol.io',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Exzo Network Mainnet',
     chain: 'EXZO',
     icon: 'exzo',
@@ -24901,6 +24921,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Aleph Zero EVM',
+    chain: 'Aleph Zero EVM',
+    icon: 'aleph-zero',
+    rpc: [
+      'https://rpc.alephzero.raas.gelato.cloud',
+      'wss://ws.alephzero.raas.gelato.cloud'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Aleph Zero', symbol: 'AZERO', decimals: 18 },
+    infoURL: 'https://alephzero.org/',
+    shortName: 'aleph-zero',
+    chainId: 41455,
+    networkId: 41455,
+    explorers: [
+      {
+        name: 'Aleph Zero EVM Mainnet Explorer',
+        url: 'https://evm-explorer.alephzero.org',
+        icon: 'aleph-zero',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Opulent-X BETA',
     chainId: 41500,
     shortName: 'ox-beta',
@@ -25101,6 +25144,25 @@ const chainArray = [
       {
         name: 'GoldXChain Explorer',
         url: 'https://explorer.goldxchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'AssetChain Testnet',
+    chain: 'RWA',
+    rpc: [ 'https://enugu-rpc.assetchain.org' ],
+    faucets: [ 'https://faucet.assetchain.org' ],
+    nativeCurrency: { name: 'Real World Asset', symbol: 'RWA', decimals: 18 },
+    infoURL: 'https://docs.assetchain.org',
+    shortName: 'rwa',
+    chainId: 42421,
+    networkId: 42421,
+    icon: 'assetchain',
+    explorers: [
+      {
+        name: 'Asset Chain Testnet Explorer',
+        url: 'https://scan-testnet.assetchain.org',
         standard: 'EIP3091'
       }
     ]
@@ -25544,7 +25606,7 @@ const chainArray = [
     name: 'Zircuit Testnet',
     chain: 'Zircuit Testnet',
     icon: 'zircuit',
-    rpc: [ 'https://zircuit1.p2pify.com/' ],
+    rpc: [ 'http://zircuit1-testnet.p2pify.com/' ],
     faucets: [],
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.zircuit.com/',
@@ -25554,7 +25616,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Zircuit',
-        url: 'https://explorer.zircuit.com',
+        url: 'https://explorer.testnet.zircuit.com',
         icon: 'zircuit',
         standard: 'none'
       }
@@ -25564,14 +25626,21 @@ const chainArray = [
     name: 'Zircuit Mainnet',
     chain: 'Zircuit Mainnet',
     icon: 'zircuit',
-    rpc: [],
+    rpc: [ 'https://zircuit1-mainnet.p2pify.com/' ],
     faucets: [],
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.zircuit.com/',
     shortName: 'zircuit-mainnet',
     chainId: 48900,
     networkId: 48900,
-    explorers: []
+    explorers: [
+      {
+        name: 'Zircuit',
+        url: 'https://explorer.zircuit.com',
+        icon: 'zircuit',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Wireshape Floripa Testnet',
@@ -28022,21 +28091,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'Inoai Network',
+    name: 'InoAi',
     chain: 'INOAI',
     faucets: [],
     rpc: [ 'https://inoai-network.com' ],
-    nativeCurrency: { name: 'Inoai', symbol: 'INO', decimals: 18 },
-    infoURL: 'https://inoai.info',
-    shortName: 'INOAI',
+    nativeCurrency: { name: 'InoAi', symbol: 'INO', decimals: 18 },
+    infoURL: 'https://docs.inoai.info/',
+    shortName: 'INO',
     chainId: 88559,
     networkId: 88559,
     icon: 'inoai',
     explorers: [
       {
-        name: 'inoai live',
+        name: 'inoai.live',
         url: 'https://inoai.live',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
