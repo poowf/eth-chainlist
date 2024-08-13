@@ -8535,7 +8535,7 @@ const chainArray = [
     chain: 'KAIA',
     rpc: [ 'https://public-en.kairos.node.kaia.io' ],
     faucets: [ 'https://faucet.kaia.io' ],
-    nativeCurrency: { name: 'KAIA', symbol: 'KAIA', decimals: 18 },
+    nativeCurrency: { name: 'KAIA', symbol: 'KLAY', decimals: 18 },
     infoURL: 'https://kaia.io/',
     shortName: 'kaia-kairos',
     chainId: 1001,
@@ -17598,6 +17598,24 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Flamma Testnet',
+    chain: 'Flamma',
+    rpc: [ 'https://testnetrpc.flamma.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Flamma', symbol: 'FLA', decimals: 18 },
+    infoURL: 'https://flamma.network',
+    shortName: 'FlammaTestnet',
+    chainId: 6550,
+    networkId: 6550,
+    explorers: [
+      {
+        name: 'flascan',
+        url: 'https://testnet.flascan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Scolcoin WeiChain Testnet',
     chain: 'SCOLWEI-testnet',
     rpc: [ 'https://testnet-rpc.scolcoin.com' ],
@@ -19177,9 +19195,9 @@ const chainArray = [
   {
     name: 'Kaia Mainnet',
     chain: 'KAIA',
-    rpc: [ 'https://public-en-cypress.klaytn.net' ],
+    rpc: [ 'https://public-en.node.kaia.io' ],
     faucets: [],
-    nativeCurrency: { name: 'KAIA', symbol: 'KAIA', decimals: 18 },
+    nativeCurrency: { name: 'KAIA', symbol: 'KLAY', decimals: 18 },
     infoURL: 'https://kaia.io',
     shortName: 'kaia-mainnet',
     chainId: 8217,
@@ -25501,6 +25519,35 @@ const chainArray = [
     ]
   },
   {
+    name: 'Blessnet',
+    chain: 'ETH',
+    rpc: [
+      'https://blessnet.calderachain.xyz/http',
+      'wss://blessnet.calderachain.xyz/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Bless', symbol: 'BLESS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://blessnet.io',
+    shortName: 'bless',
+    chainId: 45513,
+    networkId: 45513,
+    icon: 'bless',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blessnet.calderaexplorer.xyz',
+        icon: 'bless',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [ { url: 'https://blessnet.bridge.caldera.xyz' } ]
+    }
+  },
+  {
     name: 'Fusion Testnet',
     chain: 'FSN',
     icon: 'fusion',
@@ -25528,7 +25575,10 @@ const chainArray = [
   {
     name: 'Neo X Mainnet',
     chain: 'Neo X',
-    rpc: [ 'https://mainnet-1.rpc.banelabs.org' ],
+    rpc: [
+      'https://mainnet-1.rpc.banelabs.org',
+      'https://mainnet-2.rpc.banelabs.org'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
     infoURL: 'https://neo.org/',
@@ -26066,6 +26116,24 @@ const chainArray = [
       {
         name: 'reiscan',
         url: 'https://testnet.reiscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Flamma Mainnet',
+    chain: 'Flamma',
+    rpc: [ 'https://rpc.flamma.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Flamma', symbol: 'FLA', decimals: 18 },
+    infoURL: 'https://flamma.network',
+    shortName: 'FlammaMainnet',
+    chainId: 55614,
+    networkId: 55614,
+    explorers: [
+      {
+        name: 'flascan',
+        url: 'https://flascan.net',
         standard: 'EIP3091'
       }
     ]
@@ -33915,6 +33983,37 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Blessnet Sepolia',
+    chain: 'ETH',
+    rpc: [
+      'https://blessnet-sepolia-testnet.rpc.caldera.xyz/http',
+      'wss://blessnet-sepolia-testnet.rpc.caldera.xyz/ws'
+    ],
+    faucets: [ 'https://blessnet-sepolia-testnet.hub.caldera.xyz' ],
+    nativeCurrency: { name: 'Bless', symbol: 'BLESS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://blessnet.io',
+    shortName: 'bless-sepolia',
+    chainId: 11145513,
+    networkId: 11145513,
+    icon: 'bless',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blessnet-sepolia-testnet.explorer.caldera.xyz',
+        icon: 'bless',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-421614',
+      bridges: [
+        { url: 'https://blessnet-sepolia-testnet.bridge.caldera.xyz' }
+      ]
+    }
   },
   {
     name: 'Sepolia',
