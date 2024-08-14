@@ -18173,6 +18173,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nibiru Devnet-3',
+    chain: 'Nibiru',
+    rpc: [ 'https://evm-rpc.devnet-3.nibiru.fi' ],
+    faucets: [],
+    nativeCurrency: { name: 'NIBI', symbol: 'NIBI', decimals: 18 },
+    infoURL: 'https://nibiru.fi',
+    shortName: 'nibiru',
+    chainId: 7222,
+    networkId: 7222,
+    icon: 'nibiru',
+    explorers: []
+  },
+  {
     name: 'ZEUS Testnet',
     chain: 'tZEUS',
     icon: 'zeusicon',
@@ -24590,7 +24603,7 @@ const chainArray = [
   {
     name: 'Curtis',
     chain: 'Curtis',
-    rpc: [ 'https://curtis.rpc.caldera.xyz/http' ],
+    rpc: [ 'https://rpc.curtis.apechain.com' ],
     faucets: [ 'https://curtis.hub.caldera.xyz' ],
     nativeCurrency: { name: 'ApeCoin', symbol: 'APE', decimals: 18 },
     infoURL: 'https://curtis.hub.caldera.xyz',
@@ -24601,7 +24614,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Curtis Explorer',
-        url: 'https://curtis.explorer.caldera.xyz',
+        url: 'https://explorer.curtis.apechain.com',
         standard: 'EIP3091'
       }
     ]
@@ -26910,6 +26923,7 @@ const chainArray = [
     shortName: 'cratd2c-testnet',
     chainId: 65349,
     networkId: 65349,
+    icon: 'cratd2c-testnet',
     explorers: [
       {
         name: 'Blockscout',
@@ -28632,6 +28646,25 @@ const chainArray = [
       {
         name: 'eLiberty Testnet',
         url: 'https://testnet.eliberty.ngo',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'EdgaMatrix Chain Testnet',
+    chain: 'EMC Testnet',
+    icon: 'emctest',
+    rpc: [ 'https://rpc1-testnet.emc.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'EdgaMatrix Chain Token', symbol: 'EMC', decimals: 18 },
+    infoURL: '',
+    shortName: 'EMCTestnet',
+    chainId: 99876,
+    networkId: 99876,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.emcscan.com',
         standard: 'EIP3091'
       }
     ]
