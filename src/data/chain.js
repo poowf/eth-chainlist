@@ -6345,9 +6345,9 @@ const chainArray = [
     icon: 'flowevm',
     explorers: [
       {
-        name: 'Flow Diver',
-        url: 'https://testnet.flowdiver.io',
-        standard: 'none'
+        name: 'FlowScan: Testnet',
+        url: 'https://evm-testnet.flowscan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -20161,6 +20161,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'Apex Fusion - Nexus Mainnet',
+    chain: 'Nexus Mainnet',
+    rpc: [ 'https://rpc.nexus.mainnet.apexfusion.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Apex Fusion Token', symbol: 'AP3X', decimals: 18 },
+    infoURL: 'https://apexfusion.org/',
+    features: [ { name: 'EIP155' } ],
+    shortName: 'AP3X',
+    chainId: 9069,
+    networkId: 9069,
+    icon: 'apexfusion',
+    explorers: []
+  },
+  {
+    name: 'Apex Fusion - Nexus testnet',
+    chain: 'Nexus testnet',
+    rpc: [ 'https://rpc.nexus.testnet.apexfusion.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Apex Fusion Token', symbol: 'tAP3X', decimals: 18 },
+    infoURL: 'https://apexfusion.org/',
+    features: [ { name: 'EIP155' } ],
+    shortName: 'tAP3X',
+    chainId: 9070,
+    networkId: 9070,
+    icon: 'apexfusion',
+    explorers: []
+  },
+  {
     name: 'Genesis Coin',
     chain: 'Genesis',
     rpc: [ 'https://genesis-gn.com', 'wss://genesis-gn.com' ],
@@ -28039,6 +28067,19 @@ const chainArray = [
     infoURL: 'https://xprotocol.org/'
   },
   {
+    name: 'Esa',
+    chain: 'Esa',
+    rpc: [ 'http://65.108.151.70:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'Esa', symbol: 'Esa', decimals: 18 },
+    infoURL: 'https://esculap.us',
+    shortName: 'Esa',
+    chainId: 83278,
+    networkId: 83278,
+    icon: 'EsaCoins',
+    explorers: []
+  },
+  {
     name: 'ZEDXION',
     chain: 'ZEDXION',
     icon: 'zedx',
@@ -34437,10 +34478,12 @@ const chainArray = [
     shortName: 'Vcity',
     chainId: 20230825,
     networkId: 20230825,
+    icon: 'vcity',
     explorers: [
       {
         name: 'Vcity Explorer',
         url: 'https://scan.vcity.app',
+        icon: 'vcity',
         standard: 'EIP3091'
       }
     ]
@@ -35554,6 +35597,30 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Sophon Testnet',
+    chain: 'Sophon Testnet',
+    rpc: [ 'https://rpc.testnet.sophon.xyz/' ],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    faucets: [],
+    infoURL: '',
+    shortName: 'sophon-testnet',
+    chainId: 531050104,
+    networkId: 531050104,
+    explorers: [
+      {
+        name: 'Sophon Testnet',
+        url: 'https://explorer.testnet.sophon.xyz',
+        icon: 'sophon-testnet',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.zksync.io/' } ]
+    }
   },
   {
     name: 'Degen Chain',
