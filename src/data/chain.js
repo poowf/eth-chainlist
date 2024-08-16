@@ -3275,7 +3275,7 @@ const chainArray = [
     name: 'Omni Omega',
     chain: 'Omni',
     status: 'active',
-    rpc: [ 'https://omega.omni.network' ],
+    rpc: [ 'https://omega.omni.network', 'wss://wss.omega.omni.network' ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
     nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
@@ -3867,6 +3867,23 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'EKAASH',
+    chain: 'EKAASH',
+    rpc: [ 'https://mainnet.ekaash.biz' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Global Mobile Money Gateway',
+      symbol: '$EKH',
+      decimals: 18
+    },
+    infoURL: 'https://ekaash.biz',
+    shortName: 'ekaash',
+    chainId: 205,
+    networkId: 205,
+    slip44: 1,
+    explorers: []
   },
   {
     name: 'VinuChain Testnet',
