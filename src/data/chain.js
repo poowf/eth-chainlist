@@ -4410,7 +4410,7 @@ const chainArray = [
     chain: 'SWAN',
     rpc: [ 'https://mainnet-rpc01.swanchain.io' ],
     faucets: [],
-    nativeCurrency: { name: 'SWANETH', symbol: 'sETH', decimals: 18 },
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://swanchain.io/',
     shortName: 'Swan',
     chainId: 254,
@@ -17342,6 +17342,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Chang Chain Foundation Mainnet',
+    chain: 'ChangChain',
+    rpc: [ 'https://rpc.cthscan.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Chang Coin Thailand', symbol: 'CTH', decimals: 18 },
+    infoURL: 'https://changcoin.foundation/',
+    shortName: 'ChangChain',
+    chainId: 5858,
+    networkId: 5858,
+    icon: 'changchain',
+    explorers: [
+      {
+        name: 'CTH Scan',
+        url: 'https://cthscan.com',
+        standard: 'EIP3091',
+        icon: 'blockscout'
+      }
+    ]
+  },
+  {
     name: 'Wegochain Rubidium Mainnet',
     chain: 'RBD',
     rpc: [ 'https://proxy.wegochain.io', 'http://wallet.wegochain.io:7764' ],
@@ -22517,6 +22537,24 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
+    name: 'Cypherium Mainnet',
+    chain: 'CPH',
+    rpc: [ 'https://pubnodes.cypherium.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cypherium', symbol: 'CPH', decimals: 18 },
+    infoURL: 'https://www.cypherium.io/',
+    shortName: 'cph',
+    chainId: 16166,
+    networkId: 16166,
+    explorers: [
+      {
+        name: 'Testnet Block Explorer',
+        url: 'https://cypherium.tryethernal.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'PLYR PHI',
