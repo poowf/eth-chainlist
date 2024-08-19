@@ -8460,6 +8460,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bifrost Polkadot Mainnet',
+    chain: 'Bifrost',
+    rpc: [
+      'https://hk.p.bifrost-rpc.liebi.com, wss://hk.p.bifrost-rpc.liebi.com/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Wrapped ETH', symbol: 'WETH', decimals: 18 },
+    infoURL: 'https://bifrost.io/',
+    shortName: 'bnc',
+    chainId: 996,
+    networkId: 996,
+    icon: 'bifrost-polkadot'
+  },
+  {
     name: '5ireChain Thunder',
     chain: '5ireChain Testnet',
     rpc: [ 'https://rpc-testnet.5ire.network' ],
@@ -16727,6 +16741,27 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'MeChain Testnet',
+    chain: 'MeChain',
+    rpc: [ 'https://testnet-rpc.mechain.tech' ],
+    faucets: [ 'https://faucet.mechain.tech' ],
+    nativeCurrency: { name: 'ZKME', symbol: 'ZKME', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mechain.tech',
+    shortName: 'ZKME',
+    chainId: 5151,
+    networkId: 5151,
+    icon: 'mechain',
+    explorers: [
+      {
+        name: 'MeChain Scan',
+        url: 'https://testnet-scan.mechain.tech',
+        icon: 'mechain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bahamut',
     title: 'Bahamut mainnet',
     chain: 'Bahamut',
@@ -23927,6 +23962,51 @@ const chainArray = [
         name: 'polkadotjs',
         url: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet.dev.svcs.ferrumnetwork.io#/explorer',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'DucatusX Testnet',
+    chain: 'DUCX',
+    rpc: [
+      'https://ducx-testnet-node1.rocknblock.io',
+      'https://ducx-testnet-node2.rocknblock.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'DUCX', symbol: 'DUCX', decimals: 18 },
+    infoURL: 'https://www.ducatuscoins.com/ducatusx',
+    shortName: 'ducatusx-testnet',
+    chainId: 26482,
+    networkId: 26482,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer-testnet.ducatusx.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DucatusX',
+    chain: 'DUCX',
+    rpc: [
+      'https://ducx-mainnet-node1.rocknblock.io',
+      'https://ducx-mainnet-node2.rocknblock.io',
+      'https://ducx-mainnet-node3.rocknblock.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'DUCX', symbol: 'DUCX', decimals: 18 },
+    infoURL: 'https://www.ducatuscoins.com/ducatusx',
+    shortName: 'ducatusx',
+    chainId: 26483,
+    networkId: 26483,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.ducatusx.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -35155,6 +35235,27 @@ const chainArray = [
     chainId: 99415706,
     networkId: 99415706,
     slip44: 1
+  },
+  {
+    name: 'Ethos',
+    chain: 'ETHOS',
+    rpc: [ 'https://rpc.ethos.cool' ],
+    faucets: [ 'https://faucet.ethos.cool' ],
+    nativeCurrency: { name: 'ETHOS', symbol: 'ETHOS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://ethos.cool',
+    shortName: 'ETHOS',
+    chainId: 100000000,
+    networkId: 100000000,
+    icon: 'ethos',
+    explorers: [
+      {
+        name: 'ethos scan',
+        url: 'https://scan.ethos.cool',
+        icon: 'ethos',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Oraichain Mainnet',
