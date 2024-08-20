@@ -4233,6 +4233,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ethernity Testnet',
+    chain: 'Ethernity',
+    rpc: [ 'https://testnet.ethernitychain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.ethernity.io',
+    shortName: 'ethernity-testnet',
+    chainId: 233,
+    networkId: 233,
+    explorers: [
+      {
+        name: 'Ethernity Testnet Explorer',
+        url: 'https://testnet.ernscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ProtoJumbo Testnet',
     chain: 'Jumbo',
     rpc: [ 'https://testnode.jumbochain.org' ],
@@ -8462,9 +8480,7 @@ const chainArray = [
   {
     name: 'Bifrost Polkadot Mainnet',
     chain: 'Bifrost',
-    rpc: [
-      'https://hk.p.bifrost-rpc.liebi.com, wss://hk.p.bifrost-rpc.liebi.com/ws'
-    ],
+    rpc: [ 'https://hk.p.bifrost-rpc.liebi.com' ],
     faucets: [],
     nativeCurrency: { name: 'Wrapped ETH', symbol: 'WETH', decimals: 18 },
     infoURL: 'https://bifrost.io/',
@@ -17825,7 +17841,7 @@ const chainArray = [
     }
   },
   {
-    name: 'EdgaMatrix Chain',
+    name: 'Edge Matrix Chain',
     chain: 'EMC',
     icon: 'emc',
     rpc: [ 'https://rpc1-mainnet.emc.network' ],
@@ -28827,7 +28843,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'EdgaMatrix Chain Testnet',
+    name: 'Edge Matrix Chain Testnet',
     chain: 'EMC Testnet',
     icon: 'emctest',
     rpc: [ 'https://rpc1-testnet.emc.network' ],
