@@ -17846,7 +17846,7 @@ const chainArray = [
     icon: 'emc',
     rpc: [ 'https://rpc1-mainnet.emc.network' ],
     faucets: [],
-    nativeCurrency: { name: 'EdgaMatrix Chain Token', symbol: 'EMC', decimals: 18 },
+    nativeCurrency: { name: 'Edge Matrix Chain Token', symbol: 'EMC', decimals: 18 },
     infoURL: '',
     shortName: 'EMC',
     chainId: 6678,
@@ -28848,7 +28848,7 @@ const chainArray = [
     icon: 'emctest',
     rpc: [ 'https://rpc1-testnet.emc.network' ],
     faucets: [],
-    nativeCurrency: { name: 'EdgaMatrix Chain Token', symbol: 'EMC', decimals: 18 },
+    nativeCurrency: { name: 'Edge Matrix Chain Token', symbol: 'EMC', decimals: 18 },
     infoURL: '',
     shortName: 'EMCTestnet',
     chainId: 99876,
@@ -34130,6 +34130,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Fluence',
+    chain: 'Fluence',
+    rpc: [
+      'https://rpc.mainnet.fluence.dev/',
+      'wss://ws.mainnet.fluence.dev/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'FLT', symbol: 'FLT', decimals: 18 },
+    infoURL: 'https://fluence.network/',
+    shortName: 'fluence',
+    chainId: 9999999,
+    networkId: 9999999,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.mainnet.fluence.dev',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
     name: 'Plian Testnet Subchain 1',
     chain: 'Plian',
     rpc: [ 'https://testnet.plian.io/child_test' ],
@@ -34916,6 +34938,28 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Fluence Testnet',
+    chain: 'Fluence Testnet',
+    rpc: [
+      'https://rpc.testnet.fluence.dev/',
+      'wss://ws.testnet.fluence.dev/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'tFLT', symbol: 'tFLT', decimals: 18 },
+    infoURL: 'https://fluence.network/',
+    shortName: 'fluence-testnet',
+    chainId: 52164803,
+    networkId: 52164803,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.testnet.fluence.dev',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Aquachain',
