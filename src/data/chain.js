@@ -9798,6 +9798,18 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Cycle Network Testnet Cuttlefish',
+    chain: 'ETH',
+    rpc: [ 'https://cuttlefish-rpc-testnet.cyclenetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.cyclenetwork.io/',
+    shortName: 'cyclec',
+    chainId: 1228,
+    networkId: 1228,
+    icon: 'cycle'
+  },
+  {
     name: 'Exzo Network Mainnet',
     chain: 'EXZO',
     icon: 'exzo',
@@ -15776,20 +15788,20 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-42161', bridges: [] }
   },
   {
-    name: 'Tobe Chain',
+    name: 'Tobe Chain Testnet',
     chain: 'TBC',
     icon: 'tobe',
-    rpc: [ 'https://rpc.tobescan.com' ],
-    faucets: [],
-    nativeCurrency: { name: 'Tobe Coin', symbol: 'TBC', decimals: 18 },
+    rpc: [ 'https://rpc-testnet.tobescan.com' ],
+    faucets: [ 'https://faucet.tobescan.com/faucet' ],
+    nativeCurrency: { name: 'Tobe Coin', symbol: 'TOBE', decimals: 18 },
     infoURL: 'https://tobechain.net',
     shortName: 'tbc',
     chainId: 4080,
     networkId: 4080,
     explorers: [
       {
-        name: 'tobescan',
-        url: 'https://tobescan.com',
+        name: 'tobescan testnet',
+        url: 'https://testnet.tobescan.com',
         standard: 'EIP3091'
       }
     ]
@@ -20758,6 +20770,30 @@ const chainArray = [
         url: 'https://escscan.com',
         icon: 'espento',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'UXER TESTNET NETWORK',
+    chain: 'UXER',
+    rpc: [
+      'https://dev-testnet.uxer.network',
+      'https://data-cloud-testnet.uxer.network'
+    ],
+    faucets: [ 'https://faucet.uxer.network' ],
+    nativeCurrency: { name: 'UXER', symbol: 'tUXER', decimals: 18 },
+    infoURL: 'https://uxer.network',
+    shortName: 'uxer',
+    chainId: 9966,
+    networkId: 9966,
+    slip44: 1,
+    icon: 'uxer',
+    explorers: [
+      {
+        name: 'UXER TESTNET EXPLORER',
+        icon: 'uxer',
+        url: 'https://testnet.uxer.network',
+        standard: 'none'
       }
     ]
   },
@@ -34883,6 +34919,25 @@ const chainArray = [
     networkId: 31415926,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'Toliman Suave Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.toliman.suave.flashbots.net' ],
+    faucets: [ 'https://faucet.toliman.suave.flashbots.net' ],
+    nativeCurrency: { name: 'SUAVE Toliman Eth', symbol: 'TEEth', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://suave-alpha.flashbots.net/toliman',
+    shortName: 'suave-toliman',
+    chainId: 33626250,
+    networkId: 33626250,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.toliman.suave.flashbots.net',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Joys Digital Mainnet',
