@@ -18273,13 +18273,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nibiru Testnet-1',
+    chain: 'Nibiru',
+    rpc: [ 'https://evm-rpc.testnet-1.nibiru.fi' ],
+    faucets: [],
+    nativeCurrency: { name: 'NIBI', symbol: 'NIBI', decimals: 18 },
+    infoURL: 'https://nibiru.fi',
+    shortName: 'nibiru-testnet-1',
+    chainId: 7210,
+    networkId: 7210,
+    icon: 'nibiru',
+    explorers: []
+  },
+  {
     name: 'Nibiru Devnet-3',
     chain: 'Nibiru',
     rpc: [ 'https://evm-rpc.devnet-3.nibiru.fi' ],
     faucets: [],
     nativeCurrency: { name: 'NIBI', symbol: 'NIBI', decimals: 18 },
     infoURL: 'https://nibiru.fi',
-    shortName: 'nibiru',
+    shortName: 'nibiru-devnet-3',
     chainId: 7222,
     networkId: 7222,
     icon: 'nibiru',
@@ -26273,7 +26286,7 @@ const chainArray = [
     name: 'Toronet Testnet',
     chain: 'Toronet',
     icon: 'toronet',
-    rpc: [ 'http://testnet.toronet.org/rpc' ],
+    rpc: [ 'https://testnet.toronet.org/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'Toroe', symbol: 'TOROE', decimals: 18 },
     infoURL: 'https://toronet.org',
@@ -30065,7 +30078,7 @@ const chainArray = [
     nativeCurrency: { name: 'FAIR', symbol: 'FAIR', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://xfair.ai',
-    shortName: 'fair',
+    shortName: 'fairt',
     chainId: 171000,
     networkId: 171000
   },
@@ -34486,8 +34499,8 @@ const chainArray = [
     status: 'deprecated'
   },
   {
-    name: 'NeoX Testnet T4',
-    chain: 'NeoX',
+    name: 'Neo X Testnet T4',
+    chain: 'Neo X',
     rpc: [ 'https://testnet.rpc.banelabs.org/' ],
     faucets: [],
     nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
@@ -34499,7 +34512,7 @@ const chainArray = [
     explorers: [
       {
         name: 'neox-scan',
-        url: 'https://testnet.scan.banelabs.org',
+        url: 'https://xt4scan.ngd.network',
         standard: 'EIP3091'
       }
     ],
