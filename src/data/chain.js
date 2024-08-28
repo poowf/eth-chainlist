@@ -10883,6 +10883,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Story Testnet',
+    chain: 'Story Testnet',
+    rpc: [ 'https://testnet.storyrpc.io' ],
+    faucets: [ 'https://faucet.story.foundation' ],
+    chainId: 1513,
+    networkId: 1513,
+    nativeCurrency: { name: 'IP', symbol: 'IP', decimals: 18 },
+    infoURL: 'https://www.story.foundation',
+    shortName: 'Story',
+    explorers: [
+      {
+        name: 'Story Iliad Network explorer',
+        url: 'https://testnet.storyscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Beagle Messaging Chain',
     chain: 'BMC',
     rpc: [ 'https://beagle.chat/eth' ],
@@ -16102,6 +16120,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Laika Testnet',
+    chain: 'LAIKA',
+    rpc: [ 'https://testnetrpc1.laikachain.dog' ],
+    faucets: [ 'https://laikachain.dog/faucets' ],
+    nativeCurrency: { name: 'Dogecoin', symbol: 'DOGE', decimals: 18 },
+    infoURL: 'https://laikachain.dog',
+    shortName: 'laika-testnet',
+    chainId: 4269,
+    networkId: 4269,
+    icon: 'laika',
+    explorers: [
+      {
+        name: 'Laika Testnet Explorer',
+        url: 'https://testnet.laikachain.dog',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bobafuji Testnet',
     chain: 'Bobafuji Testnet',
     status: 'deprecated',
@@ -18040,6 +18077,25 @@ const chainArray = [
         name: 'poolsscan',
         url: 'https://scan.poolsmobility.com',
         icon: 'POOLS',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Laika Mainnet',
+    chain: 'LAIKA',
+    rpc: [ 'https://mainnetrpc.laikachain.dog' ],
+    faucets: [ 'https://laikachain.dog/faucets' ],
+    nativeCurrency: { name: 'Dogecoin', symbol: 'DOGE', decimals: 18 },
+    infoURL: 'https://laikachain.dog',
+    shortName: 'laika',
+    chainId: 6942,
+    networkId: 6942,
+    icon: 'laika',
+    explorers: [
+      {
+        name: 'Laika Mainnet Explorer',
+        url: 'https://explorer.laikachain.dog',
         standard: 'EIP3091'
       }
     ]
@@ -29276,6 +29332,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Creditcoin Devnet',
+    chain: 'CTC',
+    icon: 'creditcoin',
+    rpc: [ 'https://rpc.cc3-devnet.creditcoin.network' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Devnet CTC', symbol: 'devCTC', decimals: 18 },
+    infoURL: 'https://creditcoin.org',
+    shortName: 'ctcdev',
+    chainId: 102032,
+    networkId: 102032,
+    faucets: [],
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://creditcoin-devnet.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Crystaleum',
     chain: 'crystal',
     rpc: [
@@ -35967,8 +36044,11 @@ const chainArray = [
   {
     name: 'Sophon Testnet',
     chain: 'Sophon Testnet',
-    rpc: [ 'https://rpc.testnet.sophon.xyz/' ],
-    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    rpc: [
+      'https://rpc.testnet.sophon.xyz',
+      'wss://rpc.testnet.sophon.xyz/ws'
+    ],
+    nativeCurrency: { name: 'Sophon', symbol: 'SOPH', decimals: 18 },
     faucets: [],
     infoURL: '',
     shortName: 'sophon-testnet',
@@ -35976,7 +36056,7 @@ const chainArray = [
     networkId: 531050104,
     explorers: [
       {
-        name: 'Sophon Testnet',
+        name: 'Sophon Block Explorer',
         url: 'https://explorer.testnet.sophon.xyz',
         icon: 'sophon-testnet',
         standard: 'none'
@@ -35985,7 +36065,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://bridge.zksync.io/' } ]
+      bridges: [ { url: 'https://portal.testnet.sophon.xyz/bridge' } ]
     }
   },
   {
@@ -36911,6 +36991,27 @@ const chainArray = [
       {
         name: 'Alphabet Explorer',
         url: 'https://scan.alphabetnetwork.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Thanos Sepolia',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc.thanos-sepolia.tokamak.network',
+      'wss://rpc.thanos-sepolia.tokamak.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Tokamak Network', symbol: 'TON', decimals: 18 },
+    infoURL: 'https://tokamak.network',
+    shortName: 'thanos-sepolia',
+    chainId: 111551119090,
+    networkId: 111551119090,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.thanos-sepolia.tokamak.network',
         standard: 'EIP3091'
       }
     ]
