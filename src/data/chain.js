@@ -11857,6 +11857,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'Minato',
+    shortName: 'minato',
+    title: 'Soneium testnet Minato',
+    chain: 'ETH',
+    icon: 'minato',
+    rpc: [ 'https://rpc.minato.soneium.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://soneium.org',
+    chainId: 1946,
+    networkId: 1946,
+    explorers: [
+      {
+        name: 'Blockscout Minato explorer',
+        url: 'https://explorer-testnet.soneium.org',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.soneium.org/testnet' } ]
+    }
+  },
+  {
     name: 'D-Chain Mainnet',
     chain: 'D-Chain',
     rpc: [
@@ -36081,6 +36106,29 @@ const chainArray = [
     networkId: 666666666,
     status: 'incubating',
     icon: 'degen'
+  },
+  {
+    name: 'Tron Mainnet',
+    chain: 'TRON',
+    rpc: [
+      'https://rpc.ankr.com/tron_jsonrpc',
+      'https://api.trongrid.io/jsonrpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Tron', symbol: 'TRX', decimals: 6 },
+    infoURL: 'https://tron.network',
+    shortName: 'tron',
+    chainId: 728126428,
+    networkId: 728126428,
+    icon: 'tron',
+    explorers: [
+      {
+        name: 'tronscan',
+        url: 'https://tronscan.org',
+        icon: 'tron',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Ancient8',
