@@ -182,6 +182,7 @@ const chainArray = [
     shortName: 'tch',
     chainId: 7,
     networkId: 7,
+    icon: 'tch',
     explorers: [
       {
         name: 'Thaichain Explorer',
@@ -3396,6 +3397,26 @@ const chainArray = [
     chainId: 170,
     networkId: 170,
     slip44: 1
+  },
+  {
+    name: 'CO2e Ledger',
+    chain: 'CO2E',
+    rpc: [ 'https://rpc.co2ledger.xyz' ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'CO2e Token', symbol: 'CO2E', decimals: 18 },
+    infoURL: 'https://co2ledger.xyz',
+    shortName: 'CO2e',
+    chainId: 171,
+    networkId: 171,
+    icon: 'co2e',
+    explorers: [
+      {
+        name: 'CO2e Explorer',
+        url: 'https://exp.co2ledger.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Latam-Blockchain Resil Testnet',
@@ -11056,7 +11077,7 @@ const chainArray = [
     rpc: [ 'https://mainnet.pivotalprotocol.com' ],
     faucets: [],
     shortName: 'pivotal-mainnet',
-    nativeCurrency: { name: 'Pivotal Plus', symbol: 'PLUS', decimals: 18 },
+    nativeCurrency: { name: 'Pivotal ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'http://thepivotal.xyz/',
     explorers: [
       {
@@ -22776,7 +22797,7 @@ const chainArray = [
     rpc: [ 'https://sepolia.pivotalprotocol.com' ],
     faucets: [],
     shortName: 'pivotal-sepolia',
-    nativeCurrency: { name: 'Pivotal Plus', symbol: 'PLUS', decimals: 18 },
+    nativeCurrency: { name: 'Pivotal ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'http://thepivotal.xyz/',
     explorers: [
       {
@@ -27247,11 +27268,11 @@ const chainArray = [
   {
     name: 'eCredits Testnet',
     chain: 'ECS',
-    rpc: [ 'https://rpc.tst.ecredits.com' ],
+    rpc: [],
     faucets: [ 'https://faucet.tst.ecredits.com' ],
     nativeCurrency: { name: 'eCredits', symbol: 'ECS', decimals: 18 },
     infoURL: 'https://ecredits.com',
-    shortName: 'ecs-testnet',
+    shortName: 'ecs-testnet-old',
     chainId: 63001,
     networkId: 63001,
     slip44: 1,
@@ -27261,6 +27282,29 @@ const chainArray = [
         name: 'eCredits TestNet Explorer',
         url: 'https://explorer.tst.ecredits.com',
         icon: 'ecredits',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'deprecated'
+  },
+  {
+    name: 'eSync Network Testnet',
+    title: 'eSync Network Testnet',
+    chain: 'ECS',
+    rpc: [ 'http://rpc.tst.esync.network' ],
+    faucets: [ 'https://faucet.tst.ecredits.com' ],
+    nativeCurrency: { name: 'eCredits', symbol: 'ECS', decimals: 18 },
+    infoURL: 'https://esync.network',
+    shortName: 'esync-testnet',
+    chainId: 63002,
+    networkId: 63002,
+    slip44: 1,
+    icon: 'esync',
+    explorers: [
+      {
+        name: 'eSync Network Testnet Explorer',
+        url: 'https://explorer.tst.esync.network',
+        icon: 'esync',
         standard: 'EIP3091'
       }
     ]
