@@ -8343,6 +8343,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Palm Smart Chain',
+    title: 'Palm Smart Chain',
+    chain: 'Palm',
+    rpc: [ 'https://rpc.palmsmartchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PALM', symbol: 'PALM', decimals: 18 },
+    infoURL: 'https://palmsmartchain.io',
+    shortName: 'PalmChain',
+    chainId: 973,
+    networkId: 973,
+    explorers: [
+      {
+        name: 'Palm Smart Chain Explorer',
+        url: 'https://explorer.palmsmartchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Nepal Blockchain Network',
     chain: 'YETI',
     rpc: [
@@ -25063,7 +25082,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Zilliqa-2 EVM Devnet',
+    name: 'Zilliqa 2 EVM devnet',
     chain: 'ZIL',
     rpc: [ 'https://api.zq2-devnet.zilliqa.com' ],
     faucets: [ 'https://faucet.zq2-devnet.zilliqa.com' ],
