@@ -4447,7 +4447,11 @@ const chainArray = [
   {
     name: 'Swan Chain Mainnet',
     chain: 'SWAN',
-    rpc: [ 'https://mainnet-rpc01.swanchain.io' ],
+    rpc: [
+      'https://mainnet-rpc.swanchain.org',
+      'https://mainnet-rpc-01.swanchain.org',
+      'https://mainnet-rpc-02.swanchain.org'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://swanchain.io/',
@@ -11607,6 +11611,30 @@ const chainArray = [
         icon: 'ruby',
         url: 'https://rubyscan.net',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'HighOctane Subnet',
+    chain: 'HighOctane Subnet',
+    rpc: [
+      'https://subnets.avax.network/highoctane/mainnet/rpc',
+      'wss://subnets.avax.network/highoctane/mainnet/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'HighOctane', symbol: 'HO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://subnets.avax.network/highoctane/details',
+    shortName: 'HighOctane',
+    chainId: 1853,
+    networkId: 1853,
+    icon: 'highOctane',
+    explorers: [
+      {
+        name: 'HighOctane Subnet Explorer',
+        url: 'https://subnets.avax.network/highoctane',
+        icon: 'highOctane',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -25321,6 +25349,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'DIV Chain',
+    chain: 'DIVC',
+    rpc: [ 'https://rpc.divchain.org' ],
+    faucets: [],
+    features: [ { name: 'EIP155' } ],
+    nativeCurrency: { name: 'DIVC', symbol: 'DIVC', decimals: 18 },
+    infoURL: 'https://www.divchain.org',
+    shortName: 'divc',
+    chainId: 40000,
+    networkId: 40000,
+    icon: 'divc',
+    explorers: [
+      {
+        name: 'DIV Chain explorer',
+        url: 'https://scan.divchain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Aleph Zero EVM',
     chain: 'Aleph Zero EVM',
     icon: 'aleph-zero',
@@ -30231,6 +30279,25 @@ const chainArray = [
       {
         name: 'routescan',
         url: 'https://hekla.taikoscan.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zchains',
+    chain: 'Zchains',
+    rpc: [ 'https://rpc.zchains.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'ZCD', symbol: 'ZCD', decimals: 18 },
+    infoURL: 'https://www.zchains.com/',
+    shortName: 'zchains',
+    chainId: 168168,
+    networkId: 168168,
+    icon: 'zchain',
+    explorers: [
+      {
+        name: 'zchains',
+        url: 'https://scan.zchains.com',
         standard: 'EIP3091'
       }
     ]
