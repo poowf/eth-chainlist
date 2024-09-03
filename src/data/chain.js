@@ -2832,9 +2832,9 @@ const chainArray = [
       'wss://polygon.drpc.org'
     ],
     faucets: [],
-    nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
+    nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
     infoURL: 'https://polygon.technology/',
-    shortName: 'matic',
+    shortName: 'pol',
     chainId: 137,
     networkId: 137,
     slip44: 966,
@@ -26278,6 +26278,26 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-3' }
   },
   {
+    name: 'Erbie Mainnet',
+    chain: 'Erbie',
+    rpc: [ 'https://api.erbie.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'ERB', symbol: 'ERB', decimals: 18 },
+    infoURL: 'https://www.erbie.io',
+    shortName: 'Erbie',
+    chainId: 50888,
+    networkId: 50888,
+    icon: 'erbie',
+    explorers: [
+      {
+        name: 'Erbie Explorer',
+        url: 'https://www.erbie.io/explorer',
+        standard: 'none',
+        icon: 'erbie'
+      }
+    ]
+  },
+  {
     name: 'Lumoz Testnet Alpha',
     chain: 'ETH',
     rpc: [
@@ -30632,6 +30652,36 @@ const chainArray = [
         name: 'DSC Explorer Testnet',
         url: 'https://testnet.explorer.decimalchain.com',
         icon: 'dsc',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DuckChain Testnet',
+    title: 'DuckChain Testnet',
+    chain: 'DuckChain',
+    icon: 'duckchain',
+    rpc: [
+      'https://testnet-rpc.duckchain.io',
+      'https://testnet-rpc-hk.duckchain.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'TON', symbol: 'TON', decimals: 18 },
+    infoURL: 'https://duckchain.io',
+    shortName: 'Duck-Chain-Testnet',
+    chainId: 202105,
+    networkId: 202105,
+    explorers: [
+      {
+        name: 'DuckChain Scan',
+        url: 'https://www.okx.com/web3/explorer/duckchain-testnet',
+        icon: 'duckchain',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'DuckChain Scan',
+        url: 'https://www.oklink.com/duckchain-testnet',
+        icon: 'duckchain',
         standard: 'EIP3091'
       }
     ]
