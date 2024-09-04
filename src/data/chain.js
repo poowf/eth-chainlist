@@ -7177,6 +7177,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Birdee-2',
+    chain: 'Tucana',
+    title: 'Tucana Testnet',
+    rpc: [
+      'https://evm-rpc.birdee-2.tucana.zone',
+      'wss://evm-ws.birdee-2.tucana.zone'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Tucana', symbol: 'TUC', decimals: 18 },
+    infoURL: 'https://tucana.zone',
+    shortName: 'birdee-2',
+    chainId: 712,
+    networkId: 712,
+    slip44: 1,
+    icon: 'tucana',
+    explorers: [
+      {
+        name: 'Birdee-2 Explorer',
+        url: 'https://explorer.birdee-2.tucana.zone',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Vrcscan Mainnet',
     chain: 'VRC',
     rpc: [
@@ -11084,7 +11108,8 @@ const chainArray = [
         name: 'Gravity Alpha Mainnet Explorer',
         url: 'https://explorer.gravity.xyz',
         standard: 'EIP3091'
-      }
+      },
+      { name: 'gscan', url: 'https://gscan.xyz', standard: 'EIP3091' }
     ],
     parent: {
       type: 'L2',
@@ -14043,6 +14068,25 @@ const chainArray = [
         icon: 'hybrid',
         url: 'https://hybridscan.ai',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: '6Degree of Outreach',
+    chain: '6DO',
+    rpc: [ 'https://rpc.6do.world' ],
+    faucets: [],
+    nativeCurrency: { name: '6Degree Coin', symbol: '6DO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://6do.world',
+    shortName: '6do',
+    chainId: 2477,
+    networkId: 2477,
+    explorers: [
+      {
+        name: '6Degree Chain Explorer',
+        url: 'https://explorer.6do.world',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -26453,6 +26497,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'OverProtocol Mainnet',
+    chain: 'OverProtocol',
+    icon: 'overIcon',
+    rpc: [ 'https://public.rpc.overprotocol.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Over', symbol: 'OVER', decimals: 18 },
+    infoURL: 'https://docs.over.network',
+    shortName: 'overprotocol',
+    chainId: 54176,
+    networkId: 54176,
+    explorers: [
+      {
+        name: 'OverView',
+        url: 'https://view.over.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Haqq Chain Testnet',
     chain: 'TestEdge2',
     rpc: [ 'https://rpc.eth.testedge2.haqq.network' ],
@@ -32399,6 +32462,25 @@ const chainArray = [
       {
         name: 'bescscan',
         url: 'https://Bescscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'OverProtocol Testnet',
+    chain: 'OverProtocol',
+    icon: 'overIcon',
+    rpc: [ 'https://wallet-dolphin.rpc.over.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Over', symbol: 'OVER', decimals: 18 },
+    infoURL: 'https://docs.over.network',
+    shortName: 'overprotocol-testnet',
+    chainId: 541764,
+    networkId: 541764,
+    explorers: [
+      {
+        name: 'OverView Testnet',
+        url: 'https://dolphin.view.over.network',
         standard: 'EIP3091'
       }
     ]
