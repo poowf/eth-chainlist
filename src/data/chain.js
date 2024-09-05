@@ -6396,7 +6396,7 @@ const chainArray = [
     name: 'Testnet',
     chain: 'Flow',
     rpc: [ 'https://testnet.evm.nodes.onflow.org' ],
-    faucets: [ 'https://testnet-faucet.onflow.org' ],
+    faucets: [ 'https://faucet.flow.com/fund-account' ],
     nativeCurrency: { name: 'FLOW', symbol: 'FLOW', decimals: 18 },
     infoURL: 'https://developers.flow.com/evm/about',
     shortName: 'flow-testnet',
@@ -6839,7 +6839,8 @@ const chainArray = [
         url: 'https://eth.flowscan.io',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'SX Network Testnet',
@@ -7173,6 +7174,27 @@ const chainArray = [
         url: 'https://explorer.furya.io',
         standard: 'EIP3091',
         icon: 'highbury'
+      }
+    ]
+  },
+  {
+    name: 'Tucana',
+    chain: 'Tucana',
+    title: 'Tucana Testnet',
+    rpc: [ 'https://evm-rpc.tucana.zone', 'wss://evm-ws.tucana.zone' ],
+    faucets: [],
+    nativeCurrency: { name: 'Tucana', symbol: 'TUC', decimals: 18 },
+    infoURL: 'https://tucana.zone',
+    shortName: 'tuc',
+    chainId: 711,
+    networkId: 711,
+    slip44: 1,
+    icon: 'tucana',
+    explorers: [
+      {
+        name: 'Tucana Explorer',
+        url: 'https://explorer.tucana.zone',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -14515,7 +14537,7 @@ const chainArray = [
       'wss://rpc-quicknode-holesky.morphl2.io',
       'https://rpc-holesky.morphl2.io'
     ],
-    faucets: [],
+    faucets: [ 'https://morphfaucet.com/' ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://morphl2.io',
     shortName: 'hmorph',
@@ -32543,6 +32565,30 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'DustBoy IoT',
+    title: 'DustBoy IoT',
+    status: 'active',
+    chain: 'DUSTBOY',
+    rpc: [ 'https://dustboy-rpc.jibl2.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'DST', decimals: 18 },
+    infoURL: 'https://www.cmuccdc.org/',
+    shortName: 'DustBoy_IoT',
+    chainId: 555888,
+    networkId: 555888,
+    slip44: 1,
+    icon: 'dustboy',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://dustboy.jibl2.com',
+        standard: 'EIP3091',
+        icon: 'dustboy'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'Hypra Mainnet',
