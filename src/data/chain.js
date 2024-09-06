@@ -6393,7 +6393,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Testnet',
+    name: 'EVM on Flow (Testnet)',
     chain: 'Flow',
     rpc: [ 'https://testnet.evm.nodes.onflow.org' ],
     faucets: [ 'https://faucet.flow.com/fund-account' ],
@@ -7387,7 +7387,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Mainnet',
+    name: 'EVM on Flow (Mainnet)',
     chain: 'Flow',
     rpc: [ 'https://mainnet.evm.nodes.onflow.org' ],
     faucets: [],
@@ -24605,6 +24605,26 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
+    name: 'qChain Mainnet',
+    chain: 'qChain',
+    rpc: [ 'https://rpc.qchain.kr' ],
+    faucets: [],
+    features: [ { name: 'EIP155' } ],
+    nativeCurrency: { name: 'QCO', symbol: 'QCO', decimals: 18 },
+    infoURL: 'https://www.qchain.kr',
+    shortName: 'qchain',
+    chainId: 30000,
+    networkId: 30000,
+    icon: 'qchain',
+    explorers: [
+      {
+        name: 'qChain explorer',
+        url: 'https://scan.qchain.kr',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Piece testnet',
