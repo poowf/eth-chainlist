@@ -7387,7 +7387,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'EVM on Flow (Mainnet)',
+    name: 'EVM on Flow',
     chain: 'Flow',
     rpc: [ 'https://mainnet.evm.nodes.onflow.org' ],
     faucets: [],
@@ -7399,9 +7399,9 @@ const chainArray = [
     icon: 'flowevm',
     explorers: [
       {
-        name: 'Flow Diver',
-        url: 'https://flowdiver.io',
-        standard: 'none'
+        name: 'FlowScan',
+        url: 'https://evm.flowscan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -8268,6 +8268,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Subtensor EVM Testnet',
+    chain: 'Bittensor',
+    rpc: [ 'https://evm-testnet.dev.opentensor.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'testTAO', symbol: 'TAO', decimals: 9 },
+    infoURL: 'https://bittensor.com/',
+    shortName: 'bittensor-evm-testnet',
+    chainId: 945,
+    networkId: 945,
+    slip44: 1005,
+    icon: 'bittensor',
+    explorers: [
+      {
+        name: 'Subtensor EVM Explorer',
+        url: 'https://evm-testscan.dev.opentensor.ai',
+        icon: 'bittensor',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'muNode Testnet',
     chain: 'munode',
     rpc: [],
@@ -8552,7 +8573,7 @@ const chainArray = [
     chain: '5ireChain',
     rpc: [ 'https://rpc.5ire.network' ],
     faucets: [],
-    nativeCurrency: { name: '5ire Token', symbol: '5IRE', decimals: 18 },
+    nativeCurrency: { name: '5ire Token', symbol: '5ire', decimals: 18 },
     infoURL: 'https://5ire.org',
     shortName: '5ire',
     chainId: 995,
@@ -8580,10 +8601,10 @@ const chainArray = [
     icon: 'bifrost-polkadot'
   },
   {
-    name: '5ireChain Thunder',
-    chain: '5ireChain Testnet',
-    rpc: [ 'https://rpc-testnet.5ire.network' ],
-    faucets: [ 'https://explorer.5ire.network/faucet' ],
+    name: '5ireChain Thunder Testnet',
+    chain: '5ireChain',
+    rpc: [ 'https://rpc.testnet.5ire.network' ],
+    faucets: [ 'https://testnet.5irescan.io/faucet' ],
     nativeCurrency: { name: '5ire Testnet Token', symbol: 'T5IRE', decimals: 18 },
     infoURL: 'https://5ire.org',
     shortName: 'T5ire',
@@ -8592,8 +8613,8 @@ const chainArray = [
     icon: '5ireChain',
     explorers: [
       {
-        name: '5ireChain Explorer',
-        url: 'https://explorer.5ire.network',
+        name: '5ireChain Testnet Explorer',
+        url: 'https://testnet.5irescan.io',
         standard: 'none',
         icon: '5ireChain'
       }
@@ -12910,8 +12931,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Aleph Zero Testnet',
-    chain: 'Aleph Zero Testnet',
+    name: 'Aleph Zero',
+    chain: 'Aleph Zero',
     icon: 'aleph',
     rpc: [
       'https://rpc.alephzero-testnet.gelato.digital',
@@ -12919,14 +12940,14 @@ const chainArray = [
     ],
     faucets: [],
     nativeCurrency: { name: 'TZERO', symbol: 'TZERO', decimals: 18 },
-    infoURL: 'https://testnet.alephzero.org',
+    infoURL: 'https://alephzero.org/',
     shortName: 'aleph',
     chainId: 2039,
     networkId: 2039,
     explorers: [
       {
-        name: 'Aleph Zero Testnet',
-        url: 'https://test.azero.dev/#/explorer',
+        name: 'Aleph Zero',
+        url: 'https://evm-explorer-testnet.alephzero.org',
         icon: 'aleph',
         standard: 'none'
       }
@@ -15979,6 +16000,26 @@ const chainArray = [
       {
         name: 'tobescan testnet',
         url: 'https://testnet.tobescan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zeroth Mainnet',
+    chain: 'ZRH',
+    icon: 'zeroth',
+    rpc: [ 'https://my.zeroth.run' ],
+    faucets: [],
+    nativeCurrency: { name: 'ZRH', symbol: 'ZRH', decimals: 18 },
+    infoURL: 'https://www.zeroth.foundation',
+    shortName: 'ZRH',
+    chainId: 4088,
+    networkId: 4088,
+    explorers: [
+      {
+        name: 'Zeroth Explorer',
+        url: 'https://scan.zeroth.run',
+        icon: 'zeroth',
         standard: 'EIP3091'
       }
     ]
@@ -22597,6 +22638,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zeroth Testnet',
+    chain: 'Zeroth',
+    icon: 'zeroth',
+    rpc: [ 'https://test-my.zeroth.run' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zeroth', symbol: 'ZRHt', decimals: 18 },
+    infoURL: 'https://www.zeroth.foundation',
+    shortName: 'ZRHt',
+    chainId: 14088,
+    networkId: 14088,
+    explorers: [
+      {
+        name: 'Zeroth Explorer',
+        url: 'https://test-scan.zeroth.run',
+        icon: 'zeroth',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'EVOLVE Testnet',
     chain: 'EVO',
     icon: 'evolveIcon',
@@ -27483,7 +27544,7 @@ const chainArray = [
     name: 'eSync Network Testnet',
     title: 'eSync Network Testnet',
     chain: 'ECS',
-    rpc: [ 'http://rpc.tst.esync.network' ],
+    rpc: [ 'https://rpc.tst.esync.network' ],
     faucets: [ 'https://faucet.tst.ecredits.com' ],
     nativeCurrency: { name: 'eCredits', symbol: 'ECS', decimals: 18 },
     infoURL: 'https://esync.network',
@@ -37395,10 +37456,7 @@ const chainArray = [
   {
     name: 'Fluence Stage',
     chain: 'Fluence Stage (Testnet)',
-    rpc: [
-      'https://rpc-123420000220.raas-testnet.gelato.digital/',
-      'wss://ws-123420000220.raas-testnet.gelato.digital/'
-    ],
+    rpc: [ 'https://rpc.stage.fluence.dev', 'wss://ws.stage.fluence.dev' ],
     faucets: [],
     nativeCurrency: { name: 'tFLT', symbol: 'tFLT', decimals: 18 },
     infoURL: 'https://fluence.network/',
@@ -37408,7 +37466,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://blockscout-123420000220.raas-testnet.gelato.digital',
+        url: 'https://blockscout.stage.fluence.dev',
         standard: 'EIP3091'
       }
     ],
