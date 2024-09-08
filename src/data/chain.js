@@ -6393,7 +6393,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'EVM on Flow (Testnet)',
+    name: 'EVM on Flow Testnet',
     chain: 'Flow',
     rpc: [ 'https://testnet.evm.nodes.onflow.org' ],
     faucets: [ 'https://faucet.flow.com/fund-account' ],
@@ -6405,7 +6405,7 @@ const chainArray = [
     icon: 'flowevm',
     explorers: [
       {
-        name: 'FlowScan: Testnet',
+        name: 'FlowScan Testnet',
         url: 'https://evm-testnet.flowscan.io',
         standard: 'EIP3091'
       }
@@ -18559,7 +18559,7 @@ const chainArray = [
     chain: 'tZEUS',
     icon: 'zeusicon',
     rpc: [ 'https://testnet-rpc.zeuschainscan.io' ],
-    nativeCurrency: { name: 'The ZEUS Token', symbol: 'ZEUS', decimals: 18 },
+    nativeCurrency: { name: 'The ZEUS Token', symbol: 'ZEUSX', decimals: 18 },
     infoURL: 'https://testnet-explorer.zeuschainscan.io',
     shortName: 'ZEUS-Testnet',
     chainId: 7244,
@@ -21697,6 +21697,25 @@ const chainArray = [
         name: 'explorer',
         url: 'https://explorer.testnet.quadrans.io',
         icon: 'quadrans',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'KBC Chain',
+    chain: 'KB',
+    rpc: [ 'https://mainnet-rpc.kbcfoundation.com' ],
+    faucets: [],
+    features: [ { name: 'EIP155' } ],
+    nativeCurrency: { name: 'KBC', symbol: 'KBC', decimals: 18 },
+    infoURL: 'https://kbcfoundation.com',
+    shortName: 'KBC',
+    chainId: 11000,
+    networkId: 11000,
+    explorers: [
+      {
+        name: 'KBC Explorer',
+        url: 'https://scan.kbcfoundation.com',
         standard: 'EIP3091'
       }
     ]
@@ -25327,12 +25346,12 @@ const chainArray = [
   },
   {
     name: 'ZEUS Mainnet',
-    chain: 'ZEUS',
+    chain: 'ZEUSX',
     icon: 'zeusicon',
     rpc: [ 'https://mainnet-rpc.zeuschainscan.io' ],
-    nativeCurrency: { name: 'The ZEUS Token', symbol: 'ZEUS', decimals: 18 },
+    nativeCurrency: { name: 'The ZEUS Token', symbol: 'ZEUSX', decimals: 18 },
     infoURL: 'https://zeuschainscan.io',
-    shortName: 'ZEUS',
+    shortName: 'ZEUSX',
     chainId: 34504,
     networkId: 34504,
     faucets: [],
@@ -29631,6 +29650,27 @@ const chainArray = [
       }
     ],
     redFlags: [ 'reusedChainId' ]
+  },
+  {
+    name: 'Creditcoin',
+    chain: 'CTC',
+    icon: 'creditcoin',
+    rpc: [ 'https://mainnet3.creditcoin.network' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'CTC', symbol: 'CTC', decimals: 18 },
+    infoURL: 'https://creditcoin.org',
+    shortName: 'ctc',
+    chainId: 102030,
+    networkId: 102030,
+    faucets: [],
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://creditcoin.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Creditcoin Testnet',
