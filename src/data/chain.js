@@ -21722,7 +21722,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'KBC Chain',
+    name: 'KB Chain',
     chain: 'KB',
     rpc: [ 'https://mainnet-rpc.kbcfoundation.com' ],
     faucets: [],
