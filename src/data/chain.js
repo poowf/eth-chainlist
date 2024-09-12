@@ -3527,6 +3527,24 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Ethernity Mainnet',
+    chain: 'Ethernity',
+    rpc: [ 'https://mainnet.ethernitychain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.ethernity.io',
+    shortName: 'ethernity-mainnet',
+    chainId: 183,
+    networkId: 183,
+    explorers: [
+      {
+        name: 'Ethernity Mainnet Explorer',
+        url: 'https://ernscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Dojima Testnet',
     chain: 'Dojima',
     rpc: [ 'https://rpc-test-d11k.dojima.network' ],
@@ -10711,20 +10729,20 @@ const chainArray = [
     status: 'deprecated'
   },
   {
-    name: 'Silicon zkEVM Sepolia Testnet',
-    title: 'Silicon zkEVM Sepolia Testnet',
+    name: 'Silicon zkEVM Sepolia Testnet(Deprecated)',
+    title: 'Silicon zkEVM Sepolia Testnet(Deprecated)',
     chain: 'Silicon',
     rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: '',
-    shortName: 'silicon-sepolia-testnet',
+    shortName: 'silicon-sepolia-testnet-deprecated',
     chainId: 1414,
     networkId: 1414,
     icon: 'silicon',
     explorers: [],
     parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] },
-    status: 'incubating'
+    status: 'deprecated'
   },
   {
     name: 'Polygon zkEVM Testnet Pre Audit-Upgraded',
@@ -13876,17 +13894,33 @@ const chainArray = [
     name: 'Silicon zkEVM',
     title: 'Silicon zkEVM Mainnet',
     chain: 'Silicon',
-    rpc: [],
+    rpc: [
+      'https://rpc.silicon.network',
+      'https://silicon-mainnet.nodeinfra.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: '',
+    infoURL: 'https://docs.silicon.network',
     shortName: 'silicon-zk',
     chainId: 2355,
     networkId: 2355,
     icon: 'silicon',
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'siliconscope',
+        url: 'https://scope.silicon.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [
+        { url: 'https://bridge.silicon.network' },
+        { url: 'https://bridge.orbitchain.io' }
+      ]
+    },
+    status: 'active'
   },
   {
     name: '(deprecated) Kroma Sepolia',
@@ -27698,6 +27732,25 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Creator Chain Testnet',
+    chain: 'creatorchain',
+    icon: 'creatorchain',
+    rpc: [ 'https://rpc.creatorchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'CreatorETH', symbol: 'CETH', decimals: 18 },
+    infoURL: 'https://docs.creatorchain.io/',
+    shortName: 'ceth',
+    chainId: 66665,
+    networkId: 66665,
+    explorers: [
+      {
+        name: 'creatorchainscan',
+        url: 'https://explorer.creatorchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Janus Testnet',
     chain: 'JanusNetwork',
     icon: 'janusnetwork',
@@ -37194,6 +37247,35 @@ const chainArray = [
     chainId: 1666900001,
     networkId: 1666900001,
     explorers: []
+  },
+  {
+    name: 'Silicon zkEVM Sepolia Testnet',
+    title: 'Silicon zkEVM Sepolia Testnet',
+    chain: 'Silicon',
+    rpc: [
+      'https://rpc-sepolia.silicon.network',
+      'https://silicon-testnet.nodeinfra.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://docs.silicon.network',
+    shortName: 'silicon-sepolia-testnet',
+    chainId: 1722641160,
+    networkId: 1722641160,
+    icon: 'silicon',
+    explorers: [
+      {
+        name: 'siliconscope-sepolia',
+        url: 'https://scope-sepolia.silicon.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge-sepolia.silicon.network' } ]
+    },
+    status: 'active'
   },
   {
     name: 'Kakarot Sepolia',
