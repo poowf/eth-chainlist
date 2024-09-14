@@ -10139,6 +10139,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Metacces Testnet',
+    chain: 'Metacces Testnet',
+    icon: 'metacces',
+    rpc: [ 'https://tapi.accesscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Metacces', symbol: 'ACCES', decimals: 18 },
+    infoURL: 'https://metacces.com',
+    shortName: 'ACCESt',
+    chainId: 1260,
+    networkId: 1260,
+    explorers: [
+      {
+        name: 'accesscan',
+        url: 'https://testnet.accesscan.io',
+        icon: 'metacces',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'HALO Mainnet',
     chain: 'HALO',
     rpc: [ 'https://nodes.halo.land' ],
@@ -13101,6 +13121,26 @@ const chainArray = [
         url: 'https://movoscan.com',
         icon: 'movoscan',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Metacces Mainnet',
+    chain: 'Metacces Mainnet',
+    icon: 'metacces',
+    rpc: [ 'https://oli.accesscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Metacces', symbol: 'ACCES', decimals: 18 },
+    infoURL: 'https://metacces.com',
+    shortName: 'ACCES',
+    chainId: 2071,
+    networkId: 2071,
+    explorers: [
+      {
+        name: 'accesscan',
+        url: 'https://accesscan.io',
+        icon: 'metacces',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -18351,6 +18391,25 @@ const chainArray = [
         name: 'poolsscan',
         url: 'https://scan.poolsmobility.com',
         icon: 'POOLS',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mtt Mainnet',
+    chain: 'MTT',
+    rpc: [ 'https://evm-rpc.mtt.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Mtt mainnet native coin', symbol: 'MTT', decimals: 18 },
+    infoURL: 'https://mtt.network',
+    shortName: 'mtt-mainnet',
+    chainId: 6880,
+    networkId: 6880,
+    icon: 'mttnetwork',
+    explorers: [
+      {
+        name: 'Mtt explorer',
+        url: 'https://explorer.mtt.network',
         standard: 'EIP3091'
       }
     ]
@@ -25118,7 +25177,7 @@ const chainArray = [
     name: 'Bitgert Mainnet',
     chain: 'Brise',
     rpc: [
-      'https://rpc.icecreamswap.com',
+      'https://rpc-bitgert.icecreamswap.com',
       'https://mainnet-rpc.brisescan.com',
       'https://chainrpc.com',
       'https://serverrpc.com'
@@ -25859,8 +25918,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'AssetChain Testnet',
-    chain: 'RWA',
+    name: 'Asset Chain Testnet',
+    chain: 'Asset Chain',
     rpc: [ 'https://enugu-rpc.assetchain.org' ],
     faucets: [ 'https://faucet.assetchain.org' ],
     nativeCurrency: { name: 'Real World Asset', symbol: 'RWA', decimals: 18 },
