@@ -14219,6 +14219,7 @@ const chainArray = [
     shortName: '6do',
     chainId: 2477,
     networkId: 2477,
+    icon: '6do',
     explorers: [
       {
         name: '6Degree Chain Explorer',
