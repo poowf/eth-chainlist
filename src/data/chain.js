@@ -3273,7 +3273,7 @@ const chainArray = [
     networkId: 163
   },
   {
-    name: 'Omni Omega',
+    name: 'Omni Omega Testnet',
     chain: 'Omni',
     status: 'active',
     rpc: [ 'https://omega.omni.network', 'wss://wss.omega.omni.network' ],
@@ -6177,14 +6177,21 @@ const chainArray = [
   {
     name: 'Rupaya',
     chain: 'RUPX',
-    rpc: [],
-    faucets: [],
+    rpc: [ 'https://rpc.rupaya.io' ],
+    faucets: [ 'https://faucet.rupaya.io' ],
     nativeCurrency: { name: 'Rupaya', symbol: 'RUPX', decimals: 18 },
     infoURL: 'https://www.rupaya.io',
     shortName: 'rupx',
     chainId: 499,
     networkId: 499,
-    slip44: 499
+    slip44: 499,
+    explorers: [
+      {
+        name: 'Rupaya Explorer',
+        url: 'https://scan.rupaya.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Camino C-Chain',
@@ -14674,6 +14681,25 @@ const chainArray = [
     }
   },
   {
+    name: 'HyperAGI Mainnet',
+    chain: 'HyperAGI',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Hyperdust', symbol: 'HYPT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://hyperagi.network',
+    shortName: 'hypt',
+    chainId: 2868,
+    networkId: 1,
+    explorers: [
+      {
+        name: 'hyptscan',
+        url: 'https://block.hyperagi.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Chips Network',
     chain: 'CHIPS',
     rpc: [
@@ -14713,6 +14739,26 @@ const chainArray = [
       chain: 'eip155-5',
       bridges: [ { url: 'https://gateway.boba.network' } ]
     }
+  },
+  {
+    name: 'Aarma Mainnet',
+    chain: 'Aarma',
+    rpc: [ 'https://aarmarpc.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Aarma', symbol: 'ARMA', decimals: 18 },
+    infoURL: 'https://aarmachain.com',
+    shortName: 'ARMA',
+    chainId: 2889,
+    networkId: 2889,
+    icon: 'arma',
+    explorers: [
+      {
+        name: 'aarmascan',
+        url: 'https://aarmascan.com',
+        icon: 'arma',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Elux Chain',
@@ -24420,6 +24466,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Everclear Mainnet',
+    chain: 'Everclear Mainnet',
+    rpc: [ 'https://rpc.everclear.raas.gelato.cloud' ],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    faucets: [],
+    infoURL: '',
+    shortName: 'Everclear',
+    chainId: 25327,
+    networkId: 25327,
+    explorers: [
+      {
+        name: 'Everclear',
+        url: 'https://scan.everclear.org',
+        icon: 'everclear',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'AlveyChain Testnet',
     chain: 'tALV',
     rpc: [ 'https://testnet-rpc.alvey.io' ],
@@ -27900,6 +27965,26 @@ const chainArray = [
       {
         name: 'DM2Verse Explorer',
         url: 'https://explorer.dm2verse.dmm.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
+    name: 'DM2 Verse Testnet',
+    chain: 'DM2 Verse',
+    icon: 'dm2verse',
+    rpc: [ 'https://rpc.testnet.dm2verse.dmm.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: 'https://seamoon.dmm.com',
+    shortName: 'dm2t',
+    chainId: 68775,
+    networkId: 68775,
+    explorers: [
+      {
+        name: 'DM2Verse Testnet Explorer',
+        url: 'https://explorer.testnet.dm2verse.dmm.com',
         standard: 'EIP3091'
       }
     ],
@@ -34705,6 +34790,27 @@ const chainArray = [
         name: 'Safe(AnWang) Testnet Explorer',
         url: 'http://safe4-testnet.anwang.com',
         icon: 'safe-anwang',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'COTI Testnet',
+    title: 'COTI Testnet',
+    chain: 'COTI',
+    icon: 'coti',
+    rpc: [ 'https://testnet.coti.io/rpc' ],
+    faucets: [ 'https://faucet.coti.io' ],
+    nativeCurrency: { name: 'COTI', symbol: 'COTI', decimals: 18 },
+    infoURL: 'https://coti.io/',
+    shortName: 'coti-testnet',
+    chainId: 7082400,
+    networkId: 7082400,
+    explorers: [
+      {
+        name: 'COTI Testnet Explorer',
+        url: 'https://testnet.cotiscan.io',
+        icon: 'ethernal',
         standard: 'EIP3091'
       }
     ]
