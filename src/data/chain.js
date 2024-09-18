@@ -17456,6 +17456,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'DuckChain Mainnet',
+    title: 'DuckChain Mainnet',
+    chain: 'DuckChain',
+    icon: 'duckchain',
+    rpc: [ 'https://rpc.duckchain.io', 'https://rpc-hk.duckchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'TON', symbol: 'TON', decimals: 18 },
+    infoURL: 'https://duckchain.io',
+    shortName: 'Duck-Chain-Mainnet',
+    chainId: 5545,
+    networkId: 5545
+  },
+  {
     name: 'Nahmii 2 Mainnet',
     chain: 'Nahmii',
     rpc: [ 'https://l2.nahmii.io' ],
@@ -19907,6 +19920,26 @@ const chainArray = [
     networkId: 8387,
     icon: 'dracones',
     explorers: []
+  },
+  {
+    name: 'THAT Mainnet',
+    chain: 'THAT',
+    rpc: [ 'https://api.thatchain.io', 'https://api.thatchain.io/mainnet' ],
+    faucets: [],
+    nativeCurrency: { name: 'THAT', symbol: 'THAT', decimals: 18 },
+    infoURL: 'https://that.website',
+    shortName: 'THAT',
+    chainId: 8428,
+    networkId: 8428,
+    icon: 'that',
+    explorers: [
+      {
+        name: 'THAT Explorer',
+        url: 'https://that.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Base',
@@ -22916,6 +22949,25 @@ const chainArray = [
         url: 'https://test-explorer.vitruveo.xyz',
         icon: 'vitruveo',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Vana Moksha Testnet',
+    chain: 'Vana Moksha Testnet',
+    rpc: [ 'https://rpc.moksha.vana.org' ],
+    nativeCurrency: { name: 'VANA', symbol: 'VANA', decimals: 18 },
+    faucets: [],
+    infoURL: '',
+    shortName: 'vana-moksha',
+    chainId: 14800,
+    networkId: 14800,
+    explorers: [
+      {
+        name: 'Vana Moksha Testnet',
+        url: 'https://vanascan.io',
+        icon: 'vanamoksha',
+        standard: 'none'
       }
     ]
   },
@@ -29482,6 +29534,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tetron Smart Chain',
+    chain: 'Tetron Mainnet',
+    rpc: [ 'https://rpc.tscscan.org' ],
+    faucets: [],
+    features: [ { name: 'EIP155' } ],
+    nativeCurrency: { name: 'Tetron Mainnet', symbol: 'TSC', decimals: 18 },
+    infoURL: 'https://tetronchain.com/',
+    shortName: 'Tetron',
+    chainId: 97055,
+    networkId: 97055,
+    explorers: [
+      {
+        name: 'Tetron Smart ChainExplorer',
+        url: 'https://tscscan.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Boba BNB Mainnet Old',
     chain: 'Boba BNB Mainnet',
     rpc: [],
@@ -35695,6 +35766,26 @@ const chainArray = [
       {
         name: 'Excelon explorer',
         url: 'https://explorer.excelon.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: '6Degree of Outreach - Testnet',
+    chain: '6DO',
+    rpc: [ 'https://rpc-testnet.6do.world' ],
+    faucets: [],
+    nativeCurrency: { name: '6Degree-Testnet Coin', symbol: '6DO-T', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://6do.world',
+    shortName: '6dotest',
+    chainId: 24772477,
+    networkId: 24772477,
+    icon: '6do',
+    explorers: [
+      {
+        name: '6Degree Testnet Chain Explorer',
+        url: 'https://explorer-testnet.6do.world',
         standard: 'EIP3091'
       }
     ]
