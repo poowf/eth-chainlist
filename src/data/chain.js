@@ -6165,7 +6165,7 @@ const chainArray = [
   {
     name: 'World Chain',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://worldchain-mainnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://worldcoin.org',
@@ -16750,7 +16750,7 @@ const chainArray = [
   {
     name: 'World Chain Sepolia Testnet',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://worldchain-sepolia.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://worldcoin.org/',
@@ -22721,6 +22721,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Cannon Testnet',
+    title: 'Cannon Private Testnet',
+    chain: 'ETH',
+    rpc: [ 'http://127.0.0.1:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cannon Testnet Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://usecannon.com',
+    shortName: 'cannon',
+    chainId: 13370,
+    networkId: 13370
   },
   {
     name: 'Immutable zkEVM',
@@ -29529,6 +29541,25 @@ const chainArray = [
         name: 'Mantis Blockscout',
         url: 'https://blockscout.mantis.hexapod.network',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tetron Testnet Smart Chain',
+    chain: 'Tetron Testnet',
+    rpc: [ 'https://test-rpc.tscscan.org' ],
+    faucets: [],
+    features: [ { name: 'EIP155' } ],
+    nativeCurrency: { name: 'Tetron Testnet', symbol: 'TSC', decimals: 18 },
+    infoURL: 'https://tetronchain.com/',
+    shortName: 'TetronTestnet',
+    chainId: 97053,
+    networkId: 97053,
+    explorers: [
+      {
+        name: 'Tetron Explorer',
+        url: 'https://testnet.tscscan.org',
         standard: 'EIP3091'
       }
     ]
