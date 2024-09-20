@@ -5476,10 +5476,10 @@ const chainArray = [
   {
     name: 'Shape',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://mainnet.shape.network' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://shape.us',
+    infoURL: 'https://shape.network',
     shortName: 'shape',
     chainId: 360,
     networkId: 360,
@@ -21236,6 +21236,40 @@ const chainArray = [
     ]
   },
   {
+    name: 'arena-z-testnet',
+    title: 'Arena-Z-Testnet',
+    chain: 'arena-z-testnet',
+    rpc: [
+      'https://rpc.arena-z.t.raas.gelato.cloud',
+      'wss://ws.arena-z.t.raas.gelato.cloud'
+    ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/arena-z-testnet',
+    faucets: [],
+    shortName: 'arena-z-testnet',
+    chainId: 9897,
+    networkId: 9897,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://arena-z.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://testnet-bridge.gelato.network/bridge/arena-z-testnet'
+        }
+      ]
+    },
+    status: 'active'
+  },
+  {
     name: 'Larissa Chain',
     title: 'Larissa Chain',
     chain: 'Larissa',
@@ -21968,7 +22002,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://shape-sepolia-explorer.alchemy.com',
+        url: 'https://explorer-sepolia.shape.network',
         standard: 'EIP3091'
       }
     ],
@@ -31255,6 +31289,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bethel Sydney',
+    chain: 'Bethel',
+    rpc: [ 'https://rpc-sydney.bethel.network' ],
+    faucets: [ 'https://faucet-sydney.bethel.network' ],
+    nativeCurrency: { name: 'Bethel', symbol: 'BECX', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: '',
+    shortName: 'bethel-sydney',
+    chainId: 202202,
+    networkId: 202202,
+    explorers: [
+      {
+        name: 'Betehl Sydney Explorer',
+        url: 'https://sydney.bethel.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'X1 Devnet',
     chain: 'X1',
     rpc: [ 'https://x1-devnet.xen.network' ],
@@ -33337,6 +33390,24 @@ const chainArray = [
       {
         name: 'Eramscan',
         url: 'https://eramscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'TixChain Testnet',
+    chain: 'TIXCHAIN',
+    rpc: [ 'https://subnets.avax.network/tixchain/testnet/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'TIX Token', symbol: 'TIX', decimals: 18 },
+    infoURL: 'https://subnets-test.avax.network/tixchain/details',
+    shortName: 'tixchain',
+    chainId: 723107,
+    networkId: 723107,
+    explorers: [
+      {
+        name: 'TixChain Testnet Subnet Explorer',
+        url: 'https://subnets-test.avax.network/tixchain',
         standard: 'EIP3091'
       }
     ]
