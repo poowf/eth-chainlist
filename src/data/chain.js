@@ -8778,6 +8778,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'LemonChainTestnet',
+    chain: 'tLEMX',
+    rpc: [
+      'https://rpc.testnet.lemonchain.io',
+      'https://rpc.testnet.allthingslemon.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'testnet LEMX', symbol: 'tLEMX', decimals: 18 },
+    infoURL: 'https://dapp.allthingslemon.io/home',
+    shortName: 'tlemx',
+    chainId: 1005,
+    networkId: 1005,
+    explorers: []
+  },
+  {
+    name: 'LemonChain',
+    chain: 'LEMX',
+    rpc: [ 'https://rpc.lemonchain.io', 'https://rpc.allthingslemon.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'LEMX', symbol: 'LEMX', decimals: 18 },
+    infoURL: 'https://dapp.allthingslemon.io/home',
+    shortName: 'lemx',
+    chainId: 1006,
+    networkId: 1006,
+    explorers: []
+  },
+  {
     name: 'Newton Testnet',
     chain: 'NEW',
     rpc: [ 'https://rpc1.newchain.newtonproject.org' ],
@@ -30759,7 +30786,7 @@ const chainArray = [
     chain: 'ETH',
     status: 'active',
     icon: 'taiko',
-    rpc: [ 'https://rpc.mainnet.taiko.xyz', 'wss://ws.mainnet.taiko.xyz' ],
+    rpc: [ 'https://rpc.mainnet.taiko.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://taiko.xyz',
@@ -33702,6 +33729,26 @@ const chainArray = [
     }
   },
   {
+    name: 'SG Verse Mainnet',
+    chain: 'SG Verse',
+    icon: 'sg_verse',
+    rpc: [ 'https://rpc.sgverse.net/' ],
+    faucets: [],
+    nativeCurrency: { name: 'OAS', symbol: 'OAS', decimals: 18 },
+    infoURL: '',
+    shortName: 'SGV',
+    chainId: 812397,
+    networkId: 812397,
+    explorers: [
+      {
+        name: 'SG Verse Explorer',
+        url: 'https://explorer.sgverse.net',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
     name: 'TSC Testnet',
     chain: 'Trust Smart Chain Testnet',
     rpc: [ 'https://testnet.tscscan.io/testrpc' ],
@@ -34377,6 +34424,25 @@ const chainArray = [
       {
         name: 'Automata Testnet Explorer',
         url: 'https://automata-testnet-explorer.alt.technology',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Automata Orbit Testnet',
+    chain: 'Automata Orbit Testnet',
+    rpc: [ 'https://rpc-orbit-testnet.ata.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'ATA', symbol: 'ATA', decimals: 18 },
+    infoURL: 'https://ata.network',
+    shortName: 'automataorbittestnet',
+    chainId: 1398244,
+    networkId: 1398244,
+    icon: 'automata',
+    explorers: [
+      {
+        name: 'Automata Orbit Testnet Explorer',
+        url: 'https://automata-orbit-testnet-explorer.alt.technology',
         standard: 'EIP3091'
       }
     ]
