@@ -11209,7 +11209,7 @@ const chainArray = [
   {
     name: 'Gravity Alpha Mainnet',
     chain: 'Gravity',
-    rpc: [ 'https://rpc.gravity.xyz' ],
+    rpc: [ 'https://rpc.gravity.xyz', 'https://rpc.ankr.com/gravity' ],
     faucets: [],
     nativeCurrency: { name: 'Gravity', symbol: 'G', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP1108' } ],
@@ -27376,7 +27376,9 @@ const chainArray = [
       'https://rpc.sepolia.linea.build',
       'wss://rpc.sepolia.linea.build',
       'https://linea-sepolia.infura.io/v3/${INFURA_API_KEY}',
-      'wss://linea-sepolia.infura.io/ws/v3/${INFURA_API_KEY}'
+      'wss://linea-sepolia.infura.io/ws/v3/${INFURA_API_KEY}',
+      'https://linea-sepolia-rpc.publicnode.com',
+      'wss://linea-sepolia-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
@@ -27415,7 +27417,9 @@ const chainArray = [
       'https://rpc.linea.build',
       'wss://rpc.linea.build',
       'https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}',
-      'wss://linea-mainnet.infura.io/ws/v3/${INFURA_API_KEY}'
+      'wss://linea-mainnet.infura.io/ws/v3/${INFURA_API_KEY}',
+      'https://linea-rpc.publicnode.com',
+      'wss://linea-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
@@ -29013,7 +29017,8 @@ const chainArray = [
       'https://blast.din.dev/rpc',
       'https://blastl2-mainnet.public.blastapi.io',
       'https://blast.blockpi.network/v1/rpc/public',
-      'https://blast-rpc.publicnode.com'
+      'https://blast-rpc.publicnode.com',
+      'wss://blast-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -30516,8 +30521,9 @@ const chainArray = [
     title: 're.al Real-World Assets network',
     chain: 're.al',
     rpc: [
+      'https://rpc.realforreal.gelato.digital',
+      'wss://ws.realforreal.gelato.digital',
       'https://tangible-real.gateway.tenderly.co',
-      'wss://tangible-real.gateway.tenderly.co',
       'https://real.drpc.org',
       'wss://real.drpc.org'
     ],
@@ -30750,6 +30756,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'CryptoX',
+    chain: 'XCOIN',
+    rpc: [ 'https://rpc-xcoin.cryptoxnetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'XCOIN', symbol: 'XCOIN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://cryptoxnetwork.io',
+    shortName: 'cryptox',
+    chainId: 158245,
+    networkId: 158245,
+    explorers: [
+      {
+        name: 'CryptoX explorer',
+        url: 'https://cryptoxscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PlayFi Mainnet',
     chain: 'PLAY',
     rpc: [],
@@ -30786,7 +30811,11 @@ const chainArray = [
     chain: 'ETH',
     status: 'active',
     icon: 'taiko',
-    rpc: [ 'https://rpc.mainnet.taiko.xyz' ],
+    rpc: [
+      'https://rpc.mainnet.taiko.xyz',
+      'https://taiko-rpc.publicnode.com',
+      'wss://taiko-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://taiko.xyz',
@@ -30912,7 +30941,12 @@ const chainArray = [
     chain: 'ETH',
     status: 'active',
     icon: 'taiko',
-    rpc: [ 'https://rpc.hekla.taiko.xyz', 'wss://ws.hekla.taiko.xyz' ],
+    rpc: [
+      'https://rpc.hekla.taiko.xyz',
+      'wss://ws.hekla.taiko.xyz',
+      'https://taiko-hekla-rpc.publicnode.com',
+      'wss://taiko-hekla-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://taiko.xyz',
@@ -32928,7 +32962,9 @@ const chainArray = [
       'https://sepolia-rpc.scroll.io',
       'https://rpc.ankr.com/scroll_sepolia_testnet',
       'https://scroll-sepolia.chainstacklabs.com',
-      'https://scroll-testnet-public.unifra.io'
+      'https://scroll-testnet-public.unifra.io',
+      'https://scroll-sepolia-rpc.publicnode.com',
+      'wss://scroll-sepolia-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -32957,7 +32993,9 @@ const chainArray = [
     rpc: [
       'https://rpc.scroll.io',
       'https://rpc.ankr.com/scroll',
-      'https://scroll-mainnet.chainstacklabs.com'
+      'https://scroll-mainnet.chainstacklabs.com',
+      'https://scroll-rpc.publicnode.com',
+      'wss://scroll-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
