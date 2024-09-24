@@ -17174,6 +17174,27 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Citrea Testnet',
+    chain: 'Citrea',
+    rpc: [ 'https://rpc.testnet.citrea.xyz' ],
+    faucets: [ 'https://citrea.xyz/faucet' ],
+    nativeCurrency: { name: 'Citrea BTC', symbol: 'cBTC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://citrea.xyz',
+    shortName: 'citrea-testnet',
+    chainId: 5115,
+    networkId: 5115,
+    icon: 'citrea',
+    explorers: [
+      {
+        name: 'Citrea Testnet Explorer',
+        url: 'https://explorer.testnet.citrea.xyz',
+        icon: 'citrea',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'MeChain Testnet',
     chain: 'MeChain',
     rpc: [ 'https://testnet-rpc.mechain.tech' ],
@@ -17899,6 +17920,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'BC Hyper POS Testnet',
+    chain: 'BC Hyper POS Testnet',
+    rpc: [ 'https://rpc.bcexplorer.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'TEST VERSATIZE COIN', symbol: 'TVTCN', decimals: 18 },
+    infoURL: 'https://www.versatizecoin.com/',
+    shortName: 'BCH',
+    chainId: 6060,
+    networkId: 6060,
+    icon: 'bchyper',
+    explorers: [
+      {
+        name: 'bcexplorer testnet',
+        url: 'https://testnet.bcexplorer.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Tres Testnet',
     chain: 'TresLeches',
     rpc: [ 'https://rpc-test.tresleches.finance/' ],
@@ -18002,6 +18043,29 @@ const chainArray = [
       {
         name: 'UPTN Explorer',
         url: 'https://explorer.uptn.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Rails',
+    title: 'Rails Network Mainnet',
+    chain: 'RAILS',
+    icon: 'rails',
+    rpc: [ 'https://mainnet.steamexchange.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP6551' } ],
+    faucets: [],
+    nativeCurrency: { name: 'SteamX', symbol: 'STEAMX', decimals: 18 },
+    infoURL: 'https://steamexchange.io',
+    shortName: 'rails',
+    chainId: 6278,
+    networkId: 6278,
+    slip44: 6278,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explore.steamexchange.io',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -22610,6 +22674,24 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-43113' }
   },
   {
+    name: 'GDPR Mainnet',
+    chain: 'GDPR',
+    rpc: [ 'https://rpc.gdprchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'GDPR', symbol: 'GDPR', decimals: 18 },
+    infoURL: 'https://explorer.gdprchain.com',
+    shortName: 'gdpr',
+    chainId: 12358,
+    networkId: 12358,
+    explorers: [
+      {
+        name: 'GDPR Mainnet Explorer (Blockscout)',
+        url: 'https://explorer.gdprchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'RSS3 VSL Mainnet',
     chain: 'RSS3',
     rpc: [ 'https://rpc.rss3.io' ],
@@ -24544,6 +24626,27 @@ const chainArray = [
         name: 'KYMTC Testnet Explorer',
         url: 'https://testnet-explorer.kymaticscan.online',
         icon: 'kymtc',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Amauti',
+    title: 'Rails Network Testnet Amauti',
+    chain: 'RAILS',
+    icon: 'railsTestnet',
+    rpc: [ 'https://testnet.steamexchange.io' ],
+    faucets: [ 'https://depot.steamexchange.io/faucet' ],
+    nativeCurrency: { name: 'SteamX', symbol: 'STEAMX', decimals: 18 },
+    infoURL: 'https://steamexchange.io',
+    shortName: 'railst',
+    chainId: 24116,
+    networkId: 24116,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://build.steamexchange.io',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -29215,6 +29318,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'GDPR Testnet',
+    chain: 'GDPR',
+    rpc: [ 'https://rpc.testnet.gdprchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'GDPR', symbol: 'GDPR', decimals: 18 },
+    infoURL: 'https://explorer.testnet.gdprchain.com',
+    shortName: 'gdpr-testnet',
+    chainId: 85321,
+    networkId: 85321,
+    explorers: [
+      {
+        name: 'GDPR Testnet Explorer (Blockscout)',
+        url: 'https://explorer.testnet.gdprchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CYBERTRUST',
     chain: 'CYBER',
     rpc: [ 'http://testnet.cybertrust.space:48501' ],
@@ -31917,6 +32038,31 @@ const chainArray = [
     chainId: 281121,
     networkId: 281121,
     explorers: []
+  },
+  {
+    name: 'Athene Parthenon',
+    chain: 'athene-parthenon',
+    rpc: [
+      'https://rpc.parthenon.athenescan.io',
+      'wss://ws.parthenon.athenescan.io'
+    ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/athene-parthenon',
+    faucets: [],
+    shortName: 'athene-parthenon',
+    chainId: 281123,
+    networkId: 281123,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://parthenon.athenescan.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' },
+    status: 'active'
   },
   {
     name: 'Zillion Sepolia Testnet',
