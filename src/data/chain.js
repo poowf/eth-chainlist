@@ -12106,17 +12106,21 @@ const chainArray = [
   {
     name: 'Selendra Network Testnet',
     chain: 'tSEL',
-    rpc: [
-      'https://rpc0-testnet.selendra.org',
-      'https://rpc1-testnet.selendra.org'
-    ],
+    rpc: [ 'https://rpc-testnet.selendra.org' ],
     faucets: [],
     nativeCurrency: { name: 'Selendra', symbol: 'tSEL', decimals: 18 },
     infoURL: 'https://selendra.org',
     shortName: 'tSEL',
     chainId: 1953,
     networkId: 1953,
-    icon: 'selendra'
+    icon: 'selendra',
+    explorers: [
+      {
+        name: 'Selendra Portal',
+        url: 'https://portal.selendra.org',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Dexilla Testnet',
@@ -12165,7 +12169,7 @@ const chainArray = [
   {
     name: 'Selendra Network Mainnet',
     chain: 'SEL',
-    rpc: [ 'https://rpc0.selendra.org', 'https://rpc1.selendra.org' ],
+    rpc: [ 'https://rpc.selendra.org', 'https://rpc2.selendra.org' ],
     faucets: [],
     nativeCurrency: { name: 'Selendra', symbol: 'SEL', decimals: 18 },
     infoURL: 'https://selendra.org',
@@ -12175,8 +12179,8 @@ const chainArray = [
     icon: 'selendra',
     explorers: [
       {
-        name: 'Selendra Scan',
-        url: 'https://scan.selendra.org',
+        name: 'Selendra Portal',
+        url: 'https://portal.selendra.org',
         standard: 'none'
       }
     ]
