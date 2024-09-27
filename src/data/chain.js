@@ -11224,7 +11224,12 @@ const chainArray = [
         url: 'https://explorer.gravity.xyz',
         standard: 'EIP3091'
       },
-      { name: 'gscan', url: 'https://gscan.xyz', standard: 'EIP3091' }
+      { name: 'gscan', url: 'https://gscan.xyz', standard: 'EIP3091' },
+      {
+        name: 'OKLink',
+        url: 'https://www.oklink.com/gravity-alpha',
+        standard: 'EIP3091'
+      }
     ],
     parent: {
       type: 'L2',
@@ -17924,9 +17929,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'BC Hyper POS Testnet',
-    chain: 'BC Hyper POS Testnet',
-    rpc: [ 'https://rpc.bcexplorer.io' ],
+    name: 'BC Hyper Chain Testnet',
+    chain: 'BC Hyper Chain',
+    rpc: [ 'https://rpc.bchscan.io' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'TEST VERSATIZE COIN', symbol: 'TVTCN', decimals: 18 },
@@ -17938,7 +17943,7 @@ const chainArray = [
     explorers: [
       {
         name: 'bcexplorer testnet',
-        url: 'https://testnet.bcexplorer.io',
+        url: 'https://testnet.bchscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -25374,19 +25379,24 @@ const chainArray = [
     ]
   },
   {
-    name: 'Filecoin - Wallaby testnet',
-    status: 'deprecated',
-    chain: 'FIL',
-    icon: 'filecoin',
-    rpc: [],
+    name: 'Wirex Pay Mainnet',
+    chain: 'WirexPay',
+    icon: 'wpay',
+    rpc: [ 'https://rpc.wirexpaychain.com' ],
     faucets: [],
-    nativeCurrency: { name: 'testnet filecoin', symbol: 'tFIL', decimals: 18 },
-    infoURL: 'https://filecoin.io',
-    shortName: 'filecoin-wallaby',
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://docs.wirexpaychain.com/tech/wirex-pay-chain',
+    shortName: 'wpay',
     chainId: 31415,
     networkId: 31415,
-    slip44: 1,
-    explorers: []
+    explorers: [
+      {
+        name: 'Wirex Pay Explorer',
+        url: 'https://blockscout.wirexpaychain.com',
+        standard: 'EIP3091'
+      }
+    ],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Xchain Mainnet',
@@ -27150,6 +27160,25 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Superposition',
+    chain: 'Superposition',
+    rpc: [ 'https://rpc.superposition.so' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://superposition.so',
+    shortName: 'spn',
+    chainId: 55244,
+    networkId: 55244,
+    explorers: [
+      {
+        name: 'Superposition Explorer',
+        url: 'https://explorer.superposition.so',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-42161', bridges: [] }
   },
   {
     name: 'Photon Aurora Testnet',
@@ -35520,6 +35549,30 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
+    name: 'Spotlight',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://spotlightchain.com/',
+    shortName: 'spotlight',
+    chainId: 10058111,
+    networkId: 10058111,
+    status: 'incubating'
+  },
+  {
+    name: 'Spotlight Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://spotlightchain.com/',
+    shortName: 'spotlightsep',
+    chainId: 10058112,
+    networkId: 10058112,
+    status: 'incubating'
   },
   {
     name: 'Plian Testnet Subchain 1',
