@@ -5476,14 +5476,25 @@ const chainArray = [
   {
     name: 'Shape',
     chain: 'ETH',
-    rpc: [ 'https://mainnet.shape.network' ],
+    rpc: [
+      'https://mainnet.shape.network',
+      'https://shape-mainnet.g.alchemy.com/public'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://shape.network',
     shortName: 'shape',
     chainId: 360,
     networkId: 360,
-    status: 'incubating'
+    icon: 'shape',
+    explorers: [
+      {
+        name: 'shapescan',
+        url: 'https://shapescan.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Theta Mainnet',
@@ -22099,6 +22110,7 @@ const chainArray = [
     shortName: 'shapesep',
     chainId: 11011,
     networkId: 11011,
+    icon: 'shapeTestnet',
     explorers: [
       {
         name: 'blockscout',
