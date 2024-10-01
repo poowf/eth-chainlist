@@ -19749,6 +19749,22 @@ const chainArray = [
     networkId: 8098
   },
   {
+    name: 'Zenchain',
+    chain: 'ZCX',
+    icon: 'zenchain',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'ZCX', symbol: 'ZCX', decimals: 18 },
+    infoURL: 'https://zenchain.io',
+    shortName: 'zen',
+    chainId: 8108,
+    networkId: 8108,
+    slip44: 60,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'Qitmeer Network Testnet',
     chain: 'MEER',
     rpc: [
@@ -20031,6 +20047,31 @@ const chainArray = [
     networkId: 8387,
     icon: 'dracones',
     explorers: []
+  },
+  {
+    name: 'Zenchain Testnet',
+    chain: 'ZCX',
+    icon: 'zenchain',
+    rpc: [
+      'https://zenchain-testnet.api.onfinality.io/public',
+      'wss://zenchain-testnet.api.onfinality.io/public-ws'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://facuet.zenchain.io' ],
+    nativeCurrency: { name: 'ZCX', symbol: 'ZCX', decimals: 18 },
+    infoURL: 'https://zenchain.io',
+    shortName: 'zentest',
+    chainId: 8408,
+    networkId: 8408,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'zentrace',
+        url: 'https://zentrace.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'THAT Mainnet',
@@ -26238,6 +26279,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Asset Chain Mainnet',
+    chain: 'Asset Chain',
+    rpc: [ 'https://mainnet-rpc.assetchain.org' ],
+    faucets: [ 'https://faucet.assetchain.org' ],
+    nativeCurrency: { name: 'Real World Asset', symbol: 'RWA', decimals: 18 },
+    infoURL: 'https://docs.assetchain.org',
+    shortName: 'assetchain',
+    chainId: 42420,
+    networkId: 42420,
+    icon: 'assetchain',
+    explorers: [
+      {
+        name: 'Asset Chain Explorer',
+        url: 'https://scan.assetchain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Asset Chain Testnet',
     chain: 'Asset Chain',
     rpc: [ 'https://enugu-rpc.assetchain.org' ],
@@ -28408,6 +28468,27 @@ const chainArray = [
         url: 'http://explorer.guapcoinx.com',
         standard: 'none',
         icon: 'guapcoinx'
+      }
+    ]
+  },
+  {
+    name: 'Wadzchain Testnet',
+    title: 'Wadzchain Testnet',
+    chain: 'Wadzchain-Testnet',
+    icon: 'wadz',
+    rpc: [ 'https://rpc-testnet.wadzchain.io' ],
+    faucets: [ 'https://faucet-testnet.wadzchain.io' ],
+    nativeCurrency: { name: 'WadzToken', symbol: 'WTK', decimals: 18 },
+    infoURL: 'https://www.wadzchain-network.io',
+    shortName: 'wadzchain-testnet',
+    chainId: 71117,
+    networkId: 71117,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Wadzchain Testnet Explorer',
+        url: 'https://scan-testnet.wadzchain.io',
+        standard: 'EIP3091'
       }
     ]
   },
