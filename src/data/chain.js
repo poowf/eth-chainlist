@@ -5730,40 +5730,40 @@ const chainArray = [
     status: 'active'
   },
   {
-    name: 'Near Mainnet',
+    name: 'NEAR Protocol',
     chain: 'NEAR',
-    rpc: [],
+    rpc: [ 'https://eth-rpc.mainnet.near.org' ],
     icon: 'near',
     faucets: [],
     nativeCurrency: { name: 'NEAR', symbol: 'NEAR', decimals: 18 },
-    infoURL: 'https://near.org/',
+    infoURL: 'https://near.org',
     shortName: 'near',
     chainId: 397,
     networkId: 397,
     explorers: [
       {
-        name: 'Near Blocks',
-        url: 'https://nearblocks.io',
-        standard: 'none'
+        name: 'NEAR Explorer',
+        url: 'https://eth-explorer.near.org',
+        standard: 'EIP3091'
       }
     ]
   },
   {
-    name: 'Near Testnet',
+    name: 'NEAR Protocol Testnet',
     chain: 'NEAR',
-    rpc: [],
+    rpc: [ 'https://eth-rpc.testnet.near.org' ],
     icon: 'near',
     faucets: [],
-    nativeCurrency: { name: 'Testnet NEAR', symbol: 'NEAR', decimals: 18 },
-    infoURL: 'https://aurora.dev',
+    nativeCurrency: { name: 'NEAR', symbol: 'NEAR', decimals: 18 },
+    infoURL: 'https://near.org',
     shortName: 'near-testnet',
     chainId: 398,
     networkId: 398,
     explorers: [
       {
-        name: 'Near blocks',
-        url: 'https://testnet.nearblocks.io',
-        standard: 'none'
+        name: 'NEAR Explorer',
+        url: 'https://eth-explorer-testnet.near.org',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -37623,8 +37623,8 @@ const chainArray = [
     networkId: 1313161554,
     explorers: [
       {
-        name: 'aurorascan.dev',
-        url: 'https://aurorascan.dev',
+        name: 'Aurora Explorer',
+        url: 'https://explorer.aurora.dev',
         standard: 'EIP3091'
       }
     ]
@@ -37646,8 +37646,8 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
-        name: 'aurorascan.dev',
-        url: 'https://testnet.aurorascan.dev',
+        name: 'Aurora Explorer',
+        url: 'https://explorer.testnet.aurora.dev',
         standard: 'EIP3091'
       }
     ]
