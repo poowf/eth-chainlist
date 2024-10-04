@@ -9847,6 +9847,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'ADF Chain Testnet',
+    chain: 'ADF Chain Testnet',
+    icon: 'addfilltest',
+    rpc: [ 'https://testnet.adftechnology.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ADDFILL Testnet', symbol: 'tADF', decimals: 18 },
+    infoURL: 'https://www.adfstarworld.com/',
+    shortName: 'tADF',
+    chainId: 1212,
+    networkId: 1212,
+    explorers: [
+      {
+        name: 'ADF Testnet explorer',
+        url: 'https://testnet-explorer.adftechnology.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Popcateum Mainnet',
     chain: 'POPCATEUM',
     rpc: [ 'https://dataseed.popcateum.org' ],
@@ -9883,6 +9903,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'ADF Chain',
+    chain: 'ADF Chain',
+    icon: 'addfillmain',
+    rpc: [ 'https://mainnet.adftechnology.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ADDFILL', symbol: 'ADF', decimals: 18 },
+    infoURL: 'https://www.adfstarworld.com/',
+    shortName: 'ADF',
+    chainId: 1215,
+    networkId: 1215,
+    explorers: [
+      {
+        name: 'ADF explorer',
+        url: 'https://explorer.adftechnology.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Cycle Network Testnet',
@@ -24112,6 +24152,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'SEC Testnet',
+    chain: 'SEC',
+    icon: 'secIcon',
+    rpc: [ 'https://testnet-rpc.secexplorer.io' ],
+    faucets: [ 'https://faucet.secexplorer.io' ],
+    nativeCurrency: { name: 'SEP', symbol: 'SEP', decimals: 18 },
+    infoURL: 'https://smartenergychain.org',
+    shortName: 'SEPt',
+    chainId: 19515,
+    networkId: 19515,
+    explorers: [
+      {
+        name: 'SEC Testnet Explorer',
+        url: 'https://testnet.secexplorer.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SEC Mainnet',
+    chain: 'SEC',
+    icon: 'secIcon',
+    rpc: [ 'https://rpc.secexplorer.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SEP', symbol: 'SEP', decimals: 18 },
+    infoURL: 'https://smartenergychain.org',
+    shortName: 'SECm',
+    chainId: 19516,
+    networkId: 19516,
+    explorers: [
+      {
+        name: 'SEC Mainnet Explorer',
+        url: 'https://secexplorer.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Magnet Network',
     chain: 'Magnet',
     rpc: [ 'https://magnet-rpc.magport.io/' ],
@@ -29655,6 +29733,25 @@ const chainArray = [
     chainId: 90001,
     networkId: 90001,
     icon: 'fxcore'
+  },
+  {
+    name: 'UBIT SMARTCHAIN MAINNET',
+    chain: 'UBIT SMARTCHAIN',
+    rpc: [ 'https://rpc.ubitscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'USC', symbol: 'USC', decimals: 18 },
+    infoURL: 'https://ubitscan.io',
+    shortName: 'UBITSCAN',
+    chainId: 90002,
+    networkId: 90002,
+    slip44: 108,
+    explorers: [
+      {
+        name: 'UBITSCAN',
+        url: 'https://ubitscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Beverly Hills',
