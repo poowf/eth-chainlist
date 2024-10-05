@@ -7113,6 +7113,52 @@ const chainArray = [
     }
   },
   {
+    name: 'Matchain',
+    chain: 'Matchain',
+    icon: 'matchain',
+    rpc: [ 'https://rpc.matchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
+    infoURL: 'https://www.matchain.io',
+    shortName: 'Matchain',
+    chainId: 698,
+    networkId: 698,
+    slip44: 714,
+    explorers: [
+      {
+        name: 'Matchscan',
+        url: 'https://matchscan.io',
+        icon: 'matchain',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-56',
+      bridges: [ { url: 'https://bnb-bridge.matchain.io' } ]
+    }
+  },
+  {
+    name: 'Matchain Testnet',
+    chain: 'Matchain',
+    icon: 'matchain',
+    rpc: [ 'https://testnet-rpc.matchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
+    infoURL: 'https://www.matchain.io',
+    shortName: 'tMatchain',
+    chainId: 699,
+    networkId: 699,
+    explorers: [
+      {
+        name: 'Matchscan Testnet',
+        url: 'https://testnet.matchscan.io',
+        standard: 'EIP3091',
+        icon: 'matchain'
+      }
+    ]
+  },
+  {
     name: 'Star Social Testnet',
     chain: 'SNS',
     rpc: [ 'https://avastar.cc/ext/bc/C/rpc' ],
@@ -14172,19 +14218,19 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-248' }
   },
   {
-    name: 'Karak Mainnet',
-    chain: 'Karak',
+    name: 'K2 Mainnet',
+    chain: 'K2',
     icon: 'karak',
     rpc: [ 'https://rpc.karak.network' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://karak.network',
-    shortName: 'karak-mainnet',
+    shortName: 'K2-mainnet',
     chainId: 2410,
     networkId: 2410,
     explorers: [
       {
-        name: 'Karak Mainnet Explorer',
+        name: 'K2 Mainnet Explorer',
         url: 'https://explorer.karak.network',
         standard: 'EIP3091'
       }
@@ -21280,6 +21326,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tabi Testnetv2',
+    chain: 'TabiNetworkv2',
+    rpc: [ 'https://rpc.testnetv2.tabichain.com' ],
+    faucets: [ 'https://carnival.tabichain.com' ],
+    nativeCurrency: { name: 'Tabi', symbol: 'TABI', decimals: 18 },
+    infoURL: 'https://www.tabichain.com',
+    shortName: 'tabitestv2',
+    chainId: 9788,
+    networkId: 9788,
+    explorers: [
+      {
+        name: 'Tabi Testnet V2 Explorer',
+        url: 'https://testnetv2.tabiscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Tabi Testnet',
     chain: 'TabiNetwork',
     rpc: [ 'https://rpc.testnet.tabichain.com' ],
@@ -21584,6 +21648,25 @@ const chainArray = [
       {
         name: 'Volley Mainnet Explorer',
         url: 'https://volleyscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MFEV CHAIN MAINNET',
+    chain: 'MFEV CHAIN',
+    rpc: [ 'https://rpc.mfevscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'MFEV', symbol: 'MFEV', decimals: 18 },
+    infoURL: 'https://mfevscan.com',
+    shortName: 'mfevscan',
+    chainId: 9982,
+    networkId: 9982,
+    slip44: 108,
+    explorers: [
+      {
+        name: 'MFEV CHAIN',
+        url: 'https://mfevscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -28218,6 +28301,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'Geist Mainnet',
+    chain: 'Geist',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Aavegotchi GHST Token', symbol: 'GHST', decimals: 18 },
+    features: [],
+    infoURL: 'https://playongeist.com',
+    shortName: 'Geist',
+    chainId: 63157,
+    networkId: 63157,
+    status: 'incubating',
+    icon: 'geist',
+    explorers: []
+  },
+  {
     name: 'CratD2C Testnet',
     chain: 'CRATD2C',
     rpc: [
@@ -33607,6 +33705,21 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Polter Testnet',
+    chain: 'Geist',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Polter GHST', symbol: 'GHST', decimals: 18 },
+    features: [],
+    infoURL: 'https://playongeist.com',
+    shortName: 'poltergeist',
+    chainId: 631571,
+    networkId: 631571,
+    status: 'incubating',
+    icon: 'polterGeist',
+    explorers: []
   },
   {
     name: 'Bear Network Chain Mainnet',
