@@ -4443,6 +4443,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Glide L1 Protocol XP',
+    chain: 'GLXP',
+    icon: 'glide',
+    rpc: [
+      'https://rpc-api.glideprotocol.xyz/l1-rpc/',
+      'wss://rpc-api.glideprotocol.xyz/l1-rpc/'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Glide XP', symbol: 'GLXP', decimals: 18 },
+    infoURL: 'https://glideprotocol.xyz',
+    shortName: 'glide',
+    chainId: 251,
+    networkId: 251,
+    slip44: 60,
+    status: 'active'
+  },
+  {
     name: 'Fraxtal',
     chain: 'FRAX',
     rpc: [ 'https://rpc.frax.com' ],
@@ -4460,6 +4478,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ],
+    status: 'active'
+  },
+  {
+    name: 'Glide L2 Protocol XP',
+    chain: 'GLXP',
+    icon: 'glide',
+    rpc: [
+      'https://rpc-api.glideprotocol.xyz/l2-rpc/',
+      'wss://rpc-api.glideprotocol.xyz/l2-rpc/'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Glide XP', symbol: 'GLXP', decimals: 18 },
+    infoURL: 'https://glideprotocol.xyz',
+    shortName: 'glidexp',
+    chainId: 253,
+    networkId: 253,
+    explorers: [
+      {
+        name: 'glidescan',
+        url: 'https://blockchain-explorer.glideprotocol.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-251' },
     status: 'active'
   },
   {
@@ -19487,6 +19531,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'Vexon Testnet',
+    chain: 'Vexon',
+    rpc: [
+      'https://rpc-testnet-asia1.vexonhub.org',
+      'https://rpc-testnet-europe1.vexonhub.org',
+      'https://rpc-testnet-01.vexonhub.org'
+    ],
+    faucets: [ 'https://faucet-drip.vexonhub.org' ],
+    nativeCurrency: {
+      name: 'Vexon Testnet Native Token',
+      symbol: 'tVEX',
+      decimals: 18
+    },
+    infoURL: 'https://vexonhub.org',
+    shortName: 'vexon',
+    chainId: 7879,
+    networkId: 7879,
+    icon: 'vexon',
+    explorers: [
+      {
+        name: 'Vexon Testnet Explorer',
+        url: 'https://testnet.vexonhub.org',
+        standard: 'EIP3091',
+        icon: 'vexon'
+      }
+    ]
+  },
+  {
     name: 'Kinto Mainnet',
     chain: 'Kinto Mainnet',
     rpc: [
@@ -21028,7 +21100,14 @@ const chainArray = [
     chainId: 9070,
     networkId: 9070,
     icon: 'apexfusion',
-    explorers: []
+    explorers: [
+      {
+        name: 'apexfusion',
+        url: 'https://explorer.nexus.testnet.apexfusion.org',
+        icon: 'apexfusion',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Genesis Coin',
@@ -31356,27 +31435,16 @@ const chainArray = [
   {
     name: 'Taiko Katla L2',
     chain: 'ETH',
-    status: 'active',
+    status: 'deprecated',
     icon: 'taiko',
-    rpc: [
-      'https://rpc.katla.taiko.xyz',
-      'wss://ws.katla.taiko.xyz',
-      'https://taiko-katla.drpc.org',
-      'wss://taiko-katla.drpc.org'
-    ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://taiko.xyz',
     shortName: 'tko-katla',
     chainId: 167008,
     networkId: 167008,
-    explorers: [
-      {
-        name: 'blockscout',
-        url: 'https://explorer.katla.taiko.xyz',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Taiko Hekla L2',
