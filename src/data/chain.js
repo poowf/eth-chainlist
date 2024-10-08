@@ -3527,7 +3527,7 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Ethernity Mainnet',
+    name: 'Ethernity',
     chain: 'Ethernity',
     rpc: [ 'https://mainnet.ethernitychain.io' ],
     faucets: [],
@@ -3538,7 +3538,7 @@ const chainArray = [
     networkId: 183,
     explorers: [
       {
-        name: 'Ethernity Mainnet Explorer',
+        name: 'Ethernity Explorer',
         url: 'https://ernscan.io',
         standard: 'EIP3091'
       }
@@ -4246,7 +4246,7 @@ const chainArray = [
       'wss://rpc_mainnet.mindnetwork.xyz'
     ],
     faucets: [],
-    nativeCurrency: { name: 'FHE', symbol: 'FHE', decimals: 18 },
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://mindnetwork.xyz',
     shortName: 'fhe',
@@ -7546,7 +7546,7 @@ const chainArray = [
     explorers: [
       {
         name: 'QL1 Mainnet Explorer',
-        url: 'https://mainnet.qom.one',
+        url: 'https://scan.qom.one',
         icon: 'qom',
         standard: 'EIP3091'
       }
@@ -30103,6 +30103,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'SRICHAIN',
+    chain: 'SRICHAIN',
+    rpc: [ 'https://rpc.sriscan.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'SRIX', symbol: 'SRIX', decimals: 18 },
+    infoURL: 'https://sriscan.com',
+    shortName: 'sriscan',
+    chainId: 95432,
+    networkId: 95432,
+    slip44: 108,
+    explorers: [
+      {
+        name: 'SRICHAIN',
+        url: 'https://sriscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Mantis Testnet (Hexapod)',
     chain: 'Mantis',
     icon: 'mantis',
@@ -30227,6 +30246,25 @@ const chainArray = [
       {
         name: 'Green Chain Explorer',
         url: 'https://explorer.greenchain.app',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MetaBenz CHAIN',
+    chain: 'MetaBenz CHAIN',
+    rpc: [ 'https://rpc.metabenzscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'MBC', symbol: 'MBC', decimals: 18 },
+    infoURL: 'https://metabenzscan.com',
+    shortName: 'metabenzscan',
+    chainId: 97766,
+    networkId: 97766,
+    slip44: 108,
+    explorers: [
+      {
+        name: 'MetaBenz CHAIN',
+        url: 'https://metabenzscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -34088,6 +34126,25 @@ const chainArray = [
         name: 'Tracehawk',
         url: 'https://explorer.zkevm.ternoa.network',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'PAYSCAN CHAIN',
+    chain: 'PAYSCAN CHAIN',
+    rpc: [ 'https://rpc.payscan.live' ],
+    faucets: [],
+    nativeCurrency: { name: 'PYZ', symbol: 'PYZ', decimals: 18 },
+    infoURL: 'https://payscan.live',
+    shortName: 'payscan',
+    chainId: 756689,
+    networkId: 756689,
+    slip44: 108,
+    explorers: [
+      {
+        name: 'PAYSCAN CHAIN',
+        url: 'https://payscan.live',
+        standard: 'EIP3091'
       }
     ]
   },
