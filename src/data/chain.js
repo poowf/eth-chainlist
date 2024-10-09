@@ -6526,6 +6526,25 @@ const chainArray = [
     networkId: 558
   },
   {
+    name: 'Prometheuz Testnet',
+    chain: 'Prometheuz',
+    rpc: [ 'https://explorer.testnet.prometheuz.io' ],
+    faucets: [ 'https://faucet.testnet.prometheuz.io' ],
+    nativeCurrency: { name: 'Pyre', symbol: 'PYRE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: '',
+    shortName: 'prometheuz-testnet',
+    chainId: 565,
+    networkId: 565,
+    explorers: [
+      {
+        name: 'Prometheuz Explorer',
+        url: 'https://explorer.testnet.prometheuz.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Dogechain Testnet',
     chain: 'DC',
     icon: 'dogechain',
@@ -21155,6 +21174,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Galactica-Reticulum',
+    chain: 'Galactica Testnet',
+    rpc: [ 'https://evm-rpc-http-reticulum.galactica.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Galactica Reticulum', symbol: 'GNET', decimals: 18 },
+    infoURL: 'https://galactica.com',
+    shortName: 'GNET',
+    chainId: 9302,
+    networkId: 9302,
+    explorers: [
+      {
+        name: 'Galactica-Reticulum Explorer',
+        url: 'https://explorer-reticulum.galactica.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Dogcoin Testnet',
     chain: 'DOGS',
     icon: 'dogs',
@@ -26327,6 +26364,26 @@ const chainArray = [
       {
         name: 'Opulent-X BETA Explorer',
         url: 'https://explorer.opulent-x.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Open Campus Codex Mainnet',
+    chain: 'Open Campus Codex Mainnet',
+    icon: 'occ-mainnet',
+    rpc: [ 'https://rpc.edu-chain.raas.gelato.cloud' ],
+    faucets: [ 'https://bridge.gelato.network/bridge/edu-chain' ],
+    nativeCurrency: { name: 'EDU', symbol: 'EDU', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/edu-chain',
+    shortName: 'occ-mainnet',
+    chainId: 41923,
+    networkId: 41923,
+    explorers: [
+      {
+        name: 'Open Campus Codex',
+        url: 'https://edu-chain.blockscout.com',
+        icon: 'occ-mainnet',
         standard: 'none'
       }
     ]
@@ -31631,7 +31688,7 @@ const chainArray = [
       'wss://rpc-testnet.mindnetwork.xyz'
     ],
     faucets: [],
-    nativeCurrency: { name: 'FHE', symbol: 'FHE', decimals: 18 },
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://mindnetwork.xyz',
     shortName: 'fhet',
