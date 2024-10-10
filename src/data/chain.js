@@ -28517,7 +28517,10 @@ const chainArray = [
   {
     name: 'Automata Mainnet',
     chain: 'Automata Mainnet',
-    rpc: [],
+    rpc: [
+      'https://rpc.ata.network',
+      'https://automata-mainnet.alt.technology/'
+    ],
     faucets: [],
     nativeCurrency: { name: 'ATA', symbol: 'ATA', decimals: 18 },
     infoURL: 'https://ata.network',
@@ -28525,7 +28528,13 @@ const chainArray = [
     chainId: 65536,
     networkId: 65536,
     icon: 'automata',
-    explorers: []
+    explorers: [
+      {
+        name: 'Automata Explorer',
+        url: 'https://explorer.ata.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Creator Chain Testnet',
@@ -35114,7 +35123,10 @@ const chainArray = [
   {
     name: 'Automata Testnet',
     chain: 'Automata Testnet',
-    rpc: [ 'https://automata-testnet.alt.technology' ],
+    rpc: [
+      'https://rpc-testnet.ata.network',
+      'https://automata-testnet.alt.technology'
+    ],
     faucets: [],
     nativeCurrency: { name: 'ATA', symbol: 'ATA', decimals: 18 },
     infoURL: 'https://ata.network',
@@ -35125,7 +35137,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Automata Testnet Explorer',
-        url: 'https://automata-testnet-explorer.alt.technology',
+        url: 'https://explorer-testnet.ata.network',
         standard: 'EIP3091'
       }
     ]
@@ -37904,6 +37916,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'Lumia Mainnet',
+    shortName: 'lumia-mainnet',
+    title: 'Lumia Mainnet',
+    chain: 'ETH',
+    icon: 'lumia',
+    rpc: [ 'https://mainnet-rpc.lumia.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lumia', symbol: 'LUMIA', decimals: 18 },
+    infoURL: 'https://lumia.org',
+    chainId: 994873017,
+    networkId: 994873017,
+    explorers: [
+      {
+        name: 'Lumia Mainnet Explorer',
+        url: 'https://explorer.lumia.org',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.lumia.org' } ]
+    }
+  },
+  {
     name: 'Zora Sepolia Testnet',
     chain: 'ETH',
     rpc: [ 'https://sepolia.rpc.zora.energy' ],
@@ -38515,6 +38552,33 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Lumia Testnet',
+    shortName: 'lumiatestnet',
+    title: 'Lumia Testnet',
+    chain: 'ETH',
+    icon: 'lumia',
+    rpc: [ 'https://testnet-rpc.lumia.org' ],
+    faucets: [ 'https://testnet-faucet.lumia.org' ],
+    nativeCurrency: { name: 'Lumia', symbol: 'LUMIA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://lumia.org',
+    chainId: 1952959480,
+    networkId: 1952959480,
+    explorers: [
+      {
+        name: 'Lumia Testnet Explorer',
+        url: 'https://testnet-explorer.lumia.org',
+        icon: 'lumia',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://testnet-bridge.lumia.org' } ]
+    }
   },
   {
     name: 'DataHopper',
