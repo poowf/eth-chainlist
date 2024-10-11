@@ -2698,6 +2698,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Unichain',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://unichain.org',
+    shortName: 'unichain',
+    chainId: 130,
+    networkId: 130,
+    status: 'incubating'
+  },
+  {
     name: 'Engram Testnet',
     chain: 'tGRAM',
     icon: 'engram',
@@ -7921,7 +7933,10 @@ const chainArray = [
     name: 'Taraxa Mainnet',
     chain: 'Tara',
     icon: 'taraxa',
-    rpc: [ 'https://rpc.mainnet.taraxa.io/' ],
+    rpc: [
+      'https://rpc.mainnet.taraxa.io/',
+      'https://ws.mainnet.taraxa.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Tara', symbol: 'TARA', decimals: 18 },
     infoURL: 'https://taraxa.io',
@@ -7940,7 +7955,10 @@ const chainArray = [
     name: 'Taraxa Testnet',
     chain: 'Tara',
     icon: 'taraxa',
-    rpc: [ 'https://rpc.testnet.taraxa.io/' ],
+    rpc: [
+      'https://rpc.testnet.taraxa.io/',
+      'https://ws.testnet.taraxa.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Tara', symbol: 'TARA', decimals: 18 },
     infoURL: 'https://taraxa.io',
@@ -10561,6 +10579,29 @@ const chainArray = [
         name: 'Bobabase block explorer',
         url: 'https://blockexplorer.bobabase.boba.network',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Unichain Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia.unichain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://unichain.org',
+    shortName: 'unichain-sep',
+    chainId: 1301,
+    networkId: 1301,
+    explorers: [
+      {
+        name: 'Unichain Sepolia Testnet Explorer',
+        url: 'https://unichain-sepolia.blockscout.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Unichain Sepolia Testnet Explorer',
+        url: 'https://sepolia.uniscan.xyz',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -21783,6 +21824,7 @@ const chainArray = [
       {
         name: 'MFEV CHAIN',
         url: 'https://mfevscan.com',
+        icon: 'mfev',
         standard: 'EIP3091'
       }
     ]
@@ -33101,6 +33143,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'CheeseChain',
+    title: 'CheeseChain',
+    chain: 'CHEESE',
+    rpc: [ 'https://rpc.cheesechain.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'CHEESE', symbol: 'CHEESE', decimals: 18 },
+    infoURL: 'https://cheesechain.xyz',
+    shortName: 'CheeseChain',
+    chainId: 383353,
+    networkId: 383353,
+    icon: 'cheesechain'
+  },
+  {
     name: 'Tipboxcoin Mainnet',
     chain: 'TPBX',
     icon: 'tipboxcoinIcon',
@@ -38305,6 +38360,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Haust Testnet',
+    title: 'Haust Testnet',
+    chain: 'Haust-testnet',
+    rpc: [ 'https://rpc-test.haust.network' ],
+    faucets: [ 'https://haust-testnet-faucet.eu-north-2.gateway.fm' ],
+    nativeCurrency: { name: 'HAUST', symbol: 'HAUST', decimals: 18 },
+    infoURL: 'https://haust.network/',
+    shortName: 'hst-test',
+    chainId: 1570754601,
+    networkId: 1570754601,
+    icon: 'haust',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://haust-testnet-blockscout.eu-north-2.gateway.fm',
+        icon: 'haust',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://haust-testnet-bridge.eu-north-2.gateway.fm' } ]
+    }
   },
   {
     name: 'Harmony Mainnet Shard 0',
