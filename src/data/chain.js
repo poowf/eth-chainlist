@@ -29360,7 +29360,7 @@ const chainArray = [
       'wss://polygon-amoy-bor-rpc.publicnode.com'
     ],
     faucets: [ 'https://faucet.polygon.technology/' ],
-    nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
+    nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
     infoURL: 'https://polygon.technology/',
     shortName: 'polygonamoy',
     chainId: 80002,
