@@ -6582,11 +6582,9 @@ const chainArray = [
     rpc: [
       'https://rpc.rollux.com',
       'wss://rpc.rollux.com/wss',
-      'https://rpc.ankr.com/rollux',
-      'https://rollux.rpc.syscoin.org',
-      'wss://rollux.rpc.syscoin.org/wss'
+      'https://rpc.ankr.com/rollux'
     ],
-    faucets: [ 'https://rollux.id/faucetapp' ],
+    faucets: [ 'https://rollux.id/faucet' ],
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
     infoURL: 'https://rollux.com',
     shortName: 'sys-rollux',
@@ -6594,7 +6592,7 @@ const chainArray = [
     networkId: 570,
     explorers: [
       {
-        name: 'Rollux Explorer',
+        name: 'Rollux Mainnet Explorer',
         url: 'https://explorer.rollux.com',
         standard: 'EIP3091'
       }
@@ -8298,6 +8296,27 @@ const chainArray = [
       {
         name: 'FireScan',
         url: 'https://rinia.firescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SlerfChain Mainnet',
+    title: 'SlerfChain Mainnet',
+    chain: 'SLERF CHAIN',
+    rpc: [ 'https://rpc.slerfchain.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'WSLERF', symbol: 'WSLERF', decimals: 18 },
+    infoURL: 'https://slerfchain.xyz',
+    shortName: 'SlerfChain-Mainnet',
+    chainId: 918,
+    networkId: 918,
+    icon: 'slerf',
+    explorers: [
+      {
+        name: 'SlerfChain Scan',
+        url: 'https://scan.slerfchain.xyz',
+        icon: 'slerf',
         standard: 'EIP3091'
       }
     ]
@@ -22657,6 +22676,11 @@ const chainArray = [
         name: 'bevm mainnet scan',
         url: 'https://scan-mainnet.bevm.io',
         standard: 'none'
+      },
+      {
+        name: 'bevm mainnet oklink',
+        url: 'https://www.oklink.com/bevm',
+        standard: 'none'
       }
     ]
   },
@@ -33936,7 +33960,7 @@ const chainArray = [
   {
     name: 'Polter Testnet',
     chain: 'Geist',
-    rpc: [],
+    rpc: [ 'https://geist-polter.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Polter GHST', symbol: 'GHST', decimals: 18 },
     features: [],
@@ -33946,7 +33970,13 @@ const chainArray = [
     networkId: 631571,
     status: 'incubating',
     icon: 'polterGeist',
-    explorers: []
+    explorers: [
+      {
+        name: 'Polter Testnet Explorer',
+        url: 'https://polter-testnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Bear Network Chain Mainnet',
@@ -34872,6 +34902,42 @@ const chainArray = [
       type: 'L2',
       chain: 'eip155-1',
       bridges: [ { url: 'https://portal.treasure.lol/bridge' } ]
+    }
+  },
+  {
+    name: 'Treasure Topaz',
+    chain: 'Treasure Topaz',
+    shortName: 'Topaz',
+    chainId: 978658,
+    networkId: 978658,
+    nativeCurrency: { name: 'Testnet MAGIC', symbol: 'MAGIC', decimals: 18 },
+    slip44: 1,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://app.treasure.lol',
+    icon: 'treasuretopaz',
+    rpc: [
+      'https://rpc.topaz.treasure.lol',
+      'wss://rpc.topaz.treasure.lol/ws'
+    ],
+    faucets: [
+      'https://app.treasure.lol/chain/faucet',
+      'https://thirdweb.com/treasure-topaz'
+    ],
+    explorers: [
+      {
+        name: 'treasurescan',
+        url: 'https://topaz.treasurescan.io',
+        icon: 'treasure',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [
+        { url: 'https://app.treasure.lol/chain/bridge' },
+        { url: 'https://portal.topaz.treasure.lol/bridge' }
+      ]
     }
   },
   {
