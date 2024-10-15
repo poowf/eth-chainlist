@@ -6049,6 +6049,27 @@ const chainArray = [
     }
   },
   {
+    name: 'Stenix Mainnet',
+    chain: 'STEN',
+    rpc: [ 'https://stenix.network/pub' ],
+    faucets: [],
+    nativeCurrency: { name: 'Stenix', symbol: 'STEN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://stenix.org',
+    shortName: 'sten',
+    chainId: 425,
+    networkId: 425,
+    icon: 'stenix',
+    explorers: [
+      {
+        name: 'stenscan',
+        url: 'https://stenscan.com',
+        icon: 'stenscan',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Zeeth Chain',
     chain: 'ZeethChain',
     rpc: [ 'https://rpc.zeeth.io' ],
@@ -7161,6 +7182,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'NERO Testnet',
+    chain: 'NERO Chain',
+    rpc: [
+      'https://rpc-testnet.nerochain.io',
+      'wss://ws-testnet.nerochain.io'
+    ],
+    faucets: [ 'https://faucet-testnet.nerochain.io' ],
+    nativeCurrency: { name: 'NERO', symbol: 'NERO', decimals: 18 },
+    infoURL: 'https://docs.nerochain.io/',
+    shortName: 'NERO',
+    chainId: 689,
+    networkId: 689,
+    slip44: 1,
+    icon: 'nero',
+    explorers: [
+      {
+        name: 'nero testnet scan',
+        url: 'https://testnet.neroscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Redstone',
     chain: 'ETH',
     rpc: [ 'https://rpc.redstonechain.com', 'wss://rpc.redstonechain.com' ],
@@ -7866,14 +7910,23 @@ const chainArray = [
   {
     name: 'Callisto Mainnet',
     chain: 'CLO',
-    rpc: [ 'https://rpc.callisto.network/' ],
-    faucets: [],
+    icon: 'callistonetwork',
+    rpc: [ 'https://rpc.callistodao.org' ],
+    faucets: [ 'https://faucet.callistodao.org' ],
     nativeCurrency: { name: 'Callisto', symbol: 'CLO', decimals: 18 },
-    infoURL: 'https://callisto.network',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://callistodao.org',
     shortName: 'clo',
     chainId: 820,
     networkId: 1,
-    slip44: 820
+    slip44: 820,
+    explorers: [
+      {
+        name: 'blockscout-callisto-network',
+        url: 'https://explorer.callistodao.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Callisto Testnet Deprecated',
@@ -19040,6 +19093,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'exSat Network',
+    chain: 'exSat',
+    icon: 'exsat',
+    rpc: [ 'https://evm.exsat.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://exsat.network/',
+    shortName: 'xsat',
+    chainId: 7200,
+    networkId: 7200,
+    explorers: [
+      {
+        name: 'exSat Explorer',
+        url: 'https://scan.exsat.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [ { url: '' } ] }
   },
   {
     name: 'Nibiru Testnet-1',
@@ -31466,6 +31539,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'XCOIN',
+    chain: 'XCOIN',
+    rpc: [ 'https://rpc-xcoin.cryptoxnetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'XCOIN', symbol: 'XCOIN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://cryptoxnetwork.io',
+    shortName: 'xcoin',
+    chainId: 158345,
+    networkId: 158345,
+    explorers: [
+      {
+        name: 'CryptoX explorer',
+        url: 'https://cryptoxscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PlayFi Mainnet',
     chain: 'PLAY',
     rpc: [],
@@ -31769,6 +31861,24 @@ const chainArray = [
     shortName: 'fhet',
     chainId: 192940,
     networkId: 192940
+  },
+  {
+    name: 'R0AR Chain',
+    chain: 'R0AR Chain',
+    rpc: [ 'https://rpc-r0ar.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://r0arscan.io',
+    shortName: 'R0AR-Chain',
+    chainId: 193939,
+    networkId: 193939,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://r0arscan.io',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'MAZZE Testnet',
@@ -32086,6 +32196,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Blockfit',
+    chain: '202424',
+    rpc: [ 'https://rpc.blockfitscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BFIT', symbol: 'BFIT', decimals: 18 },
+    infoURL: 'https://blockfit.io',
+    shortName: 'Blockfit',
+    chainId: 202424,
+    networkId: 202424,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://blockfitscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Jellie',
     title: 'Twala Testnet Jellie',
     shortName: 'twl-jellie',
@@ -32159,6 +32287,20 @@ const chainArray = [
     shortName: 'atlas',
     chainId: 210049,
     networkId: 210049
+  },
+  {
+    name: 'Sorian',
+    chain: 'SOR',
+    rpc: [ 'https://rpc.sorian.io' ],
+    faucets: [],
+    icon: 'sorian',
+    nativeCurrency: { name: 'Sorian', symbol: 'SOR', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://sorian.io',
+    shortName: 'sorian',
+    chainId: 210209,
+    networkId: 210209,
+    explorers: []
   },
   {
     name: 'PlatON Mainnet',
@@ -36369,6 +36511,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'R0AR Testnet',
+    chain: 'R0AR Testnet',
+    rpc: [ 'https://testnet.rpc-r0ar.io' ],
+    faucets: [ 'https://testnet.r0arfaucet.io' ],
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://testnet.r0arscan.io',
+    shortName: 'R0AR-Test-Chain',
+    chainId: 11166111,
+    networkId: 11166111,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://testnet.r0arscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Memento Testnet',
     chain: 'Memento',
     rpc: [
@@ -37018,6 +37178,32 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Deviant Token Blockchain',
+    chain: 'DTBC',
+    status: 'incubating',
+    rpc: [ 'https://rpc.devianttoken.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Deviant Token', symbol: 'DTBC', decimals: 18 },
+    infoURL: 'https://devianttoken.net',
+    shortName: 'dtbc',
+    chainId: 52027071,
+    networkId: 52027071,
+    explorers: []
+  },
+  {
+    name: 'Deviant Token Blockchain Testnet',
+    chain: 'tDTBC',
+    status: 'incubating',
+    rpc: [ 'https://trpc.devianttoken.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Deviant Token Testnet', symbol: 'tDTBC', decimals: 18 },
+    infoURL: 'https://devianttoken.net',
+    shortName: 'tdtbc',
+    chainId: 52027080,
+    networkId: 52027080,
+    explorers: []
   },
   {
     name: 'Fluence Testnet',
@@ -38461,7 +38647,6 @@ const chainArray = [
       'https://a.api.s0.t.hmny.io',
       'https://api.s0.t.hmny.io',
       'https://rpc.ankr.com/harmony',
-      'https://harmony.api.onfinality.io/public',
       'https://1rpc.io/one',
       'https://harmony-0.drpc.org',
       'wss://harmony-0.drpc.org'
