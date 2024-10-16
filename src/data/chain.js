@@ -3544,6 +3544,7 @@ const chainArray = [
     rpc: [ 'https://mainnet.ethernitychain.io' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    icon: 'ethernity',
     infoURL: 'https://www.ethernity.io',
     shortName: 'ethernity-mainnet',
     chainId: 183,
@@ -21749,6 +21750,7 @@ const chainArray = [
       'wss://ws.arena-z.t.raas.gelato.cloud'
     ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    icon: 'arena-z',
     infoURL: 'https://raas.gelato.network/rollups/details/public/arena-z-testnet',
     faucets: [],
     shortName: 'arena-z-testnet',
@@ -32303,6 +32305,23 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Sorian Testnet',
+    chain: 'tSOR',
+    rpc: [
+      'https://testnet-rpc.sorian.io',
+      'https://testnet.rpc.sorian.io'
+    ],
+    faucets: [],
+    icon: 'sorianTestnet',
+    nativeCurrency: { name: 'Sorian Testnet', symbol: 'tSOR', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mint.sorian.io',
+    shortName: 'sorianTestnet',
+    chainId: 210210,
+    networkId: 210210,
+    explorers: []
+  },
+  {
     name: 'PlatON Mainnet',
     chain: 'PlatON',
     rpc: [
@@ -36529,6 +36548,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Lummio Network',
+    chain: 'Lummio Network',
+    rpc: [ 'https://rpc.lummio.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lummio Reward Points', symbol: 'LRPO', decimals: 18 },
+    infoURL: 'https://lummio.net',
+    shortName: 'lummio',
+    chainId: 12020498,
+    networkId: 12020498,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.lummio.net',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Memento Testnet',
     chain: 'Memento',
     rpc: [
@@ -37549,6 +37587,19 @@ const chainArray = [
       ]
     },
     status: 'active'
+  },
+  {
+    name: 'ChadChain',
+    chain: 'CHAD',
+    status: 'incubating',
+    rpc: [ 'https://rpc.chadchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'ChadChain', symbol: 'CHAD', decimals: 18 },
+    infoURL: 'https://chadchain.org',
+    shortName: 'chad',
+    chainId: 97912060,
+    networkId: 97912060,
+    explorers: []
   },
   {
     name: 'Joys Digital TestNet',
@@ -38820,10 +38871,10 @@ const chainArray = [
     status: 'active'
   },
   {
-    name: 'Kakarot Sepolia',
+    name: 'Kakarot Sepolia (Deprecated)',
     chain: 'ETH',
     icon: 'kakarot',
-    rpc: [ 'https://sepolia-rpc.kakarot.org' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://kakarot.org',
@@ -39328,6 +39379,31 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Kakarot Starknet Sepolia',
+    chain: 'ETH',
+    icon: 'kakarot',
+    rpc: [ 'https://sepolia-rpc.kakarot.org' ],
+    faucets: [ 'https://sepolia-faucet.kakarot.org/' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://kakarot.org',
+    shortName: 'kkrt-starknet-sepolia',
+    chainId: 920637907288165,
+    networkId: 920637907288165,
+    explorers: [
+      {
+        name: 'Kakarot Scan',
+        url: 'https://sepolia.kakarotscan.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Kakarot Explorer',
+        url: 'https://sepolia-explorer.kakarot.org',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
   },
   {
     name: 'DCHAIN Testnet',
