@@ -8956,7 +8956,7 @@ const chainArray = [
     chain: 'KAIA',
     rpc: [ 'https://public-en.kairos.node.kaia.io' ],
     faucets: [ 'https://faucet.kaia.io' ],
-    nativeCurrency: { name: 'KAIA', symbol: 'KLAY', decimals: 18 },
+    nativeCurrency: { name: 'KAIA', symbol: 'KAIA', decimals: 18 },
     infoURL: 'https://kaia.io/',
     shortName: 'kaia-kairos',
     chainId: 1001,
@@ -8964,13 +8964,13 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
-        name: 'Klaytnscope',
-        url: 'https://baobab.klaytnscope.com',
+        name: 'Kaiascope',
+        url: 'https://kairos.kaiascope.com',
         standard: 'EIP3091'
       },
       {
-        name: 'Klaytnfinder',
-        url: 'https://baobab.klaytnfinder.io',
+        name: 'Kaiascan',
+        url: 'https://kairos.kaiascan.io',
         standard: 'EIP3091'
       }
     ]
@@ -13856,6 +13856,28 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://explorer.kanda.animechain.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Game7',
+    title: 'Game7',
+    chain: 'Game7',
+    rpc: [ 'https://mainnet-rpc.game7.io', 'wss://mainnet-rpc.game7.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'G7', symbol: 'G7', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://game7.io/',
+    shortName: 'g7',
+    chainId: 2187,
+    networkId: 2187,
+    icon: 'game7',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://mainnet.game7.io',
+        icon: 'game7',
         standard: 'EIP3091'
       }
     ]
@@ -20259,7 +20281,7 @@ const chainArray = [
     chain: 'KAIA',
     rpc: [ 'https://public-en.node.kaia.io' ],
     faucets: [],
-    nativeCurrency: { name: 'KAIA', symbol: 'KLAY', decimals: 18 },
+    nativeCurrency: { name: 'KAIA', symbol: 'KAIA', decimals: 18 },
     infoURL: 'https://kaia.io',
     shortName: 'kaia-mainnet',
     chainId: 8217,
@@ -20267,13 +20289,13 @@ const chainArray = [
     slip44: 8217,
     explorers: [
       {
-        name: 'Klaytnscope',
-        url: 'https://scope.klaytn.com',
+        name: 'Kaiascope',
+        url: 'https://kaiascope.com',
         standard: 'EIP3091'
       },
       {
-        name: 'Klaytnfinder',
-        url: 'https://klaytnfinder.io',
+        name: 'Kaiascan',
+        url: 'https://kaiascan.io',
         standard: 'EIP3091'
       }
     ]
@@ -23477,6 +23499,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Game7 Testnet',
+    title: 'Game7 Testnet',
+    chain: 'Game7',
+    rpc: [ 'https://testnet-rpc.game7.io', 'wss://testnet-rpc.game7.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'TG7T', symbol: 'TG7T', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://game7.io',
+    shortName: 'g7t',
+    chainId: 13746,
+    networkId: 13746,
+    icon: 'game7testnet',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://testnet.game7.io',
+        icon: 'game7testnet',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Susono',
     chain: 'SUS',
     rpc: [
@@ -24587,6 +24631,26 @@ const chainArray = [
         url: 'https://explorer.lbry.com',
         icon: 'lbry',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Astra Sepolia',
+    chain: 'Astra Sepolia',
+    icon: 'astrasepolia',
+    rpc: [ 'https://rpc-astra-9on2f72wzn.t.conduit.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Astra', symbol: 'ATX', decimals: 18 },
+    infoURL: 'https://explorer-astra-9on2f72wzn.t.conduit.xyz',
+    shortName: 'astra-sepolia',
+    chainId: 19777,
+    networkId: 19777,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Astra Sepolia Explorer',
+        url: 'https://explorer-astra-9on2f72wzn.t.conduit.xyz',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -27252,7 +27316,7 @@ const chainArray = [
     name: 'Zircuit Testnet',
     chain: 'Zircuit Testnet',
     icon: 'zircuit',
-    rpc: [ 'http://zircuit1-testnet.p2pify.com/' ],
+    rpc: [ 'https://zircuit1-testnet.p2pify.com/' ],
     faucets: [],
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.zircuit.com/',
@@ -28441,6 +28505,26 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://bridge.optopia.ai' } ]
     }
+  },
+  {
+    name: 'TikTrix Testnet',
+    chain: 'tTTX',
+    icon: 'tiktrix',
+    rpc: [ 'https://tiktrix-rpc.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'tTTX', symbol: 'tTTX', decimals: 18 },
+    infoURL: 'https://tiktrix.gg',
+    shortName: 'tiktrix-testnet',
+    chainId: 62092,
+    networkId: 62092,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'TikTrix Testnet Explorer',
+        url: 'https://tiktrix.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Citrea Devnet',
@@ -34932,6 +35016,26 @@ const chainArray = [
       {
         name: 'Posichain Explorer Testnet',
         url: 'https://explorer-testnet.posichain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Odyssey Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://odyssey.ithaca.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://ithaca.xyz',
+    shortName: 'odyssey-testnet',
+    chainId: 911867,
+    networkId: 911867,
+    explorers: [
+      {
+        name: 'odyssey explorer',
+        url: 'https://odyssey-explorer.ithaca.xyz',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
