@@ -19145,12 +19145,12 @@ const chainArray = [
     ]
   },
   {
-    name: 'exSat Network',
+    name: 'exSat Mainnet',
     chain: 'exSat',
     icon: 'exsat',
     rpc: [ 'https://evm.exsat.network' ],
     faucets: [],
-    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://exsat.network/',
     shortName: 'xsat',
     chainId: 7200,
@@ -20674,7 +20674,7 @@ const chainArray = [
     chain: 'IOTA EVM',
     rpc: [
       'https://json-rpc.evm.iotaledger.net',
-      'https://ws.json-rpc.evm.iotaledger.net'
+      'wss://ws.json-rpc.evm.iotaledger.net'
     ],
     faucets: [],
     nativeCurrency: { name: 'IOTA', symbol: 'IOTA', decimals: 18 },
@@ -34680,6 +34680,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zebro Smart Chain',
+    chain: 'ZEBRO',
+    rpc: [ 'https://rpc.zebrocoin.app', 'https://rpc1.zebrocoin.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zebrocoin', symbol: 'ZEBRO', decimals: 18 },
+    infoURL: 'https://zebrocoin.app',
+    shortName: 'zebro',
+    chainId: 786786,
+    networkId: 786786,
+    icon: 'zebrocoin',
+    explorers: [
+      {
+        name: 'Zebrocoin Explorer',
+        url: 'https://explorer.zebrocoin.app',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Zebrocoin Explorer1',
+        url: 'https://explorer1.zebrocoin.app',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'OctaSpace',
     chain: 'OCTA',
     rpc: [ 'https://rpc.octa.space', 'wss://rpc.octa.space' ],
@@ -34904,6 +34928,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'exSat Testnet',
+    chain: 'exSat',
+    icon: 'exsat',
+    rpc: [ 'https://evm-tst3.exsat.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://exsat.network/',
+    shortName: 'txsat',
+    chainId: 839999,
+    networkId: 839999,
+    explorers: [
+      {
+        name: 'exSat Testnet Explorer',
+        url: 'https://scan-testnet.exsat.network',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [ { url: '' } ] }
   },
   {
     name: 'RUNEVM Testnet',
