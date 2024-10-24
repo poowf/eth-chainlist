@@ -941,7 +941,8 @@ const chainArray = [
     rpc: [
       'https://rpc.darwinia.network',
       'https://darwinia-rpc.dcdao.box',
-      'https://darwinia-rpc.dwellir.com'
+      'https://darwinia-rpc.dwellir.com',
+      'https://darwinia.rpc.subquery.network/public'
     ],
     faucets: [],
     nativeCurrency: {
@@ -1027,7 +1028,8 @@ const chainArray = [
       'https://erpc.xinfin.network',
       'https://rpc.xinfin.network',
       'https://rpc1.xinfin.network',
-      'https://rpc-xdc.icecreamswap.com'
+      'https://rpc.xdcrpc.com',
+      'https://erpc.xdcrpc.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'XinFin', symbol: 'XDC', decimals: 18 },
@@ -1037,6 +1039,12 @@ const chainArray = [
     networkId: 50,
     icon: 'xdc',
     explorers: [
+      {
+        name: 'xdcscan',
+        url: 'https://xdcscan.com',
+        icon: 'blocksscan',
+        standard: 'EIP3091'
+      },
       {
         name: 'xdcscan',
         url: 'https://xdcscan.io',
@@ -15040,6 +15048,31 @@ const chainArray = [
     }
   },
   {
+    name: 'Morph',
+    title: 'Morph Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.morphl2.io', 'wss://rpc.morphl2.io:8443' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://morphl2.io',
+    shortName: 'morph',
+    chainId: 2818,
+    networkId: 2818,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Morph Mainnet Explorer',
+        url: 'https://explorer.morphl2.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.morphl2.io/' } ]
+    }
+  },
+  {
     name: 'HyperAGI Mainnet',
     chain: 'HyperAGI',
     rpc: [],
@@ -17365,6 +17398,28 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Skate Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.skatechain.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://www.skatechain.org/',
+    shortName: 'skate',
+    chainId: 5050,
+    networkId: 5050,
+    icon: 'skate',
+    explorers: [
+      {
+        name: 'Skate Explorer',
+        url: 'https://scan.skatechain.org',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active',
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [ { url: '' } ] }
   },
   {
     name: 'Nollie Skatechain Testnet',
@@ -22119,6 +22174,25 @@ const chainArray = [
       {
         name: 'Gon Explorer',
         url: 'https://gonscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'AEON Chain',
+    chain: 'AEON Chain',
+    icon: 'aeon',
+    rpc: [ 'https://node.aeon.xyz/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'AEON Token', symbol: 'AEON', decimals: 18 },
+    infoURL: '',
+    shortName: 'aeon',
+    chainId: 10025,
+    networkId: 10025,
+    explorers: [
+      {
+        name: 'AEON Explorer',
+        url: 'https://scan.aeon.xyz',
         standard: 'none'
       }
     ]
