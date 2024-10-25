@@ -15751,6 +15751,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'JZERO',
+    chain: 'JZERO',
+    icon: 'jzero',
+    rpc: [ 'https://rpc.jzero.xyz' ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'JZERO', symbol: 'JZR', decimals: 18 },
+    infoURL: 'https://jzero.xyz',
+    shortName: 'jzero',
+    chainId: 3502,
+    networkId: 3502,
+    explorers: [
+      {
+        name: 'JZERO Explorer',
+        url: 'https://exp.jzero.xyz',
+        icon: 'jzero',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PandoProject Mainnet',
     chain: 'PandoProject',
     icon: 'pando',
@@ -24875,6 +24896,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Rivest Testnet',
+    chain: 'Inco',
+    rpc: [
+      'https://validator.rivest.inco.org',
+      'https://gateway.rivest.inco.org'
+    ],
+    faucets: [ 'https://faucet.rivest.inco.org' ],
+    nativeCurrency: { name: 'test-Inco', symbol: 'tINCO', decimals: 18 },
+    infoURL: 'https://inco.org',
+    shortName: 'rivest-testnet',
+    chainId: 21097,
+    networkId: 21097,
+    slip44: 1,
+    icon: 'inco',
+    explorers: [
+      {
+        name: 'Rivest Testnet Explorer',
+        url: 'https://explorer.rivest.inco.org',
+        standard: 'EIP3091',
+        icon: 'inco'
+      }
+    ]
+  },
+  {
     name: 'All About Healthy',
     chain: 'AAH',
     rpc: [ 'https://rpc.c4ex.net' ],
@@ -27580,6 +27625,25 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-3' }
+  },
+  {
+    name: 'Sophon',
+    chain: 'Sophon',
+    rpc: [ 'https://rpc.sophon.xyz' ],
+    nativeCurrency: { name: 'Sophon', symbol: 'SOPH', decimals: 18 },
+    faucets: [],
+    infoURL: '',
+    shortName: 'sophon',
+    chainId: 50104,
+    networkId: 50104,
+    explorers: [
+      {
+        name: 'Sophon Block Explorer',
+        url: 'https://explorer.sophon.xyz',
+        icon: 'sophon-testnet',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Erbie Mainnet',
@@ -39596,17 +39660,27 @@ const chainArray = [
   {
     name: 'Zeniq',
     chain: 'ZENIQ',
-    rpc: [ 'https://smart.zeniq.network:9545' ],
-    faucets: [ 'https://faucet.zeniq.net/' ],
+    icon: 'zeniq',
+    rpc: [ 'https://api.zeniq.network' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [ 'https://faucet.nomo.zone/', 'https://faucet.zeniq.net/' ],
     nativeCurrency: { name: 'Zeniq', symbol: 'ZENIQ', decimals: 18 },
     infoURL: 'https://www.zeniq.dev/',
     shortName: 'zeniq',
     chainId: 383414847825,
     networkId: 383414847825,
+    ens: { registry: '0xa0446c88240bCA2A8E0f68C93aa365d25B198aA4' },
     explorers: [
+      {
+        name: 'zeniqscan',
+        url: 'https://zeniqscan.com',
+        icon: 'zeniq',
+        standard: 'EIP3091'
+      },
       {
         name: 'zeniq-smart-chain-explorer',
         url: 'https://smart.zeniq.net',
+        icon: 'zeniq',
         standard: 'EIP3091'
       }
     ]
