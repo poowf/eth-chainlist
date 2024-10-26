@@ -4843,13 +4843,13 @@ const chainArray = [
     }
   },
   {
-    name: 'Cronos zkEVM Testnet',
-    chain: 'CronosZkEVMTestnet',
-    rpc: [ 'https://testnet.zkevm.cronos.org' ],
+    name: 'Deprecated Cronos zkEVM Testnet',
+    chain: 'deprecatedCronosZkEVMTestnet',
+    rpc: [ 'https://deprecated.testnet.zkevm.cronos.org' ],
     faucets: [ 'https://zkevm.cronos.org/faucet' ],
     nativeCurrency: { name: 'Cronos zkEVM Test Coin', symbol: 'zkTCRO', decimals: 18 },
     infoURL: 'https://docs-zkevm.cronos.org',
-    shortName: 'zkTCRO',
+    shortName: 'deprecated-zkTCRO',
     chainId: 282,
     networkId: 282,
     slip44: 1,
@@ -4859,7 +4859,8 @@ const chainArray = [
         url: 'https://explorer.zkevm.cronos.org/testnet',
         standard: 'none'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'Boba Network',
@@ -6262,14 +6263,41 @@ const chainArray = [
   {
     name: 'World Chain',
     chain: 'ETH',
-    rpc: [ 'https://worldchain-mainnet.g.alchemy.com/public' ],
+    rpc: [
+      'https://worldchain-mainnet.g.alchemy.com/public',
+      'https://480.rpc.thirdweb.com',
+      'https://worldchain-mainnet.gateway.tenderly.co',
+      'wss://worldchain-mainnet.gateway.tenderly.co'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://worldcoin.org',
+    infoURL: 'https://world.org/world-chain',
     shortName: 'wc',
     chainId: 480,
     networkId: 480,
-    status: 'incubating'
+    slip44: 1,
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [
+        { url: 'https://world-chain.superbridge.app' },
+        { url: 'https://app.across.to/bridge?destinationChainId=480' },
+        { url: 'https://worldchain-mainnet.bridge.alchemy.com' }
+      ]
+    },
+    explorers: [
+      {
+        name: 'etherscan',
+        url: 'https://worldscan.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://worldchain-mainnet.explorer.alchemy.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Rupaya',
@@ -11406,6 +11434,43 @@ const chainArray = [
       {
         name: 'Beagle Messaging Chain Explorer',
         url: 'https://eth.beagle.chat',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Story Odyssey Testnet',
+    chain: 'Story Odyssey Testnet',
+    rpc: [ 'https://odyssey.storyrpc.io' ],
+    faucets: [],
+    chainId: 1516,
+    networkId: 1516,
+    nativeCurrency: { name: 'IP', symbol: 'IP', decimals: 18 },
+    infoURL: 'https://www.story.foundation',
+    shortName: 'story-testnet',
+    explorers: [
+      {
+        name: 'Story Odyssey Network explorer',
+        url: 'https://odyssey-testnet-explorer.storyscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Digital Smart Chain',
+    chain: 'Digital Smart Chain',
+    icon: 'dscscan',
+    rpc: [ 'https://rpc01.dscscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Digital Smart Chain', symbol: 'DSCs', decimals: 18 },
+    infoURL: 'https://rpc01.dscscan.io',
+    shortName: 'DSCs',
+    chainId: 1555,
+    networkId: 1555,
+    explorers: [
+      {
+        name: 'Digital Smart Chain',
+        url: 'https://explorer.dotblox.io',
         standard: 'EIP3091'
       }
     ]
@@ -17163,15 +17228,40 @@ const chainArray = [
   {
     name: 'World Chain Sepolia Testnet',
     chain: 'ETH',
-    rpc: [ 'https://worldchain-sepolia.g.alchemy.com/public' ],
-    faucets: [],
+    rpc: [
+      'https://worldchain-sepolia.g.alchemy.com/public',
+      'https://4801.rpc.thirdweb.com',
+      'https://worldchain-sepolia.gateway.tenderly.co',
+      'wss://worldchain-sepolia.gateway.tenderly.co'
+    ],
+    faucets: [
+      'https://www.alchemy.com/faucets/world-chain-sepolia',
+      'https://console.optimism.io/faucet'
+    ],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://worldcoin.org/',
+    infoURL: 'https://world.org/world-chain',
     shortName: 'wcsep',
     chainId: 4801,
     networkId: 4801,
     slip44: 1,
-    explorers: []
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://worldchain-sepolia.bridge.alchemy.com' } ]
+    },
+    explorers: [
+      {
+        name: 'etherscan',
+        url: 'https://sepolia.worldscan.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://worldchain-sepolia.explorer.alchemy.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Globel Chain',
@@ -19184,6 +19274,27 @@ const chainArray = [
         url: 'https://explorer.numecrypto.com',
         icon: 'nume',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: '0XL3',
+    chain: '0XL3',
+    icon: '0xl3',
+    rpc: [ 'https://rpc.0xl3.com' ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'XL3', symbol: 'XL3', decimals: 18 },
+    infoURL: 'https://0xl3.com',
+    shortName: '0xl3',
+    chainId: 7117,
+    networkId: 7117,
+    explorers: [
+      {
+        name: '0XL3 Explorer',
+        url: 'https://exp.0xl3.com',
+        icon: '0xl3',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -26340,6 +26451,25 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'ApeChain',
+    chain: 'apechain',
+    rpc: [ 'https://rpc.apechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'ApeCoin', symbol: 'APE', decimals: 18 },
+    infoURL: 'https://apechain.com',
+    shortName: 'apechain',
+    chainId: 33139,
+    networkId: 33139,
+    icon: 'apechain',
+    explorers: [
+      {
+        name: 'ApeChain Explorer',
+        url: 'https://apescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Cloudverse Subnet',
     chain: 'CLOUDVERSE',
     rpc: [ 'https://subnets.avax.network/cloudverse/mainnet/rpc' ],
@@ -29155,6 +29285,34 @@ const chainArray = [
       bridges: [
         { url: 'https://bridge.arbitrum.io' },
         { url: 'https://relay.link/bridge/apex/' }
+      ]
+    }
+  },
+  {
+    name: 'Proof of Play - Boss',
+    chainId: 70701,
+    shortName: 'pop-boss',
+    chain: 'ETH',
+    networkId: 70701,
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [ 'https://rpc.boss.proofofplay.com' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Proof of Play Boss Explorer',
+        url: 'https://explorer.boss.proofofplay.com',
+        icon: 'pop-boss',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://proofofplay.com',
+    icon: 'pop-boss',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [
+        { url: 'https://bridge.arbitrum.io' },
+        { url: 'https://relay.link/bridge/boss/' }
       ]
     }
   },
@@ -37340,6 +37498,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'XMTP',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://xmtp.org',
+    shortName: 'xmtp',
+    chainId: 24132016,
+    networkId: 24132016,
+    status: 'incubating'
+  },
+  {
     name: '6Degree of Outreach - Testnet',
     chain: '6DO',
     rpc: [ 'https://rpc-testnet.6do.world' ],
@@ -38157,6 +38327,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'XMTP Sepolia',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://xmtp.org',
+    shortName: 'xmtp-sepolia',
+    chainId: 241320161,
+    networkId: 241320161,
+    status: 'incubating'
   },
   {
     name: 'Neon EVM Devnet',
@@ -39347,6 +39529,26 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://ruby.exchange/bridge.html' } ]
     }
+  },
+  {
+    name: 'Accumulate Kermit',
+    shortName: 'Kermit',
+    title: 'Accumulate Kermit Testnet',
+    chain: 'Accumulate',
+    chainId: 2478899481,
+    networkId: 2478899481,
+    infoURL: 'https://accumulate.org',
+    slip44: 2147483929,
+    rpc: [ 'https://kermit.accumulatenetwork.io/eth' ],
+    nativeCurrency: { name: 'ACME', symbol: 'ACME', decimals: 18 },
+    faucets: [ 'https://kermit.explorer.accumulatenetwork.io/faucet' ],
+    explorers: [
+      {
+        name: 'accumulate-explorer-kermit',
+        url: 'https://kermit.explorer.accumulatenetwork.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Ancient8 Testnet (deprecated)',
