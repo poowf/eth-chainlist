@@ -4371,6 +4371,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Cronos zkEVM Testnet',
+    chain: 'CronosZkEVMTestnet',
+    rpc: [ 'https://testnet.zkevm.cronos.org' ],
+    faucets: [ 'https://zkevm.cronos.org/faucet' ],
+    nativeCurrency: { name: 'Cronos zkEVM Test Coin', symbol: 'zkTCRO', decimals: 18 },
+    infoURL: 'https://docs-zkevm.cronos.org',
+    shortName: 'zkTCRO',
+    chainId: 240,
+    networkId: 240,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Cronos zkEVM Testnet Explorer',
+        url: 'https://explorer.zkevm.cronos.org/testnet',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Plinga Mainnet',
     chain: 'Plinga',
     icon: 'plinga',
@@ -4801,19 +4820,24 @@ const chainArray = [
     networkId: 278
   },
   {
-    name: 'BPX Blockchain',
+    name: 'BPX Chain',
     chain: 'BPX',
     icon: 'bpx',
-    rpc: [
-      'https://rpc.mainnet.bpxchain.cc',
-      'https://bpx-dataseed.infinex.cc'
-    ],
+    rpc: [ 'https://rpc.bpxchain.cc' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'BPX', symbol: 'BPX', decimals: 18 },
     infoURL: 'https://bpxchain.cc',
     shortName: 'bpx',
     chainId: 279,
-    networkId: 279
+    networkId: 279,
+    explorers: [
+      {
+        name: 'BPX Chain Block Explorer',
+        url: 'https://explorer.bpxchain.cc',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'zkSync Era Goerli Testnet (deprecated)',
@@ -12421,6 +12445,33 @@ const chainArray = [
     chainId: 1918,
     networkId: 1918,
     explorers: []
+  },
+  {
+    name: 'Arvix Testnet',
+    chain: 'Arvix',
+    rpc: [
+      'https://rpc-testnet-market.arvix.network',
+      'https://rpc-dev-testnet.arvix.network'
+    ],
+    faucets: [ 'https://claim-faucet.arvix.network' ],
+    nativeCurrency: {
+      name: 'Arvix Testnet Native Token',
+      symbol: 'tARV',
+      decimals: 18
+    },
+    infoURL: 'https://arvix.network',
+    shortName: 'arvix',
+    chainId: 1927,
+    networkId: 1927,
+    icon: 'arvix',
+    explorers: [
+      {
+        name: 'Arvix Explorer Testnet',
+        url: 'https://testnet.arvixscan.com',
+        standard: 'EIP3091',
+        icon: 'arvix'
+      }
+    ]
   },
   {
     name: 'ONUS Chain Testnet',
@@ -27005,7 +27056,7 @@ const chainArray = [
       'wss://testnet.emerald.oasis.io/ws'
     ],
     faucets: [ 'https://faucet.testnet.oasis.io/' ],
-    nativeCurrency: { name: 'Emerald Rose', symbol: 'ROSE', decimals: 18 },
+    nativeCurrency: { name: 'Emerald Test Rose', symbol: 'TEST', decimals: 18 },
     infoURL: 'https://docs.oasis.io/dapp/emerald',
     shortName: 'emerald-testnet',
     chainId: 42261,
@@ -30400,10 +30451,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Unit Zero Mainnet',
+    chain: 'Unit Zero',
+    icon: 'unitzero',
+    rpc: [ 'https://rpc.unit0.dev' ],
+    faucets: [],
+    nativeCurrency: { name: 'UNIT0', symbol: 'UNIT0', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://units.network',
+    shortName: 'unit0-mainnet',
+    chainId: 88811,
+    networkId: 88811,
+    explorers: []
+  },
+  {
     name: 'Unit Zero Testnet',
     chain: 'Unit Zero',
+    icon: 'unitzero',
     rpc: [ 'https://rpc-testnet.unit0.dev' ],
-    faucets: [],
+    faucets: [ 'https://faucet-testnet.unit0.dev' ],
     nativeCurrency: { name: 'UNIT0', symbol: 'UNIT0', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://units.network',
@@ -30421,6 +30487,7 @@ const chainArray = [
   {
     name: 'Unit Zero Stagenet',
     chain: 'Unit Zero',
+    icon: 'unitzero',
     rpc: [ 'https://rpc-stagenet.unit0.dev' ],
     faucets: [],
     nativeCurrency: { name: 'UNIT0', symbol: 'UNIT0', decimals: 18 },
