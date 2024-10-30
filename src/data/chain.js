@@ -25946,6 +25946,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nexa MetaTest',
+    chain: 'NEXA',
+    rpc: [ 'https://nexa.sh/metatest' ],
+    faucets: [],
+    nativeCurrency: { name: 'Nexa', symbol: 'NEXA', decimals: 18 },
+    infoURL: 'https://nexa.sh/meta',
+    shortName: 'nexatest',
+    chainId: 29225,
+    networkId: 29225,
+    slip44: 29225,
+    icon: 'nexameta',
+    explorers: [
+      {
+        name: 'NexaShell',
+        url: 'https://nexa.sh',
+        standard: 'none',
+        icon: 'nexashell'
+      }
+    ]
+  },
+  {
     name: 'KaiChain Testnet',
     chain: 'KaiChain',
     rpc: [ 'https://testnet-rpc.kaichain.net' ],
@@ -28077,6 +28098,27 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://explorer.titan.tokamak.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Titan Sepolia',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc.titan-sepolia.tokamak.network',
+      'wss://rpc.titan-sepolia.tokamak.network/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://tokamak.network',
+    shortName: 'titan-sepolia',
+    chainId: 55007,
+    networkId: 55007,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.titan-sepolia.tokamak.network',
         standard: 'EIP3091'
       }
     ]
