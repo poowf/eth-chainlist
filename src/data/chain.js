@@ -15167,7 +15167,12 @@ const chainArray = [
     name: 'Morph',
     title: 'Morph Mainnet',
     chain: 'ETH',
-    rpc: [ 'https://rpc.morphl2.io', 'wss://rpc.morphl2.io:8443' ],
+    rpc: [
+      'https://rpc.morphl2.io',
+      'wss://rpc.morphl2.io:8443',
+      'https://rpc-quicknode.morphl2.io',
+      'wss://rpc-quicknode.morphl2.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://morphl2.io',
@@ -19113,6 +19118,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Nibiru Mainnet',
+    chain: 'Nibiru',
+    rpc: [ 'https://evm-rpc.nibiru.fi' ],
+    faucets: [],
+    nativeCurrency: { name: 'NIBI', symbol: 'NIBI', decimals: 18 },
+    infoURL: 'https://nibiru.fi',
+    shortName: 'cataclysm-1',
+    chainId: 6900,
+    networkId: 6900,
+    icon: 'nibiru',
+    explorers: []
   },
   {
     name: 'Laika Mainnet',
@@ -29052,17 +29070,23 @@ const chainArray = [
   {
     name: 'Geist Mainnet',
     chain: 'Geist',
-    rpc: [],
+    rpc: [ 'https://geist-mainnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Aavegotchi GHST Token', symbol: 'GHST', decimals: 18 },
     features: [],
     infoURL: 'https://playongeist.com',
-    shortName: 'Geist',
+    shortName: 'geist',
     chainId: 63157,
     networkId: 63157,
-    status: 'incubating',
+    status: 'active',
     icon: 'geist',
-    explorers: []
+    explorers: [
+      {
+        name: 'Geist Explorer',
+        url: 'https://geist-mainnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'CratD2C Testnet',
@@ -34535,6 +34559,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'ZERO Network',
+    chain: 'ZERONetwork',
+    icon: 'zero',
+    rpc: [ 'https://rpc.zerion.io/v1/zero' ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.zero.network' } ]
+    },
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://docs.zero.network',
+    shortName: 'zero-network',
+    chainId: 543210,
+    networkId: 543210,
+    explorers: [
+      {
+        name: 'ZERO Network Explorer',
+        url: 'https://explorer.zero.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'One World Chain Testnet',
     chain: 'One World Chain',
     icon: 'oneWorldChainIcon',
@@ -34676,7 +34725,7 @@ const chainArray = [
     shortName: 'poltergeist',
     chainId: 631571,
     networkId: 631571,
-    status: 'incubating',
+    status: 'active',
     icon: 'polterGeist',
     explorers: [
       {
@@ -36188,6 +36237,26 @@ const chainArray = [
       {
         name: 'PlatON explorer',
         url: 'https://devnet2scan.platon.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Coinweb BNB shard',
+    title: 'Coinweb BNB shard',
+    chain: 'CWEB BNB',
+    rpc: [ 'https://api-cloud.coinweb.io/eth-rpc-service/bnb' ],
+    faucets: [],
+    nativeCurrency: { name: 'CWEB', symbol: 'CWEB', decimals: 18 },
+    infoURL: 'https://coinweb.io',
+    shortName: 'cweb-bnb',
+    chainId: 2222222,
+    networkId: 2222222,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Coinweb block explorer',
+        url: 'https://explorer.coinweb.io',
         standard: 'none'
       }
     ]
@@ -38546,6 +38615,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Flame',
+    chain: 'Flame',
+    rpc: [ 'https://rpc.flame.astria.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'TIA', symbol: 'TIA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://astria.org',
+    shortName: 'flame',
+    chainId: 253368190,
+    networkId: 253368190,
+    icon: 'flame',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.flame.astria.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Razor Skale Chain',
     chain: 'Razor Schain',
     icon: 'razornetwork',
@@ -40024,6 +40114,27 @@ const chainArray = [
     shortName: 'mole',
     chainId: 6022140761023,
     networkId: 6022140761023
+  },
+  {
+    name: 'Flame Testnet',
+    chain: 'Flame',
+    rpc: [ 'https://rpc.flame.dawn-1.astria.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'TIA', symbol: 'TIA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://astria.org',
+    shortName: 'flame-testnet',
+    chainId: 16604737732183,
+    networkId: 16604737732183,
+    icon: 'flame',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.flame.dawn-1.astria.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Godwoken Testnet (V1)',
