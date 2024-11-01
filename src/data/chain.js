@@ -10743,6 +10743,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Argochain',
+    chain: 'Argochain',
+    icon: 'argochain',
+    rpc: [
+      'https://rpc.devolvedai.com',
+      'https://rpc-mainnet.devolvedai.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'AGC', symbol: 'AGC', decimals: 18 },
+    infoURL: 'https://devolvedai.com',
+    shortName: 'AGC',
+    chainId: 1299,
+    networkId: 1299,
+    explorers: [
+      {
+        name: 'Argochain Scanner',
+        url: 'https://scanner.argoscan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Unichain Sepolia Testnet',
     chain: 'ETH',
     rpc: [ 'https://sepolia.unichain.org' ],
@@ -11718,6 +11740,7 @@ const chainArray = [
     shortName: 'minttest',
     chainId: 1686,
     networkId: 1686,
+    status: 'deprecated',
     icon: 'mintTestnet',
     explorers: [
       {
@@ -12445,6 +12468,25 @@ const chainArray = [
     chainId: 1918,
     networkId: 1918,
     explorers: []
+  },
+  {
+    name: 'Swell Network',
+    chain: 'Swell L2',
+    rpc: [ 'https://swell-mainnet.alt.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://app.swellnetwork.io/layer2/swell-l2',
+    shortName: 'swell-l2',
+    chainId: 1923,
+    networkId: 1923,
+    explorers: [
+      {
+        name: 'swell-l2',
+        icon: 'swell',
+        url: 'https://swell-mainnet-explorer.alt.technology',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Arvix Testnet',
@@ -19759,6 +19801,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Phron Testnet',
+    chain: 'PHR',
+    icon: 'phron',
+    rpc: [ 'https://testnet.phron.ai', 'wss://testnet.phron.ai' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.phron.ai' ],
+    nativeCurrency: { name: 'Phron', symbol: 'TPHR', decimals: 18 },
+    infoURL: 'https://phron.ai',
+    shortName: 'phr',
+    chainId: 7744,
+    networkId: 7744,
+    explorers: [
+      {
+        name: 'phronscan',
+        url: 'https://testnet.phronscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bitrock Testnet',
     chain: 'Bitrock',
     icon: 'bitrock',
@@ -22099,6 +22161,25 @@ const chainArray = [
       {
         name: 'Larissa Scan',
         url: 'https://scan.larissa.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zytron Linea Mainnet',
+    chain: 'ETH',
+    icon: 'zytron',
+    rpc: [ 'https://rpc.zypher.network/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zytron.zypher.network/',
+    shortName: 'zytron-linea',
+    chainId: 9901,
+    networkId: 9901,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.zypher.network',
         standard: 'EIP3091'
       }
     ]
@@ -24886,6 +24967,25 @@ const chainArray = [
     chainId: 19527,
     networkId: 19527,
     explorers: []
+  },
+  {
+    name: 'Zytron Linea Testnet',
+    chain: 'ETH',
+    icon: 'zytron',
+    rpc: [ 'https://linea-testnet-zytron.zypher.game/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zytron.zypher.network/',
+    shortName: 'zytron-linea-testnet',
+    chainId: 19546,
+    networkId: 19546,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://linea-testnet-zytron-blockscout.zypher.game',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'LBRY Mainnet',
@@ -29004,21 +29104,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'eCredits Mainnet',
+    name: 'eSync Network Mainnet',
+    title: 'eSync Network Mainnet',
     chain: 'ECS',
-    rpc: [ 'https://rpc.ecredits.com' ],
+    rpc: [ 'https://rpc.esync.network', 'https://rpc.ecredits.com' ],
     faucets: [],
     nativeCurrency: { name: 'eCredits', symbol: 'ECS', decimals: 18 },
-    infoURL: 'https://ecredits.com',
-    shortName: 'ecs',
+    infoURL: 'https://esync.network',
+    shortName: 'esync-mainnet',
     chainId: 63000,
     networkId: 63000,
-    icon: 'ecredits',
+    icon: 'esync',
     explorers: [
       {
-        name: 'eCredits MainNet Explorer',
-        url: 'https://explorer.ecredits.com',
-        icon: 'ecredits',
+        name: 'eSync Network Mainnet Explorer',
+        url: 'https://explorer.esync.network',
+        icon: 'esync',
         standard: 'EIP3091'
       }
     ]
@@ -31047,6 +31148,25 @@ const chainArray = [
     chainId: 98881,
     networkId: 98881,
     status: 'incubating'
+  },
+  {
+    name: 'Superposition Testnet',
+    title: 'Sperposition Testnet',
+    chain: 'SPN',
+    rpc: [ 'https://testnet-rpc.superposition.so' ],
+    faucets: [ 'https://faucet.superposition.so' ],
+    nativeCurrency: { name: 'SPN', symbol: 'SPN', decimals: 18 },
+    infoURL: 'https://superposition.so',
+    shortName: 'superposition-testnet',
+    chainId: 98985,
+    networkId: 98985,
+    explorers: [
+      {
+        name: 'Superposition Explorer',
+        url: 'https://testnet-explorer.superposition.so',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'eLiberty Testnet',
@@ -33288,6 +33408,48 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nxy Area 51',
+    chain: 'NXY',
+    rpc: [ 'https://nxy.social/testnet' ],
+    faucets: [],
+    nativeCurrency: { name: 'Nxy', symbol: 'NXY', decimals: 18 },
+    infoURL: 'https://nxy.social/l1',
+    shortName: 'nxytest',
+    chainId: 272247,
+    networkId: 272247,
+    slip44: 272247,
+    icon: 'nxy',
+    explorers: [
+      {
+        name: 'Nxy Explorer',
+        url: 'https://explorer.nxy.social',
+        standard: 'none',
+        icon: 'nxy'
+      }
+    ]
+  },
+  {
+    name: 'Nxy Oasis',
+    chain: 'NXY',
+    rpc: [ 'https://nxy.social/mainnet' ],
+    faucets: [],
+    nativeCurrency: { name: 'Nxy', symbol: 'NXY', decimals: 18 },
+    infoURL: 'https://nxy.social/l1',
+    shortName: 'nxy',
+    chainId: 272520,
+    networkId: 272520,
+    slip44: 272520,
+    icon: 'nxy',
+    explorers: [
+      {
+        name: 'Nxy Explorer',
+        url: 'https://explorer.nxy.social',
+        standard: 'none',
+        icon: 'nxy'
+      }
+    ]
+  },
+  {
     name: 'Social Smart Chain Mainnet',
     chain: 'SoChain',
     rpc: [ 'https://socialsmartchain.digitalnext.business' ],
@@ -35076,6 +35238,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ink Sepolia',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc-gel-sepolia.inkonchain.com',
+      'wss://ws-gel-sepolia.inkonchain.com'
+    ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://inkonchain.com/',
+    shortName: 'inksepolia',
+    chainId: 763373,
+    networkId: 763373,
+    explorers: [
+      {
+        name: 'Ink Sepolia Explorer',
+        url: 'https://explorer-sepolia.inkonchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Lamina1 Testnet',
     chain: 'Lamina1 Testnet',
     rpc: [ 'https://subnets.avax.network/lamina1tes/testnet/rpc' ],
@@ -36155,6 +36339,20 @@ const chainArray = [
     shortName: 'TDD',
     chainId: 1731313,
     networkId: 1731313
+  },
+  {
+    name: 'Xphere Testnet',
+    chain: 'Xphere Testnet',
+    icon: 'xphere',
+    rpc: [ 'http://testnet.x-phere.com' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Xphere Testnet', symbol: 'XPT', decimals: 18 },
+    infoURL: 'https://x-phere.com/',
+    shortName: 'xp-test',
+    chainId: 1998991,
+    networkId: 1998991,
+    explorers: []
   },
   {
     name: 'DeBank Testnet',
@@ -39798,6 +39996,27 @@ const chainArray = [
       {
         name: 'OneLedger Block Explorer',
         url: 'https://frankenstein-explorer.oneledger.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mekong',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.mekong.ethpandaops.io' ],
+    faucets: [ 'https://faucet.mekong.ethpandaops.io' ],
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://mekong.ethpandaops.io',
+    shortName: 'mekong',
+    chainId: 7078815900,
+    networkId: 7078815900,
+    icon: 'ethereum',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'Holesky Dora Explorer',
+        url: 'https://explorer.mekong.ethpandaops.io',
+        icon: 'ethereum',
         standard: 'EIP3091'
       }
     ]
