@@ -3458,6 +3458,19 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'OTC',
+    chain: 'OTC',
+    faucets: [],
+    icon: 'otc',
+    rpc: [ 'https://rpc.otc.run', 'wss://rpc.otc.run' ],
+    nativeCurrency: { name: 'OTC', symbol: 'OTC', decimals: 18 },
+    infoURL: 'https://otc.network',
+    shortName: 'OTC',
+    chainId: 175,
+    networkId: 175,
+    slip44: 511
+  },
+  {
     name: 'DC Mainnet',
     chain: 'dcchain',
     icon: 'dcchain',
@@ -11508,7 +11521,7 @@ const chainArray = [
     icon: 'dscscan',
     rpc: [ 'https://rpc01.dscscan.io' ],
     faucets: [],
-    nativeCurrency: { name: 'Digital Smart Chain', symbol: 'DSCs', decimals: 18 },
+    nativeCurrency: { name: 'Digital Smart Chain', symbol: 'DSC', decimals: 18 },
     infoURL: 'https://rpc01.dscscan.io',
     shortName: 'DSCs',
     chainId: 1555,
@@ -11516,7 +11529,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Digital Smart Chain',
-        url: 'https://explorer.dotblox.io',
+        url: 'https://dscscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -17129,6 +17142,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Testnet Pika',
+    chain: 'tPKA',
+    rpc: [ 'https://testnet-rpc1.pikascan.com' ],
+    faucets: [],
+    icon: 'testnetpsc',
+    nativeCurrency: { name: 'Testnet Pika', symbol: 'tPKA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://pikaminter.com',
+    shortName: 'PikaMinter',
+    chainId: 4422,
+    networkId: 4422,
+    explorers: []
   },
   {
     name: 'Htmlcoin Mainnet',
@@ -23236,6 +23263,11 @@ const chainArray = [
       {
         name: 'ArtelaScan',
         url: 'https://betanet-scan.artela.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'OKXExplorer',
+        url: 'https://www.okx.com/web3/explorer/artela-testnet',
         standard: 'EIP3091'
       }
     ]
