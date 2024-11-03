@@ -26047,11 +26047,7 @@ const chainArray = [
         standard: 'none'
       }
     ],
-    parent: {
-      type: 'L2',
-      chain: 'eip155-1',
-      bridges: [ { url: 'https://gateway.boba.network' } ]
-    }
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
   },
   {
     name: 'HYCHAIN Testnet',
