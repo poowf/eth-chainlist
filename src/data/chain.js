@@ -12194,6 +12194,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'PlayBlock',
+    chain: 'playblock',
+    rpc: [ 'https://rpc.playblock.io', 'wss://ws.playblock.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PlayBlock', symbol: 'PBG', decimals: 18 },
+    infoURL: 'https://www.playnance.com',
+    shortName: 'playblock',
+    chainId: 1829,
+    slip44: 60,
+    networkId: 1829,
+    explorers: [
+      {
+        name: 'PlayBlock',
+        url: 'https://explorer.playblock.io',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [ { url: 'https://bridge.gelato.network/bridge/playblock' } ]
+    }
+  },
+  {
     name: 'HighOctane Subnet',
     chain: 'HighOctane Subnet',
     rpc: [
@@ -24904,6 +24928,25 @@ const chainArray = [
         name: 'BlockX Cosmos Explorer (Ping)',
         url: 'https://ping.blockxnet.com/blockx-atlantis-testnet',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'LocaChain Mainnet',
+    chain: 'LocaChain',
+    rpc: [ 'https://tgrpntwm.locachain.io' ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'LocaCoin', symbol: 'LCC', decimals: 18 },
+    infoURL: 'https://locachain.io',
+    shortName: 'locachain',
+    chainId: 19180,
+    networkId: 19180,
+    explorers: [
+      {
+        name: 'Locachain Explorer',
+        url: 'https://explorer.locachain.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -40245,6 +40288,36 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'volmex',
+    title: 'Volmex',
+    chain: 'volmex',
+    rpc: [
+      'https://rpc.volmex.t.raas.gelato.cloud',
+      'wss://ws.volmex.t.raas.gelato.cloud'
+    ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/volmex',
+    faucets: [],
+    shortName: 'volmex',
+    chainId: 123420000588,
+    networkId: 123420000588,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://volmex.cloud.blockscout.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-84532',
+      bridges: [
+        { url: 'https://testnet-bridge.gelato.network/bridge/volmex' }
+      ]
+    }
   },
   {
     name: 'Ntity Mainnet',
