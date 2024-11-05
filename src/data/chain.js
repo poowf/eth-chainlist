@@ -38104,6 +38104,40 @@ const chainArray = [
     ]
   },
   {
+    name: 'citronus-citro',
+    title: 'Citronus-Citro',
+    chain: 'citronus-citro',
+    rpc: [
+      'https://rpc.citro-testnet.t.raas.gelato.cloud',
+      'wss://testnet-ws.eh-dev.app'
+    ],
+    nativeCurrency: { name: 'Citronus', symbol: 'CITRO', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/citronus-citro',
+    faucets: [],
+    shortName: 'citronus-citro',
+    chainId: 34949059,
+    networkId: 34949059,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://test.citronus.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://testnet-bridge.gelato.network/bridge/citronus-citro'
+        }
+      ]
+    },
+    status: 'active'
+  },
+  {
     name: 'Joys Digital Mainnet',
     chain: 'JOYS',
     rpc: [ 'https://node.joys.digital' ],
@@ -39031,6 +39065,26 @@ const chainArray = [
         url: 'https://testnet-explorer.gather.network',
         icon: 'gather',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Westend Asset Hub',
+    chain: 'WST',
+    rpc: [ 'https://westend-asset-hub-eth-rpc.polkadot.io' ],
+    faucets: [ 'https://faucet.polkadot.io/westend' ],
+    nativeCurrency: { name: 'Westies', symbol: 'WND', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://polkadot.network',
+    shortName: 'wst',
+    chainId: 420420421,
+    networkId: 420420421,
+    explorers: [
+      {
+        name: 'subscan',
+        icon: 'subscan',
+        url: 'https://assethub-westend.subscan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -40288,6 +40342,39 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'sivo-defi-testnet',
+    title: 'Sivo Defi Testnet',
+    chain: 'sivo-defi-testnet',
+    rpc: [
+      'https://rpc.sivo-defi-testnet.t.raas.gelato.cloud',
+      'wss://ws.sivo-defi-testnet.t.raas.gelato.cloud'
+    ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/sivo-defi-testnet',
+    faucets: [],
+    shortName: 'sivo-defi-testnet',
+    chainId: 123420000586,
+    networkId: 123420000586,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://sivo-defi-testnet.cloud.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://testnet-bridge.gelato.network/bridge/sivo-defi-testnet'
+        }
+      ]
+    }
   },
   {
     name: 'volmex',
