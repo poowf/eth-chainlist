@@ -2966,6 +2966,21 @@ const chainArray = [
     networkId: 142
   },
   {
+    name: 'Monad Mainnet',
+    chain: 'MON',
+    icon: 'monad',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'MON Token', symbol: 'MON', decimals: 18 },
+    infoURL: 'https://monad.xyz',
+    shortName: 'mon',
+    chainId: 143,
+    networkId: 143,
+    slip44: 1,
+    explorers: []
+  },
+  {
     name: 'PHI Network v2',
     chain: 'PHI',
     rpc: [ 'https://connect.phi.network' ],
@@ -4565,7 +4580,9 @@ const chainArray = [
     rpc: [
       'https://mainnet-rpc.swanchain.org',
       'https://mainnet-rpc-01.swanchain.org',
-      'https://mainnet-rpc-02.swanchain.org'
+      'https://mainnet-rpc-02.swanchain.org',
+      'https://mainnet-rpc-03.swanchain.org',
+      'https://mainnet-rpc-04.swanchain.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -10764,7 +10781,7 @@ const chainArray = [
       'https://rpc-mainnet.devolvedai.com'
     ],
     faucets: [],
-    nativeCurrency: { name: 'AGC', symbol: 'AGC', decimals: 18 },
+    nativeCurrency: { name: 'Argocoin', symbol: 'AGC', decimals: 18 },
     infoURL: 'https://devolvedai.com',
     shortName: 'AGC',
     chainId: 1299,
@@ -12215,6 +12232,37 @@ const chainArray = [
       type: 'L2',
       chain: 'eip155-42161',
       bridges: [ { url: 'https://bridge.gelato.network/bridge/playblock' } ]
+    }
+  },
+  {
+    name: 'Verify testnet',
+    title: 'Verify Testnet',
+    chain: 'verify-testnet',
+    rpc: [
+      'https://rpc.verify-testnet.gelato.digital',
+      'wss://ws.verify-testnet.gelato.digital'
+    ],
+    nativeCurrency: { name: 'Matic', symbol: 'MATIC', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/verify-testnet',
+    faucets: [],
+    shortName: 'verify-testnet',
+    chainId: 1833,
+    networkId: 1833,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://verify-testnet.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-80002',
+      bridges: [
+        { url: 'https://bridge.gelato.network/bridge/verify-testnet' }
+      ]
     }
   },
   {
@@ -22608,6 +22656,21 @@ const chainArray = [
     networkId: 10101
   },
   {
+    name: 'Monad Testnet',
+    chain: 'MON',
+    icon: 'monad',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet MON Token', symbol: 'MON', decimals: 18 },
+    infoURL: 'https://monad.xyz',
+    shortName: 'mon-testnet',
+    chainId: 10143,
+    networkId: 10143,
+    slip44: 1,
+    explorers: []
+  },
+  {
     name: 'Gnosis Chiado Testnet',
     chain: 'GNO',
     icon: 'gnosis',
@@ -24305,6 +24368,36 @@ const chainArray = [
     ]
   },
   {
+    name: 'Eventum Testnet',
+    title: 'Eventum Testnet',
+    chain: 'eventum-testnet',
+    rpc: [ 'https://testnet-rpc.eh-dev.app', 'wss://testnet-ws.eh-dev.app' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/event-horizon-eventum-testnet',
+    faucets: [],
+    shortName: 'eventum-testnet',
+    chainId: 16182,
+    networkId: 16182,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet-blockscout.eh-dev.app',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-421614',
+      bridges: [
+        {
+          url: 'https://testnet-bridge.eh-dev.app/bridge/event-horizon-eventum-testnet'
+        }
+      ]
+    },
+    status: 'active'
+  },
+  {
     name: 'Incentiv Devnet',
     chain: 'Incentiv',
     rpc: [ 'https://rpc.ankr.com/incentiv_devnet' ],
@@ -24942,6 +25035,7 @@ const chainArray = [
     shortName: 'locachain',
     chainId: 19180,
     networkId: 19180,
+    icon: 'locacoin',
     explorers: [
       {
         name: 'Locachain Explorer',
@@ -25178,6 +25272,21 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Monad Devnet',
+    chain: 'MON',
+    icon: 'monad',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Devnet MON Token', symbol: 'MON', decimals: 18 },
+    infoURL: 'https://monad.xyz',
+    shortName: 'mon-devnet',
+    chainId: 20143,
+    networkId: 20143,
+    slip44: 1,
+    explorers: []
   },
   {
     name: 'Callisto Testnet',
@@ -33358,6 +33467,39 @@ const chainArray = [
     ]
   },
   {
+    name: 'Anomaly Andromeda Testnet',
+    title: 'Anomaly Andromeda Testnet',
+    chain: 'anomaly-andromeda-testnet',
+    rpc: [
+      'https://rpc.anomaly-andromeda.anomalygames.io',
+      'wss://ws.anomaly-andromeda.anomalygames.io'
+    ],
+    nativeCurrency: { name: 'TestNom', symbol: 'tNOM', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/anomaly-andromeda-testnet',
+    faucets: [],
+    shortName: 'anomaly-andromeda-testnet',
+    chainId: 241120,
+    networkId: 241120,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://andromeda.anomalyscan.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-421614',
+      bridges: [
+        {
+          url: 'https://bridge.gelato.network/bridge/anomaly-andromeda-testnet'
+        }
+      ]
+    }
+  },
+  {
     name: 'ARTIS sigma1',
     chain: 'ARTIS',
     rpc: [ 'https://rpc.sigma1.artis.network' ],
@@ -36589,17 +36731,22 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Funki Sepolia Sandbox',
+    name: 'Funki Sepolia Testnet',
     chain: 'ETH',
     icon: 'funki',
     rpc: [ 'https://funki-testnet.alt.technology' ],
-    faucets: [],
+    faucets: [ 'https://funkichain.com/portfolio' ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://funkichain.com',
     shortName: 'funkisepolia',
     chainId: 3397901,
     networkId: 3397901,
     explorers: [
+      {
+        name: 'Funki Sepolia Testnet Explorer',
+        url: 'https://testnet.funkiscan.io',
+        standard: 'none'
+      },
       {
         name: 'Funki Sepolia Sandbox Explorer',
         url: 'https://sepolia-sandbox.funkichain.com',
@@ -38550,6 +38697,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'Reya Cronos',
+    title: 'Reya Cronos',
+    chain: 'reya-cronos',
+    rpc: [
+      'https://rpc.reya-cronos.gelato.digital',
+      'wss://ws.reya-cronos.gelato.digital'
+    ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/reya-cronos',
+    faucets: [],
+    shortName: 'reya-cronos',
+    chainId: 89346162,
+    networkId: 89346162,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://reya-cronos.blockscout.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.gelato.network/bridge/reya-cronos' } ]
+    }
+  },
+  {
     name: 'Polygon Blackberry',
     title: 'Polygon Blackberry Testnet',
     chain: 'ETH',
@@ -40342,6 +40517,39 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'PIN',
+    title: 'PIN',
+    chain: 'PIN',
+    rpc: [
+      'https://rpc.pin.t.raas.gelato.cloud',
+      'wss://ws.pin.t.raas.gelato.cloud'
+    ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/pin',
+    faucets: [],
+    shortName: 'PIN',
+    chainId: 123420000558,
+    networkId: 123420000558,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.pin.t.raas.gelato.cloud',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://testnet-bridge.gelato.network/bridge/pin/bridge/pin'
+        }
+      ]
+    }
   },
   {
     name: 'sivo-defi-testnet',
