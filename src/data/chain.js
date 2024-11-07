@@ -12574,6 +12574,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Swell Network Testnet',
+    chain: 'Swell L2 Testnet',
+    rpc: [ 'https://swell-testnet.alt.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://app.swellnetwork.io/layer2/swell-l2',
+    shortName: 'swell-l2-testnet',
+    chainId: 1924,
+    networkId: 1924,
+    explorers: [
+      {
+        name: 'swell-l2-testnet',
+        icon: 'swell',
+        url: 'https://swell-testnet-explorer.alt.technology',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Arvix Testnet',
     chain: 'Arvix',
     rpc: [
@@ -14927,6 +14946,27 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Bahamut horizon',
+    title: 'Bahamut horizon',
+    chain: 'Bahamut',
+    icon: 'bahamut',
+    rpc: [ 'https://horizon-fastex-testnet.zeeve.net' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'FTN', symbol: 'FTN', decimals: 18 },
+    shortName: 'horizon',
+    infoURL: 'https://bahamut.io',
+    chainId: 2552,
+    networkId: 2552,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://horizon.ftnscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Kortho Mainnet',
     chain: 'Kortho Chain',
     rpc: [ 'https://www.kortho-chain.com' ],
@@ -15215,6 +15255,20 @@ const chainArray = [
         icon: 'timenet'
       }
     ]
+  },
+  {
+    name: 'Abstract',
+    chain: 'Abstract',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://abs.xyz',
+    shortName: 'abstract',
+    chainId: 2741,
+    networkId: 2741,
+    icon: 'abstract',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
   },
   {
     name: 'Nanon',
@@ -21729,6 +21783,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'KPA Smart Chain Testnet',
+    chain: 'KSC',
+    rpc: [
+      'https://testnet-rpc1.koppachain.com/',
+      'https://testnet-rpc2.koppachain.com/',
+      'https://testnet-rpc3.koppachain.com/',
+      'https://testnet-rpc4.koppachain.com/'
+    ],
+    faucets: [ 'https://mint.koppachain.com' ],
+    nativeCurrency: { name: 'KPA Smart Chain Testnet', symbol: 'tKPA', decimals: 18 },
+    features: [],
+    infoURL: 'https://koppachain.com',
+    shortName: 'KPA',
+    chainId: 9091,
+    networkId: 9091,
+    icon: 'koppa',
+    explorers: []
+  },
+  {
     name: 'Genesis Coin',
     chain: 'Genesis',
     rpc: [ 'https://genesis-gn.com', 'wss://genesis-gn.com' ],
@@ -23154,7 +23227,7 @@ const chainArray = [
     networkId: 11124,
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://abs.xyz/',
-    shortName: 'Abstract',
+    shortName: 'abstract-sepolia',
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
@@ -32358,6 +32431,26 @@ const chainArray = [
         name: 'ICPlaza',
         url: 'https://browsemainnet.ic-plaza.org/index',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Odyssey Chain Mainnet',
+    chain: 'DIONE',
+    rpc: [ 'https://node.dioneprotocol.com/ext/bc/D/rpc' ],
+    faucets: [],
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://www.dioneprotocol.com',
+    shortName: 'Odyssey',
+    chainId: 153153,
+    networkId: 153153,
+    icon: 'odysseyChain',
+    nativeCurrency: { name: 'DIONE', symbol: 'DIONE', decimals: 18 },
+    explorers: [
+      {
+        name: 'Odyssey Scan',
+        url: 'https://odysseyscan.com',
+        standard: 'EIP3091'
       }
     ]
   },
