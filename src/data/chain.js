@@ -2921,16 +2921,17 @@ const chainArray = [
   },
   {
     name: 'Eternal Mainnet',
-    chain: 'Eter',
+    chain: 'ETE',
     icon: 'eternal',
     rpc: [
       'https://mainnet.eternalcoin.io/v1',
       'ws://mainnet.eternalcoin.io/v1/ws'
     ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'Eternal', symbol: 'Eter', decimals: 18 },
+    nativeCurrency: { name: 'Eternal', symbol: 'ETE', decimals: 18 },
     infoURL: 'https://eternalcoin.io',
-    shortName: 'Eter',
+    shortName: 'ETE',
     chainId: 140,
     networkId: 140
   },
@@ -5115,7 +5116,7 @@ const chainArray = [
     ],
     parent: {
       type: 'L2',
-      chain: 'eip155-1',
+      chain: 'eip155-11155111',
       bridges: [ { url: 'https://bridge.zksync.io/' } ]
     },
     redFlags: [ 'reusedChainId' ]
@@ -10581,6 +10582,7 @@ const chainArray = [
   {
     name: 'Moonbeam',
     chain: 'MOON',
+    icon: 'moonbeam',
     rpc: [
       'https://rpc.api.moonbeam.network',
       'wss://wss.api.moonbeam.network',
@@ -10614,6 +10616,7 @@ const chainArray = [
   {
     name: 'Moonriver',
     chain: 'MOON',
+    icon: 'moonriver',
     rpc: [
       'https://rpc.api.moonriver.moonbeam.network',
       'wss://wss.api.moonriver.moonbeam.network',
@@ -10659,6 +10662,7 @@ const chainArray = [
   {
     name: 'Moonbase Alpha',
     chain: 'MOON',
+    icon: 'moonbasealpha',
     rpc: [
       'https://rpc.api.moonbase.moonbeam.network',
       'wss://wss.api.moonbase.moonbeam.network',
@@ -10673,7 +10677,7 @@ const chainArray = [
       'https://moonbase-alpha.drpc.org',
       'wss://moonbase-alpha.drpc.org'
     ],
-    faucets: [],
+    faucets: [ 'https://faucet.moonbeam.network/' ],
     nativeCurrency: { name: 'Dev', symbol: 'DEV', decimals: 18 },
     infoURL: 'https://docs.moonbeam.network/learn/platform/networks/moonbase/',
     shortName: 'mbase',
@@ -20946,7 +20950,7 @@ const chainArray = [
       {
         name: 'basescan',
         url: 'https://basescan.org',
-        standard: 'none'
+        standard: 'EIP3091'
       },
       {
         name: 'basescout',
@@ -22608,6 +22612,21 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Warden Testnet',
+    chain: 'WARD',
+    rpc: [
+      'https://evm.chiado.wardenprotocol.org',
+      'wss://evm-ws.chiado.wardenprotocol.org'
+    ],
+    faucets: [ 'https://faucet.chiado.wardenprotocol.org' ],
+    nativeCurrency: { name: 'WARD', symbol: 'WARD', decimals: 18 },
+    infoURL: 'https://wardenprotocol.org',
+    icon: 'warden',
+    shortName: 'ward',
+    chainId: 10010,
+    networkId: 10010
+  },
+  {
     name: 'Gon Chain',
     chain: 'GonChain',
     icon: 'gonchain',
@@ -23043,6 +23062,38 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'GameSwift Chain Testnet',
+    title: 'GameSwift Chain Testnet',
+    chain: 'gameswift-chain-testnet',
+    rpc: [
+      'https://rpc-testnet.gameswift.io',
+      'wss://ws-testnet.gameswift.io'
+    ],
+    nativeCurrency: { name: 'TGameSwift', symbol: 'tGS', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/gameswift-chain-testnet',
+    faucets: [],
+    shortName: 'gameswift-chain-testnet',
+    chainId: 10888,
+    networkId: 10888,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.gameswift.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://testnet-bridge-gelato.gameswift.io/bridge/gameswift-chain-testnet'
+        }
+      ]
+    }
   },
   {
     name: 'Quadrans Blockchain',
@@ -27668,6 +27719,11 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
+        name: 'snowscan-testnet',
+        url: 'https://testnet.snowscan.xyz',
+        standard: 'EIP3091'
+      },
+      {
         name: 'snowtrace',
         url: 'https://testnet.snowtrace.io',
         standard: 'EIP3091'
@@ -27692,6 +27748,11 @@ const chainArray = [
     networkId: 43114,
     slip44: 9005,
     explorers: [
+      {
+        name: 'snowscan',
+        url: 'https://snowscan.xyz',
+        standard: 'EIP3091'
+      },
       {
         name: 'snowtrace',
         url: 'https://snowtrace.io',
@@ -28634,7 +28695,7 @@ const chainArray = [
     ],
     parent: {
       type: 'L2',
-      chain: 'eip155-5',
+      chain: 'eip155-56',
       bridges: [ { url: 'https://gateway.boba.network' } ]
     }
   },
@@ -28859,7 +28920,7 @@ const chainArray = [
     icon: 'linea',
     parent: {
       type: 'L2',
-      chain: 'eip155-5',
+      chain: 'eip155-11155111',
       bridges: [ { url: 'https://bridge.linea.build/' } ]
     },
     explorers: [
@@ -30345,6 +30406,11 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
+        name: 'polygonscan-amoy',
+        url: 'https://amoy.polygonscan.com',
+        standard: 'EIP3091'
+      },
+      {
         name: 'polygonamoy',
         url: 'https://www.oklink.com/amoy',
         standard: 'EIP3091'
@@ -30755,6 +30821,11 @@ const chainArray = [
     slip44: 1,
     icon: 'baseTestnet',
     explorers: [
+      {
+        name: 'basescan-sepolia',
+        url: 'https://sepolia.basescan.org',
+        standard: 'EIP3091'
+      },
       {
         name: 'basescout',
         url: 'https://base-sepolia.blockscout.com',
@@ -34224,11 +34295,11 @@ const chainArray = [
   },
   {
     name: 'Bitfinity Network Mainnet',
-    chain: 'BFT',
+    chain: 'BTF',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     rpc: [ 'https://mainnet.bitfinity.network' ],
     faucets: [],
-    nativeCurrency: { name: 'Bitfinity Token', symbol: 'BFT', decimals: 18 },
+    nativeCurrency: { name: 'Bitfinity Token', symbol: 'BTF', decimals: 18 },
     infoURL: 'https://bitfinity.network',
     shortName: 'bitfinity-mainnet',
     chainId: 355110,
@@ -34244,11 +34315,11 @@ const chainArray = [
   },
   {
     name: 'Bitfinity Network Testnet',
-    chain: 'BFT',
+    chain: 'BTF',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     rpc: [ 'https://testnet.bitfinity.network' ],
     faucets: [ 'https://bitfinity.network/faucet' ],
-    nativeCurrency: { name: 'Bitfinity Token', symbol: 'BFT', decimals: 18 },
+    nativeCurrency: { name: 'Bitfinity Token', symbol: 'BTF', decimals: 18 },
     infoURL: 'https://bitfinity.network',
     shortName: 'bitfinity-testnet',
     chainId: 355113,
@@ -34559,6 +34630,11 @@ const chainArray = [
     networkId: 421614,
     slip44: 1,
     explorers: [
+      {
+        name: 'arbiscan-sepolia',
+        url: 'https://sepolia.arbiscan.io',
+        standard: 'EIP3091'
+      },
       {
         name: 'Arbitrum Sepolia Rollup Testnet Explorer',
         url: 'https://sepolia-explorer.arbitrum.io',
@@ -37710,6 +37786,11 @@ const chainArray = [
     networkId: 11155420,
     slip44: 1,
     explorers: [
+      {
+        name: 'etherscan-sepolia-optimism',
+        url: 'https://sepolia-optimism.etherscan.io',
+        standard: 'EIP3091'
+      },
       {
         name: 'opscout',
         url: 'https://optimism-sepolia.blockscout.com',
