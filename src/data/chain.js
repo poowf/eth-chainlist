@@ -11537,19 +11537,19 @@ const chainArray = [
     ]
   },
   {
-    name: 'Digital Smart Chain',
-    chain: 'Digital Smart Chain',
+    name: 'Datacore Smart Chain',
+    chain: 'Datacore Smart Chain',
     icon: 'dscscan',
     rpc: [ 'https://rpc01.dscscan.io' ],
     faucets: [],
-    nativeCurrency: { name: 'Digital Smart Chain', symbol: 'DSC', decimals: 18 },
+    nativeCurrency: { name: 'Datacore Smart Chain', symbol: 'DSC', decimals: 18 },
     infoURL: 'https://rpc01.dscscan.io',
     shortName: 'DSCs',
     chainId: 1555,
     networkId: 1555,
     explorers: [
       {
-        name: 'Digital Smart Chain',
+        name: 'Datacore Smart Chain',
         url: 'https://dscscan.io',
         standard: 'EIP3091'
       }
@@ -18132,6 +18132,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Superseed',
+    chain: 'ETH',
+    rpc: [ 'https://mainnet.superseed.xyz', 'wss://mainnet.superseed.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.superseed.xyz',
+    shortName: 'sseed',
+    chainId: 5330,
+    networkId: 5330,
+    slip44: 1,
+    icon: 'superseed',
+    explorers: [
+      {
+        name: 'seedscout',
+        url: 'https://explorer.superseed.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Netsbo',
     chain: 'NETSBO',
     rpc: [ 'https://rpc1.netsbo.io', 'https://rpc2.netsbo.io' ],
@@ -24403,12 +24424,7 @@ const chainArray = [
         url: 'https://explorer.testnet.evm.eosnetwork.com',
         standard: 'EIP3091'
       }
-    ],
-    parent: {
-      type: 'L2',
-      chain: 'eip155-1',
-      bridges: [ { url: 'https://bridge.testnet.evm.eosnetwork.com' } ]
-    }
+    ]
   },
   {
     name: 'MetaDot Mainnet',
@@ -24883,15 +24899,7 @@ const chainArray = [
         url: 'https://explorer.evm.eosnetwork.com',
         standard: 'EIP3091'
       }
-    ],
-    parent: {
-      type: 'L2',
-      chain: 'eip155-1',
-      bridges: [
-        { url: 'https://bridge.evm.eosnetwork.com' },
-        { url: 'https://app.multichain.org' }
-      ]
-    }
+    ]
   },
   {
     name: 'Frontier of Dreams Testnet',
