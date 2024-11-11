@@ -5274,7 +5274,7 @@ const chainArray = [
   {
     name: 'Omax Mainnet',
     chain: 'OMAX Chain',
-    rpc: [ 'https://mainapi.omaxray.com' ],
+    rpc: [ 'https://mainapi.omaxray.com', 'https://mainapi.omaxscan.com' ],
     faucets: [ 'https://faucet.omaxray.com/' ],
     nativeCurrency: { name: 'OMAX COIN', symbol: 'OMAX', decimals: 18 },
     infoURL: 'https://www.omaxcoin.com/',
