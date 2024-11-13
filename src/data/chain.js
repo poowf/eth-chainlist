@@ -13018,7 +13018,7 @@ const chainArray = [
     chain: 'edeXa TestNetwork',
     rpc: [
       'https://testnet.edexa.network/rpc',
-      'https://io-dataseed1.testnet.edexa.io-market.com/rpc'
+      'https://testnet.edexa.com/rpc'
     ],
     faucets: [ 'https://faucet.edexa.com/' ],
     nativeCurrency: { name: 'EDEXA', symbol: 'EDX', decimals: 18 },
@@ -18219,8 +18219,7 @@ const chainArray = [
     chain: 'edeXa Network',
     rpc: [
       'https://mainnet.edexa.network/rpc',
-      'https://mainnet.edexa.com/rpc',
-      'https://io-dataseed1.mainnet.edexa.io-market.com/rpc'
+      'https://mainnet.edexa.com/rpc'
     ],
     faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -22095,7 +22094,7 @@ const chainArray = [
     ],
     parent: {
       type: 'L2',
-      chain: 'eip155-5',
+      chain: 'eip155-28882',
       bridges: [ { url: 'https://gateway.boba.network' } ]
     }
   },
