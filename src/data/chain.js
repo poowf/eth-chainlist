@@ -14915,6 +14915,19 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-5' }
   },
   {
+    name: 'K2 Testnet',
+    chain: 'K2',
+    icon: 'karak',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://karak.network',
+    shortName: 'K2-testnet',
+    chainId: 2512,
+    networkId: 2512,
+    status: 'incubating'
+  },
+  {
     name: 'Fraxtal Testnet',
     chain: 'FRAX',
     rpc: [ 'https://rpc.testnet.frax.com' ],
@@ -17195,6 +17208,25 @@ const chainArray = [
         name: 'Laika Testnet Explorer',
         url: 'https://testnet.laikachain.dog',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Echos Chain',
+    chain: 'Echos',
+    rpc: [],
+    features: [],
+    faucets: [],
+    nativeCurrency: { name: 'USD Coin', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://www.echos.fun/',
+    shortName: 'echos',
+    chainId: 4321,
+    networkId: 4321,
+    explorers: [
+      {
+        name: 'Echos Explorer',
+        url: 'https://explorer.echos.fun',
+        standard: 'none'
       }
     ]
   },
