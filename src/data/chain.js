@@ -3321,6 +3321,7 @@ const chainArray = [
     chainId: 164,
     networkId: 164,
     slip44: 1,
+    icon: 'omni',
     explorers: [
       {
         name: 'Omni EVM and cross-chain Explorer',
@@ -3347,16 +3348,27 @@ const chainArray = [
   {
     name: 'Omni',
     chain: 'Omni',
-    status: 'incubating',
-    rpc: [],
+    status: 'active',
+    rpc: [
+      'https://mainnet.omni.network',
+      'wss://wss.mainnet.omni.network'
+    ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
     nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
-    infoURL: 'https://docs.omni.network/',
+    infoURL: 'https://docs.omni.network',
     shortName: 'omni',
     chainId: 166,
     networkId: 166,
-    slip44: 1
+    slip44: 1,
+    icon: 'omni',
+    explorers: [
+      {
+        name: 'Omni EVM and cross-chain Explorer',
+        url: 'https://omniscan.network',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Atoshi Testnet',
