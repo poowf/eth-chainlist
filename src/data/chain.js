@@ -11395,6 +11395,18 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
+    name: 'Islander',
+    chain: 'Islander',
+    rpc: [],
+    nativeCurrency: { name: 'Islander', symbol: 'ISL', decimals: 18 },
+    faucets: [],
+    infoURL: '',
+    shortName: 'isl',
+    chainId: 1480,
+    networkId: 1480,
+    explorers: []
+  },
+  {
     name: 'Vitruveo Mainnet',
     title: 'Vitruveo is a blockchain for Creators',
     chain: 'Vitruveo',
@@ -12677,7 +12689,7 @@ const chainArray = [
     ],
     parent: {
       type: 'L2',
-      chain: 'eip155-1',
+      chain: 'eip155-11155111',
       bridges: [ { url: 'https://bridge.soneium.org/testnet' } ]
     }
   },
