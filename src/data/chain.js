@@ -3588,6 +3588,35 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'IOST Mainnet',
+    chain: 'iost',
+    rpc: [ 'https://iost-mainnet.alt.technology' ],
+    faucets: [],
+    nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
+    infoURL: 'https://iost.io',
+    shortName: 'iost-mainnet',
+    chainId: 182,
+    networkId: 182,
+    icon: 'bnbchain',
+    slip44: 714,
+    explorers: [
+      {
+        name: 'IOSTscan',
+        url: 'https://iost-mainnet-explorer.alt.technology',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-56',
+      bridges: [
+        {
+          url: 'https://10910bc5-8382-4ef5-bdc7-4c54c8f57e75.bridges.rollbridge.app/'
+        }
+      ]
+    }
+  },
+  {
     name: 'Ethernity',
     chain: 'Ethernity',
     rpc: [ 'https://mainnet.ethernitychain.io' ],
@@ -4983,6 +5012,28 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'DaVinci',
+    chain: 'DCOIN',
+    rpc: [ 'https://rpc.davinci.bz' ],
+    faucets: [],
+    nativeCurrency: { name: 'DaVinci', symbol: 'DCOIN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://davinci.bz',
+    shortName: 'davinci',
+    chainId: 293,
+    networkId: 293,
+    icon: 'davinci',
+    explorers: [
+      {
+        name: 'davinciscan',
+        icon: 'blockscout',
+        url: 'https://mainnet-explorer.davinci.bz',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Hedera Mainnet',
@@ -12694,6 +12745,25 @@ const chainArray = [
     }
   },
   {
+    name: 'Bionix Testnet',
+    chain: 'Bionix',
+    rpc: [ 'https://testnet-chain.bionixnetwork.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bionix', symbol: 'tBIO', decimals: 18 },
+    icon: 'bionix',
+    infoURL: 'https://bionixnetwork.com',
+    shortName: 'tbio',
+    chainId: 1949,
+    networkId: 1949,
+    explorers: [
+      {
+        name: 'Bionix Testnet Explorer',
+        url: 'https://testnet.bionixnetwork.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'D-Chain Mainnet',
     chain: 'D-Chain',
     rpc: [
@@ -20355,6 +20425,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'arena-z',
+    title: 'arena-z',
+    chain: 'arena-z',
+    rpc: [ 'https://rpc.arena-z.gg', 'wss://ws.arena-z.gg' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://raas.gelato.network/rollups/details/public/arena-z',
+    faucets: [],
+    shortName: 'arena-z',
+    chainId: 7897,
+    networkId: 7897,
+    slip44: 60,
+    icon: 'arena-z-mainnet',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.arena-z.gg',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.gelato.network/bridge/arena-z' } ]
+    }
+  },
+  {
     name: 'Dot Blox',
     chain: 'DTBX',
     icon: 'dotblox',
@@ -26748,6 +26844,26 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
+    name: 'Mezo Matsnet Testnet',
+    chain: 'Mezo',
+    rpc: [ 'https://rpc.test.mezo.org' ],
+    faucets: [ 'https://mezo.org/matsnet' ],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mezo.org/',
+    shortName: 'mezo',
+    chainId: 31611,
+    networkId: 31611,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.test.mezo.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Xchain Mainnet',
     chain: 'Xchain',
     icon: 'intd',
@@ -28845,6 +28961,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Ink',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://inkonchain.com',
+    shortName: 'ink',
+    chainId: 57073,
+    networkId: 57073,
+    explorers: [],
+    status: 'incubating'
   },
   {
     name: 'COINSEC Network',
@@ -36916,7 +37046,7 @@ const chainArray = [
     networkId: 2611555
   },
   {
-    name: 'Xterio Chain',
+    name: 'Xterio Chain (ETH)',
     chain: 'Xterio',
     rpc: [ 'https://xterio-eth.alt.technology' ],
     faucets: [],
@@ -36927,7 +37057,7 @@ const chainArray = [
     networkId: 2702128,
     explorers: [
       {
-        name: 'Xterio Chain Explorer',
+        name: 'Xterio Chain (ETH) Explorer',
         url: 'https://eth.xterscan.io',
         standard: 'EIP3091'
       }
