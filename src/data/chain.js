@@ -3518,6 +3518,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'HashKey Chain',
+    title: 'HashKey Chain',
+    chain: 'HashKey Chain',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'HashKey EcoPoints', symbol: 'HSK', decimals: 18 },
+    infoURL: 'https://hsk.xyz',
+    shortName: 'HSK',
+    chainId: 177,
+    networkId: 177,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
     name: 'ABEY Testnet',
     chain: 'ABEY',
     rpc: [ 'https://testrpc.abeychain.com' ],
@@ -4330,6 +4344,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Prom',
+    chain: 'Prom',
+    icon: 'prom',
+    rpc: [ 'https://prom-rpc.eu-north-2.gateway.fm' ],
+    faucets: [],
+    nativeCurrency: { name: 'Prom', symbol: 'PROM', decimals: 18 },
+    infoURL: 'https://prom.io',
+    shortName: 'PROM',
+    chainId: 227,
+    networkId: 227,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://prom-blockscout.eu-north-2.gateway.fm',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://prom-bridge.eu-north-2.gateway.fm/' } ]
+    }
+  },
+  {
     name: 'Mind Network Mainnet',
     chain: 'FHE',
     rpc: [
@@ -4715,6 +4753,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Guru Network',
+    chain: 'GURU',
+    icon: 'GuruNetwork',
+    rpc: [ 'https://rpc.gurunetwork.ai/archive/260' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Guru', symbol: 'GURU', decimals: 18 },
+    infoURL: 'https://gurunetwork.ai',
+    shortName: 'guru',
+    chainId: 260,
+    networkId: 260,
+    explorers: [
+      {
+        name: 'guruscan',
+        url: 'https://scan.gurunetwork.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Guru Network Testnet',
     chain: 'tGURU',
     icon: 'GuruNetwork',
@@ -4729,7 +4787,7 @@ const chainArray = [
     explorers: [
       {
         name: 'guruscan',
-        url: 'https://scan.gurunetwork.ai',
+        url: 'https://sepolia.gurunetwork.ai',
         standard: 'EIP3091'
       }
     ]
@@ -5539,6 +5597,26 @@ const chainArray = [
     networkId: 326,
     icon: 'grvt',
     explorers: []
+  },
+  {
+    name: 'Omax Testnet',
+    chain: 'Omax Chain',
+    rpc: [ 'https://testapi.omaxray.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.omaxray.com/' ],
+    nativeCurrency: { name: 'OMAX TESTCOIN', symbol: 'OMAXT', decimals: 18 },
+    infoURL: 'https://www.omaxcoin.com/',
+    shortName: 'omaxt',
+    chainId: 332,
+    networkId: 332,
+    icon: 'omaxchain',
+    explorers: [
+      {
+        name: 'Omax Chain Explorer',
+        url: 'https://testnet.omaxscan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Web3Q Mainnet',
@@ -7346,7 +7424,7 @@ const chainArray = [
     faucets: [ 'https://faucet-testnet.nerochain.io' ],
     nativeCurrency: { name: 'NERO', symbol: 'NERO', decimals: 18 },
     infoURL: 'https://docs.nerochain.io/',
-    shortName: 'NERO',
+    shortName: 'NEROT',
     chainId: 689,
     networkId: 689,
     slip44: 1,
@@ -11694,6 +11772,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Betherance',
+    chain: 'Beth',
+    rpc: [ 'https://rpc.bethscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Betherance', symbol: 'BETH', decimals: 18 },
+    infoURL: 'https://rpc.bethscan.io',
+    shortName: 'Beth',
+    chainId: 1605,
+    networkId: 1605,
+    icon: 'betherance',
+    explorers: [
+      {
+        name: 'bethscan',
+        url: 'https://bethscan.io',
+        icon: 'betherance',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Ethereum Inscription Mainnet',
     chain: 'ETINS',
     rpc: [ 'https://rpc.etins.org' ],
@@ -11901,6 +11999,26 @@ const chainArray = [
     icon: 'ludan',
     chainId: 1688,
     networkId: 1688
+  },
+  {
+    name: 'NERO Mainnet',
+    chain: 'NERO Chain',
+    rpc: [ 'https://rpc.nerochain.io', 'wss://ws.nerochain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'NERO', symbol: 'NERO', decimals: 18 },
+    infoURL: 'https://docs.nerochain.io/',
+    shortName: 'NERO',
+    chainId: 1689,
+    networkId: 1689,
+    slip44: 1,
+    icon: 'nero',
+    explorers: [
+      {
+        name: 'nero mainnet scan',
+        url: 'https://www.neroscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Anytype EVM Chain',
@@ -14894,7 +15012,7 @@ const chainArray = [
     ],
     parent: {
       type: 'L2',
-      chain: 'eip155-1',
+      chain: 'eip155-11155111',
       bridges: [ { url: 'https://bridge-ui.cardona.zkevm-rpc.com' } ]
     }
   },
@@ -15961,6 +16079,20 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'EthStorage L2 Mainnet',
+    chain: 'EthStorage',
+    rpc: [ 'http://mainnet.l2.ethstorage.io:9540' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ethstorage.io/',
+    shortName: 'esl2-m',
+    chainId: 3332,
+    networkId: 3332,
+    slip44: 1,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
     name: 'EthStorage Testnet',
     chain: 'EthStorage',
     rpc: [ 'http://testnet.ethstorage.io:9540' ],
@@ -15991,16 +16123,45 @@ const chainArray = [
     ]
   },
   {
-    name: 'EthStorage Mainnet',
+    name: 'EthStorage L2 Devnet',
     chain: 'EthStorage',
-    rpc: [ 'http://mainnet.ethstorage.io:9540' ],
+    rpc: [ 'http://devnet.l2.ethstorage.io:9540' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://ethstorage.io/',
-    shortName: 'es-m',
+    shortName: 'esl2-d',
     chainId: 3335,
     networkId: 3335,
-    slip44: 1
+    slip44: 1,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'EthStorage L2 Testnet',
+    chain: 'EthStorage',
+    rpc: [ 'http://testnet.l2.ethstorage.io:9540' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ethstorage.io/',
+    shortName: 'esl2-t',
+    chainId: 3336,
+    networkId: 3336,
+    slip44: 1,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'EthStorage Devnet',
+    chain: 'EthStorage',
+    rpc: [ 'http://devnet.ethstorage.io:9540' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ethstorage.io/',
+    shortName: 'es-d',
+    chainId: 3337,
+    networkId: 3337,
+    slip44: 1,
+    status: 'incubating'
   },
   {
     name: 'peaq',
@@ -16025,6 +16186,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'EthStorage Mainnet',
+    chain: 'EthStorage',
+    rpc: [ 'http://mainnet.ethstorage.io:9540' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ethstorage.io/',
+    shortName: 'es-m',
+    chainId: 3339,
+    networkId: 3339,
+    slip44: 1,
+    status: 'incubating'
   },
   {
     name: 'Paribu Net Mainnet',
@@ -17933,6 +18107,25 @@ const chainArray = [
       }
     ],
     status: 'active'
+  },
+  {
+    name: 'Pioneer Chain Testnet',
+    chain: 'PIO',
+    icon: 'pio',
+    rpc: [ 'https://rpc.pionescan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Pioneer', symbol: 'PIO', decimals: 18 },
+    infoURL: 'https://pionechain.com',
+    shortName: 'pio',
+    chainId: 5090,
+    networkId: 5090,
+    explorers: [
+      {
+        name: 'Pioneer Chain Explorer',
+        url: 'https://pionescan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Syndicate Testnet',
@@ -26846,6 +27039,7 @@ const chainArray = [
   {
     name: 'Mezo Matsnet Testnet',
     chain: 'Mezo',
+    icon: 'mezo',
     rpc: [ 'https://rpc.test.mezo.org' ],
     faucets: [ 'https://mezo.org/matsnet' ],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
@@ -27369,6 +27563,30 @@ const chainArray = [
         url: 'https://explorer.qtestnet.org',
         icon: 'q',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lens Testnet',
+    title: 'Lens Network Sepolia Testnet',
+    chain: 'Lens',
+    rpc: [ 'https://rpc.testnet.lens.dev' ],
+    faucets: [ 'https://www.alchemy.com/faucets/lens-sepolia' ],
+    chainId: 37111,
+    networkId: 37111,
+    nativeCurrency: { name: 'GRASS', symbol: 'GRASS', decimals: 18 },
+    infoURL: 'https://www.lens.xyz',
+    shortName: 'lens-sepolia',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://portal.testnet.abs.xyz/bridge' } ]
+    },
+    explorers: [
+      {
+        name: 'Abstract Block Explorer',
+        url: 'https://block-explorer.testnet.lens.dev',
+        standard: 'none'
       }
     ]
   },
@@ -31184,6 +31402,27 @@ const chainArray = [
       {
         name: 'explorer-stagenet',
         url: 'https://explorer-stagenet.unit0.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Matr1x Testnet',
+    title: 'Matr1x Testnet',
+    chain: 'Matr1x',
+    rpc: [ 'https://testnet-rpc.m1chain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'MAX', symbol: 'MAX', decimals: 18 },
+    infoURL: 'https://matr1x.io',
+    shortName: 'Matr1x-Testnet',
+    chainId: 88866,
+    networkId: 88866,
+    icon: 'matr1x',
+    explorers: [
+      {
+        name: 'matr1x testnet',
+        url: 'https://testnet-scan.m1chain.io',
+        icon: 'matr1x',
         standard: 'EIP3091'
       }
     ]
