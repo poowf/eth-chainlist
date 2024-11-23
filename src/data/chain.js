@@ -3906,6 +3906,7 @@ const chainArray = [
   {
     name: 'BitTorrent Chain Mainnet',
     chain: 'BTTC',
+    icon: 'bttc',
     rpc: [
       'https://rpc.bt.io',
       'https://bittorrent.drpc.org',
@@ -5051,13 +5052,10 @@ const chainArray = [
   {
     name: 'Orderly Mainnet',
     chain: 'ETH',
-    rpc: [
-      'https://rpc.orderly.network',
-      'https://l2-orderly-mainnet-0.t.conduit.xyz'
-    ],
+    rpc: [ 'https://rpc.orderly.network' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'www.orderly.network',
+    infoURL: 'https://orderly.network/',
     shortName: 'orderly',
     chainId: 291,
     networkId: 291,
@@ -6272,6 +6270,26 @@ const chainArray = [
         url: 'https://stenscan.com',
         icon: 'stenscan',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'The Widows Mite',
+    chain: 'MITE',
+    rpc: [ 'https://rpc.twmcrypto.com/' ],
+    faucets: [ 'https://faucet.twmcrypto.com/' ],
+    nativeCurrency: { name: 'The Widows Mite', symbol: 'MITE', decimals: 8 },
+    infoURL: 'https://twmcrypto.com/',
+    shortName: 'mite',
+    chainId: 426,
+    networkId: 426,
+    icon: 'mite',
+    explorers: [
+      {
+        name: 'The Widows Mite Explorer',
+        url: 'https://scan.twmcrypto.com',
+        icon: 'mite',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -9415,9 +9433,10 @@ const chainArray = [
     chain: 'BTTC',
     rpc: [ 'https://testrpc.bittorrentchain.io/' ],
     faucets: [],
+    status: 'deprecated',
     nativeCurrency: { name: 'BitTorrent', symbol: 'BTT', decimals: 18 },
     infoURL: 'https://bittorrentchain.io/',
-    shortName: 'tbtt',
+    shortName: 'tbtt-deprecated',
     chainId: 1028,
     networkId: 1028,
     slip44: 1,
@@ -9426,6 +9445,26 @@ const chainArray = [
         name: 'testbttcscan',
         url: 'https://testscan.bittorrentchain.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'BitTorrent Chain Donau',
+    chain: 'BTTC',
+    icon: 'bttc',
+    rpc: [ 'https://pre-rpc.bt.io' ],
+    faucets: [ 'https://testfaucet.bt.io' ],
+    nativeCurrency: { name: 'BitTorrent', symbol: 'BTT', decimals: 18 },
+    infoURL: 'https://bt.io',
+    shortName: 'tBTT',
+    chainId: 1029,
+    networkId: 1029,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'BitTorrent Chain Donau Explorer',
+        url: 'https://testnet.bttcscan.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -16422,13 +16461,8 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
-        name: '3xpl',
-        url: 'https://3xpl.com/botanix',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'Blockscout',
-        url: 'https://blockscout.botanixlabs.dev',
+        name: 'Botanix Explorer',
+        url: 'https://testnet.botanixscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -17611,10 +17645,10 @@ const chainArray = [
   {
     name: 'Orderly Sepolia Testnet',
     chain: 'ETH',
-    rpc: [ 'https://l2-orderly-l2-4460-sepolia-8tc3sd7dvy.t.conduit.xyz' ],
+    rpc: [ 'https://testnet-rpc.orderly.org' ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'www.orderly.network',
+    infoURL: 'https://orderly.network',
     shortName: 'orderlyl2',
     chainId: 4460,
     networkId: 4460,
@@ -17623,7 +17657,7 @@ const chainArray = [
     explorers: [
       {
         name: 'basescout',
-        url: 'https://explorerl2new-orderly-l2-4460-sepolia-8tc3sd7dvy.t.conduit.xyz',
+        url: 'https://testnet-explorer.orderly.org',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -24556,6 +24590,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitharvest Chian Mainnet',
+    chain: 'Bitharvest Chian Mainnet',
+    rpc: [ 'https://rpc.bthscan.io/' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Bitharvest Mainnet Native Token',
+      symbol: 'BTH',
+      decimals: 18
+    },
+    infoURL: '',
+    shortName: 'BitharvestMainnet',
+    chainId: 14149,
+    networkId: 14149,
+    explorers: [
+      {
+        name: 'Bitharvest Mainnet Scan',
+        url: 'https://bthscan.io',
+        standard: 'EIP3091'
+      }
+    ],
+    icon: 'bth'
+  },
+  {
     name: 'EVOLVE Testnet',
     chain: 'EVO',
     icon: 'evolveIcon',
@@ -27587,16 +27645,17 @@ const chainArray = [
     chainId: 37111,
     networkId: 37111,
     nativeCurrency: { name: 'GRASS', symbol: 'GRASS', decimals: 18 },
+    icon: 'lens',
     infoURL: 'https://www.lens.xyz',
     shortName: 'lens-sepolia',
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
-      bridges: [ { url: 'https://portal.testnet.abs.xyz/bridge' } ]
+      bridges: [ { url: 'https://portal.testnet.lens.dev/bridge' } ]
     },
     explorers: [
       {
-        name: 'Abstract Block Explorer',
+        name: 'Lens Testnet Block Explorer',
         url: 'https://block-explorer.testnet.lens.dev',
         standard: 'none'
       }
@@ -31905,6 +31964,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'Plume Devnet',
+    title: 'Plume Sepolia L2 Rollup Devnet',
+    chain: 'ETH',
+    rpc: [
+      'https://test-rpc.plumenetwork.xyz/http',
+      'wss://test-rpc.plumenetwork.xyz/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Plume Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.plumenetwork.xyz/',
+    shortName: 'plume-devnet',
+    chainId: 98864,
+    networkId: 98864,
+    slip44: 1,
+    icon: 'plume',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://test-explorer.plumenetwork.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
     name: 'Ebi Chain',
     title: 'Ebi Chain',
     chain: 'Ebi',
@@ -32929,6 +33014,30 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Bitharvest Chian Testnet',
+    chain: 'Bitharvest Chian Testnet',
+    rpc: [ 'https://rpc-testnet.bthscan.io/' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Bitharvest Testnet Native Token',
+      symbol: 'bth',
+      decimals: 18
+    },
+    infoURL: '',
+    shortName: 'BitharvestTestnet',
+    chainId: 141491,
+    networkId: 141491,
+    explorers: [
+      {
+        name: 'Bitharvest Testnet Scan',
+        url: 'https://testnet.bthscan.io',
+        standard: 'EIP3091'
+      }
+    ],
+    icon: 'bth'
   },
   {
     name: 'ICPlaza Mainnet',
@@ -38691,6 +38800,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Corn Maizenet',
+    chain: 'BTCN',
+    rpc: [ 'https://maizenet-rpc.usecorn.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcorn', symbol: 'BTCN', decimals: 18 },
+    infoURL: 'https://usecorn.com',
+    shortName: 'btcn',
+    chainId: 21000000,
+    networkId: 21000000,
+    explorers: [
+      {
+        name: 'Corn Maizenet Explorer',
+        url: 'https://maizenet-explorer.usecorn.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Excelon Mainnet',
     chain: 'XLON',
     icon: 'xlon',
@@ -39502,10 +39629,7 @@ const chainArray = [
     name: 'Plume Testnet',
     title: 'Plume Sepolia Rollup Testnet',
     chain: 'ETH',
-    rpc: [
-      'https://testnet-rpc.plumenetwork.xyz/http',
-      'wss://testnet-rpc.plumenetwork.xyz/ws'
-    ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Plume Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.plumenetwork.xyz/',
@@ -39514,19 +39638,9 @@ const chainArray = [
     networkId: 161221135,
     slip44: 1,
     icon: 'plume',
-    explorers: [
-      {
-        name: 'Blockscout',
-        url: 'https://testnet-explorer.plumenetwork.xyz',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      }
-    ],
-    parent: {
-      type: 'L2',
-      chain: 'eip155-11155111',
-      bridges: [ { url: 'https://testnet-bridge.plumenetwork.xyz' } ]
-    }
+    status: 'deprecated',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Blast Sepolia Testnet',
