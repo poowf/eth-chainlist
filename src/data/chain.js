@@ -22189,15 +22189,19 @@ const chainArray = [
     name: 'KPA Smart Chain Testnet',
     chain: 'KSC',
     rpc: [
-      'https://testnet-rpc1.koppachain.com/',
-      'https://testnet-rpc2.koppachain.com/',
-      'https://testnet-rpc3.koppachain.com/',
-      'https://testnet-rpc4.koppachain.com/'
+      'https://tkpa-rpc1.kpachain.com/',
+      'https://tkpa-rpc2.kpachain.com/',
+      'https://tkpa-rpc3.kpachain.com/',
+      'https://tkpa-rpc4.kpachain.com/',
+      'https://testnet-rpc1.kpascan.com/',
+      'https://testnet-rpc2.kpascan.com/',
+      'https://testnet-rpc3.kpascan.com/',
+      'https://testnet-rpc4.kpascan.com/'
     ],
-    faucets: [ 'https://mint.koppachain.com' ],
+    faucets: [ 'https://mint.kpachain.com' ],
     nativeCurrency: { name: 'KPA Smart Chain Testnet', symbol: 'tKPA', decimals: 18 },
     features: [],
-    infoURL: 'https://koppachain.com',
+    infoURL: 'https://kpachain.com',
     shortName: 'KPA',
     chainId: 9091,
     networkId: 9091,
@@ -31968,8 +31972,8 @@ const chainArray = [
     title: 'Plume Sepolia L2 Rollup Devnet',
     chain: 'ETH',
     rpc: [
-      'https://test-rpc.plumenetwork.xyz/http',
-      'wss://test-rpc.plumenetwork.xyz/ws'
+      'https://test-rpc.plumenetwork.xyz',
+      'wss://test-rpc.plumenetwork.xyz'
     ],
     faucets: [],
     nativeCurrency: { name: 'Plume Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -31988,6 +31992,33 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'Plume Mainnet',
+    title: 'Plume Ethereum L2 Rollup Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.plumenetwork.xyz', 'wss://rpc.plumenetwork.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Plume Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.plumenetwork.xyz/',
+    shortName: 'plume',
+    chainId: 98865,
+    networkId: 98865,
+    slip44: 1,
+    icon: 'plume',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.plumenetwork.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.plumenetwork.xyz' } ]
+    }
   },
   {
     name: 'Ebi Chain',
