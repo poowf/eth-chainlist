@@ -3604,11 +3604,14 @@ const chainArray = [
   {
     name: 'IOST Mainnet',
     chain: 'iost',
-    rpc: [ 'https://iost-mainnet.alt.technology' ],
+    rpc: [
+      'https://iost-mainnet.alt.technology',
+      'wss://iost-mainnet.alt.technology/ws'
+    ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
     infoURL: 'https://iost.io',
-    shortName: 'iost-mainnet',
+    shortName: 'iost',
     chainId: 182,
     networkId: 182,
     icon: 'bnbchain',
@@ -12549,6 +12552,22 @@ const chainArray = [
     networkId: 1
   },
   {
+    name: 'Soneium',
+    shortName: 'soneium',
+    title: 'Soneium mainnet',
+    chain: 'ETH',
+    icon: 'soneium',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://soneium.org',
+    chainId: 1868,
+    networkId: 1868,
+    status: 'incubating',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+  },
+  {
     name: 'Whitechain',
     chain: 'WBT',
     rpc: [ 'https://rpc.whitechain.io' ],
@@ -17349,6 +17368,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'CrossFi Mainnet',
+    icon: 'crossfi',
+    chain: 'crossfi',
+    rpc: [ 'https://rpc.mainnet.ms/' ],
+    faucets: [],
+    nativeCurrency: { name: 'CrossFi Token', symbol: 'XFI', decimals: 18 },
+    infoURL: 'https://crossfi.org',
+    shortName: 'crossfi',
+    chainId: 4158,
+    networkId: 4158,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'CrossFi Mainnet Scan',
+        url: 'https://xfiscan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'SX Rollup',
     chain: 'SX',
     icon: 'SX',
@@ -18153,6 +18192,30 @@ const chainArray = [
       }
     ],
     status: 'active'
+  },
+  {
+    name: 'Pioneer Zero Chain',
+    chain: 'PZO',
+    icon: 'pzo',
+    rpc: [ 'https://rpc.zeroscan.org' ],
+    faucets: [ 'https://faucet.zeroscan.org/faucet' ],
+    nativeCurrency: { name: 'Pioneer Zero', symbol: 'PZO', decimals: 18 },
+    infoURL: 'https://pionechain.com',
+    shortName: 'pzo',
+    chainId: 5080,
+    networkId: 5080,
+    explorers: [
+      {
+        name: 'Pioneer Zero Chain Explorer',
+        url: 'https://zeroscan.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Pioneer Zero Chain Explorer',
+        url: 'https://zero.pionescan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Pioneer Chain Testnet',
@@ -25963,6 +26026,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: '1Money Network Mainnet',
+    chain: '1Money Network',
+    rpc: [ 'https://mainnet.1money.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'USD1', symbol: 'USD1', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://1money.com',
+    shortName: '1money',
+    chainId: 21210,
+    networkId: 21210,
+    explorers: []
   },
   {
     name: 'DCpay Mainnet',
@@ -37064,6 +37140,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: '1Money Network Testnet',
+    chain: '1Money Testnet',
+    rpc: [ 'https://testnet.1money.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'USD1', symbol: 'USD1', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://1money.com',
+    shortName: '1money-testnet',
+    chainId: 1212101,
+    networkId: 1212101,
+    explorers: []
   },
   {
     name: 'Sharecle Mainnet',
