@@ -335,6 +335,7 @@ const chainArray = [
     ]
   },
   {
+    icon: 'diode',
     name: 'Diode Prenet',
     chain: 'DIODE',
     rpc: [
@@ -13519,12 +13520,12 @@ const chainArray = [
     faucets: [ 'https://faucet.nowchain.co' ],
     nativeCurrency: { name: 'NOW Coin', symbol: 'NOW', decimals: 18 },
     infoURL: 'https://nowchain.co',
-    shortName: 'now',
+    shortName: 'tnow',
     chainId: 2014,
     networkId: 2014,
     explorers: [
       {
-        name: 'nowscan',
+        name: 'nowscan testnet',
         url: 'https://testnet.nowscan.io',
         standard: 'EIP3091'
       }
@@ -27372,6 +27373,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zilliqa 2 EVM proto-mainnet',
+    chain: 'ZIL',
+    rpc: [ 'https://api.zq2-protomainnet.zilliqa.com' ],
+    faucets: [ 'https://faucet.zq2-protomainnet.zilliqa.com' ],
+    nativeCurrency: { name: 'Zilliqa', symbol: 'ZIL', decimals: 18 },
+    infoURL: 'https://www.zilliqa.com/',
+    shortName: 'zq2-proto-mainnet',
+    chainId: 32770,
+    networkId: 32770,
+    icon: 'zilliqa',
+    explorers: [
+      {
+        name: 'Zilliqa 2 EVM proto-mainnet explorer',
+        url: 'https://explorer.zq2-protomainnet.zilliqa.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Zilliqa EVM Isolated Server',
     chain: 'ZIL',
     rpc: [ 'https://zilliqa-isolated-server.zilliqa.com/' ],
@@ -31665,6 +31685,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Unite',
+    chain: 'UNITE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Unite', symbol: 'UNITE', decimals: 18 },
+    infoURL: 'https://unite.io',
+    shortName: 'unite',
+    chainId: 88899,
+    networkId: 88899,
+    status: 'incubating'
   },
   {
     name: 'F(x)Core Testnet Network',
@@ -36752,6 +36784,18 @@ const chainArray = [
     slip44: 60
   },
   {
+    name: 'Unite Testnet',
+    chain: 'UNITE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet Unite', symbol: 'UNITE', decimals: 18 },
+    infoURL: 'https://unite.io',
+    shortName: 'unitetestnet',
+    chainId: 888991,
+    networkId: 888991,
+    status: 'incubating'
+  },
+  {
     name: 'Posichain Mainnet Shard 0',
     chain: 'PSC',
     rpc: [ 'https://api.posichain.org', 'https://api.s0.posichain.org' ],
@@ -38707,7 +38751,7 @@ const chainArray = [
     chain: 'DeepBrainChain',
     rpc: [ 'https://rpc-testnet.dbcwallet.io' ],
     faucets: [],
-    nativeCurrency: { name: 'DeepBrainChain', symbol: 'DBC', decimals: 18 },
+    nativeCurrency: { name: 'DeepBrainChain', symbol: 'tDBC', decimals: 18 },
     infoURL: 'https://www.deepbrainchain.org',
     shortName: 'tDBC',
     chainId: 19850818,
@@ -38717,7 +38761,7 @@ const chainArray = [
     explorers: [
       {
         name: 'DeepBrainChain Testnet',
-        url: 'https://blockscout-testnet.dbcscan.io',
+        url: 'https://testnet.dbcscan.io',
         icon: 'dbc',
         standard: 'EIP3091'
       }
@@ -38738,7 +38782,7 @@ const chainArray = [
     explorers: [
       {
         name: 'DeepBrainChain Mainnet',
-        url: 'https://blockscout.dbcscan.io',
+        url: 'https://www.dbcscan.io',
         icon: 'dbc',
         standard: 'EIP3091'
       }
