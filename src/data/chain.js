@@ -3096,11 +3096,18 @@ const chainArray = [
     chainId: 151,
     networkId: 151,
     slip44: 824,
-    rpc: [],
+    rpc: [ 'https://governors.mainnet.redbelly.network' ],
     faucets: [],
     infoURL: 'https://redbelly.network',
     nativeCurrency: { name: 'Redbelly Network Coin', symbol: 'RBNT', decimals: 18 },
-    status: 'incubating'
+    status: 'active',
+    explorers: [
+      {
+        name: 'Routescan',
+        url: 'https://redbelly.routescan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Redbelly Network Devnet',
@@ -3127,9 +3134,9 @@ const chainArray = [
     nativeCurrency: { name: 'Redbelly Network Coin', symbol: 'RBNT', decimals: 18 },
     explorers: [
       {
-        name: 'Redbelly Network Testnet Explorer',
-        url: 'https://explorer.testnet.redbelly.network',
-        standard: 'none'
+        name: 'Routescan',
+        url: 'https://redbelly.testnet.routescan.io',
+        standard: 'EIP3091'
       }
     ],
     status: 'active'
@@ -38991,7 +38998,27 @@ const chainArray = [
         url: 'https://maizenet-explorer.usecorn.com',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
+    name: 'Corn Testnet',
+    chain: 'BTCN',
+    rpc: [ 'https://testnet-rpc.usecorn.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcorn', symbol: 'BTCN', decimals: 18 },
+    infoURL: 'https://usecorn.com',
+    shortName: 'btcn-testnet',
+    chainId: 21000001,
+    networkId: 21000001,
+    explorers: [
+      {
+        name: 'Corn Testnet Explorer',
+        url: 'https://testnet-explorer.usecorn.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Excelon Mainnet',
