@@ -27931,20 +27931,20 @@ const chainArray = [
     ]
   },
   {
-    name: 'Open Campus Codex Mainnet',
-    chain: 'Open Campus Codex Mainnet',
+    name: 'EDU Chain',
+    chain: 'EDU Chain',
     icon: 'occ-mainnet',
     rpc: [ 'https://rpc.edu-chain.raas.gelato.cloud' ],
     faucets: [ 'https://bridge.gelato.network/bridge/edu-chain' ],
     nativeCurrency: { name: 'EDU', symbol: 'EDU', decimals: 18 },
     infoURL: 'https://raas.gelato.network/rollups/details/public/edu-chain',
-    shortName: 'occ-mainnet',
+    shortName: 'edu-chain',
     chainId: 41923,
     networkId: 41923,
     explorers: [
       {
-        name: 'Open Campus Codex',
-        url: 'https://edu-chain.blockscout.com',
+        name: 'EDU Chain',
+        url: 'https://educhain.blockscout.com',
         icon: 'occ-mainnet',
         standard: 'none'
       }
@@ -28947,6 +28947,26 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://blockexplorer.electroneum.com',
         icon: 'electroneum',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Cytonic Testnet',
+    chain: 'Cytonic',
+    rpc: [ 'http://rpc.sl.testnet.cytonic.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cytonic', symbol: 'CCC', decimals: 18 },
+    infoURL: 'https://cytonic.com',
+    shortName: 'CTS',
+    chainId: 52225,
+    networkId: 52225,
+    icon: 'cytonic_l1',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.sl.testnet.cytonic.com',
+        icon: 'cytonic_l1',
         standard: 'EIP3091'
       }
     ]
@@ -36036,8 +36056,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Open Campus Codex',
-    chain: 'Open Campus Codex',
+    name: 'EDU Chain Testnet',
+    chain: 'EDU Chain Testnet',
     icon: 'open-campus-codex',
     rpc: [ 'https://rpc.open-campus-codex.gelato.digital' ],
     faucets: [],
@@ -36049,7 +36069,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Open Campus Codex',
-        url: 'https://opencampus-codex.blockscout.com',
+        url: 'https://edu-chain-testnet.blockscout.com',
         icon: 'open-campus-codex',
         standard: 'none'
       }
@@ -38985,7 +39005,10 @@ const chainArray = [
   {
     name: 'Corn Maizenet',
     chain: 'BTCN',
-    rpc: [ 'https://maizenet-rpc.usecorn.com' ],
+    rpc: [
+      'https://rpc.ankr.com/corn_maizenet',
+      'https://maizenet-rpc.usecorn.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Bitcorn', symbol: 'BTCN', decimals: 18 },
     infoURL: 'https://usecorn.com',
@@ -38994,7 +39017,12 @@ const chainArray = [
     networkId: 21000000,
     explorers: [
       {
-        name: 'Corn Maizenet Explorer',
+        name: 'Corn Explorer',
+        url: 'https://cornscan.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Corn Blockscout',
         url: 'https://maizenet-explorer.usecorn.com',
         standard: 'EIP3091'
       }
@@ -39004,7 +39032,10 @@ const chainArray = [
   {
     name: 'Corn Testnet',
     chain: 'BTCN',
-    rpc: [ 'https://testnet-rpc.usecorn.com' ],
+    rpc: [
+      'https://rpc.ankr.com/corn_testnet',
+      'https://testnet-rpc.usecorn.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Bitcorn', symbol: 'BTCN', decimals: 18 },
     infoURL: 'https://usecorn.com',
@@ -39014,6 +39045,11 @@ const chainArray = [
     explorers: [
       {
         name: 'Corn Testnet Explorer',
+        url: 'https://testnet.cornscan.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Corn Testnet Blockscout',
         url: 'https://testnet-explorer.usecorn.com',
         standard: 'EIP3091'
       }
