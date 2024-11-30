@@ -48,6 +48,11 @@ const chainArray = [
         url: 'https://ethereum.dex.guru',
         icon: 'dexguru',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Routescan',
+        url: 'https://ethereum.routescan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -257,6 +262,11 @@ const chainArray = [
         url: 'https://optimism.dex.guru',
         icon: 'dexguru',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Routescan',
+        url: 'https://mainnet.superscan.network',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -328,7 +338,7 @@ const chainArray = [
         standard: 'EIP3091'
       },
       {
-        name: 'flarescan',
+        name: 'Routescan',
         url: 'https://mainnet.flarescan.com',
         standard: 'EIP3091'
       }
@@ -376,7 +386,7 @@ const chainArray = [
         standard: 'EIP3091'
       },
       {
-        name: 'flarescan',
+        name: 'Routescan',
         url: 'https://coston.testnet.flarescan.com',
         standard: 'EIP3091'
       }
@@ -443,7 +453,7 @@ const chainArray = [
         standard: 'EIP3091'
       },
       {
-        name: 'flarescan',
+        name: 'Routescan',
         url: 'https://songbird.flarescan.com',
         standard: 'EIP3091'
       }
@@ -2418,7 +2428,7 @@ const chainArray = [
         standard: 'EIP3091'
       },
       {
-        name: 'flarescan',
+        name: 'Routescan',
         url: 'https://coston2.testnet.flarescan.com',
         standard: 'EIP3091'
       }
@@ -8653,6 +8663,11 @@ const chainArray = [
         name: 'modescout',
         url: 'https://sepolia.explorer.mode.network',
         standard: 'none'
+      },
+      {
+        name: 'Routesan',
+        url: 'https://testnet.modescan.io',
+        standard: 'none'
       }
     ],
     parent: {
@@ -13256,13 +13271,7 @@ const chainArray = [
     chainId: 1992,
     networkId: 1992,
     slip44: 60,
-    explorers: [
-      {
-        name: 'routescan',
-        url: 'https://explorer.hubble.exchange',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'B3 Sepolia Testnet',
@@ -21445,6 +21454,11 @@ const chainArray = [
         url: 'https://base.dex.guru',
         icon: 'dexguru',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Routescan',
+        url: 'https://base.superscan.network',
+        standard: 'EIP3091'
       }
     ],
     status: 'active'
@@ -25563,6 +25577,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'EXPchain Testnet',
+    chain: 'EXPCHAIN',
+    rpc: [ 'https://rpc1-testnet.expchain.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'tEXP', symbol: 'tEXP', decimals: 18 },
+    infoURL: 'https://expanse.tech',
+    shortName: 'expchain',
+    chainId: 18880,
+    networkId: 18880,
+    icon: 'expchain',
+    explorers: [
+      {
+        name: 'EXPchain Testnet Explorer',
+        url: 'https://blockscout-testnet.expchain.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Titan (TKX)',
     chain: 'Titan (TKX)',
     rpc: [
@@ -26840,7 +26873,7 @@ const chainArray = [
     networkId: 28882,
     explorers: [
       {
-        name: 'Bobascan',
+        name: 'Routescan',
         url: 'https://testnet.bobascan.com',
         standard: 'none'
       }
@@ -27671,6 +27704,11 @@ const chainArray = [
         name: 'modescout',
         url: 'https://explorer.mode.network',
         standard: 'none'
+      },
+      {
+        name: 'Routescan',
+        url: 'https://modescan.io',
+        standard: 'none'
       }
     ]
   },
@@ -28306,13 +28344,18 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
-        name: 'snowscan-testnet',
+        name: 'Etherscan',
         url: 'https://testnet.snowscan.xyz',
         standard: 'EIP3091'
       },
       {
-        name: 'snowtrace',
+        name: 'Routescan',
         url: 'https://testnet.snowtrace.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Avascan',
+        url: 'https://testnet.avascan.info',
         standard: 'EIP3091'
       }
     ]
@@ -28336,13 +28379,18 @@ const chainArray = [
     slip44: 9005,
     explorers: [
       {
-        name: 'snowscan',
+        name: 'Etherscan',
         url: 'https://snowscan.xyz',
         standard: 'EIP3091'
       },
       {
-        name: 'snowtrace',
+        name: 'Routescan',
         url: 'https://snowtrace.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Avascan',
+        url: 'https://avascan.info',
         standard: 'EIP3091'
       }
     ]
@@ -30706,6 +30754,25 @@ const chainArray = [
         name: 'ResinScan',
         url: 'https://explorer.resincoin.dev',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'AppLayer Testnet',
+    chain: 'AppLayer',
+    rpc: [ 'https://testnet-api.applayer.com' ],
+    faucets: [ 'https://testnet-faucet.applayer.com' ],
+    nativeCurrency: { name: 'AppLayer', symbol: 'APPL', decimals: 18 },
+    features: [ { name: 'EIP55' }, { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://applayer.com',
+    shortName: 'applayer-testnet',
+    chainId: 75338,
+    networkId: 75338,
+    explorers: [
+      {
+        name: 'Applayer Testnet Explorer',
+        url: 'https://testnet-explorer.applayer.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -33347,6 +33414,11 @@ const chainArray = [
         name: 'etherscan',
         url: 'https://taikoscan.io',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Routescan',
+        url: 'https://taikoexplorer.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -33469,8 +33541,8 @@ const chainArray = [
         standard: 'EIP3091'
       },
       {
-        name: 'routescan',
-        url: 'https://hekla.taikoscan.network',
+        name: 'Routescan',
+        url: 'https://hekla.taikoexplorer.com',
         standard: 'EIP3091'
       }
     ]
@@ -34798,7 +34870,7 @@ const chainArray = [
   },
   {
     name: 'WABA Chain Testnet',
-    chain: 'WABA Testnet',
+    chain: 'WABA Mainnet',
     icon: 'waba',
     rpc: [ 'https://rpc.wabaworld.com' ],
     faucets: [],
@@ -37426,6 +37498,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Waterfall 9 Test Network',
+    chain: 'Waterfall TestNet9',
+    rpc: [ 'https://rpc.testnet9.waterfall.network' ],
+    faucets: [ 'https://faucet.testnet9.waterfall.network' ],
+    nativeCurrency: { name: 'WATER', symbol: 'WATER', decimals: 18 },
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://waterfall.network',
+    shortName: 'water9',
+    chainId: 1501869,
+    networkId: 1501869,
+    icon: 'waterfall',
+    explorers: [
+      {
+        name: 'Waterfall Explorer Testnet9',
+        url: 'https://explorer.testnet9.waterfall.network',
+        icon: 'waterfall',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PlayFi Albireo Testnet',
     chain: 'ETH',
     rpc: [ 'https://albireo-rpc.playfi.ai' ],
@@ -38522,6 +38615,11 @@ const chainArray = [
       {
         name: 'otterscan-sepolia',
         url: 'https://sepolia.otterscan.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Routescan',
+        url: 'https://11155111.testnet.routescan.io',
         standard: 'EIP3091'
       }
     ]
@@ -41380,6 +41478,31 @@ const chainArray = [
       }
     ],
     infoURL: 'https://xai.games'
+  },
+  {
+    name: 'Deriw Devnet',
+    chainId: 44474237230,
+    shortName: 'deriw-dev',
+    title: 'Deriw Devnet',
+    chain: 'Deriw Devnet',
+    networkId: 44474237230,
+    icon: 'deriw',
+    rpc: [ 'https://rpc.dev.deriw.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Deriw', symbol: 'Der', decimals: 18 },
+    infoURL: 'https://deriw.com',
+    explorers: [
+      {
+        name: 'Deriw Explorer',
+        url: 'https://explorer.dev.deriw.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-421614',
+      bridges: [ { url: 'https://bridge.arbitrum.io' } ]
+    }
   },
   {
     name: 'Arbitrum Blueberry',
