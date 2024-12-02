@@ -9353,7 +9353,12 @@ const chainArray = [
   {
     name: 'Jumbochain Mainnet',
     chain: 'Jumbo',
-    rpc: [ 'https://rpcpriv.jumbochain.org' ],
+    rpc: [
+      'https://rpcpriv.jumbochain.org',
+      'https://rpc-datajumbo1.jumbochain.org',
+      'https://rpc-datajumbo2.jumbochain.org',
+      'https://rpc-datajumbo3.jumbochain.org'
+    ],
     faucets: [],
     nativeCurrency: { name: 'JNFTC', symbol: 'JNFTC', decimals: 18 },
     features: [ { name: 'EIP155' } ],
@@ -24713,8 +24718,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Bitharvest Chian Mainnet',
-    chain: 'Bitharvest Chian Mainnet',
+    name: 'Bitharvest Chain Mainnet',
+    chain: 'Bitharvest Chain Mainnet',
     rpc: [ 'https://rpc.bthscan.io/' ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
@@ -32037,6 +32042,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Lux Network',
+    chain: 'Lux',
+    icon: 'lux',
+    rpc: [ 'https://api.lux.network' ],
+    faucets: [ 'https://faucet.lux-test.network' ],
+    nativeCurrency: { name: 'Lux', symbol: 'LUX', decimals: 18 },
+    infoURL: 'https://lux.network',
+    shortName: 'lux',
+    chainId: 96369,
+    networkId: 96369,
+    explorers: [
+      {
+        name: 'Lux Network Explorer',
+        url: 'https://explore.lux.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Lux Network Explorer',
+        url: 'https://explore.lux-test.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Mantis Testnet (Hexapod)',
     chain: 'Mantis',
     icon: 'mantis',
@@ -33283,14 +33312,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'Bitharvest Chian Testnet',
-    chain: 'Bitharvest Chian Testnet',
+    name: 'Bitharvest Chain Testnet',
+    chain: 'Bitharvest Chain Testnet',
     rpc: [ 'https://rpc-testnet.bthscan.io/' ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: {
       name: 'Bitharvest Testnet Native Token',
-      symbol: 'bth',
+      symbol: 'BTH',
       decimals: 18
     },
     infoURL: '',
@@ -33762,6 +33791,30 @@ const chainArray = [
         name: 'Blockscout',
         url: 'https://explorer-devnet-cardano-evm.c1.milkomeda.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Zoo Network',
+    chain: 'Zoo',
+    icon: 'zoo',
+    rpc: [ 'https://api.zoo.network' ],
+    faucets: [ 'https://faucet.zoo-test.network' ],
+    nativeCurrency: { name: 'Zoo', symbol: 'ZOO', decimals: 18 },
+    infoURL: 'https://zoo.network',
+    shortName: 'zoo',
+    chainId: 200200,
+    networkId: 200200,
+    explorers: [
+      {
+        name: 'Zoo Network Explorer',
+        url: 'https://explore.zoo.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Zoo Network Explorer',
+        url: 'https://explore.zoo-test.network',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -36036,6 +36089,26 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
+    name: 'DJT Testnet',
+    chain: 'DJT',
+    icon: 'djt',
+    rpc: [ 'https://testnet-rpc.trumpchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'TrumpChain', symbol: 'DJT', decimals: 18 },
+    infoURL: 'https://testnet-explorer.trumpchain.io',
+    shortName: 'DJT',
+    chainId: 621847,
+    networkId: 621847,
+    explorers: [
+      {
+        name: 'DJT Testnet Explorer',
+        url: 'https://testnet-explorer.trumpchain.io',
+        icon: 'djt',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hypra Mainnet',
     chain: 'HYP',
     rpc: [
@@ -36990,6 +37063,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Owshen Mainnet',
+    chain: 'ETH',
+    status: 'active',
+    icon: 'owshen',
+    rpc: [ 'https://rpc.owshen.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'DIVE', symbol: 'DIVE', decimals: 18 },
+    infoURL: 'https://owshen.io',
+    shortName: 'owshen-mainnet',
+    chainId: 918273,
+    networkId: 918273,
+    explorers: []
   },
   {
     name: 'Posichain Devnet Shard 0',
