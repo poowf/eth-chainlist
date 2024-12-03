@@ -25609,7 +25609,7 @@ const chainArray = [
     rpc: [ 'https://rpc1-testnet.expchain.ai' ],
     faucets: [],
     nativeCurrency: { name: 'tEXP', symbol: 'tEXP', decimals: 18 },
-    infoURL: 'https://expanse.tech',
+    infoURL: 'https://expchain.ai',
     shortName: 'expchain',
     chainId: 18880,
     networkId: 18880,
