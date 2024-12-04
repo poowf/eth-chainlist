@@ -8235,6 +8235,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'Daily Network Mainnet',
+    chain: 'Daily Network',
+    icon: 'daily',
+    rpc: [ 'https://rpc.mainnet.dailycrypto.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Daily', symbol: 'DLY', decimals: 18 },
+    infoURL: 'https://dailycrypto.net',
+    shortName: 'dly',
+    chainId: 824,
+    networkId: 824,
+    explorers: [
+      {
+        name: 'Daily Mainnet Explorer',
+        url: 'https://explorer.mainnet.dailycrypto.net',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Daily Network Testnet',
+    chain: 'Daily Network',
+    icon: 'daily',
+    rpc: [ 'https://rpc.testnet.dailycrypto.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Daily', symbol: 'DLY', decimals: 18 },
+    infoURL: 'https://dailycrypto.net',
+    shortName: 'tdly',
+    chainId: 825,
+    networkId: 825,
+    explorers: [
+      {
+        name: 'Daily Testnet Explorer',
+        url: 'https://explorer.testnet.dailycrypto.net',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'CheckDot Blockchain Devnet',
     chain: 'CDT Blockchain',
     rpc: [ 'https://devnet.checkdot.io' ],
@@ -8254,7 +8292,7 @@ const chainArray = [
   },
   {
     name: 'Taraxa Mainnet',
-    chain: 'Tara',
+    chain: 'TARA',
     icon: 'taraxa',
     rpc: [
       'https://rpc.mainnet.taraxa.io/',
@@ -8266,23 +8304,31 @@ const chainArray = [
     shortName: 'tara',
     chainId: 841,
     networkId: 841,
+    slip44: 726,
     explorers: [
+      {
+        name: 'Tara.to Explorer',
+        url: 'https://tara.to',
+        standard: 'EIP3091',
+        icon: 'blockscout'
+      },
       {
         name: 'Taraxa Explorer',
         url: 'https://explorer.mainnet.taraxa.io',
-        standard: 'none'
+        standard: 'none',
+        icon: 'taraxa'
       }
     ]
   },
   {
     name: 'Taraxa Testnet',
-    chain: 'Tara',
+    chain: 'TARA',
     icon: 'taraxa',
     rpc: [
       'https://rpc.testnet.taraxa.io/',
       'https://ws.testnet.taraxa.io'
     ],
-    faucets: [],
+    faucets: [ 'https://explorer.testnet.taraxa.io/faucet' ],
     nativeCurrency: { name: 'Tara', symbol: 'TARA', decimals: 18 },
     infoURL: 'https://taraxa.io',
     shortName: 'taratest',
@@ -8290,6 +8336,12 @@ const chainArray = [
     networkId: 842,
     slip44: 1,
     explorers: [
+      {
+        name: 'Tara.to Explorer',
+        url: 'https://testnet.to',
+        standard: 'EIP3091',
+        icon: 'blockscout'
+      },
       {
         name: 'Taraxa Explorer',
         url: 'https://explorer.testnet.taraxa.io',
@@ -15215,6 +15267,26 @@ const chainArray = [
         icon: 'u2u_nebulas',
         name: 'U2U Explorer',
         url: 'https://testnet.u2uscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'NOW Chain Mainnet',
+    chain: 'NOW',
+    icon: 'nowchain',
+    rpc: [ 'https://rpc.nowscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'NOW Coin', symbol: 'NOW', decimals: 18 },
+    infoURL: 'https://nowchain.co',
+    shortName: 'now',
+    chainId: 2488,
+    networkId: 2488,
+    explorers: [
+      {
+        name: 'NOW Scan',
+        url: 'https://nowscan.io',
+        icon: 'nowchain',
         standard: 'EIP3091'
       }
     ]
@@ -28942,6 +29014,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Reddio Devnet',
+    title: 'Reddio Sepolia L2 Rollup Devnet',
+    chain: 'ETH',
+    rpc: [ 'https://reddio-dev.reddio.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Red', symbol: 'RED', decimals: 18 },
+    infoURL: 'https://www.reddio.com',
+    shortName: 'reddio-devnet',
+    chainId: 50341,
+    networkId: 50341,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'L2scan',
+        url: 'https://reddio-devnet.l2scan.co',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
     name: 'Erbie Mainnet',
     chain: 'Erbie',
     rpc: [ 'https://api.erbie.io' ],
@@ -32042,7 +32135,31 @@ const chainArray = [
     ]
   },
   {
-    name: 'Lux Network',
+    name: 'Lux Testnet',
+    chain: 'Lux',
+    icon: 'lux',
+    rpc: [ 'https://api.lux-test.network' ],
+    faucets: [ 'https://faucet.lux-test.network' ],
+    nativeCurrency: { name: 'tLux', symbol: 'tLUX', decimals: 18 },
+    infoURL: 'https://lux.network',
+    shortName: 'tlux',
+    chainId: 96368,
+    networkId: 96368,
+    explorers: [
+      {
+        name: 'Lux Network Explorer',
+        url: 'https://explore.lux.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Lux Network Explorer',
+        url: 'https://explore.lux-test.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lux Mainnet',
     chain: 'Lux',
     icon: 'lux',
     rpc: [ 'https://api.lux.network' ],
@@ -33795,7 +33912,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Zoo Network',
+    name: 'Zoo Mainnet',
     chain: 'Zoo',
     icon: 'zoo',
     rpc: [ 'https://api.zoo.network' ],
