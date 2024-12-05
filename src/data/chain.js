@@ -3040,6 +3040,27 @@ const chainArray = [
     }
   },
   {
+    name: 'Sonic Mainnet',
+    chain: 'sonic',
+    rpc: [ 'https://rpc.soniclabs.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sonic', symbol: 'S', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://soniclabs.com',
+    shortName: 'sonic',
+    chainId: 146,
+    networkId: 146,
+    icon: 'sonic',
+    explorers: [
+      {
+        name: 'sonic',
+        url: 'https://explorer.soniclabs.com',
+        icon: 'sonic',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Flag Mainnet',
     chain: 'Flag',
     icon: 'flag',
@@ -29559,6 +29580,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Sonic Blaze Testnet',
+    chain: 'blaze-testnet',
+    rpc: [ 'https://rpc.blaze.soniclabs.com' ],
+    faucets: [ 'https://blaze.soniclabs.com/account' ],
+    nativeCurrency: { name: 'Sonic', symbol: 'S', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://blaze.soniclabs.com',
+    shortName: 'blaze',
+    chainId: 57054,
+    networkId: 57054,
+    icon: 'sonic',
+    explorers: [
+      {
+        name: 'sonic blaze testnet',
+        url: 'https://explorer.blaze.soniclabs.com',
+        icon: 'sonic',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Ink',
     chain: 'ETH',
     rpc: [],
@@ -31903,14 +31945,22 @@ const chainArray = [
   {
     name: 'Unite',
     chain: 'UNITE',
-    rpc: [],
+    rpc: [ 'https://unite-mainnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Unite', symbol: 'UNITE', decimals: 18 },
     infoURL: 'https://unite.io',
     shortName: 'unite',
     chainId: 88899,
     networkId: 88899,
-    status: 'incubating'
+    status: 'active',
+    icon: 'unite',
+    explorers: [
+      {
+        name: 'Unite Explorer',
+        url: 'https://unite-mainnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'F(x)Core Testnet Network',
@@ -33321,6 +33371,24 @@ const chainArray = [
       {
         name: 'ADIL Devnet Explorer',
         url: 'https://devnet.adilchain-scan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mitosis Testnet',
+    chain: 'Mitosis Testnet',
+    rpc: [ 'https://rpc.testnet.mitosis.org' ],
+    faucets: [ 'https://testnet.mitosis.org/faucet' ],
+    nativeCurrency: { name: 'MITO', symbol: 'MITO', decimals: 18 },
+    infoURL: 'https://mitosis.org',
+    shortName: 'mitosis-testnet',
+    chainId: 124832,
+    networkId: 124832,
+    explorers: [
+      {
+        name: 'mitosis testnet explorer',
+        url: 'https://testnet.mitosiscan.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -37097,14 +37165,21 @@ const chainArray = [
   {
     name: 'Unite Testnet',
     chain: 'UNITE',
-    rpc: [],
+    rpc: [ 'https://unite-testnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Testnet Unite', symbol: 'UNITE', decimals: 18 },
     infoURL: 'https://unite.io',
     shortName: 'unitetestnet',
     chainId: 888991,
     networkId: 888991,
-    status: 'incubating'
+    status: 'active',
+    explorers: [
+      {
+        name: 'Unite Testnet Explorer',
+        url: 'https://unite-testnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Posichain Mainnet Shard 0',
