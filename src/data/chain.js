@@ -1040,7 +1040,9 @@ const chainArray = [
       'https://rpc.xinfin.network',
       'https://rpc1.xinfin.network',
       'https://rpc.xdcrpc.com',
-      'https://erpc.xdcrpc.com'
+      'https://erpc.xdcrpc.com',
+      'https://rpc.ankr.com/xdc',
+      'https://rpc.xdc.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'XinFin', symbol: 'XDC', decimals: 18 },
@@ -1057,14 +1059,8 @@ const chainArray = [
         standard: 'EIP3091'
       },
       {
-        name: 'xdcscan',
+        name: 'openscan',
         url: 'https://xdcscan.io',
-        icon: 'blocksscan',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'blocksscan',
-        url: 'https://xdc.blocksscan.io',
         icon: 'blocksscan',
         standard: 'EIP3091'
       }
@@ -1073,8 +1069,16 @@ const chainArray = [
   {
     name: 'XDC Apothem Network',
     chain: 'XDC',
-    rpc: [ 'https://rpc.apothem.network', 'https://erpc.apothem.network' ],
-    faucets: [ 'https://faucet.apothem.network' ],
+    rpc: [
+      'https://rpc.apothem.network',
+      'https://erpc.apothem.network',
+      'https://apothem.xdcrpc.com'
+    ],
+    faucets: [
+      'https://faucet.apothem.network',
+      'https://faucet.blocksscan.io',
+      'https://apothem.xdcscan.io/faucet'
+    ],
     nativeCurrency: { name: 'XinFin', symbol: 'TXDC', decimals: 18 },
     infoURL: 'https://xinfin.org',
     shortName: 'txdc',
@@ -1084,13 +1088,13 @@ const chainArray = [
     explorers: [
       {
         name: 'xdcscan',
-        url: 'https://apothem.xinfinscan.com',
+        url: 'https://testnet.xdcscan.com',
         icon: 'blocksscan',
         standard: 'EIP3091'
       },
       {
-        name: 'blocksscan',
-        url: 'https://apothem.blocksscan.io',
+        name: 'openscan',
+        url: 'https://apothem.xdcscan.io',
         icon: 'blocksscan',
         standard: 'EIP3091'
       }
@@ -6517,6 +6521,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'AppChain',
+    chain: 'AppChain',
+    rpc: [
+      'https://appchain.calderachain.xyz/http',
+      'wss://appchain.calderachain.xyz/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://appchain.xyz',
+    shortName: 'appchain',
+    chainId: 466,
+    networkId: 466,
+    icon: 'appchain',
+    explorers: [
+      {
+        name: 'AppChain Explorer',
+        url: 'https://explorer.appchain.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.appchain.xyz' } ]
+    }
+  },
+  {
     name: 'World Chain',
     chain: 'ETH',
     rpc: [
@@ -9301,9 +9333,9 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
-    name: 'Kaia Testnet Kairos',
+    name: 'Kaia Kairos Testnet',
     chain: 'KAIA',
-    rpc: [ 'https://public-en.kairos.node.kaia.io' ],
+    rpc: [ 'https://public-en-kairos.node.kaia.io' ],
     faucets: [ 'https://faucet.kaia.io' ],
     nativeCurrency: { name: 'KAIA', symbol: 'KAIA', decimals: 18 },
     infoURL: 'https://kaia.io/',
@@ -11701,16 +11733,24 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
-    name: 'Islander',
-    chain: 'Islander',
-    rpc: [],
-    nativeCurrency: { name: 'Islander', symbol: 'ISL', decimals: 18 },
-    faucets: [],
-    infoURL: '',
-    shortName: 'isl',
+    name: 'Vana',
+    chain: 'Vana',
+    rpc: [ 'https://rpc.vana.org/' ],
+    nativeCurrency: { name: 'Vana', symbol: 'VANA', decimals: 18 },
+    faucets: [ 'https://faucet.vana.org/' ],
+    infoURL: 'https://vana.org',
+    shortName: 'vana',
     chainId: 1480,
     networkId: 1480,
-    explorers: []
+    icon: 'vana',
+    explorers: [
+      {
+        name: 'Vana Block Explorer',
+        url: 'https://vanascan.io',
+        icon: 'vana',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Vitruveo Mainnet',
@@ -17873,17 +17913,40 @@ const chainArray = [
     faucets: [ 'https://faucet.emoney.network/faucet' ],
     nativeCurrency: { name: 'Emoney Network', symbol: 'EMYC', decimals: 18 },
     infoURL: 'https://emoney.network/',
-    shortName: 'emoney',
+    shortName: 'EmoneyTestnet',
     chainId: 4544,
     networkId: 4544,
     slip44: 118,
     icon: 'emoney',
     explorers: [
       {
-        name: 'EMoney ethscan',
-        url: 'https://ethscan.emoney.network',
+        name: 'EMoney Explorer',
+        url: 'https://explore-stage.emoney.network',
         icon: 'emoney',
-        standard: 'EIP3091'
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Emoney Network Mainnet',
+    chain: 'Emoney',
+    rpc: [
+      'https://rpc-publicnode.emoney.io/',
+      'https://public-node1-rpc.emoney.network/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Emoney Coin', symbol: 'EMYC', decimals: 18 },
+    infoURL: 'https://emoney.io/',
+    shortName: 'emoney',
+    chainId: 4545,
+    networkId: 4545,
+    icon: 'emoney',
+    explorers: [
+      {
+        name: 'EMoney Explorer',
+        url: 'https://explore.emoney.network',
+        icon: 'emoney',
+        standard: 'none'
       }
     ]
   },
@@ -17921,6 +17984,34 @@ const chainArray = [
     networkId: 4653,
     status: 'incubating',
     icon: 'gold'
+  },
+  {
+    name: 'AppChain Testnet',
+    chain: 'AppChain Testnet',
+    rpc: [
+      'https://appchaintestnet.rpc.caldera.xyz/http',
+      'wss://appchaintestnet.rpc.caldera.xyz/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://appchain.xyz',
+    shortName: 'appchaintestnet',
+    chainId: 4661,
+    networkId: 4661,
+    icon: 'appchain',
+    explorers: [
+      {
+        name: 'AppChain Testnet Explorer',
+        url: 'https://appchaintestnet.explorer.caldera.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://appchaintestnet.bridge.caldera.xyz' } ]
+    }
   },
   {
     name: 'IoTeX Network Mainnet',
@@ -18778,6 +18869,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Settlus Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://settlus.org',
+    shortName: 'setl-sepolia',
+    chainId: 5373,
+    networkId: 5373,
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] },
+    status: 'incubating'
   },
   {
     name: 'edeXa Mainnet',
@@ -25701,7 +25805,7 @@ const chainArray = [
     chain: 'EXPCHAIN',
     rpc: [ 'https://rpc1-testnet.expchain.ai' ],
     faucets: [],
-    nativeCurrency: { name: 'tEXP', symbol: 'tEXP', decimals: 18 },
+    nativeCurrency: { name: 'tZKJ', symbol: 'tZKJ', decimals: 18 },
     infoURL: 'https://expchain.ai',
     shortName: 'expchain',
     chainId: 18880,
@@ -29018,7 +29122,7 @@ const chainArray = [
   {
     name: 'Sophon',
     chain: 'Sophon',
-    rpc: [ 'https://rpc.sophon.xyz' ],
+    rpc: [ 'https://rpc.sophon.xyz', 'wss://rpc.sophon.xyz/ws' ],
     nativeCurrency: { name: 'Sophon', symbol: 'SOPH', decimals: 18 },
     faucets: [],
     infoURL: '',
@@ -29032,7 +29136,12 @@ const chainArray = [
         icon: 'sophon-testnet',
         standard: 'none'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portal.sophon.xyz/bridge' } ]
+    }
   },
   {
     name: 'Reddio Devnet',
@@ -39629,6 +39738,27 @@ const chainArray = [
       {
         name: 'Blockscout',
         url: 'https://explorer.toliman.suave.flashbots.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Xone Testnet',
+    chain: 'XOC',
+    icon: 'xone-test',
+    rpc: [ 'https://rpc-testnet.xone.plus' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Xone Coin', symbol: 'XOC', decimals: 18 },
+    infoURL: 'https://xone.plus',
+    shortName: 'txoc',
+    chainId: 33772211,
+    networkId: 33772211,
+    explorers: [
+      {
+        name: 'testnet-xscscan',
+        url: 'https://testnet.xscscan.com',
+        icon: 'testnet-xscscan',
         standard: 'EIP3091'
       }
     ]
