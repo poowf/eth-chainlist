@@ -6523,10 +6523,7 @@ const chainArray = [
   {
     name: 'AppChain',
     chain: 'AppChain',
-    rpc: [
-      'https://appchain.calderachain.xyz/http',
-      'wss://appchain.calderachain.xyz/ws'
-    ],
+    rpc: [ 'https://rpc.appchain.xyz/http', 'wss://rpc.appchain.xyz/ws' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://appchain.xyz',
@@ -38558,7 +38555,11 @@ const chainArray = [
     title: 'COTI Testnet',
     chain: 'COTI',
     icon: 'coti',
-    rpc: [ 'https://testnet.coti.io/rpc' ],
+    rpc: [
+      'https://testnet.coti.io/rpc',
+      'https://testnet-magnus-validator.coti.io/rpc',
+      'https://testnet-minor-validator.coti.io/rpc'
+    ],
     faucets: [ 'https://faucet.coti.io' ],
     nativeCurrency: { name: 'COTI', symbol: 'COTI', decimals: 18 },
     infoURL: 'https://coti.io/',
