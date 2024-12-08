@@ -5617,9 +5617,9 @@ const chainArray = [
     }
   },
   {
-    name: 'GRVT Mainnet',
+    name: 'GRVT Exchange',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://rpc.grvt.io' ],
     faucets: [],
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://grvt.io/',
@@ -5630,9 +5630,9 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'GRVT Sepolia Testnet',
+    name: 'GRVT Exchange Testnet',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://zkrpc.testnet.grvt.io' ],
     faucets: [],
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://grvt.io/',
@@ -12982,38 +12982,44 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Swell Network',
-    chain: 'Swell L2',
-    rpc: [ 'https://swell-mainnet.alt.technology' ],
+    name: 'Swellchain',
+    chain: 'ETH',
+    rpc: [
+      'https://swell-mainnet.alt.technology',
+      'https://rpc.ankr.com/swell'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://app.swellnetwork.io/layer2/swell-l2',
-    shortName: 'swell-l2',
+    shortName: 'swellchain',
     chainId: 1923,
     networkId: 1923,
+    icon: 'swell',
     explorers: [
       {
-        name: 'swell-l2',
-        icon: 'swell',
-        url: 'https://swell-mainnet-explorer.alt.technology',
+        name: 'Swellchain Explorer',
+        url: 'https://explorer.swellnetwork.io',
         standard: 'none'
       }
     ]
   },
   {
-    name: 'Swell Network Testnet',
-    chain: 'Swell L2 Testnet',
-    rpc: [ 'https://swell-testnet.alt.technology' ],
+    name: 'Swellchain Testnet',
+    chain: 'ETH',
+    rpc: [
+      'https://swell-testnet.alt.technology',
+      'https://rpc.ankr.com/swell-testnet'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://app.swellnetwork.io/layer2/swell-l2',
-    shortName: 'swell-l2-testnet',
+    shortName: 'swellchain-sep',
     chainId: 1924,
     networkId: 1924,
+    icon: 'swell',
     explorers: [
       {
-        name: 'swell-l2-testnet',
-        icon: 'swell',
+        name: 'Swellchain Testnet Explorer',
         url: 'https://swell-testnet-explorer.alt.technology',
         standard: 'none'
       }
@@ -28641,6 +28647,36 @@ const chainArray = [
     ]
   },
   {
+    name: 'Formicarium',
+    title: 'MemeCore Testnet Formicarium',
+    chain: 'MemeCore',
+    icon: 'memecore',
+    rpc: [
+      'https://rpc.formicarium.memecore.net',
+      'wss://ws.formicarium.memecore.net'
+    ],
+    faucets: [ 'https://faucet.memecore.com/formicarium' ],
+    nativeCurrency: { name: 'Formicarium M', symbol: 'M', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://memecore.com',
+    shortName: 'form',
+    chainId: 43521,
+    networkId: 43521,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'OKX-Formicarium',
+        url: 'https://www.okx.com/web3/explorer/formicarium-testnet',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'MemeCoreScan-Formicarium',
+        url: 'https://formicarium.memecorescan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'ZKFair Testnet',
     chain: 'ETH',
     rpc: [ 'https://testnet-rpc.zkfair.io' ],
@@ -33919,6 +33955,26 @@ const chainArray = [
     shortName: 'fairt',
     chainId: 171000,
     networkId: 171000
+  },
+  {
+    name: 'Wadzchain Mainnet',
+    title: 'Wadzchain Mainnet',
+    chain: 'Wadzchain-Mainnet',
+    icon: 'wadz',
+    rpc: [ 'https://rpc.wadzchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'WadzChain Token', symbol: 'WCO', decimals: 18 },
+    infoURL: 'https://www.wadzchain-network.io',
+    shortName: 'wadzchain-mainnet',
+    chainId: 171717,
+    networkId: 171717,
+    explorers: [
+      {
+        name: 'Wadzchain Mainnet Explorer',
+        url: 'https://scan.wadzchain.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Chronicle - Lit Protocol Testnet',
