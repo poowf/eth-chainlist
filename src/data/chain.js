@@ -10039,10 +10039,37 @@ const chainArray = [
     ]
   },
   {
+    name: 'Core Blockchain Testnet2',
+    chain: 'Core',
+    icon: 'core',
+    rpc: [ 'https://rpc.test2.btcs.network/' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://scan.test2.btcs.network/faucet' ],
+    nativeCurrency: {
+      name: 'Core Blockchain Testnet2 Native Token',
+      symbol: 'tCORE2',
+      decimals: 18
+    },
+    infoURL: 'https://www.coredao.org',
+    shortName: 'tcore2',
+    chainId: 1114,
+    networkId: 1114,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Core Scan Testnet2',
+        url: 'https://scan.test2.btcs.network',
+        icon: 'core',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Core Blockchain Testnet',
     chain: 'Core',
     icon: 'core',
     rpc: [ 'https://rpc.test.btcs.network/' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://scan.test.btcs.network/faucet' ],
     nativeCurrency: {
       name: 'Core Blockchain Testnet Native Token',
@@ -10073,6 +10100,7 @@ const chainArray = [
       'https://core.drpc.org',
       'wss://core.drpc.org'
     ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: {
       name: 'Core Blockchain Native Token',
@@ -18929,6 +18957,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'PointPay Mainnet',
+    chain: 'pointpay',
+    rpc: [ 'https://rpc-mainnet.pointpay.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PointPay', symbol: 'PXP', decimals: 18 },
+    infoURL: 'https://pointpay.io',
+    shortName: 'PP',
+    chainId: 5511,
+    networkId: 5511,
+    icon: 'pointpay',
+    explorers: [
+      {
+        name: 'PointPay Mainnet Explorer',
+        url: 'https://explorer.pointpay.io',
+        icon: 'pointpay',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'VEX EVM TESTNET',
     chain: 'vex',
     icon: 'vex',
@@ -20022,6 +20070,36 @@ const chainArray = [
     networkId: 6900,
     icon: 'nibiru',
     explorers: []
+  },
+  {
+    name: 'XYL TestNet',
+    chain: 'XYL',
+    rpc: [ 'https://xyl-testnet.glitch.me/rpc/' ],
+    faucets: [ 'https://debxylen.github.io/XYL_TestNet/faucet.html' ],
+    nativeCurrency: { name: 'XYL', symbol: 'XYL', decimals: 18 },
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'XYL-DynaPoW' },
+      { name: 'Smart Contracts' },
+      { name: 'Custom Gas Model' },
+      { name: 'XYL-VM' },
+      { name: 'Dynamic Difficulty Adjustment' },
+      { name: 'Low-Latency Transactions' }
+    ],
+    infoURL: 'https://debxylen.github.io/XYL_TestNet',
+    shortName: 'xyl',
+    chainId: 6934,
+    networkId: 6934,
+    icon: 'xyl-test',
+    explorers: [
+      {
+        name: 'XYL Explorer',
+        url: 'https://debxylen.github.io/BlockExplorer',
+        icon: 'xyl-test',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Laika Mainnet',
@@ -30130,6 +30208,36 @@ const chainArray = [
     ]
   },
   {
+    name: 'Treasure',
+    chain: 'Treasure',
+    shortName: 'treasure',
+    chainId: 61166,
+    networkId: 61166,
+    nativeCurrency: { name: 'MAGIC', symbol: 'MAGIC', decimals: 18 },
+    slip44: 1,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://app.treasure.lol',
+    icon: 'treasure',
+    rpc: [ 'https://rpc.treasure.lol', 'wss://rpc.treasure.lol/ws' ],
+    faucets: [
+      'https://app.treasure.lol/chain/faucet',
+      'https://thirdweb.com/treasure'
+    ],
+    explorers: [
+      {
+        name: 'Treasure Block Explorer',
+        url: 'https://treasurescan.io',
+        icon: 'treasure',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://app.treasure.lol/chain/bridge' } ]
+    }
+  },
+  {
     name: 'KaiChain',
     chain: 'KaiChain',
     rpc: [ 'https://mainnet-rpc.kaichain.net' ],
@@ -30852,7 +30960,7 @@ const chainArray = [
     icon: 'wadz',
     rpc: [ 'https://rpc-testnet.wadzchain.io' ],
     faucets: [ 'https://faucet-testnet.wadzchain.io' ],
-    nativeCurrency: { name: 'WadzToken', symbol: 'WTK', decimals: 18 },
+    nativeCurrency: { name: 'WadzChain Coin', symbol: 'WCO', decimals: 18 },
     infoURL: 'https://www.wadzchain-network.io',
     shortName: 'wadzchain-testnet',
     chainId: 71117,
@@ -31821,6 +31929,38 @@ const chainArray = [
       {
         name: 'basescout',
         url: 'https://base-sepolia.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'O Chain',
+    chain: 'O',
+    rpc: [
+      'https://rpc.o.xyz',
+      'https://84841.rpc.thirdweb.com',
+      'wss://rpc.o.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'O.XYZ', symbol: 'O', decimals: 18 },
+    infoURL: 'https://o.xyz',
+    shortName: 'O',
+    chainId: 84841,
+    networkId: 84841,
+    slip44: 1,
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [
+        { url: 'https://bridge.o.xyz' },
+        { url: 'https://superbridge.o.xyz' }
+      ]
+    },
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.o.xyz',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -37548,31 +37688,18 @@ const chainArray = [
     nativeCurrency: { name: 'Testnet MAGIC', symbol: 'MAGIC', decimals: 18 },
     slip44: 1,
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://portal.treasure.lol',
+    infoURL: 'https://app.treasure.lol',
     icon: 'treasureruby',
-    rpc: [
-      'https://rpc-testnet.treasure.lol/http',
-      'wss://rpc-testnet.treasure.lol/ws'
-    ],
-    faucets: [ 'https://portal.treasure.lol/faucet' ],
-    explorers: [
-      {
-        name: 'treasurescan',
-        url: 'https://testnet.treasurescan.io',
-        icon: 'treasure',
-        standard: 'EIP3091'
-      }
-    ],
-    parent: {
-      type: 'L2',
-      chain: 'eip155-1',
-      bridges: [ { url: 'https://portal.treasure.lol/bridge' } ]
-    }
+    rpc: [],
+    faucets: [],
+    status: 'deprecated',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
   },
   {
     name: 'Treasure Topaz',
     chain: 'Treasure Topaz',
-    shortName: 'Topaz',
+    shortName: 'treasure-topaz',
     chainId: 978658,
     networkId: 978658,
     nativeCurrency: { name: 'Testnet MAGIC', symbol: 'MAGIC', decimals: 18 },
@@ -37590,7 +37717,7 @@ const chainArray = [
     ],
     explorers: [
       {
-        name: 'treasurescan',
+        name: 'Treasure Topaz Block Explorer',
         url: 'https://topaz.treasurescan.io',
         icon: 'treasure',
         standard: 'EIP3091'
@@ -37599,10 +37726,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [
-        { url: 'https://app.treasure.lol/chain/bridge' },
-        { url: 'https://portal.topaz.treasure.lol/bridge' }
-      ]
+      bridges: [ { url: 'https://app.treasure.lol/chain/bridge' } ]
     }
   },
   {
@@ -38473,6 +38597,26 @@ const chainArray = [
         name: 'reactscan',
         url: 'https://kopli.reactscan.net',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'PointPay Testnet',
+    chain: 'pointpay',
+    rpc: [ 'https://rpc-testnet.pointpay.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PointPay', symbol: 'PXP', decimals: 18 },
+    infoURL: 'https://pointpay.io',
+    shortName: 'PPTEST',
+    chainId: 5511555,
+    networkId: 5511555,
+    icon: 'pointpay',
+    explorers: [
+      {
+        name: 'PointPay Testnet Explorer',
+        url: 'https://testnet.pointpay.io',
+        icon: 'pointpay',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -39928,6 +40072,32 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Stavanger Public Testnet',
+    chain: 'stavanger',
+    rpc: [ 'https://rpc.stavanger.gateway.fm' ],
+    faucets: [ 'https://faucet.stavanger.gateway.fm' ],
+    nativeCurrency: { name: 'Polygon', symbol: 'POL', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://gateway.fm',
+    shortName: 'stavanger',
+    chainId: 50591822,
+    networkId: 50591822,
+    icon: 'stavanger',
+    explorers: [
+      {
+        name: 'BlockScout',
+        url: 'https://explorer.stavanger.gateway.fm',
+        icon: 'stavanger',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.stavanger.gateway.fm' } ]
+    }
   },
   {
     name: 'Deviant Token Blockchain',
