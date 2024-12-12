@@ -2321,7 +2321,11 @@ const chainArray = [
     name: 'Shibarium',
     chain: 'Shibarium',
     icon: 'shibarium',
-    rpc: [ 'https://www.shibrpc.com' ],
+    rpc: [
+      'https://www.shibrpc.com',
+      'https://rpc.shibrpc.com',
+      'https://shib.nownodes.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'BONE Shibarium', symbol: 'BONE', decimals: 18 },
     infoURL: 'https://shibariumecosystem.com',
@@ -3231,11 +3235,11 @@ const chainArray = [
     ]
   },
   {
-    name: 'Puppynet Shibarium',
-    chain: 'Puppynet Shibarium',
+    name: 'Puppynet',
+    chain: 'Puppynet',
     icon: 'shibarium',
     rpc: [ 'https://puppynet.shibrpc.com' ],
-    faucets: [ 'https://beta.shibariumtech.com/faucet' ],
+    faucets: [ 'https://shibarium.shib.io/faucet' ],
     nativeCurrency: { name: 'BONE', symbol: 'BONE', decimals: 18 },
     infoURL: 'https://shibariumecosystem.com',
     shortName: 'puppynet',
@@ -6546,6 +6550,36 @@ const chainArray = [
     }
   },
   {
+    name: 'Form Network',
+    title: 'Form Network',
+    chain: 'form',
+    icon: 'form',
+    rpc: [ 'https://rpc.form.network/http', 'wss://rpc.form.network/ws' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://info.form.network',
+    shortName: 'formnetwork',
+    chainId: 478,
+    networkId: 478,
+    explorers: [
+      {
+        name: 'Form Explorer',
+        url: 'https://explorer.form.network',
+        standard: 'EIP3091',
+        icon: 'form'
+      }
+    ],
+    faucets: [],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [
+        { url: 'https://bridge.form.network' },
+        { url: 'https://op-bridge.form.network' }
+      ]
+    }
+  },
+  {
     name: 'World Chain',
     chain: 'ETH',
     rpc: [
@@ -7976,6 +8010,24 @@ const chainArray = [
     shortName: 'cth',
     chainId: 777,
     networkId: 777
+  },
+  {
+    name: 'AUTHEO Testnet',
+    chain: 'AUTHEO Testnet',
+    rpc: [ 'https://testnet-rpc1.autheo.com' ],
+    faucets: [ 'https://testnet-faucet.autheo.com' ],
+    nativeCurrency: { name: 'THEO', symbol: 'THEO', decimals: 18 },
+    infoURL: 'https://autheo.com',
+    shortName: 'autheo-Test-Chain',
+    chainId: 785,
+    networkId: 785,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://testnet-explorer.autheo.com',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'MAAL Chain',
@@ -17999,6 +18051,30 @@ const chainArray = [
         name: 'VERY explorer',
         url: 'https://www.veryscan.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'MST Chain',
+    title: 'MST Chain',
+    chain: 'MST',
+    rpc: [
+      'https://mariorpc.mstblockchain.com',
+      'https://craftrpc.mstblockchain.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'MST', symbol: 'MST', decimals: 18 },
+    infoURL: 'https://mstblockchain.com',
+    shortName: 'mst',
+    chainId: 4646,
+    networkId: 4646,
+    slip44: 4646,
+    icon: 'mst',
+    explorers: [
+      {
+        name: 'MST Mainnet Scan',
+        url: 'https://mstscan.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -33733,27 +33809,27 @@ const chainArray = [
     title: 'Form Testnet',
     chain: 'formtestnet',
     rpc: [
-      'https://testnet-rpc.form.network/http',
-      'wss://testnet-rpc.form.network/ws'
+      'https://sepolia-rpc.form.network/http',
+      'wss://sepolia-rpc.form.network/ws'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://info.form.network/faucet' ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://form.network/details',
+    infoURL: 'https://sepolia-info.form.network',
     shortName: 'formtestnet',
     chainId: 132902,
     networkId: 132902,
     explorers: [
       {
         name: 'Form Testnet explorer',
-        url: 'https://testnet-explorer.form.network',
+        url: 'https://sepolia-explorer.form.network',
         standard: 'EIP3091'
       }
     ],
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
-      bridges: [ { url: 'https://bridge.form.network/' } ]
+      bridges: [ { url: 'https://sepolia-op-bridge.form.network' } ]
     }
   },
   {
