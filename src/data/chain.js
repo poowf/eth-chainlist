@@ -4965,6 +4965,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'XR One',
+    chain: 'ETH',
+    rpc: [ 'https://xr-one.calderachain.xyz/http' ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'XR', symbol: 'XR', decimals: 18 },
+    infoURL: 'https://xr-one.gitbook.io',
+    shortName: 'xr',
+    chainId: 273,
+    networkId: 273,
+    icon: 'xr',
+    slip44: 60,
+    explorers: [
+      {
+        name: 'XR One Explorer',
+        url: 'https://xr-one.calderaexplorer.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [ { url: 'https://xr-one.bridge.caldera.xyz/' } ]
+    },
+    status: 'active'
+  },
+  {
     name: 'LaChain',
     chain: 'LaChain',
     icon: 'lachain-network',
@@ -16553,7 +16581,7 @@ const chainArray = [
     name: 'EVOLVE Mainnet',
     chain: 'EVO',
     icon: 'evolveIcon',
-    rpc: [ 'https://rpc.evolveblockchain.io' ],
+    rpc: [ 'https://rpc.evoexplorer.com' ],
     faucets: [],
     nativeCurrency: { name: 'Evolve', symbol: 'EVO', decimals: 18 },
     infoURL: 'https://evolveblockchain.io',
@@ -22659,6 +22687,25 @@ const chainArray = [
         name: 'apexfusion',
         url: 'https://explorer.nexus.testnet.apexfusion.org',
         icon: 'apexfusion',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Inco Gentry Testnet',
+    chain: 'INCO',
+    rpc: [ 'https://testnet.inco.org' ],
+    faucets: [ 'https://faucet.inco.org' ],
+    nativeCurrency: { name: 'INCO', symbol: 'INCO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.inco.org',
+    shortName: 'inco-gentry',
+    chainId: 9090,
+    networkId: 9090,
+    explorers: [
+      {
+        name: 'Inco Gentry Testnet Explorer',
+        url: 'https://explorer.testnet.inco.org',
         standard: 'EIP3091'
       }
     ]
@@ -29331,6 +29378,27 @@ const chainArray = [
     }
   },
   {
+    name: 'Somnia Devnet',
+    chain: 'Somnia',
+    rpc: [ 'https://dream-rpc.somnia.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Somnia Devnet', symbol: 'STT', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://somnia.network',
+    shortName: 'STT',
+    chainId: 50311,
+    networkId: 50311,
+    icon: 'somnia',
+    explorers: [
+      {
+        name: 'Somnia Devnet',
+        url: 'https://somnia-devnet.socialscan.io',
+        icon: 'somnia',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Reddio Devnet',
     title: 'Reddio Sepolia L2 Rollup Devnet',
     chain: 'ETH',
@@ -29543,6 +29611,28 @@ const chainArray = [
         url: 'https://explorer.dfkchain.com',
         icon: 'ethereum',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Graphite Testnet',
+    chain: 'Graphite',
+    rpc: [
+      'https://anon-entrypoint-test-1.atgraphite.com',
+      'wss://ws-anon-entrypoint-test-1.atgraphite.com'
+    ],
+    faucets: [ 'https://faucet.atgraphite.com/' ],
+    nativeCurrency: { name: 'Graphite', symbol: '@G', decimals: 18 },
+    infoURL: 'https://atgraphite.com/',
+    shortName: 'graphiteTest',
+    chainId: 54170,
+    networkId: 54170,
+    icon: 'graphite',
+    explorers: [
+      {
+        name: 'Graphite Testnet Explorer',
+        url: 'https://test.atgraphite.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -35051,6 +35141,25 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Universe Testnet',
+    chain: 'Universe',
+    rpc: [ 'https://blockchain.dev-universe-bank.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Universe Token', symbol: 'UNI', decimals: 18 },
+    infoURL: 'https://www.universe-bank.com/universal-ledger-system',
+    shortName: 'unitestnet',
+    chainId: 235711,
+    networkId: 235711,
+    icon: 'universe',
+    explorers: [
+      {
+        name: 'Universe Testnet Explorer',
+        url: 'https://blockchain-explorer.dev-universe-bank.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Orange Chain Testnet',
     title: 'Orange Chain Testnet',
     chain: 'Orange Chain',
@@ -36158,6 +36267,29 @@ const chainArray = [
       {
         name: 'Avalanche Subnet Explorer',
         url: 'https://subnets.avax.network/dexalot',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Graphite Mainnet',
+    chain: 'Graphite',
+    rpc: [
+      'https://anon-entrypoint-1.atgraphite.com',
+      'wss://ws-anon-entrypoint-1.atgraphite.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Graphite', symbol: '@G', decimals: 18 },
+    infoURL: 'https://atgraphite.com/',
+    shortName: 'graphite',
+    chainId: 440017,
+    networkId: 440017,
+    slip44: 440017,
+    icon: 'graphite',
+    explorers: [
+      {
+        name: 'Graphite Mainnet Explorer',
+        url: 'https://main.atgraphite.com',
         standard: 'EIP3091'
       }
     ]
@@ -39282,7 +39414,8 @@ const chainArray = [
       'wss://ethereum-sepolia-rpc.publicnode.com',
       'https://sepolia.drpc.org',
       'wss://sepolia.drpc.org',
-      'https://rpc-sepolia.rockx.com'
+      'https://rpc-sepolia.rockx.com',
+      'https://eth-sepolia.g.alchemy.com/v2/WddzdzI2o9S3COdT73d5w6AIogbKq4X-'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
@@ -40300,11 +40433,9 @@ const chainArray = [
   },
   {
     name: 'Autonity Bakerloo (Yamuna) Testnet',
+    status: 'deprecated',
     chain: 'AUT',
-    rpc: [
-      'https://rpc1.bakerloo.autonity.org/',
-      'wss://rpc1.bakerloo.autonity.org/ws/'
-    ],
+    rpc: [],
     faucets: [ 'https://faucet.autonity.org/' ],
     nativeCurrency: { name: 'Bakerloo Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
@@ -40386,17 +40517,41 @@ const chainArray = [
   },
   {
     name: 'Autonity Piccadilly (Yamuna) Testnet',
+    status: 'deprecated',
     chain: 'AUT',
-    rpc: [
-      'https://rpc1.piccadilly.autonity.org/',
-      'wss://rpc1.piccadilly.autonity.org/ws/'
-    ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
     shortName: 'piccadilly-03',
     chainId: 65100003,
     networkId: 65100003,
+    slip44: 1,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonity-blockscout',
+        url: 'https://piccadilly.autonity.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonity Piccadilly (Tiber) Testnet',
+    chain: 'AUT',
+    rpc: [
+      'https://autonity.rpc.web3cdn.network/testnet',
+      'wss://autonity.rpc.web3cdn.network/testnet/ws',
+      'https://autonity-piccadilly.rpc.subquery.network/public',
+      'https://picadilly.autonity-apis.com',
+      'wss://picadilly-ws.autonity-apis.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'piccadilly-04',
+    chainId: 65100004,
+    networkId: 65100004,
     slip44: 1,
     icon: 'autonity',
     explorers: [
