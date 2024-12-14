@@ -8193,6 +8193,26 @@ const chainArray = [
     networkId: 803
   },
   {
+    name: 'Evoz Mainnet',
+    chain: 'Evoz',
+    rpc: [ 'https://rpc.evozscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Evoz Mainnet', symbol: 'EVOZ', decimals: 18 },
+    infoURL: 'https://rpc.evozscan.com',
+    shortName: 'Evoz',
+    chainId: 805,
+    networkId: 805,
+    icon: 'evoz',
+    explorers: [
+      {
+        name: 'evozscan',
+        url: 'https://evozscan.com',
+        icon: 'evoz',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Portal Fantasy Chain Test',
     chain: 'PF',
     icon: 'pf',
@@ -14087,14 +14107,15 @@ const chainArray = [
   },
   {
     name: 'Phala Network',
-    chain: 'PHA',
+    chain: 'ETH',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'Phala', symbol: 'PHA', decimals: 18 },
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://phala.network',
-    shortName: 'pha',
+    shortName: 'phala',
     chainId: 2035,
-    networkId: 2035
+    networkId: 2035,
+    status: 'incubating'
   },
   {
     name: 'Kiwi Subnet',
@@ -16696,22 +16717,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'JZERO',
-    chain: 'JZERO',
-    icon: 'jzero',
-    rpc: [ 'https://rpc.jzero.xyz' ],
+    name: 'JFINPOS',
+    chain: 'JFINPOS',
+    icon: 'jfinpos',
+    rpc: [ 'https://rpc.jfinpos.com' ],
     faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    nativeCurrency: { name: 'JZERO', symbol: 'JZR', decimals: 18 },
-    infoURL: 'https://jzero.xyz',
+    nativeCurrency: { name: 'JFINPOS', symbol: 'JPOS', decimals: 18 },
+    infoURL: 'https://jfinpos.com',
     shortName: 'jzero',
     chainId: 3502,
     networkId: 3502,
     explorers: [
       {
-        name: 'JZERO Explorer',
-        url: 'https://exp.jzero.xyz',
-        icon: 'jzero',
+        name: 'JFINPOS Explorer',
+        url: 'https://exp.jfinpos.com',
+        icon: 'jfinpos',
         standard: 'EIP3091'
       }
     ]
@@ -17855,7 +17876,7 @@ const chainArray = [
   {
     name: 'Echos Chain',
     chain: 'Echos',
-    rpc: [],
+    rpc: [ 'https://rpc-echos-mainnet-0.t.conduit.xyz' ],
     features: [],
     faucets: [],
     nativeCurrency: { name: 'USD Coin', symbol: 'USDC', decimals: 18 },
@@ -18225,6 +18246,30 @@ const chainArray = [
         url: 'https://testnet-explorer.blackfort.network',
         icon: 'blockscout',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Evnode Testnet',
+    chain: 'Evnode',
+    rpc: [ 'https://rpc-testnet.evnode.org/' ],
+    faucets: [ 'https://faucet.evnode.org' ],
+    nativeCurrency: {
+      name: 'Evnode Testnet Native Token',
+      symbol: 'tEVO',
+      decimals: 18
+    },
+    infoURL: 'https://evnode.org',
+    shortName: 'evnode',
+    chainId: 4786,
+    networkId: 4786,
+    icon: 'evnode',
+    explorers: [
+      {
+        name: 'Evnode Explorer Testnet',
+        url: 'https://testnet.evscan.net',
+        standard: 'EIP3091',
+        icon: 'evnode'
       }
     ]
   },
@@ -20518,6 +20563,26 @@ const chainArray = [
     networkId: 7222,
     icon: 'nibiru',
     explorers: []
+  },
+  {
+    name: 'InitVerse penesis testnet',
+    chain: 'InitVerse',
+    rpc: [ 'http://rpc-testnet.inichain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'InitVerse', symbol: 'INI', decimals: 18 },
+    infoURL: 'https://genesis-testnet.inichain.com',
+    shortName: 'INICHAIN',
+    chainId: 7234,
+    networkId: 7234,
+    icon: 'initverse',
+    explorers: [
+      {
+        name: 'initverse',
+        url: 'https://genesis-testnet.iniscan.com',
+        icon: 'initverse',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'ZEUS Testnet',
@@ -34966,16 +35031,16 @@ const chainArray = [
     ]
   },
   {
-    name: 'HydraDX',
+    name: 'Hydration',
     chain: 'HDX',
     rpc: [ 'https://rpc.hydradx.cloud', 'wss://rpc.hydradx.cloud' ],
     faucets: [],
     nativeCurrency: { name: 'Wrapped ETH', symbol: 'WETH', decimals: 18 },
-    infoURL: 'https://hydradx.io',
+    infoURL: 'https://hydration.net/',
     shortName: 'hdx',
     chainId: 222222,
     networkId: 222222,
-    icon: 'hydradx',
+    icon: 'hydration',
     explorers: [
       {
         name: 'blockscout',
@@ -36983,6 +37048,27 @@ const chainArray = [
       {
         name: 'Hela Official Runtime Testnet Explorer',
         url: 'https://testnet-blockexplorer.helachain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Conwai Mainnet',
+    chain: 'CNW',
+    rpc: [ 'https://conwai.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Conwai', symbol: 'CNW', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://conwai.net',
+    shortName: 'cnw',
+    chainId: 668668,
+    networkId: 668668,
+    icon: 'conwai',
+    explorers: [
+      {
+        name: 'conwaiscan',
+        icon: 'conwaiscan',
+        url: 'https://conwai.calderaexplorer.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -39921,18 +40007,20 @@ const chainArray = [
     ]
   },
   {
-    name: 'Corn Maizenet',
+    name: 'Corn',
     chain: 'BTCN',
     rpc: [
+      'https://mainnet.corn-rpc.com',
       'https://rpc.ankr.com/corn_maizenet',
       'https://maizenet-rpc.usecorn.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bitcorn', symbol: 'BTCN', decimals: 18 },
     infoURL: 'https://usecorn.com',
-    shortName: 'btcn',
+    shortName: 'corn',
     chainId: 21000000,
     networkId: 21000000,
+    icon: 'corn',
     explorers: [
       {
         name: 'Corn Explorer',
@@ -39951,13 +40039,14 @@ const chainArray = [
     name: 'Corn Testnet',
     chain: 'BTCN',
     rpc: [
+      'https://testnet.corn-rpc.com',
       'https://rpc.ankr.com/corn_testnet',
       'https://testnet-rpc.usecorn.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bitcorn', symbol: 'BTCN', decimals: 18 },
     infoURL: 'https://usecorn.com',
-    shortName: 'btcn-testnet',
+    shortName: 'corn-testnet',
     chainId: 21000001,
     networkId: 21000001,
     explorers: [
@@ -41646,6 +41735,25 @@ const chainArray = [
       {
         name: 'PowerGold explorer',
         url: 'https://explorer.powergold.aurora.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Turbo',
+    chain: 'NEAR',
+    rpc: [ 'https://rpc-0x4e45415f.aurora-cloud.dev' ],
+    icon: 'turbo',
+    faucets: [],
+    nativeCurrency: { name: 'Turbo', symbol: 'TURBO', decimals: 18 },
+    infoURL: 'https://turbotoken.io',
+    shortName: 'turbo',
+    chainId: 1313161567,
+    networkId: 1313161567,
+    explorers: [
+      {
+        name: 'Turbo explorer',
+        url: 'https://explorer.turbo.aurora.dev',
         standard: 'EIP3091'
       }
     ]
