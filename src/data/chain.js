@@ -29705,7 +29705,7 @@ const chainArray = [
     name: 'OverProtocol Mainnet',
     chain: 'OverProtocol',
     icon: 'overIcon',
-    rpc: [ 'https://public.rpc.overprotocol.com' ],
+    rpc: [ 'https://rpc.overprotocol.com', 'https://rpc2.overprotocol.com' ],
     faucets: [],
     nativeCurrency: { name: 'Over', symbol: 'OVER', decimals: 18 },
     infoURL: 'https://docs.over.network',
@@ -29715,7 +29715,7 @@ const chainArray = [
     explorers: [
       {
         name: 'OverView',
-        url: 'https://view.over.network',
+        url: 'https://scan.over.network',
         standard: 'EIP3091'
       }
     ]
@@ -35225,6 +35225,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Studio Testnet',
+    chain: 'STO',
+    icon: 'studio',
+    rpc: [
+      'https://rpc.studio-blockchain.com',
+      'wss://ws.studio-blockchain.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Studio Token', symbol: 'STO', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://studio-blockchain.com',
+    shortName: 'sto',
+    chainId: 240240,
+    networkId: 240240,
+    explorers: [
+      {
+        name: 'Studio Scan',
+        url: 'https://studio-scan.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Orange Chain Testnet',
     title: 'Orange Chain Testnet',
     chain: 'Orange Chain',
@@ -36725,7 +36749,7 @@ const chainArray = [
     name: 'OverProtocol Testnet',
     chain: 'OverProtocol',
     icon: 'overIcon',
-    rpc: [ 'https://wallet-dolphin.rpc.over.network' ],
+    rpc: [ 'https://rpc.dolphin.overprotocol.com' ],
     faucets: [],
     nativeCurrency: { name: 'Over', symbol: 'OVER', decimals: 18 },
     infoURL: 'https://docs.over.network',
@@ -36735,7 +36759,7 @@ const chainArray = [
     explorers: [
       {
         name: 'OverView Testnet',
-        url: 'https://dolphin.view.over.network',
+        url: 'https://dolphin-scan.over.network',
         standard: 'EIP3091'
       }
     ]
