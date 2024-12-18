@@ -3568,14 +3568,21 @@ const chainArray = [
     name: 'HashKey Chain',
     title: 'HashKey Chain',
     chain: 'HashKey Chain',
-    rpc: [],
+    rpc: [ 'https://mainnet.hsk.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'HashKey EcoPoints', symbol: 'HSK', decimals: 18 },
     infoURL: 'https://hsk.xyz',
     shortName: 'HSK',
     chainId: 177,
     networkId: 177,
-    explorers: [],
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.hsk.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
@@ -8536,6 +8543,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Electra Network',
+    chain: 'Electra',
+    rpc: [ 'https://rpc.electranetwork.tech' ],
+    faucets: [],
+    nativeCurrency: { name: 'Electra', symbol: 'ELC', decimals: 18 },
+    infoURL: 'https://www.electranetwork.tech',
+    shortName: 'elc',
+    chainId: 861,
+    networkId: 861,
+    explorers: [
+      {
+        name: 'Electra Explorer',
+        url: 'https://scan.electranetwork.tech',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Fantasia Chain Mainnet',
     chain: 'FSC',
     rpc: [
@@ -8554,6 +8579,24 @@ const chainArray = [
         name: 'FSCScan',
         url: 'https://explorer.fantasiachain.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Electra Test Network',
+    chain: 'Electra',
+    rpc: [ 'http://rpc.testnet.electranetwork.tech' ],
+    faucets: [],
+    nativeCurrency: { name: 'Test Electra', symbol: 'TELC', decimals: 18 },
+    infoURL: 'https://scan.testnet.electranetwork.tech',
+    shortName: 'telc',
+    chainId: 871,
+    networkId: 871,
+    explorers: [
+      {
+        name: 'Electra Testnet Explorer',
+        url: 'https://scan.testnet.electranetwork.tech',
+        standard: 'none'
       }
     ]
   },
@@ -20565,7 +20608,7 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'InitVerse penesis testnet',
+    name: 'InitVerse genesis testnet',
     chain: 'InitVerse',
     rpc: [ 'http://rpc-testnet.inichain.com' ],
     faucets: [],
@@ -24384,7 +24427,7 @@ const chainArray = [
     name: 'eGoldChain',
     chain: 'EGC',
     icon: 'egoldchain',
-    rpc: [ 'https://rpc.egoldchain.com', 'wss://wss.egoldchain.com' ],
+    rpc: [ 'https://rpc.egoldchain.com', 'wss://rpc.egoldchain.com' ],
     faucets: [],
     nativeCurrency: { name: 'Aurum', symbol: 'XAU', decimals: 18 },
     infoURL: 'https://www.egoldchain.com',
@@ -33057,6 +33100,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Edge Matrix Chain Sepolia',
+    chain: 'EMC Sepolia',
+    icon: 'emctest',
+    rpc: [ 'https://rpc1-sepolia.emc.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Edge Matrix Chain Token', symbol: 'EMC', decimals: 18 },
+    infoURL: '',
+    shortName: 'EMCSepolia',
+    chainId: 99879,
+    networkId: 99879,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://sepolia.emcscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'UB Smart Chain(testnet)',
     chain: 'USC',
     rpc: [ 'https://testnet.rpc.uschain.network' ],
@@ -33833,7 +33895,7 @@ const chainArray = [
     icon: 'egoldchain',
     rpc: [
       'https://rpc-testnet.egoldchain.com',
-      'wss://wss-testnet.egoldchain.com'
+      'wss://rpc-testnet.egoldchain.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Aurum', symbol: 'XAU', decimals: 18 },
@@ -38802,6 +38864,32 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Zuux chain testnet',
+    title: 'Zuux chain testnet',
+    chain: 'zuuxchain',
+    icon: 'zuuxchain',
+    rpc: [ 'https://rpc.zuux.network' ],
+    features: [ { name: 'none' } ],
+    faucets: [ 'https://www.zuuxlend.xyz/faucet' ],
+    nativeCurrency: { name: 'ZUUX', symbol: 'ZUUX', decimals: 18 },
+    infoURL: 'https://www.zuux.network',
+    shortName: 'zuuxchain',
+    chainId: 4284265,
+    networkId: 4284265,
+    explorers: [
+      {
+        name: 'Zuux chain explorer',
+        url: 'https://blockscout.zuux.network',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Zuux chain explorer',
+        url: 'https://explorer.zuux.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Altar Testnet',
     chain: 'Altar',
     rpc: [ 'https://altar-rpc.ceremonies.ai/' ],
@@ -39977,6 +40065,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'SoonChain Sepolia Devnet',
+    chain: 'SoonChain Devnet Sepolia',
+    rpc: [ 'https://sepolia.rpc.soonchain.ai' ],
+    faucets: [ 'https://console.optimism.io/faucet' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://soonchain.ai',
+    shortName: 'Soon-Devnet',
+    chainId: 20221001,
+    networkId: 20221001,
+    icon: 'soonchain',
+    explorers: [
+      {
+        name: 'Soon Scan',
+        url: 'https://sepolia.explorer.soonchain.ai',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Vcity Testnet',
     chain: 'VCITY',
     rpc: [ 'https://testnet.vcity.app' ],
@@ -40312,9 +40420,13 @@ const chainArray = [
     name: 'Xone Testnet',
     chain: 'XOC',
     icon: 'xone-test',
-    rpc: [ 'https://rpc-testnet.xone.plus' ],
+    rpc: [
+      'https://rpc-testnet.xone.plus',
+      'https://rpc-testnet.xone.org',
+      'https://rpc-testnet.knight.center'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    faucets: [],
+    faucets: [ 'https://faucet.xone.plus/' ],
     nativeCurrency: { name: 'Xone Coin', symbol: 'XOC', decimals: 18 },
     infoURL: 'https://xone.plus',
     shortName: 'txoc',
@@ -40699,8 +40811,8 @@ const chainArray = [
       'https://autonity.rpc.web3cdn.network/testnet',
       'wss://autonity.rpc.web3cdn.network/testnet/ws',
       'https://autonity-piccadilly.rpc.subquery.network/public',
-      'https://picadilly.autonity-apis.com',
-      'wss://picadilly-ws.autonity-apis.com'
+      'https://piccadilly.autonity-apis.com',
+      'wss://piccadilly-ws.autonity-apis.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
