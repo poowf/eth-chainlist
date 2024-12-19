@@ -28585,8 +28585,8 @@ const chainArray = [
       'https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}',
       'https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}',
       'https://arb1.arbitrum.io/rpc',
-      'https://arbitrum-one.publicnode.com',
-      'wss://arbitrum-one.publicnode.com'
+      'https://arbitrum-one-rpc.publicnode.com',
+      'wss://arbitrum-one-rpc.publicnode.com'
     ],
     faucets: [],
     explorers: [
@@ -28623,8 +28623,8 @@ const chainArray = [
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     rpc: [
       'https://nova.arbitrum.io/rpc',
-      'https://arbitrum-nova.publicnode.com',
-      'wss://arbitrum-nova.publicnode.com'
+      'https://arbitrum-nova-rpc.publicnode.com',
+      'wss://arbitrum-nova-rpc.publicnode.com'
     ],
     faucets: [],
     explorers: [
@@ -28632,12 +28632,6 @@ const chainArray = [
         name: 'Arbitrum Nova Chain Explorer',
         url: 'https://nova-explorer.arbitrum.io',
         icon: 'blockscout',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'dexguru',
-        url: 'https://nova.dex.guru',
-        icon: 'dexguru',
         standard: 'EIP3091'
       }
     ],
@@ -30117,16 +30111,27 @@ const chainArray = [
   {
     name: 'Ink',
     chain: 'ETH',
-    rpc: [],
-    faucets: [],
+    rpc: [
+      'https://rpc-gel.inkonchain.com',
+      'https://rpc-qnd.inkonchain.com',
+      'wss://rpc-gel.inkonchain.com',
+      'wss://rpc-qnd.inkonchain.com'
+    ],
+    faucets: [ 'https://inkonchain.com/faucet' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://inkonchain.com',
     shortName: 'ink',
     chainId: 57073,
     networkId: 57073,
-    explorers: [],
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'Ink Explorer',
+        url: 'https://explorer.inkonchain.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'COINSEC Network',
@@ -36364,7 +36369,9 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://sepolia-rollup.arbitrum.io/rpc',
-      'https://arbitrum-sepolia.infura.io/v3/${INFURA_API_KEY}'
+      'https://arbitrum-sepolia.infura.io/v3/${INFURA_API_KEY}',
+      'https://arbitrum-sepolia-rpc.publicnode.com',
+      'wss://arbitrum-sepolia-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -37285,6 +37292,26 @@ const chainArray = [
         name: 'Seitrace',
         url: 'https://seitrace.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Zether Mainnet',
+    chain: 'Zether',
+    rpc: [ 'https://rpc.zether.org', 'https://rpc.zthscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zether', symbol: 'ZTH', decimals: 18 },
+    infoURL: 'https://zether.org',
+    shortName: 'zth',
+    chainId: 715131,
+    networkId: 715131,
+    icon: 'zether',
+    explorers: [
+      {
+        name: 'zthscan',
+        url: 'https://zthscan.com',
+        icon: 'zether',
+        standard: 'none'
       }
     ]
   },
