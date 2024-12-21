@@ -789,10 +789,10 @@ const chainArray = [
   {
     name: 'U2U Solaris Mainnet',
     chain: 'u2u',
-    rpc: [ 'https://rpc-mainnet.uniultra.xyz' ],
+    rpc: [ 'https://rpc-mainnet.u2u.xyz' ],
     faucets: [],
-    nativeCurrency: { name: 'Unicorn Ultra', symbol: 'U2U', decimals: 18 },
-    infoURL: 'https://uniultra.xyz',
+    nativeCurrency: { name: 'U2U Network', symbol: 'U2U', decimals: 18 },
+    infoURL: 'https://u2u.xyz',
     shortName: 'u2u',
     chainId: 39,
     networkId: 39,
@@ -6612,7 +6612,8 @@ const chainArray = [
         { url: 'https://bridge.form.network' },
         { url: 'https://op-bridge.form.network' }
       ]
-    }
+    },
+    status: 'active'
   },
   {
     name: 'World Chain',
@@ -6911,6 +6912,34 @@ const chainArray = [
       {
         name: 'FlowScan Testnet',
         url: 'https://evm-testnet.flowscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'River',
+    chain: 'river',
+    rpc: [
+      'https://mainnet.rpc.river.build',
+      'https://towns-mainnet.calderachain.xyz/http'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.river.build',
+    shortName: 'river',
+    chainId: 550,
+    networkId: 550,
+    icon: 'river',
+    explorers: [
+      {
+        name: 'River Explorer',
+        url: 'https://explorer.river.build',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'River Caldera Explorer',
+        url: 'https://towns-mainnet.calderaexplorer.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -12034,6 +12063,25 @@ const chainArray = [
       {
         name: 'Story Iliad Network explorer',
         url: 'https://testnet.storyscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Story',
+    chain: 'STORY',
+    rpc: [ 'https://mainnet.storyrpc.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'IP Token', symbol: 'IP', decimals: 18 },
+    infoURL: 'https://story.foundation/',
+    icon: 'story',
+    shortName: 'sty',
+    chainId: 1514,
+    networkId: 1514,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://mainnet.storyscan.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -17193,9 +17241,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'DOS Tesnet',
+    name: 'DOS Testnet',
     chain: 'DOS',
-    rpc: [ 'https://test.doschain.com' ],
+    rpc: [ 'https://test.doschain.com/' ],
     faucets: [],
     nativeCurrency: { name: 'DOS', symbol: 'DOS', decimals: 18 },
     infoURL: 'http://doschain.io/',
@@ -17246,6 +17294,29 @@ const chainArray = [
       {
         name: 'DYNO Explorer',
         url: 'https://testnet.dynoscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'PayNetwork Mainnet',
+    chain: 'paynetwork',
+    rpc: [
+      'https://rpc.paynetwork.io',
+      'https://paynetwork-main.calderachain.xyz/http'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'PayNetwork', symbol: 'Pay', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://paynetwork-main.hub.caldera.xyz',
+    shortName: 'paynetwork',
+    chainId: 3969,
+    networkId: 3969,
+    icon: 'paynetwork',
+    explorers: [
+      {
+        name: 'PayNetwork Mainnet Caldera Explorer',
+        url: 'https://paynetwork-main.calderaexplorer.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -21168,6 +21239,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Powerloom Mainnet',
+    chain: 'POWER',
+    rpc: [ 'https://rpc.powerloom.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Powerloom Token', symbol: 'POWER', decimals: 18 },
+    infoURL: 'https://powerloom.network',
+    shortName: 'power',
+    chainId: 7865,
+    networkId: 7865,
+    icon: 'power',
+    status: 'active',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.powerloom.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hazlor Testnet',
     chain: 'SCAS',
     rpc: [
@@ -24761,6 +24853,26 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Huddle01',
+    chain: 'huddle01',
+    rpc: [ 'https://huddle01.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://huddle01.com/',
+    shortName: 'huddle01',
+    chainId: 12323,
+    networkId: 12323,
+    icon: 'huddle01',
+    explorers: [
+      {
+        name: 'Huddle01 Caldera Explorer',
+        url: 'https://huddle01.calderaexplorer.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'L3X Protocol',
     chainId: 12324,
     shortName: 'l3x',
@@ -26558,6 +26670,24 @@ const chainArray = [
       {
         name: 'JONO11 Explorer',
         url: 'https://subnets-test.avax.network/jono11',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Fluent Developer Preview',
+    chain: 'Fluent',
+    rpc: [ 'https://rpc.dev.gblend.xyz' ],
+    faucets: [ 'https://faucet.dev.gblend.xyz' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://fluent.xyz',
+    shortName: 'fluent-dev-net',
+    chainId: 20993,
+    networkId: 20993,
+    explorers: [
+      {
+        name: 'Fluent Blockscout Explorer',
+        url: 'https://blockscout.dev.gblend.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -31924,6 +32054,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Geo Genesis',
+    chain: 'Geo Genesis',
+    rpc: [ 'https://rpc-geo-genesis-h0q2s21xx8.t.conduit.xyz/' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    infoURL: 'https://geobrowser.io',
+    nativeCurrency: { name: 'The Graph', symbol: 'GRT', decimals: 18 },
+    shortName: 'geo',
+    chainId: 80451,
+    networkId: 80451,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-42161' }
+  },
+  {
     name: 'Nordek Mainnet',
     chain: 'Nordek',
     icon: 'nordek',
@@ -32131,6 +32275,26 @@ const chainArray = [
       {
         name: 'SLN Testnet Explorer',
         url: 'https://explorer.test.smartlayer.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'VEMP Horizon',
+    chain: 'vemp-horizon',
+    rpc: [ 'https://vemp-horizon.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'VEMP', symbol: 'VEMP', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.vemp.xyz/',
+    shortName: 'vemp-horizon',
+    chainId: 82614,
+    networkId: 82614,
+    icon: 'vemp-horizon',
+    explorers: [
+      {
+        name: 'VEMP Horizon Caldera Explorer',
+        url: 'https://vemp-horizon.calderaexplorer.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -32666,6 +32830,26 @@ const chainArray = [
       {
         name: 'Nautscan',
         url: 'https://triton.nautscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Henez Chain Mainnet',
+    chain: 'henez',
+    rpc: [ 'https://henez.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.henez.fi/',
+    shortName: 'henez',
+    chainId: 91111,
+    networkId: 91111,
+    icon: 'henez',
+    explorers: [
+      {
+        name: 'Henez Chain Mainnet Caldera Explorer',
+        url: 'https://henez.calderaexplorer.xyz',
         standard: 'EIP3091'
       }
     ]
