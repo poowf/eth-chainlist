@@ -8025,6 +8025,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Rivalz',
+    chain: 'rivalz',
+    rpc: [ 'https://rivalz.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://rivalz.hub.caldera.xyz',
+    shortName: 'rivalz',
+    chainId: 753,
+    networkId: 753,
+    icon: 'rivalz',
+    explorers: [
+      {
+        name: 'Rivalz Caldera Explorer',
+        url: 'https://rivalz.calderaexplorer.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'QL1',
     chain: 'QOM',
     status: 'incubating',
@@ -15420,6 +15440,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Rufus',
+    chain: 'rufus',
+    rpc: [ 'https://rufus.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dogelon', symbol: 'ELON', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://rufus.hub.caldera.xyz',
+    shortName: 'rufus',
+    chainId: 2420,
+    networkId: 2420,
+    icon: 'rufus',
+    explorers: [
+      {
+        name: 'Rufus Caldera Explorer',
+        url: 'https://rufus.calderaexplorer.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'King Of Legends Mainnet',
     title: 'King Of Legends Mainnet',
     chain: 'KCC',
@@ -18140,7 +18180,7 @@ const chainArray = [
   {
     name: 'Hydra Chain',
     chain: 'HYDRA',
-    rpc: [],
+    rpc: [ 'https://rpc-mainnet.hydrachain.org' ],
     faucets: [],
     nativeCurrency: { name: 'Hydra', symbol: 'HYDRA', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -18149,8 +18189,14 @@ const chainArray = [
     chainId: 4488,
     networkId: 4488,
     icon: 'hydra',
-    explorers: [],
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'Hydra Chain Mainnet explorer',
+        url: 'https://skynet.hydrachain.org',
+        icon: 'hydra',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Emoney Network Testnet',
@@ -18441,6 +18487,34 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://gcscan.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'OEV Network',
+    chain: 'oev-network',
+    rpc: [
+      'https://oev.rpc.api3.org',
+      'https://oev-network.calderachain.xyz/http'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://api3.org/oev/',
+    shortName: 'oev-network',
+    chainId: 4913,
+    networkId: 4913,
+    icon: 'oev-network',
+    explorers: [
+      {
+        name: 'OEV Network Explorer',
+        url: 'https://oev.explorer.api3.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'OEV Network Caldera Explorer',
+        url: 'https://oev-network.calderaexplorer.xyz',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -25381,6 +25455,26 @@ const chainArray = [
       }
     ],
     icon: 'bth'
+  },
+  {
+    name: 'Bitlazer',
+    chain: 'bitlazer',
+    rpc: [ 'https://bitlazer.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'lzrBTC', symbol: 'lzrBTC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://bitlazer.hub.caldera.xyz',
+    shortName: 'bitlazer',
+    chainId: 14235,
+    networkId: 14235,
+    icon: 'bitlazer',
+    explorers: [
+      {
+        name: 'Bitlazer Caldera Explorer',
+        url: 'https://bitlazer.calderaexplorer.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'EVOLVE Testnet',
