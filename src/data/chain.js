@@ -23890,6 +23890,7 @@ const chainArray = [
     shortName: 'joct',
     chainId: 10081,
     networkId: 10081,
+    icon: 'joct',
     slip44: 1,
     explorers: [
       {
