@@ -3050,7 +3050,11 @@ const chainArray = [
   {
     name: 'Sonic Mainnet',
     chain: 'sonic',
-    rpc: [ 'https://rpc.soniclabs.com' ],
+    rpc: [
+      'https://rpc.soniclabs.com',
+      'https://sonic-rpc.publicnode.com',
+      'wss://sonic-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Sonic', symbol: 'S', decimals: 18 },
     features: [ { name: 'EIP155' } ],
@@ -4669,7 +4673,11 @@ const chainArray = [
   {
     name: 'Fraxtal',
     chain: 'FRAX',
-    rpc: [ 'https://rpc.frax.com' ],
+    rpc: [
+      'https://rpc.frax.com',
+      'https://fraxtal-rpc.publicnode.com',
+      'wss://fraxtal-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
     infoURL: 'https://mainnet.frax.com',
@@ -7315,6 +7323,29 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Skynet',
+    chain: 'Skynet',
+    rpc: [ 'http://rpc.skynet.io' ],
+    nativeCurrency: { name: 'SkyUSD', symbol: 'sUSD', decimals: 18 },
+    infoURL: 'http://explorer.skynet.io',
+    shortName: 'Skynet',
+    chainId: 619,
+    networkId: 619,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'http://explorer.skynet.io',
+        standard: 'none'
+      }
+    ],
+    faucets: [],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [ { url: 'http://bridge.skynet.io' } ]
+    }
   },
   {
     name: 'Binary Mainnet',
@@ -10013,7 +10044,9 @@ const chainArray = [
     rpc: [
       'https://andromeda.metis.io/?owner=1088',
       'https://metis.drpc.org',
-      'wss://metis.drpc.org'
+      'wss://metis.drpc.org',
+      'https://metis-rpc.publicnode.com',
+      'wss://metis-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'Metis', symbol: 'METIS', decimals: 18 },
@@ -11368,7 +11401,11 @@ const chainArray = [
   {
     name: 'Unichain Sepolia Testnet',
     chain: 'ETH',
-    rpc: [ 'https://sepolia.unichain.org' ],
+    rpc: [
+      'https://sepolia.unichain.org',
+      'https://unichain-sepolia-rpc.publicnode.com',
+      'wss://unichain-sepolia-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://unichain.org',
@@ -15652,7 +15689,11 @@ const chainArray = [
   {
     name: 'Fraxtal Testnet',
     chain: 'FRAX',
-    rpc: [ 'https://rpc.testnet.frax.com' ],
+    rpc: [
+      'https://rpc.testnet.frax.com',
+      'https://fraxtal-holesky-rpc.publicnode.com',
+      'wss://fraxtal-holesky-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
     infoURL: 'https://testnet.frax.com',
@@ -21101,6 +21142,24 @@ const chainArray = [
         name: 'phronscan',
         url: 'https://testnet.phronscan.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'PandaSea Testnet',
+    chain: 'PandaSea Testnet',
+    rpc: [ 'https://rpc.testnet.pandasea.io' ],
+    faucets: [ 'https://faucet.pandasea.io' ],
+    nativeCurrency: { name: 'PandaSea Coin', symbol: 'PANDA', decimals: 18 },
+    infoURL: 'https://test.pandaseascan.com',
+    shortName: 'Pandasea-Testnet',
+    chainId: 7770,
+    networkId: 7770,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://test.pandaseascan.com',
+        standard: 'none'
       }
     ]
   },
@@ -27409,6 +27468,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ferrum Quantum Portal Network',
+    chain: 'QPN',
+    icon: 'ferrum',
+    rpc: [ 'https://qpn.svcs.ferrumnetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ferrum', symbol: 'qpFRM', decimals: 18 },
+    infoURL: 'https://ferrum.network',
+    shortName: 'qpn',
+    chainId: 26100,
+    networkId: 26100,
+    explorers: [
+      {
+        name: 'ferrumscout',
+        url: 'https://explorer.ferrumnetwork.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'DucatusX Testnet',
     chain: 'DUCX',
     rpc: [
@@ -30315,7 +30393,11 @@ const chainArray = [
   {
     name: 'Sonic Blaze Testnet',
     chain: 'blaze-testnet',
-    rpc: [ 'https://rpc.blaze.soniclabs.com' ],
+    rpc: [
+      'https://rpc.blaze.soniclabs.com',
+      'https://sonic-blaze-rpc.publicnode.com',
+      'wss://sonic-blaze-rpc.publicnode.com'
+    ],
     faucets: [ 'https://blaze.soniclabs.com/account' ],
     nativeCurrency: { name: 'Sonic', symbol: 'S', decimals: 18 },
     features: [ { name: 'EIP155' } ],
@@ -30323,15 +30405,7 @@ const chainArray = [
     shortName: 'blaze',
     chainId: 57054,
     networkId: 57054,
-    icon: 'sonic',
-    explorers: [
-      {
-        name: 'sonic blaze testnet',
-        url: 'https://explorer.blaze.soniclabs.com',
-        icon: 'sonic',
-        standard: 'none'
-      }
-    ]
+    icon: 'sonic'
   },
   {
     name: 'Ink',
@@ -30563,7 +30637,11 @@ const chainArray = [
   {
     name: 'Metis Sepolia Testnet',
     chain: 'ETH',
-    rpc: [ 'https://sepolia.metisdevops.link' ],
+    rpc: [
+      'https://sepolia.metisdevops.link',
+      'https://metis-sepolia-rpc.publicnode.com',
+      'wss://metis-sepolia-rpc.publicnode.com'
+    ],
     faucets: [ 'https://sepolia.faucet.metisdevops.link' ],
     nativeCurrency: { name: 'tMetis', symbol: 'tMETIS', decimals: 18 },
     infoURL: 'https://www.metis.io',
@@ -31828,6 +31906,24 @@ const chainArray = [
         name: 'ventionscan',
         url: 'https://ventionscan.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Carrchain Testnet',
+    chain: 'Carrchain Testnet',
+    rpc: [ 'https://rpc-testnetcarrchain.artiffine.com' ],
+    faucets: [ 'https://faucet-testnetcarrchain.artiffine.com' ],
+    nativeCurrency: { name: 'Carrchain Coin', symbol: 'CARR', decimals: 18 },
+    infoURL: 'https://explorer-testnetcarrchain.artiffine.com',
+    shortName: 'Carrchain-Testnet',
+    chainId: 77652,
+    networkId: 77652,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://explorer-testnetcarrchain.artiffine.com',
+        standard: 'none'
       }
     ]
   },
