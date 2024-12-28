@@ -4045,6 +4045,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'WowChain Mainnet',
+    title: 'WowChain Mainnet',
+    chain: 'WowChain',
+    rpc: [ 'https://rpc.wowchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dogecoin', symbol: 'DOGE', decimals: 18 },
+    infoURL: 'https://wowchain.io',
+    shortName: 'wow',
+    chainId: 203,
+    networkId: 203,
+    icon: 'wowchain',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.wowchain.io',
+        icon: 'wowchain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'opBNB Mainnet',
     icon: 'bnbchain',
     chain: 'opBNB',
@@ -15122,6 +15143,29 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'CratD2C',
+    chain: 'CRATD2C',
+    rpc: [
+      'https://node1.cratd2csmartchain.io',
+      'https://node2.cratd2csmartchain.io',
+      'https://node3.cratd2csmartchain.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'CRATD2C', symbol: 'CRAT', decimals: 18 },
+    infoURL: 'https://cratd2csmartchain.io',
+    shortName: 'cratd2c',
+    chainId: 2310,
+    networkId: 2310,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.cratd2csmartchain.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Chronicle Vesuvius - Lit Protocol Testnet',
     chain: 'LPV',
     icon: 'lit',
@@ -16750,6 +16794,52 @@ const chainArray = [
     networkId: 3339,
     slip44: 1,
     status: 'incubating'
+  },
+  {
+    name: 'Meroneum',
+    chain: 'MERON',
+    icon: 'meron',
+    rpc: [
+      'https://mainnet-node1.meronscan.ai/',
+      'https://mainnet-node2.meronscan.ai/',
+      'https://mainnet-node3.meronscan.ai/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'MERON', symbol: 'MERON', decimals: 18 },
+    infoURL: 'https://www.meroneum.ai',
+    shortName: 'meron-testnet',
+    chainId: 3366,
+    networkId: 3366,
+    explorers: [
+      {
+        name: 'meronscan',
+        url: 'https://meronscan.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Meroneum Testnet',
+    chain: 'MERON',
+    icon: 'meron',
+    rpc: [
+      'https://testnet-node1.meronscan.ai/',
+      'https://testnet-node2.meronscan.ai/',
+      'https://testnet-node3.meronscan.ai/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'MERON', symbol: 'MERON', decimals: 18 },
+    infoURL: 'https://www.meroneum.ai/',
+    shortName: 'meron',
+    chainId: 3369,
+    networkId: 3369,
+    explorers: [
+      {
+        name: 'meronscan',
+        url: 'https://testnet.meronscan.ai',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Paribu Net Mainnet',
@@ -28846,6 +28936,31 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'PMON Chain',
+    chain: '42001',
+    rpc: [ 'https://rpc.pmon.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'PMON Token', symbol: 'PMON', decimals: 18 },
+    infoURL: 'https://protocolmonsterlabs.com/pmon-chain',
+    shortName: 'pmon',
+    chainId: 42001,
+    networkId: 42001,
+    icon: 'pmon',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.pmon.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [ { url: 'https://bridge.arbitrum.io' } ]
+    }
   },
   {
     name: 'pegglecoin',
