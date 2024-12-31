@@ -9155,9 +9155,9 @@ const chainArray = [
   {
     name: 'Subtensor EVM Testnet',
     chain: 'Bittensor',
-    rpc: [ 'https://evm-testnet.dev.opentensor.ai' ],
+    rpc: [ 'https://test.chain.opentensor.ai' ],
     faucets: [],
-    nativeCurrency: { name: 'testTAO', symbol: 'TAO', decimals: 9 },
+    nativeCurrency: { name: 'testTAO', symbol: 'TAO', decimals: 18 },
     infoURL: 'https://bittensor.com/',
     shortName: 'bittensor-evm-testnet',
     chainId: 945,
@@ -9225,6 +9225,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Subtensor EVM',
+    chain: 'Bittensor',
+    rpc: [ 'https://lite.chain.opentensor.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'TAO', symbol: 'TAO', decimals: 18 },
+    infoURL: 'https://bittensor.com/',
+    shortName: 'bittensor-evm-mainnet',
+    chainId: 964,
+    networkId: 964,
+    slip44: 1005,
+    icon: 'bittensor'
   },
   {
     name: 'EthXY',
