@@ -5595,6 +5595,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'WEMblockchain MainNet',
+    chain: 'WEM',
+    rpc: [ 'http://rpc.wemblockchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'WEM Coin', symbol: 'WEM', decimals: 18 },
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'Smart Contracts' },
+      { name: 'Custom Gas Model' },
+      { name: 'Low-Latency Transactions' }
+    ],
+    infoURL: 'https://worldecomoney.com',
+    shortName: 'wem',
+    chainId: 315,
+    networkId: 315,
+    explorers: [
+      {
+        name: 'wemscan',
+        url: 'https://wemscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'KCC Mainnet',
     chain: 'KCC',
     rpc: [
@@ -10423,6 +10448,26 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-1113' }
+  },
+  {
+    name: 'Taker Chain Mainnet',
+    chain: 'Taker',
+    icon: 'taker',
+    rpc: [ 'https://rpc-mainnet.taker.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Taker', symbol: 'TAKER', decimals: 18 },
+    infoURL: 'https://www.taker.xyz',
+    shortName: 'taker',
+    chainId: 1125,
+    networkId: 1125,
+    explorers: [
+      {
+        name: 'TakerScan',
+        url: 'https://explorer.taker.xyz',
+        icon: 'taker',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'DeFiChain EVM Network Mainnet',
@@ -20871,6 +20916,19 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1', bridges: [ { url: '' } ] }
   },
   {
+    name: 'Nexera Mainnet',
+    chain: 'Nexera',
+    icon: 'nexera',
+    chainId: 7208,
+    networkId: 7208,
+    infoURL: 'https://nexera.network',
+    shortName: 'nxra-mainnet',
+    rpc: [ 'https://rpc.nexera.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'NXRA', symbol: 'NXRA', decimals: 18 },
+    explorers: []
+  },
+  {
     name: 'Nibiru Testnet-1',
     chain: 'Nibiru',
     rpc: [ 'https://evm-rpc.testnet-1.nibiru.fi' ],
@@ -27678,6 +27736,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Newton Finance Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://jp-rpc-testnet-newfi.newpay.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Newton', symbol: 'NEW', decimals: 18 },
+    infoURL: 'https://newtonproject.org',
+    shortName: 'tNewFi',
+    chainId: 26988,
+    networkId: 26988,
+    explorers: [
+      {
+        name: 'NewFi explorer',
+        url: 'https://explorer-testnet-newfi.newpay.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'KLAOS Nova',
     title: 'KLAOS Nova Test Chain',
     chain: 'KLAOS Nova',
@@ -31780,6 +31856,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Nexera Testnet',
+    chain: 'Nexera',
+    icon: 'nexera',
+    chainId: 72080,
+    networkId: 72080,
+    infoURL: 'https://testnet.nexera.network',
+    shortName: 'nxra-testnet',
+    rpc: [ 'https://rpc.testnet.nexera.network' ],
+    faucets: [ 'https://faucet.nexera.network' ],
+    nativeCurrency: { name: 'tNXRA', symbol: 'tNXRA', decimals: 18 },
+    explorers: []
   },
   {
     name: 'CAGA crypto Ankara testnet',
@@ -36759,6 +36848,26 @@ const chainArray = [
         icon: 'aie',
         url: 'https://testnet.aiescan.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Vector Smart Chain',
+    chain: 'VSC',
+    icon: 'vectorsmartgas',
+    rpc: [ 'https://rpc.vscblockchain.org' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Vector Smart Gas', symbol: 'VSG', decimals: 18 },
+    infoURL: 'https://vsgofficial.com',
+    shortName: 'vsg',
+    chainId: 420042,
+    networkId: 420042,
+    explorers: [
+      {
+        name: 'vscexplorer',
+        url: 'https://explorer.vscblockchain.org',
+        standard: 'EIP3091'
       }
     ]
   },
