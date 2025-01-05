@@ -4256,6 +4256,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Happychain Testnet',
+    chainId: 216,
+    networkId: 216,
+    chain: 'Happychain Testnet',
+    rpc: [ 'https://happy-testnet-sepolia.rpc.caldera.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Happy', symbol: 'HAPPY', decimals: 18 },
+    shortName: 'happytestnet',
+    infoURL: 'https://happy-testnet-sepolia.hub.caldera.xyz',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://happy-testnet-sepolia.explorer.caldera.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SiriusNet V2',
     chain: 'SIN2',
     faucets: [],
@@ -36293,7 +36311,7 @@ const chainArray = [
     chain: 'Sahara',
     rpc: [ 'https://testnet.saharalabs.ai' ],
     faucets: [],
-    nativeCurrency: { name: 'SAHARA', symbol: 'SAH', decimals: 18 },
+    nativeCurrency: { name: 'Sahara AI', symbol: 'SAHARA', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://saharalabs.ai',
     shortName: 'saharatest',
@@ -36303,7 +36321,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Testnet Scan',
-        url: 'https://explorer.saharaa.info',
+        url: 'https://testnet-explorer.saharalabs.ai',
         standard: 'EIP3091'
       }
     ]
@@ -37257,20 +37275,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'Autonomys Testnet Nova Domain',
-    chain: 'TATC',
-    rpc: [ 'https://nova-0.gemini-3h.subspace.network/ws' ],
+    name: 'Autonomys Taurus Testnet',
+    chain: 'autonomys-taurus-testnet',
+    rpc: [ 'https://auto-evm.taurus.autonomys.xyz/ws' ],
+    icon: 'autonomys',
     faucets: [],
-    nativeCurrency: { name: 'Test Auto Coin', symbol: 'TATC', decimals: 18 },
+    nativeCurrency: { name: 'AI3', symbol: 'AI3', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://www.autonomys.net',
+    infoURL: 'https://www.autonomys.xyz',
     shortName: 'ATN',
     chainId: 490000,
     networkId: 490000,
     explorers: [
       {
-        name: 'astral',
-        url: 'https://nova.subspace.network',
+        name: 'Autonomys Taurus Testnet Explorer',
+        url: 'https://blockscout.taurus.autonomys.xyz',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -39390,11 +39409,11 @@ const chainArray = [
     ]
   },
   {
-    name: 'SaharaAI Network',
+    name: 'Sahara AI',
     chain: 'Sahara',
     rpc: [ 'https://mainnet.saharalabs.ai' ],
     faucets: [],
-    nativeCurrency: { name: 'SAHARA', symbol: 'SAH', decimals: 18 },
+    nativeCurrency: { name: 'Sahara AI', symbol: 'SAHARA', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://saharalabs.ai',
     shortName: 'sahara',
