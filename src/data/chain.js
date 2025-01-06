@@ -4472,8 +4472,8 @@ const chainArray = [
     name: 'Mind Network Mainnet',
     chain: 'FHE',
     rpc: [
-      'https://rpc_mainnet.mindnetwork.xyz',
-      'wss://rpc_mainnet.mindnetwork.xyz'
+      'https://rpc-mainnet.mindnetwork.xyz',
+      'wss://rpc-mainnet.mindnetwork.xyz'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
