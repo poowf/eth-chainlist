@@ -16512,6 +16512,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'BC Hyper Chain Mainnet',
+    chain: 'BC Hyper Chain',
+    rpc: [ 'https://mainapi.bchscan.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'VERSATIZE COIN', symbol: 'VTCN', decimals: 18 },
+    infoURL: 'https://www.versatizecoin.com/',
+    shortName: 'BCHYPER',
+    chainId: 3030,
+    networkId: 3030,
+    icon: 'bchyper',
+    explorers: [
+      {
+        name: 'bcexplorer mainnet',
+        url: 'https://mainnet.bchscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Orlando Chain',
     chain: 'ORL',
     rpc: [ 'https://rpc-testnet.orlchain.com' ],
@@ -24723,8 +24743,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Abstract Testnet',
-    chain: 'Abstract Testnet',
+    name: 'Abstract Sepolia Testnet',
+    chain: 'Abstract Sepolia Testnet',
     rpc: [ 'https://api.testnet.abs.xyz' ],
     faucets: [ 'https://faucet.triangleplatform.com/abstract/testnet' ],
     chainId: 11124,
@@ -24739,9 +24759,9 @@ const chainArray = [
     },
     explorers: [
       {
-        name: 'Abstract Block Explorer',
-        url: 'https://explorer.testnet.abs.xyz',
-        standard: 'none'
+        name: 'Abstract Sepolia Testnet Explorer',
+        url: 'https://sepolia.abscan.org',
+        standard: 'EIP3091'
       }
     ]
   },
