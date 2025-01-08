@@ -320,7 +320,7 @@ const chainArray = [
       'https://rpc.ankr.com/flare',
       'https://01-gravelines-003-01.rpc.tatum.io/ext/bc/C/rpc',
       'https://01-vinthill-003-02.rpc.tatum.io/ext/bc/C/rpc',
-      'https://rpc.ftso.au/flare',
+      'https://rpc.au.cc/flare',
       'https://flare.enosys.global/ext/C/rpc',
       'https://flare.solidifi.app/ext/C/rpc'
     ],
@@ -435,7 +435,7 @@ const chainArray = [
       'https://01-gravelines-006-01.rpc.tatum.io/ext/bc/C/rpc',
       'https://01-vinthill-006-02.rpc.tatum.io/ext/bc/C/rpc',
       'https://02-tokyo-006-03.rpc.tatum.io/ext/bc/C/rpc',
-      'https://rpc.ftso.au/songbird',
+      'https://rpc.au.cc/songbird',
       'https://songbird.enosys.global/ext/C/rpc',
       'https://songbird.solidifi.app/ext/C/rpc'
     ],
@@ -6881,14 +6881,17 @@ const chainArray = [
   {
     name: 'Firechain Mainnet',
     chain: 'FIRE',
-    icon: 'firechain',
-    rpc: [ 'https://rpc-mainnet.thefirechain.com' ],
+    rpc: [
+      'https://rpc-mainnet.thefirechain.com',
+      'https://rpc-mainnet.firestation.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
     infoURL: 'https://thefirechain.com',
     shortName: 'fire',
     chainId: 529,
     networkId: 529,
+    icon: 'firechain',
     explorers: [],
     status: 'incubating'
   },
@@ -7443,6 +7446,24 @@ const chainArray = [
       {
         name: 'Tracehawk',
         url: 'https://explorer.sepolia.thebinaryholdings.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'NFB Chain',
+    chain: 'NFB Chain',
+    rpc: [ 'https://node.nfbchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'NFBCoin', symbol: 'NFBC', decimals: 18 },
+    infoURL: 'https://nfbchain.com/',
+    shortName: 'nfbchain',
+    chainId: 632,
+    networkId: 632,
+    explorers: [
+      {
+        name: 'NFB Chain Explorer',
+        url: 'https://scan.nfbchain.com',
         standard: 'none'
       }
     ]
@@ -8438,14 +8459,17 @@ const chainArray = [
     name: 'Firechain zkEVM',
     title: 'Firechain zkEVM',
     chain: 'Firechain',
-    rpc: [ 'https://rpc-zkevm.thefirechain.com' ],
+    rpc: [
+      'https://rpc-zkevm.thefirechain.com',
+      'https://rpc-zkevm.firestation.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://docs.thefirechain.com/',
     shortName: 'firechan-zkEVM',
     chainId: 814,
     networkId: 814,
-    icon: 'firechain',
+    icon: 'ethereum',
     explorers: [],
     parent: {
       type: 'L2',
@@ -8995,16 +9019,23 @@ const chainArray = [
     ]
   },
   {
-    name: 'Rinia Testnet',
+    name: 'Rinia',
+    title: 'Firechain Testnet Rinia',
     chain: 'FIRE',
-    icon: 'rinia',
-    rpc: [ 'https://rinia-rpc1.thefirechain.com' ],
-    faucets: [ 'https://faucet.thefirechain.com' ],
+    rpc: [
+      'https://rinia-rpc1.thefirechain.com',
+      'https://rpc-rinia.firestation.io'
+    ],
+    faucets: [
+      'https://faucet.thefirechain.com',
+      'https://faucet.firestation.io'
+    ],
     nativeCurrency: { name: 'Firechain', symbol: 'FIRE', decimals: 18 },
     infoURL: 'https://thefirechain.com',
     shortName: 'tfire',
     chainId: 917,
     networkId: 917,
+    icon: 'rinia',
     slip44: 1,
     explorers: [
       {
@@ -17437,14 +17468,27 @@ const chainArray = [
     name: 'Firechain zkEVM Ghostrider',
     title: 'Firechain zkEVM Testnet',
     chain: 'Firechain',
-    rpc: [ 'https://rpc-zkevm-ghostrider.thefirechain.com' ],
-    faucets: [ 'zkevm-faucet.thefirechain.com' ],
+    rpc: [
+      'https://rpc-zkevm-ghostrider.thefirechain.com',
+      'https://rpc-zkevm-ghostrider.firestation.io'
+    ],
+    faucets: [
+      'zkevm-faucet.thefirechain.com',
+      'https://zkevm-faucet.firestation.io'
+    ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://docs.thefirechain.com/',
     shortName: 'firechain-zkEVM-testnet',
     chainId: 3885,
     networkId: 3885,
-    explorers: []
+    icon: 'ethereum',
+    explorers: [
+      {
+        name: 'FireScan',
+        url: 'https://ghostrider-zkevm.firescan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'KalyChain Mainnet',
@@ -19521,6 +19565,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Saga',
+    chain: 'SAGA',
+    rpc: [ 'http://sagaevm-5464-1.jsonrpc.sagarpc.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'gas', symbol: 'GAS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.saga.xyz',
+    shortName: 'saga',
+    chainId: 5464,
+    networkId: 5464,
+    icon: 'saga',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://sagaevm-5464-1.sagaexplorer.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PointPay Mainnet',
     chain: 'pointpay',
     rpc: [ 'https://rpc-mainnet.pointpay.io' ],
@@ -20148,6 +20213,24 @@ const chainArray = [
         url: 'https://blockscout.laos.laosfoundation.io',
         icon: 'blockscout',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'NFB Chain Testnet',
+    chain: 'NFB Chain Testnet',
+    rpc: [ 'https://testnet-node.nfbchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'NFBCoinTest', symbol: 'NFBCT', decimals: 18 },
+    infoURL: 'https://nfbchain.com/',
+    shortName: 'nfbchaintest',
+    chainId: 6320,
+    networkId: 6320,
+    explorers: [
+      {
+        name: 'NFB Chain Testnet Explorer',
+        url: 'https://testnet-scan.nfbchain.com',
+        standard: 'none'
       }
     ]
   },
@@ -36890,6 +36973,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Infinaeon',
+    chain: 'Infinaeon',
+    rpc: [ 'https://rpc.infinaeon.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+    infoURL: 'hhttps://rpc.infinaeon.com',
+    shortName: 'Infinaeon',
+    chainId: 420000,
+    networkId: 420000,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://explorer.infinaeon.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Vector Smart Chain',
     chain: 'VSC',
     icon: 'vectorsmartgas',
@@ -37598,7 +37699,7 @@ const chainArray = [
     rpc: [ 'https://rpc-testnet.pentagon.games' ],
     faucets: [ 'https://bridge-testnet.pentagon.games' ],
     nativeCurrency: { name: 'Pentagon', symbol: 'PEN', decimals: 18 },
-    icon: 'pentagon',
+    icon: 'pentagon-testnet',
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://pentagon.games',
     shortName: 'pentagon-testnet',
@@ -38084,6 +38185,24 @@ const chainArray = [
       {
         name: 'Tracehawk',
         url: 'https://explorer.zkevm.ternoa.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Ternoa',
+    chain: 'Ternoa',
+    rpc: [ 'https://rpc-mainnet.zkevm.ternoa.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Capsule Coin', symbol: 'CAPS', decimals: 18 },
+    infoURL: '',
+    shortName: 'ternoa-mainnet',
+    chainId: 752025,
+    networkId: 7502025,
+    explorers: [
+      {
+        name: 'Tracehawk',
+        url: 'https://explorer-mainnet.zkevm.ternoa.network',
         standard: 'none'
       }
     ]
