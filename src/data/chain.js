@@ -6727,6 +6727,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Standard Mainnet',
+    chain: 'STND',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Standard', symbol: 'STND', decimals: 18 },
+    infoURL: 'https://standardweb3.com',
+    shortName: 'stnd',
+    chainId: 486,
+    networkId: 486,
+    status: 'incubating'
+  },
+  {
     name: 'Rupaya',
     chain: 'RUPX',
     rpc: [ 'https://rpc.rupaya.io' ],
@@ -7693,6 +7705,37 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Janction',
+    chain: 'Janction',
+    rpc: [ 'https://rpc.janction.io', 'wss://rpc.janction.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Janction', symbol: 'JCT', decimals: 18 },
+    infoURL: 'https://janction.io',
+    shortName: 'janction',
+    chainId: 678,
+    networkId: 678,
+    icon: 'janction',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+  },
+  {
+    name: 'Janction Testnet',
+    chain: 'Janction Testnet',
+    rpc: [
+      'https://rpc_testnet.janction.io',
+      'wss://rpc_testnet.janction.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Janction', symbol: 'JCT', decimals: 18 },
+    infoURL: 'https://janction.io',
+    shortName: 'janction_testnet',
+    chainId: 679,
+    networkId: 679,
+    icon: 'janction',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
   },
   {
     name: 'Karura Network',
@@ -13478,9 +13521,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'Minato',
-    shortName: 'minato',
-    title: 'Soneium testnet Minato',
+    name: 'Soneium Testnet Minato',
+    shortName: 'soneium-minato',
+    title: 'Soneium Testnet Minato',
     chain: 'ETH',
     icon: 'minato',
     rpc: [ 'https://rpc.minato.soneium.org' ],
@@ -13492,7 +13535,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Blockscout Minato explorer',
-        url: 'https://explorer-testnet.soneium.org',
+        url: 'https://soneium-minato.blockscout.com',
         standard: 'EIP3091'
       }
     ],
@@ -15668,6 +15711,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Standard Testnet',
+    chain: 'STND Testnet',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Standard', symbol: 'STND', decimals: 18 },
+    infoURL: 'https://standardweb3.com',
+    shortName: 'stndtestnet',
+    chainId: 2426,
+    networkId: 2426,
+    status: 'incubating'
   },
   {
     name: 'Polygon zkEVM Cardona Testnet',
@@ -20939,6 +20994,19 @@ const chainArray = [
     shortName: 'planq-atlas-testnet',
     chainId: 7077,
     networkId: 7077,
+    explorers: []
+  },
+  {
+    name: 'Bharat Blockchain Network',
+    chain: 'BBNT',
+    rpc: [ 'https://bbnrpc.testnet.bharatblockchain.io' ],
+    faucets: [ 'https://www.bon.bharatblockchain.io/faucet' ],
+    nativeCurrency: { name: 'BBNT', symbol: 'BBN', decimals: 18 },
+    features: [],
+    infoURL: 'https://bharatblockchain.io/',
+    shortName: 'bbnt',
+    chainId: 7099,
+    networkId: 7099,
     explorers: []
   },
   {
