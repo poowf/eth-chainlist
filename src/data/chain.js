@@ -15696,6 +15696,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'inEVM Testnet',
+    chain: 'inEVM testnet',
+    icon: 'inevm',
+    rpc: [ 'https://testnet.rpc.inevm.com/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Injective', symbol: 'INJ', decimals: 18 },
+    infoURL: 'https://inevm.com',
+    shortName: 'inevm-testnet',
+    chainId: 2424,
+    networkId: 2424,
+    explorers: [],
+    status: 'active'
+  },
+  {
     name: 'King Of Legends Mainnet',
     title: 'King Of Legends Mainnet',
     chain: 'KCC',
@@ -24105,7 +24119,7 @@ const chainArray = [
     name: 'Agung Network',
     chain: 'Agung',
     icon: 'agung',
-    rpc: [ 'https://rpcpc1-qa.agung.peaq.network' ],
+    rpc: [ 'https:///wss-async.agung.peaq.network' ],
     faucets: [],
     nativeCurrency: { name: 'Agung', symbol: 'AGNG', decimals: 18 },
     infoURL: 'https://www.peaq.network',
@@ -24115,12 +24129,12 @@ const chainArray = [
     explorers: [
       {
         name: 'Polkadot.js',
-        url: 'https://polkadot.js.org/apps/?rpc=wss://wsspc1-qa.agung.peaq.network#/explorer',
+        url: 'https://polkadot.js.org/apps/?rpc=wss:///wss-async.agung.peaq.network#/explorer',
         standard: 'none'
       },
       {
         name: 'Subscan',
-        url: 'https://agung.subscan.io',
+        url: 'https://agung-testnet.subscan.io',
         standard: 'none'
       }
     ]
@@ -25342,7 +25356,7 @@ const chainArray = [
     slip44: 1
   },
   {
-    name: 'Huddle01',
+    name: 'Huddle01 dRTC Chain',
     chain: 'huddle01',
     rpc: [ 'https://huddle01.calderachain.xyz/http' ],
     faucets: [],
@@ -35028,6 +35042,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Openledger Testnet',
+    chain: 'Openledger Testnet',
+    rpc: [ 'https://rpctn.openledger.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Openledger', symbol: 'OPN', decimals: 18 },
+    infoURL: 'https://www.openledger.xyz',
+    shortName: 'openledgertest',
+    chainId: 161201,
+    networkId: 161201,
+    icon: 'openledger',
+    explorers: [
+      {
+        name: 'Openledger Testnet Explorer',
+        url: 'https://scantn.openledger.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PlayFi Mainnet',
     chain: 'PLAY',
     rpc: [],
@@ -35299,6 +35332,26 @@ const chainArray = [
       {
         name: 'Lit Chronicle Yellowstone Explorer',
         url: 'https://yellowstone-explorer.litprotocol.com',
+        icon: 'lit',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Chronicle Loa - Lit Protocol Testnet',
+    chain: 'LPL',
+    icon: 'lit',
+    rpc: [ 'https://loa-rpc.litprotocol.com' ],
+    faucets: [ 'https://developer.litprotocol.com/support/intro' ],
+    nativeCurrency: { name: 'Test Lit', symbol: 'tLit', decimals: 18 },
+    infoURL: 'https://litprotocol.com',
+    shortName: 'lpl',
+    chainId: 175190,
+    networkId: 175190,
+    explorers: [
+      {
+        name: 'Lit Chronicle Loa Explorer',
+        url: 'https://loa-explorer.litprotocol.com',
         icon: 'lit',
         standard: 'EIP3091'
       }
