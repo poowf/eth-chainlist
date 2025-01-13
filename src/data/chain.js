@@ -21104,6 +21104,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'UXLINK One Testnet',
+    chain: 'UXLINK One',
+    rpc: [ 'https://rpc-sepolia.uxlinkone.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'UXLINK', symbol: 'UXLINK', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.uxlinkone.io',
+    shortName: 'uxlink1-sep',
+    chainId: 7181,
+    networkId: 7181,
+    icon: 'uxlinkone',
+    explorers: [
+      {
+        name: 'UXLINK One Sepolia Explorer',
+        url: 'https://sepolia.uxlinkone.com',
+        icon: 'uxlinkone',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'exSat Mainnet',
     chain: 'exSat',
     icon: 'exsat',
@@ -25119,6 +25140,25 @@ const chainArray = [
       {
         name: 'Sardis',
         url: 'https://testnet.sardisnetwork.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Artela Mainnet',
+    chain: 'Artela',
+    rpc: [ 'https://node-euro.artela.network/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'ART', symbol: 'ART', decimals: 18 },
+    infoURL: 'https://artela.network/',
+    shortName: 'artela-mainnet',
+    chainId: 11820,
+    networkId: 11820,
+    icon: 'artela',
+    explorers: [
+      {
+        name: 'ArtelaScan',
+        url: 'https://artscan.artela.network',
         standard: 'EIP3091'
       }
     ]
