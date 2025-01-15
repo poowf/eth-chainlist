@@ -3576,10 +3576,16 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'HashKey EcoPoints', symbol: 'HSK', decimals: 18 },
     infoURL: 'https://hsk.xyz',
-    shortName: 'HSK',
+    shortName: 'hsk',
     chainId: 177,
     networkId: 177,
     explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://hashkey.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      },
       {
         name: 'blockscout',
         url: 'https://explorer.hsk.xyz',
@@ -4861,7 +4867,7 @@ const chainArray = [
     name: 'Guru Network',
     chain: 'GURU',
     icon: 'GuruNetwork',
-    rpc: [ 'https://rpc.gurunetwork.ai/archive/260' ],
+    rpc: [ 'https://rpc-main.gurunetwork.ai' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Guru', symbol: 'GURU', decimals: 18 },
@@ -4881,7 +4887,7 @@ const chainArray = [
     name: 'Guru Network Testnet',
     chain: 'tGURU',
     icon: 'GuruNetwork',
-    rpc: [ 'https://rpc.gurunetwork.ai/archive/261' ],
+    rpc: [ 'https://rpc-test.gurunetwork.ai' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://v2.dex.guru/season-pass/faucet' ],
     nativeCurrency: { name: 'testGURU', symbol: 'tGURU', decimals: 18 },
@@ -13169,15 +13175,36 @@ const chainArray = [
     title: 'Soneium mainnet',
     chain: 'ETH',
     icon: 'soneium',
-    rpc: [],
+    rpc: [ 'https://rpc.soneium.org' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://soneium.org',
     chainId: 1868,
     networkId: 1868,
-    status: 'incubating',
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+    status: 'active',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://soneium.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'OKLink',
+        url: 'https://www.okx.com/web3/explorer/soneium',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'SlamVision',
+        url: 'https://soneium.slam.vision',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://superbridge.app/soneium' } ]
+    }
   },
   {
     name: 'Whitechain',
@@ -22489,6 +22516,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'XProtocol',
+    chain: 'XPROTOCOL',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Kick', symbol: 'KICK', decimals: 18 },
+    shortName: 'xprotocol',
+    chainId: 8386,
+    networkId: 8386,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-8453' },
+    infoURL: 'https://xprotocol.org/'
+  },
+  {
     name: 'Dracones Financial Services',
     title: 'The Dracones Mainnet',
     chain: 'FUCK',
@@ -26247,8 +26287,8 @@ const chainArray = [
     networkId: 16180,
     explorers: [
       {
-        name: 'Avalanche Subnet Explorer',
-        url: 'https://subnets.avax.network/plyr',
+        name: 'PLYR PHI Explorer',
+        url: 'https://explorer.plyr.network',
         standard: 'EIP3091'
       }
     ]
@@ -31523,8 +31563,8 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
-        name: 'Avalanche Subnet Testnet Explorer',
-        url: 'https://subnets-test.avax.network/plyr',
+        name: 'PLYR TAU Explorer',
+        url: 'https://explorer-testnet.plyr.network',
         standard: 'EIP3091'
       }
     ]
@@ -32986,6 +33026,20 @@ const chainArray = [
     networkId: 83278,
     icon: 'EsaCoins',
     explorers: []
+  },
+  {
+    name: 'Xprotocol Sepolia',
+    chainId: 83868,
+    shortName: 'xprotocolsepolia',
+    chain: 'Xprotocol Sepolia',
+    networkId: 83868,
+    nativeCurrency: { name: 'KICK Testnet Token', symbol: 'KICK', decimals: 18 },
+    rpc: [],
+    faucets: [],
+    explorers: [],
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-84532' },
+    infoURL: 'https://xprotocol.org/'
   },
   {
     name: 'ZEDXION',
