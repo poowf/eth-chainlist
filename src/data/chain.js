@@ -4776,6 +4776,7 @@ const chainArray = [
       'https://mainnet-rpc-04.swanchain.org'
     ],
     faucets: [],
+    icon: 'swan',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://swanchain.io/',
     shortName: 'Swan',
@@ -9642,32 +9643,18 @@ const chainArray = [
     ]
   },
   {
-    name: 'Lucky Network',
-    chain: 'LN',
-    rpc: [
-      'https://rpc.luckynetwork.org',
-      'wss://ws.lnscan.org',
-      'https://rpc.lnscan.org'
-    ],
+    name: 'Hyperliquid EVM Testnet',
+    chain: 'HYPE',
+    rpc: [ 'https://api.hyperliquid-testnet.xyz/evm' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'Lucky', symbol: 'L99', decimals: 18 },
-    infoURL: 'https://luckynetwork.org',
-    shortName: 'ln',
+    nativeCurrency: { name: 'HYPE', symbol: 'HYPE', decimals: 18 },
+    infoURL: 'https://hyperfoundation.org/',
+    shortName: 'hype-evm-testnet',
     chainId: 998,
     networkId: 998,
-    icon: 'lucky',
-    explorers: [
-      {
-        name: 'blockscout',
-        url: 'https://explorer.luckynetwork.org',
-        standard: 'none'
-      },
-      {
-        name: 'expedition',
-        url: 'https://lnscan.org',
-        standard: 'none'
-      }
-    ]
+    explorers: [],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Wanchain Testnet',
@@ -22838,8 +22825,8 @@ const chainArray = [
   {
     name: 'Hydra Chain Testnet',
     chain: 'HYDRA',
-    rpc: [ 'https://rpc.testnet.hydrachain.org' ],
-    faucets: [ 'https://app.testnet.hydrachain.org/faucet' ],
+    rpc: [ 'https://rpc-testnet.hydrachain.org' ],
+    faucets: [ 'https://testnetapp.hydrachain.org/faucet' ],
     nativeCurrency: { name: 'tHydra', symbol: 'tHYDRA', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://hydrachain.org',
@@ -29351,6 +29338,25 @@ const chainArray = [
     networkId: 42069
   },
   {
+    name: 'WMC Testnet',
+    chain: 'WMC',
+    icon: 'wmc',
+    rpc: [ 'https://rpc-testnet-base.worldmobile.net' ],
+    faucets: [ 'https://faucet-testnet-base.worldmobile.net' ],
+    nativeCurrency: { name: 'WMTx', symbol: 'WMTx', decimals: 18 },
+    infoURL: 'https://worldmobiletoken.com',
+    shortName: 'wmtx',
+    chainId: 42070,
+    networkId: 42070,
+    explorers: [
+      {
+        name: 'WMC Explorer',
+        url: 'https://explorer-testnet-base.worldmobile.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'AgentLayer Testnet',
     chain: 'AgentLayer',
     icon: 'agentLayerIcon',
@@ -30335,6 +30341,24 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'STB Testnet',
+    chain: 'STB Testnet',
+    rpc: [ 'https://rpc.quorum.sps.dev.kode.ru/' ],
+    faucets: [],
+    nativeCurrency: { name: 'STB', symbol: 'STB', decimals: 18 },
+    infoURL: '',
+    shortName: 'stb-testnet',
+    chainId: 50505,
+    networkId: 50505,
+    explorers: [
+      {
+        name: 'stb-testnet',
+        url: 'https://explorer.quorum.sps.dev.kode.ru',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Erbie Mainnet',
@@ -38256,6 +38280,24 @@ const chainArray = [
       {
         name: 'Galadriel Explorer',
         url: 'https://explorer.galadriel.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Fidesinnova',
+    chain: 'Fidesinnova',
+    rpc: [ 'https://fidesf1-rpc.fidesinnova.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Fidesinnova', symbol: 'FDS', decimals: 18 },
+    infoURL: 'https://fidesinnova1.gitbook.io/fidesinnova',
+    shortName: 'Fidesinnova',
+    chainId: 706883,
+    networkId: 706883,
+    explorers: [
+      {
+        name: 'Fidesinnova Blockchain Explorer',
+        url: 'https://explorer.fidesinnova.io',
         standard: 'none'
       }
     ]
