@@ -15503,6 +15503,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'GOAT Network',
+    title: 'GOAT Network',
+    chain: 'GOAT',
+    rpc: [ 'https://rpc.goat.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://www.goat.network',
+    shortName: 'goat',
+    chainId: 2345,
+    networkId: 2345,
+    icon: 'goat',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.goat.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Silicon zkEVM',
     title: 'Silicon zkEVM Mainnet',
     chain: 'Silicon',
@@ -22186,10 +22206,10 @@ const chainArray = [
   {
     name: 'Bitcoin Chain',
     chain: 'BTC',
-    rpc: [ 'https://rpc.biteth.org' ],
+    rpc: [ 'https://rpc.bitcoinevm.org' ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
-    infoURL: 'https://biteth.org',
+    infoURL: 'https://bitcoinevm.org',
     shortName: 'Bitcoin',
     chainId: 8086,
     networkId: 8086,
@@ -24167,7 +24187,7 @@ const chainArray = [
     name: 'Agung Network',
     chain: 'Agung',
     icon: 'agung',
-    rpc: [ 'https:///wss-async.agung.peaq.network' ],
+    rpc: [ 'https://wss-async.agung.peaq.network' ],
     faucets: [],
     nativeCurrency: { name: 'Agung', symbol: 'AGNG', decimals: 18 },
     infoURL: 'https://www.peaq.network',
@@ -26362,7 +26382,7 @@ const chainArray = [
   {
     name: '0G-Newton-Testnet',
     chain: '0G-Testnet',
-    rpc: [ 'https://rpc-testnet.0g.ai' ],
+    rpc: [ 'https://evmrpc-testnet.0g.ai' ],
     faucets: [ 'https://faucet.0g.ai' ],
     nativeCurrency: { name: 'A0GI', symbol: 'A0GI', decimals: 18 },
     infoURL: 'https://0g.ai',
@@ -26372,7 +26392,7 @@ const chainArray = [
     icon: '0gai',
     explorers: [
       {
-        name: '0G Chain Explorer',
+        name: '0G BlockChain Explorer',
         url: 'https://chainscan-newton.0g.ai',
         standard: 'none'
       }
@@ -27597,6 +27617,25 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'PremiumBlock',
+    chain: 'PBLK',
+    rpc: [ 'https://rpc.premiumblock.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Premium Block', symbol: 'PBLK', decimals: 18 },
+    infoURL: 'https://scan.premiumblock.org',
+    shortName: 'pblk',
+    chainId: 23023,
+    networkId: 23023,
+    explorers: [
+      {
+        name: 'PremiumBlocks Explorer',
+        url: 'https://scan.premiumblock.org',
+        standard: 'EIP3091'
+      }
+    ],
+    features: [ { name: 'EIP1559' } ]
   },
   {
     name: 'Opside Testnet',
@@ -32786,6 +32825,26 @@ const chainArray = [
     networkId: 80451,
     explorers: [],
     parent: { type: 'L2', chain: 'eip155-42161' }
+  },
+  {
+    name: 'Forta Chain',
+    chain: 'Forta Chain',
+    rpc: [ 'https://rpc-forta-chain-8gj1qndmfc.t.conduit.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'FORT', symbol: 'FORT', decimals: 18 },
+    infoURL: 'https://www.forta.org/',
+    shortName: 'forta',
+    chainId: 80931,
+    networkId: 80931,
+    icon: 'forta-chain',
+    explorers: [
+      {
+        name: 'Forta Chain Explorer',
+        url: 'https://explorer.forta.org',
+        icon: 'forta-chain',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Nordek Mainnet',
@@ -40415,6 +40474,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Ozean Poseidon Testnet',
+    chain: 'Ozean Poseidon',
+    rpc: [
+      'https://ozean-testnet.rpc.caldera.xyz/http',
+      'wss://ozean-testnet.rpc.caldera.xyz/ws'
+    ],
+    faucets: [ 'https://ozean-testnet.hub.caldera.xyz' ],
+    nativeCurrency: { name: 'USDX', symbol: 'USDX', decimals: 18 },
+    infoURL: 'https://docs.ozean.finance',
+    shortName: 'ozean-poseidon',
+    chainId: 7849306,
+    networkId: 7849306,
+    icon: 'ozean',
+    status: 'active',
+    explorers: [
+      {
+        name: 'Ozean Testnet Explorer',
+        url: 'https://ozean-testnet.explorer.caldera.xyz',
+        icon: 'ozean',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Plian Mainnet Subchain 1',
