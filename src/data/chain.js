@@ -4508,6 +4508,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'Lens',
+    title: 'Lens mainnet',
+    chain: 'Lens',
+    rpc: [],
+    faucets: [],
+    chainId: 232,
+    networkId: 232,
+    nativeCurrency: { name: 'GHO', symbol: 'GHO', decimals: 18 },
+    icon: 'lens',
+    infoURL: 'https://lens.xyz',
+    shortName: 'lens',
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
+    explorers: []
+  },
+  {
     name: 'Ethernity Testnet',
     chain: 'Ethernity',
     rpc: [ 'https://testnet.ethernitychain.io' ],
@@ -8168,6 +8183,26 @@ const chainArray = [
         name: 'Script Explorer',
         url: 'https://explorer.script.tv',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Tranched Mainnet',
+    chain: 'tranched-mainnet',
+    rpc: [ 'https://tranched-mainnet.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://tranched-mainnet.hub.caldera.xyz',
+    shortName: 'tranched-mainnet',
+    chainId: 743,
+    networkId: 743,
+    icon: 'tranched-mainnet',
+    explorers: [
+      {
+        name: 'Tranched Mainnet Caldera Explorer',
+        url: 'https://tranched-mainnet.calderaexplorer.xyz',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -21218,6 +21253,26 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'InitVerse mainnet',
+    chain: 'InitVerse',
+    rpc: [ 'https://rpc-mainnet.inichain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'InitVerse', symbol: 'INI', decimals: 18 },
+    infoURL: 'https://www.inichain.com',
+    shortName: 'INI',
+    chainId: 7233,
+    networkId: 7233,
+    icon: 'initverse',
+    explorers: [
+      {
+        name: 'initverse',
+        url: 'https://www.iniscan.com',
+        icon: 'initverse',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'InitVerse genesis testnet',
     chain: 'InitVerse',
     rpc: [ 'http://rpc-testnet.inichain.com' ],
@@ -21972,6 +22027,31 @@ const chainArray = [
       }
     ],
     infoURL: 'https://mochain.app'
+  },
+  {
+    name: 'Exorium Testnet',
+    chain: 'EXOR',
+    rpc: [
+      'https://rpc-1-testnet.exorium.net',
+      'https://rpc-2-testnet.exorium.net',
+      'https://rpc-testnet.exoscan.net/'
+    ],
+    faucets: [ 'https://faucet-testnet.exorium.net' ],
+    nativeCurrency: { name: 'EXOR', symbol: 'tEXOR', decimals: 18 },
+    infoURL: 'https://exorium.net',
+    shortName: 'texor',
+    chainId: 7957,
+    networkId: 7957,
+    slip44: 1,
+    icon: 'exorium',
+    explorers: [
+      {
+        name: 'EXORIUM Testnet Explorer',
+        icon: 'exorium',
+        url: 'https://testnet.exoscan.net',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'DOS Chain',
@@ -26869,6 +26949,26 @@ const chainArray = [
       {
         name: 'EXPchain Testnet Explorer',
         url: 'https://blockscout-testnet.expchain.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Ultra EVM Network Testnet',
+    chain: 'Ultra',
+    icon: 'ultra',
+    rpc: [ 'https://evm.test.ultra.eosusa.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ultra Token', symbol: 'UOS', decimals: 18 },
+    infoURL: 'https://ultra.io/',
+    shortName: 'ultra-testnet',
+    chainId: 18881,
+    networkId: 18881,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Ultra EVM Testnet Explorer',
+        url: 'https://evmexplorer.testnet.ultra.io',
         standard: 'EIP3091'
       }
     ]
@@ -32239,6 +32339,25 @@ const chainArray = [
       {
         name: 'ankara',
         url: 'https://explorer.ankara-cagacrypto.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CAGA mainnet',
+    chain: 'CAGA',
+    rpc: [ 'https://cagamainnet.com', 'wss://cagamainnet.com/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'CAGA', symbol: 'CAGA', decimals: 18 },
+    infoURL: 'https://www.cagacrypto.com/',
+    shortName: 'caga-mainnet',
+    chainId: 72888,
+    networkId: 72888,
+    icon: 'caga',
+    explorers: [
+      {
+        name: 'caga',
+        url: 'https://explorer.cagamainnet.com',
         standard: 'EIP3091'
       }
     ]
@@ -41348,6 +41467,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'ETP Mainnet',
+    chain: 'ETP',
+    rpc: [ 'https://rpc.etpscan.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETP Chain Native Token', symbol: 'ETP', decimals: 18 },
+    infoURL: 'https://www.etposchain.com',
+    shortName: 'ETP',
+    chainId: 20256789,
+    networkId: 20256789,
+    icon: 'etpchain',
+    explorers: [
+      {
+        name: 'ETPScan',
+        url: 'https://etpscan.xyz',
+        icon: 'etpchain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hokum Testnet',
     chain: 'HokumTestnet',
     icon: 'hokum',
@@ -44082,8 +44221,8 @@ const chainArray = [
     icon: 'ntity',
     explorers: [
       {
-        name: 'Ntity Blockscout',
-        url: 'https://blockscout.ntity.io',
+        name: 'Ntity Explorer',
+        url: 'https://explorer.ntity.io',
         icon: 'ntity',
         standard: 'EIP3091'
       }
@@ -44096,16 +44235,16 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Ntity Haradev', symbol: 'NTTH', decimals: 18 },
     infoURL: 'https://ntity.io',
-    shortName: 'ntt-haradev',
+    shortName: 'haradev',
     chainId: 197710212031,
     networkId: 197710212031,
     slip44: 1,
-    icon: 'ntity',
+    icon: 'haradev',
     explorers: [
       {
-        name: 'Ntity Haradev Blockscout',
-        url: 'https://blockscout.haradev.com',
-        icon: 'ntity',
+        name: 'Haradev Explorer',
+        url: 'https://explorer.haradev.com',
+        icon: 'haradev',
         standard: 'EIP3091'
       }
     ]
