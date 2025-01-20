@@ -32913,6 +32913,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Berachain',
+    chain: 'Berachain',
+    rpc: [ 'https://rpc.berachain.com' ],
+    faucets: [ 'https://faucet.berachain.com' ],
+    nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
+    infoURL: 'https://www.berachain.com',
+    shortName: 'berachain',
+    chainId: 80094,
+    networkId: 80094,
+    icon: 'berachain',
+    explorers: []
+  },
+  {
     name: 'Hizoco mainnet',
     chain: 'HZC',
     icon: 'hizoco',
