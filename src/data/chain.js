@@ -5419,7 +5419,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'zkCandy Sepolia Testnet',
+    name: 'ZKcandy Sepolia Testnet',
     chain: 'ETH',
     rpc: [ 'https://sepolia.rpc.zkcandy.io' ],
     faucets: [],
@@ -5431,7 +5431,7 @@ const chainArray = [
     icon: 'zkcandy',
     explorers: [
       {
-        name: 'zkCandy Block Explorer',
+        name: 'ZKcandy Block Explorer',
         url: 'https://sepolia.explorer.zkcandy.io',
         icon: 'zkcandy',
         standard: 'EIP3091'
