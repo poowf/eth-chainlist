@@ -4601,6 +4601,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'TAC Mainnet',
+    title: 'TAC Mainnet',
+    chain: 'TAC',
+    icon: 'tac',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'TAC', symbol: 'TAC', decimals: 18 },
+    infoURL: 'https://tac.build/',
+    shortName: 'tac',
+    chainId: 239,
+    networkId: 239,
+    explorers: []
+  },
+  {
     name: 'Cronos zkEVM Testnet',
     chain: 'CronosZkEVMTestnet',
     rpc: [ 'https://testnet.zkevm.cronos.org' ],
@@ -11598,6 +11612,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Glue Mainnet',
+    chain: 'GLUE',
+    rpc: [ 'https://rpc.glue.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Glue', symbol: 'GLUE', decimals: 18 },
+    infoURL: 'https://glue.net/',
+    shortName: 'glue',
+    chainId: 1300,
+    networkId: 1300,
+    icon: 'glue',
+    explorers: [
+      {
+        name: 'Glue Explorer',
+        url: 'https://explorer.glue.net',
+        icon: 'glue',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Unichain Sepolia Testnet',
     chain: 'ETH',
     rpc: [
@@ -15645,6 +15679,26 @@ const chainArray = [
     }
   },
   {
+    name: 'KiteAI Testnet',
+    chain: 'KiteAI',
+    icon: 'kite',
+    rpc: [ 'https://rpc-testnet.gokite.ai' ],
+    faucets: [ 'https://faucet.gokite.ai/' ],
+    nativeCurrency: { name: 'Kite', symbol: 'KITE', decimals: 18 },
+    infoURL: 'https://gokite.ai/',
+    shortName: 'KiteAI',
+    chainId: 2368,
+    networkId: 1,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Kitescan',
+        url: 'https://testnet.kitescan.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Nexis Network Testnet',
     chain: 'Nexis Network',
     icon: 'nexis',
@@ -15659,6 +15713,31 @@ const chainArray = [
       {
         name: 'Nexis Testnet Explorer',
         url: 'https://evm-testnet.nexscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'TAC Turin',
+    title: 'TAC Testnet Turin',
+    chain: 'TAC',
+    icon: 'tactestnet',
+    rpc: [
+      'https://turin.rpc.tac.build',
+      'https://rpc.ankr.com/tac_turin',
+      'https://turin-ws.rpc.tac.build'
+    ],
+    faucets: [ 'https://turin.faucet.tac.build/' ],
+    nativeCurrency: { name: 'TAC', symbol: 'TAC', decimals: 18 },
+    infoURL: 'https://tac.build/',
+    shortName: 'tacchain_2390-1',
+    chainId: 2390,
+    networkId: 2390,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'TAC Turin Blockscout',
+        url: 'https://turin.explorer.tac.build',
         standard: 'EIP3091'
       }
     ]
@@ -25167,7 +25246,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'eGoldChain',
+    name: 'eGold Chain',
     chain: 'EGC',
     icon: 'egoldchain',
     rpc: [ 'https://rpc.egoldchain.com', 'wss://rpc.egoldchain.com' ],
@@ -25179,7 +25258,7 @@ const chainArray = [
     networkId: 11451,
     explorers: [
       {
-        name: 'eGoldChain Block Explorer',
+        name: 'eGold Chain Block Explorer',
         url: 'https://egoldscan.io',
         standard: 'none',
         icon: 'egoldchain'
@@ -35046,7 +35125,7 @@ const chainArray = [
     }
   },
   {
-    name: 'eGoldChain Testnet',
+    name: 'eGold Chain Testnet',
     chain: 'EGC',
     icon: 'egoldchain',
     rpc: [
@@ -35061,7 +35140,7 @@ const chainArray = [
     networkId: 111451,
     explorers: [
       {
-        name: 'eGoldChain Block Explorer',
+        name: 'eGold Chain Block Explorer',
         url: 'http://testnet.egoldscan.io',
         standard: 'none',
         icon: 'egoldchain'
