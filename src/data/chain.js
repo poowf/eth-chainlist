@@ -8066,6 +8066,27 @@ const chainArray = [
     icon: 'vrcscan'
   },
   {
+    name: 'UXLINK ONE Mainnet',
+    chain: 'UXLINK ONE',
+    rpc: [ 'https://rpc.uxlinkone.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'UXLINK', symbol: 'UXLINK', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.uxlinkone.com',
+    shortName: 'uxlink1',
+    chainId: 718,
+    networkId: 718,
+    icon: 'uxlinkone',
+    explorers: [
+      {
+        name: 'UXLINK ONE Mainnet Explorer',
+        url: 'https://sepolia.uxlinkone.com',
+        icon: 'uxlinkone',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Shibarium Beta',
     chain: 'Shibarium',
     icon: 'shibarium',
@@ -29545,6 +29566,24 @@ const chainArray = [
     }
   },
   {
+    name: 'Donatuz',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.donatuz.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.donatuz.com',
+    shortName: 'donatuz',
+    chainId: 42026,
+    networkId: 42026,
+    explorers: [
+      {
+        name: 'Donatuz Explorer',
+        url: 'https://explorer.donatuz.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'pegglecoin',
     chain: '42069',
     rpc: [],
@@ -37952,6 +37991,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'PUMPFI CHAIN TESTNET',
+    chain: 'PUMPFI CHAIN TESTNET',
+    rpc: [ 'https://rpc1testnet.pumpfi.me' ],
+    faucets: [ 'https://faucet.pumpfi.me' ],
+    nativeCurrency: { name: 'PMPT', symbol: 'PMPT', decimals: 18 },
+    infoURL: 'https://pumpfi.me',
+    shortName: 'pumpfi-testnet',
+    chainId: 490092,
+    networkId: 490092,
+    explorers: [
+      {
+        name: 'Pumpfi Testnet Scan',
+        url: 'https://testnetscan.pumpfi.me',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Playdapp Network',
     chain: 'PDA',
     icon: 'pda',
@@ -42900,7 +42957,7 @@ const chainArray = [
       {
         name: 'subscan',
         icon: 'subscan',
-        url: 'https://assethub-westend.subscan.io',
+        url: 'https://westend-asset-hub-eth-explorer.parity.io',
         standard: 'EIP3091'
       }
     ]
