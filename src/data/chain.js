@@ -19735,35 +19735,53 @@ const chainArray = [
     ]
   },
   {
+    name: 'Settlus',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://settlus.org',
+    shortName: 'setl',
+    chainId: 5371,
+    networkId: 5371,
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
+    status: 'incubating'
+  },
+  {
     name: 'Settlus Testnet',
     chain: 'Settlus',
-    rpc: [ 'https://settlus-test-eth.settlus.io' ],
-    faucets: [ 'https://faucet.settlus.io' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'Setl', symbol: 'SETL', decimals: 18 },
     infoURL: 'https://settlus.org',
     shortName: 'settlus-testnet',
     chainId: 5372,
     networkId: 5372,
-    explorers: [
-      {
-        name: 'Settlus Scan',
-        url: 'https://testnet.settlus.network',
-        standard: 'EIP3091'
-      }
-    ]
+    status: 'deprecated'
   },
   {
     name: 'Settlus Sepolia Testnet',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://settlus-septestnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://settlus.org',
     shortName: 'setl-sepolia',
     chainId: 5373,
     networkId: 5373,
-    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] },
-    status: 'incubating'
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://settlus-sep-testnet.bridge.alchemy.com/' } ]
+    },
+    explorers: [
+      {
+        name: 'Settlus Sepolia Testnet Explorer',
+        url: 'https://settlus-sepolia-testnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'edeXa Mainnet',
@@ -27357,6 +27375,25 @@ const chainArray = [
         name: 'BTCIXScan',
         url: 'https://btcixscan.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Ultra EVM Network',
+    chain: 'Ultra',
+    icon: 'ultra',
+    rpc: [ 'https://evm.ultra.eosusa.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ultra Token', symbol: 'UOS', decimals: 18 },
+    infoURL: 'https://ultra.io',
+    shortName: 'ultra',
+    chainId: 19991,
+    networkId: 19991,
+    explorers: [
+      {
+        name: 'Ultra EVM Explorer',
+        url: 'https://evmexplorer.ultra.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -35490,8 +35527,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Openledger Testnet',
-    chain: 'Openledger Testnet',
+    name: 'OpenLedger Testnet',
+    chain: 'OpenLedger Testnet',
     rpc: [ 'https://rpctn.openledger.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Openledger', symbol: 'OPN', decimals: 18 },
@@ -35502,7 +35539,7 @@ const chainArray = [
     icon: 'openledger',
     explorers: [
       {
-        name: 'Openledger Testnet Explorer',
+        name: 'OpenLedger Testnet Explorer',
         url: 'https://scantn.openledger.xyz',
         standard: 'EIP3091'
       }
@@ -43585,6 +43622,34 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Haust Network Testnet',
+    title: 'Haust Network Testnet',
+    chain: 'haust-network-testnet',
+    rpc: [ 'https://rpc-testnet.haust.app' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [ 'https://faucet.haust.app' ],
+    status: 'active',
+    nativeCurrency: { name: 'HAUST', symbol: 'HAUST', decimals: 18 },
+    infoURL: 'https://haust.network/',
+    shortName: 'HaustTestnet',
+    chainId: 1523903251,
+    networkId: 1523903251,
+    icon: 'haust',
+    explorers: [
+      {
+        name: 'Haust Network Testnet Explorer',
+        url: 'https://explorer-testnet.haust.app',
+        icon: 'haust',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge-testnet.haust.app' } ]
+    }
   },
   {
     name: 'SKALE Calypso Hub',
