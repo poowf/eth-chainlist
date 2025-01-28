@@ -12733,7 +12733,7 @@ const chainArray = [
     ],
     parent: {
       type: 'L2',
-      chain: 'eip155-1',
+      chain: 'eip155-11155111',
       bridges: [ { url: 'https://sepolia-testnet-bridge.mintchain.io' } ]
     }
   },
@@ -16433,7 +16433,7 @@ const chainArray = [
   {
     name: 'Abstract',
     chain: 'Abstract',
-    rpc: [],
+    rpc: [ 'https://api.mainnet.abs.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://abs.xyz',
@@ -16441,8 +16441,23 @@ const chainArray = [
     chainId: 2741,
     networkId: 2741,
     icon: 'abstract',
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+    explorers: [
+      {
+        name: 'Etherscan',
+        url: 'https://abscan.org',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Abstract Explorer',
+        url: 'https://explorer.mainnet.abs.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portal.mainnet.abs.xyz/bridge' } ]
+    }
   },
   {
     name: 'Nanon',
@@ -24565,6 +24580,17 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Chain Opera Testnet',
+    chain: 'Chain Opera Testnet',
+    rpc: [ 'http://40.78.123.6:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'coai', symbol: 'CO', decimals: 18 },
+    infoURL: 'https://chainopera.ai/',
+    shortName: 'chainopera-testnet',
+    chainId: 10066,
+    networkId: 10066
   },
   {
     name: 'Japan Open Chain Testnet',
