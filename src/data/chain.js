@@ -14335,21 +14335,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'PublicMint Mainnet',
-    title: 'Public Mint Mainnet',
-    chain: 'PublicMint',
-    rpc: [ 'https://rpc.publicmint.io:8545' ],
+    name: 'Ronin Mainnet',
+    title: 'Ronin',
+    chain: 'ronin',
+    rpc: [ 'https://api.roninchain.com/rpc' ],
     faucets: [],
-    nativeCurrency: { name: 'USD', symbol: 'USD', decimals: 18 },
-    infoURL: 'https://publicmint.com',
-    shortName: 'pmint',
+    nativeCurrency: { name: 'RON', symbol: 'RON', decimals: 18 },
+    infoURL: 'https://roninchain.com',
+    shortName: 'ron',
     chainId: 2020,
     networkId: 2020,
-    slip44: 60,
+    redFlags: [ 'reusedChainId' ],
     explorers: [
       {
-        name: 'PublicMint Explorer',
-        url: 'https://explorer.publicmint.io',
+        name: 'Ronin Block Explorer',
+        url: 'https://app.roninchain.com',
         standard: 'EIP3091'
       }
     ]
@@ -23521,6 +23521,29 @@ const chainArray = [
         url: 'https://escan.live',
         standard: 'none',
         icon: 'evmos'
+      }
+    ]
+  },
+  {
+    name: 'Qubetics Testnet',
+    chain: 'Qubetics Testnet',
+    rpc: [
+      'https://alphatestnet-evm-rpc.qubetics.work/',
+      'wss://wss-testnet-nodes.shidoscan.com'
+    ],
+    faucets: [ 'https://alphatestnet-explorer.qubetics.work/faucet' ],
+    nativeCurrency: { name: 'Qubetics Testnet Token', symbol: 'TICS', decimals: 18 },
+    infoURL: 'https://www.qubetics.com/',
+    shortName: 'Qubetics',
+    chainId: 9003,
+    networkId: 9003,
+    icon: 'qubetics',
+    explorers: [
+      {
+        name: 'Qubetics Testnet Explorer',
+        url: 'https://testnet.shidoscan.com',
+        standard: 'none',
+        icon: 'qubetics'
       }
     ]
   },
