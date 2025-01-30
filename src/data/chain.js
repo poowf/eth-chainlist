@@ -11736,6 +11736,25 @@ const chainArray = [
     icon: 'alyx'
   },
   {
+    name: 'Story Homer Testnet',
+    chain: 'Story Homer Testnet',
+    rpc: [ 'https://devnet.storyrpc.io.' ],
+    faucets: [],
+    nativeCurrency: { name: 'IP Token', symbol: 'IP', decimals: 18 },
+    infoURL: 'https://story.foundation/',
+    icon: 'story',
+    shortName: 'styhmt',
+    chainId: 1315,
+    networkId: 1315,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://devnet.storyscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'AIA Mainnet',
     chain: 'AIA',
     icon: 'aia',
@@ -22419,6 +22438,7 @@ const chainArray = [
   {
     name: 'Bitcoin Chain',
     chain: 'BTC',
+    icon: 'BTCChain',
     rpc: [ 'https://rpc.bitcoinevm.org' ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
@@ -22431,6 +22451,7 @@ const chainArray = [
   {
     name: 'E-Dollar',
     chain: 'USD',
+    icon: 'edollar',
     rpc: [ 'https://rpc.e-dollar.org' ],
     faucets: [],
     nativeCurrency: { name: 'E-Dollar', symbol: 'USD', decimals: 18 },
@@ -36610,6 +36631,27 @@ const chainArray = [
       {
         name: 'Taf ECO Chain Mainnet',
         url: 'https://ecoscan.tafchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CONET Mainnet',
+    chain: 'CONET Mainnet',
+    rpc: [ 'https://mainnet-rpc.conet.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'CONET ETH', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://conet.network',
+    shortName: 'conet-mainnet',
+    chainId: 224400,
+    networkId: 224400,
+    slip44: 2147708048,
+    icon: 'conet',
+    explorers: [
+      {
+        name: 'CONET Mainnet Explorer',
+        url: 'https://mainnet.conet.network',
         standard: 'EIP3091'
       }
     ]
