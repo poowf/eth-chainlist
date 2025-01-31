@@ -30568,6 +30568,31 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Citronus',
+    chain: 'Citronus',
+    rpc: [ 'https://rpc.citronus.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'CITRO', symbol: 'CITRO', decimals: 18 },
+    infoURL: 'https://citronus.com',
+    shortName: 'citro',
+    chainId: 50000,
+    networkId: 50000,
+    icon: 'citro',
+    explorers: [
+      {
+        name: 'citro',
+        url: 'https://explorer.citronus.com',
+        icon: 'citro',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.gelato.network/bridge/citronus' } ]
+    }
+  },
+  {
     name: 'Liveplex OracleEVM',
     chain: 'Liveplex OracleEVM Network',
     rpc: [ 'https://rpc.oracle.liveplex.io' ],
@@ -43443,6 +43468,34 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'OFFICIAL VASYL TESTNET',
+    title: 'OFFICIAL VASYL TESTNET',
+    chain: 'Official-Vasyl',
+    rpc: [ 'https://rpc.official-vasyl.network' ],
+    faucets: [ 'https://faucet.official-vasyl.network' ],
+    nativeCurrency: { name: 'OFFICIAL VASYL', symbol: 'VASYL', decimals: 18 },
+    infoURL: 'official-vasyl.network',
+    shortName: 'Vasyl',
+    chainId: 1278060416,
+    networkId: 1278060416,
+    icon: 'vasyl',
+    explorers: [
+      {
+        name: 'Official Vasyl Explorer',
+        url: 'https://explorer.official-vasyl.network',
+        icon: 'vasyl',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.official-vasyl.network' } ]
+    },
+    features: [ { name: 'EIP155' } ],
+    status: 'active'
   },
   {
     name: 'Aurora Mainnet',
