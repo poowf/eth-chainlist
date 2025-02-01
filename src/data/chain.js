@@ -5665,10 +5665,12 @@ const chainArray = [
     shortName: 'wem',
     chainId: 315,
     networkId: 315,
+    icon: 'wem',
     explorers: [
       {
         name: 'wemscan',
         url: 'https://wemscan.com',
+        icon: 'wemscan',
         standard: 'EIP3091'
       }
     ]
