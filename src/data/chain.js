@@ -20,7 +20,8 @@ const chainArray = [
       'https://rpc.mevblocker.io/noreverts',
       'https://rpc.mevblocker.io/fullprivacy',
       'https://eth.drpc.org',
-      'wss://eth.drpc.org'
+      'wss://eth.drpc.org',
+      'https://api.securerpc.com/v1'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -43472,8 +43473,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'OFFICIAL VASYL TESTNET',
-    title: 'OFFICIAL VASYL TESTNET',
+    name: 'OFFICIAL VASYL',
+    title: 'OFFICIAL VASYL',
     chain: 'Official-Vasyl',
     rpc: [ 'https://rpc.official-vasyl.network' ],
     faucets: [ 'https://faucet.official-vasyl.network' ],
