@@ -5650,9 +5650,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'WEMblockchain MainNet',
+    name: 'WorldEcoMoney',
     chain: 'WEM',
-    rpc: [ 'http://rpc.wemblockchain.com' ],
+    rpc: [ 'https://rpc.wemblockchain.com' ],
     faucets: [],
     nativeCurrency: { name: 'WEM Coin', symbol: 'WEM', decimals: 18 },
     features: [
@@ -24721,7 +24721,7 @@ const chainArray = [
     name: 'Monad Testnet',
     chain: 'MON',
     icon: 'monad',
-    rpc: [],
+    rpc: [ 'https://testnet-rpc.monad.xyz' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Testnet MON Token', symbol: 'MON', decimals: 18 },
@@ -24730,7 +24730,13 @@ const chainArray = [
     chainId: 10143,
     networkId: 10143,
     slip44: 1,
-    explorers: []
+    explorers: [
+      {
+        name: 'Monad Testnet Explorer',
+        url: 'https://testnet.monadexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Gnosis Chiado Testnet',
