@@ -35371,6 +35371,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Fushuma',
+    chain: 'Fushuma',
+    rpc: [ 'https://rpc.fushuma.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'FUSHUMA', symbol: 'FUMA', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: '',
+    shortName: 'fushuma',
+    chainId: 121224,
+    networkId: 121224,
+    explorers: [
+      {
+        name: 'FumaScan',
+        url: 'https://fumascan.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Gemchain',
     chain: 'Gemchain',
     rpc: [ 'https://evm-rpc.gemchain.org' ],
@@ -43149,11 +43168,11 @@ const chainArray = [
     ]
   },
   {
-    name: 'Skopje Testnet',
+    name: 'GPT Testnet',
     chain: 'Skopje Testnet',
     icon: 'skopje-gpt',
-    rpc: [ 'https://skopje-rpc.gptprotocol.io' ],
-    faucets: [ 'https://skopje-faucet.gptprotocol.io' ],
+    rpc: [ 'https://testnet-rpc.gptprotocol.io' ],
+    faucets: [ 'https://testnet-faucet.gptprotocol.io' ],
     chainId: 476462898,
     networkId: 476462898,
     nativeCurrency: { name: 'SkpGPT', symbol: 'SkpGPT', decimals: 18 },
@@ -43162,12 +43181,12 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
-      bridges: [ { url: 'https://skopje-bridge.gptprotocol.io' } ]
+      bridges: [ { url: 'https://testnet-bridge.gptprotocol.io' } ]
     },
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://skopje-explorer.gptprotocol.io',
+        url: 'https://testnet-explorer.gptprotocol.io',
         standard: 'EIP3091',
         icon: 'blockscout'
       }
