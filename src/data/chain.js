@@ -9930,21 +9930,21 @@ const chainArray = [
     slip44: 1020
   },
   {
-    name: 'Rebus Mainnet',
+    name: 'Rebus Classic Mainnet',
     title: 'Rebuschain Mainnet',
     chain: 'REBUS',
     rpc: [ 'https://apievm.rebuschain.com/rpc' ],
     faucets: [],
-    nativeCurrency: { name: 'Rebus', symbol: 'REBUS', decimals: 18 },
+    nativeCurrency: { name: 'Rebus Classic', symbol: 'REBUS', decimals: 18 },
     infoURL: 'https://www.rebuschain.com',
-    shortName: 'rebus',
+    shortName: 'rebusclassic',
     chainId: 1011,
     networkId: 1011,
-    icon: 'rebus',
+    icon: 'rebusc',
     explorers: [
       {
         name: 'Rebus EVM Explorer (Blockscout)',
-        url: 'https://evm.rebuschain.com',
+        url: 'https://evm-l1.rebuschain.com',
         icon: 'rebus',
         standard: 'none'
       },
@@ -11739,20 +11739,20 @@ const chainArray = [
     icon: 'alyx'
   },
   {
-    name: 'Story Homer Testnet',
-    chain: 'Story Homer Testnet',
-    rpc: [ 'https://devnet.storyrpc.io.' ],
+    name: 'Story Aeneid Testnet',
+    chain: 'Story Aeneid Testnet',
+    rpc: [ 'https://aeneid.storyrpc.io' ],
     faucets: [],
     nativeCurrency: { name: 'IP Token', symbol: 'IP', decimals: 18 },
     infoURL: 'https://story.foundation/',
     icon: 'story',
-    shortName: 'styhmt',
+    shortName: 'story-aeneid',
     chainId: 1315,
     networkId: 1315,
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://devnet.storyscan.xyz',
+        url: 'https://aeneid.storyscan.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -23985,6 +23985,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Rebus Mainnet',
+    title: 'Rebuschain Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://apievml2.rebuschain.com/l2rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.rebuschain.com',
+    shortName: 'rebus',
+    chainId: 9696,
+    networkId: 9696,
+    icon: 'rebus',
+    explorers: [
+      {
+        name: 'Rebus EVM Explorer (Blockscout)',
+        url: 'https://evm.rebuschain.com',
+        icon: 'rebus',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Oort MainnetDev',
     title: 'Oort MainnetDev',
     chain: 'MainnetDev',
@@ -27547,6 +27568,26 @@ const chainArray = [
     networkId: 20143,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'XUSD ONE StableChain Mainnet',
+    chain: 'XUSD ONE',
+    icon: 'xusd',
+    rpc: [ 'https://xusd.live' ],
+    faucets: [],
+    nativeCurrency: { name: 'XUSD ONE', symbol: 'X1', decimals: 18 },
+    infoURL: 'https://xusd.co',
+    shortName: 'xusd',
+    chainId: 20441,
+    networkId: 20441,
+    explorers: [
+      {
+        name: 'xusdscan',
+        url: 'https://xusdscan.com',
+        icon: 'xusdscan',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Callisto Testnet',
@@ -35701,7 +35742,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Taiko Mainnet',
+    name: 'Taiko Alethia',
     chain: 'ETH',
     status: 'active',
     icon: 'taiko',
@@ -35825,7 +35866,7 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Taiko Hekla L2',
+    name: 'Taiko Hekla',
     chain: 'ETH',
     status: 'active',
     icon: 'taiko',
