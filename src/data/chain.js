@@ -5058,12 +5058,15 @@ const chainArray = [
   {
     name: 'XR One',
     chain: 'ETH',
-    rpc: [ 'https://xr-one.calderachain.xyz/http' ],
+    rpc: [
+      'https://xr1.calderachain.xyz/http',
+      'wss://xr1.calderachain.xyz/ws'
+    ],
     faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    nativeCurrency: { name: 'XR', symbol: 'XR', decimals: 18 },
+    nativeCurrency: { name: 'XR1', symbol: 'XR1', decimals: 18 },
     infoURL: 'https://xr-one.gitbook.io',
-    shortName: 'xr',
+    shortName: 'xr1',
     chainId: 273,
     networkId: 273,
     icon: 'xr',
@@ -5071,7 +5074,7 @@ const chainArray = [
     explorers: [
       {
         name: 'XR One Explorer',
-        url: 'https://xr-one.calderaexplorer.xyz',
+        url: 'https://xr1.calderaexplorer.xyz',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -5079,7 +5082,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-42161',
-      bridges: [ { url: 'https://xr-one.bridge.caldera.xyz/' } ]
+      bridges: [ { url: 'https://xr1.bridge.caldera.xyz' } ]
     },
     status: 'active'
   },
@@ -16194,6 +16197,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Pho Blockchain Mainnet',
+    chain: 'PHO',
+    icon: 'pho',
+    rpc: [ 'https://mainnet.phochain.org' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Pho', symbol: 'PHO', decimals: 18 },
+    infoURL: 'phochain.org',
+    shortName: 'pho',
+    chainId: 2605,
+    networkId: 2605,
+    explorers: [
+      {
+        name: 'Pho Scan',
+        url: 'https://phoscan.org',
+        standard: 'EIP3091',
+        icon: 'pho'
+      }
+    ]
+  },
+  {
     name: 'PoCRNet',
     title: 'Proof of Climate awaReness mainnet',
     chain: 'CRC',
@@ -18508,6 +18532,27 @@ const chainArray = [
         name: 'liskscout',
         url: 'https://sepolia-blockscout.lisk.com',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Merlin Erigon Testnet',
+    title: 'Merlin Erigon Testnet',
+    chain: 'Merlin',
+    rpc: [ 'https://testnet-erigon-rpc.merlinchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
+    infoURL: 'https://merlinchain.io',
+    shortName: 'Merlin-Testnet',
+    chainId: 4203,
+    networkId: 4203,
+    icon: 'merlin',
+    explorers: [
+      {
+        name: 'L2scan',
+        url: 'https://testnet-erigon-scan.merlinchain.io',
+        icon: 'merlin',
         standard: 'EIP3091'
       }
     ]
@@ -23054,6 +23099,27 @@ const chainArray = [
     shortName: 'tmy',
     chainId: 8768,
     networkId: 8768
+  },
+  {
+    name: 'Haven1',
+    chain: 'haven1',
+    rpc: [ 'https://rpc.haven1.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Haven1', symbol: 'H1', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.haven1.org',
+    shortName: 'haven1',
+    chainId: 8811,
+    networkId: 8811,
+    icon: 'haven1',
+    explorers: [
+      {
+        name: 'Haven1 Explorer',
+        url: 'https://explorer.haven1.org',
+        icon: 'haven1',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'IOTA EVM',
@@ -40810,6 +40876,28 @@ const chainArray = [
     }
   },
   {
+    name: 'Block Chain LOL Berachain Testnet',
+    chain: 'Block Chain LOL Berachain',
+    rpc: [ 'https://block-chain.alt.technology' ],
+    faucets: [ 'https://faucet.block-chain.lol/' ],
+    nativeCurrency: {
+      name: 'HarryPotterObamaSonic10Inu',
+      symbol: 'HARRY',
+      decimals: 18
+    },
+    infoURL: 'https://block-chain.lol/',
+    shortName: 'block-chain-lol-testnet',
+    chainId: 6231991,
+    networkId: 6231991,
+    explorers: [
+      {
+        name: 'Block Chain LOL Berachain Testnet Blockscout Explorer',
+        url: 'https://explorer.block-chain.lol',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Safe(AnWang) Mainnet',
     chain: 'Safe(AnWang)',
     icon: 'safe-anwang',
@@ -41552,6 +41640,29 @@ const chainArray = [
       {
         name: 'piscan',
         url: 'https://testnet.plian.org/testnet',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: ' Privix Chain Mainnet',
+    chain: 'PSC',
+    rpc: [
+      'https://mainnet-rpc.privixchain.xyz/',
+      'wss://mainnet-rpc.privixchain.xyz/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Privix Coin', symbol: 'PSC', decimals: 18 },
+    infoURL: 'https://privix.co/',
+    shortName: 'mpsc',
+    chainId: 16969696,
+    networkId: 16969696,
+    icon: 'privix',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://privixscan.io',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -42691,6 +42802,29 @@ const chainArray = [
       ]
     },
     status: 'active'
+  },
+  {
+    name: ' Privix Chain Testnet',
+    chain: 'PSC',
+    rpc: [
+      'https://testnet-rpc.privixchain.xyz/',
+      'wss://testnet-rpc.privixchain.xyz/ws'
+    ],
+    faucets: [ 'https://faucet.privixchain.xyz' ],
+    nativeCurrency: { name: 'Privix Coin', symbol: 'tPSC', decimals: 18 },
+    infoURL: 'https://privix.co/',
+    shortName: 'tpsc',
+    chainId: 96969696,
+    networkId: 96969696,
+    icon: 'privix',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.privixscan.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'ChadChain',
