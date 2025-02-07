@@ -5680,6 +5680,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'ZKcandy Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.zkcandy.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zkcandy.io/',
+    shortName: 'zkcandy',
+    chainId: 320,
+    networkId: 320,
+    icon: 'zkcandymainnet',
+    explorers: [
+      {
+        name: 'ZKcandy Block Explorer',
+        url: 'https://explorer.zkcandy.io',
+        icon: 'zkcandymainnet',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.zkcandy.io/' } ]
+    }
+  },
+  {
     name: 'KCC Mainnet',
     chain: 'KCC',
     rpc: [
@@ -31017,6 +31042,31 @@ const chainArray = [
     }
   },
   {
+    name: 'BirdLayer',
+    title: 'BirdLayer',
+    chain: 'BirdLayer',
+    icon: 'birdlayer',
+    rpc: [
+      'https://rpc.birdlayer.xyz',
+      'https://rpc1.birdlayer.xyz',
+      'wss://rpc.birdlayer.xyz/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.dodochain.com',
+    shortName: 'birdlayer',
+    chainId: 53456,
+    networkId: 53456,
+    explorers: [
+      {
+        name: 'BirdLayer Explorer',
+        url: 'https://scan.birdlayer.xyz',
+        icon: 'birdlayer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DODOchain testnet',
     title: 'DODOchain testnet',
     chain: 'DODOchain',
@@ -35081,6 +35131,28 @@ const chainArray = [
       {
         name: 'Stratis Explorer',
         url: 'https://explorer.stratisevm.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lumoz Chain Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://testnet-rpc.lumoz.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lumoz Testnet Token', symbol: 'MOZ', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://lumoz.org',
+    shortName: 'Lumoz-Chain-Testnet',
+    chainId: 105363,
+    networkId: 105363,
+    slip44: 1,
+    icon: 'opside-new',
+    explorers: [
+      {
+        name: 'LumozTestInfo',
+        url: 'https://testnet-scan.lumoz.info',
+        icon: 'opside-new',
         standard: 'EIP3091'
       }
     ]
@@ -44193,6 +44265,34 @@ const chainArray = [
     chainId: 1666900001,
     networkId: 1666900001,
     explorers: []
+  },
+  {
+    name: 'WITNESS CHAIN',
+    title: 'WITNESS CHAIN',
+    chain: 'Witness-Chain',
+    rpc: [ 'https://sequencer.witnesschain.com' ],
+    nativeCurrency: { name: 'ETHER', symbol: 'ETH', decimals: 18 },
+    faucets: [],
+    infoURL: 'https://www.witnesschain.com',
+    shortName: 'Witness',
+    chainId: 1702448187,
+    networkId: 1702448187,
+    icon: 'witness',
+    explorers: [
+      {
+        name: 'Witness Chain Explorer',
+        url: 'https://explorer.witnesschain.com',
+        icon: 'witness',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.witnesschain.com' } ]
+    },
+    features: [ { name: 'EIP155' } ],
+    status: 'active'
   },
   {
     name: 'Silicon zkEVM Sepolia Testnet',
