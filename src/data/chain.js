@@ -5938,6 +5938,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Pencils Protocol',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Pencils Protocol Token', symbol: 'DAPP', decimals: 18 },
+    infoURL: 'https://pencilsprotocol.io/',
+    shortName: 'dapp',
+    chainId: 339,
+    networkId: 339,
+    status: 'incubating'
+  },
+  {
     name: 'TSC Mainnet',
     chain: 'Trust Smart Chain',
     rpc: [ 'https://rpc01.trias.one' ],
@@ -29516,6 +29528,22 @@ const chainArray = [
     ]
   },
   {
+    name: 'Pencils Protocol Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Pencils Protocol Sepolia Testnet Token',
+      symbol: 'DAPPST',
+      decimals: 18
+    },
+    infoURL: 'https://pencilsprotocol.io/',
+    shortName: 'dapp-sepolia',
+    chainId: 33999,
+    networkId: 33999,
+    status: 'incubating'
+  },
+  {
     name: 'Mode',
     chain: 'ETH',
     rpc: [
@@ -33378,14 +33406,25 @@ const chainArray = [
     name: 'Berachain',
     chain: 'Berachain',
     rpc: [ 'https://rpc.berachain.com' ],
-    faucets: [ 'https://faucet.berachain.com' ],
+    faucets: [],
     nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
     infoURL: 'https://www.berachain.com',
     shortName: 'berachain',
     chainId: 80094,
     networkId: 80094,
     icon: 'berachain',
-    explorers: []
+    explorers: [
+      {
+        name: 'Berascan',
+        url: 'https://berascan.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Beratrail',
+        url: 'https://beratrail.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Hizoco mainnet',
@@ -36967,22 +37006,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'CONET Holesky',
-    chain: 'CONET Holesky',
+    name: 'CONET Cancun',
+    chain: 'CONET Cancun',
     rpc: [ 'https://rpc.conet.network' ],
     faucets: [],
-    nativeCurrency: { name: 'CONET Holesky', symbol: 'CONET', decimals: 18 },
+    nativeCurrency: { name: 'CONET Cancun', symbol: 'CONET', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://conet.network',
-    shortName: 'conet-holesky',
+    shortName: 'conet-cancun',
     chainId: 224433,
     networkId: 224433,
     slip44: 2147708081,
     icon: 'conet',
     explorers: [
       {
-        name: 'CONET Holesky Scan',
-        url: 'https://scan.conet.network',
+        name: 'CONET Cancun Scan',
+        url: 'https://cancun.conet.network',
         standard: 'EIP3091'
       }
     ]
