@@ -24804,6 +24804,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Volcano Chain Mainnet',
+    chain: 'Volcano',
+    icon: 'volcano',
+    rpc: [ 'https://mainnet.vchain.pro', 'wss://wss.mainnet.vchain.pro' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Volcano Coin', symbol: 'VC', decimals: 18 },
+    infoURL: 'https://vex.pro',
+    shortName: 'volcanochain',
+    chainId: 10085,
+    networkId: 10085,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://vchainscan.com',
+        icon: 'volcano',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'SJATSH',
     chain: 'ETH',
     rpc: [ 'http://geth.free.idcfengye.com' ],
@@ -32396,14 +32417,14 @@ const chainArray = [
   },
   {
     name: 'CyberChain Mainnet',
-    chain: 'CCX',
+    chain: 'XCC',
     icon: 'cyberchain',
     rpc: [ 'https://rpc.cyberchain.xyz/' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'CCX', symbol: 'CCX', decimals: 18 },
+    nativeCurrency: { name: 'XCC', symbol: 'XCC', decimals: 18 },
     infoURL: 'https://cyberchain.xyz',
-    shortName: 'ccx',
+    shortName: 'xcc',
     chainId: 65535,
     networkId: 65535,
     slip44: 60,
