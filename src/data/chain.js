@@ -10852,12 +10852,18 @@ const chainArray = [
     chain: 'Litheum',
     rpc: [ 'https://testnet.litheum.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Lith', symbol: 'LTH', decimals: 9 },
+    nativeCurrency: { name: 'Lith', symbol: 'LTH', decimals: 18 },
     infoURL: 'https://litheum.com',
     shortName: 'lith',
     chainId: 1174,
     networkId: 1174,
-    explorers: []
+    explorers: [
+      {
+        name: 'Litheum Test Network Explorer',
+        url: 'https://explorer.litheum.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Smart Host Teknoloji TESTNET',
@@ -19459,19 +19465,19 @@ const chainArray = [
     ]
   },
   {
-    name: 'Pioneer Chain Testnet',
+    name: 'Pione Chain Mainnet',
     chain: 'PIO',
     icon: 'pio',
     rpc: [ 'https://rpc.pionescan.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Pioneer', symbol: 'PIO', decimals: 18 },
+    nativeCurrency: { name: 'Pione', symbol: 'PIO', decimals: 18 },
     infoURL: 'https://pionechain.com',
     shortName: 'pio',
     chainId: 5090,
     networkId: 5090,
     explorers: [
       {
-        name: 'Pioneer Chain Explorer',
+        name: 'Pione Chain Explorer',
         url: 'https://pionescan.com',
         standard: 'EIP3091'
       }
@@ -23888,6 +23894,21 @@ const chainArray = [
     shortName: 'GENEC',
     chainId: 9100,
     networkId: 9100
+  },
+  {
+    name: 'Destra Dubai Testnet',
+    chain: 'Destra',
+    status: 'active',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sync', symbol: 'SYNC', decimals: 18 },
+    infoURL: '',
+    shortName: 'Destra',
+    chainId: 9108,
+    networkId: 9108,
+    slip44: 1,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-4', bridges: [] }
   },
   {
     name: 'Rinia Testnet Old',
@@ -34461,6 +34482,28 @@ const chainArray = [
       {
         name: 'Lux Network Explorer',
         url: 'https://explore.lux-test.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Lumoz Chain Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.lumoz.org', 'https://rpc-hk.lumoz.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lumoz Mainnet Token', symbol: 'MOZ', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://lumoz.org',
+    shortName: 'Lumoz-Chain-Mainnet',
+    chainId: 96370,
+    networkId: 96370,
+    slip44: 1,
+    icon: 'opside-new',
+    explorers: [
+      {
+        name: 'LumozMainnetInfo',
+        url: 'https://scan.lumoz.info',
+        icon: 'opside-new',
         standard: 'EIP3091'
       }
     ]
