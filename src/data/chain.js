@@ -2728,14 +2728,20 @@ const chainArray = [
   {
     name: 'Unichain',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://mainnet.unichain.org' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://unichain.org',
     shortName: 'unichain',
     chainId: 130,
     networkId: 130,
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'Unichain Mainnet Explorer',
+        url: 'https://uniscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Engram Testnet',
@@ -6816,6 +6822,19 @@ const chainArray = [
     chainId: 486,
     networkId: 486,
     status: 'incubating'
+  },
+  {
+    name: 'Landstars',
+    chain: 'Landstars',
+    icon: 'landstars',
+    rpc: [ 'https://13882-60301.pph-server.de' ],
+    faucets: [],
+    nativeCurrency: { name: 'Landstars', symbol: 'LDS', decimals: 18 },
+    infoURL: 'https://github.com/khalikov001/landstars-info',
+    shortName: 'lds',
+    chainId: 495,
+    networkId: 495,
+    explorers: []
   },
   {
     name: 'Rupaya',
@@ -23983,6 +24002,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'Z Chain',
+    title: 'Z Chain',
+    chain: 'Z',
+    rpc: [ 'https://z-chain-rpc.eu-north-2.gateway.fm/?apiKey=${API_KEY}' ],
+    faucets: [],
+    features: [ { name: 'EIP155' } ],
+    nativeCurrency: { name: 'Z', symbol: 'Z', decimals: 18 },
+    infoURL: 'https://zero.tech',
+    shortName: 'z',
+    chainId: 9369,
+    networkId: 9369,
+    icon: 'z',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://z-chain-blockscout.eu-north-2.gateway.fm',
+        icon: 'z',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://z-chain-bridge.eu-north-2.gateway.fm' } ]
+    }
+  },
+  {
     name: 'Oasys Testnet',
     chain: 'Oasys',
     icon: 'oasys',
@@ -24395,6 +24441,27 @@ const chainArray = [
       {
         name: 'Dogelayer mainnet explorer',
         url: 'https://dl-explorer.dogelayer.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'pointledger',
+    chain: 'pointledger',
+    icon: 'pointledger',
+    rpc: [ 'https://rpc.pointledger.net' ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'PLG', symbol: 'PLG', decimals: 18 },
+    infoURL: 'https://pointledger.net',
+    shortName: 'pointledger',
+    chainId: 9889,
+    networkId: 9889,
+    explorers: [
+      {
+        name: 'pointledger Explorer',
+        url: 'https://exp.pointledger.net',
+        icon: 'pointledger',
         standard: 'EIP3091'
       }
     ]
@@ -44109,6 +44176,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Zephyr Testnet',
+    title: 'Zephyr Testnet',
+    chain: 'Zephyr-testnet',
+    rpc: [ 'https://zephyr-rpc.eu-north-2.gateway.fm' ],
+    faucets: [ 'https://zephyr-faucet.eu-north-2.gateway.fm' ],
+    nativeCurrency: { name: 'ZERO', symbol: 'Z', decimals: 18 },
+    infoURL: 'https://zero.tech',
+    shortName: 'zephyr',
+    chainId: 1417429182,
+    networkId: 1417429182,
+    icon: 'zephyr',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://zephyr-blockscout.eu-north-2.gateway.fm',
+        icon: 'zephyr',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://zephyr-bridge.eu-north-2.gateway.fm' } ]
+    }
   },
   {
     name: 'SKALE Europa Hub Testnet',
