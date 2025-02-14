@@ -2728,17 +2728,27 @@ const chainArray = [
   {
     name: 'Unichain',
     chain: 'ETH',
-    rpc: [ 'https://mainnet.unichain.org' ],
+    rpc: [
+      'https://mainnet.unichain.org',
+      'https://unichain-rpc.publicnode.com',
+      'wss://unichain-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://unichain.org',
     shortName: 'unichain',
     chainId: 130,
     networkId: 130,
+    icon: 'unichain',
     explorers: [
       {
         name: 'Unichain Mainnet Explorer',
         url: 'https://uniscan.xyz',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Unichain Mainnet Explorer',
+        url: 'https://unichain.blockscout.com',
         standard: 'EIP3091'
       }
     ]
@@ -11735,6 +11745,7 @@ const chainArray = [
     shortName: 'unichain-sep',
     chainId: 1301,
     networkId: 1301,
+    icon: 'unichain-testnet',
     explorers: [
       {
         name: 'Unichain Sepolia Testnet Explorer',
@@ -19642,22 +19653,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'MeChain Testnet',
-    chain: 'MeChain',
+    name: 'Moca Chain Testnet',
+    chain: 'Moca Chain',
     rpc: [ 'https://testnet-rpc.mechain.tech' ],
     faucets: [ 'https://faucet.mechain.tech' ],
-    nativeCurrency: { name: 'ZKME', symbol: 'ZKME', decimals: 18 },
+    nativeCurrency: { name: 'MOCA', symbol: 'MOCA', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://mechain.tech',
-    shortName: 'ZKME',
+    shortName: 'MOCA',
     chainId: 5151,
     networkId: 5151,
-    icon: 'mechain',
+    icon: 'moca',
     explorers: [
       {
-        name: 'MeChain Scan',
+        name: 'Moca Chain Scan',
         url: 'https://testnet-scan.mechain.tech',
-        icon: 'mechain',
+        icon: 'moca',
         standard: 'EIP3091'
       }
     ]
@@ -23011,6 +23022,19 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'New Reality Blockchain',
+    chain: 'NEWRL',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'NewReal', symbol: 'NEWRL', decimals: 18 },
+    features: [],
+    infoURL: 'https://newreality.bond/',
+    shortName: 'newrl',
+    chainId: 8569,
+    networkId: 8569,
+    status: 'incubating'
+  },
+  {
     name: 'Toki Network',
     chain: 'TOKI',
     rpc: [ 'https://mainnet.buildwithtoki.com/v0/rpc' ],
@@ -23735,16 +23759,16 @@ const chainArray = [
     ]
   },
   {
-    name: 'Shido Mainnet Block',
+    name: 'Shido Network',
     chain: 'Shido Mainnet',
     rpc: [
-      'https://rpc-nodes.shidoscan.com',
-      'wss://wss-nodes.shidoscan.com',
-      'https://rpc-delta-nodes.shidoscan.com',
-      'wss://wss-delta-nodes.shidoscan.com'
+      'https://shido-mainnet-archive-lb-nw5es9.zeeve.net/USjg7xqUmCZ4wCsqEOOE/rpc',
+      'wss://shido-mainnet-archive-lb-nw5es9.zeeve.net/USjg7xqUmCZ4wCsqEOOE/ws',
+      'https://evm.shidoscan.net',
+      'wss://wss.shidoscan.net'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Shido Mainnet Token', symbol: 'SHIDO', decimals: 18 },
+    nativeCurrency: { name: 'Shido', symbol: 'SHIDO', decimals: 18 },
     infoURL: 'https://shido.io',
     shortName: 'Shido',
     chainId: 9008,
@@ -23752,7 +23776,7 @@ const chainArray = [
     icon: 'shidoChain',
     explorers: [
       {
-        name: 'Shidoblock Mainnet Explorer',
+        name: 'Shidoscan',
         url: 'https://shidoscan.com',
         standard: 'none',
         icon: 'shidoChain'
@@ -33514,7 +33538,11 @@ const chainArray = [
   {
     name: 'Berachain',
     chain: 'Berachain',
-    rpc: [ 'https://rpc.berachain.com' ],
+    rpc: [
+      'https://rpc.berachain.com',
+      'https://berachain-rpc.publicnode.com',
+      'wss://berachain-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
     infoURL: 'https://www.berachain.com',
@@ -44089,6 +44117,25 @@ const chainArray = [
       {
         name: 'Turbo explorer',
         url: 'https://explorer.turbo.aurora.dev',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tuxappcoin',
+    chain: 'NEAR',
+    rpc: [ 'https://rpc-0x4e454165.aurora-cloud.dev' ],
+    icon: 'tuxa',
+    faucets: [],
+    nativeCurrency: { name: 'TUXA', symbol: 'TUXA', decimals: 18 },
+    infoURL: 'https://x.com/tuxapp_coin',
+    shortName: 'tuxa',
+    chainId: 1313161573,
+    networkId: 1313161573,
+    explorers: [
+      {
+        name: 'TUXA explorer',
+        url: 'https://explorer.tuxa.aurora.dev',
         standard: 'EIP3091'
       }
     ]
