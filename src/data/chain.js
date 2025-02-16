@@ -36773,6 +36773,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Alterscope',
+    chain: 'Alterscope',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'RISK', symbol: 'RISK', decimals: 18 },
+    infoURL: 'https://alterscope.org',
+    shortName: 'Alterscope',
+    chainId: 202209,
+    networkId: 202209,
+    status: 'incubating'
+  },
+  {
     name: 'X1 Devnet',
     chain: 'X1',
     rpc: [ 'https://x1-devnet.xen.network' ],
@@ -43626,6 +43638,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Asset Hub',
+    chain: 'DOT',
+    rpc: [ 'https://asset-hub-eth-rpc.polkadot.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'DOT', symbol: 'DOT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://polkadot.network',
+    shortName: 'AH',
+    chainId: 420420419,
+    networkId: 420420419,
+    explorers: []
+  },
+  {
     name: 'Westend Asset Hub',
     chain: 'WST',
     rpc: [ 'https://westend-asset-hub-eth-rpc.polkadot.io' ],
@@ -45017,6 +45042,27 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'ALDChain Testnet',
+    chain: 'ALD',
+    rpc: [ 'https://testnet-rpc.aldrickb.xyz' ],
+    faucets: [ 'https://faucet.aldrickb.xyz' ],
+    nativeCurrency: { name: 'ALD Token', symbol: 'ALD', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://aldrickb.com/projects',
+    shortName: 'ald',
+    chainId: 96737205180,
+    networkId: 96737205180,
+    icon: 'aldrickb',
+    explorers: [
+      {
+        name: 'ALDChain Testnet Explorer',
+        url: 'https://testnet-explorer.aldrickb.xyz',
+        icon: 'aldrickb',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Kakarot Sepolia Deprecated',
     chain: 'ETH',
     icon: 'kakarot',
@@ -45294,6 +45340,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Smart Pay Mobile Money',
+    chain: 'Mobile Money',
+    rpc: [ 'https://network.uat.smartmoneyewallet.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'SmartPay Mobile Money', symbol: 'SMRTP', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://network.uat.smartmoneyewallet.com/',
+    shortName: 'SmartPay',
+    chainId: 666301179999,
+    networkId: 666301179999,
+    icon: 'smartpay'
   },
   {
     name: 'Molereum Network',
