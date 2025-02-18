@@ -21538,7 +21538,7 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'InitVerse mainnet',
+    name: 'InitVerse Mainnet',
     chain: 'InitVerse',
     rpc: [ 'https://rpc-mainnet.inichain.com' ],
     faucets: [],
@@ -22606,6 +22606,19 @@ const chainArray = [
     shortName: 'StreamuX',
     chainId: 8098,
     networkId: 8098
+  },
+  {
+    name: 'Bharat Blockchain Network Mainnet',
+    chain: 'BBN',
+    rpc: [ 'https://bbnrpc.mainnet.bharatblockchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'BBN', symbol: 'BBN', decimals: 18 },
+    features: [],
+    infoURL: 'https://bharatblockchain.io/',
+    shortName: 'bbn',
+    chainId: 8099,
+    networkId: 8099,
+    explorers: []
   },
   {
     name: 'Zenchain',
@@ -41291,6 +41304,25 @@ const chainArray = [
         name: 'Safe(AnWang) Testnet Explorer',
         url: 'http://safe4-testnet.anwang.com',
         icon: 'safe-anwang',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'The Ting Blockchain Testnet Explorer',
+    chain: 'Ting',
+    rpc: [ 'https://testnet.tingchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ton', symbol: 'Ton', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://tingscan.com',
+    shortName: 'ting-testnet',
+    chainId: 6666689,
+    networkId: 6666689,
+    explorers: [
+      {
+        name: 'TingScan',
+        url: 'https://tingscan.com',
         standard: 'EIP3091'
       }
     ]
