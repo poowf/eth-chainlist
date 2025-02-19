@@ -11760,6 +11760,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'COINZAX',
+    chain: 'ZAX',
+    icon: 'coinzaxIcon',
+    rpc: [ 'https://rpc.coinzax.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'COINZAX', symbol: 'ZAX', decimals: 18 },
+    infoURL: 'https://coinzax.com',
+    shortName: 'zax',
+    chainId: 1310,
+    networkId: 1310,
+    status: 'active',
+    explorers: [
+      {
+        name: 'COINZAX Explorer',
+        url: 'https://explorer.coinzax.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Dos Fuji Subnet',
     chain: 'DOS',
     rpc: [ 'https://test.doschain.com/jsonrpc' ],
@@ -14123,22 +14143,24 @@ const chainArray = [
   },
   {
     name: 'edeXa Testnet',
-    chain: 'edeXa TestNetwork',
+    chain: 'edeXa',
     rpc: [
       'https://testnet.edexa.network/rpc',
-      'https://testnet.edexa.com/rpc'
+      'wss://testnet.edexa.network/wss',
+      'https://testnet.edexa.com/rpc',
+      'wss://testnet.edexa.com/wss'
     ],
     faucets: [ 'https://faucet.edexa.com/' ],
-    nativeCurrency: { name: 'EDEXA', symbol: 'EDX', decimals: 18 },
+    nativeCurrency: { name: 'edeXa', symbol: 'tEDX', decimals: 18 },
     infoURL: 'https://edexa.network/',
-    shortName: 'edx',
+    shortName: 'edxt',
     chainId: 1995,
     networkId: 1995,
     slip44: 1,
     icon: 'edexa',
     explorers: [
       {
-        name: 'edexa-testnet',
+        name: 'edexa-testnet-explorer',
         url: 'https://explorer.testnet.edexa.network',
         standard: 'EIP3091'
       }
@@ -17757,6 +17779,27 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'Xone Mainnet',
+    chain: 'XOC',
+    icon: 'Xonechain',
+    rpc: [ 'https://rpc.xone.org' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.xone.org/' ],
+    nativeCurrency: { name: 'Xone Coin', symbol: 'XOC', decimals: 18 },
+    infoURL: 'https://xone.org',
+    shortName: 'XOC',
+    chainId: 3721,
+    networkId: 3721,
+    explorers: [
+      {
+        name: 'Xonescan',
+        url: 'https://xscscan.com',
+        icon: 'Xonescan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Crossbell',
     chain: 'Crossbell',
     rpc: [ 'https://rpc.crossbell.io' ],
@@ -21134,7 +21177,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Nibiru Mainnet',
+    name: 'Nibiru cataclysm-1',
     chain: 'Nibiru',
     rpc: [ 'https://evm-rpc.nibiru.fi' ],
     faucets: [],
@@ -21512,7 +21555,7 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Nibiru Testnet-1',
+    name: 'Nibiru testnet-1',
     chain: 'Nibiru',
     rpc: [ 'https://evm-rpc.testnet-1.nibiru.fi' ],
     faucets: [],
@@ -21525,7 +21568,7 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Nibiru Devnet-3',
+    name: 'Nibiru devnet-3',
     chain: 'Nibiru',
     rpc: [ 'https://evm-rpc.devnet-3.nibiru.fi' ],
     faucets: [],
@@ -42622,9 +42665,9 @@ const chainArray = [
       'https://rpc-testnet.knight.center'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    faucets: [ 'https://faucet.xone.plus/' ],
+    faucets: [ 'https://faucet.xone.org/' ],
     nativeCurrency: { name: 'Xone Coin', symbol: 'XOC', decimals: 18 },
-    infoURL: 'https://xone.plus',
+    infoURL: 'https://xone.org',
     shortName: 'txoc',
     chainId: 33772211,
     networkId: 33772211,
