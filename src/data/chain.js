@@ -7093,7 +7093,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'EVM on Flow Testnet',
+    name: 'Flow EVM Testnet',
     chain: 'Flow',
     rpc: [ 'https://testnet.evm.nodes.onflow.org' ],
     faucets: [ 'https://faucet.flow.com/fund-account' ],
@@ -7609,23 +7609,17 @@ const chainArray = [
     ]
   },
   {
-    name: 'Previewnet',
+    name: 'Flow EVM Previewnet',
     chain: 'Flow',
-    rpc: [ 'https://previewnet.evm.nodes.onflow.org' ],
-    faucets: [ 'https://previewnet-faucet.onflow.org' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'FLOW', symbol: 'FLOW', decimals: 18 },
     infoURL: 'https://developers.flow.com/evm/about',
     shortName: 'flow-previewnet',
     chainId: 646,
     networkId: 646,
     icon: 'flowevm',
-    explorers: [
-      {
-        name: 'EVM on Flow Block Explorer (PreviewNet)',
-        url: 'https://eth.flowscan.io',
-        standard: 'EIP3091'
-      }
-    ],
+    explorers: [],
     status: 'deprecated'
   },
   {
@@ -8315,7 +8309,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'EVM on Flow',
+    name: 'Flow EVM Mainnet',
     chain: 'Flow',
     rpc: [ 'https://mainnet.evm.nodes.onflow.org' ],
     faucets: [],
@@ -17304,7 +17298,8 @@ const chainArray = [
       'https://peaq.api.onfinality.io/public',
       'https://peaq-rpc.dwellir.com',
       'https://peaq-rpc.publicnode.com',
-      'https://evm.peaq.network'
+      'https://evm.peaq.network',
+      'https://responsive-powerful-mansion.peaq-mainnet.quiknode.pro/29963d0a2deee01a20b091926b08d68db12bc68b'
     ],
     faucets: [],
     nativeCurrency: { name: 'peaq', symbol: 'PEAQ', decimals: 18 },
@@ -18825,6 +18820,37 @@ const chainArray = [
     ]
   },
   {
+    name: 'MemeCore',
+    title: 'MemeCore',
+    chain: 'MemeCore',
+    icon: 'memecore',
+    rpc: [ 'https://rpc.memecore.net', 'wss://ws.memecore.net' ],
+    nativeCurrency: { name: 'M', symbol: 'M', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    infoURL: 'https://memecore.com',
+    shortName: 'm',
+    chainId: 4352,
+    networkId: 4352,
+    explorers: [
+      {
+        name: 'OKX-MemeCore',
+        url: 'https://www.okx.com/web3/explorer/memecore',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'MemeCoreScan',
+        url: 'https://memecorescan.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'MemeCore explorer',
+        url: 'https://blockscout.memecore.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Credit Smart Chain Mainnet',
     chain: 'CREDIT',
     rpc: [ 'https://rpc.creditsmartchain.com' ],
@@ -20291,10 +20317,10 @@ const chainArray = [
     name: 'Tanssi Demo',
     chain: 'TANGO',
     rpc: [
-      'https://fraa-dancebox-3001-rpc.a.dancebox.tanssi.network',
-      'wss://fraa-dancebox-3001-rpc.a.dancebox.tanssi.network'
+      'https://dancebox-3001.tanssi-api.network',
+      'wss://dancebox-3001.tanssi-api.network'
     ],
-    faucets: [],
+    faucets: [ 'https://apps.tanssi.network/demo' ],
     nativeCurrency: { name: 'TANGO', symbol: 'TANGO', decimals: 18 },
     infoURL: 'https://docs.tanssi.network/builders/tanssi-network/networks/dancebox/demo-evm-containerchain',
     shortName: 'tango',
@@ -20303,7 +20329,7 @@ const chainArray = [
     explorers: [
       {
         name: 'BlockScout',
-        url: 'https://3001-blockscout.a.dancebox.tanssi.network',
+        url: 'https://fra-dancebox-3001-bs.a.dancebox.tanssi.network',
         standard: 'EIP3091'
       }
     ]
@@ -27983,6 +28009,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Action Mainnet',
+    chain: 'Action',
+    icon: 'action',
+    rpc: [ 'https://rpc.actionblockchain.org' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Action', symbol: 'ACTN', decimals: 18 },
+    infoURL: 'https://docs.actioncoin.com',
+    shortName: 'ACTN',
+    chainId: 21000,
+    networkId: 21000,
+    explorers: [
+      {
+        name: 'Action Mainnet Explorer',
+        url: 'http://exp.actionblockchain.org',
+        icon: 'action',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'C4EI',
     chain: 'C4EI',
     rpc: [ 'https://rpc.c4ei.net' ],
@@ -30564,6 +30611,11 @@ const chainArray = [
       {
         name: 'MemeCoreScan-Formicarium',
         url: 'https://formicarium.memecorescan.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'MemeCore Testnet Formicarium Explorer',
+        url: 'https://formicarium.blockscout.memecore.com',
         standard: 'EIP3091'
       }
     ]
@@ -34660,6 +34712,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Wonder Testnet',
+    chain: 'WNDR',
+    rpc: [ 'https://rpc.testnet.wonderchain.org' ],
+    faucets: [ 'https://wonderchain.org/faucet' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://wonderchain.org',
+    shortName: 'wndr',
+    chainId: 96371,
+    networkId: 96371,
+    icon: 'wonder',
+    explorers: [
+      {
+        name: 'wonderexplorer',
+        url: 'https://explorer.testnet.wonderchain.org',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Mantis Testnet (Hexapod)',
     chain: 'Mantis',
     icon: 'mantis',
@@ -38734,22 +38806,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'DisChain',
+    name: 'EthereumFair',
     chainId: 513100,
     networkId: 513100,
-    shortName: 'dis',
-    chain: 'DIS',
-    nativeCurrency: { name: 'DisChain', symbol: 'DIS', decimals: 18 },
-    rpc: [ 'https://rpc.dischain.xyz' ],
+    shortName: 'ethf',
+    chain: 'ETHF',
+    nativeCurrency: { name: 'EthereumFair', symbol: 'ETHF', decimals: 18 },
+    rpc: [ 'https://rpc.etherfair.org' ],
     faucets: [],
     explorers: [
       {
-        name: 'DisChain',
-        url: 'https://www.oklink.com/dis',
+        name: 'EthereumFair',
+        url: 'https://www.oklink.com/ethf',
         standard: 'EIP3091'
       }
     ],
-    infoURL: 'https://dischain.xyz'
+    infoURL: 'https://etherfair.org/'
   },
   {
     name: 'DoCoin Community Chain',
@@ -39293,6 +39365,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Primea Chain',
+    chain: 'Primea Chain',
+    rpc: [ 'https://rpc.primeanetwork.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'PrimeaCoin', symbol: 'PRIM', decimals: 18 },
+    infoURL: 'https://primeanetwork.com',
+    shortName: 'prim',
+    chainId: 698369,
+    networkId: 698369,
+    icon: 'prim',
+    explorers: []
   },
   {
     name: 'Fidesinnova',
