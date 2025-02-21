@@ -20667,6 +20667,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tea Mainnet',
+    chain: 'TEA',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Tea', symbol: 'TEA', decimals: 18 },
+    infoURL: 'https://tea.xyz',
+    shortName: 'tea',
+    chainId: 6122,
+    networkId: 6122,
+    parent: { type: 'L2', chain: 'eip155-1' },
+    status: 'incubating'
+  },
+  {
     name: 'Rails',
     title: 'Rails Network Mainnet',
     chain: 'RAILS',
@@ -24915,6 +24928,18 @@ const chainArray = [
     networkId: 10010
   },
   {
+    name: 'DeepSafe Beta Mainnet',
+    chain: 'DeepSafe',
+    rpc: [ 'https://betamainnet-rpc-node-http.deepsafe.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'DeepSafe Native Token', symbol: 'DEF', decimals: 18 },
+    infoURL: 'https://deepsafe.network/',
+    shortName: 'DeepSafe',
+    chainId: 10011,
+    networkId: 10011,
+    icon: 'deepsafe'
+  },
+  {
     name: 'Gon Chain',
     chain: 'GonChain',
     icon: 'gonchain',
@@ -25146,6 +25171,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Tea Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Tea', symbol: 'TEA', decimals: 18 },
+    infoURL: 'https://tea.xyz',
+    shortName: 'teasep',
+    chainId: 10218,
+    networkId: 10218,
+    parent: { type: 'L2', chain: 'eip155-11155111' },
+    status: 'incubating'
   },
   {
     name: 'GLScan',
@@ -28548,6 +28586,18 @@ const chainArray = [
     shortName: 'mintme',
     chainId: 24734,
     networkId: 37480
+  },
+  {
+    name: 'Recall',
+    chain: 'Recall',
+    rpc: [ 'https://evm.node-0.mainnet.recall.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Recall', symbol: 'RECALL', decimals: 18 },
+    infoURL: 'https://recall.network',
+    shortName: 'recall',
+    chainId: 24816,
+    networkId: 24816,
+    explorers: []
   },
   {
     name: 'LiquidLayer Mainnet',
@@ -40912,6 +40962,24 @@ const chainArray = [
         name: 'Coinweb block explorer',
         url: 'https://explorer.coinweb.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Recall Testnet',
+    chain: 'Recall Testnet',
+    rpc: [ 'https://evm.v013.node-0.testnet.recall.network' ],
+    faucets: [ 'faucet.recall.network' ],
+    nativeCurrency: { name: 'Recall', symbol: 'RECALL', decimals: 18 },
+    infoURL: 'https://recall.network',
+    shortName: 'trecall',
+    chainId: 2481632,
+    networkId: 2481632,
+    explorers: [
+      {
+        name: 'Recall testnet explorer',
+        url: 'https://explorer.testnet.recall.network',
+        standard: 'EIP3091'
       }
     ]
   },
