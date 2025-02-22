@@ -811,7 +811,7 @@ const chainArray = [
     name: 'Telos EVM Mainnet',
     chain: 'TLOS',
     rpc: [
-      'https://mainnet.telos.net/evm',
+      'https://rpc.telos.net',
       'https://telos.drpc.org',
       'wss://telos.drpc.org'
     ],
@@ -833,7 +833,7 @@ const chainArray = [
     name: 'Telos EVM Testnet',
     chain: 'TLOS',
     rpc: [
-      'https://testnet.telos.net/evm',
+      'https://rpc.testnet.telos.net',
       'https://telos-testnet.drpc.org',
       'wss://telos-testnet.drpc.org'
     ],
@@ -9008,6 +9008,26 @@ const chainArray = [
         name: 'Ambros Chain Explorer',
         url: 'https://ambrosscan.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Weber Governance Mainnet',
+    chain: 'PTT',
+    rpc: [ 'https://chain.myweber.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'PALLET', symbol: 'PTT', decimals: 18 },
+    infoURL: 'https://myweber.org',
+    shortName: 'ptt',
+    chainId: 881,
+    networkId: 881,
+    icon: 'ptt',
+    explorers: [
+      {
+        name: 'Weber Governance Mainnet Explorer',
+        url: 'https://mainnet.myweber.org',
+        icon: 'ptt',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -31196,21 +31216,21 @@ const chainArray = [
     }
   },
   {
-    name: 'Somnia Devnet',
+    name: 'Somnia Testnet',
     chain: 'Somnia',
     rpc: [ 'https://dream-rpc.somnia.network' ],
     faucets: [],
-    nativeCurrency: { name: 'Somnia Devnet', symbol: 'STT', decimals: 18 },
+    nativeCurrency: { name: 'Somnia Testnet', symbol: 'STT', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://somnia.network',
-    shortName: 'STT',
-    chainId: 50311,
-    networkId: 50311,
+    shortName: 'SomniaTestnet',
+    chainId: 50312,
+    networkId: 50312,
     icon: 'somnia',
     explorers: [
       {
-        name: 'Somnia Devnet',
-        url: 'https://somnia-devnet.socialscan.io',
+        name: 'Somnia Testnet',
+        url: 'https://somnia-testnet.socialscan.io',
         icon: 'somnia',
         standard: 'EIP3091'
       }
@@ -31359,6 +31379,27 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Cytonic L2 Testnet',
+    chain: 'CytonicL2',
+    rpc: [ 'http://rpc.evm.testnet.cytonic.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cytonic', symbol: 'CCC', decimals: 18 },
+    infoURL: 'https://cytonic.com',
+    shortName: 'CL2T',
+    chainId: 52226,
+    networkId: 52226,
+    icon: 'cytonic_l2',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.evm.testnet.cytonic.com',
+        icon: 'cytonic_l2',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-52225' }
   },
   {
     name: 'DOID',
@@ -33645,6 +33686,19 @@ const chainArray = [
         icon: 'polynomialSepolia'
       }
     ]
+  },
+  {
+    name: 'Berachain Bepolia',
+    chain: 'Berachain',
+    rpc: [ 'https://testnet.rpc.berachain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet BERA Token', symbol: 'BERA', decimals: 18 },
+    infoURL: 'https://www.berachain.com',
+    shortName: 'berachain-bepolia',
+    chainId: 80069,
+    networkId: 80069,
+    icon: 'berachain',
+    explorers: []
   },
   {
     name: 'Berachain bArtio',
@@ -37146,8 +37200,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Litentry',
-    chain: 'Litentry',
+    name: 'Heima',
+    chain: 'Heima',
     rpc: [
       'https://rpc.litentry-parachain.litentry.io',
       'wss://rpc.litentry-parachain.litentry.io',
@@ -37155,16 +37209,16 @@ const chainArray = [
       'wss://litentry-rpc.dwellir.com'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Litentry', symbol: 'LIT', decimals: 18 },
-    infoURL: 'https://litentry.com',
-    shortName: 'litentry',
+    nativeCurrency: { name: 'Heima', symbol: 'HEI', decimals: 18 },
+    infoURL: 'https://heima.network',
+    shortName: 'heima',
     chainId: 212013,
     networkId: 212013,
-    icon: 'litentry',
+    icon: 'heima',
     explorers: [
       {
-        name: 'litentry statescan',
-        url: 'https://litentry.statescan.io',
+        name: 'heima statescan',
+        url: 'https://heima.statescan.io',
         standard: 'none'
       }
     ]
@@ -37235,7 +37289,16 @@ const chainArray = [
   {
     name: 'Hydration',
     chain: 'HDX',
-    rpc: [ 'https://rpc.hydradx.cloud', 'wss://rpc.hydradx.cloud' ],
+    rpc: [
+      'https://rpc.hydradx.cloud',
+      'wss://rpc.hydradx.cloud',
+      'https://hydration-rpc.n.dwellir.com',
+      'wss://hydration-rpc.n.dwellir.com',
+      'https://rpc.helikon.io/hydradx',
+      'wss://rpc.helikon.io/hydradx',
+      'https://hydration.dotters.network',
+      'wss://hydration.dotters.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Wrapped ETH', symbol: 'WETH', decimals: 18 },
     infoURL: 'https://hydration.net/',
