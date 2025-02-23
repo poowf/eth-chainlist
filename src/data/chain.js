@@ -39218,6 +39218,25 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
+    name: 'Hetu Testnet',
+    chain: 'HETU',
+    rpc: [ 'https://rpc.testchainv1.hetuscan.com' ],
+    faucets: [ 'https:/testchainv1.hetuscan.com' ],
+    nativeCurrency: { name: 'tETH', symbol: 'tETH', decimals: 18 },
+    infoURL: 'https://hetu.org',
+    shortName: 'HETU',
+    chainId: 560000,
+    networkId: 560000,
+    explorers: [
+      {
+        name: 'Hetu Testnet Scan',
+        url: 'http://testchainv1.hetuscan.com',
+        icon: 'hetu',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DJT Testnet',
     chain: 'DJT',
     icon: 'djt',
