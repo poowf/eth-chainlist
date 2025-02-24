@@ -20041,23 +20041,25 @@ const chainArray = [
   },
   {
     name: 'edeXa Mainnet',
-    chain: 'edeXa Network',
+    chain: 'edeXa',
     rpc: [
       'https://mainnet.edexa.network/rpc',
-      'https://mainnet.edexa.com/rpc'
+      'wss://mainnet.edexa.network/wss',
+      'https://mainnet.edexa.com/rpc',
+      'wss://mainnet.edexa.com/wss'
     ],
     faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    nativeCurrency: { name: 'EDEXA', symbol: 'EDX', decimals: 18 },
+    nativeCurrency: { name: 'edeXa', symbol: 'EDX', decimals: 18 },
     infoURL: 'https://edexa.network/',
-    shortName: 'edeXa',
+    shortName: 'edx',
     chainId: 5424,
     networkId: 5424,
     slip44: 1,
     icon: 'edexa',
     explorers: [
       {
-        name: 'edexa-mainnet',
+        name: 'edexa-mainnet-explorer',
         url: 'https://explorer.edexa.network',
         standard: 'EIP3091'
       }
@@ -21554,7 +21556,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Bitrock Explorer',
-        url: 'https://explorer.bit-rock.io',
+        url: 'https://brockscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -33690,7 +33692,7 @@ const chainArray = [
   {
     name: 'Berachain Bepolia',
     chain: 'Berachain',
-    rpc: [ 'https://testnet.rpc.berachain.com' ],
+    rpc: [ 'https://bepolia.rpc.berachain.com' ],
     faucets: [],
     nativeCurrency: { name: 'Testnet BERA Token', symbol: 'BERA', decimals: 18 },
     infoURL: 'https://www.berachain.com',
@@ -33727,11 +33729,9 @@ const chainArray = [
   {
     name: 'Berachain Artio',
     chain: 'Berachain Artio',
-    rpc: [
-      'https://artio.rpc.berachain.com',
-      'https://rpc.ankr.com/berachain_testnet'
-    ],
-    faucets: [ 'https://artio.faucet.berachain.com' ],
+    status: 'deprecated',
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
     infoURL: 'https://www.berachain.com',
     shortName: 'berachainArtio',
@@ -39230,7 +39230,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Hetu Testnet Scan',
-        url: 'http://testchainv1.hetuscan.com',
+        url: 'https://testchainv1.hetuscan.com',
         icon: 'hetu',
         standard: 'EIP3091'
       }
@@ -40598,6 +40598,26 @@ const chainArray = [
         name: 'AMCAmChain explorer',
         url: 'https://explorer.amchain.net',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Naga Testnet',
+    chain: 'Naga',
+    rpc: [ 'https://rpc.nagafintech.com', 'wss://rpc.nagafintech.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Naga', symbol: 'Naga', decimals: 18 },
+    infoURL: 'https://stablecoin.nagafintech.com/#/app/home',
+    shortName: 'Naga',
+    chainId: 1008686,
+    networkId: 1008686,
+    icon: 'naga',
+    explorers: [
+      {
+        name: 'Naga Explorer Testnet',
+        url: 'https://explorer.nagafintech.com',
+        icon: 'naga',
+        standard: 'EIP3091'
       }
     ]
   },
