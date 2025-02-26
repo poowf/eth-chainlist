@@ -25755,6 +25755,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'StateMesh Testnet',
+    icon: 'statemesh',
+    chain: 'MESH',
+    rpc: [ 'https://rpc-test.statemesh.net' ],
+    faucets: [ 'https://faucet.statemesh.net' ],
+    nativeCurrency: { name: 'StateMesh', symbol: 'MESH', decimals: 18 },
+    infoURL: 'https://statemesh.net',
+    shortName: 'mesh-test',
+    chainId: 11343,
+    networkId: 11343,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer-test.statemesh.net',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Shyft Testnet',
     chain: 'SHYFTT',
     icon: 'shyft',
@@ -33753,7 +33773,9 @@ const chainArray = [
     rpc: [
       'https://rpc.berachain.com',
       'https://berachain-rpc.publicnode.com',
-      'wss://berachain-rpc.publicnode.com'
+      'wss://berachain-rpc.publicnode.com',
+      'https://rpc.berachain-apis.com',
+      'wss://rpc.berachain-apis.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
@@ -39778,6 +39800,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Surge Testnet',
+    chain: 'Surge Testnet',
+    rpc: [
+      'https://l2-rpc.surge.staging-nethermind.xyz',
+      'wss://l2-rpc.surge.staging-nethermind.xyz'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://surge.wtf',
+    shortName: 'surge-testnet',
+    chainId: 763374,
+    networkId: 763374,
+    icon: 'surge-testnet',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.holesky.surge.wtf',
+        standard: 'EIP3091',
+        icon: 'surge-testnet'
+      }
+    ]
+  },
+  {
     name: 'Lamina1 Testnet',
     chain: 'Lamina1 Testnet',
     rpc: [ 'https://subnets.avax.network/lamina1tes/testnet/rpc' ],
@@ -40981,6 +41027,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Alterscope Testnet',
+    chain: 'AlterscopeTest',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'RISK Test Token', symbol: 'RISKT', decimals: 18 },
+    infoURL: 'https://alterscope.org',
+    shortName: 'AlterscopeTest',
+    chainId: 2022091,
+    networkId: 2022091,
+    status: 'incubating'
   },
   {
     name: 'Plian Mainnet Main',
@@ -43117,6 +43175,17 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'dKargo Warehouse Testnet',
+    chain: 'dKargo Warehouse',
+    rpc: [ 'https://warehouse-full01.dkargo.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'dKargo', symbol: 'DKA', decimals: 18 },
+    infoURL: 'https://dkargo.io',
+    shortName: 'dkargowarehouse',
+    chainId: 61022448,
+    networkId: 61022448
   },
   {
     name: 'Aquachain',
