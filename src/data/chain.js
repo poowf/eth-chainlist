@@ -13002,6 +13002,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ethpar Mainnet',
+    chain: 'ETP',
+    rpc: [ 'https://rpc01.ethpar.net/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethpar', symbol: 'ETP', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://ethpar.com',
+    shortName: 'ethpar',
+    chainId: 1727,
+    networkId: 1727,
+    icon: 'ethpar',
+    explorers: [
+      {
+        name: 'Ethpar Mainnet Explorer',
+        url: 'https://dora.ethpar.net',
+        icon: 'ethpar',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Reya Network',
     chain: 'Reya',
     rpc: [ 'https://rpc.reya.network', 'wss://ws.reya.network' ],
@@ -15690,16 +15711,18 @@ const chainArray = [
   },
   {
     name: 'Atleta Olympia',
-    chain: 'Atleta',
+    chain: 'Atleta Testnet Olympia',
     rpc: [
-      'wss://testnet-rpc.atleta.network:9944',
-      'https://testnet-rpc.atleta.network:9944',
-      'https://testnet-rpc.atleta.network'
+      'https://testnet-rpc.atleta.network',
+      'https://rpc.ankr.com/atleta_olympia',
+      'wss://testnet-rpc.atleta.network',
+      'https://atleta-testnet.htw.tech/',
+      'https://public-atleta.nownodes.io'
     ],
     faucets: [ 'https://app-olympia.atleta.network/faucet' ],
-    nativeCurrency: { name: 'Atla', symbol: 'ATLA', decimals: 18 },
+    nativeCurrency: { name: 'Atla Olympia', symbol: 'ATLA', decimals: 18 },
     infoURL: 'https://atleta.network',
-    shortName: 'atla',
+    shortName: 'olym',
     chainId: 2340,
     networkId: 2340,
     slip44: 1,
@@ -15708,7 +15731,7 @@ const chainArray = [
       {
         name: 'Atleta Olympia Explorer',
         icon: 'atleta',
-        url: 'https://blockscout.atleta.network',
+        url: 'https://blockscout.testnet-v2.atleta.network',
         standard: 'none'
       },
       {
@@ -16057,6 +16080,36 @@ const chainArray = [
     chainId: 2426,
     networkId: 2426,
     status: 'incubating'
+  },
+  {
+    name: 'Atleta Network',
+    chain: 'Atleta',
+    rpc: [
+      'https://rpc.mainnet.atleta.network',
+      'wss://rpc.mainnet.atleta.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Atla', symbol: 'ATLA', decimals: 18 },
+    infoURL: 'https://atleta.network',
+    shortName: 'atla',
+    chainId: 2440,
+    networkId: 2440,
+    slip44: 965,
+    icon: 'atleta',
+    explorers: [
+      {
+        name: 'Atleta Explorer',
+        icon: 'atleta',
+        url: 'https://blockscout.atleta.network',
+        standard: 'none'
+      },
+      {
+        name: 'Atleta Polka Explorer',
+        icon: 'atleta',
+        url: 'https://polkadot-explorer.atleta.network/#/explorer',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Polygon zkEVM Cardona Testnet',
@@ -31383,13 +31436,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Cytonic Testnet',
-    chain: 'Cytonic',
+    name: 'Cytonic Settlement Layer Testnet',
+    chain: 'CytonicSL',
     rpc: [ 'http://rpc.sl.testnet.cytonic.com' ],
     faucets: [],
     nativeCurrency: { name: 'Cytonic', symbol: 'CCC', decimals: 18 },
     infoURL: 'https://cytonic.com',
-    shortName: 'CTS',
+    shortName: 'CSL',
     chainId: 52225,
     networkId: 52225,
     icon: 'cytonic_l1',
@@ -31403,13 +31456,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Cytonic L2 Testnet',
-    chain: 'CytonicL2',
+    name: 'Cytonic Ethereum Testnet',
+    chain: 'CytonicEVM',
     rpc: [ 'http://rpc.evm.testnet.cytonic.com' ],
     faucets: [],
     nativeCurrency: { name: 'Cytonic', symbol: 'CCC', decimals: 18 },
     infoURL: 'https://cytonic.com',
-    shortName: 'CL2T',
+    shortName: 'CEVM',
     chainId: 52226,
     networkId: 52226,
     icon: 'cytonic_l2',
@@ -36551,6 +36604,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'MUD Chain',
+    chain: 'MUD',
+    rpc: [ 'https://rpc.mud.network' ],
+    faucets: [ 'https://faucet.mud.network' ],
+    nativeCurrency: { name: 'MUD', symbol: 'MUD', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mud.network',
+    shortName: 'MUD',
+    chainId: 168169,
+    networkId: 168169,
+    icon: 'mud',
+    explorers: [
+      {
+        name: 'MUD Chain Scan',
+        url: 'https://scan.mud.network',
+        icon: 'mud',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Fair Testnet',
     chain: 'FAIR',
     rpc: [ 'https://rpc-testnet.xfair.ai', 'wss://rpc-testnet.xfair.ai' ],
@@ -37651,6 +37725,27 @@ const chainArray = [
         name: 'saakuru-explorer-testnet',
         url: 'https://explorer-testnet.saakuru.network',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CELESTIUM Network Testnet',
+    chain: 'CELESTIUM',
+    rpc: [ 'https://rpc-private-testnet.celestium.network' ],
+    faucets: [ 'https://faucet.celestium.network' ],
+    nativeCurrency: { name: 'CLT', symbol: 'tCLT', decimals: 18 },
+    infoURL: 'https://celestium.network',
+    shortName: 'tclt',
+    chainId: 252525,
+    networkId: 252525,
+    slip44: 1,
+    icon: 'celestium',
+    explorers: [
+      {
+        name: 'CELESTIUM Testnet Explorer',
+        icon: 'celestium',
+        url: 'https://testnet.celestium.network',
+        standard: 'none'
       }
     ]
   },
@@ -39941,6 +40036,27 @@ const chainArray = [
         url: 'https://explorer.octa.space',
         icon: 'blockscout',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Ethpar Testnet',
+    chain: 'ETP',
+    rpc: [ 'https://rpc82.testnet.ethpar.net/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethpar', symbol: 'ETP', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://ethpar.com',
+    shortName: 'ethpar-tesnet',
+    chainId: 806582,
+    networkId: 806582,
+    icon: 'ethpar',
+    explorers: [
+      {
+        name: 'Ethpar Testnet Explorer',
+        url: 'https://dora.testnet.ethpar.net',
+        icon: 'ethpar',
+        standard: 'none'
       }
     ]
   },
@@ -42391,14 +42507,14 @@ const chainArray = [
     ]
   },
   {
-    name: ' Privix Chain Mainnet',
-    chain: 'PSC',
+    name: 'Privix Chain Mainnet',
+    chain: 'PRIVIX',
     rpc: [
       'https://mainnet-rpc.privixchain.xyz/',
       'wss://mainnet-rpc.privixchain.xyz/ws'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Privix Coin', symbol: 'PSC', decimals: 18 },
+    nativeCurrency: { name: 'Privix Coin', symbol: 'PRIVIX', decimals: 18 },
     infoURL: 'https://privix.co/',
     shortName: 'mpsc',
     chainId: 16969696,
@@ -43562,13 +43678,13 @@ const chainArray = [
   },
   {
     name: ' Privix Chain Testnet',
-    chain: 'PSC',
+    chain: 'PRIVIX',
     rpc: [
       'https://testnet-rpc.privixchain.xyz/',
       'wss://testnet-rpc.privixchain.xyz/ws'
     ],
     faucets: [ 'https://faucet.privixchain.xyz' ],
-    nativeCurrency: { name: 'Privix Coin', symbol: 'tPSC', decimals: 18 },
+    nativeCurrency: { name: 'Privix Coin', symbol: 'PRIVIX', decimals: 18 },
     infoURL: 'https://privix.co/',
     shortName: 'tpsc',
     chainId: 96969696,
