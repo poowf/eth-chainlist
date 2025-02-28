@@ -13855,7 +13855,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Selendra Portal',
-        url: 'https://portal.selendra.org',
+        url: 'https://explorer.selendra.org',
         standard: 'none'
       }
     ]
@@ -13918,7 +13918,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Selendra Portal',
-        url: 'https://portal.selendra.org',
+        url: 'https://explorer.selendra.org',
         standard: 'none'
       }
     ]
@@ -28940,6 +28940,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'XferChain Testnet',
+    chain: 'XferChain Testnet',
+    icon: 'xferIcon',
+    rpc: [ 'https://testnet-rpc.xferchain.org' ],
+    faucets: [ 'https://faucet.xferchain.org' ],
+    nativeCurrency: { name: 'Dapo', symbol: 'Dapo', decimals: 18 },
+    infoURL: 'https://xferchain.org',
+    shortName: 'DPt',
+    chainId: 27125,
+    networkId: 27125,
+    explorers: [
+      {
+        name: 'XferChain Testnet Explorer',
+        url: 'https://testnet.xferchain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'KLAOS Nova',
     title: 'KLAOS Nova Test Chain',
     chain: 'KLAOS Nova',
@@ -29004,6 +29023,25 @@ const chainArray = [
       {
         name: 'ZEROONEMAI Explorer',
         url: 'https://subnets.avax.network/zeroonemai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'XferChain Mainnet',
+    chain: 'XferChain Mainnet',
+    icon: 'xferIcon',
+    rpc: [ 'https://rpc.xferchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dapo', symbol: 'Dapo', decimals: 18 },
+    infoURL: 'https://xferchain.org',
+    shortName: 'DPm',
+    chainId: 28125,
+    networkId: 28125,
+    explorers: [
+      {
+        name: 'XferChain Mainnet Explorer',
+        url: 'https://xferchain.org',
         standard: 'EIP3091'
       }
     ]
@@ -39618,7 +39656,12 @@ const chainArray = [
   {
     name: 'Primea Chain',
     chain: 'Primea Chain',
-    rpc: [ 'https://rpc.primeanetwork.com' ],
+    rpc: [
+      'http://rpc.primeanetwork.com/rpc-http',
+      'https://rpc.primeanetwork.com/rpc-https',
+      'ws://rpc.primeanetwork.com/rpc-ws',
+      'wss://rpc.primeanetwork.com/rpc-wss'
+    ],
     faucets: [],
     nativeCurrency: { name: 'PrimeaCoin', symbol: 'PRIM', decimals: 18 },
     infoURL: 'https://primeanetwork.com',
@@ -45427,6 +45470,32 @@ const chainArray = [
         name: 'Explorer',
         url: 'https://explorer.pectra-devnet-5.ethpandaops.io',
         icon: 'ethereum',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ONFA Chain',
+    title: 'ONFA Chain',
+    chain: 'onfa',
+    rpc: [
+      'https://rpc.onfa.io',
+      'https://rpc.onfachain.com',
+      'wss://ws.onfa.io',
+      'wss://ws.onfachain.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Onfa Coin', symbol: 'OFC', decimals: 18 },
+    infoURL: 'https://onfa.io',
+    shortName: 'onfa',
+    chainId: 8691942025,
+    networkId: 8691942025,
+    icon: 'onfachain',
+    explorers: [
+      {
+        name: 'ONFA Scan',
+        url: 'https://onfascan.com',
+        icon: 'onfachain',
         standard: 'EIP3091'
       }
     ]
