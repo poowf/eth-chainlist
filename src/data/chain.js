@@ -17035,7 +17035,7 @@ const chainArray = [
     explorers: [
       {
         name: 'bcexplorer mainnet',
-        url: 'https://mainnet.bchscan.io',
+        url: 'https://bchscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -17323,18 +17323,24 @@ const chainArray = [
     ]
   },
   {
-    name: 'EthStorage L2 Devnet',
-    chain: 'EthStorage',
-    rpc: [ 'http://devnet.l2.ethstorage.io:9540' ],
+    name: 'QuarkChain L2 Beta Testnet',
+    chain: 'QuarkChain',
+    rpc: [ 'https://rpc.beta.testnet.l2.quarkchain.io:8545' ],
     faucets: [],
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://ethstorage.io/',
-    shortName: 'esl2-d',
+    nativeCurrency: { name: 'QKC', symbol: 'QKC', decimals: 18 },
+    infoURL: 'https://www.quarkchain.io',
+    shortName: 'qkcl2-b',
     chainId: 3335,
     networkId: 3335,
     slip44: 1,
-    status: 'incubating',
-    parent: { type: 'L2', chain: 'eip155-11155111' }
+    parent: { type: 'L2', chain: 'eip155-11155111' },
+    explorers: [
+      {
+        name: 'quarkchain-beta-test',
+        url: 'https://explorer.beta.testnet.l2.quarkchain.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'EthStorage L2 Testnet',
@@ -28660,6 +28666,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'MagiChain',
+    chain: 'MagiChain',
+    icon: 'magiIcon',
+    rpc: [ 'https://rpc.magichain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'MGIX', symbol: 'MGIX', decimals: 18 },
+    infoURL: 'https://magichain.io',
+    shortName: 'MGC',
+    chainId: 24125,
+    networkId: 24125,
+    explorers: [
+      {
+        name: 'MagiChain Explorer',
+        url: 'https://explorer.magichain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Webchain',
     chain: 'WEB',
     rpc: [],
@@ -39654,8 +39679,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Primea Chain',
-    chain: 'Primea Chain',
+    name: 'Primea Chain Mainnet',
+    chain: 'Primea Chain Mainnet',
     rpc: [
       'http://rpc.primeanetwork.com/rpc-http',
       'https://rpc.primeanetwork.com/rpc-https',
@@ -41141,6 +41166,24 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Primea Chain Testnet',
+    chain: 'Primea Chain Testnet',
+    rpc: [
+      'http://test-rpc.primeanetwork.com/rpc-http',
+      'https://test-rpc.primeanetwork.com/rpc-https',
+      'ws://test-rpc.primeanetwork.com/rpc-ws',
+      'wss://test-rpc.primeanetwork.com/rpc-wss'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'PrimeaCoin Test', symbol: 'PRIM', decimals: 18 },
+    infoURL: 'https://primeanetwork.com',
+    shortName: 'test-prim',
+    chainId: 1698369,
+    networkId: 1698369,
+    icon: 'prim',
+    explorers: []
   },
   {
     name: 'Turkey Demo Dev',
