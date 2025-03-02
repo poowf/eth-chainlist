@@ -9668,6 +9668,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'IOPN Testnet',
+    chain: 'IOPN Testnet',
+    rpc: [ 'https://testnet-rpc.iopn.tech' ],
+    faucets: [ 'https://faucet.iopn.tech' ],
+    nativeCurrency: { name: 'OPN', symbol: 'OPN', decimals: 18 },
+    infoURL: 'https://iopn.tech',
+    shortName: 'iopn-Test-Chain',
+    chainId: 984,
+    networkId: 984,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://testnet.iopn.tech',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Memo Smart Chain Mainnet',
     chain: 'MEMO',
     rpc: [
@@ -9687,6 +9705,24 @@ const chainArray = [
         url: 'https://scan.metamemo.one:8080',
         icon: 'memo',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'LAGOM Mainnet',
+    chain: 'LAGOM Mainnet',
+    rpc: [ 'https://rpc1.lagom.mainnet.zeeve.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'LAGO', symbol: 'LAGO', decimals: 18 },
+    infoURL: 'https://lagomchain.com',
+    shortName: 'Lagom-Chain',
+    chainId: 986,
+    networkId: 986,
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://Explorer.lagomchain.com',
+        standard: 'none'
       }
     ]
   },
@@ -16725,6 +16761,29 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Apertum',
+    title: 'Apertum',
+    chain: 'APTM',
+    rpc: [
+      'https://rpc.apertum.io/ext/bc/YDJ1r9RMkewATmA7B35q1bdV18aywzmdiXwd9zGBq3uQjsCnn/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Apertum', symbol: 'APTM', decimals: 18 },
+    infoURL: 'https://apertum.io',
+    shortName: 'aptm',
+    chainId: 2786,
+    networkId: 2786,
+    icon: 'apertum',
+    explorers: [
+      {
+        name: 'Apertum Explorer',
+        url: 'https://explorer.apertum.io',
+        icon: 'apertum',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Morph Holesky',
     title: 'Morph Holesky Testnet',
     chain: 'ETH',
@@ -21844,6 +21903,22 @@ const chainArray = [
     ]
   },
   {
+    name: 'Rarimo',
+    title: 'Rarimo Mainnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Rarimo Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://rarimo.com',
+    shortName: 'rarimo',
+    chainId: 7368,
+    networkId: 7368,
+    icon: 'rarimo',
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'Raba Network Mainnet',
     chain: 'Raba',
     icon: 'raba',
@@ -23373,6 +23448,25 @@ const chainArray = [
     shortName: 'tmy',
     chainId: 8768,
     networkId: 8768
+  },
+  {
+    name: 'Okto Testnet',
+    chain: 'Okto',
+    rpc: [ 'https://rpc.okto-testnet.zeeve.online' ],
+    faucets: [ 'https://faucet.okto-testnet.zeeve.online' ],
+    nativeCurrency: { name: 'Okto', symbol: 'OKTO', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: '',
+    shortName: 'okto-testnet',
+    chainId: 8801,
+    networkId: 8801,
+    explorers: [
+      {
+        name: 'Okto Testnet Explorer',
+        url: 'https://explorer.okto-testnet.zeeve.online',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Haven1',
