@@ -4191,10 +4191,16 @@ const chainArray = [
     name: 'Bitnet',
     chain: 'BTN',
     icon: 'bitnet',
-    rpc: [ 'https://rpc.bitnet.money', 'https://rpc.btnscan.com' ],
+    rpc: [
+      'https://rpc.bitnet.money',
+      'https://rpc.btnscan.com',
+      'https://rpc.btn.network',
+      'https://rpc.bitnetmoney.com',
+      'https://rpc.btn-network.org'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Bitnet', symbol: 'BTN', decimals: 18 },
-    infoURL: 'https://bitnet.money',
+    infoURL: 'https://bitnet.technology',
     shortName: 'BTN',
     chainId: 210,
     networkId: 210,
@@ -5842,7 +5848,7 @@ const chainArray = [
     rpc: [ 'https://testapi.omaxray.com' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.omaxray.com/' ],
-    nativeCurrency: { name: 'OMAX TESTCOIN', symbol: 'OMAXT', decimals: 18 },
+    nativeCurrency: { name: 'OMAX TESTCOIN', symbol: 'OMAX', decimals: 18 },
     infoURL: 'https://www.omaxcoin.com/',
     shortName: 'omaxt',
     chainId: 332,
@@ -5852,6 +5858,7 @@ const chainArray = [
       {
         name: 'Omax Chain Explorer',
         url: 'https://testnet.omaxscan.com',
+        icon: 'omaxray',
         standard: 'EIP3091'
       }
     ]
