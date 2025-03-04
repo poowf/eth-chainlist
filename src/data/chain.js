@@ -3515,13 +3515,13 @@ const chainArray = [
     slip44: 1
   },
   {
-    name: 'CO2e Ledger',
+    name: 'CO2e Chain',
     chain: 'CO2E',
-    rpc: [ 'https://rpc.co2ledger.xyz' ],
+    rpc: [ 'https://rpc.co2e.cc', 'https://rpc.co2ledger.xyz' ],
     faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'CO2e Token', symbol: 'CO2E', decimals: 18 },
-    infoURL: 'https://co2ledger.xyz',
+    infoURL: 'https://co2e.cc',
     shortName: 'CO2e',
     chainId: 171,
     networkId: 171,
@@ -3529,7 +3529,7 @@ const chainArray = [
     explorers: [
       {
         name: 'CO2e Explorer',
-        url: 'https://exp.co2ledger.xyz',
+        url: 'https://exp.co2e.cc',
         standard: 'EIP3091'
       }
     ]
@@ -7023,20 +7023,20 @@ const chainArray = [
     status: 'incubating'
   },
   {
-    name: 'F(x)Core Mainnet Network',
-    chain: 'Fxcore',
+    name: 'Pundi AIFX Omnilayer',
+    chain: 'PUNDIAI',
     rpc: [ 'https://fx-json-web3.functionx.io:8545' ],
     faucets: [],
-    nativeCurrency: { name: 'Function X', symbol: 'FX', decimals: 18 },
-    infoURL: 'https://functionx.io/',
-    shortName: 'FxCore',
+    nativeCurrency: { name: 'Pundi AIFX', symbol: 'PUNDAI', decimals: 18 },
+    infoURL: 'https://fx.pundi.ai/',
+    shortName: 'pundiai',
     chainId: 530,
     networkId: 530,
-    icon: 'fxcore',
+    icon: 'pundiai',
     explorers: [
       {
-        name: 'FunctionX Explorer',
-        url: 'https://fx-evm.functionx.io',
+        name: 'PundiScan Explorer',
+        url: 'https://pundiscan.io/evm',
         standard: 'EIP3091'
       }
     ]
@@ -17539,6 +17539,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Pepe Unchained',
+    chain: 'PEPU',
+    icon: 'pepu',
+    rpc: [ 'https://rpc-pepe-unchained-gupg0lo9wf.t.conduit.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'PEPU', symbol: 'PEPU', decimals: 18 },
+    infoURL: 'https://pepeunchained.com/',
+    shortName: 'PEPU',
+    chainId: 3409,
+    networkId: 3409,
+    explorers: [
+      {
+        name: 'pepuscan',
+        url: 'https://pepuscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'EVOLVE Mainnet',
     chain: 'EVO',
     icon: 'evolveIcon',
@@ -19134,6 +19153,29 @@ const chainArray = [
         url: 'https://explore.emoney.network',
         icon: 'emoney',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'TRUMPCHAIN',
+    chain: 'trumpchain',
+    rpc: [
+      'https://testnet.trumpchain.dev/http',
+      'wss://testnet.trumpchain.dev/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Official Trump', symbol: 'TRUMP', decimals: 18 },
+    infoURL: 'https://trumpchain.dev',
+    shortName: 'TRUMPCHAIN',
+    chainId: 4547,
+    networkId: 4547,
+    icon: 'trump',
+    explorers: [
+      {
+        name: 'TRUMPCHAIN Explorer',
+        url: 'https://explorer.trumpchain.dev',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -20932,6 +20974,18 @@ const chainArray = [
         icon: 'aura'
       }
     ]
+  },
+  {
+    name: 'MegaETH Testnet',
+    chain: 'ETH',
+    nativeCurrency: { name: 'MegaETH Testnet Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [ 'https://carrot.megaeth.com/rpc', 'wss://carrot.megaeth.com/ws' ],
+    faucets: [],
+    infoURL: 'https://testnet.megaeth.com',
+    shortName: 'megatest',
+    chainId: 6342,
+    networkId: 6342,
+    slip44: 1
   },
   {
     name: 'Digit Soul Smart Chain',
@@ -24306,7 +24360,7 @@ const chainArray = [
     name: 'Z Chain',
     title: 'Z Chain',
     chain: 'Z',
-    rpc: [ 'https://z-chain-rpc.eu-north-2.gateway.fm/?apiKey=${API_KEY}' ],
+    rpc: [ 'https://rpc.zchain.org' ],
     faucets: [],
     features: [ { name: 'EIP155' } ],
     nativeCurrency: { name: 'Z', symbol: 'Z', decimals: 18 },
@@ -24318,7 +24372,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://z-chain-blockscout.eu-north-2.gateway.fm',
+        url: 'https://zscan.live',
         icon: 'z',
         standard: 'EIP3091'
       }
@@ -24326,7 +24380,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://z-chain-bridge.eu-north-2.gateway.fm' } ]
+      bridges: [ { url: 'bridge.zchain.org' } ]
     }
   },
   {
@@ -34743,16 +34797,23 @@ const chainArray = [
     ]
   },
   {
-    name: 'F(x)Core Testnet Network',
-    chain: 'Fxcore',
+    name: 'Pundi AIFX Omnilayer Testnet',
+    chain: 'PUNDIAI',
     rpc: [ 'https://testnet-fx-json-web3.functionx.io:8545' ],
     faucets: [],
-    nativeCurrency: { name: 'Function X', symbol: 'FX', decimals: 18 },
-    infoURL: 'https://functionx.io/',
+    nativeCurrency: { name: 'Pundi AIFX', symbol: 'PUNDAI', decimals: 18 },
+    infoURL: 'https://fx.pundi.ai/',
     shortName: 'dhobyghaut',
     chainId: 90001,
     networkId: 90001,
-    icon: 'fxcore'
+    icon: 'pundiai',
+    explorers: [
+      {
+        name: 'PundiScan Explorer',
+        url: 'https://testnet.pundiscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'UBIT SMARTCHAIN MAINNET',
@@ -40141,6 +40202,24 @@ const chainArray = [
       {
         name: 'Tanssi Explorer',
         url: 'https://tanssi-evmexplorer.netlify.app/?rpcUrl=https://fraa-dancebox-3035-rpc.a.dancebox.tanssi.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Oone Chain Mainnet',
+    chain: 'OONE',
+    rpc: [ 'https://rpc.oonechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'OONE', symbol: 'OONE', decimals: 18 },
+    infoURL: 'https://oonechain.com',
+    shortName: 'oone',
+    chainId: 777888,
+    networkId: 777888,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://oonescan.com',
         standard: 'none'
       }
     ]
