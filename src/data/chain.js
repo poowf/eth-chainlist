@@ -5843,6 +5843,32 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Telos zkEVM Testnet',
+    title: 'Telos zkEVM Testnet',
+    chain: 'Telos',
+    rpc: [ 'https://zkrpc.testnet.telos.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'telos-zkevm-testnet',
+    chainId: 331,
+    networkId: 331,
+    icon: 'telos',
+    explorers: [
+      {
+        name: 'TeloScan',
+        icon: 'teloscan',
+        url: 'https://zkexplorer.testnet.telos.net',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://zkbridge.testnet.telos.net' } ]
+    }
+  },
+  {
     name: 'Omax Testnet',
     chain: 'Omax Chain',
     rpc: [ 'https://testapi.omaxray.com' ],
@@ -31091,6 +31117,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Juneo Mainnet',
+    chain: 'JUNE-Chain',
+    rpc: [ 'https://rpc.juneo-mainnet.network/ext/bc/JUNE/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'JUNE', symbol: 'JUNE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://juneo.com/',
+    shortName: 'JUNE',
+    chainId: 45003,
+    networkId: 45003,
+    icon: 'juneomainnet',
+    explorers: [
+      {
+        name: 'Juneo Scan',
+        url: 'https://juneoscan.io/chain/2',
+        icon: 'juneomainnet',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Swamps L2',
     chain: 'SWP',
     icon: 'swamps',
@@ -34986,6 +35033,26 @@ const chainArray = [
         url: 'https://explorer.lambda.top',
         standard: 'EIP3091',
         icon: 'lambda'
+      }
+    ]
+  },
+  {
+    name: 'Miracle Chain',
+    chain: 'MIRACLE',
+    rpc: [ 'https://rpc.miracleplay.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Miracle Play Token', symbol: 'MPT', decimals: 18 },
+    infoURL: 'https://miracleplay.gg',
+    shortName: 'MIRACLE',
+    chainId: 92278,
+    networkId: 92278,
+    icon: 'miracle',
+    explorers: [
+      {
+        name: 'Miracle Chain Explorer',
+        icon: 'miracle',
+        url: 'https://explorer.miracleplay.io',
+        standard: 'none'
       }
     ]
   },
@@ -45239,6 +45306,36 @@ const chainArray = [
       chain: 'eip155-11155111',
       bridges: [ { url: 'https://haust-testnet-bridge.eu-north-2.gateway.fm' } ]
     }
+  },
+  {
+    name: 'Status Network Sepolia',
+    title: 'Status Network Sepolia',
+    chain: 'ETH',
+    rpc: [
+      'https://public.sepolia.rpc.status.network',
+      'wss://status-sepolia-rpc.eu-north-2.gateway.fm/ws'
+    ],
+    faucets: [ 'https://faucet.status.network/' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://status.network',
+    shortName: 'sn-sepolia',
+    chainId: 1660990954,
+    networkId: 1660990954,
+    icon: 'sn',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.status.network' } ]
+    },
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://sepoliascan.status.network',
+        standard: 'EIP3091',
+        icon: 'sn'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Harmony Mainnet Shard 0',
