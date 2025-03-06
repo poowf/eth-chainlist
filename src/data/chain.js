@@ -6867,6 +6867,27 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'BlackFort Exchange Network',
+    chain: 'BXN',
+    rpc: [ 'https://rpc.blackfort.network/mainnet/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'BlackFort Token', symbol: 'BXN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://blackfort.com',
+    shortName: 'BXN',
+    chainId: 488,
+    networkId: 488,
+    icon: 'bxn',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blackfortscan.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Landstars',
     chain: 'Landstars',
     icon: 'landstars',
@@ -19351,7 +19372,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'BlackFort Exchange Network Testnet',
+    name: 'BlackFort Exchange Network Testnet DEPRECATED',
     chain: 'TBXN',
     rpc: [ 'https://testnet.blackfort.network/rpc' ],
     faucets: [],
@@ -19370,7 +19391,8 @@ const chainArray = [
         icon: 'blockscout',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'Evnode Testnet',
@@ -19429,6 +19451,28 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://worldchain-sepolia.explorer.alchemy.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'BlackFort Exchange Network Testnet',
+    chain: 'BXNT',
+    rpc: [ 'https://rpc.blackfort.network/testnet/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'BlackFort Testnet Token', symbol: 'BXNT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://blackfort.com',
+    shortName: 'BXNT',
+    chainId: 4888,
+    networkId: 4888,
+    slip44: 1,
+    icon: 'bxn',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.blackfortscan.com',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -19520,8 +19564,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'BlackFort Exchange Network',
-    chain: 'BXN',
+    name: 'BlackFort Exchange Network Deprecated',
+    chain: 'BXNdpr',
     rpc: [
       'https://mainnet.blackfort.network/rpc',
       'https://mainnet-1.blackfort.network/rpc',
@@ -19529,10 +19573,10 @@ const chainArray = [
       'https://mainnet-3.blackfort.network/rpc'
     ],
     faucets: [],
-    nativeCurrency: { name: 'BlackFort Token', symbol: 'BXN', decimals: 18 },
+    nativeCurrency: { name: 'BlackFort Token', symbol: 'BXNdpr', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://blackfort.exchange',
-    shortName: 'BXN',
+    shortName: 'BXNdpr',
     chainId: 4999,
     networkId: 4999,
     icon: 'bxn',
@@ -19543,7 +19587,8 @@ const chainArray = [
         icon: 'blockscout',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'Mantle',
@@ -34043,12 +34088,9 @@ const chainArray = [
   {
     name: 'Berachain bArtio',
     chain: 'Berachain bArtio',
-    rpc: [
-      'https://bartio.rpc.berachain.com',
-      'https://bera-testnet.nodeinfra.com',
-      'https://bartio.rpc.b-harvest.io'
-    ],
-    faucets: [ 'https://bartio.faucet.berachain.com' ],
+    status: 'deprecated',
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
     infoURL: 'https://www.berachain.com',
     shortName: 'berachainbArtio',
@@ -39908,8 +39950,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Primea Chain Mainnet',
-    chain: 'Primea Chain Mainnet',
+    name: 'Primea Network Mainnet',
+    chain: 'Primea Network Mainnet',
     rpc: [
       'http://rpc.primeanetwork.com/rpc-http',
       'https://rpc.primeanetwork.com/rpc-https',
@@ -39917,9 +39959,9 @@ const chainArray = [
       'wss://rpc.primeanetwork.com/rpc-wss'
     ],
     faucets: [],
-    nativeCurrency: { name: 'PrimeaCoin', symbol: 'PRIM', decimals: 18 },
+    nativeCurrency: { name: 'GoldPrimeaNetwork', symbol: 'GOLDPN', decimals: 18 },
     infoURL: 'https://primeanetwork.com',
-    shortName: 'prim',
+    shortName: 'goldpn',
     chainId: 698369,
     networkId: 698369,
     icon: 'prim',
@@ -39928,10 +39970,10 @@ const chainArray = [
   {
     name: 'Fidesinnova',
     chain: 'Fidesinnova',
-    rpc: [ 'https://fidesf1-rpc.fidesinnova.io' ],
+    rpc: [ 'https://rpc1.fidesinnova.io' ],
     faucets: [],
     nativeCurrency: { name: 'Fidesinnova', symbol: 'FDS', decimals: 18 },
-    infoURL: 'https://fidesinnova1.gitbook.io/fidesinnova',
+    infoURL: 'https://fidesinnova.gitbook.io/docs',
     shortName: 'Fidesinnova',
     chainId: 706883,
     networkId: 706883,
@@ -41415,8 +41457,8 @@ const chainArray = [
     ]
   },
   {
-    name: 'Primea Chain Testnet',
-    chain: 'Primea Chain Testnet',
+    name: 'Primea Network Testnet',
+    chain: 'Primea Network Testnet',
     rpc: [
       'http://test-rpc.primeanetwork.com/rpc-http',
       'https://test-rpc.primeanetwork.com/rpc-https',
@@ -41424,9 +41466,9 @@ const chainArray = [
       'wss://test-rpc.primeanetwork.com/rpc-wss'
     ],
     faucets: [],
-    nativeCurrency: { name: 'PrimeaCoin Test', symbol: 'PRIM', decimals: 18 },
+    nativeCurrency: { name: 'GoldPrimeaNetwork Test', symbol: 'GOLDPN', decimals: 18 },
     infoURL: 'https://primeanetwork.com',
-    shortName: 'test-prim',
+    shortName: 'test-goldpn',
     chainId: 1698369,
     networkId: 1698369,
     icon: 'prim',
