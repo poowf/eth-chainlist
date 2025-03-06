@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.631 (2025-03-06)
+
+
+### Maintenance
+
+* **release:** 0.0.630 ([5ae7df0](https://github.com/poowf/eth-chainlist/commit/5ae7df04e445bcf51a0f7f521368e29191ea1342))
+* update chain data ([b8bbc90](https://github.com/poowf/eth-chainlist/commit/b8bbc90487ac4225fe3ef2f519a6a018c9abffee))
+
 ### 0.0.630 (2025-03-05)
 
 
