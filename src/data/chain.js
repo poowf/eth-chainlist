@@ -21501,6 +21501,19 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Nibiru testnet-2',
+    chain: 'Nibiru',
+    rpc: [ 'https://evm-rpc.testnet-2.nibiru.fi' ],
+    faucets: [],
+    nativeCurrency: { name: 'NIBI', symbol: 'NIBI', decimals: 18 },
+    infoURL: 'https://nibiru.fi',
+    shortName: 'nibiru-testnet-2',
+    chainId: 6911,
+    networkId: 6911,
+    icon: 'nibiru',
+    explorers: []
+  },
+  {
     name: 'XYL TestNet',
     chain: 'XYL',
     rpc: [ 'https://xyl-testnet.glitch.me/rpc/' ],
@@ -31357,6 +31370,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zircuit Garfield Testnet',
+    chain: 'Zircuit Garfield Testnet',
+    icon: 'zircuit',
+    rpc: [ 'https://garfield-testnet.zircuit.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.zircuit.com/',
+    shortName: 'zircuit-garfield-testnet',
+    chainId: 48898,
+    networkId: 48898,
+    explorers: [
+      {
+        name: 'Zircuit',
+        url: 'https://explorer.garfield-testnet.zircuit.com',
+        icon: 'zircuit',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Zircuit Testnet',
     chain: 'Zircuit Testnet',
     icon: 'zircuit',
@@ -37633,8 +37666,8 @@ const chainArray = [
     name: 'Heima',
     chain: 'Heima',
     rpc: [
-      'https://rpc.litentry-parachain.litentry.io',
-      'wss://rpc.litentry-parachain.litentry.io',
+      'https://rpc.heima-parachain.heima.network',
+      'wss://rpc.heima-parachain.heima.network',
       'https://litentry-rpc.dwellir.com',
       'wss://litentry-rpc.dwellir.com'
     ],
@@ -41779,6 +41812,24 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://zero-explorer.alt.technology',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Arcadia Mainnet',
+    chain: 'Arcadia',
+    rpc: [ 'https://arcadia.khalani.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'AIP', symbol: 'AIP', decimals: 18 },
+    infoURL: 'https://khalani.network',
+    shortName: 'aip',
+    chainId: 4278608,
+    networkId: 4278608,
+    explorers: [
+      {
+        name: 'Arcadia Mainnet Explorer',
+        url: 'https://explorer.arcadia.khalani.network',
         standard: 'EIP3091'
       }
     ]
