@@ -3685,10 +3685,7 @@ const chainArray = [
   {
     name: 'IOST Mainnet',
     chain: 'iost',
-    rpc: [
-      'https://iost-mainnet.alt.technology',
-      'wss://iost-mainnet.alt.technology/ws'
-    ],
+    rpc: [ 'https://l2-mainnet.iost.io', 'wss://l2-mainnet.iost.io' ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
     infoURL: 'https://iost.io',
@@ -3700,18 +3697,14 @@ const chainArray = [
     explorers: [
       {
         name: 'IOSTscan',
-        url: 'https://iost-mainnet-explorer.alt.technology',
+        url: 'https://l2-scan.iost.io',
         standard: 'EIP3091'
       }
     ],
     parent: {
       type: 'L2',
       chain: 'eip155-56',
-      bridges: [
-        {
-          url: 'https://10910bc5-8382-4ef5-bdc7-4c54c8f57e75.bridges.rollbridge.app/'
-        }
-      ]
+      bridges: [ { url: 'https://l2-bridge.iost.io' } ]
     }
   },
   {
@@ -8970,6 +8963,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'Radius Testnet',
+    chain: 'Radius',
+    rpc: [ 'https://dev-secure.rpc.theradius.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Useless', symbol: 'USLS', decimals: 18 },
+    infoURL: 'https://www.theradius.xyz/',
+    shortName: 'radius-testnet',
+    chainId: 863,
+    networkId: 863
+  },
+  {
     name: 'Fantasia Chain Mainnet',
     chain: 'FSC',
     rpc: [
@@ -12740,6 +12744,27 @@ const chainArray = [
         name: 'StarCHAIN Explorer',
         url: 'https://starchainscan.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Reactive Mainnet',
+    title: 'Reactive Network',
+    chain: 'REACT',
+    rpc: [ 'https://mainnet-rpc.rnk.dev' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'React', symbol: 'REACT', decimals: 18 },
+    infoURL: 'https://reactive.network',
+    shortName: 'react',
+    icon: 'reactive',
+    chainId: 1597,
+    networkId: 1597,
+    explorers: [
+      {
+        name: 'Reactscan',
+        url: 'https://reactscan.net',
+        standard: 'none'
       }
     ]
   },
@@ -19798,24 +19823,24 @@ const chainArray = [
     status: 'active'
   },
   {
-    name: 'Pioneer Zero Chain',
+    name: 'Pione Zero',
     chain: 'PZO',
     icon: 'pzo',
     rpc: [ 'https://rpc.zeroscan.org' ],
-    faucets: [ 'https://faucet.zeroscan.org/faucet' ],
-    nativeCurrency: { name: 'Pioneer Zero', symbol: 'PZO', decimals: 18 },
+    faucets: [ 'https://dex.pionechain.com/testnet/faucet/' ],
+    nativeCurrency: { name: 'Pione Zero', symbol: 'PZO', decimals: 18 },
     infoURL: 'https://pionechain.com',
     shortName: 'pzo',
     chainId: 5080,
     networkId: 5080,
     explorers: [
       {
-        name: 'Pioneer Zero Chain Explorer',
+        name: 'Pione Zero Explorer',
         url: 'https://zeroscan.org',
         standard: 'EIP3091'
       },
       {
-        name: 'Pioneer Zero Chain Explorer',
+        name: 'Pione Zero Explorer',
         url: 'https://zero.pionescan.com',
         standard: 'EIP3091'
       }
@@ -30927,7 +30952,7 @@ const chainArray = [
   {
     name: 'Hemi Network',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://rpc.hemi.network/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://hemi.xyz',
@@ -30935,9 +30960,16 @@ const chainArray = [
     chainId: 43111,
     networkId: 43111,
     icon: 'hemi',
-    explorers: [],
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.hemi.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
     parent: { type: 'L2', chain: 'eip155-1' },
-    status: 'incubating'
+    status: 'active'
   },
   {
     name: 'Avalanche Fuji Testnet',
@@ -31393,7 +31425,7 @@ const chainArray = [
     name: 'Zircuit Testnet',
     chain: 'Zircuit Testnet',
     icon: 'zircuit',
-    rpc: [ 'https://zircuit1-testnet.p2pify.com/' ],
+    rpc: [ 'https://testnet.zircuit.com' ],
     faucets: [],
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.zircuit.com/',
@@ -31413,7 +31445,7 @@ const chainArray = [
     name: 'Zircuit Mainnet',
     chain: 'Zircuit Mainnet',
     icon: 'zircuit',
-    rpc: [ 'https://zircuit1-mainnet.p2pify.com/' ],
+    rpc: [ 'https://mainnet.zircuit.com' ],
     faucets: [],
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.zircuit.com/',
@@ -42014,10 +42046,7 @@ const chainArray = [
     name: 'Reactive Kopli',
     title: 'Reactive Network Testnet Kopli',
     chain: 'REACT',
-    rpc: [
-      'https://kopli-rpc.reactive.network',
-      'http://kopli-rpc.rkt.ink'
-    ],
+    rpc: [ 'https://kopli-rpc.rnk.dev' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://dev.reactive.network/docs/kopli-testnet#faucet' ],
     nativeCurrency: { name: 'Kopli React', symbol: 'REACT', decimals: 18 },
@@ -42028,7 +42057,7 @@ const chainArray = [
     networkId: 5318008,
     explorers: [
       {
-        name: 'reactscan',
+        name: 'Reactscan',
         url: 'https://kopli.reactscan.net',
         standard: 'none'
       }
