@@ -31792,7 +31792,10 @@ const chainArray = [
   {
     name: 'Electroneum Mainnet',
     chain: 'Electroneum',
-    rpc: [ 'https://rpc.electroneum.com' ],
+    rpc: [
+      'https://rpc.electroneum.com',
+      'https://rpc.ankr.com/electroneum'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Electroneum', symbol: 'ETN', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -35524,7 +35527,7 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
-    name: 'Plume Mainnet',
+    name: 'Plume',
     title: 'Plume Ethereum L2 Rollup Mainnet',
     chain: 'ETH',
     rpc: [ 'https://rpc.plumenetwork.xyz', 'wss://rpc.plumenetwork.xyz' ],
@@ -35546,7 +35549,38 @@ const chainArray = [
     ],
     parent: {
       type: 'L2',
-      chain: 'eip155-11155111',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.plumenetwork.xyz' } ]
+    }
+  },
+  {
+    name: 'Plume Mainnet',
+    title: 'Plume Ethereum L2 Rollup Mainnet',
+    chain: 'ETH',
+    rpc: [
+      'https://phoenix-rpc.plumenetwork.xyz',
+      'wss://phoenix-rpc.plumenetwork.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Plume', symbol: 'PLUME', decimals: 18 },
+    infoURL: 'https://plumenetwork.xyz/',
+    shortName: 'plume-mainnet',
+    chainId: 98866,
+    networkId: 98866,
+    slip44: 1,
+    icon: 'plume',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://phoenix-explorer.plumenetwork.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
       bridges: [ { url: 'https://bridge.plumenetwork.xyz' } ]
     }
   },
@@ -35937,6 +35971,19 @@ const chainArray = [
       }
     ],
     redFlags: [ 'reusedChainId' ]
+  },
+  {
+    name: 'Xitcoin',
+    chain: 'XITCOIN',
+    faucets: [],
+    rpc: [ 'https://network.xitcoin.org' ],
+    nativeCurrency: { name: 'Xitcoin', symbol: '$XTC', decimals: 8 },
+    infoURL: 'https://docs.xitcoin.org/',
+    shortName: 'Xitcoin',
+    chainId: 101088,
+    networkId: 101088,
+    icon: 'xitcoin',
+    explorers: []
   },
   {
     name: 'Creditcoin',
@@ -39978,6 +40025,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Gensyn Testnet',
+    chain: 'Gensyn',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.gensyn.ai/',
+    shortName: 'gensyn-test',
+    chainId: 685685,
+    networkId: 685685,
+    status: 'incubating'
+  },
+  {
     name: 'Won Network',
     chainId: 686868,
     shortName: 'WonChain',
@@ -42023,8 +42082,8 @@ const chainArray = [
   {
     name: 'Electroneum Testnet',
     chain: 'Electroneum',
-    rpc: [ 'https://testnet-rpc.electroneum.com' ],
-    faucets: [],
+    rpc: [ 'https://rpc.ankr.com/electroneum_testnet' ],
+    faucets: [ 'https://faucet.electroneum.com' ],
     nativeCurrency: { name: 'Electroneum', symbol: 'ETN', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://electroneum.com',
@@ -42036,7 +42095,7 @@ const chainArray = [
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://blockexplorer.thesecurityteam.rocks',
+        url: 'https://testnet-blockexplorer.electroneum.com',
         icon: 'electroneum',
         standard: 'EIP3091'
       }
