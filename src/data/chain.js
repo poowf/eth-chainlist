@@ -20005,6 +20005,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Seismic devnet',
+    chain: 'Seismic',
+    rpc: [ 'https://node-2.seismicdev.net/rpc' ],
+    faucets: [ 'https://faucet-2.seismicdev.net/' ],
+    nativeCurrency: { name: 'Seismic Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://seismic.systems',
+    shortName: 'seismic-devnet',
+    chainId: 5124,
+    networkId: 5124,
+    explorers: [
+      {
+        name: 'Seismic Devnet Explorer',
+        url: 'https://explorer-2.seismicdev.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Moca Chain Testnet',
     chain: 'Moca Chain',
     rpc: [ 'https://testnet-rpc.mechain.tech' ],
@@ -20305,12 +20324,7 @@ const chainArray = [
   {
     name: 'edeXa Mainnet',
     chain: 'edeXa',
-    rpc: [
-      'https://mainnet.edexa.network/rpc',
-      'wss://mainnet.edexa.network/wss',
-      'https://mainnet.edexa.com/rpc',
-      'wss://mainnet.edexa.com/wss'
-    ],
+    rpc: [ 'https://rpc.edexa.network', 'https://rpc.edexa.com' ],
     faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'edeXa', symbol: 'EDX', decimals: 18 },
@@ -39752,6 +39766,27 @@ const chainArray = [
       {
         name: 'ECLIPSE Explorer',
         url: 'https://subnets-test.avax.network/eclipsecha',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Xsolla ZK Sepolia Testnet',
+    chain: 'Xsolla ZK Sepolia',
+    rpc: [ 'https://zkrpc-sepolia.xsollazk.com' ],
+    faucets: [ 'https://xsollazk.com/faucet' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://xsolla.com/zk',
+    shortName: 'xsollazk-sepolia',
+    chainId: 555777,
+    networkId: 555777,
+    slip44: 1,
+    icon: 'xsollazk',
+    explorers: [
+      {
+        name: 'Xsolla ZK Sepolia Block Explorer',
+        url: 'https://x.la/explorer',
+        icon: 'xsollazk',
         standard: 'EIP3091'
       }
     ]
