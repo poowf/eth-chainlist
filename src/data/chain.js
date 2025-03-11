@@ -2025,22 +2025,22 @@ const chainArray = [
     status: 'active'
   },
   {
-    name: 'Bitkub Chain',
-    chain: 'BKC',
-    icon: 'bkc',
+    name: 'KUB Mainnet',
+    chain: 'KUB',
     rpc: [ 'https://rpc.bitkubchain.io', 'wss://wss.bitkubchain.io' ],
     faucets: [],
-    nativeCurrency: { name: 'Bitkub Coin', symbol: 'KUB', decimals: 18 },
-    infoURL: 'https://www.bitkubchain.com/',
-    shortName: 'bkc',
+    nativeCurrency: { name: 'KUB Coin', symbol: 'KUB', decimals: 18 },
+    infoURL: 'https://www.kubchain.com/',
+    shortName: 'kub',
     chainId: 96,
     networkId: 96,
+    icon: 'kub',
     explorers: [
       {
-        name: 'Bitkub Chain Explorer',
-        url: 'https://bkcscan.com',
+        name: 'KUB Mainnet Explorer',
+        url: 'https://kubscan.com',
         standard: 'none',
-        icon: 'bkc'
+        icon: 'kub'
       }
     ],
     redFlags: [ 'reusedChainId' ]
@@ -14295,10 +14295,8 @@ const chainArray = [
     name: 'edeXa Testnet',
     chain: 'edeXa',
     rpc: [
-      'https://testnet.edexa.network/rpc',
-      'wss://testnet.edexa.network/wss',
-      'https://testnet.edexa.com/rpc',
-      'wss://testnet.edexa.com/wss'
+      'https://rpc.testnet.edexa.network',
+      'https://rpc.testnet.edexa.com'
     ],
     faucets: [ 'https://faucet.edexa.com/' ],
     nativeCurrency: { name: 'edeXa', symbol: 'tEDX', decimals: 18 },
@@ -24167,12 +24165,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'Qubetics Testnet',
-    chain: 'Qubetics Testnet',
-    rpc: [
-      'https://alphatestnet-evm-rpc.qubetics.work/',
-      'wss://wss-testnet-nodes.shidoscan.com'
-    ],
+    name: 'Qubetics Alpha Testnet',
+    chain: 'Qubetics Alpha Testnet',
+    rpc: [ 'https://alphatestnet-evm-rpc.qubetics.work/' ],
     faucets: [ 'https://alphatestnet-explorer.qubetics.work/faucet' ],
     nativeCurrency: { name: 'Qubetics Testnet Token', symbol: 'TICS', decimals: 18 },
     infoURL: 'https://www.qubetics.com/',
@@ -24183,7 +24178,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Qubetics Testnet Explorer',
-        url: 'https://testnet.shidoscan.com',
+        url: 'https://alphatestnet-explorer.qubetics.work/dashboard',
         standard: 'none',
         icon: 'qubetics'
       }
@@ -29074,26 +29069,26 @@ const chainArray = [
     ]
   },
   {
-    name: 'Bitkub Chain Testnet',
-    chain: 'BKC',
-    icon: 'bkc',
+    name: 'KUB Testnet',
+    chain: 'KUB',
     rpc: [
       'https://rpc-testnet.bitkubchain.io',
       'wss://wss-testnet.bitkubchain.io'
     ],
-    faucets: [ 'https://faucet.bitkubchain.com' ],
-    nativeCurrency: { name: 'Bitkub Coin', symbol: 'tKUB', decimals: 18 },
-    infoURL: 'https://www.bitkubchain.com/',
-    shortName: 'bkct',
+    faucets: [ 'https://faucet.kubchain.com' ],
+    nativeCurrency: { name: 'KUB Coin', symbol: 'tKUB', decimals: 18 },
+    infoURL: 'https://www.kubchain.com/',
+    shortName: 'kubt',
     chainId: 25925,
     networkId: 25925,
+    icon: 'kub',
     slip44: 1,
     explorers: [
       {
-        name: 'bkcscan-testnet',
-        url: 'https://testnet.bkcscan.com',
+        name: 'KUB Testnet Explorer',
+        url: 'https://testnet.kubscan.com',
         standard: 'none',
-        icon: 'bkc'
+        icon: 'kub'
       }
     ]
   },
@@ -35541,8 +35536,8 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
-    name: 'Plume',
-    title: 'Plume Ethereum L2 Rollup Mainnet',
+    name: 'Plume (Legacy)',
+    title: 'Plume Ethereum L2 Rollup Mainnet (Legacy)',
     chain: 'ETH',
     rpc: [ 'https://rpc.plumenetwork.xyz', 'wss://rpc.plumenetwork.xyz' ],
     faucets: [],
@@ -46374,6 +46369,28 @@ const chainArray = [
         { url: 'https://testnet-bridge.gelato.network/bridge/volmex' }
       ]
     }
+  },
+  {
+    name: 'Basecamp',
+    chain: 'CAMP',
+    icon: 'camp',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    rpc: [ 'https://rpc.basecamp.t.raas.gelato.cloud' ],
+    faucets: [ 'https://www.campnetwork.xyz/faucet_l1' ],
+    nativeCurrency: { name: 'Camp', symbol: 'CAMP', decimals: 18 },
+    infoURL: 'https://docs.campnetwork.xyz/',
+    shortName: 'Basecamp',
+    chainId: 123420001114,
+    networkId: 123420001114,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://basecamp.cloud.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Ntity Mainnet',
