@@ -29220,6 +29220,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'AB Core Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.core.testnet.ab.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'AB', symbol: 'AB', decimals: 18 },
+    infoURL: 'https://ab.org',
+    shortName: 'tABCore',
+    chainId: 26888,
+    networkId: 26888,
+    explorers: [
+      {
+        name: 'AB Core explorer',
+        url: 'https://explorer.core.testnet.ab.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Newton Finance Testnet',
     chain: 'ETH',
     rpc: [ 'https://jp-rpc-testnet-newfi.newpay.io' ],
@@ -30959,7 +30977,7 @@ const chainArray = [
     networkId: 43110
   },
   {
-    name: 'Hemi Network',
+    name: 'Hemi',
     chain: 'ETH',
     rpc: [ 'https://rpc.hemi.network/rpc' ],
     faucets: [],
@@ -32004,7 +32022,7 @@ const chainArray = [
     name: 'OverProtocol Mainnet',
     chain: 'OverProtocol',
     icon: 'overIcon',
-    rpc: [ 'https://rpc.overprotocol.com', 'https://rpc2.overprotocol.com' ],
+    rpc: [ 'https://rpc.overprotocol.com' ],
     faucets: [],
     nativeCurrency: { name: 'Over', symbol: 'OVER', decimals: 18 },
     infoURL: 'https://docs.over.network',
