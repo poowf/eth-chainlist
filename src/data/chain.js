@@ -16296,7 +16296,11 @@ const chainArray = [
   {
     name: '6Degree of Outreach',
     chain: '6DO',
-    rpc: [ 'https://rpc.6do.world' ],
+    rpc: [
+      'https://rpc.6dochain.com',
+      'https://rpc2.6dochain.com',
+      'https://rpc3.6dochain.com'
+    ],
     faucets: [],
     nativeCurrency: { name: '6Degree Coin', symbol: '6DO', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -16308,7 +16312,7 @@ const chainArray = [
     explorers: [
       {
         name: '6Degree Chain Explorer',
-        url: 'https://explorer.6do.world',
+        url: 'https://explorer.6dochain.com',
         standard: 'EIP3091'
       }
     ]
@@ -21506,13 +21510,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'Mtt Mainnet',
+    name: 'MTT Network',
     chain: 'MTT',
     rpc: [ 'https://evm-rpc.mtt.network' ],
     faucets: [],
-    nativeCurrency: { name: 'Mtt mainnet native coin', symbol: 'MTT', decimals: 18 },
+    nativeCurrency: { name: 'MTT Network native coin', symbol: 'MTT', decimals: 18 },
     infoURL: 'https://mtt.network',
-    shortName: 'mtt-mainnet',
+    shortName: 'mtt-network',
     chainId: 6880,
     networkId: 6880,
     icon: 'mttnetwork',
@@ -22571,6 +22575,27 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://explorer.powerloom.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Powerloom Mainnet V2',
+    chain: 'Powerloom Mainnet V2',
+    rpc: [ 'https://rpc-v2.powerloom.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Powerloom Token', symbol: 'POWER', decimals: 18 },
+    infoURL: 'https://powerloom.network',
+    shortName: 'powerloom',
+    chainId: 7869,
+    networkId: 7869,
+    icon: 'power',
+    status: 'active',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer-v2.powerloom.network',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -24171,13 +24196,13 @@ const chainArray = [
     faucets: [ 'https://alphatestnet-explorer.qubetics.work/faucet' ],
     nativeCurrency: { name: 'Qubetics Testnet Token', symbol: 'TICS', decimals: 18 },
     infoURL: 'https://www.qubetics.com/',
-    shortName: 'Qubetics',
+    shortName: 'QubeticsAlpha',
     chainId: 9003,
     networkId: 9003,
     icon: 'qubetics',
     explorers: [
       {
-        name: 'Qubetics Testnet Explorer',
+        name: 'Qubetics Alpha Testnet Explorer',
         url: 'https://alphatestnet-explorer.qubetics.work/dashboard',
         standard: 'none',
         icon: 'qubetics'
@@ -24296,6 +24321,26 @@ const chainArray = [
         url: 'https://nexablockscan.io',
         standard: 'none',
         icon: 'nexaChain'
+      }
+    ]
+  },
+  {
+    name: 'Qubetics Testnet',
+    chain: 'Qubetics Testnet',
+    rpc: [ 'https://rpc-testnet.qubetics.work/' ],
+    faucets: [ 'https://testnet.qubetics.work/faucet' ],
+    nativeCurrency: { name: 'Qubetics Testnet Token', symbol: 'TICS', decimals: 18 },
+    infoURL: 'https://www.qubetics.com/',
+    shortName: 'Qubetics',
+    chainId: 9029,
+    networkId: 9029,
+    icon: 'qubetics',
+    explorers: [
+      {
+        name: 'Qubetics Testnet Explorer',
+        url: 'https://testnet.qubetics.work',
+        standard: 'none',
+        icon: 'qubetics'
       }
     ]
   },
@@ -29839,42 +29884,32 @@ const chainArray = [
     ]
   },
   {
-    name: 'Xchain Mainnet',
-    chain: 'Xchain',
+    name: 'Xchain Mainnet (Deprecated)',
+    chain: 'XchainDeprecated',
     icon: 'intd',
-    rpc: [ 'https://rpc.xchainscan.com' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Intdestcoin', symbol: 'INTD', decimals: 18 },
-    infoURL: 'https://xchainscan.com',
-    shortName: 'INTD',
+    infoURL: 'https://chainlist.org/chain/31753',
+    shortName: 'INTD_deprecated',
     chainId: 31753,
     networkId: 31753,
-    explorers: [
-      {
-        name: 'Xchain Mainnet Explorer',
-        url: 'https://xchainscan.com',
-        standard: 'EIP3091'
-      }
-    ]
+    status: 'deprecated',
+    explorers: []
   },
   {
-    name: 'Xchain Testnet',
-    chain: 'Xchain',
+    name: 'Xchain Testnet (Deprecated)',
+    chain: 'XchainDeprecated',
     icon: 'intd',
-    rpc: [ 'https://rpc.xchaintest.net' ],
-    faucets: [ 'https://xchainfaucet.net' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'Intdestcoin Testnet', symbol: 'INTD', decimals: 18 },
-    infoURL: 'https://xchaintest.net',
-    shortName: 'tINTD',
+    infoURL: 'https://chainlist.org/chain/31754',
+    shortName: 'tINTD_deprecated',
     chainId: 31754,
     networkId: 31754,
-    explorers: [
-      {
-        name: 'Xchain Testnet Explorer',
-        url: 'https://xchaintest.net',
-        standard: 'EIP3091'
-      }
-    ]
+    status: 'deprecated',
+    explorers: []
   },
   {
     name: 'W3Gamez Holesky Testnet',
@@ -33144,6 +33179,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'XCHAIN Testnet',
+    chain: 'XCHAIN',
+    rpc: [ 'https://xchain-testnet-rpc.kuma.bid' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://kuma.bid',
+    shortName: 'xct',
+    chainId: 64002,
+    networkId: 64002,
+    explorers: [
+      {
+        name: 'XCHAIN Testnet Explorer',
+        url: 'https://xchain-testnet-explorer.kuma.bid',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CratD2C Testnet',
     chain: 'CRATD2C',
     rpc: [
@@ -34178,7 +34231,14 @@ const chainArray = [
     chainId: 80069,
     networkId: 80069,
     icon: 'berachain',
-    explorers: []
+    explorers: [
+      {
+        name: 'Beratrail',
+        url: 'https://bepolia.beratrail.io',
+        icon: 'berachain',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Berachain bArtio',
@@ -35227,6 +35287,24 @@ const chainArray = [
         name: 'StratoVM Block Explorer',
         url: 'https://explorer.stratovm.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'XCHAIN',
+    chain: 'XCHAIN',
+    rpc: [ 'https://xchain-rpc.kuma.bid' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://kuma.bid',
+    shortName: 'xc',
+    chainId: 94524,
+    networkId: 94524,
+    explorers: [
+      {
+        name: 'XCHAIN Explorer',
+        url: 'https://xchain-explorer.kuma.bid',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -40104,6 +40182,31 @@ const chainArray = [
     infoURL: 'https://wonnetwork.org'
   },
   {
+    name: 'Pyrope Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.pyropechain.com', 'wss://rpc.pyropechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://pyropechain.com',
+    shortName: 'pyrope',
+    chainId: 695569,
+    networkId: 695569,
+    icon: 'pyrope',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://pyrope.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://pyropechain.com/bridge' } ]
+    }
+  },
+  {
     name: 'Galadriel Devnet',
     chain: 'Galadriel',
     rpc: [ 'https://devnet.galadriel.com' ],
@@ -43502,7 +43605,7 @@ const chainArray = [
   {
     name: '6Degree of Outreach - Testnet',
     chain: '6DO',
-    rpc: [ 'https://rpc-testnet.6do.world' ],
+    rpc: [ 'https://rpc-testnet.6dochain.com' ],
     faucets: [],
     nativeCurrency: { name: '6Degree-Testnet Coin', symbol: '6DO-T', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -43514,7 +43617,7 @@ const chainArray = [
     explorers: [
       {
         name: '6Degree Testnet Chain Explorer',
-        url: 'https://explorer-testnet.6do.world',
+        url: 'https://explorer-testnet.6dochain.com',
         standard: 'EIP3091'
       }
     ]
