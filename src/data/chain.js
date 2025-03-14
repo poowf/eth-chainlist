@@ -5282,7 +5282,7 @@ const chainArray = [
     name: 'Hedera Mainnet',
     chain: 'Hedera',
     icon: 'hedera',
-    rpc: [ 'https://mainnet.hashio.io/api' ],
+    rpc: [ 'https://mainnet.hashio.io/api', 'https://hedera.linkpool.pro' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'hbar', symbol: 'HBAR', decimals: 18 },
@@ -5292,11 +5292,6 @@ const chainArray = [
     networkId: 295,
     slip44: 3030,
     explorers: [
-      {
-        name: 'HashScan',
-        url: 'https://hashscan.io/mainnet',
-        standard: 'EIP3091'
-      },
       {
         name: 'Arkhia Explorer',
         url: 'https://explorer.arkhia.io',
@@ -5310,11 +5305,6 @@ const chainArray = [
       {
         name: 'Hedera Explorer',
         url: 'https://hederaexplorer.io',
-        standard: 'none'
-      },
-      {
-        name: 'Ledger Works Explore',
-        url: 'https://explore.lworks.io',
         standard: 'none'
       }
     ]
@@ -15830,7 +15820,8 @@ const chainArray = [
       'https://rpc.ankr.com/atleta_olympia',
       'wss://testnet-rpc.atleta.network',
       'https://atleta-testnet.htw.tech/',
-      'https://public-atleta.nownodes.io'
+      'https://public-atleta.nownodes.io',
+      'https://public-atla-testnet.fastnode.io'
     ],
     faucets: [ 'https://app-olympia.atleta.network/faucet' ],
     nativeCurrency: { name: 'Atla Olympia', symbol: 'ATLA', decimals: 18 },
@@ -22092,7 +22083,7 @@ const chainArray = [
     name: 'Rarimo',
     title: 'Rarimo Mainnet',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://l2.rarimo.com', 'wss://wss.l2.rarimo.com' ],
     faucets: [],
     nativeCurrency: { name: 'Rarimo Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://rarimo.com',
@@ -22100,9 +22091,20 @@ const chainArray = [
     chainId: 7368,
     networkId: 7368,
     icon: 'rarimo',
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
-    explorers: [],
-    status: 'incubating'
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://l2bridge.rarimo.com' } ]
+    },
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://scan.rarimo.com',
+        standard: 'EIP3091',
+        icon: 'rarimo'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Raba Network Mainnet',
@@ -23066,13 +23068,13 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Zenchain',
-    chain: 'ZCX',
+    name: 'ZenChain',
+    chain: 'ZTC',
     icon: 'zenchain',
     rpc: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'ZCX', symbol: 'ZCX', decimals: 18 },
+    nativeCurrency: { name: 'ZTC', symbol: 'ZTC', decimals: 18 },
     infoURL: 'https://zenchain.io',
     shortName: 'zen',
     chainId: 8108,
@@ -23379,8 +23381,8 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'Zenchain Testnet',
-    chain: 'ZCX',
+    name: 'ZenChain Testnet',
+    chain: 'ZTC',
     icon: 'zenchain',
     rpc: [
       'https://zenchain-testnet.api.onfinality.io/public',
@@ -23388,7 +23390,7 @@ const chainArray = [
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://facuet.zenchain.io' ],
-    nativeCurrency: { name: 'ZCX', symbol: 'ZCX', decimals: 18 },
+    nativeCurrency: { name: 'ZTC', symbol: 'ZTC', decimals: 18 },
     infoURL: 'https://zenchain.io',
     shortName: 'zentest',
     chainId: 8408,
@@ -25860,6 +25862,21 @@ const chainArray = [
     }
   },
   {
+    name: 'Fuse Flash Testnet',
+    chain: 'Fuse Flash',
+    rpc: [],
+    faucets: [ 'https://faucet.quicknode.com' ],
+    nativeCurrency: { name: 'Fuse', symbol: 'FUSE', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://www.fuse.io',
+    shortName: 'fuseflash',
+    chainId: 10920,
+    networkId: 10920,
+    icon: 'fuse',
+    parent: { type: 'L2', chain: 'eip155-11155111' },
+    status: 'incubating'
+  },
+  {
     name: 'Quadrans Blockchain',
     chain: 'QDC',
     icon: 'quadrans',
@@ -26192,23 +26209,23 @@ const chainArray = [
     ]
   },
   {
-    name: 'BEVM Mainnet',
-    chain: 'BEVM',
+    name: 'GEB Mainnet',
+    chain: 'GEB',
     rpc: [
-      'https://rpc-mainnet-1.bevm.io/',
-      'https://rpc-mainnet-2.bevm.io/'
+      'https://rpc-mainnet-1.geb.network/',
+      'https://rpc-mainnet-2.geb.network/'
     ],
     faucets: [],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
-    infoURL: 'https://bevm.io',
-    shortName: 'bevm',
+    infoURL: 'https://geb.network',
+    shortName: 'geb',
     chainId: 11501,
     networkId: 11501,
-    icon: 'bevm',
+    icon: 'geb',
     explorers: [
       {
-        name: 'bevm mainnet scan',
-        url: 'https://scan-mainnet.bevm.io',
+        name: 'geb mainnet scan',
+        url: 'https://scan.geb.network',
         standard: 'none'
       },
       {
@@ -26238,20 +26255,20 @@ const chainArray = [
     ]
   },
   {
-    name: 'BEVM Signet',
-    chain: 'BEVM',
-    rpc: [ 'https://signet.bevm.io/' ],
+    name: 'GEB Signet',
+    chain: 'GEB',
+    rpc: [ 'https://signet.geb.network/' ],
     faucets: [],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
-    infoURL: 'https://bevm.io',
-    shortName: 'bevm-signet',
+    infoURL: 'https://geb.network',
+    shortName: 'geb-signet',
     chainId: 11504,
     networkId: 11504,
-    icon: 'bevm',
+    icon: 'geb',
     explorers: [
       {
-        name: 'bevm signet scan',
-        url: 'https://scan-signet.bevm.io',
+        name: 'geb signet scan',
+        url: 'https://scan-signet.geb.network',
         standard: 'none'
       }
     ]
@@ -28984,20 +29001,20 @@ const chainArray = [
     ]
   },
   {
-    name: 'MagiChain',
-    chain: 'MagiChain',
-    icon: 'magiIcon',
-    rpc: [ 'https://rpc.magichain.io' ],
+    name: 'Nexurachain',
+    chain: 'nexurachain',
+    icon: 'xuraIcon',
+    rpc: [ 'https://rpc.nexurachain.io' ],
     faucets: [],
-    nativeCurrency: { name: 'MGIX', symbol: 'MGIX', decimals: 18 },
-    infoURL: 'https://magichain.io',
-    shortName: 'MGC',
+    nativeCurrency: { name: 'XURA', symbol: 'XURA', decimals: 18 },
+    infoURL: 'https://nexurachain.io',
+    shortName: 'XURAm',
     chainId: 24125,
     networkId: 24125,
     explorers: [
       {
-        name: 'MagiChain Explorer',
-        url: 'https://explorer.magichain.io',
+        name: 'Nexurachain Explorer',
+        url: 'https://explorer.nexurachain.io',
         standard: 'EIP3091'
       }
     ]
@@ -43474,6 +43491,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Xphere Mainnet',
+    chain: 'Xphere',
+    icon: 'xphere',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    rpc: [ 'https://en-bkk.x-phere.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Xphere', symbol: 'XP', decimals: 18 },
+    infoURL: 'https://x-phere.com/',
+    shortName: 'xp',
+    chainId: 20250217,
+    networkId: 20250217,
+    explorers: []
   },
   {
     name: 'ETP Mainnet',
