@@ -21916,6 +21916,7 @@ const chainArray = [
     rpc: [ 'https://evm-rpc.testnet-1.nibiru.fi' ],
     faucets: [],
     nativeCurrency: { name: 'NIBI', symbol: 'NIBI', decimals: 18 },
+    status: 'deprecated',
     infoURL: 'https://nibiru.fi',
     shortName: 'nibiru-testnet-1',
     chainId: 7210,
@@ -21929,6 +21930,7 @@ const chainArray = [
     rpc: [ 'https://evm-rpc.devnet-3.nibiru.fi' ],
     faucets: [],
     nativeCurrency: { name: 'NIBI', symbol: 'NIBI', decimals: 18 },
+    status: 'deprecated',
     infoURL: 'https://nibiru.fi',
     shortName: 'nibiru-devnet-3',
     chainId: 7222,
@@ -27793,6 +27795,25 @@ const chainArray = [
         name: 'konet-explorer',
         url: 'https://explorer.kon-wallet.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Esports Chain',
+    chain: 'ESPT',
+    icon: 'esports',
+    rpc: [ 'https://esportsblock.org/rpc/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Esport Token', symbol: 'ESPT', decimals: 18 },
+    infoURL: 'https://esportsblock.org',
+    shortName: 'Esports',
+    chainId: 17735,
+    networkId: 17735,
+    explorers: [
+      {
+        name: 'esportsblock_explorer',
+        url: 'https://esportsblock.org/explorer',
+        standard: 'none'
       }
     ]
   },
@@ -40968,8 +40989,8 @@ const chainArray = [
     name: 'Dodao',
     chain: 'EVMCC',
     rpc: [
-      'https://fraa-dancebox-3041-rpc.a.dancebox.tanssi.network',
-      'wss://fraa-dancebox-3041-rpc.a.dancebox.tanssi.network'
+      'https://fraa-flashbox-4643-rpc.a.stagenet.tanssi.network',
+      'wss://fraa-flashbox-4643-rpc.a.stagenet.tanssi.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Dodao', symbol: 'DODAO', decimals: 18 },
@@ -40980,10 +41001,16 @@ const chainArray = [
     icon: 'dodao',
     explorers: [
       {
-        name: 'Dodao Explorer',
-        url: 'https://tanssi-evmexplorer.netlify.app/?rpcUrl=https://fraa-dancebox-3041-rpc.a.dancebox.tanssi.network',
+        name: 'Dodao EVM Explorer',
+        url: 'https://evmexplorer.tanssi-chains.network/?rpcUrl=https://fraa-flashbox-4643-rpc.a.stagenet.tanssi.network',
         icon: 'dodao',
-        standard: 'EIP3091'
+        standard: 'none'
+      },
+      {
+        name: 'Dodao Polkadot Explorer',
+        url: 'https://polkadot.js.org/apps/?rpc=wss://fraa-flashbox-4643-rpc.a.stagenet.tanssi.network#/explorer',
+        icon: 'dodao',
+        standard: 'none'
       }
     ]
   },
