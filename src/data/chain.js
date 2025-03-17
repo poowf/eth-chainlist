@@ -4278,6 +4278,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'IDN Mainnet',
+    chain: 'IDN',
+    icon: 'idn',
+    rpc: [
+      'https://dataseed1.idn-rpc.com',
+      'https://dataseed2.idn-rpc.com',
+      'https://dataseed3.idn-rpc.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'IDN', symbol: 'IDN', decimals: 18 },
+    infoURL: 'https://www.idn.world',
+    shortName: 'IDN',
+    chainId: 215,
+    networkId: 215,
+    explorers: [
+      {
+        name: 'Idn Explorer',
+        url: 'https://scan.idn-network.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Happychain Testnet',
     chainId: 216,
     networkId: 216,
@@ -22476,6 +22499,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Draw Coin',
+    chain: 'DRW',
+    icon: 'drawchain',
+    rpc: [ 'https://rpc.drawchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'DRW', symbol: 'DRW', decimals: 18 },
+    infoURL: 'https://drawchain.io/',
+    shortName: 'drw',
+    chainId: 7788,
+    networkId: 7788,
+    explorers: [
+      {
+        name: 'Draw Chain Explorer',
+        url: 'https://drawscan.io',
+        standard: 'EIP3091',
+        icon: 'drawchain'
+      }
+    ]
+  },
+  {
     name: 'OpenEX LONG Testnet',
     title: 'OpenEX LONG Testnet',
     chain: 'OEX',
@@ -39960,6 +40003,30 @@ const chainArray = [
         url: 'https://testchainv1.hetuscan.com',
         icon: 'hetu',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Hoodi testnet',
+    chain: 'ETH',
+    icon: 'ethereum',
+    rpc: [ 'https://rpc.hoodi.ethpandaops.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [
+      'https://faucet.hoodi.ethpandaops.io',
+      'https://hoodi-faucet.pk910.de/'
+    ],
+    nativeCurrency: { name: 'Hoodi Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://hoodi.ethpandaops.io',
+    shortName: 'hoe',
+    chainId: 560048,
+    networkId: 560048,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'dora',
+        url: 'https://light-hoodi.beaconcha.in',
+        standard: 'none'
       }
     ]
   },
