@@ -12340,6 +12340,30 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'Perennial',
+    chain: 'perennial',
+    rpc: [ 'https://rpc.perennial.foundation' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://perennial.finance',
+    shortName: 'perennial',
+    chainId: 1424,
+    networkId: 1424,
+    icon: 'perennial',
+    explorers: [
+      {
+        name: 'Perennial Explorer',
+        url: 'https://explorer.perennial.foundation',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-8453',
+      bridges: [ { url: 'https://bridge.perennial.foundation' } ]
+    }
+  },
+  {
     name: 'Rikeza Network Mainnet',
     title: 'Rikeza Network Mainnet',
     chain: 'Rikeza',
@@ -21569,7 +21593,7 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'XYL TestNet',
+    name: 'Xylume TestNet',
     chain: 'XYL',
     rpc: [ 'https://xyl-testnet.glitch.me/rpc/' ],
     faucets: [ 'https://debxylen.github.io/XYL_TestNet/faucet.html' ],
@@ -21577,23 +21601,18 @@ const chainArray = [
     features: [
       { name: 'EIP155' },
       { name: 'EIP1559' },
-      { name: 'XYL-DynaPoW' },
-      { name: 'Smart Contracts' },
-      { name: 'Custom Gas Model' },
-      { name: 'XYL-VM' },
-      { name: 'Dynamic Difficulty Adjustment' },
-      { name: 'Low-Latency Transactions' }
+      { name: 'Directed Acyclic Graph (DAG)' }
     ],
-    infoURL: 'https://debxylen.github.io/XYL_TestNet',
+    infoURL: 'https://debxylen.github.io/Xylume_TestNet',
     shortName: 'xyl',
     chainId: 6934,
     networkId: 6934,
-    icon: 'xyl-test',
+    icon: 'xylume-testnet',
     explorers: [
       {
-        name: 'XYL Explorer',
-        url: 'https://debxylen.github.io/BlockExplorer',
-        icon: 'xyl-test',
+        name: 'Xylume Explorer',
+        url: 'https://debxylen.github.io/XylumeExplorer',
+        icon: 'xylume-testnet',
         standard: 'EIP3091'
       }
     ]
@@ -30014,6 +30033,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'BasedAI Mainnet',
+    title: 'BasedAI Mainnet',
+    chain: 'BasedAI',
+    rpc: [ 'https://mainnet.basedaibridge.com/rpc/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BasedAI', symbol: 'BASED', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://getbased.ai',
+    shortName: 'basedai',
+    chainId: 32323,
+    networkId: 32323,
+    icon: 'basedai',
+    explorers: [
+      {
+        name: 'BasedAI Explorer',
+        url: 'https://explorer.getbased.ai',
+        standard: 'none'
+      },
+      {
+        name: 'BF1337 BasedAI Explorer',
+        url: 'https://explorer.bf1337.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Santiment Intelligence Network',
     chain: 'Santiment Intelligence Network',
     rpc: [ 'https://node.sanr.app' ],
@@ -32859,6 +32905,30 @@ const chainArray = [
       type: 'L2',
       chain: 'eip155-1',
       bridges: [ { url: 'https://app.gobob.xyz' } ]
+    }
+  },
+  {
+    name: 'Perennial Sepolia',
+    chain: 'perennialSepolia',
+    rpc: [ 'https://rpc-sepolia.perennial.foundation' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://perennial.finance',
+    shortName: 'perennial-sepolia',
+    chainId: 60850,
+    networkId: 60850,
+    icon: 'perennial',
+    explorers: [
+      {
+        name: 'Perennial Explorer',
+        url: 'https://explorer-sepolia.perennial.foundation',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-84532',
+      bridges: [ { url: 'https://bridge-sepolia.perennial.foundation' } ]
     }
   },
   {
@@ -43598,7 +43668,13 @@ const chainArray = [
     shortName: 'xp',
     chainId: 20250217,
     networkId: 20250217,
-    explorers: []
+    explorers: [
+      {
+        name: 'Tamsa',
+        url: 'https://xp.tamsa.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'ETP Mainnet',
@@ -46744,11 +46820,11 @@ const chainArray = [
     ]
   },
   {
-    name: 'Smart Pay Mobile Money',
+    name: 'SmartPay Mobile Money',
     chain: 'Mobile Money',
     rpc: [ 'https://network.uat.smartmoneyewallet.com/' ],
     faucets: [],
-    nativeCurrency: { name: 'SmartPay Mobile Money', symbol: 'SMRTP', decimals: 18 },
+    nativeCurrency: { name: 'SmartPay Mobile Money', symbol: 'SMM', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://network.uat.smartmoneyewallet.com/',
     shortName: 'SmartPay',
