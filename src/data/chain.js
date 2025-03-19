@@ -4305,15 +4305,15 @@ const chainArray = [
     chainId: 216,
     networkId: 216,
     chain: 'Happychain Testnet',
-    rpc: [ 'https://happy-testnet-sepolia.rpc.caldera.xyz/http' ],
+    rpc: [ 'https://rpc.testnet.happy.tech/http' ],
     faucets: [],
     nativeCurrency: { name: 'Happy', symbol: 'HAPPY', decimals: 18 },
     shortName: 'happytestnet',
-    infoURL: 'https://happy-testnet-sepolia.hub.caldera.xyz',
+    infoURL: 'https://testnet.happy.tech',
     explorers: [
       {
         name: 'Blockscout',
-        url: 'https://happy-testnet-sepolia.explorer.caldera.xyz',
+        url: 'https://explorer.testnet.happy.tech',
         standard: 'EIP3091'
       }
     ]
