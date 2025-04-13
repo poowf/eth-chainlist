@@ -10904,6 +10904,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'StateMesh',
+    icon: 'statemesh',
+    chain: 'MESH',
+    rpc: [ 'https://rpc.statemesh.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'StateMesh', symbol: 'MESH', decimals: 18 },
+    infoURL: 'https://statemesh.net',
+    shortName: 'mesh',
+    chainId: 1134,
+    networkId: 1134,
+    slip44: 1134,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://scan.statemesh.net',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Lisk',
     chain: 'ETH',
     icon: 'lisk',
@@ -12087,6 +12108,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Kii Testnet Oro',
+    chain: 'KII',
+    rpc: [ 'https://json-rpc.uno.sentry.testnet.v3.kiivalidator.com' ],
+    faucets: [ 'https://explorer.kiichain.io/testnet/faucet' ],
+    nativeCurrency: { name: 'Kii', symbol: 'KII', decimals: 18 },
+    features: [],
+    infoURL: 'https://kiichain.io',
+    shortName: 'kiioro',
+    chainId: 1336,
+    networkId: 1336,
+    icon: 'kii',
+    explorers: [
+      {
+        name: 'KiiExplorer',
+        url: 'https://explorer.kiichain.io/testnet',
+        icon: 'kii',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Geth Testnet',
     title: 'Go Ethereum (Geth) Private Testnet',
     chain: 'ETH',
@@ -13216,6 +13258,48 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Fuga Mainnet',
+    chain: 'Fuga',
+    rpc: [ 'https://rpc.fuga.blue' ],
+    faucets: [],
+    nativeCurrency: { name: 'FUGA', symbol: 'FUGA', decimals: 18 },
+    infoURL: 'https://fuga.one',
+    shortName: 'FUGA',
+    chainId: 1732,
+    networkId: 1732,
+    slip44: 732,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
+    name: 'Fuga Testnet',
+    chain: 'Fuga',
+    rpc: [ 'https://rpc-testnet.fuga.blue' ],
+    faucets: [],
+    nativeCurrency: { name: 'FUGA', symbol: 'FUGA', decimals: 18 },
+    infoURL: 'https://fuga.one',
+    shortName: 'FUGA_T',
+    chainId: 1733,
+    networkId: 1733,
+    slip44: 1,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
+    name: 'Fuga Develop',
+    chain: 'Fuga',
+    rpc: [ 'https://rpc-develop.fuga.blue' ],
+    faucets: [],
+    nativeCurrency: { name: 'FUGA', symbol: 'FUGA', decimals: 18 },
+    infoURL: 'https://fuga.one',
+    shortName: 'FUGA_D',
+    chainId: 1734,
+    networkId: 1734,
+    slip44: 1,
+    explorers: [],
+    status: 'incubating'
   },
   {
     name: 'Metal L2 Testnet',
@@ -15478,7 +15562,12 @@ const chainArray = [
     name: 'Game7',
     title: 'Game7',
     chain: 'Game7',
-    rpc: [ 'https://mainnet-rpc.game7.io', 'wss://mainnet-rpc.game7.io' ],
+    rpc: [
+      'https://mainnet-rpc.game7.io',
+      'wss://mainnet-rpc.game7.io',
+      'https://mainnet-rpc.game7.build',
+      'wss://mainnet-rpc.game7.build'
+    ],
     faucets: [],
     nativeCurrency: { name: 'G7', symbol: 'G7', decimals: 18 },
     features: [ { name: 'EIP155' } ],
@@ -20359,15 +20448,26 @@ const chainArray = [
   {
     name: 'Settlus',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://settlus-mainnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://settlus.org',
     shortName: 'setl',
     chainId: 5371,
     networkId: 5371,
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] },
-    status: 'incubating'
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://settlus-mainnet.bridge.alchemy.com/' } ]
+    },
+    explorers: [
+      {
+        name: 'Settlus Mainnet Explorer',
+        url: 'https://mainnet.settlus.network',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Settlus Testnet',
@@ -20399,7 +20499,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Settlus Sepolia Testnet Explorer',
-        url: 'https://settlus-sepolia-testnet.explorer.alchemy.com',
+        url: 'https://sepolia.settlus.network',
         standard: 'EIP3091'
       }
     ],
@@ -27118,7 +27218,12 @@ const chainArray = [
     name: 'Game7 Testnet',
     title: 'Game7 Testnet',
     chain: 'Game7',
-    rpc: [ 'https://testnet-rpc.game7.io', 'wss://testnet-rpc.game7.io' ],
+    rpc: [
+      'https://testnet-rpc.game7.io',
+      'wss://testnet-rpc.game7.io',
+      'https://testnet-rpc.game7.build',
+      'wss://testnet-rpc.game7.build'
+    ],
     faucets: [],
     nativeCurrency: { name: 'TG7T', symbol: 'TG7T', decimals: 18 },
     features: [ { name: 'EIP155' } ],
@@ -32163,12 +32268,12 @@ const chainArray = [
     ]
   },
   {
-    name: 'Reddio Devnet',
-    title: 'Reddio Sepolia L2 Rollup Devnet',
+    name: 'Reddio Testnet',
+    title: 'Reddio Sepolia L2 Rollup Testnet',
     chain: 'ETH',
     rpc: [ 'https://reddio-dev.reddio.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Red', symbol: 'RED', decimals: 18 },
+    nativeCurrency: { name: 'Reddio', symbol: 'RDO', decimals: 18 },
     infoURL: 'https://www.reddio.com',
     shortName: 'reddio-devnet',
     chainId: 50341,
@@ -38455,7 +38560,21 @@ const chainArray = [
       'https://rpc.helikon.io/hydradx',
       'wss://rpc.helikon.io/hydradx',
       'https://hydration.dotters.network',
-      'wss://hydration.dotters.network'
+      'wss://hydration.dotters.network',
+      'https://hydration.ibp.network',
+      'wss://hydration.ibp.network',
+      'https://rpc.cay.hydration.cloud',
+      'wss://rpc.cay.hydration.cloud',
+      'https://rpc.parm.hydration.cloud',
+      'wss://rpc.parm.hydration.cloud',
+      'https://rpc.roach.hydration.cloud',
+      'wss://rpc.roach.hydration.cloud',
+      'https://rpc.zipp.hydration.cloud',
+      'wss://rpc.zipp.hydration.cloud',
+      'https://rpc.sin.hydration.cloud',
+      'wss://rpc.sin.hydration.cloud',
+      'https://rpc.coke.hydration.cloud',
+      'wss://rpc.coke.hydration.cloud'
     ],
     faucets: [],
     nativeCurrency: { name: 'Wrapped ETH', symbol: 'WETH', decimals: 18 },
@@ -42544,6 +42663,27 @@ const chainArray = [
     networkId: 2611555
   },
   {
+    name: 'COTI',
+    chainId: 2632500,
+    shortName: 'coti',
+    chain: 'COTI',
+    networkId: 2632500,
+    nativeCurrency: { name: 'COTI', symbol: 'COTI', decimals: 18 },
+    rpc: [ 'https://mainnet.coti.io/rpc' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'COTI Mainnet Explorer',
+        url: 'https://mainnet.cotiscan.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://coti.io/',
+    icon: 'coti',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
+  },
+  {
     name: 'Xterio Chain (ETH)',
     chain: 'Xterio',
     rpc: [ 'https://xterio-eth.alt.technology' ],
@@ -43557,7 +43697,7 @@ const chainArray = [
     }
   },
   {
-    name: 'Sepolia',
+    name: 'Ethereum Sepolia',
     title: 'Ethereum Testnet Sepolia',
     chain: 'ETH',
     rpc: [
@@ -44028,12 +44168,12 @@ const chainArray = [
   {
     name: 'Vcity Testnet',
     chain: 'VCITY',
-    rpc: [ 'https://testnet.vcity.app' ],
+    rpc: [ 'http://testnet-rpc.vcity.app' ],
     faucets: [],
-    nativeCurrency: { name: 'Testnet Vcity Token', symbol: 'VCITY', decimals: 18 },
+    nativeCurrency: { name: 'Testnet Vcity Token', symbol: 'VCT', decimals: 18 },
     features: [],
     infoURL: 'https://vcity.app',
-    shortName: 'Vcity',
+    shortName: 'Vcitytestnet',
     chainId: 20230825,
     networkId: 20230825,
     icon: 'vcity',
@@ -44120,6 +44260,27 @@ const chainArray = [
         name: 'Tamsa',
         url: 'https://xp.tamsa.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Vcitychain Mainnet',
+    chain: 'Vcitychain',
+    rpc: [ 'https://mainnet-rpc.vcity.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'Vcity Coin', symbol: 'VCITY', decimals: 18 },
+    features: [],
+    infoURL: 'https://vcity.app',
+    shortName: 'vcity',
+    chainId: 20250825,
+    networkId: 20250825,
+    icon: 'vcitychain',
+    explorers: [
+      {
+        name: 'Vcitychain Explorer',
+        url: 'https://blockchain.vcity.app',
+        icon: 'vcitychain',
+        standard: 'none'
       }
     ]
   },
