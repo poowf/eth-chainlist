@@ -12431,6 +12431,26 @@ const chainArray = [
     }
   },
   {
+    name: 'ONINO Mainnet',
+    chain: 'ONI',
+    rpc: [ 'https://rpc.onino.io' ],
+    faucets: [ 'https://faucet.onino.io' ],
+    nativeCurrency: { name: 'ONI', symbol: 'ONI', decimals: 18 },
+    infoURL: 'https://onino.io',
+    shortName: 'onino',
+    chainId: 1425,
+    networkId: 1425,
+    icon: 'onino',
+    explorers: [
+      {
+        name: 'onino',
+        url: 'https://explorer.onino.io',
+        icon: 'onino',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Rikeza Network Mainnet',
     title: 'Rikeza Network Mainnet',
     chain: 'Rikeza',
@@ -31417,6 +31437,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'GUNZ',
+    chain: 'GUNZ',
+    rpc: [
+      'https://rpc.gunzchain.io/ext/bc/2M47TxWHGnhNtq6pM5zPXdATBtuqubxn5EPFgFmEawCQr9WFML/rpc'
+    ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'GUN', symbol: 'GUN', decimals: 18 },
+    icon: 'gunz',
+    infoURL: 'https://gunbygunz.com',
+    shortName: 'gunz-mainnet',
+    chainId: 43419,
+    networkId: 43419,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://gunzscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Formicarium',
     title: 'MemeCore Testnet Formicarium',
     chain: 'MemeCore',
@@ -43216,7 +43258,10 @@ const chainArray = [
   {
     name: 'The Ting Blockchain Testnet Explorer',
     chain: 'Ting',
-    rpc: [ 'https://testnet.tingchain.org' ],
+    rpc: [
+      'https://testnet.tingchain.org',
+      'https://public.0xrpc.com/6666689'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ton', symbol: 'Ton', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -46880,6 +46925,26 @@ const chainArray = [
         name: 'accumulate-explorer-kermit',
         url: 'https://kermit.explorer.accumulatenetwork.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tron Shasta',
+    chain: 'TRON',
+    rpc: [ 'https://api.shasta.trongrid.io/jsonrpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Tron', symbol: 'TRX', decimals: 6 },
+    infoURL: 'https://tron.network',
+    shortName: 'tron-shasta',
+    chainId: 2494104990,
+    networkId: 2494104990,
+    icon: 'tron',
+    explorers: [
+      {
+        name: 'shasta tronscan',
+        url: 'https://shasta.tronscan.org',
+        icon: 'tron',
+        standard: 'none'
       }
     ]
   },
