@@ -16576,7 +16576,7 @@ const chainArray = [
       'wss://fraxtal-holesky-rpc.publicnode.com'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
+    nativeCurrency: { name: 'Frax', symbol: 'FRAX', decimals: 18 },
     infoURL: 'https://testnet.frax.com',
     shortName: 'fraxtal-testnet',
     chainId: 2522,
@@ -23262,6 +23262,25 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
+    name: 'Shardeum Testnet',
+    chain: 'ShardeumTestnet',
+    icon: 'shardeum',
+    rpc: [ 'https://api-testnet.shardeum.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Shardeum Test SHM', symbol: 'SHM', decimals: 18 },
+    infoURL: 'https://docs.shardeum.org/',
+    shortName: 'ShardeumTestnet',
+    chainId: 8083,
+    networkId: 8083,
+    explorers: [
+      {
+        name: 'Shardeum Testnet Explorer',
+        url: 'https://explorer-testnet.shardeum.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bitcoin Chain',
     chain: 'BTC',
     icon: 'BTCChain',
@@ -23328,6 +23347,25 @@ const chainArray = [
     slip44: 60,
     explorers: [],
     status: 'incubating'
+  },
+  {
+    name: 'Shardeum',
+    chain: 'Shardeum',
+    icon: 'shardeum',
+    rpc: [ 'https://api.shardeum.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Shardeum', symbol: 'SHM', decimals: 18 },
+    infoURL: 'https://docs.shardeum.org/',
+    shortName: 'Shardeum',
+    chainId: 8118,
+    networkId: 8118,
+    explorers: [
+      {
+        name: 'Shardeum Explorer',
+        url: 'https://explorer.shardeum.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Qitmeer Network Testnet',
@@ -43748,7 +43786,6 @@ const chainArray = [
     rpc: [
       'https://rpc.sepolia.org',
       'https://rpc2.sepolia.org',
-      'https://rpc-sepolia.rockx.com',
       'https://rpc.sepolia.ethpandaops.io',
       'https://sepolia.infura.io/v3/${INFURA_API_KEY}',
       'wss://sepolia.infura.io/v3/${INFURA_API_KEY}',
@@ -43758,7 +43795,6 @@ const chainArray = [
       'wss://ethereum-sepolia-rpc.publicnode.com',
       'https://sepolia.drpc.org',
       'wss://sepolia.drpc.org',
-      'https://rpc-sepolia.rockx.com',
       'https://eth-sepolia.g.alchemy.com/v2/WddzdzI2o9S3COdT73d5w6AIogbKq4X-'
     ],
     faucets: [
