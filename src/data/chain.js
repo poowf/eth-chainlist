@@ -10345,29 +10345,29 @@ const chainArray = [
     ]
   },
   {
-    name: 'ShimmerEVM Testnet Deprecated',
-    title: 'ShimmerEVM Testnet Deprecated',
-    chain: 'ShimmerEVM',
-    icon: 'shimmerevm',
-    rpc: [],
-    faucets: [
-      'https://evm-toolkit.evm.testnet.shimmer.network',
-      'https://evm-faucet.testnet.shimmer.network'
+    name: 'OpenGPU Mainnet',
+    chain: 'OGPU',
+    icon: 'ogpu',
+    rpc: [
+      'https://mainnet-rpc.ogpuscan.io',
+      'wss://mainnet-rpc.ogpuscan.io'
     ],
-    nativeCurrency: { name: 'SMR', symbol: 'SMR', decimals: 18 },
-    infoURL: 'https://shimmer.network',
-    shortName: 'shimmerevm-testnet-deprecated',
+    faucets: [],
+    nativeCurrency: { name: 'OGPU', symbol: 'OGPU', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://opengpu.network',
+    shortName: 'ogpu',
     chainId: 1071,
     networkId: 1071,
-    slip44: 1,
+    redFlags: [ 'reusedChainId' ],
     explorers: [
       {
-        name: 'explorer',
-        url: 'https://explorer.evm.testnet.shimmer.network',
+        name: 'OpenGPU Explorer',
+        url: 'https://ogpuscan.io',
+        icon: 'ogpu',
         standard: 'EIP3091'
       }
-    ],
-    status: 'deprecated'
+    ]
   },
   {
     name: 'ShimmerEVM Testnet Deprecated 1072',
@@ -37420,6 +37420,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tatara Testnet',
+    chain: 'Tatara',
+    rpc: [ 'https://rpc.tatara.katanarpc.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: '',
+    shortName: 'Tatara',
+    chainId: 129399,
+    networkId: 129399,
+    icon: 'ethereum',
+    explorers: [
+      {
+        name: 'Tatara explorer',
+        url: 'https://explorer.tatara.katana.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Odyssey Chain (Testnet)',
     chain: 'DIONE',
     rpc: [ 'https://testnode.dioneprotocol.com/ext/bc/D/rpc' ],
@@ -37998,6 +38019,26 @@ const chainArray = [
       {
         name: 'CondorScan',
         url: 'https://explorer.condor.systems',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Altblockscan Mainnet',
+    chain: 'ALTB',
+    rpc: [ 'https://rpc.altblockscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Altblockscan', symbol: 'ALTB', decimals: 18 },
+    infoURL: 'https://altblockscan.com',
+    shortName: 'altb',
+    chainId: 191919,
+    networkId: 191919,
+    icon: 'altb',
+    explorers: [
+      {
+        name: 'altblockscan',
+        url: 'https://scan.altblockscan.com',
+        icon: 'altb',
         standard: 'none'
       }
     ]
