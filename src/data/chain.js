@@ -3156,6 +3156,7 @@ const chainArray = [
     chainId: 151,
     networkId: 151,
     slip44: 824,
+    icon: 'redbelly',
     rpc: [ 'https://governors.mainnet.redbelly.network' ],
     faucets: [],
     infoURL: 'https://redbelly.network',
@@ -3187,6 +3188,7 @@ const chainArray = [
     chain: 'RBN',
     chainId: 153,
     networkId: 153,
+    icon: 'redbelly',
     slip44: 1,
     rpc: [ 'https://governors.testnet.redbelly.network' ],
     faucets: [],
@@ -34036,6 +34038,24 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-248' }
+  },
+  {
+    name: 'Animechain Mainnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Animecoin', symbol: 'ANIME', decimals: 18 },
+    infoURL: 'https://www.anime.xyz',
+    shortName: 'anime',
+    chainId: 69000,
+    networkId: 69000,
+    explorers: [
+      {
+        name: 'Animechain explorer',
+        url: 'https://explorer.anime.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Condrieu',
