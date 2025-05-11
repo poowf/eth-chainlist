@@ -6172,6 +6172,7 @@ const chainArray = [
       'https://rpc-pulsechain.g4mm4.io',
       'wss://rpc-pulsechain.g4mm4.io'
     ],
+    icon: 'pulsechain',
     slip44: 60,
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -6180,9 +6181,9 @@ const chainArray = [
     nativeCurrency: { name: 'Pulse', symbol: 'PLS', decimals: 18 },
     explorers: [
       {
-        name: 'blockscout',
-        url: 'https://scan.pulsechain.com',
-        icon: 'blockscout',
+        name: 'pulsechain',
+        url: 'https://ipfs.scan.pulsechain.com',
+        icon: 'pulsechain',
         standard: 'EIP3091'
       },
       {
@@ -11768,13 +11769,13 @@ const chainArray = [
   },
   {
     name: 'Swisstronik Testnet',
-    chain: 'SWTR',
+    chain: 'SWTR Testnet',
     rpc: [ 'https://json-rpc.testnet.swisstronik.com' ],
     faucets: [ 'https://faucet.testnet.swisstronik.com' ],
     nativeCurrency: { name: 'Swisstronik', symbol: 'SWTR', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://www.swisstronik.com',
-    shortName: 'swtr',
+    shortName: 'swtr-testnet',
     chainId: 1291,
     networkId: 1291,
     slip44: 1,
@@ -13647,6 +13648,37 @@ const chainArray = [
         { url: 'https://bridge.gelato.network/bridge/verify-testnet' }
       ]
     }
+  },
+  {
+    name: 'Swisstronik Mainnet',
+    chain: 'SWTR',
+    rpc: [
+      'https://json-rpc.mainnet.swisstronik.com/unencrypted/',
+      'https://json-rpc.mainnet.swisstronik.com',
+      'wss://ws-rpc.mainnet.swisstronik.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Swisstronik', symbol: 'SWTR', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.swisstronik.com',
+    shortName: 'swtr',
+    chainId: 1848,
+    networkId: 1848,
+    slip44: 1,
+    icon: 'swisstronik',
+    explorers: [
+      {
+        name: 'Swisstronik EVM Explorer',
+        url: 'https://explorer-evm.mainnet.swisstronik.com',
+        standard: 'EIP3091',
+        icon: 'ethernal'
+      },
+      {
+        name: 'Swisstronik Cosmos Explorer',
+        url: 'https://explorer-cosmos.mainnet.swisstronik.com/swisstronik',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'HighOctane Subnet',
@@ -29727,7 +29759,7 @@ const chainArray = [
     explorers: [
       {
         name: 'XferChain Mainnet Explorer',
-        url: 'https://xferchain.org',
+        url: 'https://network.xferchain.org',
         standard: 'EIP3091'
       }
     ]
@@ -30966,6 +30998,28 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Helios Chain Testnet',
+    chain: 'Helios Chain',
+    rpc: [ 'https://testnet1.helioschainlabs.org' ],
+    faucets: [ 'https://testnet.helioschain.network' ],
+    nativeCurrency: { name: 'Helios', symbol: 'HLS', decimals: 18 },
+    icon: 'helioschain',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://hub.helioschain.network',
+    shortName: 'HLS',
+    chainId: 42000,
+    networkId: 42000,
+    explorers: [
+      {
+        name: 'Helios Chain Explorer',
+        url: 'https://explorer.helioschainlabs.org',
+        icon: 'helioschain',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'PMON Chain',
