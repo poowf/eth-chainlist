@@ -4659,17 +4659,17 @@ const chainArray = [
     name: 'Blast Mainnet',
     chain: 'ETH',
     icon: 'blastIcon',
-    rpc: [ 'https://rpc.blastblockchain.com' ],
+    rpc: [ 'https://zkevmrpc.blastchain.org' ],
     faucets: [],
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://docs.blastblockchain.com',
+    nativeCurrency: { name: 'One World Chain', symbol: 'OWCT', decimals: 18 },
+    infoURL: 'https://docs.blastchain.org',
     shortName: 'blast',
     chainId: 238,
     networkId: 238,
     explorers: [
       {
         name: 'Blast Mainnet',
-        url: 'https://scan.blastblockchain.com',
+        url: 'https://blastchain.org',
         standard: 'EIP3091'
       }
     ]
@@ -4746,6 +4746,26 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://explorer.energyweb.org',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ChooChain',
+    title: 'ChooChain Mainnet',
+    chain: 'CHOO',
+    rpc: [ 'https://rpc.choochain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'ChooChain Token', symbol: 'CHOO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://github.com/Trinketz/ChooChain',
+    shortName: 'choo',
+    chainId: 247,
+    networkId: 247,
+    explorers: [
+      {
+        name: 'ChooChain Explorer',
+        url: 'https://blocks.choochain.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -25894,15 +25914,23 @@ const chainArray = [
   {
     name: 'Tea Sepolia Testnet',
     chain: 'ETH',
-    rpc: [],
-    faucets: [],
+    rpc: [ 'https://tea-sepolia.g.alchemy.com/public' ],
+    faucets: [ 'https://faucet-sepolia.tea.xyz' ],
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://sepolia.tea.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
     nativeCurrency: { name: 'Sepolia Tea', symbol: 'TEA', decimals: 18 },
     infoURL: 'https://tea.xyz',
     shortName: 'teasep',
     chainId: 10218,
     networkId: 10218,
     parent: { type: 'L2', chain: 'eip155-11155111' },
-    status: 'incubating'
+    status: 'active'
   },
   {
     name: 'GLScan',
