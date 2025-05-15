@@ -22852,7 +22852,7 @@ const chainArray = [
     explorers: [
       {
         name: 'maalscan',
-        url: 'https://maalscan.io',
+        url: 'https://v2.maalscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -30267,20 +30267,46 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
-    name: 'Mezo Matsnet Testnet',
-    chain: 'Mezo',
+    name: 'Mezo Testnet',
+    chain: 'Mezo Testnet',
     rpc: [ 'https://rpc.test.mezo.org' ],
-    faucets: [ 'https://mezo.org/matsnet' ],
+    faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://mezo.org/',
-    shortName: 'mezo',
+    shortName: 'mezo-testnet',
     chainId: 31611,
     networkId: 31611,
     explorers: [
       {
         name: 'blockscout',
         url: 'https://explorer.test.mezo.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mezo',
+    chain: 'Mezo',
+    rpc: [
+      'https://rpc_evm-mezo.imperator.co',
+      'wss://ws_evm-mezo.imperator.co',
+      'https://jsonrpc-mezo.boar.network',
+      'wss://jsonrpcws-mezo.boar.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mezo.org/',
+    shortName: 'mezo',
+    chainId: 31612,
+    networkId: 31612,
+    icon: 'mezo',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.mezo.org',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
