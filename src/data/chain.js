@@ -30293,7 +30293,11 @@ const chainArray = [
       'https://rpc_evm-mezo.imperator.co',
       'wss://ws_evm-mezo.imperator.co',
       'https://jsonrpc-mezo.boar.network',
-      'wss://jsonrpcws-mezo.boar.network'
+      'wss://jsonrpcws-mezo.boar.network',
+      'https://mainnet.mezo.public.validationcloud.io',
+      'wss://mainnet.mezo.public.validationcloud.io',
+      'https://rpc-internal.mezo.org',
+      'wss://rpc-ws-internal.mezo.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
@@ -37580,7 +37584,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Etherlink Testnet Explorer',
-        url: 'https://testnet-explorer.etherlink.com',
+        url: 'https://testnet.explorer.etherlink.com',
         standard: 'EIP3091'
       }
     ]
