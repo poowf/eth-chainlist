@@ -12140,6 +12140,7 @@ const chainArray = [
     shortName: 'sei',
     chainId: 1329,
     networkId: 1329,
+    slip44: 19000118,
     icon: 'seiv2',
     explorers: [
       {
@@ -36399,77 +36400,54 @@ const chainArray = [
     name: 'Plume Devnet (Legacy)',
     title: 'Plume Sepolia L2 Rollup Devnet (Legacy)',
     chain: 'PLUME Devnet Legacy',
-    rpc: [
-      'https://test-rpc.plumenetwork.xyz',
-      'wss://test-rpc.plumenetwork.xyz'
-    ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Plume Sepolia Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://plumenetwork.xyz/',
+    infoURL: 'https://plume.org',
     shortName: 'plume-devnet',
     chainId: 98864,
     networkId: 98864,
     slip44: 1,
     icon: 'plume',
     status: 'deprecated',
-    explorers: [
-      {
-        name: 'Blockscout',
-        url: 'https://test-explorer.plumenetwork.xyz',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      }
-    ],
+    explorers: [],
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Plume (Legacy)',
     title: 'Plume Ethereum L2 Rollup Mainnet (Legacy)',
     chain: 'PLUME Legacy',
-    rpc: [ 'https://rpc.plumenetwork.xyz', 'wss://rpc.plumenetwork.xyz' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Plume Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://plumenetwork.xyz/',
+    infoURL: 'https://plume.org',
     shortName: 'plume',
     chainId: 98865,
     networkId: 98865,
     slip44: 1,
     icon: 'plume',
-    explorers: [
-      {
-        name: 'Blockscout',
-        url: 'https://explorer.plumenetwork.xyz',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      }
-    ],
-    parent: {
-      type: 'L2',
-      chain: 'eip155-1',
-      bridges: [ { url: 'https://bridge.plumenetwork.xyz' } ]
-    }
+    status: 'deprecated',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'Plume Mainnet',
     title: 'Plume Ethereum L2 Rollup Mainnet',
     chain: 'PLUME',
-    rpc: [
-      'https://phoenix-rpc.plumenetwork.xyz',
-      'wss://phoenix-rpc.plumenetwork.xyz'
-    ],
+    rpc: [ 'https://rpc.plume.org', 'wss://rpc.plume.org' ],
     faucets: [],
     nativeCurrency: { name: 'Plume', symbol: 'PLUME', decimals: 18 },
-    infoURL: 'https://plumenetwork.xyz/',
+    infoURL: 'https://plume.org',
     shortName: 'plume-mainnet',
     chainId: 98866,
     networkId: 98866,
     slip44: 1,
     icon: 'plume',
-    status: 'incubating',
+    status: 'active',
     explorers: [
       {
         name: 'Blockscout',
-        url: 'https://phoenix-explorer.plumenetwork.xyz',
+        url: 'https://explorer.plume.org',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -36477,30 +36455,27 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://bridge.plumenetwork.xyz' } ]
+      bridges: [ { url: 'https://bridge.plume.org' } ]
     }
   },
   {
     name: 'Plume Testnet',
     title: 'Plume Sepolia L2 Rollup Testnet',
     chain: 'PLUME Testnet',
-    rpc: [
-      'https://testnet-rpc.plumenetwork.xyz',
-      'wss://testnet-rpc.plumenetwork.xyz'
-    ],
-    faucets: [ 'https://faucet.plumenetwork.xyz' ],
+    rpc: [ 'https://testnet-rpc.plume.org', 'wss://testnet-rpc.plume.org' ],
+    faucets: [ 'https://faucet.plume.org' ],
     nativeCurrency: { name: 'Plume', symbol: 'PLUME', decimals: 18 },
-    infoURL: 'https://plumenetwork.xyz/',
+    infoURL: 'https://plume.org',
     shortName: 'plume-testnet',
     chainId: 98867,
     networkId: 98867,
     slip44: 1,
     icon: 'plume',
-    status: 'incubating',
+    status: 'active',
     explorers: [
       {
         name: 'Blockscout',
-        url: 'https://testnet-explorer.plumenetwork.xyz',
+        url: 'https://testnet-explorer.plume.org',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -36508,7 +36483,7 @@ const chainArray = [
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
-      bridges: [ { url: 'https://testnet-bridge.plumenetwork.xyz' } ]
+      bridges: [ { url: 'https://testnet-bridge.plume.org' } ]
     }
   },
   {
@@ -45643,7 +45618,7 @@ const chainArray = [
     rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Plume Sepolia Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://plumenetwork.xyz/',
+    infoURL: 'https://plume.org',
     shortName: 'plume-testnet-legacy',
     chainId: 161221135,
     networkId: 161221135,
