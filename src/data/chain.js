@@ -2956,18 +2956,18 @@ const chainArray = [
     ]
   },
   {
-    name: 'Eternal Mainnet',
-    chain: 'ETE',
-    icon: 'eternal',
+    name: 'Eteria Mainnet',
+    chain: 'ERA',
+    icon: 'eteria',
     rpc: [
       'https://mainnet.eternalcoin.io/v1',
       'ws://mainnet.eternalcoin.io/v1/ws'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'Eternal', symbol: 'ETE', decimals: 18 },
-    infoURL: 'https://eternalcoin.io',
-    shortName: 'ETE',
+    nativeCurrency: { name: 'Eteria', symbol: 'ERA', decimals: 18 },
+    infoURL: 'https://eteria.io',
+    shortName: 'ERA',
     chainId: 140,
     networkId: 140
   },
@@ -40836,6 +40836,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Rogue Chain',
+    chainId: 560013,
+    shortName: 'rogue',
+    chain: 'ROGUE',
+    networkId: 560013,
+    icon: 'rogue',
+    nativeCurrency: { name: 'Rogue', symbol: 'ROGUE', decimals: 18 },
+    rpc: [ 'https://rpc.roguechain.io/rpc', 'wss://rpc.roguechain.io/ws' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Roguescan',
+        url: 'https://roguescan.io',
+        icon: 'rogue',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://roguechain.io',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [ { url: 'https://bridge.arbitrum.io' } ]
+    }
   },
   {
     name: 'Ethereum Hoodi',
