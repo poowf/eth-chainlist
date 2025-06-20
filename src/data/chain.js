@@ -39501,7 +39501,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'SaharaAI Testnet',
+    name: 'Sahara AI Testnet',
     chain: 'Sahara',
     rpc: [ 'https://testnet.saharalabs.ai' ],
     faucets: [],
