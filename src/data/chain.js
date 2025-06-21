@@ -17672,6 +17672,52 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'Realio Testnet',
+    chain: 'Realio Testnet',
+    rpc: [
+      'https://json-rpc.realiostage.network',
+      'https://realio-testnet.json-rpc.decentrio.ventures'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Rio', symbol: 'RIO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.realio.network',
+    shortName: 'realiotestnet',
+    chainId: 3300,
+    networkId: 3300,
+    icon: 'realiotestnet',
+    explorers: [
+      {
+        name: 'Realio Testnet Explorer',
+        url: 'https://explorer.realiostage.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Realio',
+    chain: 'Realio',
+    rpc: [
+      'https://json-rpc.realio.network',
+      'https://realio.json-rpc.decentrio.ventures'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Rio', symbol: 'RIO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.realio.network',
+    shortName: 'realio',
+    chainId: 3301,
+    networkId: 3301,
+    icon: 'realio',
+    explorers: [
+      {
+        name: 'Realio Explorer',
+        url: 'https://explorer.realio.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Debounce Subnet Testnet',
     chain: 'Debounce Network',
     icon: 'debounce',
@@ -25185,6 +25231,26 @@ const chainArray = [
       chain: 'eip155-28882',
       bridges: [ { url: 'https://gateway.boba.network' } ]
     }
+  },
+  {
+    name: 'Plasma Testnet',
+    chain: 'Plasma',
+    rpc: [ 'https://ultra-quick-paper.plasma-testnet.quiknode.pro' ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet Plasma', symbol: 'tXPL', decimals: 18 },
+    infoURL: 'https://plasma.to',
+    shortName: 'plasma',
+    chainId: 9746,
+    networkId: 9746,
+    icon: 'plasma',
+    explorers: [
+      {
+        name: 'Plasma Explorer',
+        url: 'https://plasma.gas.zip',
+        icon: 'plasma',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MainnetZ Testnet',
@@ -39302,6 +39368,27 @@ const chainArray = [
       {
         name: 'Mainnet Scan',
         url: 'https://mainnet.scan.caduceus.foundation',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Althea L1 Mainnet',
+    chain: 'ALTHEA',
+    icon: 'althea',
+    rpc: [ 'https://rpc.althea.zone' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Althea', symbol: 'ALTHEA', decimals: 18 },
+    infoURL: 'https://althea.net',
+    shortName: 'ALTHEA',
+    chainId: 258432,
+    networkId: 258432,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'Mintscan',
+        url: 'https://mintscan.io/althea',
         standard: 'none'
       }
     ]
