@@ -18182,7 +18182,7 @@ const chainArray = [
     faucets: [ 'https://faucet.botanixlabs.dev' ],
     nativeCurrency: { name: 'Botanix', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://botanixlabs.xyz',
-    shortName: 'BTNX',
+    shortName: 'BTNXt',
     chainId: 3636,
     networkId: 3636,
     slip44: 1,
@@ -18196,19 +18196,19 @@ const chainArray = [
   },
   {
     name: 'Botanix Mainnet',
-    chain: 'BTC',
+    chain: 'BOTANIX',
     icon: 'botanix',
-    rpc: [ 'https://rpc.btxtestchain.com' ],
-    faucets: [ 'https://faucet.btxtestchain.com' ],
+    rpc: [ 'https://rpc.botanixlabs.com' ],
+    faucets: [],
     nativeCurrency: { name: 'Botanix', symbol: 'BTC', decimals: 18 },
-    infoURL: 'https://btxtestchain.com',
-    shortName: 'BTCm',
+    infoURL: 'https://botanixlabs.com',
+    shortName: 'BTNX',
     chainId: 3637,
     networkId: 3637,
     explorers: [
       {
-        name: 'Botanix',
-        url: 'https://btxtestchain.com',
+        name: 'Botanix Explorer',
+        url: 'https://botanixscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -32657,6 +32657,28 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
+    name: 'Reddio',
+    title: 'Reddio mainnet L2 Rollup',
+    chain: 'ETH',
+    rpc: [ 'https://mainnet.reddio.com/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Reddio', symbol: 'RDO', decimals: 18 },
+    infoURL: 'https://www.reddio.com',
+    shortName: 'reddio',
+    chainId: 50342,
+    networkId: 50342,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://reddio.cloud.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
     name: 'STB Testnet',
     chain: 'STB Testnet',
     rpc: [ 'https://rpc.quorum.sps.dev.kode.ru/' ],
@@ -36988,6 +37010,25 @@ const chainArray = [
     networkId: 100100,
     explorers: [],
     status: 'deprecated'
+  },
+  {
+    name: 'DeInfra Mainnet',
+    chain: 'DeInfraMainnet',
+    rpc: [ 'https://c100501n3.deinfra.net:443/jsonrpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'SK', symbol: 'SK', decimals: 18 },
+    icon: 'deinfra',
+    infoURL: 'https://deinfra.net',
+    shortName: 'deinfra-mainnet',
+    chainId: 100501,
+    networkId: 100501,
+    explorers: [
+      {
+        name: 'Deinfra Mainnet Network Explorer',
+        url: 'https://explorer.deinfra.net',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Socotra JUNE-Chain',
@@ -46491,6 +46532,25 @@ const chainArray = [
       {
         name: 'Zora Sepolia Testnet Network Explorer',
         url: 'https://sepolia.explorer.zora.energy',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DeInfra Devnet3',
+    chain: 'DeInfraDev3',
+    rpc: [ 'https://c3n1.thepower.io:1446/jsonrpc' ],
+    faucets: [ 'https://faucet.thepower.io/' ],
+    nativeCurrency: { name: 'dev3SK', symbol: 'dSK', decimals: 18 },
+    icon: 'deinfra',
+    infoURL: 'https://deinfra.net',
+    shortName: 'deinfra-dev3',
+    chainId: 1000000003,
+    networkId: 1000000003,
+    explorers: [
+      {
+        name: 'Deinfra Devnet Chain 3 Network Explorer',
+        url: 'https://bs.thepower.io',
         standard: 'EIP3091'
       }
     ]
