@@ -2959,10 +2959,7 @@ const chainArray = [
     name: 'Eteria Mainnet',
     chain: 'ERA',
     icon: 'eteria',
-    rpc: [
-      'https://mainnet.eternalcoin.io/v1',
-      'ws://mainnet.eternalcoin.io/v1/ws'
-    ],
+    rpc: [ 'https://mainnet.eteria.io/v1' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Eteria', symbol: 'ERA', decimals: 18 },
@@ -36657,6 +36654,35 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Pay1 Network',
+    chainId: 98964,
+    shortName: 'pay1',
+    chain: 'PAY1',
+    networkId: 98964,
+    icon: 'pay1',
+    nativeCurrency: { name: 'Pay1', symbol: 'Pay1', decimals: 18 },
+    rpc: [
+      'https://rpc.pay1coin.com',
+      'https://rpc0.pay1coin.com',
+      'https://rpc1.pay1coin.com',
+      'https://rpc2.pay1coin.com',
+      'wss://ws.pay1coin.com',
+      'wss://ws0.pay1coin.com',
+      'wss://ws1.pay1coin.com',
+      'wss://ws2.pay1coin.com'
+    ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Pay1Scan',
+        url: 'https://pay1scan.io',
+        icon: 'pay1scan',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://pay1coin.com'
+  },
+  {
     name: 'Superposition Testnet',
     title: 'Sperposition Testnet',
     chain: 'SPN',
@@ -37026,6 +37052,27 @@ const chainArray = [
       {
         name: 'Deinfra Mainnet Network Explorer',
         url: 'https://explorer.deinfra.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Monsoon ',
+    chain: 'MONSOON',
+    rpc: [ 'https://monsoon.rainfall.one' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'RDP', symbol: 'RDP', decimals: 18 },
+    infoURL: '',
+    shortName: 'monsoon',
+    chainId: 100610,
+    networkId: 100610,
+    icon: 'monsoon',
+    explorers: [
+      {
+        name: 'Monsoon Scan',
+        url: 'https://scout.monsoon.rainfall.one',
+        icon: 'monsoon',
         standard: 'EIP3091'
       }
     ]
@@ -41550,7 +41597,7 @@ const chainArray = [
   {
     name: 'katana',
     chain: 'katana',
-    rpc: [ 'https://rpc.katanarpc.com', 'https://rpc.katana.network' ],
+    rpc: [ 'https://rpc.katana.network' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://katana.network',
@@ -46539,7 +46586,7 @@ const chainArray = [
   {
     name: 'DeInfra Devnet3',
     chain: 'DeInfraDev3',
-    rpc: [ 'https://c3n1.thepower.io:1446/jsonrpc' ],
+    rpc: [ 'https://c3n1.thepower.io/jsonrpc' ],
     faucets: [ 'https://faucet.thepower.io/' ],
     nativeCurrency: { name: 'dev3SK', symbol: 'dSK', decimals: 18 },
     icon: 'deinfra',
@@ -47051,10 +47098,7 @@ const chainArray = [
     name: 'Status Network Sepolia',
     title: 'Status Network Sepolia',
     chain: 'ETH',
-    rpc: [
-      'https://public.sepolia.rpc.status.network',
-      'wss://status-sepolia-rpc.eu-north-2.gateway.fm/ws'
-    ],
+    rpc: [ 'https://public.sepolia.rpc.status.network' ],
     faucets: [ 'https://faucet.status.network/' ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://status.network',
