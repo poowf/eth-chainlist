@@ -1230,6 +1230,7 @@ const chainArray = [
       'https://rpc.syscoin.org',
       'https://rpc.ankr.com/syscoin/${ANKR_API_KEY}',
       'https://syscoin.public-rpc.com',
+      'https://57.rpc.thirdweb.com',
       'wss://rpc.syscoin.org/wss',
       'https://syscoin-evm.publicnode.com',
       'wss://syscoin-evm.publicnode.com'
@@ -5843,19 +5844,20 @@ const chainArray = [
     ]
   },
   {
-    name: 'Cosvm Mainnet',
-    chain: 'CVM',
-    rpc: [ 'https://rpc.cosvm.net' ],
+    name: 'BuyCex Infinity Chain',
+    chain: 'BUYCEX',
+    rpc: [ 'https://rpc.buycex.net', 'wss://socket.buycex.net' ],
     faucets: [],
-    nativeCurrency: { name: 'Cosvm', symbol: 'CVM', decimals: 18 },
-    infoURL: 'https://cosvm.network',
-    shortName: 'cvm',
+    nativeCurrency: { name: 'Buycex', symbol: 'BCX', decimals: 18 },
+    infoURL: 'https://infinity.buycex.com',
+    shortName: 'buycex',
     chainId: 323,
     networkId: 323,
+    status: 'active',
     explorers: [
       {
         name: 'Blockscout',
-        url: 'https://explorer.cosvm.net',
+        url: 'https://buycex.com',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -14291,6 +14293,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'T-Rex Testnet',
+    chain: 'T-Rex',
+    rpc: [ 'https://testnetrpc.trex.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://trex.xyz/',
+    shortName: 'TREX',
+    chainId: 1962,
+    networkId: 1962,
+    icon: 'trex',
+    explorers: [
+      {
+        name: 'T-Rex Testnet explorer',
+        url: 'https://testnet.trex.xyz',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Eleanor',
     title: 'Metatime Testnet Eleanor',
     chain: 'MTC',
@@ -17843,15 +17864,13 @@ const chainArray = [
     chain: 'peaq',
     icon: 'peaq',
     rpc: [
-      'https://peaq.api.onfinality.io/public',
-      'https://peaq-rpc.dwellir.com',
       'https://peaq-rpc.publicnode.com',
-      'https://evm.peaq.network',
+      'https://peaq-rpc.dwellir.com',
       'https://responsive-powerful-mansion.peaq-mainnet.quiknode.pro/29963d0a2deee01a20b091926b08d68db12bc68b'
     ],
     faucets: [],
     nativeCurrency: { name: 'peaq', symbol: 'PEAQ', decimals: 18 },
-    infoURL: 'https://www.peaq.network',
+    infoURL: 'https://www.peaq.xyz',
     shortName: 'PEAQ',
     chainId: 3338,
     networkId: 3338,
@@ -35188,7 +35207,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Polynomia Sepolia',
+    name: 'Polynomial Sepolia',
     chain: 'polynomialSepolia',
     rpc: [ 'https://rpc.sepolia.polynomial.fi' ],
     faucets: [],
@@ -46410,6 +46429,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'Paseo PassetHub',
+    chain: 'PAS',
+    rpc: [ 'https://testnet-passet-hub-eth-rpc.polkadot.io' ],
+    faucets: [ 'https://faucet.polkadot.io/?parachain=1111' ],
+    nativeCurrency: { name: 'PAS', symbol: 'PAS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://polkadot.network',
+    shortName: 'pas',
+    chainId: 420420422,
+    networkId: 420420422
+  },
+  {
     name: 'Deprecated SKALE Europa Hub Testnet',
     title: 'Deprecated Europa Hub Testnet',
     status: 'deprecated',
@@ -47558,6 +47589,33 @@ const chainArray = [
     shortName: 'hop',
     chainId: 2021121117,
     networkId: 2021121117
+  },
+  {
+    name: 'Lumia Beam Testnet',
+    shortName: 'lumia-beam-testnet',
+    title: 'Lumia Beam Testnet',
+    chain: 'ETH',
+    icon: 'lumia',
+    rpc: [ 'https://beam-rpc.lumia.org' ],
+    faucets: [ 'https://beam-faucet.lumia.org/' ],
+    nativeCurrency: { name: 'Lumia', symbol: 'LUMIA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://lumia.org',
+    chainId: 2030232745,
+    networkId: 2030232745,
+    explorers: [
+      {
+        name: 'Lumia Beam Testnet Explorer',
+        url: 'https://beam-explorer.lumia.org',
+        icon: 'lumia',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://beam-bridge.lumia.org' } ]
+    }
   },
   {
     name: 'SKALE Europa Hub',
