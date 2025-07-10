@@ -17864,9 +17864,10 @@ const chainArray = [
     chain: 'peaq',
     icon: 'peaq',
     rpc: [
-      'https://peaq-rpc.publicnode.com',
-      'https://peaq-rpc.dwellir.com',
-      'https://responsive-powerful-mansion.peaq-mainnet.quiknode.pro/29963d0a2deee01a20b091926b08d68db12bc68b'
+      'https://quicknode1.peaq.xyz',
+      'https://quicknode2.peaq.xyz',
+      'https://quicknode3.peaq.xyz',
+      'https://peaq-rpc.publicnode.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'peaq', symbol: 'PEAQ', decimals: 18 },
@@ -25293,9 +25294,9 @@ const chainArray = [
   {
     name: 'Plasma Testnet',
     chain: 'Plasma',
-    rpc: [ 'https://ultra-quick-paper.plasma-testnet.quiknode.pro' ],
+    rpc: [ 'https://testnet-rpc.plasma.to' ],
     faucets: [],
-    nativeCurrency: { name: 'Testnet Plasma', symbol: 'tXPL', decimals: 18 },
+    nativeCurrency: { name: 'Testnet Plasma', symbol: 'XPL', decimals: 18 },
     infoURL: 'https://plasma.to',
     shortName: 'plasma',
     chainId: 9746,
@@ -25303,8 +25304,8 @@ const chainArray = [
     icon: 'plasma',
     explorers: [
       {
-        name: 'Plasma Explorer',
-        url: 'https://plasma.gas.zip',
+        name: 'RouteScan',
+        url: 'https://testnet.plasmaexplorer.io',
         icon: 'plasma',
         standard: 'EIP3091'
       }
