@@ -20451,6 +20451,8 @@ const chainArray = [
     rpc: [
       'https://rpc1.bahamut.io',
       'https://rpc2.bahamut.io',
+      'https://rpc1.ftnscan.io',
+      'https://rpc2.ftnscan.io',
       'wss://ws1.sahara.bahamutchain.com',
       'wss://ws2.sahara.bahamutchain.com',
       'https://bahamut-rpc.publicnode.com',
@@ -20467,6 +20469,11 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://ftnscan.com',
+        standard: 'none'
+      },
+      {
+        name: 'blockscout',
+        url: 'https://ftnscan.io',
         standard: 'none'
       }
     ]
