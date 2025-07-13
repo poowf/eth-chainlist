@@ -18822,14 +18822,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'GAN Testnet',
+    name: 'GANchain L1',
     chain: 'GAN',
     icon: 'gpu',
     rpc: [ 'https://rpc.gpu.net' ],
     faucets: [],
-    nativeCurrency: { name: 'GP Token', symbol: 'GP', decimals: 18 },
+    nativeCurrency: { name: 'GPUnet', symbol: 'GPU', decimals: 18 },
     infoURL: 'https://docs.gpu.net/',
-    shortName: 'GANTestnet',
+    shortName: 'GANchain',
     chainId: 4048,
     networkId: 4048,
     explorers: [
