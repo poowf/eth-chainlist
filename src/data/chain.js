@@ -9099,6 +9099,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'WorldMobileChain-Mainnet',
+    chain: 'WMC',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'World Mobile Token', symbol: 'WMTX', decimals: 18 },
+    infoURL: 'https://worldmobile.io/the-chain',
+    shortName: 'WMC',
+    chainId: 869,
+    networkId: 869,
+    status: 'incubating'
+  },
+  {
     name: 'Electra Test Network',
     chain: 'Electra',
     rpc: [ 'https://rpc.testnet.electranetwork.tech' ],
