@@ -17878,8 +17878,7 @@ const chainArray = [
     rpc: [
       'https://quicknode1.peaq.xyz',
       'https://quicknode2.peaq.xyz',
-      'https://quicknode3.peaq.xyz',
-      'https://peaq-rpc.publicnode.com'
+      'https://quicknode3.peaq.xyz'
     ],
     faucets: [],
     nativeCurrency: { name: 'peaq', symbol: 'PEAQ', decimals: 18 },
@@ -19307,9 +19306,7 @@ const chainArray = [
       'https://layeredge-mainnet-evm.itrocket.net',
       'https://layeredge.rpc.subquery.network/public',
       'https://rpc.layeredge.io',
-      'https://rpc2.layeredge.io',
-      'https://rpc.layeredge.foundation',
-      'https://rpc2.layeredge.foundation'
+      'https://rpc.layeredge.foundation'
     ],
     faucets: [],
     nativeCurrency: { name: 'Layer Edge', symbol: 'EDGEN', decimals: 18 },
@@ -43955,6 +43952,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Humanity Protocol',
+    chain: 'Humanity',
+    rpc: [ 'https://humanity-mainnet.g.alchemy.com/public' ],
+    faucets: [],
+    nativeCurrency: { name: 'H', symbol: 'H', decimals: 18 },
+    infoURL: 'https://humanity.org',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-42161',
+      bridges: [ { url: 'https://bridge.arbitrum.io' } ]
+    },
+    shortName: 'hp',
+    chainId: 6985385,
+    networkId: 6985385,
+    status: 'active',
+    explorers: [
+      {
+        name: 'Humanity Mainnet explorer',
+        url: 'https://humanity-mainnet.explorer.alchemy.com',
+        standard: 'none'
+      }
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
   },
   {
     name: 'COTI Testnet',
