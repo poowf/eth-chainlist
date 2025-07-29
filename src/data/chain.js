@@ -43979,6 +43979,30 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
   },
   {
+    name: 'Humanity Protocol testnet',
+    chain: 'Humanity',
+    rpc: [
+      'https://rpc.testnet.humanity.org',
+      'https://humanity-testnet.g.alchemy.com/public'
+    ],
+    faucets: [ 'https://faucets.alchemy.com/faucets/humanity-testnet' ],
+    nativeCurrency: { name: 'tHP', symbol: 'tHP', decimals: 18 },
+    infoURL: 'https://testnet.humanity.org',
+    parent: { type: 'L2', chain: 'eip155-42161', bridges: [] },
+    shortName: 'thp',
+    chainId: 7080969,
+    networkId: 7080969,
+    status: 'active',
+    explorers: [
+      {
+        name: 'Humanity Testnet explorer',
+        url: 'https://humanity-testnet.explorer.alchemy.com',
+        standard: 'none'
+      }
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
+  },
+  {
     name: 'COTI Testnet',
     title: 'COTI Testnet',
     chain: 'COTI',
@@ -45540,7 +45564,7 @@ const chainArray = [
   {
     name: 'dKargo Warehouse Testnet',
     chain: 'dKargo Warehouse',
-    rpc: [ 'https://warehouse-full01.dkargo.io' ],
+    rpc: [ 'https://rpc.warehouse.dkargo.io' ],
     faucets: [],
     nativeCurrency: { name: 'dKargo', symbol: 'DKA', decimals: 18 },
     infoURL: 'https://dkargo.io',
