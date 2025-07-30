@@ -3554,6 +3554,25 @@ const chainArray = [
     slip44: 1
   },
   {
+    name: 'ENI Mainnet',
+    chain: 'ENI',
+    rpc: [ 'https://rpc.eniac.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'ENI', symbol: 'ENI', decimals: 18 },
+    infoURL: 'https://eniac.network/',
+    shortName: 'eni',
+    chainId: 173,
+    networkId: 173,
+    icon: 'eni',
+    explorers: [
+      {
+        name: 'ENI Explorer',
+        url: 'https://scan.eniac.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'OTC',
     chain: 'OTC',
     faucets: [],
@@ -4861,9 +4880,9 @@ const chainArray = [
       'wss://fraxtal-rpc.publicnode.com'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Frax Ether', symbol: 'frxETH', decimals: 18 },
+    nativeCurrency: { name: 'Frax', symbol: 'FRAX', decimals: 18 },
     infoURL: 'https://mainnet.frax.com',
-    shortName: 'fraxtal',
+    shortName: 'frax',
     chainId: 252,
     networkId: 252,
     icon: 'fraxtal',
@@ -21061,8 +21080,8 @@ const chainArray = [
     name: 'Tanssi Demo',
     chain: 'TANGO',
     rpc: [
-      'https://dancebox-3001.tanssi-api.network',
-      'wss://dancebox-3001.tanssi-api.network'
+      'https://dancelight-2001.tanssi-api.network',
+      'wss://dancelight-2001.tanssi-api.network'
     ],
     faucets: [ 'https://apps.tanssi.network/demo' ],
     nativeCurrency: { name: 'TANGO', symbol: 'TANGO', decimals: 18 },
@@ -21073,7 +21092,7 @@ const chainArray = [
     explorers: [
       {
         name: 'BlockScout',
-        url: 'https://fra-dancebox-3001-bs.a.dancebox.tanssi.network',
+        url: 'https://dancelight-2001-blockscout.tanssi-chains.network',
         standard: 'EIP3091'
       }
     ]
@@ -43949,6 +43968,25 @@ const chainArray = [
       {
         name: 'TingScan',
         url: 'https://tingscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ENI Testnet',
+    chain: 'ENI',
+    rpc: [ 'https://rpc-testnet.eniac.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'ENI Testnet Token', symbol: 'ENI', decimals: 18 },
+    infoURL: 'https://eniac.network/',
+    shortName: 'eni-test',
+    chainId: 6912115,
+    networkId: 6912115,
+    icon: 'eni-test',
+    explorers: [
+      {
+        name: 'ENI Testnet Explorer',
+        url: 'https://scan-testnet.eniac.network',
         standard: 'EIP3091'
       }
     ]
