@@ -22019,9 +22019,9 @@ const chainArray = [
   {
     name: 'Xylume TestNet',
     chain: 'XYL',
-    rpc: [ 'https://xyl-testnet.glitch.me/rpc/' ],
-    faucets: [ 'https://debxylen.github.io/XYL_TestNet/faucet.html' ],
-    nativeCurrency: { name: 'XYL', symbol: 'XYL', decimals: 18 },
+    rpc: [ 'https://xylume-testnet.sparked.network/rpc/' ],
+    faucets: [ 'https://debxylen.github.io/Xylume_TestNet/faucet.html' ],
+    nativeCurrency: { name: 'Xylume', symbol: 'XYL', decimals: 18 },
     features: [
       { name: 'EIP155' },
       { name: 'EIP1559' },
@@ -25574,39 +25574,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'arena-z-testnet',
-    title: 'Arena-Z-Testnet',
-    chain: 'arena-z-testnet',
-    rpc: [
-      'https://rpc.arena-z.t.raas.gelato.cloud',
-      'wss://ws.arena-z.t.raas.gelato.cloud'
-    ],
+    name: 'arena-z-testnet-deprecated',
+    title: 'Arena-Z-Testnet-deprecated',
+    chain: 'arena-z-testnet-deprecated',
+    rpc: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     icon: 'arena-z',
     infoURL: 'https://raas.gelato.network/rollups/details/public/arena-z-testnet',
     faucets: [],
-    shortName: 'arena-z-testnet',
+    shortName: 'arena-z-testnet-deprecated',
     chainId: 9897,
     networkId: 9897,
     slip44: 60,
-    explorers: [
-      {
-        name: 'blockscout',
-        url: 'https://arena-z.blockscout.com',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      }
-    ],
-    parent: {
-      type: 'L2',
-      chain: 'eip155-11155111',
-      bridges: [
-        {
-          url: 'https://testnet-bridge.gelato.network/bridge/arena-z-testnet'
-        }
-      ]
-    },
-    status: 'active'
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] },
+    status: 'deprecated'
   },
   {
     name: 'Larissa Chain',
@@ -25629,6 +25611,33 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Arena-Z-Testnet',
+    title: 'Arena-Z-Testnet',
+    chain: 'arena-z-testnet',
+    rpc: [ 'https://testnet-rpc.arena-z.gg', 'wss://testnet-ws.arena-z.gg' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    icon: 'arena-z',
+    infoURL: 'https://raas.gelato.network/rollups/details/public/arena-z-testnet',
+    faucets: [ 'https://testnet-faucet.arena-z.gg' ],
+    shortName: 'arena-z-testnet',
+    chainId: 9899,
+    networkId: 9899,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet-explorer.arena-z.gg',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://testnet-bridge.arena-z.gg' } ]
+    },
+    status: 'active'
   },
   {
     name: 'Zytron Linea Mainnet',
