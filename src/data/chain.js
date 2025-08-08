@@ -25327,21 +25327,33 @@ const chainArray = [
     }
   },
   {
+    name: 'Plasma Mainnet',
+    chain: 'Plasma',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Plasma', symbol: 'XPL', decimals: 18 },
+    infoURL: 'https://plasma.to',
+    shortName: 'plasma-mainnet',
+    chainId: 9745,
+    networkId: 9745,
+    icon: 'plasma',
+    explorers: []
+  },
+  {
     name: 'Plasma Testnet',
     chain: 'Plasma',
     rpc: [ 'https://testnet-rpc.plasma.to' ],
     faucets: [],
     nativeCurrency: { name: 'Testnet Plasma', symbol: 'XPL', decimals: 18 },
     infoURL: 'https://plasma.to',
-    shortName: 'plasma',
+    shortName: 'plasma-testnet',
     chainId: 9746,
     networkId: 9746,
     icon: 'plasma',
     explorers: [
       {
-        name: 'RouteScan',
-        url: 'https://testnet.plasmaexplorer.io',
-        icon: 'plasma',
+        name: 'Routescan',
+        url: 'https://testnet.plasmascan.to',
         standard: 'EIP3091'
       }
     ]
@@ -37795,6 +37807,27 @@ const chainArray = [
         name: 'MetaDAP Enterprise Testnet explorer',
         url: 'https://explorer.testnet.chain.metadap.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Sova Sepolia Testnet',
+    chain: 'ETH',
+    icon: 'sova',
+    rpc: [ 'https://rpc.testnet.sova.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://sova.io',
+    shortName: 'sovasep',
+    chainId: 120893,
+    networkId: 120893,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.testnet.sova.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
