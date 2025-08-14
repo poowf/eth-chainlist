@@ -31553,6 +31553,11 @@ const chainArray = [
     rpc: [ 'https://forno.celo.org', 'wss://forno.celo.org/ws' ],
     faucets: [],
     infoURL: 'https://docs.celo.org/',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://superbridge.app/celo' } ]
+    },
     explorers: [
       {
         name: 'Celoscan',
@@ -31561,8 +31566,8 @@ const chainArray = [
       },
       {
         name: 'blockscout',
-        url: 'https://explorer.celo.org',
-        standard: 'none'
+        url: 'https://celo.blockscout.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -44511,6 +44516,36 @@ const chainArray = [
       {
         name: 'Hal Explorer',
         url: 'https://hal-explorer.alienxchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Celo Sepolia Testnet',
+    chainId: 11142220,
+    shortName: 'celo-sep',
+    chain: 'CELO',
+    networkId: 11142220,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    slip44: 60,
+    nativeCurrency: { name: 'CELO-S', symbol: 'CELO', decimals: 18 },
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://superbridge.app/?fromChainId=11155111&toChainId=11142220'
+        }
+      ]
+    },
+    rpc: [ 'https://forno.celo-sepolia.celo-testnet.org' ],
+    faucets: [ 'https://faucet.celo.org' ],
+    infoURL: 'https://docs.celo.org',
+    explorers: [
+      {
+        name: 'Celo Sepolia Explorer',
+        url: 'https://celo-sepolia.blockscout.com',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
