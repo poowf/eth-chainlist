@@ -3632,8 +3632,8 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
-    name: 'ABEY Testnet',
-    chain: 'ABEY',
+    name: 'Abey Testnet',
+    chain: 'Abey',
     rpc: [ 'https://testrpc.abeychain.com' ],
     features: [ { name: 'EIP155' } ],
     faucets: [ 'https://testnet-faucet.abeychain.com' ],
@@ -3642,17 +3642,19 @@ const chainArray = [
     shortName: 'abeyt',
     chainId: 178,
     networkId: 178,
+    icon: 'abey',
     explorers: [
       {
         name: 'abeyscan-testnet',
         url: 'https://testnet.abeyscan.com',
+        icon: 'abey',
         standard: 'EIP3091'
       }
     ]
   },
   {
-    name: 'ABEY Mainnet',
-    chain: 'ABEY',
+    name: 'Abey Mainnet',
+    chain: 'Abey',
     rpc: [ 'https://rpc.abeychain.com' ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
@@ -3661,10 +3663,12 @@ const chainArray = [
     shortName: 'abey',
     chainId: 179,
     networkId: 179,
+    icon: 'abey',
     explorers: [
       {
         name: 'abeyscan',
         url: 'https://abeyscan.com',
+        icon: 'abey',
         standard: 'EIP3091'
       }
     ]
@@ -13000,6 +13004,30 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'OpenLedger Mainnet',
+    chain: 'OpenLedger',
+    rpc: [ 'https://rpc.openledger.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Open', symbol: 'OPEN', decimals: 18 },
+    infoURL: 'https://www.openledger.xyz',
+    shortName: 'open',
+    chainId: 1612,
+    networkId: 1612,
+    icon: 'openledger',
+    explorers: [
+      {
+        name: 'OpenLedger Explorer',
+        url: 'https://scan.openledger.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.openledger.xyz/' } ]
+    }
   },
   {
     name: 'Ethereum Inscription Mainnet',
