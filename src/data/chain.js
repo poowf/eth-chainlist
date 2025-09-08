@@ -25381,15 +25381,21 @@ const chainArray = [
   {
     name: 'Plasma Mainnet',
     chain: 'Plasma',
-    rpc: [],
+    rpc: [ 'https://rpc.plasma.to' ],
     faucets: [],
     nativeCurrency: { name: 'Plasma', symbol: 'XPL', decimals: 18 },
     infoURL: 'https://plasma.to',
-    shortName: 'plasma-mainnet',
+    shortName: 'plasma',
     chainId: 9745,
     networkId: 9745,
     icon: 'plasma',
-    explorers: []
+    explorers: [
+      {
+        name: 'Routescan',
+        url: 'https://plasmascan.to',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Plasma Testnet',
@@ -25409,6 +25415,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Plasma Devnet',
+    chain: 'Plasma',
+    rpc: [ 'https://devnet-rpc.plasma.to' ],
+    faucets: [],
+    nativeCurrency: { name: 'Devnet Plasma', symbol: 'XPL', decimals: 18 },
+    infoURL: 'https://plasma.to',
+    shortName: 'plasma-devnet',
+    chainId: 9747,
+    networkId: 9747,
+    icon: 'plasma',
+    explorers: []
   },
   {
     name: 'MainnetZ Testnet',
