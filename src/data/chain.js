@@ -2967,7 +2967,14 @@ const chainArray = [
     infoURL: 'https://eteria.io',
     shortName: 'ERA',
     chainId: 140,
-    networkId: 140
+    networkId: 140,
+    explorers: [
+      {
+        name: 'eteriascan',
+        url: 'https://explorer.eteria.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Openpiece Testnet',
