@@ -9131,14 +9131,22 @@ const chainArray = [
   {
     name: 'WorldMobileChain-Mainnet',
     chain: 'WMC',
-    rpc: [],
+    icon: 'worldmobilechain',
+    rpc: [ 'https://worldmobilechain-mainnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'World Mobile Token', symbol: 'WMTX', decimals: 18 },
     infoURL: 'https://worldmobile.io/the-chain',
     shortName: 'WMC',
     chainId: 869,
     networkId: 869,
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'World Mobile Chain Explorer',
+        url: 'https://explorer.worldmobile.io',
+        standard: 'none'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Electra Test Network',
@@ -21323,6 +21331,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'MANTRACHAIN Mainnet',
+    chain: 'MANTRACHAIN',
+    rpc: [ 'https://evm.mantrachain.io', 'wss://evm.mantrachain.io/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'OM', symbol: 'OM', decimals: 18 },
+    infoURL: 'https://mantrachain.io',
+    shortName: 'mantrachain',
+    chainId: 5888,
+    networkId: 5888,
+    slip44: 1,
+    icon: 'om',
+    explorers: [
+      {
+        name: 'MANTRACHAIN Explorer',
+        url: 'http://mantrascan.io',
+        standard: 'none',
+        icon: 'om'
+      }
+    ]
+  },
+  {
     name: 'BounceBit Testnet',
     chain: 'BounceBit',
     rpc: [ 'https://fullnode-testnet.bouncebitapi.com/' ],
@@ -30796,7 +30825,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Zilliqa EVM',
+    name: 'Zilliqa 2',
     chain: 'ZIL',
     rpc: [ 'https://api.zilliqa.com' ],
     faucets: [],
@@ -30808,9 +30837,9 @@ const chainArray = [
     icon: 'zilliqa',
     explorers: [
       {
-        name: 'Zilliqa EVM Explorer',
-        url: 'https://evmx.zilliqa.com',
-        standard: 'none'
+        name: 'Zilliqa 2 Mainnet Explorer',
+        url: 'https://zilliqa.blockscout.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -30872,21 +30901,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'Zilliqa EVM Testnet',
+    name: 'Zilliqa 2 Testnet',
     chain: 'ZIL',
-    rpc: [ 'https://dev-api.zilliqa.com' ],
-    faucets: [ 'https://dev-wallet.zilliqa.com/faucet?network=testnet' ],
+    rpc: [ 'https://api.testnet.zilliqa.com' ],
+    faucets: [ 'https://faucet.testnet.zilliqa.com' ],
     nativeCurrency: { name: 'Zilliqa', symbol: 'ZIL', decimals: 18 },
-    infoURL: 'https://www.zilliqa.com/',
+    infoURL: 'https://www.zilliqa.com',
     shortName: 'zil-testnet',
     chainId: 33101,
     networkId: 33101,
     slip44: 1,
     explorers: [
       {
-        name: 'Zilliqa EVM Explorer',
-        url: 'https://evmx.zilliqa.com',
-        standard: 'none'
+        name: 'Zilliqa 2 Testnet Explorer',
+        url: 'https://testnet.zilliqa.blockscout.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -39627,6 +39656,34 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Studio Blockchain Mainnet',
+    chain: 'STO',
+    icon: 'studio',
+    rpc: [
+      'https://mainnet.studio-blockchain.com',
+      'https://mainnet2.studio-blockchain.com',
+      'https://mainnet3.studio-blockchain.com',
+      'https://mainnet.studio-scan.com',
+      'https://mainnet2.studio-scan.com',
+      'wss://mainnet.studio-blockchain.com:8547'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Studio Token', symbol: 'STO', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://studio-blockchain.com',
+    shortName: 'stom',
+    chainId: 240241,
+    networkId: 240241,
+    explorers: [
+      {
+        name: 'Studio Scan',
+        url: 'https://studio-scan.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Orange Chain Testnet',
     title: 'Orange Chain Testnet',
     chain: 'Orange Chain',
@@ -40085,6 +40142,24 @@ const chainArray = [
       {
         name: 'Bloom Genesis Testnet',
         url: 'https://testnet.bloomgenesis.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'World Mobile Chain Testnet',
+    chain: 'WOMOX',
+    rpc: [ 'https://worldmobile-devnet.g.alchemy.com/public' ],
+    faucets: [ 'https://testnet-faucet.worldmobile.net' ],
+    nativeCurrency: { name: 'ATestingToken', symbol: 'WOMOX', decimals: 18 },
+    infoURL: 'https://worldmobile.io/the-chain',
+    shortName: 'WMCTEST',
+    chainId: 323432,
+    networkId: 323432,
+    explorers: [
+      {
+        name: 'World Mobile Testnet Explorer',
+        url: 'https://testnet-explorer.worldmobile.net',
         standard: 'EIP3091'
       }
     ]
