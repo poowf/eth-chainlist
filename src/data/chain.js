@@ -37265,6 +37265,26 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-100000' }
   },
   {
+    name: 'Sova',
+    chain: 'ETH',
+    icon: 'sova',
+    rpc: [ 'https://rpc.sova.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://sova.io',
+    shortName: 'sova',
+    chainId: 100021,
+    networkId: 100021,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.sova.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Deprecated CHI',
     chain: 'CHI1',
     icon: 'gnosis',
