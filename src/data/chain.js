@@ -28242,7 +28242,8 @@ const chainArray = [
   {
     name: '0G-Newton-Testnet',
     chain: '0G-Testnet',
-    rpc: [ 'https://evmrpc-testnet.0g.ai' ],
+    status: 'deprecated',
+    rpc: [],
     faucets: [ 'https://faucet.0g.ai' ],
     nativeCurrency: { name: 'A0GI', symbol: 'A0GI', decimals: 18 },
     infoURL: 'https://0g.ai',
@@ -28250,13 +28251,39 @@ const chainArray = [
     chainId: 16600,
     networkId: 16600,
     icon: '0gai',
+    explorers: []
+  },
+  {
+    name: '0G-Galileo-Testnet',
+    chain: '0G-Testnet',
+    rpc: [ 'https://evmrpc-testnet.0g.ai' ],
+    faucets: [ 'https://faucet.0g.ai' ],
+    nativeCurrency: { name: 'A0GI', symbol: 'A0GI', decimals: 18 },
+    infoURL: 'https://0g.ai',
+    shortName: '0gai-galileo-testnet',
+    chainId: 16601,
+    networkId: 16601,
+    icon: '0gai',
     explorers: [
       {
         name: '0G BlockChain Explorer',
-        url: 'https://chainscan-newton.0g.ai',
-        standard: 'none'
+        url: 'https://chainscan-galileo.0g.ai',
+        standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: '0G Mainnet',
+    chain: '0G',
+    rpc: [ 'https://evmrpc.0g.ai' ],
+    faucets: [],
+    nativeCurrency: { name: '0G', symbol: '0G', decimals: 18 },
+    infoURL: 'https://0g.ai',
+    shortName: '0g',
+    chainId: 16661,
+    networkId: 16661,
+    icon: '0g',
+    explorers: []
   },
   {
     name: 'IRIShub Testnet',
@@ -43485,6 +43512,36 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Jovay Sepolia Testnet',
+    chain: 'ETH',
+    status: 'active',
+    rpc: [
+      'https://api.zan.top/public/jovay-testnet',
+      'https://api.zan.top/node/v1/jovay/testnet/${ZAN_API_KEY}',
+      'wss://api.zan.top/node/ws/v1/jovay/testnet/${ZAN_API_KEY}'
+    ],
+    faucets: [ 'https://zan.top/faucet/jovay' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://jovay.io',
+    shortName: 'jovay-sepolia',
+    chainId: 2019775,
+    networkId: 2019775,
+    icon: 'jovay',
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Jovay Testnet Explorer',
+        url: 'https://sepolia-explorer.jovay.io/l2',
+        standard: 'none'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://docs.jovay.io/guide/developer-quickstart' } ]
+    }
+  },
+  {
     name: 'DeBank Testnet',
     chain: 'DeBank',
     rpc: [ 'http://rpc.testnet.debank.com' ],
@@ -44087,6 +44144,31 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Jovay Mainnet',
+    chain: 'ETH',
+    status: 'incubating',
+    rpc: [
+      'https://api.zan.top/public/jovay-mainnet',
+      'https://api.zan.top/node/v1/jovay/mainnet/${ZAN_API_KEY}',
+      'wss://api.zan.top/node/ws/v1/jovay/mainnet/${ZAN_API_KEY}'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://jovay.io',
+    shortName: 'jovay',
+    chainId: 5734951,
+    networkId: 5734951,
+    icon: 'jovay',
+    explorers: [
+      {
+        name: 'Jovay Explorer',
+        url: 'https://explorer.jovay.io',
+        standard: 'none'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
   },
   {
     name: 'Astar zKyoto',
