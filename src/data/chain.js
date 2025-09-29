@@ -3563,7 +3563,7 @@ const chainArray = [
   {
     name: 'ENI Mainnet',
     chain: 'ENI',
-    rpc: [ 'https://rpc.eniac.network' ],
+    rpc: [ 'https://rpc.eniac.network', 'wss://rpc.eniac.network/ws/' ],
     faucets: [],
     nativeCurrency: { name: 'EGAS', symbol: 'EGAS', decimals: 18 },
     infoURL: 'https://eniac.network/',
