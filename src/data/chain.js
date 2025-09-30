@@ -12590,6 +12590,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'Injective Testnet',
+    chain: 'Injective',
+    icon: 'injective',
+    rpc: [
+      'https://k8s.testnet.json-rpc.injective.network',
+      'wss://k8s.testnet.ws.injective.network',
+      'https://injectiveevm-testnet-rpc.polkachu.com',
+      'wss://injectiveevm-testnet-rpc.polkachu.com'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://testnet.faucet.injective.network' ],
+    nativeCurrency: { name: 'Injective', symbol: 'INJ', decimals: 18 },
+    infoURL: 'https://injective.com',
+    shortName: 'injective-testnet',
+    chainId: 1439,
+    networkId: 1439,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://testnet.blockscout.injective.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Living Assets Mainnet',
     chain: 'LAS',
     icon: 'livingassets',
@@ -13524,6 +13551,33 @@ const chainArray = [
         name: 'PartyExplorer',
         url: 'https://partyexplorer.co',
         icon: 'grams',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Injective',
+    chain: 'Injective',
+    icon: 'injective',
+    rpc: [
+      'https://sentry.evm-rpc.injective.network',
+      'wss://sentry.evm-ws.injective.network',
+      'https://injectiveevm-rpc.polkachu.com',
+      'wss://injectiveevm-ws.polkachu.com'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://injective.com/getinj' ],
+    nativeCurrency: { name: 'Injective', symbol: 'INJ', decimals: 18 },
+    infoURL: 'https://injective.com',
+    shortName: 'injective',
+    chainId: 1776,
+    networkId: 1776,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.injective.network',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -25116,6 +25170,18 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-4', bridges: [] }
   },
   {
+    name: 'GIWA',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://giwa.io',
+    shortName: 'giwa',
+    chainId: 9134,
+    networkId: 9134,
+    status: 'incubating'
+  },
+  {
     name: 'Rinia Testnet Old',
     chain: 'FIRE',
     icon: 'rinia',
@@ -36407,6 +36473,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'GIWA Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://sepolia-rpc.giwa.io' ],
+    faucets: [ 'https://faucet.giwa.io' ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://giwa.io',
+    shortName: 'giwasepolia',
+    chainId: 91342,
+    networkId: 91342,
+    slip44: 1,
+    icon: 'giwaTestnet',
+    explorers: [
+      {
+        name: 'GIWA Sepolia Blockscout',
+        url: 'https://sepolia-explorer.giwa.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Combo Testnet',
     chain: 'Combo',
     icon: 'combo',
@@ -40586,6 +40673,56 @@ const chainArray = [
         icon: 'hap'
       }
     ]
+  },
+  {
+    name: 'Silent Data Mainnet',
+    chain: 'Silent Data',
+    rpc: [ 'https://mainnet.silentdata.com/${SILENTDATA_AUTH_TOKEN}' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.silentdata.com',
+    shortName: 'silent-data-mainnet',
+    chainId: 380929,
+    networkId: 380929,
+    icon: 'silentdata',
+    explorers: [
+      {
+        name: 'Silent Data Mainnet Explorer',
+        url: 'https://explorer-mainnet.rollup.silentdata.com',
+        icon: 'silentdata',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge-mainnet.rollup.silentdata.com' } ]
+    }
+  },
+  {
+    name: 'Silent Data Testnet',
+    chain: 'Silent Data',
+    rpc: [ 'https://testnet.silentdata.com/${SILENTDATA_AUTH_TOKEN}' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.silentdata.com',
+    shortName: 'silent-data-testnet',
+    chainId: 381185,
+    networkId: 381185,
+    icon: 'silentdata-testnet',
+    explorers: [
+      {
+        name: 'Silent Data Testnet Explorer',
+        url: 'https://explorer-testnet.rollup.silentdata.com',
+        icon: 'silentdata-testnet',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge-testnet.rollup.silentdata.com' } ]
+    }
   },
   {
     name: 'Metal C-Chain',
