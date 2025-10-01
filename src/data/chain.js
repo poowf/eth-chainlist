@@ -28322,14 +28322,28 @@ const chainArray = [
   {
     name: '0G-Galileo-Testnet',
     chain: '0G-Testnet',
-    rpc: [ 'https://evmrpc-testnet.0g.ai' ],
-    faucets: [ 'https://faucet.0g.ai' ],
+    status: 'deprecated',
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'A0GI', symbol: 'A0GI', decimals: 18 },
     infoURL: 'https://0g.ai',
     shortName: '0gai-galileo-testnet',
     chainId: 16601,
     networkId: 16601,
     icon: '0gai',
+    explorers: []
+  },
+  {
+    name: '0G-Testnet-Galileo',
+    chain: '0G-Testnet',
+    rpc: [ 'https://evmrpc-testnet.0g.ai' ],
+    faucets: [ 'https://faucet.0g.ai' ],
+    nativeCurrency: { name: '0G', symbol: '0G', decimals: 18 },
+    infoURL: 'https://0g.ai',
+    shortName: '0g-testnet-galileo',
+    chainId: 16602,
+    networkId: 16602,
+    icon: '0g',
     explorers: [
       {
         name: '0G BlockChain Explorer',
@@ -28349,7 +28363,13 @@ const chainArray = [
     chainId: 16661,
     networkId: 16661,
     icon: '0g',
-    explorers: []
+    explorers: [
+      {
+        name: '0G BlockChain Explorer',
+        url: 'https://chainscan.0g.ai',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'IRIShub Testnet',
@@ -34519,6 +34539,11 @@ const chainArray = [
       {
         name: 'Scolscan Explorer',
         url: 'https://explorer.scolcoin.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Scolcoin Explorer',
+        url: 'https://explorador.scolcoin.com',
         standard: 'EIP3091'
       }
     ]
@@ -46272,14 +46297,9 @@ const chainArray = [
   },
   {
     name: 'Autonity Piccadilly (Tiber) Testnet',
+    status: 'deprecated',
     chain: 'AUT',
-    rpc: [
-      'https://autonity.rpc.web3cdn.network/testnet',
-      'wss://autonity.rpc.web3cdn.network/testnet/ws',
-      'https://autonity-piccadilly.rpc.subquery.network/public',
-      'https://piccadilly.autonity-apis.com',
-      'wss://piccadilly-ws.autonity-apis.com'
-    ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Piccadilly Auton', symbol: 'ATN', decimals: 18 },
     infoURL: 'https://autonity.org/',
@@ -46288,13 +46308,7 @@ const chainArray = [
     networkId: 65100004,
     slip44: 1,
     icon: 'autonity',
-    explorers: [
-      {
-        name: 'autonity-blockscout',
-        url: 'https://piccadilly.autonity.org',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Winr Protocol Testnet',
@@ -48321,6 +48335,26 @@ const chainArray = [
         name: 'ultimachain',
         url: 'https://ultimachain.info',
         icon: 'ultima',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Tron Nile',
+    chain: 'TRON',
+    rpc: [ 'https://nile.trongrid.io/jsonrpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Tron', symbol: 'TRX', decimals: 6 },
+    infoURL: 'https://tron.network',
+    shortName: 'tron-nile',
+    chainId: 3448148188,
+    networkId: 3448148188,
+    icon: 'tron',
+    explorers: [
+      {
+        name: 'nile tronscan',
+        url: 'https://nile.tronscan.org',
+        icon: 'tron',
         standard: 'none'
       }
     ]
