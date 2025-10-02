@@ -1200,7 +1200,9 @@ const chainArray = [
       'https://bsc-dataseed4.ninicoin.io',
       'https://bsc-rpc.publicnode.com',
       'wss://bsc-rpc.publicnode.com',
-      'wss://bsc-ws-node.nariox.org'
+      'wss://bsc-ws-node.nariox.org',
+      'https://bsc-mainnet.infura.io/v3/${INFURA_API_KEY}',
+      'wss://bsc-mainnet.infura.io/v3/${INFURA_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
@@ -12209,7 +12211,12 @@ const chainArray = [
   {
     name: 'Sei Network',
     chain: 'Sei',
-    rpc: [ 'https://evm-rpc.sei-apis.com', 'wss://evm-ws.sei-apis.com' ],
+    rpc: [
+      'https://evm-rpc.sei-apis.com',
+      'wss://evm-ws.sei-apis.com',
+      'https://sei-mainnet.infura.io',
+      'wss://sei-mainnet.infura.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Sei', symbol: 'SEI', decimals: 18 },
     infoURL: 'https://www.sei.io',
@@ -24154,7 +24161,9 @@ const chainArray = [
       'https://base.gateway.tenderly.co',
       'wss://base.gateway.tenderly.co',
       'https://base-rpc.publicnode.com',
-      'wss://base-rpc.publicnode.com'
+      'wss://base-rpc.publicnode.com',
+      'https://base-mainnet.infura.io/v3/${INFURA_API_KEY}',
+      'wss://base-mainnet.infura.io/v3/${INFURA_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -32061,7 +32070,9 @@ const chainArray = [
     rpc: [
       'https://api.avax.network/ext/bc/C/rpc',
       'https://avalanche-c-chain-rpc.publicnode.com',
-      'wss://avalanche-c-chain-rpc.publicnode.com'
+      'wss://avalanche-c-chain-rpc.publicnode.com',
+      'https://avalanche-mainnet.infura.io/v3/${INFURA_API_KEY}',
+      'wss://avalanche-mainnet.infura.io/v3/${INFURA_API_KEY}'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
