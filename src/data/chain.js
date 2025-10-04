@@ -217,16 +217,25 @@ const chainArray = [
     ]
   },
   {
-    name: 'Ubiq Network Testnet',
-    chain: 'UBQ',
-    rpc: [],
+    name: 'Quai Network Mainnet',
+    chain: 'QUAI',
+    icon: 'quai',
+    rpc: [ 'https://rpc.quai.network/cyprus1' ],
+    features: [ { name: 'EIP155' } ],
     faucets: [],
-    nativeCurrency: { name: 'Ubiq Testnet Ether', symbol: 'TUBQ', decimals: 18 },
-    infoURL: 'https://ethersocial.org',
-    shortName: 'tubq',
+    nativeCurrency: { name: 'Quai', symbol: 'QUAI', decimals: 18 },
+    infoURL: 'https://qu.ai',
+    shortName: 'quai',
     chainId: 9,
-    networkId: 2,
-    slip44: 1
+    networkId: 9,
+    redFlags: [ 'reusedChainId' ],
+    explorers: [
+      {
+        name: 'Quaiscan',
+        url: 'https://quaiscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'OP Mainnet',
@@ -17369,18 +17378,19 @@ const chainArray = [
   {
     name: 'HyperAGI Mainnet',
     chain: 'HyperAGI',
-    rpc: [],
+    icon: 'hyperagi',
+    rpc: [ 'https://rpc.hyperagi.network', 'https://rpc.hyperagi.ai' ],
     faucets: [],
     nativeCurrency: { name: 'Hyperdust', symbol: 'HYPT', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://hyperagi.network',
+    infoURL: 'https://www.hyperagi.ai',
     shortName: 'hypt',
     chainId: 2868,
-    networkId: 1,
+    networkId: 2868,
     explorers: [
       {
-        name: 'hyptscan',
-        url: 'https://block.hyperagi.network',
+        name: 'hyperscan',
+        url: 'https://hyperscan.hyperagi.ai',
         standard: 'EIP3091'
       }
     ]
@@ -28021,6 +28031,26 @@ const chainArray = [
     slip44: 1,
     icon: 'humanode',
     explorers: []
+  },
+  {
+    name: 'Quai Network Testnet',
+    chain: 'QUAI',
+    icon: 'quai',
+    rpc: [ 'https://orchard.rpc.quai.network/cyprus1' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Quai', symbol: 'QUAI', decimals: 18 },
+    infoURL: 'https://qu.ai',
+    shortName: 'quai-testnet',
+    chainId: 15000,
+    networkId: 15000,
+    explorers: [
+      {
+        name: 'Orchard Quaiscan',
+        url: 'https://orchard.quaiscan.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Immutable zkEVM Devnet',
@@ -39054,6 +39084,26 @@ const chainArray = [
     networkId: 200000
   },
   {
+    name: 'NitroGraph Testnet',
+    chain: 'NOS',
+    rpc: [ 'https://rpc-testnet.nitrograph.foundation' ],
+    icon: 'nitrograph',
+    slip44: 1,
+    faucets: [ 'https://faucet-testnet.nitrograph.foundation' ],
+    infoURL: 'https://docs.nitrograph.com',
+    chainId: 200024,
+    networkId: 200024,
+    shortName: 'nitro-testnet',
+    explorers: [
+      {
+        url: 'https://explorer-testnet.nitrograph.foundation',
+        name: 'NitroGraphTestnetInfo',
+        standard: 'EIP3091'
+      }
+    ],
+    nativeCurrency: { name: 'Nitro', symbol: 'NOS', decimals: 18 }
+  },
+  {
     name: 'Milkomeda C1 Testnet',
     chain: 'milkTAda',
     icon: 'milkomeda',
@@ -40428,7 +40478,7 @@ const chainArray = [
     }
   },
   {
-    name: 'WABA Chain Testnet',
+    name: 'WABA Chain Mainnet',
     chain: 'WABA Mainnet',
     icon: 'waba',
     rpc: [ 'https://rpc.wabaworld.com' ],
@@ -44372,9 +44422,9 @@ const chainArray = [
   {
     name: 'Jovay Mainnet',
     chain: 'ETH',
-    status: 'incubating',
+    status: 'active',
     rpc: [
-      'https://api.zan.top/public/jovay-mainnet',
+      'https://rpc.jovay.io',
       'https://api.zan.top/node/v1/jovay/mainnet/${ZAN_API_KEY}',
       'wss://api.zan.top/node/ws/v1/jovay/mainnet/${ZAN_API_KEY}'
     ],
@@ -44388,7 +44438,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Jovay Explorer',
-        url: 'https://explorer.jovay.io',
+        url: 'https://explorer.jovay.io/l2',
         standard: 'none'
       }
     ],
@@ -45018,7 +45068,7 @@ const chainArray = [
     networkId: 11142220,
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     slip44: 60,
-    nativeCurrency: { name: 'CELO-S', symbol: 'CELO', decimals: 18 },
+    nativeCurrency: { name: 'CELO', symbol: 'CELO', decimals: 18 },
     parent: {
       type: 'L2',
       chain: 'eip155-11155111',
