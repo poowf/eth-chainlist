@@ -866,6 +866,8 @@ const chainArray = [
     chain: 'LUKSO',
     icon: 'lukso',
     rpc: [
+      'https://42.rpc.thirdweb.com',
+      'https://rpc.lukso.sigmacore.io',
       'https://rpc.mainnet.lukso.network',
       'wss://ws-rpc.mainnet.lukso.network'
     ],
@@ -873,8 +875,8 @@ const chainArray = [
     nativeCurrency: { name: 'LUKSO', symbol: 'LYX', decimals: 18 },
     explorers: [
       {
-        name: 'Blockscout',
-        url: 'https://explorer.execution.mainnet.lukso.network',
+        name: 'LUKSO Execution Explorer',
+        url: 'https://explorer.lukso.network',
         standard: 'EIP3091'
       }
     ],
@@ -3430,25 +3432,22 @@ const chainArray = [
     status: 'deprecated'
   },
   {
-    name: 'Omni',
-    chain: 'Omni',
+    name: 'Nomina',
+    chain: 'Nomina',
     status: 'active',
-    rpc: [
-      'https://mainnet.omni.network',
-      'wss://wss.mainnet.omni.network'
-    ],
+    rpc: [ 'https://mainnet.nomina.io', 'wss://wss.mainnet.nomina.io' ],
     features: [ { name: 'EIP155' } ],
     faucets: [],
-    nativeCurrency: { name: 'Omni', symbol: 'OMNI', decimals: 18 },
+    nativeCurrency: { name: 'Nomina', symbol: 'NOM', decimals: 18 },
     infoURL: 'https://docs.omni.network',
-    shortName: 'omni',
+    shortName: 'nom',
     chainId: 166,
     networkId: 166,
     slip44: 1,
-    icon: 'omni',
+    icon: 'nom',
     explorers: [
       {
-        name: 'Omni EVM and cross-chain Explorer',
+        name: 'Nomina EVM and cross-chain Explorer',
         url: 'https://omniscan.network',
         standard: 'EIP3091'
       }
@@ -19372,7 +19371,7 @@ const chainArray = [
   {
     name: 'LUKSO Testnet',
     chain: 'LUKSO Testnet',
-    icon: 'lukso',
+    icon: 'lukso-testnet',
     rpc: [
       'https://rpc.testnet.lukso.network',
       'wss://ws-rpc.testnet.lukso.network'
@@ -19381,9 +19380,9 @@ const chainArray = [
     nativeCurrency: { name: 'TestLYX', symbol: 'LYXt', decimals: 18 },
     explorers: [
       {
-        name: 'Blockscout',
+        name: 'LUKSO Testnet Execution Explorer',
         url: 'https://explorer.execution.testnet.lukso.network',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ],
     infoURL: 'https://lukso.network',
@@ -32281,6 +32280,7 @@ const chainArray = [
     chain: 'CELO',
     networkId: 44787,
     slip44: 1,
+    status: 'deprecated',
     nativeCurrency: { name: 'CELO', symbol: 'CELO', decimals: 18 },
     rpc: [
       'https://alfajores-forno.celo-testnet.org',
@@ -34348,6 +34348,7 @@ const chainArray = [
     chain: 'CELO',
     networkId: 62320,
     slip44: 1,
+    status: 'deprecated',
     nativeCurrency: { name: 'CELO', symbol: 'CELO', decimals: 18 },
     rpc: [ 'https://baklava-forno.celo-testnet.org' ],
     faucets: [
