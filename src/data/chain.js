@@ -22194,12 +22194,14 @@ const chainArray = [
     name: 'Xylume TestNet',
     chain: 'XYL',
     rpc: [ 'https://xylume-testnet.sparked.network/rpc/' ],
-    faucets: [ 'https://debxylen.github.io/Xylume_TestNet/faucet.html' ],
+    faucets: [ 'https://xylume-faucet.vercel.app/' ],
     nativeCurrency: { name: 'Xylume', symbol: 'XYL', decimals: 18 },
     features: [
+      { name: 'EIP20' },
       { name: 'EIP155' },
       { name: 'EIP1559' },
-      { name: 'Directed Acyclic Graph (DAG)' }
+      { name: 'Directed Acyclic Graph (DAG)' },
+      { name: 'Unspent Transaction Output (UTXO)' }
     ],
     infoURL: 'https://debxylen.github.io/Xylume_TestNet',
     shortName: 'xyl',
@@ -24277,6 +24279,27 @@ const chainArray = [
       {
         name: 'Hela Official Runtime Mainnet Explorer',
         url: 'https://mainnet-blockexplorer.helachain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autonomys Chronos Testnet',
+    chain: 'autonomys-chronos-testnet',
+    rpc: [ 'https://auto-evm.chronos.autonomys.xyz/ws' ],
+    icon: 'autonomys',
+    faucets: [],
+    nativeCurrency: { decimals: 18, name: 'AI3', symbol: 'AI3' },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.autonomys.xyz',
+    shortName: 'ATN',
+    chainId: 8700,
+    networkId: 8700,
+    explorers: [
+      {
+        name: 'Autonomys Chronos EVM Testnet Explorer',
+        url: 'https://explorer.auto-evm.chronos.autonomys.xyz',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -41379,22 +41402,16 @@ const chainArray = [
     name: 'Autonomys Taurus Testnet',
     chain: 'autonomys-taurus-testnet',
     rpc: [ 'https://auto-evm.taurus.autonomys.xyz/ws' ],
+    status: 'deprecated',
     icon: 'autonomys',
     faucets: [],
     nativeCurrency: { name: 'AI3', symbol: 'AI3', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://www.autonomys.xyz',
-    shortName: 'ATN',
+    shortName: 'ATN-deprecated',
     chainId: 490000,
     networkId: 490000,
-    explorers: [
-      {
-        name: 'Autonomys Taurus Testnet Explorer',
-        url: 'https://blockscout.taurus.autonomys.xyz',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'PUMPFI CHAIN TESTNET',
@@ -42449,26 +42466,38 @@ const chainArray = [
     ]
   },
   {
+    name: 'Surge deprecated Testnet',
+    chain: 'Surge deprecated Testnet',
+    status: 'deprecated',
+    rpc: [],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'surge-deprecated-testnet',
+    chainId: 763374,
+    networkId: 763374,
+    icon: 'surge-testnet',
+    explorers: []
+  },
+  {
     name: 'Surge Testnet',
     chain: 'Surge Testnet',
-    rpc: [
-      'https://l2-rpc.surge.staging-nethermind.xyz',
-      'wss://l2-rpc.surge.staging-nethermind.xyz'
-    ],
+    rpc: [ 'https://l2-rpc.hoodi.surge.wtf', 'wss://l2-ws.hoodi.surge.wtf' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://surge.wtf',
     shortName: 'surge-testnet',
-    chainId: 763374,
-    networkId: 763374,
+    chainId: 763375,
+    networkId: 763375,
     icon: 'surge-testnet',
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://explorer.holesky.surge.wtf',
+        url: 'https://explorer.hoodi.surge.wtf',
         standard: 'EIP3091',
-        icon: 'surge-testnet'
+        icon: 'blockscout'
       }
     ]
   },
@@ -45260,24 +45289,17 @@ const chainArray = [
     ]
   },
   {
-    name: 'Memento Testnet',
+    name: 'Memento Testnet (deprecated)',
     chain: 'Memento',
-    rpc: [
-      'https://test-rpc.mementoblockchain.com/IRkghvI3FfEArEJMr4zC/rpc'
-    ],
+    rpc: [],
     faucets: [],
+    status: 'deprecated',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: '',
     shortName: 'memento-test',
     chainId: 12052024,
     networkId: 12052024,
-    explorers: [
-      {
-        name: 'Tracehawk',
-        url: 'https://test-explorer.mementoblockchain.com',
-        standard: 'none'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'NeoX Testnet T3',
