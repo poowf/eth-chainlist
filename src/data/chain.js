@@ -3448,7 +3448,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Nomina EVM and cross-chain Explorer',
-        url: 'https://omniscan.network',
+        url: 'https://nomscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -30838,8 +30838,8 @@ const chainArray = [
     rpc: [
       'https://rpc_evm-mezo.imperator.co',
       'wss://ws_evm-mezo.imperator.co',
-      'https://jsonrpc-mezo.boar.network',
-      'wss://jsonrpcws-mezo.boar.network',
+      'https://rpc-http.mezo.boar.network',
+      'wss://rpc-ws.mezo.boar.network',
       'https://mainnet.mezo.public.validationcloud.io',
       'wss://mainnet.mezo.public.validationcloud.io',
       'https://rpc-internal.mezo.org',
