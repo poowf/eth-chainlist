@@ -17123,6 +17123,48 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
+    name: 'Splendor Mainnet',
+    chain: 'SPLENDOR',
+    rpc: [ 'https://mainnet-rpc.splendor.org', 'https://splendor-rpc.org/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Splendor Token', symbol: 'SPLD', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://splendor.org',
+    shortName: 'spld',
+    chainId: 2691,
+    networkId: 2691,
+    icon: 'splendor',
+    explorers: [
+      {
+        name: 'Splendor Explorer',
+        url: 'https://explorer.splendor.org',
+        icon: 'splendor',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Splendor Testnet',
+    chain: 'SPLD-TESTNET',
+    rpc: [ 'https://testnet-rpc.splendor.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Splendor Test Token', symbol: 'SPLDT', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://splendor.org',
+    shortName: 'spldt',
+    chainId: 2692,
+    networkId: 2692,
+    icon: 'spld-testnet',
+    explorers: [
+      {
+        name: 'Splendor Testnet Explorer',
+        url: 'https://testnet-explorer.splendor.org',
+        icon: 'splendor',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Morph Testnet',
     chain: 'ETH',
     rpc: [ 'https://rpc-testnet.morphl2.io' ],
@@ -29505,7 +29547,7 @@ const chainArray = [
     chain: '1Money Network',
     rpc: [ 'https://mainnet.1money.network' ],
     faucets: [],
-    nativeCurrency: { name: 'USD1', symbol: 'USD1', decimals: 18 },
+    nativeCurrency: { name: 'FREE', symbol: 'FREE', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://1money.com',
     shortName: '1money',
@@ -43498,7 +43540,7 @@ const chainArray = [
     chain: '1Money Testnet',
     rpc: [ 'https://testnet.1money.network' ],
     faucets: [],
-    nativeCurrency: { name: 'USD1', symbol: 'USD1', decimals: 18 },
+    nativeCurrency: { name: 'FREE', symbol: 'FREE', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://1money.com',
     shortName: '1money-testnet',
