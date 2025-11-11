@@ -8040,6 +8040,35 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
   },
   {
+    name: 'Jasmy Chain',
+    chain: 'Jasmy Chain',
+    rpc: [ 'https://rpc.jasmychain.io', 'wss://rpc.jasmychain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'JasmyCoin', symbol: 'JASMY', decimals: 18 },
+    infoURL: 'https://jasmychain.io',
+    shortName: 'jasmychain',
+    chainId: 680,
+    networkId: 680,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+  },
+  {
+    name: 'Jasmy Chain Testnet',
+    chain: 'Jasmy Chain Testnet',
+    rpc: [
+      'https://rpc_testnet.jasmychain.io',
+      'wss://rpc_testnet.jasmychain.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'JasmyCoin', symbol: 'JASMY', decimals: 18 },
+    infoURL: 'https://jasmychain.io',
+    shortName: 'jasmychain_testnet',
+    chainId: 681,
+    networkId: 681,
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+  },
+  {
     name: 'Karura Network',
     chain: 'KAR',
     rpc: [
@@ -21251,12 +21280,12 @@ const chainArray = [
     name: 'Tanssi Demo',
     chain: 'TANGO',
     rpc: [
-      'https://dancelight-2001.tanssi-api.network',
-      'wss://dancelight-2001.tanssi-api.network'
+      'https://services.tanssi-testnet.network/dancelight-2001',
+      'wss://services.tanssi-testnet.network/dancelight-2001'
     ],
     faucets: [ 'https://apps.tanssi.network/demo' ],
     nativeCurrency: { name: 'TANGO', symbol: 'TANGO', decimals: 18 },
-    infoURL: 'https://docs.tanssi.network/builders/tanssi-network/networks/dancebox/demo-evm-containerchain',
+    infoURL: 'https://docs.tanssi.network/builders/tanssi-network/testnet/demo-evm-network/',
     shortName: 'tango',
     chainId: 5678,
     networkId: 5678,
@@ -44352,6 +44381,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'Arc Network Testnet',
+    chain: 'Arc Network',
+    icon: 'arcnetwork',
+    rpc: [
+      'https://rpc.testnet.arc.network',
+      'wss://rpc.testnet.arc.network',
+      'https://rpc.quicknode.testnet.arc.network',
+      'wss://rpc.quicknode.testnet.arc.network',
+      'https://rpc.blockdaemon.testnet.arc.network'
+    ],
+    faucets: [ 'https://faucet.circle.com/' ],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://arc.network',
+    shortName: 'arc-testnet',
+    chainId: 5042002,
+    networkId: 5042002,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Arcscan',
+        url: 'https://testnet.arcscan.app',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'NumBlock Chain',
     chain: 'NumBlock',
     rpc: [ 'https://rpc-mainnet.numblock.org' ],
@@ -45653,8 +45708,9 @@ const chainArray = [
     name: 'quarkblockchain',
     chain: 'QKI',
     rpc: [
-      'https://hz.rpc.qkiscan.cn',
-      'https://jp.rpc.qkiscan.io',
+      'https://rpc1.qkirpc.org',
+      'https://rpc2.qkirpc.org',
+      'https://rpc3.qkirpc.org',
       'https://rpc1.qkiscan.io',
       'https://rpc2.qkiscan.io',
       'https://rpc3.qkiscan.io'
