@@ -32067,7 +32067,7 @@ const chainArray = [
     icon: 'etherlink',
     chainId: 42793,
     networkId: 42793,
-    features: [ { name: 'EIP1559' } ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://etherlink.com',
     shortName: 'etlk',
     nativeCurrency: { name: 'tez', symbol: 'XTZ', decimals: 18 },
@@ -38502,12 +38502,32 @@ const chainArray = [
     ]
   },
   {
-    name: 'Etherlink Testnet',
+    name: 'Etherlink Shadownet Testnet',
+    chain: 'Etherlink',
+    icon: 'etherlink',
+    chainId: 127823,
+    networkId: 127823,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://etherlink.com',
+    shortName: 'etlst',
+    nativeCurrency: { name: 'tez', symbol: 'XTZ', decimals: 18 },
+    rpc: [ 'https://node.shadownet.etherlink.com' ],
+    faucets: [ 'https://faucet.etherlink.com' ],
+    explorers: [
+      {
+        name: 'Etherlink Shadownet Testnet Explorer',
+        url: 'https://shadownet.explorer.etherlink.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Etherlink Ghostnet Testnet',
     chain: 'Etherlink',
     icon: 'etherlink',
     chainId: 128123,
     networkId: 128123,
-    features: [ { name: 'EIP1559' } ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://etherlink.com',
     shortName: 'etlt',
     nativeCurrency: { name: 'tez', symbol: 'XTZ', decimals: 18 },
@@ -38515,11 +38535,12 @@ const chainArray = [
     faucets: [ 'https://faucet.etherlink.com' ],
     explorers: [
       {
-        name: 'Etherlink Testnet Explorer',
+        name: 'Etherlink Ghostnet Testnet Explorer',
         url: 'https://testnet.explorer.etherlink.com',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'Tatara Testnet',
