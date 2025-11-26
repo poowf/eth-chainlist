@@ -3019,19 +3019,30 @@ const chainArray = [
     networkId: 142
   },
   {
-    name: 'Monad Mainnet',
+    name: 'Monad',
     chain: 'MON',
     icon: 'monad',
-    rpc: [],
+    rpc: [ 'https://rpc.monad.xyz' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'MON Token', symbol: 'MON', decimals: 18 },
+    nativeCurrency: { name: 'Monad', symbol: 'MON', decimals: 18 },
     infoURL: 'https://monad.xyz',
     shortName: 'mon',
     chainId: 143,
     networkId: 143,
-    slip44: 1,
-    explorers: []
+    slip44: 268435779,
+    explorers: [
+      {
+        name: 'Monad Vision',
+        url: 'https://monadvision.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Monadscan',
+        url: 'https://monadscan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'PHI Network v2',
