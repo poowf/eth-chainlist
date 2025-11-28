@@ -11673,40 +11673,30 @@ const chainArray = [
     name: 'ARC Mainnet',
     chain: 'ARC',
     icon: 'arc',
-    rpc: [ 'https://rpc-main-1.archiechain.io' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'ARC', symbol: 'ARC', decimals: 18 },
     infoURL: 'https://archiechain.io/',
     shortName: 'ARC',
     chainId: 1243,
     networkId: 1243,
-    explorers: [
-      {
-        name: 'archiescan',
-        url: 'https://app.archiescan.io',
-        standard: 'none'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'ARC Testnet',
     chain: 'ARC',
     icon: 'arc',
-    rpc: [ 'https://rpc-test-1.archiechain.io' ],
-    faucets: [ 'https://faucet.archiechain.io' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'ARC', symbol: 'ARC', decimals: 18 },
     infoURL: 'https://archiechain.io/',
     shortName: 'TARC',
     chainId: 1244,
     networkId: 1244,
     slip44: 1,
-    explorers: [
-      {
-        name: 'archiescan',
-        url: 'https://testnet.archiescan.io',
-        standard: 'none'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'OM Platform Mainnet',
@@ -44517,6 +44507,29 @@ const chainArray = [
         url: 'https://testnet-blockexplorer.electroneum.com',
         icon: 'electroneum',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Reactive Lasna',
+    title: 'Reactive Network Testnet Lasna',
+    chain: 'REACT',
+    rpc: [ 'https://lasna-rpc.rnk.dev' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [
+      'https://dev.reactive.network/reactive-mainnet#get-testnet-react'
+    ],
+    nativeCurrency: { name: 'Lasna React', symbol: 'lREACT', decimals: 18 },
+    infoURL: 'https://reactive.network',
+    shortName: 'lreact',
+    icon: 'reactive',
+    chainId: 5318007,
+    networkId: 5318007,
+    explorers: [
+      {
+        name: 'Reactscan',
+        url: 'https://lasna.reactscan.net',
+        standard: 'none'
       }
     ]
   },
