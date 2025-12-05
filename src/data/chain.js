@@ -19750,6 +19750,26 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Denergy Testnet',
+    chain: 'DEN',
+    rpc: [ 'https://rpc.denergytestnet.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'WATT', symbol: 'WATT', decimals: 18 },
+    infoURL: 'https://d.energy/',
+    shortName: 'den-testnet',
+    chainId: 4442,
+    networkId: 4442,
+    icon: 'denergy',
+    explorers: [
+      {
+        name: 'Denergy Explorer',
+        url: 'https://explorer.denergytestnet.com',
+        icon: 'denergy',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Htmlcoin Mainnet',
     chain: 'mainnet',
     rpc: [ 'https://janus.htmlcoin.com/api/' ],
@@ -34844,6 +34864,31 @@ const chainArray = [
     networkId: 3344
   },
   {
+    name: 'Henesys',
+    chain: 'Henesys',
+    rpc: [ 'https://henesys-rpc.msu.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'NEXPACE', symbol: 'NXPC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://nexpace.io',
+    shortName: 'nxpc',
+    chainId: 68414,
+    networkId: 68414,
+    icon: 'nexpace',
+    explorers: [
+      {
+        name: 'Xangle MSU Explorer',
+        url: 'https://msu-explorer.xangle.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Avalanche Explorer',
+        url: 'https://subnets.avax.network/henesys',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DM2 Verse Mainnet',
     chain: 'DM2 Verse',
     icon: 'dm2verse',
@@ -40945,6 +40990,26 @@ const chainArray = [
       {
         name: 'Digit Soul Explorer',
         url: 'https://dgs-exp.digitsoul.co.th',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Denergy Network',
+    chain: 'DEN',
+    rpc: [ 'https://rpc.d.energy/' ],
+    faucets: [],
+    nativeCurrency: { name: 'WATT', symbol: 'WATT', decimals: 18 },
+    infoURL: 'https://d.energy/',
+    shortName: 'den-mainnet',
+    chainId: 369369,
+    networkId: 369369,
+    icon: 'denergy',
+    explorers: [
+      {
+        name: 'Denergy Explorer',
+        url: 'https://explorer.denergychain.com',
+        icon: 'denergy',
         standard: 'EIP3091'
       }
     ]
