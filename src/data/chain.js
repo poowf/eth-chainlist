@@ -3924,6 +3924,26 @@ const chainArray = [
     networkId: 191
   },
   {
+    name: 'Redmansion Chain',
+    chain: 'RMC',
+    icon: 'redmansion',
+    rpc: [ 'https://redmansion.io/srpc/' ],
+    faucets: [],
+    nativeCurrency: { name: 'Redmansion Coin', symbol: 'RMC', decimals: 18 },
+    infoURL: 'https://www.redmansion.io',
+    shortName: 'rmc',
+    chainId: 192,
+    networkId: 192,
+    explorers: [
+      {
+        name: 'Redmansion explorer',
+        url: 'https://redmansion.io',
+        icon: 'redmansion',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Crypto Emergency',
     chain: 'CEM',
     rpc: [ 'https://cemchain.com' ],
@@ -6994,6 +7014,28 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://worldchain-mainnet.explorer.alchemy.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Camp Network Mainnet',
+    chain: 'CAMP',
+    icon: 'camp',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    rpc: [ 'https://rpc.camp.raas.gelato.cloud' ],
+    faucets: [],
+    nativeCurrency: { name: 'Camp', symbol: 'CAMP', decimals: 18 },
+    infoURL: 'https://docs.campnetwork.xyz',
+    shortName: 'CampMainnet',
+    chainId: 484,
+    networkId: 484,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://camp.cloud.blockscout.com',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -19921,15 +19963,16 @@ const chainArray = [
     ]
   },
   {
-    name: 'MST Chain',
-    title: 'MST Chain',
+    name: 'MST Mainnet',
     chain: 'MST',
     rpc: [
       'https://mariorpc.mstblockchain.com',
-      'https://craftrpc.mstblockchain.com'
+      'https://craftrpc.mstblockchain.com',
+      'wss://mariorpc.mstblockchain.com',
+      'wss://craftrpc.mstblockchain.com'
     ],
     faucets: [],
-    nativeCurrency: { name: 'MST', symbol: 'MST', decimals: 18 },
+    nativeCurrency: { name: 'MST Native Coin', symbol: 'MSTC', decimals: 18 },
     infoURL: 'https://mstblockchain.com',
     shortName: 'mst',
     chainId: 4646,
@@ -19938,7 +19981,7 @@ const chainArray = [
     icon: 'mst',
     explorers: [
       {
-        name: 'MST Mainnet Scan',
+        name: 'mstscan',
         url: 'https://mstscan.com',
         standard: 'EIP3091'
       }
@@ -20384,6 +20427,25 @@ const chainArray = [
         url: 'https://evmexplorer.testnet.treasurenet.io',
         icon: 'treasurenet',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Somnia Mainnet',
+    chain: 'Somnia',
+    rpc: [ 'https://api.infra.mainnet.somnia.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Somnia Mainnet', symbol: 'SOMI', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://somnia.network',
+    shortName: 'SomniaMainnet',
+    chainId: 5031,
+    networkId: 5031,
+    explorers: [
+      {
+        name: 'Somnia Mainnet',
+        url: 'https://mainnet.somnia.w3us.site',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -21046,21 +21108,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'Saga',
-    chain: 'SAGA',
-    rpc: [ 'http://sagaevm-5464-1.jsonrpc.sagarpc.io' ],
+    name: 'SagaEVM',
+    chain: 'SagaEVM',
+    rpc: [ 'https://sagaevm.jsonrpc.sagarpc.io' ],
     faucets: [],
     nativeCurrency: { name: 'gas', symbol: 'GAS', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://www.saga.xyz',
-    shortName: 'saga',
+    shortName: 'sagaevm',
     chainId: 5464,
     networkId: 5464,
-    icon: 'saga',
+    icon: 'sagaevm',
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://sagaevm-5464-1.sagaexplorer.io',
+        url: 'https://sagaevm.sagaexplorer.io',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -27247,6 +27309,48 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'ARK Mainnet',
+    chain: 'ARK',
+    icon: 'ark',
+    rpc: [ 'https://rpc.ark.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'ARK Token', symbol: 'ARK', decimals: 18 },
+    infoURL: 'https://ark.io',
+    shortName: 'ark',
+    chainId: 11811,
+    networkId: 11811,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'ARK Mainnet Explorer',
+        url: 'https://arkscan.io',
+        standard: 'none'
+      }
+    ],
+    status: 'incubating'
+  },
+  {
+    name: 'ARK Testnet',
+    chain: 'ARK',
+    icon: 'ark',
+    rpc: [ 'https://testnet.mainsailhq.com/rpc' ],
+    faucets: [ 'https://faucet.mainsailhq.com' ],
+    nativeCurrency: { name: 'DARK Token', symbol: 'DARK', decimals: 18 },
+    infoURL: 'https://ark.io',
+    shortName: 'ark-testnet',
+    chainId: 11812,
+    networkId: 11812,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'ARK Testnet Explorer',
+        url: 'https://explorer-demo.mainsailhq.com',
+        standard: 'none'
+      }
+    ],
+    status: 'incubating'
   },
   {
     name: 'Artela Mainnet',
@@ -45623,6 +45727,25 @@ const chainArray = [
     networkId: 13371337
   },
   {
+    name: 'Symbiosis',
+    chain: 'symbiosis',
+    rpc: [ 'https://symbiosis.calderachain.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Symbiosis', symbol: 'SIS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://symbiosis.hub.caldera.xyz',
+    shortName: 'symbiosis',
+    chainId: 13863860,
+    networkId: 13863860,
+    explorers: [
+      {
+        name: 'Symbiosis Caldera Explorer',
+        url: 'https://symbiosis.calderaexplorer.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Anduschain Mainnet',
     chain: 'anduschain',
     rpc: [ 'https://rpc.anduschain.io/rpc', 'wss://rpc.anduschain.io/ws' ],
@@ -46511,6 +46634,33 @@ const chainArray = [
     chainId: 61717561,
     networkId: 61717561,
     slip44: 61717561
+  },
+  {
+    name: 'Autonity Mainnet',
+    chain: 'AUT',
+    rpc: [
+      'https://rpc.autonity-apis.com',
+      'wss://rpc.autonity-apis.com',
+      'https://autonity.rpc.web3cdn.network',
+      'wss://autonity.rpc.web3cdn.network',
+      'https://autonity.rpc.subquery.network/public',
+      'wss://autonity.rpc.subquery.network/public'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Auton', symbol: 'ATN', decimals: 18 },
+    infoURL: 'https://autonity.org/',
+    shortName: 'aut',
+    chainId: 65000000,
+    networkId: 65000000,
+    slip44: 1,
+    icon: 'autonity',
+    explorers: [
+      {
+        name: 'autonityscan',
+        url: 'https://autonityscan.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Autonity Bakerloo (Thames) Testnet',
