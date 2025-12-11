@@ -13254,6 +13254,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'IIC Blockchain Testnet',
+    chainId: 1650,
+    shortName: 'iic-testnet',
+    chain: 'IIC',
+    networkId: 1650,
+    nativeCurrency: { name: 'Saya Coin', symbol: 'SAYA', decimals: 18 },
+    rpc: [ 'https://rpc.iic-blockchain.com' ],
+    faucets: [],
+    infoURL: 'https://metavtz.com/',
+    status: 'active',
+    explorers: [
+      {
+        name: 'IIC Explorer',
+        url: 'https://scan.iic-blockchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Btachain',
     chain: 'btachain',
     rpc: [ 'https://dataseed1.btachain.com/' ],
@@ -15718,6 +15737,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Memento Testnet',
+    chain: 'Memento',
+    rpc: [ 'https://rpc.memento.zeeve.online' ],
+    faucets: [ 'https://faucet.memento.zeeve.online' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: '',
+    shortName: 'memento-testnet',
+    chainId: 2129,
+    networkId: 2129,
+    explorers: []
+  },
+  {
     name: 'BigShortBets Testnet',
     chain: 'BIGSB Testnet',
     rpc: [
@@ -15969,6 +16001,31 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://explorer.moonsama.com',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Stable Testnet',
+    chain: 'Stable',
+    icon: 'stable',
+    rpc: [ 'https://rpc.testnet.stable.xyz' ],
+    faucets: [ 'https://faucet.stable.xyz' ],
+    nativeCurrency: { name: 'gUSDT', symbol: 'gUSDT', decimals: 18 },
+    infoURL: 'https://stable.xyz',
+    shortName: 'stable-testnet',
+    chainId: 2201,
+    networkId: 2201,
+    explorers: [
+      {
+        name: 'Blockscout Explorer',
+        url: 'https://blockscout.testnet.stable.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Stablescan',
+        url: 'https://testnet.stablescan.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -22345,6 +22402,38 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'billions-testnet',
+    title: 'billions-testnet',
+    chain: 'billions-testnet',
+    rpc: [ 'https://billions-testnet-rpc.eu-north-2.gateway.fm' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [ 'https://billions-testnet-faucet.eu-north-2.gateway.fm' ],
+    status: 'active',
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://billions.network',
+    shortName: 'billionstest',
+    chainId: 6913,
+    networkId: 6913,
+    icon: 'billions',
+    explorers: [
+      {
+        name: 'Billions Testnet Explorer',
+        url: 'https://billions-testnet-blockscout.eu-north-2.gateway.fm',
+        icon: 'billions',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://billions-testnet-bridge.eu-north-2.gateway.fm'
+        }
+      ]
+    }
+  },
+  {
     name: 'Xylume TestNet',
     chain: 'XYL',
     rpc: [ 'https://xylume-testnet.sparked.network/rpc/' ],
@@ -22852,6 +22941,49 @@ const chainArray = [
         name: 'Horizen EON Block Explorer',
         url: 'https://eon-explorer.horizenlabs.io',
         icon: 'eon',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Pruv Testnet',
+    chain: 'PRUV Testnet',
+    icon: 'pruv',
+    rpc: [
+      'https://rpc.testnet.pruv.network',
+      'wss://rpc.testnet.pruv.network'
+    ],
+    faucets: [ 'https://faucet.testnet.pruv.network' ],
+    nativeCurrency: { name: 'Pruv', symbol: 'PRUV', decimals: 18 },
+    infoURL: 'https://pruv.gitbook.io/pruv-network/',
+    shortName: 'pruvtestnet',
+    chainId: 7336,
+    networkId: 7336,
+    explorers: [
+      {
+        name: 'Pruv Testnet Explorer',
+        url: 'https://explorer.testnet.pruv.network',
+        icon: 'pruv',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Pruv Mainnet',
+    chain: 'PRUV Mainnet',
+    icon: 'pruv',
+    rpc: [ 'https://rpc.pruv.network', 'wss://rpc.pruv.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Pruv', symbol: 'PRUV', decimals: 18 },
+    infoURL: 'https://pruv.gitbook.io/pruv-network/',
+    shortName: 'pruvmainnet',
+    chainId: 7337,
+    networkId: 7337,
+    explorers: [
+      {
+        name: 'Pruv Explorer',
+        url: 'https://explorer.pruv.network',
+        icon: 'pruv',
         standard: 'EIP3091'
       }
     ]
@@ -31643,6 +31775,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'AB Core Mainnet',
+    chain: 'AB',
+    rpc: [ 'https://rpc.core.ab.org', 'https://rpc1.core.ab.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'AB', symbol: 'AB', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://ab.org',
+    shortName: 'abcore',
+    chainId: 36888,
+    networkId: 36888,
+    explorers: [
+      {
+        name: 'AB Core Explorer',
+        url: 'https://explorer.core.ab.org',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Lens Testnet',
     title: 'Lens Network Sepolia Testnet',
     chain: 'Lens',
@@ -36483,6 +36635,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Cycle Network Mainnet Frigate',
+    chain: 'ETH',
+    rpc: [ 'https://frigate-rpc-mainnet.cyclenetwork.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.cyclenetwork.io/',
+    shortName: 'cyclef',
+    chainId: 88688,
+    networkId: 88688,
+    icon: 'cycle'
   },
   {
     name: 'ZKasino Mainnet',
@@ -43696,6 +43860,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Wirex Pay Testnet',
+    chain: 'WirexPay',
+    icon: 'wpay',
+    rpc: [ 'https://rpc-dev.wirexpaychain.com' ],
+    faucets: [ 'https://faucet-dev.wirexpaychain.com' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://docs.wirexpaychain.com/tech/wirex-pay-chain',
+    shortName: 'wirex-testnet',
+    chainId: 1001996,
+    networkId: 1001996,
+    explorers: [
+      {
+        name: 'Wirex Pay Testnet Explorer',
+        url: 'https://explorer-dev.wirexpaychain.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Naga Testnet',
     chain: 'Naga',
     rpc: [ 'https://rpc.nagafintech.com', 'wss://rpc.nagafintech.com' ],
@@ -43969,10 +44153,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'XRPL EVM Sidechain',
+    chain: 'XRPL EVM',
+    icon: 'xrplevm',
+    rpc: [ 'https://rpc.xrplevm.org', 'wss://ws.xrplevm.org' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.xrplevm.org' ],
+    nativeCurrency: { name: 'XRP', symbol: 'XRP', decimals: 18 },
+    infoURL: 'https://xrplevm.org',
+    shortName: 'xrplevm',
+    chainId: 1440000,
+    networkId: 1440000,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.xrplevm.org',
+        icon: 'xrplevm',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'XRPL EVM Sidechain Devnet',
     chain: 'XRPLEVM Devnet',
     icon: 'xrplevm',
-    rpc: [ 'https://rpc.xrplevm.org', 'https://ws.xrplevm.org' ],
+    rpc: [ 'https://rpc.devnet.xrplevm.org', 'wss://ws.devnet.xrplevm.org' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.xrplevm.org' ],
     nativeCurrency: { name: 'XRP', symbol: 'XRP', decimals: 18 },
@@ -43995,7 +44200,7 @@ const chainArray = [
     icon: 'xrplevm',
     rpc: [
       'https://rpc.testnet.xrplevm.org',
-      'https://ws.testnet.xrplevm.org'
+      'wss://ws.testnet.xrplevm.org'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.xrplevm.org' ],
