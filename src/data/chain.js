@@ -6337,6 +6337,46 @@ const chainArray = [
     ]
   },
   {
+    name: 'Status Network',
+    title: 'Status Network Mainnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://status.network',
+    shortName: 'snt',
+    chainId: 373,
+    networkId: 373,
+    icon: 'snt',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.status.network' } ]
+    },
+    explorers: [],
+    status: 'incubating'
+  },
+  {
+    name: 'Status Network Hoodi',
+    title: 'Status Network Hoodi',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://status.network',
+    shortName: 'snt-hoodi',
+    chainId: 374,
+    networkId: 374,
+    icon: 'snt',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-560048',
+      bridges: [ { url: 'https://bridge.status.network' } ]
+    },
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'ZKAmoeba Testnet',
     chain: 'FIL',
     rpc: [
@@ -17986,6 +18026,28 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'C9XChain',
+    chain: 'C9XChain',
+    icon: 'c9xchain',
+    rpc: [
+      'https://services.tanssi-mainnet.network/tanssi-2002',
+      'wss://services.tanssi-mainnet.network/tanssi-2002'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'CXC', symbol: 'CXC', decimals: 18 },
+    infoURL: 'https://c9tech.com.br/',
+    shortName: 'c9xchain',
+    chainId: 3230,
+    networkId: 3230,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscan-tanssi.c9tech.com.br',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Dubxcoin network',
     chain: 'DUBX',
     rpc: [ 'https://rpcmain.arabianchain.org' ],
@@ -18213,6 +18275,24 @@ const chainArray = [
     networkId: 3339,
     slip44: 1,
     status: 'incubating'
+  },
+  {
+    name: 'Edge',
+    chain: 'ETH',
+    rpc: [ 'https://edge-mainnet.g.alchemy.com/public' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.edgex.exchange',
+    shortName: 'edge',
+    chainId: 3343,
+    networkId: 3343,
+    explorers: [
+      {
+        name: 'Alchemy Explorer',
+        url: 'https://edge-mainnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Pentagon Chain',
@@ -18703,8 +18783,15 @@ const chainArray = [
   {
     name: 'Xone Mainnet',
     chain: 'XOC',
-    icon: 'Xonechain',
-    rpc: [ 'https://rpc.xone.org', 'wss://rpc-wss.xone.org' ],
+    icon: 'xone_main',
+    rpc: [
+      'https://rpc.xone.org',
+      'https://rpc-node-1.xone.org',
+      'https://rpc-node-2.xone.org',
+      'https://rpc-node-3.xone.org',
+      'https://rpc-node-4.xone.org',
+      'wss://rpc.xone.org'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.xone.org/' ],
     nativeCurrency: { name: 'Xone Coin', symbol: 'XOC', decimals: 18 },
@@ -18714,9 +18801,9 @@ const chainArray = [
     networkId: 3721,
     explorers: [
       {
-        name: 'Xonescan',
-        url: 'https://xscscan.com',
-        icon: 'Xonescan',
+        name: 'xone_main',
+        url: 'https://xonescan.com',
+        icon: 'xone_main',
         standard: 'EIP3091'
       }
     ]
@@ -28188,6 +28275,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Trexx',
+    chain: 'Trexx',
+    icon: 'trexx',
+    rpc: [
+      'https://services.tanssi-mainnet.network/tanssi-2003',
+      'wss://services.tanssi-mainnet.network/tanssi-2003'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'TRX', symbol: 'TRX', decimals: 18 },
+    infoURL: 'https://trexx.com.br',
+    shortName: 'trexx',
+    chainId: 13766,
+    networkId: 13766,
+    explorers: [
+      {
+        name: 'Tanssi EVM Basic Explorer',
+        url: 'https://evmexplorer.tanssi-chains.network/?rpcUrl=https://services.tanssi-mainnet.network/tanssi-2003',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Susono',
     chain: 'SUS',
     rpc: [
@@ -30122,6 +30231,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Gotas Social',
+    chain: 'Gotas',
+    icon: 'gotas',
+    rpc: [
+      'https://services.tanssi-mainnet.network/tanssi-2006',
+      'wss://services.tanssi-mainnet.network/tanssi-2006'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'GOTAS', symbol: 'GOTAS', decimals: 18 },
+    infoURL: 'https://gotas.com/',
+    shortName: 'gotas',
+    chainId: 23232,
+    networkId: 23232,
+    explorers: [
+      {
+        name: 'Tanssi EVM Basic Explorer',
+        url: 'https://evmexplorer.tanssi-chains.network/?rpcUrl=https://services.tanssi-mainnet.network/tanssi-2006',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Oasis Sapphire',
     chain: 'Sapphire',
     icon: 'oasis',
@@ -30753,6 +30884,28 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://blockscout.com/optimism/bedrock-alpha',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Rivool',
+    chain: 'Rivool',
+    icon: 'rivool',
+    rpc: [
+      'https://services.tanssi-mainnet.network/tanssi-2005',
+      'wss://services.tanssi-mainnet.network/tanssi-2005'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'RVO', symbol: 'RVO', decimals: 18 },
+    infoURL: 'https://rivool.finance/',
+    shortName: 'rivool',
+    chainId: 28540,
+    networkId: 28540,
+    explorers: [
+      {
+        name: 'Tanssi EVM Basic Explorer',
+        url: 'https://evmexplorer.tanssi-chains.network/?rpcUrl=https://services.tanssi-mainnet.network/tanssi-2005',
+        standard: 'none'
       }
     ]
   },
@@ -31580,6 +31733,24 @@ const chainArray = [
         name: 'SlingShot Explorer',
         url: 'https://explore.slingshotdao.com',
         icon: 'slingshot',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Edge Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://edge-testnet.g.alchemy.com/public' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.edgex.exchange',
+    shortName: 'edge-testnet',
+    chainId: 33431,
+    networkId: 33431,
+    explorers: [
+      {
+        name: 'Alchemy Explorer',
+        url: 'https://edge-testnet.explorer.alchemy.com',
         standard: 'EIP3091'
       }
     ]
@@ -33523,6 +33694,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Memento Mainnet',
+    chain: 'Memento',
+    rpc: [ 'https://rpc.mementoblockchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: '',
+    shortName: 'memento-mainnet',
+    chainId: 51888,
+    networkId: 51888,
+    explorers: []
   },
   {
     name: 'Electroneum Mainnet',
@@ -39291,6 +39475,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Taiko Hoodi',
+    chain: 'ETH',
+    status: 'active',
+    icon: 'taiko',
+    rpc: [ 'https://rpc.hoodi.taiko.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://taiko.xyz',
+    shortName: 'tko-hoodi',
+    chainId: 167013,
+    networkId: 167013,
+    explorers: [
+      {
+        name: 'taikoscan',
+        url: 'https://hoodi.taikoscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Zchains',
     chain: 'Zchains',
     rpc: [ 'https://rpc.zchains.com' ],
@@ -39423,6 +39627,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Lit Chain Mainnet',
+    chain: 'LITKEY',
+    icon: 'lit',
+    rpc: [ 'https://lit-chain-rpc.litprotocol.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lit Protocol', symbol: 'LITKEY', decimals: 18 },
+    infoURL: 'https://litprotocol.com',
+    shortName: 'lit',
+    chainId: 175200,
+    networkId: 175200,
+    explorers: [
+      {
+        name: 'Lit Chain Explorer',
+        url: 'https://lit-chain-explorer.litprotocol.com',
+        icon: 'lit',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bitica Chain Mainnet',
     chain: 'BDCC',
     rpc: [ 'https://mainnet-rpc.biticablockchain.com/' ],
@@ -39498,6 +39722,7 @@ const chainArray = [
   {
     name: 'R0AR Chain',
     chain: 'R0AR Chain',
+    icon: 'r0ar',
     rpc: [ 'https://rpc-r0ar.io' ],
     faucets: [],
     nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
@@ -39509,6 +39734,7 @@ const chainArray = [
       {
         name: 'tracehawk',
         url: 'https://r0arscan.io',
+        icon: 'r0ar',
         standard: 'none'
       }
     ]
@@ -41134,6 +41360,28 @@ const chainArray = [
     shortName: 'olympus',
     chainId: 333999,
     networkId: 333999
+  },
+  {
+    name: 'Scenium',
+    chain: 'Scenium',
+    icon: 'scenium',
+    rpc: [
+      'https://services.tanssi-mainnet.network/tanssi-2004',
+      'wss://services.tanssi-mainnet.network/tanssi-2004'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'SCEN', symbol: 'SCEN', decimals: 18 },
+    infoURL: 'hhttps://www.scenium.io/',
+    shortName: 'scenium',
+    chainId: 335700,
+    networkId: 335700,
+    explorers: [
+      {
+        name: 'Tanssi EVM Basic Explorer',
+        url: 'https://evmexplorer.tanssi-chains.network/?rpcUrl=https://services.tanssi-mainnet.network/tanssi-2004',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'UPchain Testnet',
@@ -45812,6 +46060,7 @@ const chainArray = [
   {
     name: 'R0AR Testnet',
     chain: 'R0AR Testnet',
+    icon: 'r0ar',
     rpc: [ 'https://testnet.rpc-r0ar.io' ],
     faucets: [ 'https://testnet.r0arfaucet.io' ],
     nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
@@ -45823,6 +46072,7 @@ const chainArray = [
       {
         name: 'tracehawk',
         url: 'https://testnet.r0arscan.io',
+        icon: 'r0ar',
         standard: 'none'
       }
     ]
@@ -46611,25 +46861,25 @@ const chainArray = [
   {
     name: 'Xone Testnet',
     chain: 'XOC',
-    icon: 'xone-test',
+    icon: 'xone_test',
     rpc: [
       'https://rpc-testnet.xone.plus',
       'https://rpc-testnet.xone.org',
       'https://rpc-testnet.knight.center',
-      'wss://wss-rpc-testnet.xone.org'
+      'wss://rpc-testnet.xone.org'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.xone.org/' ],
     nativeCurrency: { name: 'Xone Coin', symbol: 'XOC', decimals: 18 },
     infoURL: 'https://xone.org',
-    shortName: 'txoc',
+    shortName: 'tXOC',
     chainId: 33772211,
     networkId: 33772211,
     explorers: [
       {
-        name: 'testnet-xscscan',
-        url: 'https://testnet.xscscan.com',
-        icon: 'testnet-xscscan',
+        name: 'xone_test',
+        url: 'https://testnet.xonescan.com',
+        icon: 'xone_test',
         standard: 'EIP3091'
       }
     ]
@@ -47637,6 +47887,28 @@ const chainArray = [
       {
         name: 'OneLedger Block Explorer',
         url: 'https://mainnet-explorer.oneledger.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SKALE Base Sepolia',
+    chain: 'skale-base-sepolia',
+    icon: 'skale',
+    rpc: [
+      'https://base-sepolia-testnet.skalenodes.com/v1/jubilant-horrible-ancha',
+      'wss://base-sepolia-testnet.skalenodes.com/v1/ws/jubilant-horrible-ancha'
+    ],
+    faucets: [ 'http://base-sepolia-faucet.skale.space' ],
+    nativeCurrency: { name: 'Credits', symbol: 'CREDIT', decimals: 18 },
+    infoURL: 'https://docs.skale.space/welcome/skale-on-base',
+    shortName: 'skale-base-sepolia',
+    chainId: 324705682,
+    networkId: 324705682,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://base-sepolia-testnet-explorer.skalenodes.com',
         standard: 'EIP3091'
       }
     ]
