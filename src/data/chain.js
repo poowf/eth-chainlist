@@ -17191,6 +17191,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'H2 Chain Mainnet',
+    chain: 'H2',
+    rpc: [ 'https://rpc.h2chain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'H2 Chain Native Token', symbol: 'H2', decimals: 18 },
+    infoURL: 'https://h2chain.io',
+    shortName: 'h2',
+    chainId: 2582,
+    networkId: 2582,
+    icon: 'h2',
+    explorers: [
+      { name: 'h2scan', url: 'https://h2scan.io', standard: 'EIP3091' }
+    ]
+  },
+  {
     name: 'Pho Blockchain Mainnet',
     chain: 'PHO',
     icon: 'pho',
@@ -21499,6 +21514,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Jamton',
+    chain: 'Jamton',
+    rpc: [ 'https://rpc.jamton.network/' ],
+    faucets: [],
+    nativeCurrency: { name: 'DOTON', symbol: 'DOTON', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://app.jamton.network/',
+    shortName: 'jamton',
+    chainId: 5589,
+    networkId: 5589,
+    icon: 'jamton',
+    explorers: []
   },
   {
     name: 'opBNB Testnet',
@@ -30668,6 +30697,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'H2 Chain Testnet Lambda',
+    chain: 'H2',
+    rpc: [ 'https://rpc.h-1.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lambda H2', symbol: 'H2', decimals: 18 },
+    infoURL: 'https://h2chain.io',
+    shortName: 'h2-lambda',
+    chainId: 25821,
+    networkId: 25821,
+    icon: 'h2',
+    explorers: [
+      {
+        name: 'h2scan-lambda',
+        url: 'https://lambda.h2scan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'AlveyChain Testnet',
     chain: 'tALV',
     rpc: [ 'https://testnet-rpc.alvey.io' ],
@@ -32680,6 +32728,26 @@ const chainArray = [
       {
         name: 'Asset Chain Testnet Explorer',
         url: 'https://scan-testnet.assetchain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tempo Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.testnet.tempo.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'No native currency', symbol: 'USD', decimals: 6 },
+    infoURL: 'https://tempo.xyz',
+    shortName: 'tempotest',
+    chainId: 42429,
+    networkId: 42429,
+    icon: 'tempo',
+    explorers: [
+      {
+        name: 'tempo-explorer',
+        url: 'https://explore.tempo.xyz',
+        icon: 'tempo',
         standard: 'EIP3091'
       }
     ]
@@ -37084,6 +37152,43 @@ const chainArray = [
     shortName: 'Cyber',
     chainId: 85449,
     networkId: 48501
+  },
+  {
+    name: 'CpChain Testnet',
+    chain: 'CpChain',
+    rpc: [ 'https://rpc-testnet.cpchain.com' ],
+    faucets: [ 'https://cpchain-test.pages.dev/faucet' ],
+    nativeCurrency: { name: 'Testnet CpChain', symbol: 'CP', decimals: 18 },
+    infoURL: 'https://cpchain.com',
+    shortName: 'cpchain-testnet',
+    chainId: 86606,
+    networkId: 86606,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'CpChain Testnet Explorer',
+        url: 'https://explorer-testnet.cpchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CpChain',
+    chain: 'Cp',
+    rpc: [ 'https://rpc.cpchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'CpChain', symbol: 'CP', decimals: 18 },
+    infoURL: 'https://cpchain.com',
+    shortName: 'cpchain',
+    chainId: 86608,
+    networkId: 86608,
+    explorers: [
+      {
+        name: 'CpChain Explorer',
+        url: 'https://explorer.cpchain.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Nautilus Proteus Testnet',
