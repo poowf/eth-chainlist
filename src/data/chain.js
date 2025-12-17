@@ -9602,6 +9602,20 @@ const chainArray = [
     parent: { chain: 'eip155-900', type: 'shard' }
   },
   {
+    name: 'Ault Blockchain Mainnet',
+    chain: 'AULT',
+    icon: 'ault',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'AULT Token', symbol: 'AULT', decimals: 18 },
+    infoURL: 'https://aultblockchain.com',
+    shortName: 'ault',
+    chainId: 904,
+    networkId: 904,
+    explorers: []
+  },
+  {
     name: 'Portal Fantasy Chain',
     chain: 'PF',
     icon: 'pf',
@@ -27228,6 +27242,20 @@ const chainArray = [
     }
   },
   {
+    name: 'Ault Blockchain Testnet',
+    chain: 'AULT',
+    icon: 'ault',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet AULT Token', symbol: 'AULT', decimals: 18 },
+    infoURL: 'https://aultblockchain.com',
+    shortName: 'ault-testnet',
+    chainId: 10904,
+    networkId: 10904,
+    explorers: []
+  },
+  {
     name: 'Fuse Flash Testnet',
     chain: 'Fuse Flash',
     rpc: [],
@@ -43346,6 +43374,18 @@ const chainArray = [
     shortName: 'gensyn-test',
     chainId: 685685,
     networkId: 685685,
+    status: 'incubating'
+  },
+  {
+    name: 'Gensyn Mainnet',
+    chain: 'Gensyn',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.gensyn.ai/',
+    shortName: 'gensyn-mainnet',
+    chainId: 685689,
+    networkId: 685689,
     status: 'incubating'
   },
   {
