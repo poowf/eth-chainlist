@@ -8196,33 +8196,67 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
   },
   {
-    name: 'Jasmy Chain',
-    chain: 'Jasmy Chain',
-    rpc: [ 'https://rpc.jasmychain.io', 'wss://rpc.jasmychain.io' ],
+    name: 'JasmyChain',
+    chain: 'jasmychain',
+    rpc: [ 'https://rpc.jasmyscan.net', 'wss://rpc.jasmyscan.net/ws' ],
     faucets: [],
     nativeCurrency: { name: 'JasmyCoin', symbol: 'JASMY', decimals: 18 },
-    infoURL: 'https://jasmychain.io',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://jasmy.global',
     shortName: 'jasmychain',
     chainId: 680,
     networkId: 680,
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+    icon: 'jasmychain',
+    explorers: [
+      {
+        name: 'jasmyscan',
+        url: 'https://explorer.jasmyscan.net',
+        icon: 'jasmychain',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [
+        {
+          url: 'https://portal.arbitrum.io/bridge?sourceChain=ethereum&destinationChain=jasmychain'
+        }
+      ]
+    }
   },
   {
-    name: 'Jasmy Chain Testnet',
-    chain: 'Jasmy Chain Testnet',
+    name: 'JasmyChain Testnet',
+    chain: 'jasmychain-testnet',
     rpc: [
-      'https://rpc_testnet.jasmychain.io',
-      'wss://rpc_testnet.jasmychain.io'
+      'https://jasmy-chain-testnet.alt.technology',
+      'wss://jasmy-chain-testnet.alt.technology/ws'
     ],
-    faucets: [],
+    faucets: [ 'https://faucet.janction.ai' ],
     nativeCurrency: { name: 'JasmyCoin', symbol: 'JASMY', decimals: 18 },
-    infoURL: 'https://jasmychain.io',
-    shortName: 'jasmychain_testnet',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://jasmy.global',
+    shortName: 'jasmychain-test',
     chainId: 681,
     networkId: 681,
-    explorers: [],
-    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+    icon: 'jasmychain',
+    explorers: [
+      {
+        name: 'jasmyscan',
+        url: 'https://jasmy-chain-testnet-explorer.alt.technology',
+        icon: 'jasmychain',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://portal.arbitrum.io/bridge?sourceChain=sepolia&destinationChain=jasmy-chain-testnet'
+        }
+      ]
+    }
   },
   {
     name: 'Karura Network',
@@ -16674,6 +16708,26 @@ const chainArray = [
     }
   },
   {
+    name: 'KiteAI',
+    chain: 'KiteAI',
+    icon: 'kite',
+    rpc: [ 'https://rpc.gokite.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'Kite', symbol: 'KITE', decimals: 18 },
+    infoURL: 'https://gokite.ai/',
+    shortName: 'KiteAI',
+    chainId: 2366,
+    networkId: 2366,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Kitescan',
+        url: 'https://kitescan.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'KiteAI Testnet',
     chain: 'KiteAI',
     icon: 'kite',
@@ -16681,7 +16735,7 @@ const chainArray = [
     faucets: [ 'https://faucet.gokite.ai/' ],
     nativeCurrency: { name: 'Kite', symbol: 'KITE', decimals: 18 },
     infoURL: 'https://gokite.ai/',
-    shortName: 'KiteAI',
+    shortName: 'KiteAITestnet',
     chainId: 2368,
     networkId: 1,
     slip44: 1,
@@ -29733,7 +29787,7 @@ const chainArray = [
     explorers: [
       {
         name: 'BlockX EVM Explorer (Blockscout)',
-        url: 'https://explorer.blockxnet.com',
+        url: 'https://explorer-evm.blockxnet.com',
         standard: 'EIP3091'
       },
       {
@@ -32243,6 +32297,25 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'ADI Chain',
+    chain: 'ADI',
+    icon: 'adi',
+    rpc: [ 'https://rpc.adifoundation.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'ADI', symbol: 'ADI', decimals: 18 },
+    infoURL: 'https://adifoundation.ai',
+    shortName: 'adi',
+    chainId: 36900,
+    networkId: 36900,
+    explorers: [
+      {
+        name: 'ADI Explorer',
+        url: 'https://explorer.adifoundation.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Lens Testnet',
     title: 'Lens Network Sepolia Testnet',
     chain: 'Lens',
@@ -33409,6 +33482,33 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Billions',
+    shortName: 'Billions',
+    title: 'Billions',
+    chain: 'Billions',
+    icon: 'billions',
+    rpc: [ 'https://billions-rpc.eu-north-2.gateway.fm' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETHER', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://billions.network',
+    chainId: 45056,
+    networkId: 45056,
+    explorers: [
+      {
+        name: 'Billions Explorer',
+        url: 'https://billions-blockscout.eu-north-2.gateway.fm',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://billions-bridge.eu-north-2.gateway.fm' } ]
+    },
+    features: [ { name: 'EIP155' } ],
+    status: 'active'
   },
   {
     name: 'Swamps L2',
@@ -37186,12 +37286,13 @@ const chainArray = [
     chain: 'CpChain',
     rpc: [ 'https://rpc-testnet.cpchain.com' ],
     faucets: [ 'https://cpchain-test.pages.dev/faucet' ],
-    nativeCurrency: { name: 'Testnet CpChain', symbol: 'CP', decimals: 18 },
+    nativeCurrency: { name: 'CP', symbol: 'CP', decimals: 18 },
     infoURL: 'https://cpchain.com',
     shortName: 'cpchain-testnet',
     chainId: 86606,
     networkId: 86606,
     slip44: 1,
+    icon: 'cpchain',
     explorers: [
       {
         name: 'CpChain Testnet Explorer',
@@ -37201,15 +37302,17 @@ const chainArray = [
     ]
   },
   {
-    name: 'CpChain',
-    chain: 'Cp',
+    name: 'CpChain Mainnet',
+    chain: 'CpChain',
     rpc: [ 'https://rpc.cpchain.com' ],
     faucets: [],
-    nativeCurrency: { name: 'CpChain', symbol: 'CP', decimals: 18 },
+    nativeCurrency: { name: 'CP', symbol: 'CP', decimals: 18 },
     infoURL: 'https://cpchain.com',
     shortName: 'cpchain',
     chainId: 86608,
     networkId: 86608,
+    slip44: 1,
+    icon: 'cpchain',
     explorers: [
       {
         name: 'CpChain Explorer',
