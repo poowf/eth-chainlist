@@ -6062,22 +6062,19 @@ const chainArray = [
     ]
   },
   {
-    name: 'Web3Q Mainnet',
-    chain: 'Web3Q',
-    rpc: [ 'https://mainnet.web3q.io:8545' ],
+    name: 'EthStorage Mainnet',
+    chain: 'EthStorage',
+    rpc: [ 'https://rpc.mainnet.ethstorage.io:9540' ],
     faucets: [],
-    nativeCurrency: { name: 'Web3Q', symbol: 'W3Q', decimals: 18 },
-    infoURL: 'https://web3q.io/home.w3q/',
-    shortName: 'w3q',
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://ethstorage.io/',
+    shortName: 'es-m',
     chainId: 333,
     networkId: 333,
-    explorers: [
-      {
-        name: 'w3q-mainnet',
-        url: 'https://explorer.mainnet.web3q.io',
-        standard: 'EIP3091'
-      }
-    ]
+    slip44: 1,
+    status: 'incubating',
+    redFlags: [ 'reusedChainId' ],
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'DFK Chain Test',
@@ -11194,6 +11191,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'LuxePorts',
+    chain: 'LXP',
+    rpc: [
+      'https://rpc.luxeports.com',
+      'https://erpc.luxeports.com',
+      'wss://rpc.luxeports.com/ws',
+      'wss://erpc.luxeports.com/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'LuxePorts', symbol: 'LXP', decimals: 18 },
+    infoURL: 'luxeports.com',
+    shortName: 'lxp',
+    chainId: 1122,
+    networkId: 1122,
+    icon: 'lxp',
+    explorers: [
+      {
+        name: 'lxpscan',
+        url: 'https://lxpscan.com',
+        icon: 'lxpscan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'B2 Testnet',
     title: 'B2 Testnet',
     chain: 'Habitat',
@@ -13650,6 +13672,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'ACiD',
+    chain: 'ACID',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://github.com/NoBanks/ACiD',
+    shortName: 'acid',
+    chainId: 1714,
+    networkId: 1714,
+    status: 'incubating',
+    explorers: []
+  },
+  {
     name: 'Doric Network',
     chain: 'DRC',
     icon: 'doric',
@@ -14839,6 +14875,29 @@ const chainArray = [
         name: 'Onus explorer mainnet',
         url: 'https://explorer.onuschain.io',
         icon: 'onus',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Krown Mainnet',
+    chain: 'KROWN',
+    icon: 'krown',
+    rpc: [
+      'https://mainnet.krown.network',
+      'https://mainnet1.krown.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'KROWN', symbol: 'KROWN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://krown.network',
+    shortName: 'krown',
+    chainId: 1983,
+    networkId: 1983,
+    explorers: [
+      {
+        name: 'Krown Explorer',
+        url: 'https://explorer.krown.network',
         standard: 'EIP3091'
       }
     ]
@@ -17992,7 +18051,10 @@ const chainArray = [
   {
     name: 'BC Hyper Chain Mainnet',
     chain: 'BC Hyper Chain',
-    rpc: [ 'https://mainapi.bchscan.io' ],
+    rpc: [
+      'https://mainapi.bchscan.io',
+      'https://datahub-asia02.bchscan.io/'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'VERSATIZE COIN', symbol: 'VTCN', decimals: 18 },
@@ -18337,8 +18399,8 @@ const chainArray = [
   },
   {
     name: 'EthStorage L2 Mainnet',
-    chain: 'EthStorage',
-    rpc: [ 'http://mainnet.l2.ethstorage.io:9540' ],
+    chain: 'EthStorage L2',
+    rpc: [ 'https://rpc.mainnet.l2.ethstorage.io:9540' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://ethstorage.io/',
@@ -18347,19 +18409,20 @@ const chainArray = [
     networkId: 3332,
     slip44: 1,
     status: 'incubating',
-    parent: { type: 'L2', chain: 'eip155-1' }
+    parent: { type: 'L2', chain: 'eip155-100011' }
   },
   {
     name: 'EthStorage Testnet',
     chain: 'EthStorage',
-    rpc: [ 'http://testnet.ethstorage.io:9540' ],
+    rpc: [ 'https://rpc.testnet.ethstorage.io:9546' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://ethstorage.io/',
     shortName: 'es-t',
     chainId: 3333,
     networkId: 3333,
-    slip44: 1
+    slip44: 1,
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Web3Q Galileo',
@@ -18401,8 +18464,8 @@ const chainArray = [
   },
   {
     name: 'EthStorage L2 Testnet',
-    chain: 'EthStorage',
-    rpc: [ 'http://testnet.l2.ethstorage.io:9540' ],
+    chain: 'EthStorage L2',
+    rpc: [ 'https://rpc.testnet.l2.ethstorage.io:9540' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://ethstorage.io/',
@@ -18411,12 +18474,12 @@ const chainArray = [
     networkId: 3336,
     slip44: 1,
     status: 'incubating',
-    parent: { type: 'L2', chain: 'eip155-11155111' }
+    parent: { type: 'L2', chain: 'eip155-110011' }
   },
   {
     name: 'EthStorage Devnet',
     chain: 'EthStorage',
-    rpc: [ 'http://devnet.ethstorage.io:9540' ],
+    rpc: [ 'https://rpc.devnet.ethstorage.io:9540' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://ethstorage.io/',
@@ -18450,17 +18513,18 @@ const chainArray = [
     ]
   },
   {
-    name: 'EthStorage Mainnet',
-    chain: 'EthStorage',
-    rpc: [ 'http://mainnet.ethstorage.io:9540' ],
+    name: 'EthStorage L2 Devnet',
+    chain: 'EthStorage L2',
+    rpc: [ 'https://rpc.devnet.l2.ethstorage.io:9540' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://ethstorage.io/',
-    shortName: 'es-m',
+    shortName: 'esl2-d',
     chainId: 3339,
     networkId: 3339,
     slip44: 1,
-    status: 'incubating'
+    status: 'incubating',
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Edge',
@@ -29792,7 +29856,7 @@ const chainArray = [
       },
       {
         name: 'BlockX Cosmos Explorer (Ping)',
-        url: 'https://ping.blockxnet.com/blockx',
+        url: 'https://ping.pub/BlockX',
         standard: 'none'
       }
     ]
@@ -31452,6 +31516,36 @@ const chainArray = [
         name: 'canxium explorer',
         url: 'https://cerium-explorer.canxium.net',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Ethiq',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.ethiq.network', 'wss://rpc.ethiq.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.ethiq.network',
+    shortName: 'ethiq',
+    chainId: 30303,
+    networkId: 30303,
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP2718' },
+      { name: 'EIP2930' }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://shell.haqq.network/bridge' } ]
+    },
+    explorers: [
+      {
+        name: 'Ethiq Blockscout',
+        url: 'https://explorer.ethiq.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -37119,6 +37213,30 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Katron AI Mainnet',
+    chain: 'KTN',
+    rpc: [
+      'https://blockchain-rpc1.katronai.com',
+      'https://blockchain-rpc2.katronai.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Katron AI', symbol: 'KTN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://network.katronai.com',
+    shortName: 'ktn',
+    chainId: 83592,
+    networkId: 83592,
+    icon: 'ktn',
+    explorers: [
+      {
+        name: 'ktnscan',
+        url: 'https://ktnscan.katronai.com',
+        icon: 'ktnscan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Xprotocol Sepolia',
     chainId: 83868,
     shortName: 'xprotocolsepolia',
@@ -39521,6 +39639,25 @@ const chainArray = [
         name: 'FumaScan',
         url: 'https://fumascan.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Ethernova Mainnet',
+    chain: 'NOVA',
+    rpc: [ 'https://rpc.ethnova.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ethernova', symbol: 'NOVA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://ethnova.net',
+    shortName: 'ethnova',
+    chainId: 121525,
+    networkId: 121525,
+    explorers: [
+      {
+        name: 'Ethernova Explorer',
+        url: 'https://explorer.ethnova.net',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -44301,6 +44438,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'HyperCluster',
+    chain: 'HYPEC',
+    rpc: [ 'https://rpc.hypercluster.org' ],
+    faucets: [ 'https://faucet.hypercluster.org' ],
+    nativeCurrency: { name: 'HyperCluster Token', symbol: 'HYPEC', decimals: 18 },
+    infoURL: 'https://www.hypercluster.org/',
+    shortName: 'HYPEC',
+    chainId: 838838,
+    networkId: 838838,
+    icon: 'hypercluster',
+    explorers: [
+      {
+        name: 'HyperCluster Explorer',
+        url: 'https://explorer.hypercluster.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'PRM Testnet',
     chain: 'prm',
     icon: 'prmIcon',
@@ -44367,6 +44523,39 @@ const chainArray = [
     shortName: 'bloqs4good',
     chainId: 846000,
     networkId: 846000
+  },
+  {
+    name: 'Testethiq',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc.testnet.ethiq.network',
+      'wss://rpc.testnet.ethiq.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://www.ethiq.network',
+    shortName: 'testethiq',
+    chainId: 853211,
+    networkId: 853211,
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP2718' },
+      { name: 'EIP2930' }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://shell.haqq.network/bridge' } ]
+    },
+    explorers: [
+      {
+        name: 'Ethiq Blockscout',
+        url: 'https://explorer.testnet.ethiq.network',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Dodao',
@@ -44666,6 +44855,24 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://explorer.eluv.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'AVI Coin',
+    chain: 'AVI',
+    rpc: [ 'https://rpc.avicoin.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'AVI Coin', symbol: 'AVI', decimals: 18 },
+    infoURL: 'https://www.avicoin.org',
+    shortName: 'avi',
+    chainId: 963369,
+    networkId: 963369,
+    explorers: [
+      {
+        name: 'AVI Coin Explorer',
+        url: 'https://explorer.avicoin.org',
         standard: 'EIP3091'
       }
     ]
@@ -48160,6 +48367,29 @@ const chainArray = [
       {
         name: 'teamscan',
         url: 'https://teamblockchain.team',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Krown Testnet',
+    chain: 'KROWN',
+    icon: 'krown',
+    rpc: [
+      'https://testnet.krown.network',
+      'https://testnet1.krown.network'
+    ],
+    faucets: [ 'https://faucet.krown.network' ],
+    nativeCurrency: { name: 'KROWN', symbol: 'KROWN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://krown.network',
+    shortName: 'krown-testnet',
+    chainId: 89127398,
+    networkId: 89127398,
+    explorers: [
+      {
+        name: 'Krown Testnet Explorer',
+        url: 'https://explorer-testnet.krown.network',
         standard: 'EIP3091'
       }
     ]
