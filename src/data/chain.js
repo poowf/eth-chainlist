@@ -7545,6 +7545,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Validium Network',
+    chain: 'Validium Network Testnet',
+    rpc: [ 'https://testnet.l2.rpc.validium.network' ],
+    nativeCurrency: { name: 'Validium', symbol: 'VLDM', decimals: 18 },
+    faucets: [ 'https://testnet.faucet.validium.network' ],
+    infoURL: 'https://www.validium.network',
+    shortName: 'validium-testnet',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://testnet.bridge.validium.network/bridge' } ]
+    },
+    status: 'active',
+    chainId: 567,
+    networkId: 567,
+    explorers: [
+      {
+        name: 'Validium Network Testnet Block Explorer',
+        url: 'https://testnet.explorer.validium.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Dogechain Testnet',
     chain: 'DC',
     icon: 'dogechain',
@@ -28963,6 +28987,42 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitroot Testnet',
+    shortName: 'bitroot-testnet',
+    chain: 'Bitroot',
+    chainId: 15885,
+    networkId: 15885,
+    rpc: [ 'https://testnet-rpc.bitroot.co' ],
+    faucets: [ 'https://faucet.bitroot.co' ],
+    infoURL: 'https://bitroot.co',
+    nativeCurrency: { name: 'BRT', symbol: 'BRT', decimals: 18 },
+    explorers: [
+      {
+        name: 'Bitroot Testnet Explorer',
+        url: 'https://testnet-explorer.bitroot.co',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Bitroot',
+    shortName: 'bitroot',
+    chain: 'Bitroot',
+    chainId: 15888,
+    networkId: 15888,
+    rpc: [ 'https://rpc.bitroot.co', 'https://mainnet-rpc.bitroot.co' ],
+    faucets: [],
+    infoURL: 'https://bitroot.co',
+    nativeCurrency: { name: 'BRT', symbol: 'BRT', decimals: 18 },
+    explorers: [
+      {
+        name: 'Bitroot Explorer',
+        url: 'https://explorer.bitroot.co',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'MetaDot Mainnet',
     chain: 'MTT',
     rpc: [ 'https://mainnet.metadot.network' ],
@@ -39086,20 +39146,20 @@ const chainArray = [
     ]
   },
   {
-    name: 'Stratis Mainnet',
-    chain: 'Stratis',
-    rpc: [ 'https://rpc.stratisevm.com' ],
+    name: 'Xertra Mainnet',
+    chain: 'Xertra',
+    rpc: [ 'https://rpc.xertra.com' ],
     faucets: [],
-    nativeCurrency: { name: 'Stratis', symbol: 'STRAX', decimals: 18 },
-    infoURL: 'https://www.stratisplatform.com',
-    shortName: 'stratis',
+    nativeCurrency: { name: 'STRAX', symbol: 'STRAX', decimals: 18 },
+    infoURL: 'https://www.xertra.com/',
+    shortName: 'xertra',
     chainId: 105105,
     networkId: 105105,
-    icon: 'stratis',
+    icon: 'xertra',
     explorers: [
       {
-        name: 'Stratis Explorer',
-        url: 'https://explorer.stratisevm.com',
+        name: 'Xertra Explorer',
+        url: 'https://explorer.xertra.com',
         standard: 'EIP3091'
       }
     ]
@@ -40965,12 +41025,12 @@ const chainArray = [
   },
   {
     name: 'Auroria Testnet',
-    title: 'Stratis Testnet Auroria',
+    title: 'Xertra Testnet Auroria',
     chain: 'Auroria',
-    rpc: [ 'https://auroria.rpc.stratisevm.com' ],
-    faucets: [ 'https://auroria.faucet.stratisevm.com' ],
-    nativeCurrency: { name: 'Auroria Stratis', symbol: 'tSTRAX', decimals: 18 },
-    infoURL: 'https://www.stratisplatform.com',
+    rpc: [ 'https://auroria.rpc.xertra.com' ],
+    faucets: [ 'https://auroria.faucet.xertra.com' ],
+    nativeCurrency: { name: 'tSTRAX', symbol: 'tSTRAX', decimals: 18 },
+    infoURL: 'https://xertra.com',
     shortName: 'auroria',
     chainId: 205205,
     networkId: 205205,
@@ -40978,7 +41038,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Auroria Testnet Explorer',
-        url: 'https://auroria.explorer.stratisevm.com',
+        url: 'https://auroria.explorer.xertra.com',
         standard: 'EIP3091'
       }
     ]
