@@ -6862,6 +6862,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'NutriEmp Chain',
+    chain: 'nutriemp-chain',
+    rpc: [ 'https://rpc.nutriemp-chain.link', 'https://rpc.nutriemp.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'GRAMZ', symbol: 'GRAMZ', decimals: 18 },
+    infoURL: 'https://nutriemp.com',
+    shortName: 'nutriemp',
+    chainId: 432,
+    networkId: 432,
+    icon: 'GRAMZ',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    explorers: [
+      {
+        name: 'NutriEmp Explorer',
+        url: 'https://explorer.nutriemp-chain.link',
+        standard: 'EIP3091',
+        icon: 'GRAMZ'
+      }
+    ]
+  },
+  {
     name: 'Boyaa Mainnet',
     chain: 'BYC',
     rpc: [ 'https://evm-rpc.mainnet.boyaa.network' ],
@@ -17253,11 +17274,7 @@ const chainArray = [
   {
     name: 'Fraxtal Testnet',
     chain: 'FRAX',
-    rpc: [
-      'https://rpc.testnet.frax.com',
-      'https://fraxtal-holesky-rpc.publicnode.com',
-      'wss://fraxtal-holesky-rpc.publicnode.com'
-    ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Frax', symbol: 'FRAX', decimals: 18 },
     infoURL: 'https://testnet.frax.com',
@@ -17266,13 +17283,22 @@ const chainArray = [
     networkId: 2522,
     slip44: 1,
     icon: 'fraxtal',
-    explorers: [
-      {
-        name: 'fraxscan',
-        url: 'https://holesky.fraxscan.com',
-        standard: 'EIP3091'
-      }
-    ],
+    explorers: [],
+    status: 'deprecated'
+  },
+  {
+    name: 'Fraxtal Hoodi Testnet',
+    chain: 'FRAX',
+    rpc: [ 'https://rpc.testnet.frax.com' ],
+    faucets: [ 'https://faucet.testnet.frax.com/' ],
+    nativeCurrency: { name: 'Frax', symbol: 'FRAX', decimals: 18 },
+    infoURL: 'https://testnet.frax.com',
+    shortName: 'fraxtal-hoodi-testnet',
+    chainId: 2523,
+    networkId: 2523,
+    slip44: 1,
+    icon: 'fraxtal',
+    explorers: [],
     status: 'active'
   },
   {
@@ -31668,6 +31694,32 @@ const chainArray = [
       }
     ],
     status: 'incubating'
+  },
+  {
+    name: 'Dilithium3 Testnet',
+    chain: 'DLT',
+    icon: 'dilithium3',
+    rpc: [
+      'https://rpc-testnet.dilithium3.com',
+      'wss://rpc-testnet.dilithium3.com/ws'
+    ],
+    faucets: [ 'https://faucet-testnet.dilithium3.com' ],
+    nativeCurrency: { name: 'Dilithium3', symbol: 'DLT', decimals: 18 },
+    infoURL: 'https://dilithium3.com',
+    shortName: 'dlt-testnet',
+    chainId: 30939,
+    networkId: 30939,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'D3 Navigator',
+        url: 'https://explorer-testnet.dilithium3.com',
+        standard: 'EIP3091'
+      }
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    status: 'active',
+    redFlags: []
   },
   {
     name: 'Ethersocial Network',
