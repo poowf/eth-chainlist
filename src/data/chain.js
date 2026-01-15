@@ -3588,7 +3588,15 @@ const chainArray = [
   {
     name: 'ENI Mainnet',
     chain: 'ENI',
-    rpc: [ 'https://rpc.eniac.network', 'wss://rpc.eniac.network/ws/' ],
+    rpc: [
+      'https://rpc.eniac.network',
+      'https://rpc1.eniac.network',
+      'https://rpc2.eniac.network',
+      'https://enirpc.com',
+      'https://jp.enirpc.com',
+      'https://jp.eniacrpc.net',
+      'wss://rpc.eniac.network/ws/'
+    ],
     faucets: [],
     nativeCurrency: { name: 'EGAS', symbol: 'EGAS', decimals: 18 },
     infoURL: 'https://eniac.network/',
@@ -3600,6 +3608,25 @@ const chainArray = [
       {
         name: 'ENI Explorer',
         url: 'https://scan.eniac.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ENI Testnet',
+    chain: 'ENI',
+    rpc: [ 'https://rpc-testnet.eniac.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'EGAS', symbol: 'EGAS', decimals: 18 },
+    infoURL: 'https://eniac.network/',
+    shortName: 'eni-test',
+    chainId: 174,
+    networkId: 174,
+    icon: 'eni-test',
+    explorers: [
+      {
+        name: 'ENI Testnet Explorer',
+        url: 'https://scan-testnet.eniac.network',
         standard: 'EIP3091'
       }
     ]
@@ -46430,23 +46457,18 @@ const chainArray = [
     ]
   },
   {
-    name: 'ENI Testnet',
+    name: 'ENI Testnet (Deprecated)',
     chain: 'ENI',
-    rpc: [ 'https://rpc-testnet.eniac.network' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'EGAS', symbol: 'EGAS', decimals: 18 },
-    infoURL: 'https://eniac.network/',
-    shortName: 'eni-test',
+    infoURL: '',
+    shortName: 'eni-test-deprecated',
     chainId: 6912115,
     networkId: 6912115,
     icon: 'eni-test',
-    explorers: [
-      {
-        name: 'ENI Testnet Explorer',
-        url: 'https://scan-testnet.eniac.network',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Humanity Protocol',
