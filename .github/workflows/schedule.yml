@@ -8,13 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile
-      - run: yarn update-chain
+          node-version: '24.x'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm update-chain
       - id: checkUpdate
         name: check_for_data_updates
         run: |
@@ -26,9 +26,9 @@ jobs:
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email zane@poowf.com
           git add ${GITHUB_WORKSPACE}/.
-          yarn build
+          pnpm build
           git commit -m "chore: update chain data"
-          yarn release
+          pnpm release
           git push --follow-tags
       - run: gh workflow run publish.yml --ref $(git describe --tags)
         env:
