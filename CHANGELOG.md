@@ -1,5 +1,7 @@
 # Changelog
 
+### [0.0.722](https://github.com/poowf/eth-chainlist/compare/v0.0.721...v0.0.722) (2026-01-20)
+
 ### [0.0.721](https://github.com/poowf/eth-chainlist/compare/v0.0.720...v0.0.721) (2026-01-20)
 
 ### [0.0.720](https://github.com/poowf/eth-chainlist/compare/v0.0.719...v0.0.720) (2026-01-20)
