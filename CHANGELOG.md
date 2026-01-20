@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.720](https://github.com/poowf/eth-chainlist/compare/v0.0.719...v0.0.720) (2026-01-20)
+
+
+### Maintenance
+
+* switch to pnpm instead of yarn ([8291dc9](https://github.com/poowf/eth-chainlist/commit/8291dc9b7af7175e902a19f67271c45704c6e2f0))
+
 ### 0.0.719 (2026-01-16)
 
 
