@@ -21,7 +21,7 @@ jobs:
           node-version: '24.x'
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile
-      - run: pnpm update-chain
+      - run: pnpm run update-chain
       - id: checkUpdate
         name: check_for_data_updates
         run: |
@@ -33,9 +33,9 @@ jobs:
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email zane@poowf.com
           git add ${GITHUB_WORKSPACE}/.
-          pnpm build
+          pnpm run build
           git commit -m "chore: update chain data"
-          pnpm release
+          pnpm run release
           git push --follow-tags
       - run: gh workflow run publish.yml --ref $(git describe --tags)
         env:
