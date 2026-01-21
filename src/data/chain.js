@@ -10307,6 +10307,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Stable Mainnet',
+    chain: 'Stable',
+    rpc: [ 'https://rpc.stable.xyz' ],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'gUSDT', symbol: 'gUSDT', decimals: 18 },
+    infoURL: 'https://stable.xyz',
+    shortName: 'stable',
+    chainId: 988,
+    networkId: 988,
+    icon: 'stable',
+    explorers: [
+      {
+        name: 'Stablescan',
+        url: 'https://stablescan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'TOP Mainnet',
     chain: 'TOP',
     icon: 'top',
@@ -19844,6 +19864,32 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'RISE',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.risechain.com/', 'wss://rpc.risechain.com/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP7702' } ],
+    infoURL: 'https://risechain.com',
+    shortName: 'rise',
+    chainId: 4153,
+    networkId: 4153,
+    icon: 'rise',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.risechain.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.risechain.com' } ]
+    }
   },
   {
     name: 'CrossFi Testnet',
@@ -31749,7 +31795,7 @@ const chainArray = [
     icon: 'dilithium3',
     rpc: [
       'https://rpc-testnet.dilithium3.com',
-      'wss://rpc-testnet.dilithium3.com/ws'
+      'wss://ws-testnet.dilithium3.com'
     ],
     faucets: [ 'https://faucet-testnet.dilithium3.com' ],
     nativeCurrency: { name: 'Dilithium3', symbol: 'DLT', decimals: 18 },
@@ -31760,7 +31806,7 @@ const chainArray = [
     slip44: 60,
     explorers: [
       {
-        name: 'D3 Navigator',
+        name: 'Dilithium3 Explorer',
         url: 'https://explorer-testnet.dilithium3.com',
         standard: 'EIP3091'
       }
@@ -45852,6 +45898,26 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
   },
   {
+    name: 'Horizen Testnet',
+    chain: 'horizen',
+    rpc: [ 'https://horizen-testnet.rpc.caldera.xyz/http' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://horizen-testnet.hub.caldera.xyz',
+    shortName: 'horizen-testnet',
+    chainId: 2651420,
+    networkId: 2651420,
+    icon: 'horizen',
+    explorers: [
+      {
+        name: 'Horizen Testnet Caldera Explorer',
+        url: 'https://horizen-testnet.explorer.caldera.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Xterio Chain (ETH)',
     chain: 'Xterio',
     rpc: [ 'https://xterio-eth.alt.technology' ],
@@ -47114,8 +47180,8 @@ const chainArray = [
     rpc: [ 'https://testnet.riselabs.xyz', 'wss://testnet.riselabs.xyz/ws' ],
     faucets: [ 'https://faucet.testnet.riselabs.xyz' ],
     nativeCurrency: { name: 'RISE Testnet Ether', symbol: 'ETH', decimals: 18 },
-    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://www.riselabs.xyz/',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP7702' } ],
+    infoURL: 'https://risechain.com/',
     shortName: 'rise-testnet',
     chainId: 11155931,
     networkId: 11155931,
