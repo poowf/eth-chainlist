@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.726 (2026-01-21)
+
+
+### Maintenance
+
+* fix running commands with pnpm ([72a1841](https://github.com/poowf/eth-chainlist/commit/72a18418d7b7da0dbed1ee87fdd4bcc449a3cf90))
+* update chain data ([b0f5d83](https://github.com/poowf/eth-chainlist/commit/b0f5d83fec55382735cad67f841b025c54558ece))
+
 ### [0.0.725](https://github.com/poowf/eth-chainlist/compare/v0.0.724...v0.0.725) (2026-01-20)
 
 ### [0.0.724](https://github.com/poowf/eth-chainlist/compare/v0.0.723...v0.0.724) (2026-01-20)
