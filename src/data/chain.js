@@ -13601,25 +13601,16 @@ const chainArray = [
     shortName: 'Gobi',
     chain: 'Gobi',
     icon: 'eon',
-    rpc: [
-      'https://gobi-rpc.horizenlabs.io/ethv1',
-      'https://rpc.ankr.com/horizen_gobi_testnet'
-    ],
+    rpc: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    faucets: [ 'https://faucet.horizen.io' ],
+    faucets: [],
     nativeCurrency: { name: 'Testnet Zen', symbol: 'tZEN', decimals: 18 },
     infoURL: 'https://horizen.io/',
     chainId: 1663,
     networkId: 1663,
     slip44: 1,
-    explorers: [
-      {
-        name: 'Gobi Testnet Block Explorer',
-        url: 'https://gobi-explorer.horizen.io',
-        icon: 'eon',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Mint Testnet',
@@ -16333,18 +16324,12 @@ const chainArray = [
     icon: 'stable',
     rpc: [ 'https://rpc.testnet.stable.xyz' ],
     faucets: [ 'https://faucet.stable.xyz' ],
-    nativeCurrency: { name: 'gUSDT', symbol: 'gUSDT', decimals: 18 },
+    nativeCurrency: { name: 'USDT0', symbol: 'USDT0', decimals: 18 },
     infoURL: 'https://stable.xyz',
     shortName: 'stable-testnet',
     chainId: 2201,
     networkId: 2201,
     explorers: [
-      {
-        name: 'Blockscout Explorer',
-        url: 'https://blockscout.testnet.stable.xyz',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      },
       {
         name: 'Stablescan',
         url: 'https://testnet.stablescan.xyz',
@@ -23391,10 +23376,7 @@ const chainArray = [
     shortName: 'EON',
     chain: 'EON',
     icon: 'eon',
-    rpc: [
-      'https://eon-rpc.horizenlabs.io/ethv1',
-      'https://rpc.ankr.com/horizen_eon'
-    ],
+    rpc: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Zencash', symbol: 'ZEN', decimals: 18 },
@@ -23402,14 +23384,8 @@ const chainArray = [
     chainId: 7332,
     networkId: 7332,
     slip44: 121,
-    explorers: [
-      {
-        name: 'Horizen EON Block Explorer',
-        url: 'https://eon-explorer.horizenlabs.io',
-        icon: 'eon',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Pruv Testnet',
