@@ -44104,7 +44104,17 @@ const chainArray = [
   {
     name: 'katana',
     chain: 'katana',
-    rpc: [ 'https://rpc.katana.network' ],
+    rpc: [
+      'https://rpc.katana.network',
+      'https://katana.gateway.tenderly.co/',
+      'https://rpc.katanarpc.com/'
+    ],
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP4844' },
+      { name: 'EIP7702' }
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://katana.network',
@@ -44114,12 +44124,23 @@ const chainArray = [
     icon: 'katana',
     explorers: [
       {
+        name: 'katanascan',
+        url: 'https://katanascan.com',
+        icon: 'katana',
+        standard: 'EIP3091'
+      },
+      {
         name: 'katana explorer',
         url: 'https://explorer.katanarpc.com',
         icon: 'katana',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.katana.network' } ]
+    }
   },
   {
     name: 'Bear Network Chain Testnet',
