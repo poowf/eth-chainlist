@@ -12604,7 +12604,7 @@ const chainArray = [
     name: 'Kii Testnet Oro',
     chain: 'KII',
     rpc: [ 'https://json-rpc.uno.sentry.testnet.v3.kiivalidator.com' ],
-    faucets: [ 'https://explorer.kiichain.io/testnet/faucet' ],
+    faucets: [ 'https://testnet.explorer.kiichain.io/faucet' ],
     nativeCurrency: { name: 'Kii', symbol: 'KII', decimals: 18 },
     features: [],
     infoURL: 'https://kiichain.io',
@@ -12615,7 +12615,7 @@ const chainArray = [
     explorers: [
       {
         name: 'KiiExplorer',
-        url: 'https://explorer.kiichain.io/testnet',
+        url: 'https://testnet.explorer.kiichain.io',
         icon: 'kii',
         standard: 'none'
       }
@@ -13996,6 +13996,27 @@ const chainArray = [
         name: 'Gauss Explorer',
         url: 'https://explorer.gaussgang.com',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'KiiChain',
+    chain: 'KII',
+    rpc: [ 'https://json-rpc.kiivalidator.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Kii', symbol: 'KII', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://kiichain.io',
+    shortName: 'kiichain',
+    chainId: 1783,
+    networkId: 1783,
+    icon: 'kii',
+    explorers: [
+      {
+        name: 'KiiExplorer',
+        url: 'https://explorer.kiichain.io',
+        icon: 'kii',
+        standard: 'none'
       }
     ]
   },
@@ -19817,6 +19838,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Citrea Mainnet',
+    chain: 'Citrea',
+    rpc: [ 'https://rpc.mainnet.citrea.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Citrea BTC', symbol: 'cBTC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://citrea.xyz',
+    shortName: 'citrea',
+    chainId: 4114,
+    networkId: 4114,
+    icon: 'citrea',
+    explorers: [
+      {
+        name: 'Citrea Mainnet Explorer',
+        url: 'https://explorer.mainnet.citrea.xyz',
+        icon: 'citrea',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Humans.ai Testnet',
     chain: 'Humans Testnet',
     rpc: [ 'https://evm-rpc.testnet.humans.zone' ],
@@ -24651,7 +24693,7 @@ const chainArray = [
     name: 'Alpen Testnet',
     chain: 'alpen-testnet',
     rpc: [ 'https://rpc.testnet.alpenlabs.io' ],
-    faucets: [],
+    faucets: [ 'https://faucet.testnet.alpenlabs.io' ],
     nativeCurrency: { name: 'Signet BTC', symbol: 'sBTC', decimals: 18 },
     features: [],
     infoURL: 'https://alpenlabs.io/',
@@ -33113,15 +33155,39 @@ const chainArray = [
     ]
   },
   {
-    name: 'Tempo Testnet',
+    name: 'Tempo Testnet Andantino (Deprecated)',
     chain: 'ETH',
     rpc: [ 'https://rpc.testnet.tempo.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'No native currency', symbol: 'USD', decimals: 6 },
     infoURL: 'https://tempo.xyz',
-    shortName: 'tempotest',
+    shortName: 'tempo-andantino',
     chainId: 42429,
     networkId: 42429,
+    icon: 'tempo',
+    status: 'deprecated',
+    explorers: [
+      {
+        name: 'tempo-explorer',
+        url: 'https://explore.andantino.tempo.xyz',
+        icon: 'tempo',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Tempo Testnet Moderato',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc.moderato.tempo.xyz',
+      'wss://rpc.moderato.tempo.xyz'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'No native currency', symbol: 'USD', decimals: 6 },
+    infoURL: 'https://tempo.xyz',
+    shortName: 'tempo-moderato',
+    chainId: 42431,
+    networkId: 42431,
     icon: 'tempo',
     explorers: [
       {
@@ -36855,11 +36921,12 @@ const chainArray = [
   {
     name: 'Nillion Network Sepolia Testnet',
     chain: 'ETH',
+    icon: 'nillion',
     rpc: [
       'https://rpc.testnet.nillion.network',
       'wss://rpc.testnet.nillion.network'
     ],
-    faucets: [],
+    faucets: [ 'https://faucet.testnet.nillion.network' ],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://nillion.com/',
     shortName: 'nilsep',
@@ -38636,9 +38703,10 @@ const chainArray = [
   {
     name: 'Nillion Network',
     chain: 'ETH',
+    icon: 'nillion',
     rpc: [ 'https://rpc.nillion.network', 'wss://rpc.nillion.network' ],
     faucets: [],
-    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://nillion.com/',
     shortName: 'nil',
     chainId: 98875,
@@ -44080,6 +44148,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'bokuto',
+    chain: 'bokuto',
+    rpc: [ 'https://rpc-bokuto.katanarpc.com' ],
+    faucets: [ 'https://faucet.katana.tools' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://katana.network',
+    shortName: 'bokuto',
+    chainId: 737373,
+    networkId: 737373,
+    icon: 'katana',
+    explorers: [
+      {
+        name: 'bokutoscan',
+        url: 'https://bokuto.katanascan.com',
+        icon: 'katana',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'bokuto explorer',
+        url: 'https://explorer-bokuto.katanarpc.com',
+        icon: 'katana',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hemi Sepolia',
     chain: 'ETH',
     rpc: [ 'https://testnet.rpc.hemi.network/rpc' ],
@@ -45277,6 +45371,25 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'WebChain ETK',
+    chain: 'WVM',
+    rpc: [ 'https://rpc.webchain.e-talk.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'ETK', symbol: 'ETK', decimals: 18 },
+    shortName: 'wvm',
+    infoURL: 'https://e-talk.xyz/webchain',
+    chainId: 1000001,
+    networkId: 1000001,
+    explorers: [
+      {
+        name: 'WebChain Explorer',
+        url: 'https://e-talk.xyz/webchain',
+        standard: 'EIP3091'
+      }
+    ],
+    icon: 'webchain'
   },
   {
     name: 'Wirex Pay Testnet',
