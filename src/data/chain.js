@@ -11513,6 +11513,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'POC Testnet',
+    chain: 'POC',
+    rpc: [ 'https://testnet-rpc.pochain.io' ],
+    faucets: [ 'https://www.pochain.io/poc-faucet' ],
+    nativeCurrency: { name: 'POC Native Token', symbol: 'POC', decimals: 18 },
+    infoURL: 'https://www.pochain.io',
+    shortName: 'poc',
+    chainId: 1148,
+    networkId: 1148,
+    icon: 'pochain',
+    explorers: [
+      {
+        name: 'pocscan',
+        url: 'https://testnet.pocscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Symplexia Smart Chain',
     chain: 'Plexchain',
     rpc: [ 'https://plex-rpc.plexfinance.us' ],
@@ -28281,6 +28300,26 @@ const chainArray = [
       {
         name: 'BRC Chain Explorer',
         url: 'https://scan.brcchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'L2 Protocol Mainnet',
+    chain: 'L2P',
+    rpc: [ 'https://rpc.l2protocol.com', 'wss://rpc.l2protocol.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'L2P', symbol: 'L2P', decimals: 18 },
+    infoURL: 'https://l2protocol.com',
+    shortName: 'l2p',
+    chainId: 12216,
+    networkId: 12216,
+    slip44: 714,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://l2pscan.com',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
