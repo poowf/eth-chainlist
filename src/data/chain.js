@@ -8091,7 +8091,7 @@ const chainArray = [
   {
     name: 'Kalichain Testnet',
     chain: 'Kalichain',
-    rpc: [ 'https://rpc.kalichain.com' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'kalis', symbol: 'KALIS', decimals: 18 },
     infoURL: 'https://kalichain.com',
@@ -8099,18 +8099,13 @@ const chainArray = [
     chainId: 653,
     networkId: 653,
     icon: 'kalichain',
-    explorers: [
-      {
-        name: 'kalichain explorer',
-        url: 'https://explorer.kalichain.com',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Kalichain',
     chain: 'Kalichain',
-    rpc: [ 'https://mainnet.kalichain.com' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'kalis', symbol: 'KALIS', decimals: 18 },
     infoURL: 'https://kalichain.com',
@@ -8118,13 +8113,8 @@ const chainArray = [
     chainId: 654,
     networkId: 654,
     icon: 'kalichain',
-    explorers: [
-      {
-        name: 'kalichain explorer',
-        url: 'https://explorer.kalichain.com',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'AmaxSmartchain',
@@ -15053,6 +15043,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'CratD2C Testnet',
+    chain: 'CRATD2C',
+    rpc: [
+      'https://rpc-testnet-1.cratd2csmartchain.io/',
+      'https://rpc-testnet-2.cratd2csmartchain.io/',
+      'https://rpc-testnet-3.cratd2csmartchain.io/'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'CRATD2C', symbol: 'CRAT', decimals: 18 },
+    infoURL: 'https://cratd2csmartchain.io',
+    shortName: 'cratd2c-testnet',
+    chainId: 1979,
+    networkId: 1979,
+    icon: 'cratd2c-testnet',
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer-testnet.cratd2csmartchain.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Krown Mainnet',
     chain: 'KROWN',
     icon: 'krown',
@@ -18489,6 +18503,27 @@ const chainArray = [
     chainId: 3270,
     networkId: 3270,
     slip44: 1
+  },
+  {
+    name: 'Irys Mainnet Beta',
+    chain: 'IRYS',
+    rpc: [ 'https://mainnet-beta-rpc.irys.xyz/v1/execution-rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Irys', symbol: 'IRYS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://irys.xyz',
+    shortName: 'irys-mainnet-beta',
+    chainId: 3282,
+    networkId: 3282,
+    icon: 'irys',
+    explorers: [
+      {
+        name: 'Irys Mainnet Beta Explorer',
+        url: 'https://evm-explorer.irys.xyz',
+        icon: 'irys',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Realio Testnet',
@@ -33248,7 +33283,7 @@ const chainArray = [
     chain: 'ETH',
     rpc: [ 'https://rpc.testnet.tempo.xyz' ],
     faucets: [],
-    nativeCurrency: { name: 'No native currency', symbol: 'USD', decimals: 6 },
+    nativeCurrency: { name: 'No native currency', symbol: 'USD', decimals: 18 },
     infoURL: 'https://tempo.xyz',
     shortName: 'tempo-andantino',
     chainId: 42429,
@@ -33272,7 +33307,7 @@ const chainArray = [
       'wss://rpc.moderato.tempo.xyz'
     ],
     faucets: [],
-    nativeCurrency: { name: 'No native currency', symbol: 'USD', decimals: 6 },
+    nativeCurrency: { name: 'No native currency', symbol: 'USD', decimals: 18 },
     infoURL: 'https://tempo.xyz',
     shortName: 'tempo-moderato',
     chainId: 42431,
@@ -36017,8 +36052,9 @@ const chainArray = [
     ]
   },
   {
-    name: 'CratD2C Testnet',
+    name: 'CratD2C Testnet Deprecated',
     chain: 'CRATD2C',
+    status: 'deprecated',
     rpc: [
       'https://cratd2c-testnet-node1.cratd2csmartchain.io/',
       'https://cratd2c-testnet-node2.cratd2csmartchain.io/'
@@ -36026,7 +36062,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'CRATD2C', symbol: 'CRAT', decimals: 18 },
     infoURL: 'https://cratd2csmartchain.io',
-    shortName: 'cratd2c-testnet',
+    shortName: 'cratd2c-testnet-deprecated',
     chainId: 65349,
     networkId: 65349,
     icon: 'cratd2c-testnet',
