@@ -10302,7 +10302,7 @@ const chainArray = [
     rpc: [ 'https://rpc.stable.xyz' ],
     faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    nativeCurrency: { name: 'gUSDT', symbol: 'gUSDT', decimals: 18 },
+    nativeCurrency: { name: 'USDT0', symbol: 'USDT0', decimals: 18 },
     infoURL: 'https://stable.xyz',
     shortName: 'stable',
     chainId: 988,
@@ -35678,6 +35678,25 @@ const chainArray = [
       {
         name: 'KaiChain Explorer',
         url: 'https://explorer.kaichain.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Gelatine Network',
+    chain: 'JELLO',
+    icon: 'jello',
+    rpc: [ 'https://rpc.pine.ink' ],
+    faucets: [ 'https://gelatine.pine.ink' ],
+    nativeCurrency: { name: 'JELLO', symbol: 'JELLO', decimals: 18 },
+    infoURL: 'https://gelatine.pine.ink',
+    shortName: 'jello',
+    chainId: 61564,
+    networkId: 61564,
+    explorers: [
+      {
+        name: 'Gelatine Explorer',
+        url: 'https://explorer.pine.ink',
         standard: 'EIP3091'
       }
     ]
