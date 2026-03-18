@@ -2804,17 +2804,17 @@ const chainArray = [
     name: 'HashKey Chain Testnet',
     title: 'HashKey Chain Testnet',
     chain: 'HashKey Chain Testnet',
-    rpc: [ 'https://hashkeychain-testnet.alt.technology' ],
+    rpc: [ 'https://testnet.hsk.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'HashKey EcoPoints', symbol: 'HSK', decimals: 18 },
-    infoURL: 'https://hashkey.cloud',
+    infoURL: 'https://hashkeychain.net',
     shortName: 'HSKT',
     chainId: 133,
     networkId: 133,
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://hashkeychain-testnet-explorer.alt.technology',
+        url: 'https://testnet-explorer.hsk.xyz',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -12712,6 +12712,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'BIE',
+    chain: 'BIE',
+    rpc: [ 'https://rpc.bie.ai', 'https://api.bie.ai' ],
+    faucets: [ 'https://app.bie.ai/faucet' ],
+    nativeCurrency: { name: 'BIE', symbol: 'BIE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://bie.ai',
+    shortName: 'bie',
+    chainId: 1342,
+    networkId: 1342,
+    icon: 'bie',
+    explorers: [
+      {
+        name: 'BIE Explorer',
+        url: 'https://app.bie.ai/explorer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Blitz Subnet',
     chain: 'BLITZ',
     rpc: [ 'https://subnets.avax.network/blitz/testnet/rpc' ],
@@ -15971,6 +15991,25 @@ const chainArray = [
         url: 'https://movoscan.com',
         icon: 'movoscan',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'MFX Network',
+    chain: 'MFX',
+    rpc: [ 'https://rpc.mfx.network/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'MFX', symbol: 'MFX', decimals: 18 },
+    infoURL: 'https://docs.mfx.network/integration.html',
+    shortName: 'mfx',
+    chainId: 2064,
+    networkId: 2064,
+    icon: 'mfx',
+    explorers: [
+      {
+        name: 'MFX Explorer',
+        url: 'https://explorer.mfx.network',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -24963,6 +25002,52 @@ const chainArray = [
         name: 'Blockton Explorer',
         url: 'https://blocktonscan.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'StableNet Mainnet',
+    chain: 'StableNet',
+    rpc: [],
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP7702' },
+      { name: 'EIP2930' }
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'WKRC', symbol: 'WKRC', decimals: 18 },
+    infoURL: 'https://stablenet.network',
+    shortName: 'stablenet',
+    chainId: 8282,
+    networkId: 8282,
+    status: 'incubating',
+    explorers: []
+  },
+  {
+    name: 'StableNet Testnet',
+    chain: 'StableNet',
+    rpc: [
+      'https://api.test.stablenet.network',
+      'wss://ws.test.stablenet.network'
+    ],
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP7702' },
+      { name: 'EIP2930' }
+    ],
+    faucets: [ 'https://faucet.stablenet.network' ],
+    nativeCurrency: { name: 'WKRC', symbol: 'WKRC', decimals: 18 },
+    infoURL: 'https://stablenet.network',
+    shortName: 'stablenet-testnet',
+    chainId: 8283,
+    networkId: 8283,
+    explorers: [
+      {
+        name: 'StableNet Testnet Explorer',
+        url: 'https://explorer.stablenet.network',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -42246,6 +42331,31 @@ const chainArray = [
       {
         name: 'EgonCoin Testnet',
         url: 'https://testnet.egonscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Datachain Rope',
+    chain: 'DATACHAIN',
+    icon: 'datachain',
+    rpc: [
+      'https://erpc.datachain.network',
+      'wss://ws.datachain.network',
+      'https://erpc.rope.network',
+      'wss://ws.rope.network'
+    ],
+    faucets: [ 'https://faucet.datachain.network' ],
+    nativeCurrency: { name: 'DC FAT', symbol: 'FAT', decimals: 18 },
+    infoURL: 'https://datachain.network',
+    shortName: 'datachain',
+    chainId: 271828,
+    networkId: 271828,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    explorers: [
+      {
+        name: 'DC Scan',
+        url: 'https://dcscan.io',
         standard: 'EIP3091'
       }
     ]
