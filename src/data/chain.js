@@ -21430,20 +21430,25 @@ const chainArray = [
     ]
   },
   {
-    name: 'Seismic devnet',
+    name: 'Seismic Testnet',
     chain: 'Seismic',
-    rpc: [ 'https://node-2.seismicdev.net/rpc' ],
-    faucets: [ 'https://faucet-2.seismicdev.net/' ],
+    rpc: [
+      'https://gcp-1.seismictest.net/rpc',
+      'https://gcp-2.seismictest.net/rpc',
+      'wss://gcp-1.seismictest.net/ws',
+      'wss://gcp-2.seismictest.net/ws'
+    ],
+    faucets: [ 'https://faucet.seismictest.net' ],
     nativeCurrency: { name: 'Seismic Ether', symbol: 'ETH', decimals: 18 },
     features: [ { name: 'EIP155' } ],
     infoURL: 'https://seismic.systems',
-    shortName: 'seismic-devnet',
+    shortName: 'seismic-testnet',
     chainId: 5124,
     networkId: 5124,
     explorers: [
       {
-        name: 'Seismic Devnet Explorer',
-        url: 'https://explorer-2.seismicdev.net',
+        name: 'Seismic Testnet Explorer',
+        url: 'https://seismic-testnet.socialscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -29454,9 +29459,10 @@ const chainArray = [
     shortName: 'cph',
     chainId: 16166,
     networkId: 16166,
+    icon: 'Cypherium',
     explorers: [
       {
-        name: 'Testnet Block Explorer',
+        name: 'Cypherium Explorer (Ethernal)',
         url: 'https://cypherium.tryethernal.com',
         standard: 'EIP3091'
       }
