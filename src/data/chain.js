@@ -31405,6 +31405,50 @@ const chainArray = [
     ]
   },
   {
+    name: 'Integra',
+    chain: 'Integra',
+    rpc: [ 'https://evm.integralayer.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Integra', symbol: 'IRL', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://integralayer.com',
+    shortName: 'integra',
+    chainId: 26217,
+    networkId: 26217,
+    explorers: [
+      {
+        name: 'Integra Explorer',
+        url: 'https://scan.integralayer.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Integra Blockscout',
+        url: 'https://blockscout.integralayer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Integra Testnet Ormos',
+    chain: 'Integra',
+    rpc: [ 'https://ormos.integralayer.com/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Integra', symbol: 'IRL', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://integralayer.com',
+    shortName: 'integra-testnet',
+    chainId: 26218,
+    networkId: 26218,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Integra Testnet Blockscout',
+        url: 'https://testnet.blockscout.integralayer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DucatusX Testnet',
     chain: 'DUCX',
     rpc: [
@@ -40963,6 +41007,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'mfenx',
+    chain: 'MFENX',
+    rpc: [ 'https://indexer.mfenx.com/rpc' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'JULIAN', symbol: 'JULIAN', decimals: 18 },
+    infoURL: 'https://mfenx.com/power-house',
+    shortName: 'mfenx',
+    chainId: 177155,
+    networkId: 177155,
+    status: 'active'
+  },
+  {
     name: 'Transparency Solution',
     chain: 'CLT',
     icon: 'transparencysolution',
@@ -49741,17 +49798,77 @@ const chainArray = [
     ]
   },
   {
-    name: 'Asset Hub',
+    name: 'Polkadot Testnet',
+    chain: 'PAS',
+    icon: 'polkadot-testnet',
+    rpc: [
+      'https://services.polkadothub-rpc.com/testnet',
+      'wss://services.polkadothub-rpc.com/testnet',
+      'https://eth-rpc-testnet.polkadot.io',
+      'wss://eth-rpc-testnet.polkadot.io'
+    ],
+    faucets: [ 'https://faucet.polkadot.io/' ],
+    nativeCurrency: { name: 'PAS', symbol: 'PAS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://polkadot.com',
+    shortName: 'pas',
+    chainId: 420420417,
+    networkId: 420420417,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout-testnet.polkadot.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Kusama',
+    chain: 'KSM',
+    icon: 'kusama',
+    rpc: [
+      'https://eth-rpc-kusama.polkadot.io',
+      'wss://eth-rpc-kusama.polkadot.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'KSM', symbol: 'KSM', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://polkadot.com',
+    shortName: 'ksm',
+    chainId: 420420418,
+    networkId: 420420418,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout-kusama.polkadot.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Polkadot',
     chain: 'DOT',
-    rpc: [ 'https://asset-hub-eth-rpc.polkadot.io' ],
+    icon: 'polkadot',
+    rpc: [
+      'https://services.polkadothub-rpc.com/mainnet',
+      'wss://services.polkadothub-rpc.com/mainnet',
+      'https://eth-rpc.polkadot.io',
+      'wss://eth-rpc.polkadot.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'DOT', symbol: 'DOT', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://polkadot.network',
-    shortName: 'AH',
+    infoURL: 'https://polkadot.com',
+    shortName: 'dot',
     chainId: 420420419,
     networkId: 420420419,
-    explorers: []
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.polkadot.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Westend Asset Hub',
@@ -49768,20 +49885,21 @@ const chainArray = [
       {
         name: 'subscan',
         icon: 'subscan',
-        url: 'https://westend-asset-hub-eth-explorer.parity.io',
-        standard: 'EIP3091'
+        url: 'https://assethub-westend.subscan.io',
+        standard: 'none'
       }
     ]
   },
   {
     name: 'Paseo PassetHub',
+    status: 'deprecated',
     chain: 'PAS',
-    rpc: [ 'https://testnet-passet-hub-eth-rpc.polkadot.io' ],
-    faucets: [ 'https://faucet.polkadot.io/?parachain=1111' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'PAS', symbol: 'PAS', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://polkadot.network',
-    shortName: 'pas',
+    shortName: 'pash',
     chainId: 420420422,
     networkId: 420420422
   },
@@ -49961,6 +50079,32 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Tau Testnet',
+    chain: 'Tau',
+    rpc: [ 'https://rpc.tau.gateway.fm' ],
+    faucets: [ 'https://faucet.tau.gateway.fm' ],
+    nativeCurrency: { name: 'TAU', symbol: 'TAU', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://presto.gateway.fm/rollups/8bd8406f-a64f-484f-b299-046dd5f24a0f',
+    shortName: 'tau-testnet',
+    chainId: 737998412,
+    networkId: 737998412,
+    icon: 'tau',
+    explorers: [
+      {
+        name: 'BlockScout',
+        url: 'https://explorer.tau.gateway.fm',
+        icon: 'tau',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://bridge.tau.gateway.fm' } ]
+    }
   },
   {
     name: 'Ancient8',
