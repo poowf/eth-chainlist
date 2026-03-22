@@ -2886,18 +2886,13 @@ const chainArray = [
     chain: 'Polygon',
     icon: 'polygon',
     rpc: [
-      'https://polygon-rpc.com/',
-      'https://rpc-mainnet.matic.network',
-      'https://matic-mainnet.chainstacklabs.com',
-      'https://rpc-mainnet.maticvigil.com',
+      'https://polygon.drpc.org',
+      'wss://polygon.drpc.org',
       'https://rpc-mainnet.matic.quiknode.pro',
-      'https://matic-mainnet-full-rpc.bwarelabs.com',
       'https://polygon-bor-rpc.publicnode.com',
       'wss://polygon-bor-rpc.publicnode.com',
       'https://polygon.gateway.tenderly.co',
-      'wss://polygon.gateway.tenderly.co',
-      'https://polygon.drpc.org',
-      'wss://polygon.drpc.org'
+      'wss://polygon.gateway.tenderly.co'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -2913,9 +2908,8 @@ const chainArray = [
         standard: 'EIP3091'
       },
       {
-        name: 'dexguru',
-        url: 'https://polygon.dex.guru',
-        icon: 'dexguru',
+        name: 'oklink',
+        url: 'https://www.oklink.com/polygon',
         standard: 'EIP3091'
       }
     ]
@@ -19517,20 +19511,22 @@ const chainArray = [
   {
     name: 'DOS Testnet',
     chain: 'DOS',
-    rpc: [ 'https://test.doschain.com/' ],
+    rpc: [ 'https://test.doschain.com' ],
+    features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'DOS', symbol: 'DOS', decimals: 18 },
-    infoURL: 'http://doschain.io/',
-    shortName: 'dost',
+    infoURL: 'https://doschain.com',
+    shortName: 'dos-test',
     chainId: 3939,
     networkId: 3939,
     slip44: 1,
     icon: 'doschain',
+    status: 'active',
     explorers: [
       {
         name: 'DOScan-Test',
         url: 'https://test.doscan.io',
-        icon: 'doschain',
+        icon: 'doscan',
         standard: 'EIP3091'
       }
     ]
@@ -24443,18 +24439,20 @@ const chainArray = [
     name: 'DOS Chain',
     chain: 'DOS',
     rpc: [ 'https://main.doschain.com' ],
+    features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'DOS', symbol: 'DOS', decimals: 18 },
-    infoURL: 'https://doschain.io',
+    infoURL: 'https://doschain.com',
     shortName: 'dos',
     chainId: 7979,
     networkId: 7979,
     icon: 'doschain',
+    status: 'active',
     explorers: [
       {
         name: 'DOScan',
         url: 'https://doscan.io',
-        icon: 'doschain',
+        icon: 'doscan',
         standard: 'EIP3091'
       }
     ]
@@ -26163,7 +26161,14 @@ const chainArray = [
     chainId: 9069,
     networkId: 9069,
     icon: 'apexfusion',
-    explorers: []
+    explorers: [
+      {
+        name: 'apexfusion',
+        url: 'https://explorer.nexus.mainnet.apexfusion.org',
+        icon: 'apexfusion',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Apex Fusion - Nexus testnet',
@@ -37354,7 +37359,8 @@ const chainArray = [
     rpc: [
       'https://rpc-amoy.polygon.technology',
       'https://polygon-amoy-bor-rpc.publicnode.com',
-      'wss://polygon-amoy-bor-rpc.publicnode.com'
+      'wss://polygon-amoy-bor-rpc.publicnode.com',
+      'https://polygon-amoy.drpc.org'
     ],
     faucets: [ 'https://faucet.polygon.technology/' ],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -37367,11 +37373,6 @@ const chainArray = [
       {
         name: 'polygonscan-amoy',
         url: 'https://amoy.polygonscan.com',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'polygonamoy',
-        url: 'https://www.oklink.com/amoy',
         standard: 'EIP3091'
       }
     ]
@@ -44381,14 +44382,14 @@ const chainArray = [
   {
     name: 'Gensyn Mainnet',
     chain: 'Gensyn',
-    rpc: [],
+    rpc: [ 'https://gensyn-mainnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.gensyn.ai/',
     shortName: 'gensyn-mainnet',
     chainId: 685689,
     networkId: 685689,
-    status: 'incubating'
+    status: 'active'
   },
   {
     name: 'Won Network',
@@ -47854,6 +47855,31 @@ const chainArray = [
     chainId: 12052024,
     networkId: 12052024,
     explorers: []
+  },
+  {
+    name: 'ONFA Chain Mainnet',
+    title: 'ONFA Chain Mainnet',
+    chain: 'onfa',
+    rpc: [
+      'https://rpc.onfachain.com',
+      'https://rpc.onfachain.net',
+      'wss://ws.onfachain.com',
+      'wss://ws.onfachain.net'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'ONFA Coin', symbol: 'OFC', decimals: 18 },
+    infoURL: 'https://onfachain.com',
+    shortName: 'onfachain',
+    chainId: 12082025,
+    networkId: 12082025,
+    explorers: [
+      {
+        name: 'ONFA Scan',
+        url: 'https://onfascan.io',
+        icon: 'onfachain',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'NeoX Testnet T3',
