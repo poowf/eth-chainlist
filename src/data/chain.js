@@ -8604,6 +8604,27 @@ const chainArray = [
     icon: 'vrcscan'
   },
   {
+    name: 'Eden',
+    chain: 'Eden',
+    rpc: [ 'https://rpc.eden.gateway.fm' ],
+    faucets: [],
+    nativeCurrency: { name: 'TIA', symbol: 'TIA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://celestia.org',
+    shortName: 'eden',
+    chainId: 714,
+    networkId: 714,
+    icon: 'eden',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://eden.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'UXLINK ONE Mainnet',
     chain: 'UXLINK ONE',
     rpc: [ 'https://rpc.uxlinkone.com' ],
@@ -20149,6 +20170,20 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Algorand',
+    chain: 'ALGO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Algo', symbol: 'ALGO', decimals: 6 },
+    infoURL: 'https://algorand.co',
+    shortName: 'algo',
+    chainId: 4160,
+    networkId: 4160,
+    slip44: 283,
+    status: 'active',
+    explorers: []
   },
   {
     name: 'SX Rollup',
@@ -48190,6 +48225,30 @@ const chainArray = [
       {
         name: 'Lambda Chain Testnet Explorer',
         url: 'https://testscan.lambda.im',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SATUCHAIN Testnet',
+    chain: 'SATU',
+    rpc: [
+      'https://rpc-testnet.satuchain.com',
+      'wss://rpc-testnet.satuchain.com/ws'
+    ],
+    faucets: [ 'https://faucet.satuchain.com' ],
+    nativeCurrency: { name: 'Satu Testnet', symbol: 'tSTU', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://satuchain.com',
+    shortName: 'satutestnet',
+    chainId: 17081945,
+    networkId: 17081945,
+    icon: 'satuchain',
+    explorers: [
+      {
+        name: 'SATUCHAIN Testnet Explorer',
+        url: 'https://testnet.satuchain.com',
+        icon: 'satuchain',
         standard: 'EIP3091'
       }
     ]
