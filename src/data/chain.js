@@ -8691,6 +8691,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitasset Chain Mainnet',
+    chain: 'BAC',
+    rpc: [ 'https://rpc.bitassetchain.io' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Bitasset Chain Native Token',
+      symbol: 'BAC',
+      decimals: 18
+    },
+    infoURL: 'https://bitassetchain.io',
+    shortName: 'bac',
+    chainId: 723,
+    networkId: 723,
+    icon: 'bac',
+    explorers: [
+      {
+        name: 'bacscan',
+        url: 'https://bacscan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Blucrates',
     chain: 'BLU',
     rpc: [ 'https://data.bluchain.pro' ],
@@ -35213,6 +35236,53 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-42161', bridges: [] }
   },
   {
+    name: 'DUST Testnet',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc.testnet.dustproject.org',
+      'wss://rpc.testnet.dustproject.org'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://dustproject.org',
+    shortName: 'dust-testnet',
+    chainId: 55377,
+    networkId: 55377,
+    icon: 'dust',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.testnet.dustproject.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
+  },
+  {
+    name: 'DUST Mainnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.dustproject.org', 'wss://rpc.dustproject.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://dustproject.org',
+    shortName: 'dust-mainnet',
+    chainId: 55378,
+    networkId: 55378,
+    icon: 'dust',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.dustproject.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1', bridges: [] }
+  },
+  {
     name: 'Photon Aurora Testnet',
     chain: 'Photon',
     rpc: [ 'https://rpc-test2.photonchain.io' ],
@@ -36513,6 +36583,29 @@ const chainArray = [
       {
         name: 'creatorchainscan',
         url: 'https://explorer.creatorchain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Bitasset Chain Testnet Ploutos',
+    chain: 'BAC',
+    rpc: [ 'https://ploutos-rpc.bitassetchain.io' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Bitasset Chain Native Token',
+      symbol: 'BAC',
+      decimals: 18
+    },
+    infoURL: 'https://bitassetchain.io',
+    shortName: 'bac-ploutos',
+    chainId: 66666,
+    networkId: 66666,
+    icon: 'bac',
+    explorers: [
+      {
+        name: 'bacscan-ploutos',
+        url: 'https://ploutos.bacscan.net',
         standard: 'EIP3091'
       }
     ]
@@ -49471,6 +49564,28 @@ const chainArray = [
       chain: 'eip155-11155111',
       bridges: [ { url: 'https://bridge.gelato.network/bridge/reya-cronos' } ]
     }
+  },
+  {
+    name: 'MST Testnet',
+    chain: 'MST',
+    rpc: [
+      'https://testnetrpc.mstblockchain.com',
+      'wss://testnetrpc.mstblockchain.com'
+    ],
+    faucets: [ 'https://faucet.mstblockchain.com' ],
+    nativeCurrency: { name: 'MST Native Coin', symbol: 'tMSTC', decimals: 18 },
+    infoURL: 'https://mstblockchain.com',
+    shortName: 'mst-testnet',
+    chainId: 91562037,
+    networkId: 91562037,
+    icon: 'mst',
+    explorers: [
+      {
+        name: 'mstscan',
+        url: 'https://testnet.mstscan.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Polygon Blackberry',
