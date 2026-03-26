@@ -24592,6 +24592,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'ProbeChain Mainnet',
+    chain: 'PROBE',
+    rpc: [ 'https://proscan.pro/chain/rydberg-rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Probe', symbol: 'PROBE', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://probechain.org',
+    shortName: 'probe',
+    chainId: 8004,
+    networkId: 8004,
+    explorers: [
+      {
+        name: 'ProScan',
+        url: 'https://proscan.pro/rydberg',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Polynomial',
     chain: 'Polynomial',
     rpc: [ 'https://rpc.polynomial.fi' ],
@@ -34516,21 +34535,15 @@ const chainArray = [
     name: 'Zircuit Testnet',
     chain: 'Zircuit Testnet',
     icon: 'zircuit',
-    rpc: [ 'https://testnet.zircuit.com' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.zircuit.com/',
     shortName: 'zircuit-testnet',
     chainId: 48899,
     networkId: 48899,
-    explorers: [
-      {
-        name: 'Zircuit',
-        url: 'https://explorer.testnet.zircuit.com',
-        icon: 'zircuit',
-        standard: 'none'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Zircuit Mainnet',
