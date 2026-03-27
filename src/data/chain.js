@@ -16590,6 +16590,7 @@ const chainArray = [
     chain: 'Bitcoin EVM',
     rpc: [ 'https://connect.bitcoinevm.com' ],
     faucets: [],
+    features: [ { name: 'EIP155' } ],
     nativeCurrency: { name: 'Bitcoin', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://bitcoinevm.com',
     shortName: 'BTC',
@@ -16598,12 +16599,13 @@ const chainArray = [
     icon: 'ebtc',
     explorers: [
       {
-        name: 'Explorer',
+        name: 'Bitcoin EVM Explorer',
         url: 'https://explorer.bitcoinevm.com',
         icon: 'ebtc',
-        standard: 'none'
+        standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'active'
   },
   {
     name: 'Evanesco Mainnet',
@@ -48701,6 +48703,25 @@ const chainArray = [
         name: 'ETPScan',
         url: 'https://etpscan.xyz',
         icon: 'etpchain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Meta Assets Chain',
+    chain: 'MA',
+    icon: 'metaassets',
+    rpc: [ 'https://rpc.ma-chain.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'MetaAssets', symbol: 'MA', decimals: 18 },
+    infoURL: 'https://ma-chain.xyz',
+    shortName: 'ma',
+    chainId: 20260131,
+    networkId: 20260131,
+    explorers: [
+      {
+        name: 'Meta Assets Chain Explorer',
+        url: 'https://ma-chain.xyz',
         standard: 'EIP3091'
       }
     ]
