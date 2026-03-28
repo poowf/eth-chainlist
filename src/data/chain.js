@@ -23217,6 +23217,48 @@ const chainArray = [
     ]
   },
   {
+    name: 'Monolythium Testnet',
+    chain: 'LYTH',
+    rpc: [ 'https://evm.testnet.mononodes.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lythium', symbol: 'LYTH', decimals: 18 },
+    infoURL: 'https://monolythium.com',
+    shortName: 'lyth-testnet',
+    chainId: 6940,
+    networkId: 6940,
+    slip44: 1,
+    icon: 'monolythium',
+    features: [ { name: 'EIP155' } ],
+    explorers: [
+      {
+        name: 'Monoscan',
+        url: 'https://testnet.monoscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Monolythium',
+    chain: 'LYTH',
+    rpc: [ 'https://evm.mainnet.mononodes.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lythium', symbol: 'LYTH', decimals: 18 },
+    infoURL: 'https://monolythium.com',
+    shortName: 'lyth',
+    chainId: 6941,
+    networkId: 6941,
+    slip44: 60,
+    icon: 'monolythium',
+    features: [ { name: 'EIP155' } ],
+    explorers: [
+      {
+        name: 'Monoscan',
+        url: 'https://monoscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Laika Mainnet',
     chain: 'LAIKA',
     rpc: [ 'https://mainnetrpc.laikachain.dog' ],
@@ -26546,6 +26588,27 @@ const chainArray = [
       {
         name: 'Load Network Explorer',
         url: 'https://explorer.load.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Colossus Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.testnet.colossus.credit' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    icon: 'colossus',
+    infoURL: 'https://www.colossus.credit/',
+    shortName: 'colsep',
+    chainId: 9511,
+    networkId: 9511,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'colossus-scout',
+        url: 'https://explorer.testnet.colossus.credit',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -31079,6 +31142,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Access Network',
+    chain: 'ACCESS',
+    icon: 'access',
+    chainId: 22888,
+    shortName: 'access',
+    networkId: 22888,
+    nativeCurrency: { name: 'Access Coin', symbol: 'ACCESS', decimals: 18 },
+    rpc: [ 'https://accesschain.org/rpc' ],
+    faucets: [],
+    infoURL: 'https://accesschain.org',
+    explorers: [
+      {
+        name: 'Access Network Explorer',
+        url: 'https://accesschain.org/explorer',
+        standard: 'EIP3091',
+        icon: 'access'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'Antofy Testnet',
     chain: 'ABN',
     icon: 'antofy',
@@ -31392,6 +31476,27 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Fluent',
+    chain: 'FLUENT',
+    icon: 'fluent',
+    rpc: [ 'https://rpc.fluent.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.fluent.xyz/',
+    shortName: 'fluent',
+    chainId: 25363,
+    networkId: 25363,
+    explorers: [
+      {
+        name: 'Fluent Explorer',
+        url: 'https://fluentscan.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'H2 Chain Testnet Lambda',
@@ -37360,6 +37465,24 @@ const chainArray = [
       {
         name: 'toronet_explorer',
         url: 'https://toronet.org/explorer',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'StreetDog Chain',
+    chain: 'SDC',
+    rpc: [ 'https://rpc.chain.streetdog.me' ],
+    faucets: [],
+    nativeCurrency: { name: 'StreetDog', symbol: 'SD', decimals: 18 },
+    infoURL: 'https://chain.streetdog.me',
+    shortName: 'sdc',
+    chainId: 77778,
+    networkId: 77778,
+    explorers: [
+      {
+        name: 'StreetDog Chain Explorer',
+        url: 'https://chain.streetdog.me',
         standard: 'none'
       }
     ]
