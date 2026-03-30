@@ -7989,6 +7989,50 @@ const chainArray = [
     ]
   },
   {
+    name: 'BattleChain Mainnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://battlechain.com',
+    shortName: 'battlechain',
+    chainId: 626,
+    networkId: 626,
+    icon: 'battlechain',
+    status: 'incubating',
+    explorers: [],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://portal.battlechain.com/bridge' } ]
+    }
+  },
+  {
+    name: 'BattleChain Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://testnet.battlechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://battlechain.com',
+    shortName: 'battlechain-testnet',
+    chainId: 627,
+    networkId: 627,
+    slip44: 1,
+    icon: 'battlechain',
+    explorers: [
+      {
+        name: 'BattleChain Explorer',
+        url: 'https://explorer.testnet.battlechain.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [ { url: 'https://portal.battlechain.com/bridge' } ]
+    }
+  },
+  {
     name: 'NFB Chain',
     chain: 'NFB Chain',
     rpc: [ 'https://node.nfbchain.com' ],
@@ -22691,6 +22735,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'MegaETH Testnet (Deprecated)',
+    chain: 'ETH',
+    nativeCurrency: { name: 'MegaETH Testnet Ether', symbol: 'ETH', decimals: 18 },
+    rpc: [],
+    faucets: [],
+    infoURL: 'https://testnet.megaeth.com',
+    shortName: 'megatest-deprecated',
+    chainId: 6342,
+    networkId: 6342,
+    slip44: 1,
+    status: 'deprecated'
+  },
+  {
     name: 'MegaETH Testnet',
     chain: 'ETH',
     nativeCurrency: { name: 'MegaETH Testnet Ether', symbol: 'ETH', decimals: 18 },
@@ -22698,8 +22755,8 @@ const chainArray = [
     faucets: [],
     infoURL: 'https://testnet.megaeth.com',
     shortName: 'megatest',
-    chainId: 6342,
-    networkId: 6342,
+    chainId: 6343,
+    networkId: 6343,
     slip44: 1
   },
   {
@@ -37244,6 +37301,24 @@ const chainArray = [
       {
         name: 'Nebula Explorer',
         url: 'https://nebxscan.nebula-chain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'NV-CHAIN',
+    chain: 'NVC',
+    rpc: [ 'https://rpc.neurovatic.ai/rpc' ],
+    faucets: [ 'https://faucet.neurovatic.ai' ],
+    nativeCurrency: { name: 'NeuroVatic Coin', symbol: 'NVC', decimals: 18 },
+    infoURL: 'https://neurovatic.ai',
+    shortName: 'nvc',
+    chainId: 73790,
+    networkId: 73790,
+    explorers: [
+      {
+        name: 'nvScan',
+        url: 'https://explorer.neurovatic.ai',
         standard: 'EIP3091'
       }
     ]
