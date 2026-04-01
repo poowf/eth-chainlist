@@ -15850,6 +15850,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'ArmaChain Testnet',
+    chain: 'ARMA',
+    rpc: [ 'https://rpc.armascan.io' ],
+    faucets: [ 'https://armafaucet.io' ],
+    nativeCurrency: { name: 'tARMA', symbol: 'tARMA', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://armadex.io',
+    shortName: 'arma-testnet',
+    chainId: 2028,
+    networkId: 2028,
+    slip44: 1,
+    icon: 'armachain',
+    explorers: [
+      {
+        name: 'ArmaScan',
+        url: 'https://armascan.io',
+        icon: 'armachain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Centrifuge',
     chain: 'CFG',
     icon: 'centrifuge',
@@ -37183,6 +37205,27 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'Radius Test Network',
+    chain: 'RADIUS',
+    rpc: [ 'https://rpc.testnet.radiustech.xyz' ],
+    faucets: [ 'https://testnet.radiustech.xyz/wallet/' ],
+    nativeCurrency: { name: 'Radius USD', symbol: 'RUSD', decimals: 18 },
+    infoURL: 'https://testnet.radiustech.xyz',
+    shortName: 'radius-network-testnet',
+    chainId: 72344,
+    networkId: 72344,
+    icon: 'rad',
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Radius Test Network Explorer',
+        url: 'https://testnet.radiustech.xyz',
+        standard: 'none'
+      }
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
+  },
+  {
     name: 'CAGA crypto Ankara testnet',
     chain: 'Ankara',
     rpc: [
@@ -38216,6 +38259,27 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Pylun Testnet',
+    chain: 'PYLUN',
+    icon: 'pylun',
+    rpc: [ 'https://rpc.pylun.network', 'wss://ws.pylun.network' ],
+    faucets: [ 'https://faucet.pylun.network' ],
+    nativeCurrency: { name: 'PYLUN', symbol: 'PYLUN', decimals: 18 },
+    infoURL: 'https://pylun.network',
+    shortName: 'pylun',
+    chainId: 82716,
+    networkId: 82716,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'PylunScan',
+        url: 'https://explorer.pylun.network',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Xprotocol Testnet',
@@ -45076,6 +45140,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Radius Network',
+    chain: 'RADIUS',
+    rpc: [ 'https://rpc.radiustech.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Radius USD', symbol: 'RUSD', decimals: 18 },
+    infoURL: 'https://network.radiustech.xyz/',
+    shortName: 'radius',
+    chainId: 723487,
+    networkId: 723487,
+    icon: 'rad',
+    explorers: [
+      {
+        name: 'Radius Network Explorer',
+        url: 'https://network.radiustech.xyz',
+        standard: 'none'
+      }
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
   },
   {
     name: 'bokuto',
