@@ -26897,6 +26897,22 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nepachain',
+    chain: 'Nepachain',
+    faucets: [],
+    rpc: [
+      'https://network.nepachain.org',
+      'https://network.nepachain.com'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP2930' } ],
+    nativeCurrency: { name: 'Nepacoin', symbol: 'NPC', decimals: 18 },
+    infoURL: 'https://docs.nepachain.org/',
+    shortName: 'Nepachain',
+    chainId: 9770,
+    networkId: 9770,
+    explorers: []
+  },
+  {
     name: 'PepeNetwork Mainnet',
     chain: 'PepeNetwork',
     rpc: [ 'https://rpc-mainnet.pepenetwork.io' ],
@@ -30759,6 +30775,66 @@ const chainArray = [
       }
     ],
     infoURL: 'https://www.camelark.com'
+  },
+  {
+    name: 'Mandala Chain',
+    chain: 'MANDALA',
+    icon: 'mandala',
+    rpc: [ 'https://rpc1-mainnet.mandalachain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Kepeng', symbol: 'KPG', decimals: 18 },
+    infoURL: 'https://mandalachain.io',
+    shortName: 'mandala',
+    chainId: 20010,
+    networkId: 20010,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.mandalachain.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [
+        {
+          url: 'https://portal.arbitrum.io/bridge?destinationChain=mandala-chain&sanitized=true&sourceChain=ethereum'
+        }
+      ]
+    },
+    status: 'active'
+  },
+  {
+    name: 'Mandala Chain Testnet',
+    chain: 'MANDALA',
+    icon: 'mandala',
+    rpc: [ 'https://rpc1-testnet.mandalachain.io' ],
+    faucets: [ 'https://dripper.mandalachain.io' ],
+    nativeCurrency: { name: 'Kepeng Test', symbol: 'KPGT', decimals: 18 },
+    infoURL: 'https://mandalachain.io',
+    shortName: 'mandala-testnet',
+    chainId: 20011,
+    networkId: 20011,
+    explorers: [
+      {
+        name: 'Blockscout',
+        url: 'https://explorer.testnet.mandalachain.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-11155111',
+      bridges: [
+        {
+          url: 'https://portal.arbitrum.io/bridge?destinationChain=mandala-chain-testnet&sanitized=true&sourceChain=sepolia'
+        }
+      ]
+    },
+    status: 'active'
   },
   {
     name: 'Niza Chain Mainnet',
@@ -38819,6 +38895,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'JAMIROQU.AI',
+    chain: 'INSAN',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'INSAN', symbol: 'INSAN', decimals: 18 },
+    infoURL: 'https://www.jamiroqu.ai',
+    shortName: 'insan',
+    chainId: 89001,
+    networkId: 89001,
+    status: 'incubating'
   },
   {
     name: 'Pundi AIFX Omnilayer Testnet',
