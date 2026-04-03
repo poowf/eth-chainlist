@@ -2917,27 +2917,38 @@ const chainArray = [
   {
     name: 'Defi Oracle Meta Mainnet',
     chain: 'dfiometa',
-    icon: 'defioraclemeta',
-    rpc: [ 'https://rpc.defi-oracle.io', 'wss://wss.defi-oracle.io' ],
-    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    rpc: [
+      'https://rpc-http-pub.d-bis.org',
+      'wss://rpc-ws-pub.d-bis.org',
+      'https://rpc.d-bis.org',
+      'wss://rpc.d-bis.org',
+      'https://rpc2.d-bis.org',
+      'wss://ws.rpc.d-bis.org',
+      'wss://ws.rpc2.d-bis.org',
+      'https://rpc.public-0138.defi-oracle.io',
+      'wss://rpc.public-0138.defi-oracle.io',
+      'https://rpc.defi-oracle.io',
+      'wss://wss.defi-oracle.io'
+    ],
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP2718' },
+      { name: 'EIP2930' }
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://info.defi-oracle.io/',
+    infoURL: 'https://d-bis.org',
     shortName: 'dfio-meta-main',
     chainId: 138,
-    networkId: 1,
+    networkId: 138,
     slip44: 60,
     ens: { registry: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85' },
     explorers: [
       {
-        name: 'Blockscout Explorer',
-        url: 'https://blockscout.defi-oracle.io',
-        standard: 'none'
-      },
-      {
-        name: 'Quorum Explorer',
-        url: 'https://explorer.defi-oracle.io',
-        standard: 'none'
+        name: 'Blockscout',
+        url: 'https://explorer.d-bis.org',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -12557,6 +12568,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'STO Chain',
+    chain: 'STOC',
+    icon: 'stoc',
+    rpc: [ 'https://evm-stoc-mainnet.stochainscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'STOC', symbol: 'STOC', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://www.stochain.io/',
+    shortName: 'stoc',
+    chainId: 1306,
+    networkId: 1306,
+    explorers: [
+      {
+        name: 'STO Chain Explorer',
+        url: 'https://stochainscan.io/en',
+        standard: 'none'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'COINZAX',
     chain: 'ZAX',
     icon: 'coinzaxIcon',
@@ -15449,6 +15481,27 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'STO Chain Testnet',
+    chain: 'TSTOC',
+    icon: 'stoc',
+    rpc: [ 'https://evm-stoc-testnet.stochainscan.io' ],
+    faucets: [ 'https://testnet.stochainscan.io/en/request-faucet' ],
+    nativeCurrency: { name: 'TSTOC', symbol: 'TSTOC', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://www.stochain.io/',
+    shortName: 'tstoc',
+    chainId: 1999,
+    networkId: 1999,
+    explorers: [
+      {
+        name: 'STO Chain Testnet Explorer',
+        url: 'https://testnet.stochainscan.io/en',
+        standard: 'none'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Dogechain Mainnet',
@@ -48296,6 +48349,21 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'ClawCoin',
+    chain: 'CC',
+    icon: 'clawcoin',
+    rpc: [ 'https://evm.clawcoin.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'ClawCoin', symbol: 'CC', decimals: 18 },
+    infoURL: 'https://clawcoin.com',
+    shortName: 'cc',
+    chainId: 11111111,
+    networkId: 11111111,
+    slip44: 60,
+    status: 'active'
   },
   {
     name: 'Celo Sepolia Testnet',
