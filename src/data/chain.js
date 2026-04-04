@@ -7034,26 +7034,26 @@ const chainArray = [
     ]
   },
   {
-    name: 'Areon Network Mainnet',
-    chain: 'Areon',
+    name: 'Areum Network Mainnet',
+    chain: 'Areum',
     icon: 'areon',
     rpc: [
-      'https://mainnet-rpc.areon.network',
-      'https://mainnet-rpc2.areon.network',
-      'https://mainnet-rpc3.areon.network',
-      'https://mainnet-rpc4.areon.network',
-      'https://mainnet-rpc5.areon.network'
+      'https://mainnet-rpc.areum.network',
+      'https://mainnet-rpc2.areum.network',
+      'https://mainnet-rpc3.areum.network',
+      'https://mainnet-rpc4.areum.network',
+      'https://mainnet-rpc5.areum.network'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Areon', symbol: 'AREA', decimals: 18 },
-    infoURL: 'https://areon.network',
+    nativeCurrency: { name: 'Areum', symbol: 'AREA', decimals: 18 },
+    infoURL: 'https://areum.network',
     shortName: 'area',
     chainId: 463,
     networkId: 463,
     explorers: [
       {
-        name: 'AreonScan',
-        url: 'https://areonscan.com',
+        name: 'Areum Explorer',
+        url: 'https://explorer.areum.network',
         standard: 'none'
       }
     ]
@@ -11118,6 +11118,31 @@ const chainArray = [
         url: 'https://humans.explorers.guru',
         icon: 'humans',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Xenea Ubusuna',
+    title: 'Xenea Ubusuna Testnet',
+    chain: 'TXENE',
+    rpc: [ 'https://rpc-ubusuna.xeneascan.com' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'Xenea Ubusuna Testnet Token',
+      symbol: 'TXENE',
+      decimals: 18
+    },
+    infoURL: 'https://xenea.io',
+    shortName: 'Xenea',
+    chainId: 1096,
+    networkId: 1096,
+    icon: 'xenea',
+    explorers: [
+      {
+        name: 'Xenea Ubusuna Testnet Explorer',
+        url: 'https://ubusuna.xeneascan.com',
+        icon: 'xenea',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -27966,6 +27991,26 @@ const chainArray = [
       {
         name: 'ethernal',
         url: 'https://testnet.num.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'TrustBitcoin Mainnet',
+    chain: 'TBC',
+    rpc: [ 'https://rpc.trustbitcoin.io' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'TrustBitcoin', symbol: 'TBC', decimals: 18 },
+    infoURL: 'https://trustbitcoin.io',
+    shortName: 'trustbtc',
+    chainId: 10791,
+    networkId: 10791,
+    icon: 'trustbitcoin',
+    explorers: [
+      {
+        name: 'TrustBitcoin Scan',
+        url: 'https://scan.trustbitcoin.io',
         standard: 'EIP3091'
       }
     ]
@@ -51134,6 +51179,27 @@ const chainArray = [
       {
         name: 'Blockscout',
         url: 'https://skale-base-explorer.skalenodes.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mirasmanda',
+    chain: 'MIRASMANDA',
+    rpc: [ 'https://rpc.evm.mirasmanda.uz' ],
+    faucets: [ 'https://faucet.evm.mirasmanda.uz' ],
+    nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://asterium.uz/',
+    shortName: 'mirasmanda',
+    chainId: 1213549903,
+    networkId: 1213549903,
+    icon: 'mirasmanda',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout.evm.mirasmanda.uz',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
