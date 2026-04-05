@@ -20579,6 +20579,29 @@ const chainArray = [
     ]
   },
   {
+    name: 'IKChain Testnet',
+    chain: 'IKChain',
+    icon: 'ikchain',
+    rpc: [ 'https://testnet-rpc.ikchain.net' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://testnet-explorer.ikchain.net' ],
+    nativeCurrency: { name: 'IKCrypto', symbol: 'IKCr', decimals: 18 },
+    infoURL: 'https://ikchain.net',
+    shortName: 'ikchain-testnet',
+    chainId: 4270,
+    networkId: 4270,
+    slip44: 1,
+    status: 'active',
+    explorers: [
+      {
+        name: 'IKChain Testnet Explorer',
+        url: 'https://testnet-explorer.ikchain.net',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Echos Chain',
     chain: 'Echos',
     rpc: [ 'https://rpc-echos-mainnet-0.t.conduit.xyz' ],
@@ -48350,6 +48373,31 @@ const chainArray = [
       {
         name: 'Soverun',
         url: 'https://explorer.soverun.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SATUCHAIN Mainnet',
+    chain: 'SATU',
+    rpc: [
+      'https://rpc-mainnet.satuchain.com',
+      'https://rpc-indo-mainnet.satuchain.com',
+      'wss://rpc-mainnet.satuchain.com/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Satu', symbol: 'STU', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://satuchain.com',
+    shortName: 'satumainnet',
+    chainId: 10111945,
+    networkId: 10111945,
+    icon: 'satuchain',
+    explorers: [
+      {
+        name: 'SATUCHAIN Mainnet Explorer',
+        url: 'https://stuscan.com',
+        icon: 'satuchain',
         standard: 'EIP3091'
       }
     ]
