@@ -7036,7 +7036,7 @@ const chainArray = [
   {
     name: 'Areum Network Mainnet',
     chain: 'Areum',
-    icon: 'areon',
+    icon: 'areum',
     rpc: [
       'https://mainnet-rpc.areum.network',
       'https://mainnet-rpc2.areum.network',
@@ -12769,8 +12769,8 @@ const chainArray = [
     icon: 'sei',
     explorers: [
       {
-        name: 'Seitrace',
-        url: 'https://seitrace.com',
+        name: 'Seiscan',
+        url: 'https://testnet.seiscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -12786,11 +12786,11 @@ const chainArray = [
     chainId: 1329,
     networkId: 1329,
     slip44: 19000118,
-    icon: 'seiv2',
+    icon: 'sei',
     explorers: [
       {
-        name: 'Seitrace',
-        url: 'https://seitrace.com',
+        name: 'Seiscan',
+        url: 'https://seiscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -24761,6 +24761,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Peeryn',
+    chain: 'PYN',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Peeryn', symbol: 'PYN', decimals: 18 },
+    infoURL: 'https://peeryn.com',
+    shortName: 'pyn',
+    chainId: 7991,
+    networkId: 7991,
+    status: 'incubating',
+    explorers: []
   },
   {
     name: 'Teleport',
@@ -45280,6 +45294,7 @@ const chainArray = [
     chainId: 713715,
     networkId: 713715,
     icon: 'sei',
+    status: 'deprecated',
     explorers: [
       {
         name: 'Seistream',
