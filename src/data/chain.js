@@ -9950,6 +9950,27 @@ const chainArray = [
     }
   },
   {
+    name: 'Fenine Testnet',
+    chain: 'FEN',
+    rpc: [ 'https://rpc.fene.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'Fenine', symbol: 'FEN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://fene.app',
+    shortName: 'FEN',
+    chainId: 920,
+    networkId: 920,
+    icon: 'fenine',
+    explorers: [
+      {
+        name: 'Fenine Scan',
+        url: 'https://explorer.fene.app',
+        icon: 'fenine',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Yidark Chain Mainnet',
     chain: 'Yidark',
     icon: 'ydk',
@@ -20602,6 +20623,38 @@ const chainArray = [
     ]
   },
   {
+    name: 'TPIX Chain',
+    chain: 'TPIX',
+    rpc: [ 'https://rpc.tpix.online' ],
+    faucets: [],
+    nativeCurrency: { name: 'Thaiprompt Index', symbol: 'TPIX', decimals: 18 },
+    infoURL: 'https://tpix.online',
+    shortName: 'tpix',
+    chainId: 4289,
+    networkId: 4289,
+    icon: 'tpix',
+    explorers: [
+      {
+        name: 'TPIX Chain Explorer',
+        url: 'https://explorer.tpix.online',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'TPIX Chain Testnet',
+    chain: 'TPIX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Thaiprompt Index', symbol: 'tTPIX', decimals: 18 },
+    infoURL: 'https://tpix.online',
+    shortName: 'tpix-testnet',
+    chainId: 4290,
+    networkId: 4290,
+    icon: 'tpix',
+    explorers: []
+  },
+  {
     name: 'Echos Chain',
     chain: 'Echos',
     rpc: [ 'https://rpc-echos-mainnet-0.t.conduit.xyz' ],
@@ -21806,6 +21859,28 @@ const chainArray = [
     shortName: 'es',
     chainId: 5197,
     networkId: 5197
+  },
+  {
+    name: 'LiterMark Chain',
+    chain: 'LMK',
+    icon: 'litermark',
+    rpc: [ 'https://litermark.org/rpc' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'LiterMark', symbol: 'LMK', decimals: 18 },
+    infoURL: 'https://litermark.com',
+    shortName: 'lmk',
+    chainId: 5232,
+    networkId: 5232,
+    slip44: 60,
+    status: 'active',
+    explorers: [
+      {
+        name: 'LMKscan',
+        url: 'https://litermark.org',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Humanode Mainnet',
@@ -31199,16 +31274,28 @@ const chainArray = [
   },
   {
     name: '1Money Network Mainnet',
-    chain: '1Money Network',
-    rpc: [ 'https://mainnet.1money.network' ],
+    chain: '1MoneyNetwork',
+    rpc: [
+      'https://rpc.mainnet.1money.network',
+      'https://rpc1.mainnet.1money.network',
+      'https://rpc2.mainnet.1money.network',
+      'https://rpc3.mainnet.1money.network'
+    ],
     faucets: [],
     nativeCurrency: { name: 'FREE', symbol: 'FREE', decimals: 18 },
     features: [ { name: 'EIP155' } ],
-    infoURL: 'https://1money.com',
+    infoURL: 'https://www.1moneynetwork.com',
     shortName: '1money',
+    icon: '1moneynetwork',
     chainId: 21210,
     networkId: 21210,
-    explorers: []
+    explorers: [
+      {
+        name: '1Money Network Explorer',
+        url: 'https://www.1moneynetwork.com/explorer',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'DCpay Mainnet',
@@ -46711,16 +46798,28 @@ const chainArray = [
   },
   {
     name: '1Money Network Testnet',
-    chain: '1Money Testnet',
-    rpc: [ 'https://testnet.1money.network' ],
-    faucets: [],
+    chain: '1MoneyNetwork',
+    rpc: [
+      'https://rpc.testnet.1money.network',
+      'https://rpc1.testnet.1money.network',
+      'https://rpc2.testnet.1money.network',
+      'https://rpc3.testnet.1money.network'
+    ],
+    faucets: [ 'https://www.1moneynetwork.com/faucet' ],
     nativeCurrency: { name: 'FREE', symbol: 'FREE', decimals: 18 },
     features: [ { name: 'EIP155' } ],
-    infoURL: 'https://1money.com',
+    infoURL: 'https://www.1moneynetwork.com',
     shortName: '1money-testnet',
+    icon: '1moneynetwork',
     chainId: 1212101,
     networkId: 1212101,
-    explorers: []
+    explorers: [
+      {
+        name: '1Money Network Explorer',
+        url: 'https://www.1moneynetwork.com/explorer?network=testnet',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Sharecle Mainnet',
