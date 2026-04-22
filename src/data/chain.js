@@ -23295,6 +23295,33 @@ const chainArray = [
     ]
   },
   {
+    name: 'BM Chain',
+    chain: 'BMX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'BMX', symbol: 'BMX', decimals: 18 },
+    infoURL: 'https://bm.xyz',
+    shortName: 'bmx',
+    chainId: 6800,
+    networkId: 6800,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
+    name: 'BM Chain Testnet',
+    chain: 'BMX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'BMX', symbol: 'BMX', decimals: 18 },
+    infoURL: 'https://bm.xyz',
+    shortName: 'bmx-testnet',
+    chainId: 6801,
+    networkId: 6801,
+    slip44: 1,
+    explorers: [],
+    status: 'incubating'
+  },
+  {
     name: 'RACE Mainnet',
     chain: 'ETH',
     rpc: [ 'https://racemainnet.io/' ],
@@ -24220,6 +24247,25 @@ const chainArray = [
         name: 'ADIL Mainnet Explorer',
         url: 'https://adilchain-scan.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'CarrChain Mainnet',
+    chain: 'CarrChain Mainnet',
+    rpc: [ 'https://rpc.carrchain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'CarrChain Coin', symbol: 'CARR', decimals: 18 },
+    infoURL: 'https://carrchain.io',
+    shortName: 'CarrChain-Mainnet',
+    chainId: 7667,
+    networkId: 7667,
+    icon: 'carrchain',
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://carrscan.io',
+        standard: 'none'
       }
     ]
   },
@@ -37649,7 +37695,13 @@ const chainArray = [
   {
     name: 'NV-CHAIN',
     chain: 'NVC',
-    rpc: [ 'https://rpc.neurovatic.ai/rpc' ],
+    rpc: [
+      'https://rpc.neurovatic.ai/rpc',
+      'https://rpc-eu.neurovatic.ai/rpc',
+      'https://rpc-use.neurovatic.ai/rpc',
+      'https://rpc-usw.neurovatic.ai/rpc',
+      'https://rpc-apac.neurovatic.ai/rpc'
+    ],
     faucets: [ 'https://faucet.neurovatic.ai' ],
     nativeCurrency: { name: 'NeuroVatic Coin', symbol: 'NVC', decimals: 18 },
     infoURL: 'https://neurovatic.ai',
@@ -37774,6 +37826,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'CarrChain Testnet',
+    chain: 'CarrChain Testnet',
+    rpc: [ 'https://rpc-testnet.carrchain.io' ],
+    faucets: [ 'https://faucet.carrchain.io' ],
+    nativeCurrency: { name: 'CarrChain Coin', symbol: 'CARR', decimals: 18 },
+    infoURL: 'https://carrchain.io',
+    shortName: 'CarrChain-Testnet',
+    chainId: 76672,
+    networkId: 76672,
+    icon: 'carrchain',
+    explorers: [
+      {
+        name: 'tracehawk',
+        url: 'https://testnet.carrscan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'BORAchain mainnet',
     chain: 'BORA',
     icon: 'bora',
@@ -37836,22 +37907,17 @@ const chainArray = [
     ]
   },
   {
-    name: 'Carrchain Testnet',
-    chain: 'Carrchain Testnet',
-    rpc: [ 'https://rpc-testnetcarrchain.artiffine.com' ],
-    faucets: [ 'https://faucet-testnetcarrchain.artiffine.com' ],
-    nativeCurrency: { name: 'Carrchain Coin', symbol: 'CARR', decimals: 18 },
-    infoURL: 'https://explorer-testnetcarrchain.artiffine.com',
-    shortName: 'Carrchain-Testnet',
+    name: 'CarrChain Testnet (Deprecated)',
+    chain: 'CarrChain Testnet (Deprecated)',
+    status: 'deprecated',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'CarrChain Coin', symbol: 'CARR', decimals: 18 },
+    infoURL: 'https://carrchain.io',
+    shortName: 'Carrchain-Testnet-Deprecated',
     chainId: 77652,
     networkId: 77652,
-    explorers: [
-      {
-        name: 'tracehawk',
-        url: 'https://explorer-testnetcarrchain.artiffine.com',
-        standard: 'none'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Cycle Network Mainnet Sailboat',
