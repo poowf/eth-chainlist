@@ -14314,8 +14314,10 @@ const chainArray = [
     chain: 'CRC',
     status: 'active',
     rpc: [
-      'https://cacib-saturn-test.francecentral.cloudapp.azure.com',
-      'wss://cacib-saturn-test.francecentral.cloudapp.azure.com:9443'
+      'https://rpc1.kerleano.ca-dag.work',
+      'https://rpc2.kerleano.ca-dag.work',
+      'wss://rpc1.kerleano.ca-dag.work/ws',
+      'wss://rpc2.kerleano.ca-dag.work/ws'
     ],
     faucets: [
       'https://github.com/ethereum-pocr/kerleano/blob/main/docs/faucet.md'
@@ -17837,8 +17839,10 @@ const chainArray = [
     chain: 'CRC',
     status: 'active',
     rpc: [
-      'https://pocrnet.westeurope.cloudapp.azure.com/http',
-      'wss://pocrnet.westeurope.cloudapp.azure.com/ws'
+      'https://rpc1.pocrnet.ca-dag.work',
+      'https://rpc2.pocrnet.ca-dag.work',
+      'wss://rpc1.pocrnet.ca-dag.work/ws',
+      'wss://rpc2.pocrnet.ca-dag.work/ws'
     ],
     faucets: [],
     nativeCurrency: { name: 'Climate awaReness Coin', symbol: 'CRC', decimals: 18 },
@@ -20863,6 +20867,30 @@ const chainArray = [
         url: 'https://explorer.htmlcoin.com',
         icon: 'htmlcoin',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Oxin Chain',
+    chain: 'OXIN',
+    rpc: [
+      'https://rpc.oxinchain.io',
+      'https://rpc1.oxinchain.io',
+      'https://rpc2.oxinchain.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Oxin', symbol: 'OXIN', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://oxinchain.io',
+    shortName: 'oxin',
+    chainId: 4457,
+    networkId: 4457,
+    icon: 'oxin',
+    explorers: [
+      {
+        name: 'oxinscan',
+        url: 'https://scan.oxinchain.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -45389,14 +45417,23 @@ const chainArray = [
   {
     name: 'Gensyn Testnet',
     chain: 'Gensyn',
-    rpc: [],
+    rpc: [ 'https://gensyn-testnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://www.gensyn.ai/',
-    shortName: 'gensyn-test',
+    infoURL: 'https://gensyn.network/',
+    shortName: 'gensyn-testnet',
     chainId: 685685,
     networkId: 685685,
-    status: 'incubating'
+    icon: 'gensyn-testnet',
+    explorers: [
+      {
+        name: 'Gensyn Testnet Explorer',
+        url: 'https://gensyn-testnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] },
+    status: 'active'
   },
   {
     name: 'Gensyn Mainnet',
@@ -45404,10 +45441,23 @@ const chainArray = [
     rpc: [ 'https://gensyn-mainnet.g.alchemy.com/public' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://www.gensyn.ai/',
+    infoURL: 'https://gensyn.network/',
     shortName: 'gensyn-mainnet',
     chainId: 685689,
     networkId: 685689,
+    icon: 'gensyn',
+    explorers: [
+      {
+        name: 'Gensyn Mainnet Explorer',
+        url: 'https://gensyn-mainnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://stargate.finance/bridge' } ]
+    },
     status: 'active'
   },
   {
