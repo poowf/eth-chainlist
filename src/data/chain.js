@@ -7299,6 +7299,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'DotOne Smart Chain',
+    chain: 'DOTO',
+    rpc: [ 'https://rpc.dotone.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Doto', symbol: 'DOTO', decimals: 18 },
+    infoURL: 'https://dotone.network',
+    shortName: 'doto',
+    chainId: 505,
+    networkId: 505,
+    icon: 'dotonechain',
+    explorers: [
+      {
+        name: 'DotOne Smart Chain Explorer',
+        url: 'https://explorer.dotone.network',
+        icon: 'dotonechain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Syndicate Mainnet',
     chain: 'Syndicate',
     shortName: 'syndicate',
@@ -24147,6 +24167,24 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'TokClaw Blockchain',
+    shortName: 'TokClaw',
+    chain: 'TOKCLAW',
+    chainId: 7447,
+    networkId: 7447,
+    rpc: [ 'https://rpc.tokclaw.com' ],
+    faucets: [],
+    infoURL: 'https://tokclaw.com',
+    nativeCurrency: { name: 'FEE', symbol: 'FEE', decimals: 6 },
+    explorers: [
+      {
+        name: 'TokClaw Explorer',
+        url: 'https://exp.tokclaw.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Raba Network Mainnet',
     chain: 'Raba',
     icon: 'raba',
@@ -37464,6 +37502,24 @@ const chainArray = [
       {
         name: 'thinkiumscan',
         url: 'https://chain2.thinkiumscan.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Seven Chain',
+    chain: 'SEVEN',
+    rpc: [ 'https://theseven.meme/api/seven-chain/jsonrpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Seven', symbol: 'SEVEN', decimals: 18 },
+    infoURL: 'https://theseven.meme',
+    shortName: 'seven',
+    chainId: 70007,
+    networkId: 70007,
+    explorers: [
+      {
+        name: 'Seven Chain Explorer',
+        url: 'https://theseven.meme/blockchain/explorer',
         standard: 'EIP3091'
       }
     ]
