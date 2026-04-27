@@ -16387,6 +16387,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Parallax',
+    chain: 'PARALLAX',
+    icon: 'parallax',
+    rpc: [ 'https://rpc.parallaxprotocol.org' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [ 'https://faucet.parallaxprotocol.org' ],
+    nativeCurrency: { name: 'Parallax', symbol: 'LAX', decimals: 18 },
+    infoURL: 'https://parallaxprotocol.org',
+    shortName: 'parallax',
+    chainId: 2110,
+    networkId: 2110,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.parallaxprotocol.org',
+        icon: 'parallax',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'UCHAIN Mainnet',
     chain: 'UCHAIN',
     rpc: [ 'https://rpc.uchain.link/' ],
@@ -31461,6 +31482,25 @@ const chainArray = [
     ]
   },
   {
+    name: '1Money Sidechain Mainnet',
+    chain: '1MoneySidechain',
+    rpc: [
+      'https://rpc.sidechain.mainnet.1money.network',
+      'https://rpc1.sidechain.mainnet.1money.network',
+      'https://rpc2.sidechain.mainnet.1money.network',
+      'https://rpc3.sidechain.mainnet.1money.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'FREE', symbol: 'FREE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.1moneynetwork.com',
+    shortName: '1money-sc',
+    icon: '1moneynetwork',
+    chainId: 21211,
+    networkId: 21211,
+    explorers: []
+  },
+  {
     name: 'DCpay Mainnet',
     chain: 'DCpay',
     icon: 'dcpayIcon',
@@ -43364,6 +43404,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'PlasticHero',
+    shortName: 'pth',
+    chain: 'PTH',
+    chainId: 250210,
+    networkId: 250210,
+    rpc: [ 'https://rpc.plasticherokorea.com' ],
+    faucets: [],
+    infoURL: 'https://www.plasticherocoin.com',
+    icon: 'plastichero',
+    nativeCurrency: { name: 'PlasticHero', symbol: 'PTH', decimals: 18 },
+    explorers: [
+      {
+        name: 'PlasticHero Explorer',
+        url: 'https://explorer.plasticherokorea.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'StreamChain',
     icon: 'streamchain',
     shortName: 'stc',
@@ -47091,6 +47151,25 @@ const chainArray = [
     ]
   },
   {
+    name: '1Money Sidechain Testnet',
+    chain: '1MoneySidechain',
+    rpc: [
+      'https://rpc.sidechain.testnet.1money.network',
+      'https://rpc1.sidechain.testnet.1money.network',
+      'https://rpc2.sidechain.testnet.1money.network',
+      'https://rpc3.sidechain.testnet.1money.network'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'FREE', symbol: 'FREE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.1moneynetwork.com',
+    shortName: '1money-sc-testnet',
+    icon: '1moneynetwork',
+    chainId: 1212111,
+    networkId: 1212111,
+    explorers: []
+  },
+  {
     name: 'Sharecle Mainnet',
     chain: 'SHARECLE',
     icon: 'sharecle',
@@ -49640,7 +49719,13 @@ const chainArray = [
     name: 'Meta Assets Chain',
     chain: 'MA',
     icon: 'metaassets',
-    rpc: [ 'https://rpc.ma-chain.xyz' ],
+    rpc: [
+      'https://rpc.ma-chain.xyz',
+      'https://madataseed.xyz',
+      'https://maclive.info',
+      'wss://madataseed.xyz/ws',
+      'wss://maclive.info/ws'
+    ],
     faucets: [],
     nativeCurrency: { name: 'MetaAssets', symbol: 'MA', decimals: 18 },
     infoURL: 'https://ma-chain.xyz',
@@ -52111,7 +52196,7 @@ const chainArray = [
         icon: 'sn'
       }
     ],
-    status: 'active'
+    status: 'deprecated'
   },
   {
     name: 'Harmony Mainnet Shard 0',
