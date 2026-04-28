@@ -31152,6 +31152,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'SuperAIChain Mainnet',
+    chain: 'SuperAIChain',
+    icon: 'superaichain',
+    rpc: [ 'https://rpc.superaichain.ai' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'SUP', symbol: 'SUP', decimals: 18 },
+    infoURL: 'https://superaichain.ai',
+    shortName: 'sup',
+    chainId: 19998,
+    networkId: 19998,
+    slip44: 60,
+    explorers: [
+      {
+        name: 'SuperAIChain Explorer',
+        url: 'https://scan.superaichain.ai',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Camelark Mainnet',
     chainId: 20001,
     shortName: 'Camelark',
@@ -41816,7 +41837,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'Taiko Alethia',
+    name: 'Taiko',
     chain: 'ETH',
     status: 'active',
     icon: 'taiko',
@@ -41835,11 +41856,6 @@ const chainArray = [
       {
         name: 'etherscan',
         url: 'https://taikoscan.io',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'Routescan',
-        url: 'https://taikoexplorer.com',
         standard: 'EIP3091'
       }
     ]
