@@ -9684,25 +9684,16 @@ const chainArray = [
   {
     name: 'Capital Exchange',
     chain: 'CXM',
-    rpc: [
-      'https://rpc.capitalexchange.net',
-      'https://rpc.capitalexchangecrypto.com'
-    ],
+    rpc: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Capital Exchange', symbol: 'CXM', decimals: 18 },
-    infoURL: 'https://www.capitalexchange.markets',
+    infoURL: 'https://www.capitalexchange.it',
     shortName: 'CXM',
     chainId: 890,
     networkId: 890,
-    status: 'active',
-    explorers: [
-      {
-        name: 'Capital Exchange EVM',
-        url: 'https://explorer.capitalexchange.net',
-        standard: 'EIP3091'
-      }
-    ]
+    status: 'deprecated',
+    explorers: []
   },
   {
     name: 'MAXI Chain Testnet',
@@ -11722,6 +11713,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Intuition Mainnet',
+    chain: 'TRUST',
+    icon: 'intuition',
+    rpc: [ 'https://rpc.intuition.systems' ],
+    faucets: [],
+    nativeCurrency: { name: 'TRUST', symbol: 'TRUST', decimals: 18 },
+    infoURL: 'https://intuition.systems',
+    shortName: 'intuition',
+    chainId: 1155,
+    networkId: 1155,
+    explorers: [
+      {
+        name: 'Intuition Explorer',
+        url: 'https://explorer.intuition.systems',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-8453' }
   },
   {
     name: 'Origin Testnet',
@@ -14381,6 +14392,31 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Ruby Chain Testnet',
+    title: 'Ruby Chain Testnet',
+    shortName: 'ruby-testnet',
+    chain: 'RUBY',
+    rpc: [
+      'https://rpc.ruby.testnet.finetry.win',
+      'https://rpc2.ruby.testnet.finetry.win'
+    ],
+    faucets: [ 'https://faucet.ruby.testnet.finetry.win' ],
+    nativeCurrency: { name: 'Ruby', symbol: 'RUBY', decimals: 18 },
+    infoURL: 'https://elektrum.io',
+    chainId: 1810,
+    networkId: 1810,
+    explorers: [
+      {
+        name: 'Ruby Chain Explorer',
+        url: 'https://explorer.ruby.testnet.finetry.win',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] },
+    icon: 'rubychain',
+    status: 'active'
   },
   {
     name: 'Lif3 Chain Testnet',
@@ -27599,6 +27635,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'JingleX L2',
+    chain: 'JNX',
+    icon: 'jinglex',
+    rpc: [ 'https://rpc.jinglex.net' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'JingleX', symbol: 'JNX', decimals: 18 },
+    infoURL: 'https://jinglex.net',
+    shortName: 'jnx',
+    chainId: 9922,
+    networkId: 9922,
+    slip44: 60,
+    explorers: []
+  },
+  {
     name: 'UXER TESTNET NETWORK',
     chain: 'UXER',
     rpc: [
@@ -40012,6 +40063,25 @@ const chainArray = [
       {
         name: 'Green Chain Explorer',
         url: 'https://explorer.greenchain.app',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Pepe Unchained V2',
+    chain: 'PEPU',
+    icon: 'pepu',
+    rpc: [ 'https://rpc-pepu-v2-mainnet-0.t.conduit.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'PEPU', symbol: 'PEPU', decimals: 18 },
+    infoURL: 'https://pepeunchained.com/',
+    shortName: 'pepuv2',
+    chainId: 97741,
+    networkId: 97741,
+    explorers: [
+      {
+        name: 'pepuscan',
+        url: 'https://pepuscan.com',
         standard: 'EIP3091'
       }
     ]
