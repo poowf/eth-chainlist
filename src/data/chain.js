@@ -14963,6 +14963,27 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'TurkChain',
+    chain: 'TurkChain',
+    rpc: [ 'https://rpc.turkscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'TC', symbol: 'TURK', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://turkscan.com',
+    shortName: 'turk',
+    chainId: 1919,
+    networkId: 1919,
+    icon: 'turkchain',
+    explorers: [
+      {
+        name: 'turkscan',
+        url: 'https://turkscan.com',
+        icon: 'turkchain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Swellchain',
     chain: 'ETH',
     rpc: [
@@ -19215,16 +19236,17 @@ const chainArray = [
     ]
   },
   {
-    name: 'Pepe Unchained',
+    name: 'Pepe Unchained Deprecated',
     chain: 'PEPU',
     icon: 'pepu',
     rpc: [ 'https://rpc-pepe-unchained-gupg0lo9wf.t.conduit.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'PEPU', symbol: 'PEPU', decimals: 18 },
     infoURL: 'https://pepeunchained.com/',
-    shortName: 'PEPU',
+    shortName: 'pepudeprecated',
     chainId: 3409,
     networkId: 3409,
+    status: 'deprecated',
     explorers: [
       {
         name: 'pepuscan',
@@ -19737,6 +19759,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'FAVO Mainnet',
+    chain: 'FAVO',
+    icon: 'favo',
+    rpc: [ 'https://rpc.favoscan.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'FAVO', symbol: 'FAVO', decimals: 18 },
+    infoURL: 'https://www.favoscan.com',
+    shortName: 'favo',
+    chainId: 3838,
+    networkId: 3838,
+    explorers: [
+      {
+        name: 'favoscan',
+        url: 'https://www.favoscan.com',
+        icon: 'favo',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Firechain zkEVM Ghostrider',
     title: 'Firechain zkEVM Testnet',
     chain: 'Firechain',
@@ -19902,6 +19945,25 @@ const chainArray = [
       {
         name: 'PayNetwork Mainnet Caldera Explorer',
         url: 'https://paynetwork-main.calderaexplorer.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Pione Trace Mainnet',
+    chain: 'PTC',
+    icon: 'ptc',
+    rpc: [ 'https://rpc.pionetrace.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Pione Trace', symbol: 'PTC', decimals: 18 },
+    infoURL: 'https://pionetrace.com',
+    shortName: 'ptc',
+    chainId: 3989,
+    networkId: 3989,
+    explorers: [
+      {
+        name: 'Pione Trace Explorer',
+        url: 'https://explorer.pionetrace.com',
         standard: 'EIP3091'
       }
     ]
@@ -33706,6 +33768,25 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'CoinAfrica',
+    chain: 'CoinAfrica',
+    rpc: [ 'https://rpc.coinafrica.tech' ],
+    faucets: [],
+    nativeCurrency: { name: 'COINA', symbol: 'COINA', decimals: 18 },
+    infoURL: 'https://coinafrica.tech',
+    shortName: 'coina',
+    chainId: 35147,
+    networkId: 35147,
+    explorers: [
+      {
+        name: 'CoinA-Scan',
+        url: 'https://coinascan.com',
+        standard: 'EIP3091'
+      }
+    ],
+    icon: 'coina'
   },
   {
     name: 'Q Mainnet',
