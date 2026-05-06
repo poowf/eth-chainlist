@@ -20934,6 +20934,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'ILITY Mainnet',
+    chain: 'ILY',
+    rpc: [ 'https://rpc.ility.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'ILITY', symbol: 'ILY', decimals: 18 },
+    infoURL: 'https://ility.xyz',
+    shortName: 'ily',
+    chainId: 4370,
+    networkId: 4370,
+    icon: 'ility',
+    explorers: [
+      {
+        name: 'ILITY Mainnet Explorer',
+        url: 'https://scan.ility.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Credit Smart Chain Mainnet',
     chain: 'CREDIT',
     rpc: [ 'https://rpc.creditsmartchain.com' ],
@@ -29701,6 +29720,26 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111', bridges: [] }
   },
   {
+    name: 'Intuition Testnet',
+    chain: 'TRUST',
+    icon: 'intuition',
+    rpc: [ 'https://testnet.rpc.intuition.systems' ],
+    faucets: [ 'https://intuition-testnet.hub.caldera.xyz' ],
+    nativeCurrency: { name: 'Testnet TRUST', symbol: 'tTRUST', decimals: 18 },
+    infoURL: 'https://intuition.systems',
+    shortName: 'intuition-testnet',
+    chainId: 13579,
+    networkId: 13579,
+    explorers: [
+      {
+        name: 'Intuition Testnet Explorer',
+        url: 'https://testnet.explorer.intuition.systems',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-84532' }
+  },
+  {
     name: 'Kronobit Mainnet',
     title: 'Kronobit Mainnet',
     chain: 'KNB',
@@ -36782,6 +36821,45 @@ const chainArray = [
     ]
   },
   {
+    name: 'EBLA Mainnet',
+    chain: 'EBLA',
+    icon: 'ebla',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'EBLA', symbol: 'EBLA', decimals: 18 },
+    infoURL: 'https://eblanetwork.com',
+    shortName: 'ebla',
+    chainId: 60186,
+    networkId: 60186,
+    status: 'incubating'
+  },
+  {
+    name: 'EBLA Testnet',
+    chain: 'EBLA',
+    icon: 'ebla',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'EBLA', symbol: 'EBLA', decimals: 18 },
+    infoURL: 'https://eblanetwork.com',
+    shortName: 'tebla',
+    chainId: 60187,
+    networkId: 60187,
+    status: 'incubating'
+  },
+  {
+    name: 'EBLA Devnet',
+    chain: 'EBLA',
+    icon: 'ebla',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'EBLA', symbol: 'EBLA', decimals: 18 },
+    infoURL: 'https://eblanetwork.com',
+    shortName: 'debla',
+    chainId: 60188,
+    networkId: 60188,
+    status: 'incubating'
+  },
+  {
     name: 'POTOS Testnet',
     chain: 'POTOS',
     icon: 'potos',
@@ -37642,6 +37720,25 @@ const chainArray = [
         name: 'Condrieu explorer',
         url: 'https://explorer.condrieu.ethdevops.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ILITY Testnet',
+    chain: 'ILY',
+    rpc: [ 'https://rpc.testnet.ility.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'ILITY Token', symbol: 'ILYt', decimals: 18 },
+    infoURL: 'https://ility.xyz',
+    shortName: 'ilyt',
+    chainId: 69923,
+    networkId: 69923,
+    icon: 'ility',
+    explorers: [
+      {
+        name: 'ILITY Testnet Explorer',
+        url: 'https://scan.testnet.ility.xyz',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -39541,14 +39638,25 @@ const chainArray = [
   {
     name: 'JAMIROQU.AI',
     chain: 'INSAN',
-    rpc: [],
+    icon: 'insan',
+    rpc: [
+      'https://rpc.jamiroqu.ai',
+      'https://rpc.capitalexchange.digital'
+    ],
     faucets: [],
     nativeCurrency: { name: 'INSAN', symbol: 'INSAN', decimals: 18 },
     infoURL: 'https://www.jamiroqu.ai',
     shortName: 'insan',
     chainId: 89001,
     networkId: 89001,
-    status: 'incubating'
+    status: 'active',
+    explorers: [
+      {
+        name: 'JAMIROQU.AI 89001 INSAN EVM',
+        url: 'https://explorer.jamiroqu.ai',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Pundi AIFX Omnilayer Testnet',
@@ -48754,6 +48862,17 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'MAKI Chain',
+    chain: 'MAKI',
+    rpc: [ 'https://rpc.makiai.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://makiai.app',
+    shortName: 'maki',
+    chainId: 8000008,
+    networkId: 8000008
   },
   {
     name: 'Plian Mainnet Subchain 1',
