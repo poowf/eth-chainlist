@@ -6408,7 +6408,7 @@ const chainArray = [
       bridges: [ { url: 'https://bridge.status.network' } ]
     },
     explorers: [],
-    status: 'incubating'
+    status: 'deprecated'
   },
   {
     name: 'Status Network Hoodi',
@@ -6428,7 +6428,7 @@ const chainArray = [
       bridges: [ { url: 'https://bridge.status.network' } ]
     },
     explorers: [],
-    status: 'incubating'
+    status: 'deprecated'
   },
   {
     name: 'zkXPLA Mainnet',
