@@ -14849,6 +14849,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'KWALA',
+    chain: 'KWALA',
+    icon: 'kwala',
+    rpc: [ 'https://rpc-ohio.kwala.network' ],
+    nativeCurrency: { name: 'KWALA', symbol: 'KWALA', decimals: 18 },
+    faucets: [],
+    infoURL: 'https://kwala.network',
+    shortName: 'kwala',
+    chainId: 1905,
+    networkId: 1905
+  },
+  {
+    name: 'KWALA Stagenet',
+    chain: 'KWALA',
+    icon: 'kwala',
+    rpc: [ 'https://qa-kwala-rpc-node.p2eppl.com' ],
+    nativeCurrency: { name: 'KWALA', symbol: 'KWALA', decimals: 18 },
+    faucets: [],
+    infoURL: 'https://kwala.network',
+    shortName: 'kwala-stagenet',
+    chainId: 1906,
+    networkId: 1906
+  },
+  {
     name: 'Bitcichain Mainnet',
     chain: 'BITCI',
     icon: 'bitci',
@@ -14905,6 +14929,18 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'KWALA Devnet',
+    chain: 'KWALA',
+    icon: 'kwala',
+    rpc: [ 'https://dev-kwala-rpc-node.p2eppl.com' ],
+    nativeCurrency: { name: 'KWALA', symbol: 'KWALA', decimals: 18 },
+    faucets: [],
+    infoURL: 'https://kwala.network',
+    shortName: 'kwala-devnet',
+    chainId: 1910,
+    networkId: 1910
   },
   {
     name: 'Scalind',
@@ -35312,6 +35348,27 @@ const chainArray = [
     }
   },
   {
+    name: 'Gnodi Mainnet',
+    chain: 'GNODI',
+    rpc: [ 'https://evm.rpc.gnodi.zone' ],
+    faucets: [],
+    nativeCurrency: { name: 'Gnodi', symbol: 'GNOD', decimals: 18 },
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://gnodi.info',
+    shortName: 'gnodi',
+    chainId: 46634,
+    networkId: 46634,
+    icon: 'gnodi',
+    explorers: [
+      {
+        name: 'gnodiscan',
+        url: 'https://evm.gnodiscanner.com',
+        icon: 'gnodi',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Fusion Testnet',
     chain: 'FSN',
     icon: 'fusion',
@@ -48818,6 +48875,54 @@ const chainArray = [
     chainId: 7762959,
     networkId: 7762959,
     slip44: 184
+  },
+  {
+    name: 'VALYGO Smart Contract',
+    chain: 'VYO',
+    rpc: [
+      'https://rpc-gw-1.vyoscan.com/ext/bc/2t51dXsuxUvd9teY9TKEJmgxmxMk3CRF88UYTA4HQgjeYZqzSX/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'VYO', symbol: 'VYO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://vyochain.com',
+    shortName: 'vyo',
+    chainId: 7771777,
+    networkId: 7771777,
+    icon: 'valygo',
+    explorers: [
+      {
+        name: 'VYOScan',
+        url: 'https://vyoscan.com',
+        icon: 'valygo',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-43114', bridges: [] }
+  },
+  {
+    name: 'VALYGO NFT',
+    chain: 'VYO',
+    rpc: [
+      'https://rpc-gw-1.vyoscan.com/ext/bc/2RyzsmGypNQZPby1miwMMV8spTvhgd9qd2peNRzU1mErUQqSSw/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'VYO', symbol: 'VYO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://vyochain.com',
+    shortName: 'vyonft',
+    chainId: 7773777,
+    networkId: 7773777,
+    icon: 'valygo',
+    explorers: [
+      {
+        name: 'VYOScan NFT',
+        url: 'https://nft.vyoscan.com',
+        icon: 'valygo',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-43114', bridges: [] }
   },
   {
     name: 'Zora',
