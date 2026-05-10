@@ -6915,11 +6915,11 @@ const chainArray = [
     ]
   },
   {
-    name: 'Boyaa Mainnet',
+    name: 'Boyaa',
     chain: 'BYC',
-    rpc: [ 'https://evm-rpc.mainnet.boyaa.network' ],
+    rpc: [ 'https://rpc.boyaa.network' ],
     faucets: [],
-    nativeCurrency: { name: 'Boyaa mainnet native coin', symbol: 'BYC', decimals: 18 },
+    nativeCurrency: { name: 'Boyaa native coin', symbol: 'BYC', decimals: 18 },
     infoURL: 'https://boyaa.network',
     shortName: 'BYC',
     chainId: 434,
@@ -6928,7 +6928,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Boyaa explorer',
-        url: 'https://explorer.mainnet.boyaa.network',
+        url: 'https://explorer.boyaa.network',
         standard: 'EIP3091'
       }
     ]
@@ -13873,7 +13873,7 @@ const chainArray = [
     name: 'Liquichain',
     shortName: 'Liquichain',
     chain: 'LQC',
-    rpc: [],
+    rpc: [ 'https://mainnet.liquichain.io/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'Licoin', symbol: 'LCN', decimals: 18 },
     infoURL: 'https://liquichain.io/',
@@ -21787,6 +21787,27 @@ const chainArray = [
       }
     ],
     status: 'active'
+  },
+  {
+    name: 'Danny',
+    title: 'Danny',
+    chain: 'DAN',
+    rpc: [ 'https://rpc.dannyscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Danny', symbol: 'DAN', decimals: 18 },
+    infoURL: 'https://dannychain.com',
+    shortName: 'dan',
+    chainId: 5069,
+    networkId: 5069,
+    icon: 'danny',
+    explorers: [
+      {
+        name: 'Dannyscan',
+        url: 'https://dannyscan.com',
+        icon: 'danny',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Pione Zero',
