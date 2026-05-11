@@ -21746,6 +21746,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Arc',
+    chain: 'Arc',
+    icon: 'arcnetwork',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://arc.network',
+    shortName: 'arc-mainnet',
+    chainId: 5042,
+    networkId: 5042,
+    explorers: []
+  },
+  {
     name: 'Skate Mainnet',
     chain: 'ETH',
     rpc: [ 'https://rpc.skatechain.org/' ],
@@ -25482,6 +25495,26 @@ const chainArray = [
     chainId: 8087,
     networkId: 8087,
     explorers: []
+  },
+  {
+    name: 'Helix Chain',
+    shortName: 'hlx',
+    chain: 'HLX',
+    chainId: 8088,
+    networkId: 8088,
+    rpc: [ 'https://rpc.thehelixchain.xyz' ],
+    faucets: [ 'https://faucet.thehelixchain.xyz' ],
+    infoURL: 'https://thehelixchain.xyz',
+    icon: 'helix',
+    nativeCurrency: { name: 'Helix', symbol: 'HLX', decimals: 18 },
+    explorers: [
+      {
+        name: 'Helix Chain Explorer',
+        url: 'https://explorer.thehelixchain.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'StreamuX Blockchain',
@@ -30772,7 +30805,7 @@ const chainArray = [
     explorers: [
       {
         name: 'konet-explorer',
-        url: 'https://explorer.kon-wallet.com',
+        url: 'https://konetexplorer.io',
         standard: 'EIP3091'
       }
     ]
@@ -48716,14 +48749,15 @@ const chainArray = [
     ]
   },
   {
-    name: 'The Ting Blockchain Testnet Explorer',
-    chain: 'Ting',
+    name: 'Ting Chain Testnet',
+    title: 'Ting Chain Testnet',
+    chain: 'tingchain',
     rpc: [
-      'https://testnet.tingchain.org',
-      'https://public.0xrpc.com/6666689'
+      'https://rpc-testnet.tingscan.com',
+      'wss://rpc-testnet.tingscan.com'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Ton', symbol: 'Ton', decimals: 18 },
+    nativeCurrency: { name: 'Ting', symbol: 'TING', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://tingscan.com',
     shortName: 'ting-testnet',
@@ -48732,7 +48766,7 @@ const chainArray = [
     explorers: [
       {
         name: 'TingScan',
-        url: 'https://tingscan.com',
+        url: 'https://testnet.tingscan.com',
         standard: 'EIP3091'
       }
     ]
