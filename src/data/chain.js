@@ -2892,7 +2892,8 @@ const chainArray = [
       'https://polygon-bor-rpc.publicnode.com',
       'wss://polygon-bor-rpc.publicnode.com',
       'https://polygon.gateway.tenderly.co',
-      'wss://polygon.gateway.tenderly.co'
+      'wss://polygon.gateway.tenderly.co',
+      'https://rpc.satelink.network/rpc/polygon'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
