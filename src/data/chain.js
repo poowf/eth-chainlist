@@ -12888,7 +12888,7 @@ const chainArray = [
     chain: 'Atlantis',
     rpc: [ 'https://rpc.atlantischain.network' ],
     faucets: [ 'https://faucet.atlantischain.network' ],
-    nativeCurrency: { name: 'ELY', symbol: 'ELY', decimals: 18 },
+    nativeCurrency: { name: 'PYR', symbol: 'PYR', decimals: 18 },
     infoURL: 'https://elysiumchain.tech',
     shortName: 'ATL',
     chainId: 1338,
@@ -20875,15 +20875,37 @@ const chainArray = [
   },
   {
     name: 'MegaETH Mainnet',
-    chain: 'ETH',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    rpc: [],
+    chain: 'MegaETH',
+    rpc: [
+      'https://mainnet.megaeth.com/rpc',
+      'wss://mainnet.megaeth.com/ws'
+    ],
     faucets: [],
-    explorers: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://megaeth.com',
     shortName: 'megaeth',
     chainId: 4326,
-    networkId: 4326
+    networkId: 4326,
+    icon: 'megaeth',
+    explorers: [
+      {
+        name: 'MegaETH Etherscan',
+        url: 'https://mega.etherscan.io',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'MegaETH Blockscout',
+        url: 'https://megaeth.blockscout.com',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://rabbithole.megaeth.com' } ]
+    },
+    status: 'active'
   },
   {
     name: 'Bobafuji Testnet',
@@ -23224,15 +23246,24 @@ const chainArray = [
   },
   {
     name: 'MegaETH Testnet',
-    chain: 'ETH',
-    nativeCurrency: { name: 'MegaETH Testnet Ether', symbol: 'ETH', decimals: 18 },
-    rpc: [ 'https://carrot.megaeth.com/rpc', 'wss://carrot.megaeth.com/ws' ],
-    faucets: [],
-    infoURL: 'https://testnet.megaeth.com',
-    shortName: 'megatest',
+    chain: 'MegaETH',
+    rpc: [ 'https://carrot.megaeth.com/rpc' ],
+    faucets: [ 'https://testnet.megaeth.com' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://megaeth.com',
+    shortName: 'megaeth-testnet',
     chainId: 6343,
     networkId: 6343,
-    slip44: 1
+    icon: 'megaeth',
+    explorers: [
+      {
+        name: 'MegaETH Testnet Explorer',
+        url: 'https://testnet-mega.etherscan.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' },
+    status: 'active'
   },
   {
     name: 'Digit Soul Smart Chain',
@@ -23262,6 +23293,25 @@ const chainArray = [
         url: 'https://connext-sepolia.blockscout.com',
         icon: 'connext',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'MIZUHIKI Testnet Awaji',
+    chain: 'MIZU',
+    rpc: [ 'https://rpc.awaji.mizuhiki.io' ],
+    faucets: [ 'https://faucet.awaji.mizuhiki.io' ],
+    nativeCurrency: { name: 'MIZU', symbol: 'MIZU', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mizuhiki.io/',
+    shortName: 'awaji',
+    chainId: 6497,
+    networkId: 6497,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://awaji.blockscout.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -24070,6 +24120,44 @@ const chainArray = [
     icon: 'hth',
     status: 'incubating',
     explorers: []
+  },
+  {
+    name: 'Sentrix Chain',
+    chain: 'Sentrix',
+    rpc: [ 'https://rpc.sentrixchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sentrix', symbol: 'SRX', decimals: 18 },
+    infoURL: 'https://sentrixchain.com',
+    shortName: 'srx',
+    chainId: 7119,
+    networkId: 7119,
+    icon: 'sentrix',
+    explorers: [
+      {
+        name: 'Sentrix Scan',
+        url: 'https://scan.sentrixchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Sentrix Testnet',
+    chain: 'Sentrix',
+    rpc: [ 'https://testnet-rpc.sentrixchain.com' ],
+    faucets: [ 'https://faucet.sentrixchain.com' ],
+    nativeCurrency: { name: 'Sentrix', symbol: 'SRX', decimals: 18 },
+    infoURL: 'https://sentrixchain.com',
+    shortName: 'srx-testnet',
+    chainId: 7120,
+    networkId: 7120,
+    icon: 'sentrix',
+    explorers: [
+      {
+        name: 'Sentrix Scan Testnet',
+        url: 'https://scan-testnet.sentrixchain.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Bitrock Mainnet',
@@ -26121,6 +26209,20 @@ const chainArray = [
         icon: 'blockscout',
         standard: 'EIP3091'
       }
+    ]
+  },
+  {
+    name: 'EB-Chain',
+    chain: 'EBC',
+    rpc: [ 'https://rpc.ebcscan.net' ],
+    faucets: [ 'https://ebcscan.net/faucet' ],
+    nativeCurrency: { name: 'EBC', symbol: 'EBC', decimals: 18 },
+    infoURL: 'https://ebcscan.net',
+    shortName: 'ebc',
+    chainId: 8721,
+    networkId: 8721,
+    explorers: [
+      { name: 'EBCScan', url: 'https://ebcscan.net', standard: 'none' }
     ]
   },
   {
