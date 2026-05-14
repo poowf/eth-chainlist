@@ -2893,7 +2893,8 @@ const chainArray = [
       'wss://polygon-bor-rpc.publicnode.com',
       'https://polygon.gateway.tenderly.co',
       'wss://polygon.gateway.tenderly.co',
-      'https://rpc.satelink.network/rpc/polygon'
+      'https://rpc.satelink.network/rpc/polygon',
+      'https://rpcfree.com/polygon-rpc'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -49704,6 +49705,7 @@ const chainArray = [
     rpc: [
       'https://rpc.onfachain.com',
       'https://rpc.onfachain.net',
+      'https://main.onfachain.net',
       'wss://ws.onfachain.com',
       'wss://ws.onfachain.net'
     ],
@@ -49713,6 +49715,7 @@ const chainArray = [
     shortName: 'onfachain',
     chainId: 12082025,
     networkId: 12082025,
+    icon: 'onfachain',
     explorers: [
       {
         name: 'ONFA Scan',
@@ -51022,6 +51025,24 @@ const chainArray = [
       {
         name: 'Frame Testnet Explorer',
         url: 'https://explorer.testnet.frame.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Cryptos Testnet Beta',
+    chain: 'CRYPTOS',
+    rpc: [ 'https://rpc-testnet-beta-evm.cryptos.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Cryptos', symbol: 'CRPTOS', decimals: 18 },
+    infoURL: 'https://cryptos.com',
+    shortName: 'cryptos-testnet-beta',
+    chainId: 77777777,
+    networkId: 77777777,
+    explorers: [
+      {
+        name: 'Cryptos Explorer (Testnet Beta)',
+        url: 'https://explorer-beta.cryptos.com',
         standard: 'EIP3091'
       }
     ]
@@ -53293,26 +53314,26 @@ const chainArray = [
     ]
   },
   {
-    name: 'ONFA Chain',
-    title: 'ONFA Chain',
+    name: 'ONFA Chain Testnet',
+    title: 'ONFA Chain Testnet',
     chain: 'onfa',
     rpc: [
-      'https://rpc.onfa.io',
-      'https://rpc.onfachain.com',
-      'wss://ws.onfa.io',
-      'wss://ws.onfachain.com'
+      'https://rpc-testnet.onfachain.com',
+      'https://rpc-testnet.onfachain.net',
+      'wss://ws-testnet.onfachain.com',
+      'wss://ws-testnet.onfachain.net'
     ],
     faucets: [],
-    nativeCurrency: { name: 'Onfa Coin', symbol: 'OFC', decimals: 18 },
-    infoURL: 'https://onfa.io',
-    shortName: 'onfa',
+    nativeCurrency: { name: 'ONFA Coin', symbol: 'OFCT', decimals: 18 },
+    infoURL: 'https://onfachain.com',
+    shortName: 'onfatestnet',
     chainId: 8691942025,
     networkId: 8691942025,
     icon: 'onfachain',
     explorers: [
       {
         name: 'ONFA Scan',
-        url: 'https://onfascan.com',
+        url: 'https://onfascan.io',
         icon: 'onfachain',
         standard: 'EIP3091'
       }
