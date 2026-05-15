@@ -765,24 +765,23 @@ const chainArray = [
     ]
   },
   {
-    name: 'Xpla Mainnet',
-    chain: 'XPLA',
+    name: 'CONX Chain',
+    chain: 'CONX',
     rpc: [ 'https://dimension-evm-rpc.xpla.dev' ],
     faucets: [],
     nativeCurrency: { name: 'XPLA', symbol: 'XPLA', decimals: 18 },
-    infoURL: 'https://xpla.io',
-    shortName: 'xpla',
+    infoURL: 'https://conx.xyz',
+    shortName: 'conx',
     chainId: 37,
     networkId: 37,
-    icon: 'xpla',
+    icon: 'conx',
     explorers: [
       {
-        name: 'XPLA Explorer',
-        url: 'https://explorer.xpla.io/mainnet',
+        name: 'CONX Explorer',
+        url: 'https://explorer.conx.xyz/mainnet',
         standard: 'EIP3091'
       }
-    ],
-    redFlags: [ 'reusedChainId' ]
+    ]
   },
   {
     name: 'Valorbit',
@@ -26121,6 +26120,24 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'MYRX-MAINNET',
+    chain: 'MYRX',
+    rpc: [ 'https://rpc.myrxwallet.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'MyRx Token', symbol: 'MRT', decimals: 18 },
+    infoURL: 'https://myrxwallet.io',
+    shortName: 'myrx',
+    chainId: 8472,
+    networkId: 8472,
+    explorers: [
+      {
+        name: 'MyRx Explorer',
+        url: 'https://explorer.myrxwallet.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Chakra Testnet',
     chain: 'Chakra Testnet',
     rpc: [ 'https://rpcv1-dn-1.chakrachain.io/' ],
@@ -39851,27 +39868,17 @@ const chainArray = [
     ]
   },
   {
-    name: 'JAMIROQU.AI',
+    name: 'INSAN',
     chain: 'INSAN',
-    icon: 'insan',
-    rpc: [
-      'https://rpc.jamiroqu.ai',
-      'https://rpc.capitalexchange.digital'
-    ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'INSAN', symbol: 'INSAN', decimals: 18 },
-    infoURL: 'https://www.jamiroqu.ai',
+    infoURL: '',
     shortName: 'insan',
     chainId: 89001,
     networkId: 89001,
-    status: 'active',
-    explorers: [
-      {
-        name: 'JAMIROQU.AI 89001 INSAN EVM',
-        url: 'https://explorer.jamiroqu.ai',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: [],
+    status: 'deprecated'
   },
   {
     name: 'Pundi AIFX Omnilayer Testnet',
