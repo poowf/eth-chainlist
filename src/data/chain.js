@@ -6220,6 +6220,25 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Capital Exchange SE',
+    chain: 'BOURSE',
+    rpc: [ 'https://rpc.capitalexchange.digital' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Bourse', symbol: 'BOURSE', decimals: 18 },
+    infoURL: 'https://www.capitalexchange.markets',
+    shortName: 'bourse',
+    chainId: 343,
+    networkId: 343,
+    explorers: [
+      {
+        name: 'Capital Exchange Markets | Digital',
+        url: 'https://explorer.capitalexchange.se',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'TSC Mainnet',
     chain: 'Trust Smart Chain',
     rpc: [ 'https://rpc01.trias.one' ],
@@ -9683,13 +9702,12 @@ const chainArray = [
     ]
   },
   {
-    name: 'Capital Exchange',
+    name: 'CXM',
     chain: 'CXM',
     rpc: [],
-    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'Capital Exchange', symbol: 'CXM', decimals: 18 },
-    infoURL: 'https://www.capitalexchange.it',
+    nativeCurrency: { name: 'CXM', symbol: 'CXM', decimals: 18 },
+    infoURL: '',
     shortName: 'CXM',
     chainId: 890,
     networkId: 890,
@@ -48823,7 +48841,7 @@ const chainArray = [
     name: 'Safe(AnWang) Mainnet',
     chain: 'Safe(AnWang)',
     icon: 'safe-anwang',
-    rpc: [ 'https://rpc.anwang.com' ],
+    rpc: [ 'https://safe4.anwang.com/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'SAFE(AnWang)', symbol: 'SAFE', decimals: 18 },
     infoURL: 'https://www.anwang.com',
@@ -48833,7 +48851,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Safe(AnWang) Explorer',
-        url: 'http://safe4.anwang.com',
+        url: 'https://safe4.anwang.com',
         icon: 'safe-anwang',
         standard: 'EIP3091'
       }
@@ -48843,7 +48861,7 @@ const chainArray = [
     name: 'Safe(AnWang) Testnet',
     chain: 'Safe(AnWang)',
     icon: 'safe-anwang',
-    rpc: [ 'https://rpc-testnet.anwang.com' ],
+    rpc: [ 'https://safe4testnet.anwang.com/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'SAFE(AnWang)', symbol: 'SAFE', decimals: 18 },
     infoURL: 'https://www.anwang.com',
@@ -48853,7 +48871,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Safe(AnWang) Testnet Explorer',
-        url: 'http://safe4-testnet.anwang.com',
+        url: 'https://safe4testnet.anwang.com',
         icon: 'safe-anwang',
         standard: 'EIP3091'
       }
