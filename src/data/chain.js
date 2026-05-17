@@ -18446,6 +18446,24 @@ const chainArray = [
     }
   },
   {
+    name: 'Candy Chain',
+    chain: 'CANDY',
+    rpc: [ 'https://publicrpc.candychain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'CANDY', symbol: 'CANDY', decimals: 18 },
+    infoURL: 'https://candychain.io',
+    shortName: 'candy',
+    chainId: 2828,
+    networkId: 2828,
+    explorers: [
+      {
+        name: 'Candy Chain Explorer',
+        url: 'https://explorer.candychain.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'HyperAGI Mainnet',
     chain: 'HyperAGI',
     icon: 'hyperagi',
@@ -26138,18 +26156,19 @@ const chainArray = [
     status: 'active'
   },
   {
-    name: 'MYRX-MAINNET',
+    name: 'MyrxWallet Network',
     chain: 'MYRX',
     rpc: [ 'https://rpc.myrxwallet.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
-    nativeCurrency: { name: 'MyRx Token', symbol: 'MRT', decimals: 18 },
+    nativeCurrency: { name: 'MRT', symbol: 'MRT', decimals: 18 },
     infoURL: 'https://myrxwallet.io',
     shortName: 'myrx',
     chainId: 8472,
     networkId: 8472,
     explorers: [
       {
-        name: 'MyRx Explorer',
+        name: 'MyrxWallet Explorer',
         url: 'https://explorer.myrxwallet.io',
         standard: 'EIP3091'
       }
@@ -37954,22 +37973,26 @@ const chainArray = [
     ]
   },
   {
-    name: 'Condrieu',
-    title: 'Ethereum Verkle Testnet Condrieu',
-    chain: 'ETH',
-    rpc: [ 'https://rpc.condrieu.ethdevops.io:8545' ],
-    faucets: [ 'https://faucet.condrieu.ethdevops.io' ],
-    nativeCurrency: { name: 'Condrieu Testnet Ether', symbol: 'CTE', decimals: 18 },
-    infoURL: 'https://condrieu.ethdevops.io',
-    shortName: 'cndr',
+    name: 'CHEESE Blockchain',
+    chain: 'CHEESE',
+    rpc: [
+      'https://cheesescan.com/rpc',
+      'https://rpc1.cheesescan.com',
+      'https://rpc2.cheesescan.com'
+    ],
+    faucets: [ 'https://cheesescan.com/faucet' ],
+    nativeCurrency: { name: 'CHEESE', symbol: 'CHEESE', decimals: 18 },
+    infoURL: 'https://cheesescan.com',
+    shortName: 'cheese',
     chainId: 69420,
     networkId: 69420,
-    slip44: 1,
+    redFlags: [ 'reusedChainId' ],
+    status: 'incubating',
     explorers: [
       {
-        name: 'Condrieu explorer',
-        url: 'https://explorer.condrieu.ethdevops.io',
-        standard: 'none'
+        name: 'CHEESE Explorer',
+        url: 'https://cheesescan.com',
+        standard: 'EIP3091'
       }
     ]
   },
