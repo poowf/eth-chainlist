@@ -12227,6 +12227,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'BrainArk',
+    chain: 'BAK',
+    icon: 'brainark',
+    rpc: [ 'https://rpc.brainark.online' ],
+    faucets: [],
+    nativeCurrency: { name: 'BrainArk', symbol: 'BAK', decimals: 18 },
+    infoURL: 'https://brainark.online',
+    shortName: 'bak',
+    chainId: 1236,
+    networkId: 1236,
+    explorers: []
+  },
+  {
     name: 'ARC Mainnet',
     chain: 'ARC',
     icon: 'arc',
@@ -18925,6 +18938,24 @@ const chainArray = [
     networkId: 3141,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'XO Market',
+    chain: 'XO',
+    rpc: [ 'https://rpc-mainnet-2.xo.market/' ],
+    faucets: [],
+    nativeCurrency: { name: 'XO', symbol: 'XO', decimals: 18 },
+    infoURL: 'https://xo.market',
+    shortName: 'xo',
+    chainId: 3223,
+    networkId: 3223,
+    explorers: [
+      {
+        name: 'XO Market Explorer',
+        url: 'https://explorer-mainnet.xo.market',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'C9XChain',
@@ -26269,6 +26300,7 @@ const chainArray = [
   {
     name: 'EB-Chain',
     chain: 'EBC',
+    icon: 'ebc',
     rpc: [ 'https://rpc.ebcscan.net' ],
     faucets: [ 'https://ebcscan.net/faucet' ],
     nativeCurrency: { name: 'EBC', symbol: 'EBC', decimals: 18 },
@@ -31703,6 +31735,27 @@ const chainArray = [
     networkId: 20143,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'MACos Chain',
+    chain: 'MACOS',
+    icon: 'macos',
+    rpc: [ 'https://rpc1.codeupp.xyz' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'MACos Coin', symbol: 'MCOS', decimals: 18 },
+    infoURL: 'https://macosscan.codeupp.xyz',
+    shortName: 'macos',
+    chainId: 20261,
+    networkId: 20261,
+    explorers: [
+      {
+        name: 'MACos Explorer',
+        url: 'https://macosscan.codeupp.xyz',
+        icon: 'macos',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'XUSD ONE StableChain Mainnet',
