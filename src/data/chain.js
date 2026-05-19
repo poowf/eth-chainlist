@@ -10131,6 +10131,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'ZIGChain',
+    chain: 'ZIG',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZIG', symbol: 'ZIG', decimals: 18 },
+    infoURL: 'https://zigchain.com/',
+    shortName: 'zigchain',
+    chainId: 944,
+    networkId: 944,
+    status: 'incubating'
+  },
+  {
     name: 'Subtensor EVM Testnet',
     chain: 'Bittensor',
     rpc: [ 'https://test.chain.opentensor.ai' ],
@@ -16366,6 +16378,18 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'ZIGChain Testnet',
+    chain: 'ZIG',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZIG', symbol: 'ZIG', decimals: 18 },
+    infoURL: 'https://zigchain.com/',
+    shortName: 'zigchain-testnet',
+    chainId: 2061,
+    networkId: 2061,
+    status: 'incubating'
   },
   {
     name: 'MFX Network',
@@ -26187,19 +26211,18 @@ const chainArray = [
     status: 'active'
   },
   {
-    name: 'MyrxWallet Network',
-    chain: 'MYRX',
-    rpc: [ 'https://rpc.myrxwallet.io' ],
-    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    name: 'MyRx Network',
+    chain: 'MRT',
+    rpc: [ 'https://rpc.myrxwallet.io', 'wss://rpc.myrxwallet.io' ],
     faucets: [],
-    nativeCurrency: { name: 'MRT', symbol: 'MRT', decimals: 18 },
+    nativeCurrency: { name: 'MyRx Token', symbol: 'MRT', decimals: 18 },
     infoURL: 'https://myrxwallet.io',
-    shortName: 'myrx',
+    shortName: 'mrt',
     chainId: 8472,
     networkId: 8472,
     explorers: [
       {
-        name: 'MyrxWallet Explorer',
+        name: 'MyRx Explorer',
         url: 'https://explorer.myrxwallet.io',
         standard: 'EIP3091'
       }
@@ -28001,14 +28024,20 @@ const chainArray = [
     icon: 'jinglex',
     rpc: [ 'https://rpc.jinglex.net' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    faucets: [],
+    faucets: [ 'https://jinglex.net/faucet' ],
     nativeCurrency: { name: 'JingleX', symbol: 'JNX', decimals: 18 },
     infoURL: 'https://jinglex.net',
     shortName: 'jnx',
     chainId: 9922,
     networkId: 9922,
     slip44: 60,
-    explorers: []
+    explorers: [
+      {
+        name: 'JingleX Explorer',
+        url: 'https://jinglex.net/explorer',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'UXER TESTNET NETWORK',
