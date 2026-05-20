@@ -11766,6 +11766,26 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-8453' }
   },
   {
+    name: 'ClubMOS Testnet',
+    chain: 'tCMX',
+    rpc: [ 'https://rpc-testnet.mosscan.com' ],
+    faucets: [ 'https://faucet.clubmos.com' ],
+    nativeCurrency: { name: 'ClubMOS', symbol: 'tCMX', decimals: 18 },
+    infoURL: 'https://www.clubmos.com',
+    shortName: 'tCMX',
+    chainId: 1166,
+    networkId: 1166,
+    icon: 'mos',
+    explorers: [
+      {
+        name: 'mosscan',
+        url: 'https://testnet.mosscan.com',
+        icon: 'mosscan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Origin Testnet',
     chain: 'Origin',
     rpc: [ 'https://json-rpc.origin.uptick.network' ],
@@ -17083,6 +17103,26 @@ const chainArray = [
         name: 'Subscan',
         url: 'https://krest.subscan.io',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'ClubMOS',
+    chain: 'CMX',
+    rpc: [ 'https://rpc.mosscan.com' ],
+    faucets: [ 'https://faucet.clubmos.com' ],
+    nativeCurrency: { name: 'ClubMOS', symbol: 'CMX', decimals: 18 },
+    infoURL: 'https://www.clubmos.com',
+    shortName: 'CMX',
+    chainId: 2255,
+    networkId: 2255,
+    icon: 'mos',
+    explorers: [
+      {
+        name: 'mosscan',
+        url: 'https://mosscan.com',
+        icon: 'mosscan',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -26175,7 +26215,8 @@ const chainArray = [
       'https://base.gateway.tenderly.co',
       'wss://base.gateway.tenderly.co',
       'https://base-rpc.publicnode.com',
-      'wss://base-rpc.publicnode.com'
+      'wss://base-rpc.publicnode.com',
+      'https://rpcfree.com/base-rpc'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -30715,19 +30756,24 @@ const chainArray = [
     explorers: []
   },
   {
-    name: '0G-Testnet-Galileo',
-    chain: '0G-Testnet',
+    name: '0G Galileo Testnet',
+    chain: '0G',
     rpc: [ 'https://evmrpc-testnet.0g.ai' ],
-    faucets: [ 'https://faucet.0g.ai' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [
+      'https://faucet.0g.ai',
+      'https://cloud.google.com/application/web3/faucet/0g/galileo'
+    ],
     nativeCurrency: { name: '0G', symbol: '0G', decimals: 18 },
     infoURL: 'https://0g.ai',
-    shortName: '0g-testnet-galileo',
+    shortName: '0g-galileo-testnet',
     chainId: 16602,
     networkId: 16602,
+    slip44: 1,
     icon: '0g',
     explorers: [
       {
-        name: '0G BlockChain Explorer',
+        name: '0G Chainscan',
         url: 'https://chainscan-galileo.0g.ai',
         standard: 'EIP3091'
       }
@@ -30737,6 +30783,7 @@ const chainArray = [
     name: '0G Mainnet',
     chain: '0G',
     rpc: [ 'https://evmrpc.0g.ai' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: '0G', symbol: '0G', decimals: 18 },
     infoURL: 'https://0g.ai',
@@ -30746,7 +30793,7 @@ const chainArray = [
     icon: '0g',
     explorers: [
       {
-        name: '0G BlockChain Explorer',
+        name: '0G Chainscan',
         url: 'https://chainscan.0g.ai',
         standard: 'EIP3091'
       }
@@ -34663,7 +34710,8 @@ const chainArray = [
       'https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}',
       'https://arb1.arbitrum.io/rpc',
       'https://arbitrum-one-rpc.publicnode.com',
-      'wss://arbitrum-one-rpc.publicnode.com'
+      'wss://arbitrum-one-rpc.publicnode.com',
+      'https://rpcfree.com/arbitrum-rpc'
     ],
     faucets: [],
     explorers: [
