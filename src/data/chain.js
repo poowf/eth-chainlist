@@ -6552,6 +6552,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'LunaroChain Mainnet',
+    chain: 'LNR',
+    rpc: [ 'https://rpc.lunaro.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lunaro', symbol: 'LNR', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://lunaro.network',
+    shortName: 'lnr',
+    chainId: 389,
+    networkId: 389,
+    icon: 'lunaro',
+    explorers: [
+      {
+        name: 'LunaroScan',
+        url: 'https://scan.lunaro.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'CamDL Testnet',
     chain: 'CADL',
     rpc: [ 'https://rpc1.testnet.camdl.gov.kh/' ],
@@ -42271,6 +42291,26 @@ const chainArray = [
       chain: 'eip155-11155111',
       bridges: [ { url: 'https://sepolia-op-bridge.form.network' } ]
     }
+  },
+  {
+    name: 'BEXChain',
+    chain: 'BEX',
+    rpc: [ 'https://rpc.bexchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'BEX', symbol: 'BEX', decimals: 18 },
+    infoURL: 'https://bexchain.com',
+    shortName: 'bexchain',
+    chainId: 140586,
+    networkId: 140586,
+    slip44: 60,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    explorers: [
+      {
+        name: 'BEXChain Scan',
+        url: 'https://scan.bexchain.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MagApe Testnet',
