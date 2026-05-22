@@ -4762,6 +4762,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'AEREDIUM',
+    chain: 'AER',
+    rpc: [ 'https://rpc.aeredium.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'AER', symbol: 'AER', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://aeredium.io',
+    shortName: 'aer',
+    chainId: 237,
+    networkId: 237,
+    icon: 'aeredium',
+    explorers: [
+      {
+        name: 'AEREDIUM Explorer',
+        url: 'https://explorer.aeredium.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Blast Mainnet',
     chain: 'ETH',
     icon: 'blastIcon',
@@ -33620,8 +33640,8 @@ const chainArray = [
     rpc: [
       'https://rpc_evm-mezo.imperator.co',
       'wss://ws_evm-mezo.imperator.co',
-      'https://rpc-http.mezo.boar.network',
-      'wss://rpc-ws.mezo.boar.network',
+      'https://mezo-mainnet.boar.network',
+      'wss://mezo-mainnet.boar.network',
       'https://mainnet.mezo.public.validationcloud.io',
       'wss://mainnet.mezo.public.validationcloud.io',
       'https://rpc-internal.mezo.org',
@@ -42310,7 +42330,8 @@ const chainArray = [
         url: 'https://scan.bexchain.com',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    icon: 'bexchain'
   },
   {
     name: 'MagApe Testnet',
