@@ -7559,6 +7559,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nome Progetto Privato',
+    chain: 'BESU',
+    icon: 'ethereum',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'YourToken', symbol: 'YTK', decimals: 18 },
+    infoURL: 'https://www.tuosito.it',
+    shortName: 'besu-priv-540',
+    chainId: 540,
+    networkId: 540,
+    explorers: []
+  },
+  {
     name: 'PAWCHAIN Testnet',
     chain: 'PAW',
     rpc: [ 'https://pawchainx.com/' ],
@@ -32028,19 +32041,19 @@ const chainArray = [
     ]
   },
   {
-    name: 'All About Healthy',
+    name: 'All About Health',
     chain: 'AAH',
-    rpc: [ 'https://rpc.c4ex.net' ],
-    faucets: [ 'https://t.me/c4eiAirdrop' ],
+    rpc: [ 'https://rpc.aah.name' ],
+    faucets: [ 'https://aah.name' ],
     nativeCurrency: { name: 'AAH', symbol: 'AAH', decimals: 18 },
-    infoURL: 'https://c4ex.net',
+    infoURL: 'https://aah.name',
     shortName: 'aah',
     chainId: 21133,
     networkId: 21133,
     explorers: [
       {
         name: 'AAH Blockscout',
-        url: 'https://exp.c4ex.net',
+        url: 'https://exp.aah.name',
         icon: 'aah',
         standard: 'EIP3091'
       }
@@ -40179,6 +40192,26 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://camp-testnet-bridge.vercel.app/' } ]
     }
+  },
+  {
+    name: 'QuantumBit',
+    chain: 'QB',
+    rpc: [ 'https://quantumbit.foo/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'QuantumBit', symbol: 'QB', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://quantumbit.foo',
+    shortName: 'qb',
+    chainId: 90909,
+    networkId: 90909,
+    icon: 'quantumbit',
+    explorers: [
+      {
+        name: 'QuantumBit Explorer',
+        url: 'https://quantumbit.foo',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Nautilus Trition Chain',
