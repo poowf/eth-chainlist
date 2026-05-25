@@ -29952,6 +29952,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'RANNTA X-Chain',
+    chain: 'RANNTA',
+    icon: 'rannta',
+    rpc: [ 'https://rpc.rannta.com/api/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'RANNTA Core X', symbol: 'RNTX', decimals: 13 },
+    infoURL: 'https://rannta.com',
+    shortName: 'rntx',
+    chainId: 13113,
+    networkId: 13113,
+    explorers: [
+      {
+        name: 'RANNTA X-Chain Explorer',
+        url: 'https://explorer.rannta.com',
+        icon: 'rannta',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Credit Smart Chain',
     chain: 'CREDIT',
     rpc: [ 'https://rpc.creditsmartchain.com' ],
@@ -49308,10 +49328,11 @@ const chainArray = [
     slip44: 184
   },
   {
-    name: 'VALYGO Smart Contract',
+    name: 'VALYGO Smartchain',
     chain: 'VYO',
     rpc: [
-      'https://rpc-gw-1.vyoscan.com/ext/bc/2t51dXsuxUvd9teY9TKEJmgxmxMk3CRF88UYTA4HQgjeYZqzSX/rpc'
+      'https://rpc-gw-1.vyoscan.com/ext/bc/2t51dXsuxUvd9teY9TKEJmgxmxMk3CRF88UYTA4HQgjeYZqzSX/rpc',
+      'https://rpc-gw-2.vyoscan.com/ext/bc/2t51dXsuxUvd9teY9TKEJmgxmxMk3CRF88UYTA4HQgjeYZqzSX/rpc'
     ],
     faucets: [],
     nativeCurrency: { name: 'VYO', symbol: 'VYO', decimals: 18 },
@@ -49335,7 +49356,8 @@ const chainArray = [
     name: 'VALYGO NFT',
     chain: 'VYO',
     rpc: [
-      'https://rpc-gw-1.vyoscan.com/ext/bc/2RyzsmGypNQZPby1miwMMV8spTvhgd9qd2peNRzU1mErUQqSSw/rpc'
+      'https://rpc-gw-1.vyoscan.com/ext/bc/2RyzsmGypNQZPby1miwMMV8spTvhgd9qd2peNRzU1mErUQqSSw/rpc',
+      'https://rpc-gw-2.vyoscan.com/ext/bc/2RyzsmGypNQZPby1miwMMV8spTvhgd9qd2peNRzU1mErUQqSSw/rpc'
     ],
     faucets: [],
     nativeCurrency: { name: 'VYO', symbol: 'VYO', decimals: 18 },
