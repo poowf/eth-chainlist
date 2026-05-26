@@ -6250,10 +6250,12 @@ const chainArray = [
     shortName: 'bourse',
     chainId: 343,
     networkId: 343,
+    icon: 'bourse',
     explorers: [
       {
         name: 'Capital Exchange Markets | Digital',
         url: 'https://explorer.capitalexchange.se',
+        icon: 'bourse',
         standard: 'none'
       }
     ]
@@ -29955,9 +29957,9 @@ const chainArray = [
     name: 'RANNTA X-Chain',
     chain: 'RANNTA',
     icon: 'rannta',
-    rpc: [ 'https://rpc.rannta.com/api/rpc' ],
+    rpc: [ 'https://rpc.rannta.com' ],
     faucets: [],
-    nativeCurrency: { name: 'RANNTA Core X', symbol: 'RNTX', decimals: 13 },
+    nativeCurrency: { name: 'RANNTA Core X', symbol: 'RNTX', decimals: 18 },
     infoURL: 'https://rannta.com',
     shortName: 'rntx',
     chainId: 13113,
@@ -44289,6 +44291,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'MPCQ Mainnet',
+    chain: 'MPCQ',
+    rpc: [ 'https://rpc.moneypoolscash.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'MPCQ', symbol: 'MPCQ', decimals: 18 },
+    infoURL: 'https://moneypoolscash.com',
+    shortName: 'mpcq',
+    chainId: 262144,
+    networkId: 262144
+  },
+  {
     name: 'Eclat Testnet',
     chain: 'Eclat',
     icon: 'eclat',
@@ -45156,6 +45169,25 @@ const chainArray = [
       {
         name: 'Tipboxcoin',
         url: 'https://tipboxcoin.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'PLN Network',
+    chain: 'PLN',
+    icon: 'pln',
+    rpc: [ 'https://oneagent.uk/rpc' ],
+    faucets: [ 'https://oneagent.uk' ],
+    nativeCurrency: { name: 'PLN', symbol: 'PLN', decimals: 18 },
+    infoURL: 'https://oneagent.uk',
+    shortName: 'pln',
+    chainId: 411994,
+    networkId: 411994,
+    explorers: [
+      {
+        name: 'PLNScan',
+        url: 'https://plnscan.com',
         standard: 'EIP3091'
       }
     ]
