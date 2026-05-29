@@ -7561,14 +7561,14 @@ const chainArray = [
     ]
   },
   {
-    name: 'Nome Progetto Privato',
+    name: 'Pontes-Appia DLT',
     chain: 'BESU',
     icon: 'ethereum',
     rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'YourToken', symbol: 'YTK', decimals: 18 },
+    nativeCurrency: { name: 'AppiaToken', symbol: 'ATK', decimals: 18 },
     infoURL: 'https://www.tuosito.it',
-    shortName: 'besu-priv-540',
+    shortName: 'appia-540',
     chainId: 540,
     networkId: 540,
     explorers: []
@@ -42240,6 +42240,26 @@ const chainArray = [
       {
         name: 'mitosis testnet explorer',
         url: 'https://testnet.mitosiscan.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Gravity',
+    chain: 'Gravity',
+    icon: 'gravity',
+    rpc: [ 'https://mainnet-rpc.gravity.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Gravity', symbol: 'G', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://gravity.xyz',
+    shortName: 'grav',
+    chainId: 127001,
+    networkId: 127001,
+    explorers: [
+      {
+        name: 'Gravity Mainnet Explorer',
+        url: 'https://mainnet-explorer.gravity.xyz',
         standard: 'EIP3091'
       }
     ]
