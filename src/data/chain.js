@@ -2333,11 +2333,7 @@ const chainArray = [
     name: 'Shibarium',
     chain: 'Shibarium',
     icon: 'shibarium',
-    rpc: [
-      'https://www.shibrpc.com',
-      'https://rpc.shibrpc.com',
-      'https://shib.nownodes.io'
-    ],
+    rpc: [ 'https://rpc.shibrpc.com', 'https://shib.nownodes.io' ],
     faucets: [],
     nativeCurrency: { name: 'BONE Shibarium', symbol: 'BONE', decimals: 18 },
     infoURL: 'https://shibariumecosystem.com',
@@ -10891,6 +10887,31 @@ const chainArray = [
     shortName: 'new',
     chainId: 1012,
     networkId: 1012
+  },
+  {
+    name: 'MAI Chain Mainnet',
+    chain: 'MAI',
+    rpc: [
+      'https://mainnet-node-0.maichain.org',
+      'https://mainnet-node-1.maichain.org',
+      'https://mainnet-node-2.maichain.org'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'MAI Chain Native Token', symbol: 'MAI', decimals: 18 },
+    features: [ { name: 'EIP1559' } ],
+    infoURL: '',
+    shortName: 'mai',
+    chainId: 1019,
+    networkId: 1019,
+    icon: 'mai',
+    explorers: [
+      {
+        name: 'maiscan',
+        url: 'https://maiscan.org',
+        icon: 'mai',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Sakura',
@@ -25049,29 +25070,26 @@ const chainArray = [
     ]
   },
   {
-    name: 'Rise of the Warbots Testnet',
-    chain: 'nmactest',
-    rpc: [
-      'https://testnet1.riseofthewarbots.com',
-      'https://testnet2.riseofthewarbots.com',
-      'https://testnet3.riseofthewarbots.com',
-      'https://testnet4.riseofthewarbots.com',
-      'https://testnet5.riseofthewarbots.com'
-    ],
+    name: 'TTL Coin',
+    chain: 'TTL',
+    icon: 'ttl',
+    rpc: [ 'https://rpc.ttl1.top' ],
     faucets: [],
-    nativeCurrency: { name: 'Nano Machines', symbol: 'NMAC', decimals: 18 },
-    infoURL: 'https://riseofthewarbots.com/',
-    shortName: 'RiseOfTheWarbotsTestnet',
+    nativeCurrency: { name: 'TTL Coin', symbol: 'TTL', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://github.com/okneo31/ttlcoin',
+    shortName: 'ttl',
     chainId: 7777,
     networkId: 7777,
-    slip44: 1,
     explorers: [
       {
-        name: 'avascan',
-        url: 'https://testnet.avascan.info/blockchain/2mZ9doojfwHzXN3VXDQELKnKyZYxv7833U8Yq5eTfFx3hxJtiy',
+        name: 'TTL Scan',
+        url: 'https://scan.ttl1.top',
         standard: 'none'
       }
-    ]
+    ],
+    redFlags: [ 'reusedChainId' ],
+    status: 'active'
   },
   {
     name: 'Orenium Mainnet Protocol',
@@ -36062,6 +36080,25 @@ const chainArray = [
     chainId: 50001,
     networkId: 50001,
     explorers: []
+  },
+  {
+    name: 'Mantle Hoodi Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.hoodi.mantle.xyz' ],
+    faucets: [ 'https://faucet.mantle.xyz' ],
+    nativeCurrency: { name: 'Hoodi Mantle', symbol: 'MNT', decimals: 18 },
+    infoURL: 'https://mantle.xyz',
+    shortName: 'mnt-hoodi',
+    chainId: 50002,
+    networkId: 50002,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.hoodi.mantle.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Yooldo Verse Mainnet',
@@ -50299,6 +50336,20 @@ const chainArray = [
     networkId: 18289463
   },
   {
+    name: 'Crynux on Base',
+    chain: 'ETH',
+    rpc: [ 'https://json-rpc.base.crynux.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Crynux', symbol: 'CNX', decimals: 18 },
+    infoURL: 'https://crynux.io',
+    shortName: 'crynux-base',
+    chainId: 18896214,
+    networkId: 18896214,
+    icon: 'crynux',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-8453' }
+  },
+  {
     name: 'DeepBrainChain Testnet',
     chain: 'DeepBrainChain',
     rpc: [ 'https://rpc-testnet.dbcwallet.io' ],
@@ -51771,6 +51822,20 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'Crynux on Base Sepolia',
+    chain: 'ETH',
+    rpc: [ 'https://json-rpc.base-sepolia.crynux.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Crynux', symbol: 'CNX', decimals: 18 },
+    infoURL: 'https://crynux.io',
+    shortName: 'crynux-base-sepolia',
+    chainId: 188962142,
+    networkId: 188962142,
+    icon: 'crynux',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-84532' }
   },
   {
     name: 'Gather Mainnet Network',
