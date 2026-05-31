@@ -6236,20 +6236,20 @@ const chainArray = [
     status: 'incubating'
   },
   {
-    name: 'Capital Exchange SE',
+    name: 'Capital Exchange',
     chain: 'BOURSE',
     rpc: [ 'https://rpc.capitalexchange.digital' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Bourse', symbol: 'BOURSE', decimals: 18 },
-    infoURL: 'https://www.capitalexchange.markets',
+    infoURL: 'https://www.capitalexchange.com',
     shortName: 'bourse',
     chainId: 343,
     networkId: 343,
     icon: 'bourse',
     explorers: [
       {
-        name: 'Capital Exchange Markets | Digital',
+        name: 'Capital Exchange | Digital',
         url: 'https://explorer.capitalexchange.se',
         icon: 'bourse',
         standard: 'none'
