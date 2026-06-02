@@ -6238,7 +6238,10 @@ const chainArray = [
   {
     name: 'Capital Exchange',
     chain: 'BOURSE',
-    rpc: [ 'https://rpc.capitalexchange.digital' ],
+    rpc: [
+      'https://rpc.capitalexchange.com',
+      'https://rpc.capitalexchange.digital'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Bourse', symbol: 'BOURSE', decimals: 18 },
@@ -6250,7 +6253,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Capital Exchange | Digital',
-        url: 'https://explorer.capitalexchange.se',
+        url: 'https://explorer.capitalexchange.com',
         icon: 'bourse',
         standard: 'none'
       }
@@ -7819,6 +7822,25 @@ const chainArray = [
       bridges: [ { url: 'https://bridge.metis.io' } ]
     },
     status: 'deprecated'
+  },
+  {
+    name: 'LadyChain',
+    chain: 'LADY',
+    icon: 'lady',
+    rpc: [ 'https://ladyrpc.us/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Lady', symbol: 'LADY', decimals: 18 },
+    infoURL: 'https://ladyswap.us',
+    shortName: 'lady',
+    chainId: 589,
+    networkId: 589,
+    explorers: [
+      {
+        name: 'LadyScan',
+        url: 'https://ladyscan.us',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Astar',
@@ -26289,7 +26311,8 @@ const chainArray = [
       'wss://base.gateway.tenderly.co',
       'https://base-rpc.publicnode.com',
       'wss://base-rpc.publicnode.com',
-      'https://rpcfree.com/base-rpc'
+      'https://rpcfree.com/base-rpc',
+      'https://rpc.baseazul.dev'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -34600,6 +34623,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Citrate',
+    chain: 'CITRATE',
+    rpc: [ 'https://rpc.citrate.ai', 'wss://rpc.citrate.ai' ],
+    faucets: [],
+    nativeCurrency: { name: 'SALT', symbol: 'SALT', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://citrate.ai',
+    shortName: 'citrate',
+    chainId: 40204,
+    networkId: 40204
   },
   {
     name: 'Aleph Zero EVM',
