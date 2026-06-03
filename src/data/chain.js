@@ -6280,6 +6280,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'ACME stealth testnet',
+    chain: 'AST',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'acme-testnet',
+    chainId: 355,
+    networkId: 355,
+    explorers: []
+  },
+  {
     name: 'Shape',
     chain: 'ETH',
     rpc: [
@@ -18621,22 +18633,22 @@ const chainArray = [
     }
   },
   {
-    name: 'Candy Chain',
+    name: 'CandyChain',
+    shortName: 'candy',
     chain: 'CANDY',
+    chainId: 2828,
+    networkId: 2828,
     rpc: [ 'https://publicrpc.candychain.io' ],
     faucets: [],
     nativeCurrency: { name: 'CANDY', symbol: 'CANDY', decimals: 18 },
-    infoURL: 'https://candychain.io',
-    shortName: 'candy',
-    chainId: 2828,
-    networkId: 2828,
     explorers: [
       {
-        name: 'Candy Chain Explorer',
-        url: 'https://explorer.candychain.io',
+        name: 'CandyChain Explorer',
+        url: 'https://streams.candychain.io',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    infoURL: 'https://candychain.io'
   },
   {
     name: 'HyperAGI Mainnet',
@@ -23154,22 +23166,22 @@ const chainArray = [
     ]
   },
   {
-    name: 'MANTRACHAIN Mainnet',
-    chain: 'MANTRACHAIN',
+    name: 'MANTRA Chain',
+    chain: 'MANTRA',
     rpc: [ 'https://evm.mantrachain.io', 'wss://evm.mantrachain.io/ws' ],
     faucets: [],
-    nativeCurrency: { name: 'OM', symbol: 'OM', decimals: 18 },
+    nativeCurrency: { name: 'MANTRA', symbol: 'MANTRA', decimals: 18 },
     infoURL: 'https://mantrachain.io',
-    shortName: 'mantrachain',
+    shortName: 'mantra',
     chainId: 5888,
     networkId: 5888,
     slip44: 1,
     icon: 'om',
     explorers: [
       {
-        name: 'MANTRACHAIN Explorer',
-        url: 'http://mantrascan.io',
-        standard: 'none',
+        name: 'MANTRA Explorer',
+        url: 'https://blockscout.mantrascan.io',
+        standard: 'EIP3091',
         icon: 'om'
       }
     ]
@@ -26088,6 +26100,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'ACME Mainnet Stealth',
+    chain: 'ASM',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: '',
+    shortName: 'acme-mainnet',
+    chainId: 8224,
+    networkId: 8224,
+    explorers: []
   },
   {
     name: 'Space Subnet',
@@ -44198,6 +44222,25 @@ const chainArray = [
         name: 'Blockscout',
         url: 'https://testnet-scan.orangechain.xyz',
         icon: 'orange',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'HIPERCAPITAL FINANCE Chain',
+    chain: 'HIPCF',
+    rpc: [ 'https://rpc.hipercapitalfinance.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'HIPERCAPITAL FINANCE Token', symbol: 'HIP', decimals: 18 },
+    infoURL: 'https://hipercapitalfinance.com',
+    shortName: 'hipcf',
+    chainId: 240884,
+    networkId: 240884,
+    explorers: [
+      {
+        name: 'HIPERCAPITAL FINANCE Explorer',
+        url: 'https://explorer.hipercapitalfinance.com',
         standard: 'EIP3091'
       }
     ]
