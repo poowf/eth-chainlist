@@ -13080,9 +13080,9 @@ const chainArray = [
     chain: 'Elysium',
     rpc: [ 'https://rpc.elysiumchain.tech', 'https://rpc.elysiumchain.us' ],
     faucets: [ 'https://faucet.elysiumchain.tech' ],
-    nativeCurrency: { name: 'ELY', symbol: 'ELY', decimals: 18 },
+    nativeCurrency: { name: 'PYR', symbol: 'PYR', decimals: 18 },
     infoURL: 'https://elysiumchain.tech/',
-    shortName: 'ELY',
+    shortName: 'PYR',
     chainId: 1339,
     networkId: 1339,
     icon: 'elysium',
@@ -18042,6 +18042,28 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'SVPChain Testnet',
+    chain: 'SVP',
+    rpc: [
+      'https://svp-dataseed1-testnet.svpchain.org',
+      'https://svp-dataseed2-testnet.svpchain.org',
+      'https://svp-dataseed3-testnet.svpchain.org'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'SVP Token', symbol: 'SVP', decimals: 18 },
+    infoURL: 'https://svpchain.org',
+    shortName: 'svptest',
+    chainId: 2517,
+    networkId: 2517,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.svpchain.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Fraxtal Testnet',
     chain: 'FRAX',
     rpc: [],
@@ -21047,7 +21069,7 @@ const chainArray = [
     rpc: [ 'https://testnet-rpc.ikchain.net' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [ 'https://testnet-explorer.ikchain.net' ],
-    nativeCurrency: { name: 'IKCrypto', symbol: 'IKCr', decimals: 18 },
+    nativeCurrency: { name: 'IKToken', symbol: 'IKTokn', decimals: 18 },
     infoURL: 'https://ikchain.net',
     shortName: 'ikchain-testnet',
     chainId: 4270,
@@ -30609,6 +30631,27 @@ const chainArray = [
         name: 'KYMTC Mainnet Explorer',
         url: 'https://kymaticscan.online',
         icon: 'kymtc',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'NirmalX Smart Chain',
+    chain: 'NRXN',
+    icon: 'nrxn',
+    rpc: [ 'https://rpc.nirmalxscan.com' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'NirmalX Nova', symbol: 'NRXN', decimals: 18 },
+    infoURL: 'https://nirmalxscan.com/',
+    shortName: 'nrxn',
+    chainId: 15526,
+    networkId: 15526,
+    explorers: [
+      {
+        name: 'NirmalX Explorer',
+        url: 'https://nirmalxscan.com',
+        icon: 'nrxn',
         standard: 'EIP3091'
       }
     ]
