@@ -4017,30 +4017,29 @@ const chainArray = [
     ]
   },
   {
-    name: 'X Layer Testnet',
+    name: 'X Layer Testnet(Deprecated)',
     chain: 'X Layer',
-    rpc: [ 'https://testrpc.xlayer.tech', 'https://xlayertestrpc.okx.com' ],
-    faucets: [ 'https://www.okx.com/xlayer/faucet' ],
+    rpc: [],
+    faucets: [],
     nativeCurrency: {
-      name: 'X Layer Global Utility Token in testnet',
-      symbol: 'OKB',
+      name: 'X Layer Global Utility Token in testnet(Deprecated)',
+      symbol: 'OKBDep',
       decimals: 18
     },
     features: [],
-    infoURL: 'https://www.okx.com/xlayer',
-    shortName: 'tokb',
+    infoURL: '',
+    shortName: 'tokb-dep',
     chainId: 195,
     networkId: 195,
     slip44: 1,
-    icon: 'xlayerTestnet',
     explorers: [
       {
         name: 'OKLink',
-        url: 'https://www.oklink.com/xlayer-test',
+        url: 'https://www.oklink.com/zh-hans/x-layer-testnet',
         standard: 'EIP3091'
       }
     ],
-    status: 'active'
+    status: 'deprecated'
   },
   {
     name: 'X Layer Mainnet',
@@ -6245,7 +6244,7 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Bourse', symbol: 'BOURSE', decimals: 18 },
-    infoURL: 'https://www.capitalexchange.com',
+    infoURL: 'https://about.capitalexchange.com',
     shortName: 'bourse',
     chainId: 343,
     networkId: 343,
@@ -6253,9 +6252,9 @@ const chainArray = [
     explorers: [
       {
         name: 'Capital Exchange | Digital',
-        url: 'https://explorer.capitalexchange.com',
+        url: 'https://bourse.capitalexchange.com',
         icon: 'bourse',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -15342,6 +15341,32 @@ const chainArray = [
     icon: 'dchain',
     faucets: [],
     infoURL: ''
+  },
+  {
+    name: 'X Layer Testnet',
+    chain: 'X Layer',
+    rpc: [ 'https://testrpc.xlayer.tech', 'https://xlayertestrpc.okx.com' ],
+    faucets: [ 'https://www.okx.com/xlayer/faucet' ],
+    nativeCurrency: {
+      name: 'X Layer Global Utility Token in testnet',
+      symbol: 'OKB',
+      decimals: 18
+    },
+    features: [],
+    infoURL: 'https://web3.okx.com/xlayer',
+    shortName: 'tokb',
+    chainId: 1952,
+    networkId: 1952,
+    slip44: 1,
+    icon: 'xlayerTestnet',
+    explorers: [
+      {
+        name: 'OKLink',
+        url: 'https://web3.okx.com/explorer/x-layer-testnet',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Selendra Network Testnet',
@@ -36350,6 +36375,26 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
+    name: 'ASHCHAIN',
+    chain: 'ASH',
+    rpc: [ 'https://evm-rpc.ashchain.io', 'https://evm-rpc2.ashchain.io' ],
+    faucets: [ 'https://ashchain.io/faucet' ],
+    nativeCurrency: { name: 'ASH', symbol: 'ASH', decimals: 18 },
+    infoURL: 'https://ashchain.io',
+    shortName: 'ash',
+    chainId: 50366,
+    networkId: 50366,
+    icon: 'ashchain',
+    explorers: [
+      {
+        name: 'ASHCHAIN Explorer',
+        url: 'https://ashchain.io/explorer',
+        standard: 'none'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'STB Testnet',
     chain: 'STB Testnet',
     rpc: [ 'https://rpc.quorum.sps.dev.kode.ru/' ],
@@ -47136,6 +47181,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Unitsky String Technologies',
+    chain: 'Unitsky',
+    rpc: [ 'https://147-45-143-23.sslip.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Unitsky Token', symbol: 'UST', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://147-45-143-23.sslip.io',
+    shortName: 'ust',
+    chainId: 778889,
+    networkId: 778889,
+    explorers: [
+      {
+        name: 'Unitsky Explorer',
+        url: 'https://147-45-143-23.sslip.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Zebro Smart Chain',
     chain: 'ZEBRO',
     rpc: [ 'https://rpc.zebrocoin.app', 'https://rpc1.zebrocoin.app' ],
@@ -47406,6 +47470,32 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'GembaBlockchain Testnet',
+    chain: 'GMB',
+    icon: 'gemba',
+    rpc: [
+      'https://testnet.gembascan.io/rpc',
+      'https://rpc1.gembascan.io',
+      'https://rpc2.gembascan.io'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Gemba', symbol: 'GMB', decimals: 18 },
+    infoURL: 'https://gembachain.io',
+    shortName: 'gembatest',
+    chainId: 821207,
+    networkId: 821207,
+    explorers: [
+      {
+        name: 'GembaScan',
+        url: 'https://testnet.gembascan.io',
+        icon: 'gemba',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active',
+    title: 'GembaBlockchain Testnet'
   },
   {
     name: 'CURVE Mainnet',
