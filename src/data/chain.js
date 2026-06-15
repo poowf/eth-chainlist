@@ -8126,7 +8126,7 @@ const chainArray = [
   {
     name: 'BattleChain Mainnet',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://mainnet.battlechain.com' ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://battlechain.com',
@@ -8134,8 +8134,13 @@ const chainArray = [
     chainId: 626,
     networkId: 626,
     icon: 'battlechain',
-    status: 'incubating',
-    explorers: [],
+    explorers: [
+      {
+        name: 'BattleChain Explorer',
+        url: 'https://explorer.battlechain.com',
+        standard: 'EIP3091'
+      }
+    ],
     parent: {
       type: 'L2',
       chain: 'eip155-1',
@@ -43141,7 +43146,7 @@ const chainArray = [
   {
     name: 'mfenx',
     chain: 'MFENX',
-    rpc: [ 'https://indexer.mfenx.com/rpc' ],
+    rpc: [ 'https://rpc.mfenx.com' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'JULIAN', symbol: 'JULIAN', decimals: 18 },
@@ -45790,6 +45795,26 @@ const chainArray = [
         name: 'weelink-testnet',
         url: 'https://weelink.cloud/#/blockView/overview',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Maroo Testnet',
+    chain: 'MAROO',
+    icon: 'maroo',
+    rpc: [ 'https://rpc-testnet.maroo.io' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' }, { name: 'EIP7702' } ],
+    faucets: [ 'https://faucet.maroo.io' ],
+    nativeCurrency: { name: 'Testnet OKRW', symbol: 'tOKRW', decimals: 18 },
+    infoURL: 'https://maroo.io',
+    shortName: 'maroo-testnet',
+    chainId: 450815,
+    networkId: 450815,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer-testnet.maroo.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -49527,6 +49552,25 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
   },
   {
+    name: 'JMDT Mainnet',
+    chain: 'JMDT',
+    rpc: [ 'https://rpc.jmdt.io', 'https://mainnetrpc.jmdt.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'JMDT', symbol: 'JMDT', decimals: 18 },
+    infoURL: 'https://jmdt.io',
+    shortName: 'jmdt',
+    chainId: 7000700,
+    networkId: 7000700,
+    icon: 'jmdt',
+    explorers: [
+      {
+        name: 'JMDT Explorer',
+        url: 'https://explorer.jmdt.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Humanity Protocol testnet',
     chain: 'Humanity',
     rpc: [
@@ -49751,6 +49795,25 @@ const chainArray = [
     shortName: 'maki',
     chainId: 8000008,
     networkId: 8000008
+  },
+  {
+    name: 'JMDT Testnet',
+    chain: 'JMDT',
+    rpc: [ 'https://testnetrpc.jmdt.io' ],
+    faucets: [ 'https://faucet.jmdt.io' ],
+    nativeCurrency: { name: 'Test JMDT', symbol: 'tJMDT', decimals: 18 },
+    infoURL: 'https://jmdt.io',
+    shortName: 'tjmdt',
+    chainId: 8000800,
+    networkId: 8000800,
+    icon: 'jmdt',
+    explorers: [
+      {
+        name: 'JMDT Testnet Explorer',
+        url: 'https://explorer.jmdt.io/testnet',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Plian Mainnet Subchain 1',
