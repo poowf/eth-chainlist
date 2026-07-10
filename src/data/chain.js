@@ -4758,10 +4758,10 @@ const chainArray = [
   },
   {
     name: 'AEREDIUM',
-    chain: 'AER',
-    rpc: [ 'https://rpc.aeredium.io' ],
+    chain: 'AERX',
+    rpc: [],
     faucets: [],
-    nativeCurrency: { name: 'AER', symbol: 'AER', decimals: 18 },
+    nativeCurrency: { name: 'AERX', symbol: 'AERX', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://aeredium.io',
     shortName: 'aer',
@@ -12384,6 +12384,28 @@ const chainArray = [
     chainId: 1236,
     networkId: 1236,
     explorers: []
+  },
+  {
+    name: 'AEREDIUM Testnet',
+    title: 'AEREDIUM Testnet',
+    chain: 'AER',
+    rpc: [ 'https://testnet.rpc.aeredium.io' ],
+    faucets: [ 'https://aeredium.io/faucet.html' ],
+    nativeCurrency: { name: 'Testnet AER', symbol: 'tAER', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://aeredium.io',
+    shortName: 'aer-testnet',
+    chainId: 1237,
+    networkId: 1237,
+    slip44: 1,
+    icon: 'aeredium',
+    explorers: [
+      {
+        name: 'AEREDIUM Testnet Explorer',
+        url: 'https://testnet.explorer.aeredium.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'ARC Mainnet',
@@ -23427,15 +23449,24 @@ const chainArray = [
   {
     name: 'Tea Mainnet',
     chain: 'TEA',
-    rpc: [],
+    rpc: [ 'https://rpc.tea.xyz', 'https://tea.drpc.org' ],
     faucets: [],
     nativeCurrency: { name: 'Tea', symbol: 'TEA', decimals: 18 },
     infoURL: 'https://tea.xyz',
     shortName: 'tea',
+    icon: 'tea',
     chainId: 6122,
     networkId: 6122,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.tea.xyz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ],
     parent: { type: 'L2', chain: 'eip155-1' },
-    status: 'incubating'
+    status: 'active'
   },
   {
     name: 'Rails',
@@ -47804,6 +47835,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'CryptoChain',
+    chain: 'CRTC',
+    rpc: [ 'http://13.233.105.56:8545' ],
+    faucets: [],
+    nativeCurrency: { name: 'CryptoChain Token', symbol: 'CRTC', decimals: 18 },
+    infoURL: '',
+    shortName: 'cryptochain',
+    chainId: 900190,
+    networkId: 900190,
+    slip44: 60,
+    explorers: []
   },
   {
     name: 'Posichain Testnet Shard 0',
