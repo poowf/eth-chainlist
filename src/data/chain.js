@@ -21318,12 +21318,17 @@ const chainArray = [
   },
   {
     name: 'MemeCore',
-    title: 'MemeCore',
+    title: 'MemeCore Mainnet',
     chain: 'MemeCore',
     icon: 'memecore',
     rpc: [ 'https://rpc.memecore.net', 'wss://ws.memecore.net' ],
     nativeCurrency: { name: 'M', symbol: 'M', decimals: 18 },
-    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP4844' },
+      { name: 'EIP7702' }
+    ],
     faucets: [],
     infoURL: 'https://memecore.com',
     shortName: 'm',
@@ -21331,17 +21336,12 @@ const chainArray = [
     networkId: 4352,
     explorers: [
       {
-        name: 'OKX-MemeCore',
-        url: 'https://www.okx.com/web3/explorer/memecore',
-        standard: 'EIP3091'
-      },
-      {
         name: 'MemeCoreScan',
         url: 'https://memecorescan.io',
         standard: 'EIP3091'
       },
       {
-        name: 'MemeCore explorer',
+        name: 'Blockscout',
         url: 'https://blockscout.memecore.com',
         standard: 'EIP3091'
       }
@@ -35501,6 +35501,7 @@ const chainArray = [
     name: 'Formicarium',
     title: 'MemeCore Testnet Formicarium',
     chain: 'MemeCore',
+    status: 'deprecated',
     icon: 'memecore',
     rpc: [
       'https://rpc.formicarium.memecore.net',
@@ -35513,21 +35514,39 @@ const chainArray = [
     shortName: 'form',
     chainId: 43521,
     networkId: 43521,
+    slip44: 1
+  },
+  {
+    name: 'Insectarium',
+    title: 'Insectarium Testnet',
+    chain: 'MemeCore',
+    icon: 'memecore',
+    rpc: [
+      'https://rpc.insectarium.memecore.net',
+      'wss://ws.insectarium.memecore.net'
+    ],
+    faucets: [ 'https://faucet.memecore.com/insectarium' ],
+    nativeCurrency: { name: 'Insectarium M', symbol: 'M', decimals: 18 },
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP4844' },
+      { name: 'EIP7702' }
+    ],
+    infoURL: 'https://memecore.com',
+    shortName: 'insectarium',
+    chainId: 43522,
+    networkId: 43522,
     slip44: 1,
     explorers: [
       {
-        name: 'OKX-Formicarium',
-        url: 'https://www.okx.com/web3/explorer/formicarium-testnet',
+        name: 'MemeCoreScan-Insectarium',
+        url: 'https://insectarium.memecorescan.io',
         standard: 'EIP3091'
       },
       {
-        name: 'MemeCoreScan-Formicarium',
-        url: 'https://formicarium.memecorescan.io',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'MemeCore Testnet Formicarium Explorer',
-        url: 'https://formicarium.blockscout.memecore.com',
+        name: 'Blockscout-Insectarium',
+        url: 'https://insectarium.blockscout.memecore.com',
         standard: 'EIP3091'
       }
     ]
@@ -41373,15 +41392,24 @@ const chainArray = [
     slip44: 1
   },
   {
-    name: 'UB Smart Chain',
-    chain: 'USC',
-    rpc: [ 'https://rpc.uschain.network' ],
-    faucets: [],
-    nativeCurrency: { name: 'UBC', symbol: 'UBC', decimals: 18 },
-    infoURL: 'https://www.ubchain.site/',
-    shortName: 'usc',
+    name: 'ADI Network AB Testnet',
+    title: 'ADI Network AB Testnet (prev. UB Smart Chain)',
+    chain: 'ADI',
+    rpc: [ 'https://rpc.ab.testnet.adifoundation.ai/' ],
+    faucets: [ 'http://faucet.ab.testnet.adifoundation.ai/' ],
+    nativeCurrency: { name: 'ADI', symbol: 'ADI', decimals: 18 },
+    infoURL: 'https://docs.adi.foundation',
+    shortName: 'adi-testnet',
     chainId: 99999,
-    networkId: 99999
+    networkId: 99999,
+    explorers: [
+      {
+        name: 'ADI Testnet Explorer',
+        url: 'https://explorer.ab.testnet.adifoundation.ai',
+        standard: 'EIP3091'
+      }
+    ],
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'QuarkChain Mainnet Root',
@@ -44421,6 +44449,7 @@ const chainArray = [
   },
   {
     name: 'HIPERCAPITAL FINANCE Chain',
+    icon: 'hipercapital',
     chain: 'HIPCF',
     rpc: [ 'https://rpc.hipercapitalfinance.com' ],
     features: [ { name: 'EIP155' } ],
@@ -53102,6 +53131,29 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'iTani Network Chain',
+    chain: 'ITANI',
+    rpc: [
+      'https://rpc.itaninetworkchain.com/jsonrpc',
+      'https://node.itaninetworkchain.com/jsonrpc'
+    ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'iTani', symbol: 'ITANI', decimals: 18 },
+    infoURL: 'https://www.itaninetworkchain.com',
+    shortName: 'itani',
+    chainId: 1229800785,
+    networkId: 1229800785,
+    explorers: [
+      {
+        name: 'iTani Explorer',
+        url: 'https://explorer.itaninetworkchain.com',
+        standard: 'EIP3091'
+      }
+    ],
+    icon: 'itani'
   },
   {
     name: 'HUMAN Protocol',
