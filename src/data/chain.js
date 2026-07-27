@@ -30277,6 +30277,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Liberty Testnet',
+    chain: 'LBRTY',
+    icon: 'lbrty',
+    rpc: [ 'https://testnet-rpc.libertychain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Liberty', symbol: 'LBRTY', decimals: 18 },
+    infoURL: 'https://libertychain.org',
+    shortName: 'lbrty-testnet',
+    chainId: 13373,
+    networkId: 13373,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.libertychain.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Phoenix Mainnet',
     chain: 'Phoenix',
     rpc: [ 'https://rpc.phoenixplorer.com/' ],
@@ -38848,6 +38867,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Rayls Mainnet',
+    chain: 'Rayls',
+    icon: 'rayls',
+    rpc: [ 'https://mainnet-rpc.rayls.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'USD Rayls', symbol: 'USDr', decimals: 18 },
+    infoURL: 'https://rayls.com',
+    shortName: 'rayls',
+    chainId: 72957,
+    networkId: 72957,
+    explorers: [
+      {
+        name: 'Rayls Explorer',
+        url: 'https://explorer.rayls.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Grok Chain Mainnet',
     chain: 'Grok',
     icon: 'grokicon',
@@ -42195,10 +42233,8 @@ const chainArray = [
   {
     name: 'Mars Credit',
     chain: 'MARS',
-    rpc: [
-      'https://node99-production-dd5f.up.railway.app:443',
-      'https://rpc.marscredit.xyz:443'
-    ],
+    rpc: [ 'https://rpc.marscredit.xyz:443' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Mars Credit', symbol: 'MARS', decimals: 18 },
     infoURL: 'https://marscredit.xyz/',
@@ -42207,7 +42243,13 @@ const chainArray = [
     networkId: 110110,
     slip44: 1,
     icon: 'marscredit',
-    explorers: [],
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscan.marscredit.xyz',
+        standard: 'EIP3091'
+      }
+    ],
     redFlags: []
   },
   {
@@ -42501,6 +42543,25 @@ const chainArray = [
       {
         name: 'Ethernova Explorer',
         url: 'https://explorer.ethnova.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SWSS Chain',
+    chain: 'SWSS',
+    icon: 'swss',
+    rpc: [ 'https://swssrpc.swss.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SWSS Coin', symbol: 'SWSS', decimals: 18 },
+    infoURL: 'https://swss.io',
+    shortName: 'swss',
+    chainId: 122605,
+    networkId: 122605,
+    explorers: [
+      {
+        name: 'SWSS Chain Scan',
+        url: 'https://swssscan.swss.io',
         standard: 'EIP3091'
       }
     ]
@@ -48866,6 +48927,26 @@ const chainArray = [
       {
         name: 'piscan',
         url: 'https://piscan.plian.org/pchain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GGCHAIN Mainnet',
+    chain: 'GGCHAIN',
+    icon: 'ggchain',
+    rpc: [ 'https://rpc.gghyper.net' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://gghyper.net/faucet' ],
+    nativeCurrency: { name: 'GG', symbol: 'GG', decimals: 18 },
+    infoURL: 'https://gghyper.net',
+    shortName: 'ggchain',
+    chainId: 2121217,
+    networkId: 2121217,
+    explorers: [
+      {
+        name: 'GGCHAIN Explorer',
+        url: 'https://explorer.gghyper.net',
         standard: 'EIP3091'
       }
     ]
