@@ -12942,20 +12942,20 @@ const chainArray = [
     icon: 'alyx'
   },
   {
-    name: 'Story Aeneid Testnet',
-    chain: 'Story Aeneid Testnet',
-    rpc: [ 'https://aeneid.storyrpc.io' ],
+    name: 'Data Network Aeneid Testnet',
+    chain: 'DATA',
+    rpc: [ 'https://aeneid.datarpc.io' ],
     faucets: [],
-    nativeCurrency: { name: 'IP Token', symbol: 'IP', decimals: 18 },
-    infoURL: 'https://story.foundation/',
-    icon: 'story',
-    shortName: 'story-aeneid',
+    nativeCurrency: { name: 'DATA', symbol: 'DATA', decimals: 18 },
+    infoURL: 'https://datafdn.org/',
+    icon: 'data',
+    shortName: 'data-aeneid',
     chainId: 1315,
     networkId: 1315,
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://aeneid.storyscan.xyz',
+        url: 'https://aeneid.datanetscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -13722,20 +13722,20 @@ const chainArray = [
     ]
   },
   {
-    name: 'Story',
-    chain: 'STORY',
-    rpc: [ 'https://mainnet.storyrpc.io' ],
+    name: 'Data Network',
+    chain: 'DATA',
+    rpc: [ 'https://mainnet.datarpc.io' ],
     faucets: [],
-    nativeCurrency: { name: 'IP Token', symbol: 'IP', decimals: 18 },
-    infoURL: 'https://story.foundation/',
-    icon: 'story',
-    shortName: 'sty',
+    nativeCurrency: { name: 'DATA', symbol: 'DATA', decimals: 18 },
+    infoURL: 'https://datafdn.org/',
+    icon: 'data',
+    shortName: 'data',
     chainId: 1514,
     networkId: 1514,
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://mainnet.storyscan.xyz',
+        url: 'https://datanetscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -47691,9 +47691,9 @@ const chainArray = [
     chain: 'GMB',
     icon: 'gemba',
     rpc: [
-      'https://testnet.gembascan.io/rpc',
       'https://rpc1.gembascan.io',
-      'https://rpc2.gembascan.io'
+      'https://rpc2.gembascan.io',
+      'https://rpc3.gembascan.io'
     ],
     faucets: [],
     nativeCurrency: { name: 'Gemba', symbol: 'GMB', decimals: 18 },
