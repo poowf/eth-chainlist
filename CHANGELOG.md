@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.796 (2026-07-30)
+
+
+### Maintenance
+
+* **release:** 0.0.795 ([cbe730f](https://github.com/poowf/eth-chainlist/commit/cbe730f4b008298e89ec2738d598a344aff75e5f))
+* update chain data ([f53b9ae](https://github.com/poowf/eth-chainlist/commit/f53b9aed82ba66ce17196505ae23fc9c0c4c86ec))
+
 ### 0.0.795 (2026-07-27)
 
 
