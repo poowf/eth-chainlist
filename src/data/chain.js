@@ -11105,6 +11105,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'DIA Lasernet Mainnet',
+    chain: 'DIA',
+    icon: 'dia',
+    rpc: [ 'https://rpc.diadata.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'DIA Token', symbol: 'DIA', decimals: 18 },
+    infoURL: 'https://www.diadata.org',
+    shortName: 'DIA',
+    chainId: 1050,
+    networkId: 1050,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.diadata.org',
+        standard: 'EIP3091',
+        icon: 'dia'
+      }
+    ]
+  },
+  {
     name: 'OpenGPU Mainnet',
     chain: 'OGPU',
     icon: 'ogpu',
@@ -23973,6 +23993,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Vexanium Mainnet',
+    chain: 'VEX',
+    icon: 'vex',
+    rpc: [ 'https://vexascan.com/rpc' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'VEX', symbol: 'VEX', decimals: 18 },
+    infoURL: 'https://vexanium.com',
+    shortName: 'vex-mainnet',
+    chainId: 6736,
+    networkId: 6736,
+    explorers: [
+      {
+        name: 'vexascan',
+        url: 'https://vexascan.com/evm',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Compverse Mainnet',
     chain: 'CPV',
     icon: 'compverse',
@@ -29041,6 +29081,25 @@ const chainArray = [
       {
         name: 'ethernal',
         url: 'https://testnet.num.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Limonata Testnet',
+    chain: 'LIMO',
+    rpc: [ 'https://rpc.limonata.xyz' ],
+    faucets: [ 'https://faucet.limonata.xyz' ],
+    nativeCurrency: { name: 'Limonata', symbol: 'LIMO', decimals: 18 },
+    infoURL: 'https://limonata.xyz',
+    shortName: 'limonata-testnet',
+    chainId: 10777,
+    networkId: 10777,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Limonata Explorer',
+        url: 'https://explorer.limonata.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -53396,6 +53455,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Crynux on Near',
+    chain: 'ETH',
+    rpc: [ 'https://json-rpc.near.crynux.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Crynux', symbol: 'CNX', decimals: 18 },
+    infoURL: 'https://crynux.io',
+    shortName: 'crynux-near',
+    chainId: 1313161911,
+    networkId: 1313161911,
+    icon: 'crynux',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-397' }
   },
   {
     name: 'SKALE Titan Hub',
