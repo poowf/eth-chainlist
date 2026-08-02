@@ -44958,6 +44958,25 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
+    name: 'BetaXChain Mainnet',
+    chain: 'BetaXChain',
+    icon: 'betaxchain',
+    rpc: [ 'https://rpc.betaxchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'PBX', symbol: 'PBX', decimals: 18 },
+    infoURL: 'https://betaxchain.com',
+    shortName: 'betax',
+    chainId: 290783,
+    networkId: 290783,
+    explorers: [
+      {
+        name: 'BetaXChain Explorer',
+        url: 'https://explorer.betaxchain.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Cipherem Testnet',
     chain: 'Cipherem',
     rpc: [ 'https://testnet.cipherem.com' ],
@@ -47414,6 +47433,27 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'MANORA L2 Testnet',
+    title: 'MANORA L2 Testnet',
+    chain: 'MANORA',
+    rpc: [ 'https://rpc-test.manoracoin.com' ],
+    faucets: [ 'https://faucet-test.manoracoin.com' ],
+    nativeCurrency: { name: 'MANORA', symbol: 'MNR', decimals: 18 },
+    infoURL: 'https://manoracoin.com',
+    shortName: 'manora-testnet',
+    chainId: 777772,
+    networkId: 777772,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'MANORA Explorer',
+        url: 'https://test.manoracoin.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Winr Protocol Mainnet',
@@ -51244,6 +51284,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'GridMind Testnet',
+    title: 'GridMind Testnet',
+    chain: 'GRD',
+    rpc: [ 'https://testnet-rpc.grid-mind.com' ],
+    faucets: [ 'https://testnet-faucet.grid-mind.com' ],
+    nativeCurrency: { name: 'GridMind Test GRD', symbol: 'tGRD', decimals: 18 },
+    infoURL: 'https://www.grid-mind.com/blockchain',
+    shortName: 'gridmindt',
+    chainId: 20260532,
+    networkId: 20260532,
+    explorers: [
+      {
+        name: 'GridMind Testnet Explorer',
+        url: 'https://gridmindblockchain.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'GridMind Technical Explorer',
+        url: 'https://testnet-explorer.grid-mind.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'incubating'
   },
   {
     name: 'Hokum Testnet',
