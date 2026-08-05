@@ -42523,11 +42523,11 @@ const chainArray = [
     ]
   },
   {
-    name: 'Rome Devnet Esquiline',
+    name: 'Rome Esquiline Devnet',
     chain: 'ROME',
-    rpc: [ 'https://esquiline-i.devnet.romeprotocol.xyz' ],
-    faucets: [ 'https://deposit.devnet.romeprotocol.xyz' ],
-    nativeCurrency: { name: 'RSOL', symbol: 'RSOL', decimals: 18 },
+    rpc: [ 'https://esquiline.devnet.romeprotocol.xyz' ],
+    faucets: [ 'https://app.devnet.romeprotocol.xyz' ],
+    nativeCurrency: { name: 'Esquiline Gas', symbol: 'GAS', decimals: 18 },
     infoURL: 'https://rome.builders',
     shortName: 'rome-devnet-esquiline',
     chainId: 121212,
@@ -42535,20 +42535,19 @@ const chainArray = [
     icon: 'rome',
     explorers: [
       {
-        name: 'Rome Devnet Esquiline Explorer',
-        url: 'https://romescout-esquiline-i.devnet.romeprotocol.xyz',
+        name: 'Rome Via Esquiline',
+        url: 'https://via-esquiline.devnet.romeprotocol.xyz',
         icon: 'rome',
         standard: 'EIP3091'
       }
-    ],
-    status: 'active'
+    ]
   },
   {
-    name: 'Rome Devnet Subura',
+    name: 'Rome Subura Devnet',
     chain: 'ROME',
-    rpc: [ 'https://subura-i.devnet.romeprotocol.xyz' ],
-    faucets: [ 'https://deposit.devnet.romeprotocol.xyz' ],
-    nativeCurrency: { name: 'RSOL', symbol: 'RSOL', decimals: 18 },
+    rpc: [ 'https://subura.devnet.romeprotocol.xyz' ],
+    faucets: [ 'https://app.devnet.romeprotocol.xyz' ],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
     infoURL: 'https://rome.builders',
     shortName: 'rome-devnet-subura',
     chainId: 121213,
@@ -42556,20 +42555,19 @@ const chainArray = [
     icon: 'rome',
     explorers: [
       {
-        name: 'Rome Devnet Subura Explorer',
-        url: 'https://romescout-subura-i.devnet.romeprotocol.xyz',
+        name: 'Rome Via Subura',
+        url: 'https://via-subura.devnet.romeprotocol.xyz',
         icon: 'rome',
         standard: 'EIP3091'
       }
-    ],
-    status: 'active'
+    ]
   },
   {
-    name: 'Rome Testnet Martius',
+    name: 'Rome Martius Testnet',
     chain: 'ROME',
-    rpc: [ 'https://martius-i.testnet.romeprotocol.xyz' ],
-    faucets: [ 'https://deposit.testnet.romeprotocol.xyz' ],
-    nativeCurrency: { name: 'RSOL', symbol: 'RSOL', decimals: 18 },
+    rpc: [ 'https://martius.testnet.romeprotocol.xyz' ],
+    faucets: [ 'https://app.testnet.romeprotocol.xyz' ],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
     infoURL: 'https://rome.builders',
     shortName: 'rome-testnet-martius',
     chainId: 121214,
@@ -42577,13 +42575,12 @@ const chainArray = [
     icon: 'rome',
     explorers: [
       {
-        name: 'Rome Testnet Martius Explorer',
-        url: 'https://romescout-martius-i.testnet.romeprotocol.xyz',
+        name: 'Rome Via Martius',
+        url: 'https://via-martius.testnet.romeprotocol.xyz',
         icon: 'rome',
         standard: 'EIP3091'
       }
-    ],
-    status: 'active'
+    ]
   },
   {
     name: 'Rome Testnet Caelian',
