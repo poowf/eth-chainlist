@@ -32245,6 +32245,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Alpen Testnet III',
+    chain: 'alpen-testnet-iii',
+    rpc: [ 'https://alpen.testnet.alpen.org' ],
+    faucets: [ 'https://tally.so/r/aQKLZZ' ],
+    nativeCurrency: { name: 'Signet BTC', symbol: 'sBTC', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://docs.alpenlabs.io',
+    shortName: 'alpen-testnet-iii',
+    chainId: 20310,
+    networkId: 20310,
+    slip44: 1,
+    icon: 'alpen',
+    explorers: [
+      {
+        name: 'Alpen Testnet Explorer',
+        url: 'https://explorer.testnet.alpen.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'XUSD ONE StableChain Mainnet',
     chain: 'XUSD ONE',
     icon: 'xusd',
@@ -39727,6 +39749,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zorin Chain',
+    chain: 'ZRN',
+    rpc: [ 'https://rpc.zorinscan.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zorin', symbol: 'ZRN', decimals: 18 },
+    infoURL: 'https://zorinscan.org',
+    shortName: 'zrn',
+    chainId: 81008,
+    networkId: 81008,
+    explorers: [
+      {
+        name: 'ZorinScan',
+        url: 'https://zorinscan.org',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Nordek Mainnet',
     chain: 'Nordek',
     icon: 'nordek',
@@ -46474,6 +46514,7 @@ const chainArray = [
   },
   {
     name: 'ZERO Network',
+    status: 'deprecated',
     chain: 'ZERONetwork',
     icon: 'zero',
     rpc: [ 'https://rpc.zerion.io/v1/zero' ],
