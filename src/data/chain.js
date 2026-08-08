@@ -5420,6 +5420,24 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'NetX Mainnet',
+    chain: 'NETX',
+    rpc: [ 'https://rpc.netxscan.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'NetX Token', symbol: 'NETX', decimals: 18 },
+    infoURL: 'https://netx.world/',
+    shortName: 'netx',
+    chainId: 287,
+    networkId: 287,
+    explorers: [
+      {
+        name: 'NetXScan',
+        url: 'https://netxscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Boba Network',
     chain: 'ETH',
     rpc: [
@@ -7806,6 +7824,24 @@ const chainArray = [
         url: 'https://scan.filenova.org',
         icon: 'filenova',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'NetX Testnet',
+    chain: 'NETX',
+    rpc: [ 'https://testnetrpc.netxscan.io' ],
+    faucets: [ 'https://netx.world/faucet/' ],
+    nativeCurrency: { name: 'NetX Token', symbol: 'NETX', decimals: 18 },
+    infoURL: 'https://netx.world/',
+    shortName: 'netx-testnet',
+    chainId: 587,
+    networkId: 587,
+    explorers: [
+      {
+        name: 'NetXScan Testnet',
+        url: 'https://testnet.netxscan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -17079,6 +17115,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Morph Tachyon',
+    title: 'Morph Tachyon Mainnet',
+    chain: 'Morph Tachyon',
+    rpc: [ 'https://api.popdex.xyz/api/v1/web3/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'BGB', symbol: 'BGB', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://popdex.xyz',
+    shortName: 'morphtachyon',
+    chainId: 2184,
+    networkId: 2184,
+    explorers: [
+      {
+        name: 'Morph Tachyon Explorer',
+        url: 'https://app.popdex.xyz/explorer',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Game7',
     title: 'Game7',
     chain: 'Game7',
@@ -21706,7 +21762,10 @@ const chainArray = [
   {
     name: 'Robinhood Chain',
     chain: 'ETH',
-    rpc: [ 'https://rpc.mainnet.chain.robinhood.com' ],
+    rpc: [
+      'https://rpc.mainnet.chain.robinhood.com',
+      'https://rpc.arrowrpc.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://docs.robinhood.com/chain',
@@ -21718,6 +21777,11 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://robinhoodchain.blockscout.com',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'HoodScan',
+        url: 'https://hoodscan.ai',
         standard: 'EIP3091'
       }
     ],
@@ -24974,14 +25038,11 @@ const chainArray = [
     ]
   },
   {
-    name: 'Rome Palatine',
+    name: 'Rome Rubicon Mainnet',
     chain: 'ROME',
-    rpc: [
-      'https://palatine.romeprotocol.xyz',
-      'https://palatine2.romeprotocol.xyz'
-    ],
-    faucets: [],
-    nativeCurrency: { name: 'RSOL', symbol: 'RSOL', decimals: 18 },
+    rpc: [ 'https://rubicon.mainnet.romeprotocol.xyz' ],
+    faucets: [ 'https://app.mainnet.romeprotocol.xyz' ],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
     infoURL: 'https://rome.builders',
     shortName: 'rome-palatine',
     chainId: 7531,
@@ -24989,34 +25050,25 @@ const chainArray = [
     icon: 'rome',
     explorers: [
       {
-        name: 'Rome Palatine Explorer',
-        url: 'https://romescout-palatine.romeprotocol.xyz',
+        name: 'Rome Via Rubicon',
+        url: 'https://via-rubicon.mainnet.romeprotocol.xyz',
         icon: 'rome',
         standard: 'EIP3091'
       }
-    ],
-    status: 'active'
+    ]
   },
   {
     name: 'Rome Mainnet 0 Aventine',
     chain: 'ROME',
-    rpc: [ 'https://aventine-i.mainnet-0.romeprotocol.xyz' ],
-    faucets: [ 'https://deposit.mainnet-0.romeprotocol.xyz' ],
-    nativeCurrency: { name: 'RSOL', symbol: 'RSOL', decimals: 18 },
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
     infoURL: 'https://rome.builders',
     shortName: 'rome-mainnet-0-aventine',
     chainId: 7532,
     networkId: 7532,
     icon: 'rome',
-    explorers: [
-      {
-        name: 'Rome Mainnet 0 Aventine Explorer',
-        url: 'https://romescout-aventine-i.mainnet-0.romeprotocol.xyz',
-        icon: 'rome',
-        standard: 'EIP3091'
-      }
-    ],
-    status: 'active'
+    status: 'deprecated'
   },
   {
     name: 'Cyber Mainnet',
@@ -34599,6 +34651,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Morph Tachyon Testnet',
+    title: 'Morph Tachyon Testnet',
+    chain: 'Morph Tachyon',
+    rpc: [ 'https://testnet-api.popdex.xyz/api/v1/web3/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'BGB', symbol: 'BGB', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://popdex.xyz',
+    shortName: 'morphtachyontestnet',
+    chainId: 34952,
+    networkId: 34952,
+    explorers: [
+      {
+        name: 'Morph Tachyon Testnet Explorer',
+        url: 'https://testnet-app.popdex.xyz/explorer',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'J2O Taro',
     chain: 'TARO',
     rpc: [ 'https://rpc.j2o.io' ],
@@ -42625,23 +42697,15 @@ const chainArray = [
   {
     name: 'Rome Testnet Caelian',
     chain: 'ROME',
-    rpc: [ 'https://caelian-i.testnet.romeprotocol.xyz' ],
-    faucets: [ 'https://deposit.testnet.romeprotocol.xyz' ],
-    nativeCurrency: { name: 'RSOL', symbol: 'RSOL', decimals: 18 },
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
     infoURL: 'https://rome.builders',
     shortName: 'rome-testnet-caelian',
     chainId: 121215,
     networkId: 121215,
     icon: 'rome',
-    explorers: [
-      {
-        name: 'Rome Testnet Caelian Explorer',
-        url: 'https://romescout-caelian-i.testnet.romeprotocol.xyz',
-        icon: 'rome',
-        standard: 'EIP3091'
-      }
-    ],
-    status: 'active'
+    status: 'deprecated'
   },
   {
     name: 'Fushuma',
