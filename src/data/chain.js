@@ -1209,6 +1209,7 @@ const chainArray = [
       'https://bsc-dataseed3.ninicoin.io',
       'https://bsc-dataseed4.ninicoin.io',
       'https://bsc-rpc.publicnode.com',
+      'https://bsc-rpc-public.chainpulse.cc',
       'wss://bsc-rpc.publicnode.com',
       'wss://bsc-ws-node.nariox.org'
     ],
@@ -2067,6 +2068,7 @@ const chainArray = [
       'https://data-seed-prebsc-1-s3.bnbchain.org:8545',
       'https://data-seed-prebsc-2-s3.bnbchain.org:8545',
       'https://bsc-testnet-rpc.publicnode.com',
+      'https://bsc-rpc-public.chainpulse.cc/testnet',
       'wss://bsc-testnet-rpc.publicnode.com'
     ],
     faucets: [ 'https://testnet.bnbchain.org/faucet-smart' ],
@@ -14179,6 +14181,27 @@ const chainArray = [
     slip44: 1,
     explorers: [],
     status: 'deprecated'
+  },
+  {
+    name: 'Pharos Mainnet',
+    chain: 'Pharos',
+    icon: 'pharos',
+    rpc: [ 'https://rpc.pharos.xyz' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'PharosCoin', symbol: 'PROS', decimals: 18 },
+    infoURL: 'https://pharos.xyz',
+    shortName: 'pharos',
+    chainId: 1672,
+    networkId: 1672,
+    explorers: [
+      {
+        name: 'Pharos Explorer',
+        url: 'https://pharosscan.xyz',
+        icon: 'pharos',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Mint Testnet',
@@ -39002,6 +39025,25 @@ const chainArray = [
         name: 'GWScan Block Explorer',
         url: 'https://v1.gwscan.com',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'EAV7 EAVM',
+    chain: 'EAV7',
+    icon: 'eav7',
+    rpc: [ 'https://rpc.eavscan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'EAV7', symbol: 'EAV7', decimals: 18 },
+    infoURL: 'https://eavscan.com',
+    shortName: 'eav7',
+    chainId: 72020,
+    networkId: 72020,
+    explorers: [
+      {
+        name: 'EAV7 Scan',
+        url: 'https://eavscan.com',
+        standard: 'EIP3091'
       }
     ]
   },
