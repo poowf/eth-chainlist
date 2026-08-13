@@ -9971,7 +9971,7 @@ const chainArray = [
     name: 'Ault Blockchain Mainnet',
     chain: 'AULT',
     icon: 'ault',
-    rpc: [],
+    rpc: [ 'https://main-json-rpc.cloud.aultblockchain.xyz' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'AULT Token', symbol: 'AULT', decimals: 18 },
@@ -9979,7 +9979,14 @@ const chainArray = [
     shortName: 'ault',
     chainId: 904,
     networkId: 904,
-    explorers: []
+    explorers: [
+      {
+        name: 'Ault Mainnet Explorer',
+        url: 'https://ault.explorer.orynt.tech',
+        standard: 'EIP3091',
+        icon: 'ault'
+      }
+    ]
   },
   {
     name: 'Portal Fantasy Chain',
@@ -12464,11 +12471,12 @@ const chainArray = [
     explorers: []
   },
   {
-    name: 'AEREDIUM Testnet',
-    title: 'AEREDIUM Testnet',
+    name: 'AEREDIUM Testnet 1',
+    title: 'AEREDIUM Testnet 1',
     chain: 'AER',
-    rpc: [ 'https://testnet.rpc.aeredium.io' ],
-    faucets: [ 'https://aeredium.io/faucet.html' ],
+    status: 'deprecated',
+    rpc: [],
+    faucets: [],
     nativeCurrency: { name: 'Testnet AER', symbol: 'tAER', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://aeredium.io',
@@ -12477,13 +12485,7 @@ const chainArray = [
     networkId: 1237,
     slip44: 1,
     icon: 'aeredium',
-    explorers: [
-      {
-        name: 'AEREDIUM Testnet Explorer',
-        url: 'https://testnet.explorer.aeredium.io',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'ARC Mainnet',
@@ -17381,6 +17383,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'AEREDIUM Testnet',
+    title: 'AEREDIUM Testnet',
+    chain: 'AER',
+    rpc: [ 'https://testnet.rpc.aeredium.io' ],
+    faucets: [ 'https://aeredium.io/faucet.html' ],
+    nativeCurrency: { name: 'SEAR', symbol: 'SEAR', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://aeredium.io',
+    shortName: 'sea',
+    chainId: 2237,
+    networkId: 2237,
+    slip44: 1,
+    icon: 'aeredium',
+    explorers: [
+      {
+        name: 'AEREDIUM Testnet Explorer',
+        url: 'https://testnet.explorer.aeredium.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Krest Network',
     chain: 'Krest',
     icon: 'krest',
@@ -19901,6 +19925,27 @@ const chainArray = [
         name: 'JFINPOS Explorer',
         url: 'https://exp.jfinpos.com',
         icon: 'jfinpos',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Amero X Network',
+    chain: 'AMX',
+    rpc: [ 'https://amxrpc.link/public/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Amero X', symbol: 'AMX', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://amxscan.com',
+    shortName: 'amx',
+    chainId: 3535,
+    networkId: 3535,
+    icon: 'amerox',
+    explorers: [
+      {
+        name: 'Amero X Scan',
+        url: 'https://amxscan.com',
+        icon: 'amerox',
         standard: 'EIP3091'
       }
     ]
@@ -29357,7 +29402,7 @@ const chainArray = [
     name: 'Ault Blockchain Testnet',
     chain: 'AULT',
     icon: 'ault',
-    rpc: [],
+    rpc: [ 'https://test-json-rpc.cloud.aultblockchain.xyz' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Testnet AULT Token', symbol: 'AULT', decimals: 18 },
@@ -29365,7 +29410,14 @@ const chainArray = [
     shortName: 'ault-testnet',
     chainId: 10904,
     networkId: 10904,
-    explorers: []
+    explorers: [
+      {
+        name: 'Ault Testnet Explorer',
+        url: 'https://ault-testnet.explorer.orynt.tech',
+        standard: 'EIP3091',
+        icon: 'ault'
+      }
+    ]
   },
   {
     name: 'Fuse Flash Testnet',
@@ -32827,7 +32879,10 @@ const chainArray = [
     shortName: 'access',
     networkId: 22888,
     nativeCurrency: { name: 'Access Coin', symbol: 'ACCESS', decimals: 18 },
-    rpc: [ 'https://accesschain.org/rpc' ],
+    rpc: [
+      'https://accesschain.org/rpc',
+      'https://accesschainapp.site/rpc'
+    ],
     faucets: [],
     infoURL: 'https://accesschain.org',
     explorers: [
@@ -44458,6 +44513,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'MANORA',
+    chainId: 221978,
+    shortName: 'mnr',
+    chain: 'MANORA',
+    networkId: 221978,
+    icon: 'manora',
+    nativeCurrency: { name: 'Manora', symbol: 'MNR', decimals: 18 },
+    rpc: [ 'https://rpc.manoracoin.com' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'MANORA Explorer',
+        url: 'https://explorer.manoracoin.com',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://manoracoin.com',
+    parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
     name: 'Hydration',
     chain: 'HDX',
     rpc: [
@@ -48721,6 +48796,19 @@ const chainArray = [
     icon: 'webchain'
   },
   {
+    name: 'Dexpace',
+    chain: 'DEX',
+    icon: 'dexpace',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Dexpace', symbol: 'DEX', decimals: 18 },
+    infoURL: 'https://dexpace.io',
+    shortName: 'dexpace',
+    chainId: 1001001,
+    networkId: 1001001,
+    explorers: []
+  },
+  {
     name: 'Wirex Pay Testnet',
     chain: 'WirexPay',
     icon: 'wpay',
@@ -52618,6 +52706,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Dexpace Devnet 01',
+    chain: 'DEX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Dexpace', symbol: 'DEX', decimals: 18 },
+    infoURL: 'https://dexpace.io',
+    shortName: 'dexpace-devnet-01',
+    chainId: 100100101,
+    networkId: 100100101,
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'Dexpace Devnet Explorer',
+        url: 'https://blockscout.dexpace.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Oraichain Mainnet',
     title: 'Oraichain Mainnet',
     chain: 'Oraichain',
@@ -55206,6 +55313,43 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://explorer.flame.dawn-1.astria.org',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'STRATO Mainnet',
+    chain: 'STRATO',
+    rpc: [ 'https://app.strato.nexus/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'USDST', symbol: 'USDST', decimals: 18 },
+    infoURL: 'https://strato.nexus',
+    shortName: 'strato',
+    chainId: 123354377739506,
+    networkId: 123354377739506,
+    explorers: [
+      {
+        name: 'stratoscan',
+        url: 'https://stratoscan.strato.nexus',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'STRATO Helium Testnet',
+    chain: 'STRATO',
+    rpc: [ 'https://app.testnet.strato.nexus/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'USDST', symbol: 'USDST', decimals: 18 },
+    infoURL: 'https://strato.nexus',
+    shortName: 'strato-testnet',
+    chainId: 195049586845898,
+    networkId: 195049586845898,
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'stratoscan',
+        url: 'https://stratoscan.testnet.strato.nexus',
         standard: 'EIP3091'
       }
     ]
