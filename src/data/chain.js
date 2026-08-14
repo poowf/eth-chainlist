@@ -6730,7 +6730,7 @@ const chainArray = [
   {
     name: 'Ozone Chain Testnet',
     chain: 'OZONE',
-    rpc: [ 'https://node1.testnet.ozonechain.io' ],
+    rpc: [ 'https://node2.testnet.ozonechain.io' ],
     faucets: [],
     nativeCurrency: { name: 'OZONE', symbol: 'OZO', decimals: 18 },
     infoURL: 'https://ozonechain.io',
@@ -27072,6 +27072,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Garuda Chain Mainnet',
+    chain: 'GDC',
+    rpc: [ 'https://rpc.garudachain.id', 'https://rpc2.garudachain.id' ],
+    faucets: [],
+    nativeCurrency: { name: 'Garuda Digital Coin', symbol: 'GDC', decimals: 18 },
+    infoURL: 'https://garudachain.id',
+    shortName: 'garuda',
+    chainId: 8846,
+    networkId: 8846,
+    explorers: [
+      {
+        name: 'Garuda Explorer',
+        url: 'https://explorer.garudachain.id',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'MARO Blockchain Mainnet',
     chain: 'MARO Blockchain',
     icon: 'MARO',
@@ -43035,6 +43054,26 @@ const chainArray = [
         name: 'Tatara explorer',
         url: 'https://explorer.tatara.katana.network',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'RPHX Mainnet',
+    chain: 'RPHX',
+    icon: 'rphx',
+    rpc: [ 'https://rpc.rphxscan.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'RPHX', symbol: 'RPHX', decimals: 18 },
+    infoURL: 'https://rphxscan.com',
+    shortName: 'rphx',
+    chainId: 130526,
+    networkId: 130526,
+    explorers: [
+      {
+        name: 'RphxScan',
+        url: 'https://rphxscan.com',
         standard: 'EIP3091'
       }
     ]
