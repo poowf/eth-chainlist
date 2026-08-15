@@ -18110,6 +18110,29 @@ const chainArray = [
     }
   },
   {
+    name: 'Haus Chain Testnet',
+    chain: 'HAUS',
+    rpc: [
+      'https://rpc-testnet.hausserver.xyz',
+      'wss://rpc-testnet.hausserver.xyz'
+    ],
+    faucets: [ 'https://faucet-testnet.hausserver.xyz' ],
+    nativeCurrency: { name: 'Haus', symbol: 'HAUS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.hausserver.xyz',
+    shortName: 't-haus',
+    chainId: 2443,
+    networkId: 2443,
+    status: 'active',
+    explorers: [
+      {
+        name: 'Haus Chain Testnet Explorer',
+        url: 'https://explorer-testnet.hausserver.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Hybrid Chain Network Testnet',
     chain: 'HYBRID',
     rpc: [ 'https://rpc-testnet.hybridchain.ai/' ],
@@ -25309,6 +25332,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Racaille Smart Chain',
+    chain: 'RNR',
+    icon: 'racaille',
+    rpc: [ 'https://rpc.racaille.dev' ],
+    faucets: [],
+    nativeCurrency: { name: 'Racaille', symbol: 'RNR', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://racaille.dev',
+    shortName: 'rnr',
+    chainId: 7676,
+    networkId: 7676,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.racaille.dev',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Canto',
     chain: 'Canto',
     rpc: [
@@ -25591,6 +25635,25 @@ const chainArray = [
         name: 'OpenEX Long Testnet Explorer',
         url: 'https://scan.long.openex.network',
         icon: 'oex',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'HyveChain',
+    chain: 'HYVE',
+    rpc: [ 'https://rpc.hyvechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'HYVE', symbol: 'HYVE', decimals: 18 },
+    infoURL: 'https://hyvechain.com',
+    shortName: 'hyve',
+    chainId: 7847,
+    networkId: 7847,
+    icon: 'hyvechain',
+    explorers: [
+      {
+        name: 'HyveChain Explorer',
+        url: 'https://explorer.hyvechain.com',
         standard: 'EIP3091'
       }
     ]
@@ -32357,6 +32420,25 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Aglais Testnet (Quip Network)',
+    chain: 'AGLS',
+    icon: 'aglais',
+    rpc: [ 'https://evm-rpc.testnet.quip.network:20049' ],
+    faucets: [],
+    explorers: [
+      {
+        name: 'Aglais Explorer',
+        url: 'https://explorer.testnet.quip.network',
+        standard: 'EIP3091'
+      }
+    ],
+    nativeCurrency: { name: 'AGLS', symbol: 'AGLS', decimals: 18 },
+    infoURL: 'https://agls.quip.network',
+    shortName: 'agls',
+    chainId: 20033,
+    networkId: 20033
+  },
+  {
     name: 'Niza Chain Mainnet',
     chain: 'NIZA',
     icon: 'niza',
@@ -38502,6 +38584,26 @@ const chainArray = [
       {
         name: 'Geist Explorer',
         url: 'https://geist-mainnet.explorer.alchemy.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Veri5',
+    chain: 'VERI5',
+    icon: 'veri5',
+    rpc: [ 'https://rpc0.veri5.network' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Unit', symbol: 'UNIT', decimals: 18 },
+    infoURL: 'https://veri5.technology',
+    shortName: 'veri5',
+    chainId: 63868,
+    networkId: 63868,
+    explorers: [
+      {
+        name: 'Veri5 Explorer',
+        url: 'https://explorer.veri5.network',
         standard: 'EIP3091'
       }
     ]
@@ -52529,6 +52631,21 @@ const chainArray = [
         icon: 'SX'
       }
     ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'Recyclefarm Carbon Network Sepolia',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://recyclefarm.org/',
+    shortName: 'recasep',
+    chainId: 82696765,
+    networkId: 82696765,
+    slip44: 1,
+    explorers: [],
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
