@@ -2891,7 +2891,8 @@ const chainArray = [
       'https://polygon.gateway.tenderly.co',
       'wss://polygon.gateway.tenderly.co',
       'https://rpc.satelink.network/rpc/polygon',
-      'https://rpcfree.com/polygon-rpc'
+      'https://rpcfree.com/polygon-rpc',
+      'wss://rpc.satelink.network/rpc/ws/polygon'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -5267,6 +5268,19 @@ const chainArray = [
     explorers: [
       { name: 'hscan', url: 'https://hscan.org', standard: 'EIP3091' }
     ]
+  },
+  {
+    name: 'Orbinum',
+    chain: 'ORB',
+    icon: 'orbinum',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ORB', symbol: 'ORB', decimals: 18 },
+    infoURL: 'https://orbinum.network',
+    shortName: 'orbinum',
+    chainId: 270,
+    networkId: 270,
+    status: 'incubating'
   },
   {
     name: 'EgonCoin Mainnet',
@@ -18641,6 +18655,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Orbinum Testnet',
+    chain: 'ORB',
+    icon: 'orbinum',
+    rpc: [
+      'https://rpc-1.testnet.orbinum.io',
+      'https://rpc-2.testnet.orbinum.io'
+    ],
+    faucets: [ 'https://faucet.orbinum.network' ],
+    nativeCurrency: { name: 'ORB', symbol: 'ORB', decimals: 18 },
+    infoURL: 'https://orbinum.network',
+    shortName: 'orbinum-testnet',
+    chainId: 2700,
+    networkId: 2700,
+    explorers: [
+      {
+        name: 'Orbinum Privacy Explorer',
+        url: 'https://explorer.testnet.orbinum.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Morph Testnet',
     chain: 'ETH',
     rpc: [ 'https://rpc-testnet.morphl2.io' ],
@@ -23141,6 +23177,18 @@ const chainArray = [
     networkId: 5545
   },
   {
+    name: 'Orden Global',
+    chain: 'OGB',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Origen', symbol: 'ORIGEN', decimals: 18 },
+    infoURL: 'https://ordenglobal.org',
+    shortName: 'ogb',
+    chainId: 5550,
+    networkId: 5550,
+    status: 'incubating'
+  },
+  {
     name: 'Nahmii 2 Mainnet',
     chain: 'Nahmii',
     rpc: [ 'https://l2.nahmii.io' ],
@@ -26771,7 +26819,8 @@ const chainArray = [
       'https://base-rpc.publicnode.com',
       'wss://base-rpc.publicnode.com',
       'https://rpcfree.com/base-rpc',
-      'https://rpc.baseazul.dev'
+      'https://rpc.baseazul.dev',
+      'https://rpc.satelink.network/rpc/base'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -26796,11 +26845,6 @@ const chainArray = [
         name: 'dexguru',
         url: 'https://base.dex.guru',
         icon: 'dexguru',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'Routescan',
-        url: 'https://base.superscan.network',
         standard: 'EIP3091'
       }
     ],
@@ -35447,7 +35491,8 @@ const chainArray = [
       'https://arb1.arbitrum.io/rpc',
       'https://arbitrum-one-rpc.publicnode.com',
       'wss://arbitrum-one-rpc.publicnode.com',
-      'https://rpcfree.com/arbitrum-rpc'
+      'https://rpcfree.com/arbitrum-rpc',
+      'https://rpc.satelink.network/rpc/arbitrum'
     ],
     faucets: [],
     explorers: [
@@ -39205,7 +39250,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'EAV7 EAVM',
+    name: 'EAV7',
     chain: 'EAV7',
     icon: 'eav7',
     rpc: [ 'https://rpc.eavscan.com' ],
@@ -39877,7 +39922,8 @@ const chainArray = [
       'https://rpc-amoy.polygon.technology',
       'https://polygon-amoy-bor-rpc.publicnode.com',
       'wss://polygon-amoy-bor-rpc.publicnode.com',
-      'https://polygon-amoy.drpc.org'
+      'https://polygon-amoy.drpc.org',
+      'https://rpc.satelink.network/rpc/amoy'
     ],
     faucets: [ 'https://faucet.polygon.technology/' ],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -47614,6 +47660,25 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ]
   },
   {
+    name: 'HanChain Mainnet',
+    chain: 'HAN',
+    rpc: [ 'https://rpc.hanchain.cc/rpc' ],
+    features: [ { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'HAN', symbol: 'HAN', decimals: 18 },
+    infoURL: 'https://rpc.hanchain.cc',
+    shortName: 'hanchain',
+    chainId: 726578,
+    networkId: 726578,
+    explorers: [
+      {
+        name: 'HanChain Explorer',
+        url: 'https://rpc.hanchain.cc',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'bokuto',
     chain: 'bokuto',
     rpc: [ 'https://rpc-bokuto.katanarpc.com' ],
@@ -54818,6 +54883,25 @@ const chainArray = [
         name: 'a8scan-testnet',
         url: 'https://testnet.a8scan.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GUT Network',
+    chain: 'GUT',
+    rpc: [ 'https://rpc.gut.network' ],
+    faucets: [],
+    nativeCurrency: { name: 'GUT', symbol: 'GUT', decimals: 18 },
+    infoURL: 'https://gut.network',
+    shortName: 'gut',
+    chainId: 3078101055,
+    networkId: 3078101055,
+    icon: 'gut',
+    explorers: [
+      {
+        name: 'GUT Explorer',
+        url: 'https://explorer.gut.network',
+        standard: 'none'
       }
     ]
   },
