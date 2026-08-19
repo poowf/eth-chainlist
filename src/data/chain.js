@@ -32575,6 +32575,26 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'CHEESE Blockchain Mainnet',
+    chain: 'CHEESE',
+    icon: 'cheese',
+    rpc: [ 'https://cheeseblockchain.com/api/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Native Cheesecoin', symbol: 'NCH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://cheeseblockchain.com',
+    shortName: 'nch',
+    chainId: 20250,
+    networkId: 20250,
+    explorers: [
+      {
+        name: 'CHEESE Blockchain Explorer',
+        url: 'https://cheeseblockchain.com/explorer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'MACos Chain',
     chain: 'MACOS',
     icon: 'macos',
@@ -39004,16 +39024,17 @@ const chainArray = [
   {
     name: 'Animechain Mainnet',
     chain: 'ETH',
-    rpc: [],
+    rpc: [ 'https://public-rpc.anime.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'Animecoin', symbol: 'ANIME', decimals: 18 },
     infoURL: 'https://www.anime.xyz',
     shortName: 'anime',
     chainId: 69000,
     networkId: 69000,
+    icon: 'anime',
     explorers: [
       {
-        name: 'Animechain explorer',
+        name: 'Animechain Explorer',
         url: 'https://explorer.anime.xyz',
         standard: 'EIP3091'
       }
