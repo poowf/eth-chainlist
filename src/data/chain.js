@@ -11016,6 +11016,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nura Chain',
+    chain: 'Nura',
+    rpc: [ 'https://rpc.nurachain.net' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Nura Coin', symbol: 'NURA', decimals: 18 },
+    infoURL: 'https://nurachain.net',
+    shortName: 'nura',
+    chainId: 1020,
+    networkId: 1020,
+    explorers: [
+      {
+        name: 'Nura Explorer',
+        url: 'https://explorer.nurachain.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Sakura',
     chain: 'Sakura',
     rpc: [],
@@ -42442,13 +42461,32 @@ const chainArray = [
     chain: 'XITCOIN',
     faucets: [],
     rpc: [ 'https://network.xitcoin.org' ],
-    nativeCurrency: { name: 'Xitcoin', symbol: '$XTC', decimals: 8 },
-    infoURL: 'https://docs.xitcoin.org/',
+    nativeCurrency: { name: 'Xitcoin', symbol: 'XTC', decimals: 18 },
+    infoURL: 'https://xitcoin.gitbook.io/guide/',
     shortName: 'Xitcoin',
     chainId: 101088,
     networkId: 101088,
     icon: 'xitcoin',
     explorers: []
+  },
+  {
+    name: 'Xitcoin Testnet',
+    chain: 'XITCOIN',
+    faucets: [ 'https://faucet-testnet.xitcoin.org/' ],
+    rpc: [ 'https://evm-rpc-testnet.xitcoin.org' ],
+    nativeCurrency: { name: 'Xitcoin', symbol: 'XTC', decimals: 18 },
+    infoURL: 'https://xitcoin.gitbook.io/guide/',
+    shortName: 'xtct',
+    chainId: 101089,
+    networkId: 101089,
+    icon: 'xitcoin',
+    explorers: [
+      {
+        name: 'Xitcoin Testnet Explorer',
+        url: 'https://evm-explorer-testnet.xitcoin.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Creditcoin',
