@@ -2798,20 +2798,21 @@ const chainArray = [
     networkId: 132
   },
   {
-    name: 'HashKey Chain Testnet',
-    title: 'HashKey Chain Testnet',
-    chain: 'HashKey Chain Testnet',
+    name: 'HSKChain Testnet',
+    title: 'HSKChain Testnet',
+    chain: 'HSKChain Testnet',
+    icon: 'hskchain',
     rpc: [ 'https://testnet.hsk.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'HashKey EcoPoints', symbol: 'HSK', decimals: 18 },
-    infoURL: 'https://hashkeychain.net',
+    infoURL: 'https://hskchain.net',
     shortName: 'HSKT',
     chainId: 133,
     networkId: 133,
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://testnet-explorer.hsk.xyz',
+        url: 'https://testnet-explorer.hskchain.net',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -3441,6 +3442,7 @@ const chainArray = [
   {
     name: 'Farm Chain',
     chain: 'FMC',
+    icon: 'fmc',
     rpc: [ 'https://rpc.fmcscan.com' ],
     faucets: [],
     nativeCurrency: { name: 'Farm Coin', symbol: 'FMC', decimals: 18 },
@@ -3674,26 +3676,21 @@ const chainArray = [
     ]
   },
   {
-    name: 'HashKey Chain',
-    title: 'HashKey Chain',
-    chain: 'HashKey Chain',
+    name: 'HSKChain',
+    title: 'HSKChain',
+    chain: 'HSKChain',
+    icon: 'hskchain',
     rpc: [ 'https://mainnet.hsk.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'HashKey EcoPoints', symbol: 'HSK', decimals: 18 },
-    infoURL: 'https://hsk.xyz',
+    infoURL: 'https://hskchain.net',
     shortName: 'hsk',
     chainId: 177,
     networkId: 177,
     explorers: [
       {
         name: 'blockscout',
-        url: 'https://hashkey.blockscout.com',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'blockscout',
-        url: 'https://explorer.hsk.xyz',
+        url: 'https://hsk.blockscout.com',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
@@ -23203,14 +23200,25 @@ const chainArray = [
   {
     name: 'Orden Global',
     chain: 'OGB',
-    rpc: [],
+    rpc: [
+      'https://ordenglobal-rpc.com',
+      'https://rpc.ordenglobal-rpc.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Origen', symbol: 'ORIGEN', decimals: 18 },
     infoURL: 'https://ordenglobal.org',
     shortName: 'ogb',
     chainId: 5550,
     networkId: 5550,
-    status: 'incubating'
+    icon: 'ordenglobal',
+    explorers: [
+      {
+        name: 'ordenscan',
+        url: 'https://ordenscan.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'Nahmii 2 Mainnet',
@@ -40071,10 +40079,10 @@ const chainArray = [
     icon: 'berachain',
     explorers: [
       {
-        name: 'Beratrail',
-        url: 'https://bepolia.beratrail.io',
+        name: 'Berascan Bepolia Testnet Block Explorer',
+        url: 'https://testnet.berascan.com',
         icon: 'berachain',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -40139,13 +40147,8 @@ const chainArray = [
     icon: 'berachain',
     explorers: [
       {
-        name: 'Berascan',
+        name: 'Berascan Berachain Block Explorer',
         url: 'https://berascan.com',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'Beratrail',
-        url: 'https://beratrail.io',
         standard: 'EIP3091'
       }
     ]
