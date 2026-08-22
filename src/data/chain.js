@@ -11015,6 +11015,7 @@ const chainArray = [
   {
     name: 'Nura Chain',
     chain: 'Nura',
+    icon: 'nura',
     rpc: [ 'https://rpc.nurachain.net' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -42463,14 +42464,15 @@ const chainArray = [
     name: 'Xitcoin',
     chain: 'XITCOIN',
     faucets: [],
-    rpc: [ 'https://network.xitcoin.org' ],
+    rpc: [],
     nativeCurrency: { name: 'Xitcoin', symbol: 'XTC', decimals: 18 },
     infoURL: 'https://xitcoin.gitbook.io/guide/',
     shortName: 'Xitcoin',
     chainId: 101088,
     networkId: 101088,
     icon: 'xitcoin',
-    explorers: []
+    explorers: [],
+    status: 'incubating'
   },
   {
     name: 'Xitcoin Testnet',
@@ -44003,6 +44005,7 @@ const chainArray = [
     shortName: 'mfenx',
     chainId: 177155,
     networkId: 177155,
+    icon: 'mfenx',
     status: 'active'
   },
   {
