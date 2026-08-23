@@ -198,23 +198,36 @@ const chainArray = [
     ]
   },
   {
-    name: 'Ubiq',
-    chain: 'UBQ',
-    rpc: [ 'https://rpc.octano.dev', 'https://pyrus2.ubiqscan.io' ],
+    name: 'c8ntinuum',
+    chain: 'CTM',
+    rpc: [
+      'https://rpc.c8ntinuum.com',
+      'https://rpc.c8ntinuum.io',
+      'https://rpc.c8ntinuum.link'
+    ],
     faucets: [],
-    nativeCurrency: { name: 'Ubiq Ether', symbol: 'UBQ', decimals: 18 },
-    infoURL: 'https://ubiqsmart.com',
-    shortName: 'ubq',
+    nativeCurrency: { name: 'c8ntinuum', symbol: 'CTM', decimals: 18 },
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP2930' },
+      { name: 'EIP7702' }
+    ],
+    infoURL: 'https://c8ntinuum.com',
+    shortName: 'ctm',
     chainId: 8,
     networkId: 8,
-    slip44: 108,
+    slip44: 60,
+    icon: 'c8ntinuum',
     explorers: [
       {
-        name: 'ubiqscan',
-        url: 'https://ubiqscan.io',
+        name: 'CTMScan',
+        url: 'https://ctmscan.io',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'active',
+    redFlags: [ 'reusedChainId' ]
   },
   {
     name: 'Quai Network Mainnet',
@@ -8861,6 +8874,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'L7C',
+    chain: 'L7C',
+    rpc: [ 'https://l7c.ai/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'L7C', symbol: 'L7C', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://l7c.ai',
+    shortName: 'l7c',
+    chainId: 717,
+    networkId: 717,
+    explorers: [ { name: 'L7C', url: 'https://l7c.ai', standard: 'none' } ]
   },
   {
     name: 'UXLINK ONE Mainnet',
@@ -21986,6 +22012,25 @@ const chainArray = [
     }
   },
   {
+    name: 'Intertrain',
+    chain: 'INTE',
+    icon: 'intertrain',
+    rpc: [ 'https://rpc.intertrain.online/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'MANNA', symbol: 'MNA', decimals: 18 },
+    infoURL: 'https://intertrain.online',
+    shortName: 'inte',
+    chainId: 4683,
+    networkId: 4683,
+    explorers: [
+      {
+        name: 'Intertrain Explorer',
+        url: 'https://explorer.intertrain.online',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'IoTeX Network Mainnet',
     chain: 'iotex.io',
     rpc: [ 'https://babel-api.mainnet.iotex.io' ],
@@ -27433,14 +27478,13 @@ const chainArray = [
     ]
   },
   {
-    name: 'c8ntinuum',
+    name: 'c8ntinuum Testnet',
     chain: 'CTM',
     rpc: [
-      'https://rpc.c8ntinuum.com',
-      'https://rpc.c8ntinuum.io',
-      'https://rpc.c8ntinuum.link'
+      'https://rpc-testnet.c8ntinuum.com',
+      'https://rpc-testnet.c8ntinuum.link'
     ],
-    faucets: [],
+    faucets: [ 'https://testnet-faucet.c8ntinuum.io/' ],
     nativeCurrency: { name: 'c8ntinuum', symbol: 'CTM', decimals: 18 },
     features: [
       { name: 'EIP155' },
@@ -27449,19 +27493,18 @@ const chainArray = [
       { name: 'EIP7702' }
     ],
     infoURL: 'https://c8ntinuum.com',
-    shortName: 'ctm',
+    shortName: 'tctm',
     chainId: 8888,
     networkId: 8888,
-    slip44: 60,
+    slip44: 1,
     icon: 'c8ntinuum',
     explorers: [
       {
-        name: 'CTMScan',
-        url: 'https://ctmscan.io',
+        name: 'CTMScan Testnet',
+        url: 'https://testnet.ctmscan.io',
         standard: 'EIP3091'
       }
     ],
-    status: 'active',
     redFlags: [ 'reusedChainId' ]
   },
   {
