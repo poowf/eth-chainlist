@@ -9871,17 +9871,25 @@ const chainArray = [
     ]
   },
   {
-    name: 'CXM',
-    chain: 'CXM',
-    rpc: [],
+    name: 'MarsChain Mainnet',
+    chain: 'MARS',
+    rpc: [ 'https://rpcs.marschain.net/' ],
     faucets: [],
-    nativeCurrency: { name: 'CXM', symbol: 'CXM', decimals: 18 },
-    infoURL: '',
-    shortName: 'CXM',
+    nativeCurrency: { name: 'MARS', symbol: 'MARS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://marschain.net/',
+    shortName: 'marschain',
     chainId: 890,
     networkId: 890,
-    status: 'deprecated',
-    explorers: []
+    icon: 'marschain',
+    redFlags: [ 'reusedChainId' ],
+    explorers: [
+      {
+        name: 'MarsChain Explorer',
+        url: 'https://explorer.marschain.net',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MAXI Chain Testnet',
@@ -21992,11 +22000,6 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://robinhoodchain.blockscout.com',
         icon: 'blockscout',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'HoodScan',
-        url: 'https://hoodscan.ai',
         standard: 'EIP3091'
       }
     ],
