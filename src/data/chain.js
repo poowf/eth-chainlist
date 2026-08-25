@@ -15826,6 +15826,23 @@ const chainArray = [
     ]
   },
   {
+    name: 'INNBC Chain Mainnet',
+    chain: 'INNBC',
+    rpc: [ 'https://innbcchain.io/rpc' ],
+    faucets: [],
+    nativeCurrency: {
+      name: 'InnovativeBioresearchCoin',
+      symbol: 'INNBC',
+      decimals: 18
+    },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://innbcchain.io',
+    shortName: 'innbc',
+    chainId: 1982,
+    networkId: 1982,
+    status: 'active'
+  },
+  {
     name: 'Krown Mainnet',
     chain: 'KROWN',
     icon: 'krown',
@@ -17638,7 +17655,7 @@ const chainArray = [
   {
     name: 'Altcoinchain',
     chain: 'mainnet',
-    rpc: [ 'https://rpc0.altcoinchain.org/rpc' ],
+    rpc: [ 'https://rpc.wattxchange.app' ],
     faucets: [],
     nativeCurrency: { name: 'Altcoin', symbol: 'ALT', decimals: 18 },
     infoURL: 'https://altcoinchain.org',
@@ -17649,8 +17666,14 @@ const chainArray = [
     status: 'active',
     explorers: [
       {
+        name: 'ALTScan',
+        url: 'https://alt-exp.wattxchange.app',
+        icon: 'altcoinchain',
+        standard: 'EIP3091'
+      },
+      {
         name: 'expedition',
-        url: 'http://expedition.altcoinchain.org',
+        url: 'https://explorer.altcoinchain.org',
         icon: 'altcoinchain',
         standard: 'none'
       }
@@ -54462,6 +54485,28 @@ const chainArray = [
         name: 'RaptorChain Explorer',
         url: 'https://explorer.raptorchain.io',
         icon: 'raptorchain_explorer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Torium Testnet',
+    chain: 'Torium',
+    rpc: [
+      'https://rpc.testnet.torium.network',
+      'wss://ws.testnet.torium.network'
+    ],
+    faucets: [ 'https://faucet.testnet.torium.network' ],
+    nativeCurrency: { name: 'Torium Test Token', symbol: 'tTOR', decimals: 18 },
+    infoURL: 'https://torium.network',
+    shortName: 'torium-testnet',
+    chainId: 1414484564,
+    networkId: 1414484564,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Torium Testnet Explorer',
+        url: 'https://explorer.testnet.torium.network',
         standard: 'EIP3091'
       }
     ]
