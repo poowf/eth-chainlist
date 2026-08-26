@@ -15482,6 +15482,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Vitreus Mainnet',
+    chain: 'VTRS',
+    rpc: [ 'https://rpc-mainnet.vtrs.io', 'wss://rpc-mainnet.vtrs.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'VNRG', symbol: 'VNRG', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://vitreus.io',
+    shortName: 'vtrs',
+    chainId: 1943,
+    networkId: 1943,
+    explorers: [
+      {
+        name: 'Vitreus Explorer',
+        url: 'https://explorer.vtrs.io',
+        standard: 'none'
+      },
+      {
+        name: 'Vitreus Polkadot Explorer',
+        url: 'https://polkadot.js.org/apps/?rpc=wss://rpc-mainnet.vtrs.io#/explorer',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'ONUS Chain Testnet',
     title: 'ONUS Chain Testnet',
     chain: 'onus',
@@ -33091,6 +33115,26 @@ const chainArray = [
         url: 'https://taycan-cosmoscan.hupayx.io',
         standard: 'none',
         icon: 'shuffle'
+      }
+    ]
+  },
+  {
+    name: 'KriptoAman Mainnet',
+    chain: 'KAM',
+    rpc: [ 'https://rpc.kriptoaman.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'KriptoAman', symbol: 'KAM', decimals: 18 },
+    infoURL: 'https://kriptoaman.com',
+    shortName: 'kriptoaman',
+    chainId: 22028,
+    networkId: 22028,
+    icon: 'kriptoaman',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'KriptoAman Explorer',
+        url: 'https://explorer.kriptoaman.com',
+        standard: 'EIP3091'
       }
     ]
   },
