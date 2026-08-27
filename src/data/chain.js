@@ -2836,21 +2836,15 @@ const chainArray = [
     name: 'iExec Sidechain',
     chain: 'Bellecour',
     icon: 'rlc',
-    rpc: [ 'https://bellecour.iex.ec' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'xRLC', symbol: 'xRLC', decimals: 18 },
     infoURL: 'https://iex.ec',
     shortName: 'rlc',
     chainId: 134,
     networkId: 134,
-    explorers: [
-      {
-        name: 'blockscout',
-        url: 'https://blockscout.bellecour.iex.ec',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      }
-    ]
+    status: 'deprecated',
+    explorers: []
   },
   {
     name: 'Alyx Chain Testnet',
@@ -13454,6 +13448,26 @@ const chainArray = [
       {
         name: 'BlockExplorer',
         url: 'https://www.blockexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Midpoint Cross',
+    chain: 'MIDX',
+    rpc: [ 'https://mainnet.midpointcross.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Midpoint Cross', symbol: 'MIDX', decimals: 18 },
+    infoURL: 'https://www.midpointcross.com',
+    shortName: 'midx',
+    chainId: 1394,
+    networkId: 1394,
+    icon: 'midx',
+    explorers: [
+      {
+        name: 'Midpoint Cross',
+        url: 'https://transactions.midpointcross.com',
         standard: 'EIP3091'
       }
     ]
@@ -43540,6 +43554,26 @@ const chainArray = [
       chain: 'eip155-11155111',
       bridges: [ { url: 'https://sepolia-op-bridge.form.network' } ]
     }
+  },
+  {
+    name: 'Midpoint Cross Testnet',
+    chain: 'MIDX',
+    rpc: [ 'https://testnet.midpointcross.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Midpoint Cross Testnet', symbol: 'tMIDX', decimals: 18 },
+    infoURL: 'https://www.midpointcross.com',
+    shortName: 'midxt',
+    chainId: 139420,
+    networkId: 139420,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Midpoint Cross Testnet',
+        url: 'https://testnet-transactions.midpointcross.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'BEXChain',
