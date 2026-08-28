@@ -15566,6 +15566,18 @@ const chainArray = [
     }
   },
   {
+    name: 'QMS',
+    chain: 'QMS',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'QMS', symbol: 'QMS', decimals: 18 },
+    infoURL: 'https://qms.finance',
+    shortName: 'qms',
+    chainId: 1948,
+    networkId: 1948,
+    status: 'incubating'
+  },
+  {
     name: 'Bionix Testnet',
     chain: 'Bionix',
     rpc: [ 'https://testnet-chain.bionixnetwork.com' ],
@@ -19928,6 +19940,32 @@ const chainArray = [
     ]
   },
   {
+    name: 'Tajir Chain',
+    chain: 'TJR',
+    rpc: [ 'https://rpc.tajirchain.com' ],
+    nativeCurrency: { name: 'Tajir', symbol: 'TJR', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://tajirchain.com',
+    shortName: 'tjr',
+    chainId: 3377,
+    networkId: 3377,
+    icon: 'tajir',
+    faucets: [],
+    explorers: [
+      {
+        name: 'Tajir Explorer',
+        url: 'https://explorer.tajirchain.com',
+        icon: 'tajir',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.tajirchain.com' } ]
+    }
+  },
+  {
     name: 'Paribu Net Mainnet',
     chain: 'PRB',
     rpc: [ 'https://rpc.paribu.network' ],
@@ -22048,6 +22086,8 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://rpc.mainnet.chain.robinhood.com',
+      'https://robinhood-rpc.publicnode.com',
+      'wss://robinhood-rpc.publicnode.com',
       'https://rpc.arrowrpc.com'
     ],
     faucets: [],
@@ -22057,6 +22097,12 @@ const chainArray = [
     chainId: 4663,
     networkId: 4663,
     explorers: [
+      {
+        name: 'robinscan',
+        url: 'https://robinscan.io',
+        icon: 'robinscan',
+        standard: 'EIP3091'
+      },
       {
         name: 'blockscout',
         url: 'https://robinhoodchain.blockscout.com',
@@ -32390,6 +32436,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'QMS Testnet',
+    chain: 'QMS',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'QMS', symbol: 'QMS', decimals: 18 },
+    infoURL: 'https://qms.finance',
+    shortName: 'qmstest',
+    chainId: 19480,
+    networkId: 19480,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
     name: 'SEC Testnet',
     chain: 'SEC',
     icon: 'secIcon',
@@ -36700,7 +36759,11 @@ const chainArray = [
     name: 'Robinhood Chain Testnet',
     title: 'Robinhood Chain Testnet',
     chain: 'ETH',
-    rpc: [ 'https://rpc.testnet.chain.robinhood.com/rpc' ],
+    rpc: [
+      'https://rpc.testnet.chain.robinhood.com/rpc',
+      'https://robinhood-sepolia-rpc.publicnode.com',
+      'wss://robinhood-sepolia-rpc.publicnode.com'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://docs.robinhood.com/chain/',
