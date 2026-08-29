@@ -9861,6 +9861,11 @@ const chainArray = [
         icon: 'wanchain',
         url: 'https://wanscan.org',
         standard: 'EIP3091'
+      },
+      {
+        name: 'OrbitWan.io',
+        url: 'https://orbitwan.io',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -31765,6 +31770,35 @@ const chainArray = [
     ]
   },
   {
+    name: 'Nagara',
+    chain: 'NGRX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Nagara', symbol: 'NGRX', decimals: 18 },
+    infoURL: 'https://nagara.network',
+    shortName: 'ngrx',
+    chainId: 16868,
+    networkId: 16868,
+    status: 'incubating'
+  },
+  {
+    name: 'Nagara Testnet',
+    chain: 'NGRX',
+    rpc: [
+      'https://testnet.nagara.network',
+      'wss://testnet.nagara.network'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://bagi-bagi.nagara.network' ],
+    nativeCurrency: { name: 'Nagara Testnet Token', symbol: 'tNGRX', decimals: 18 },
+    infoURL: 'https://nagara.network',
+    shortName: 'tngrx',
+    chainId: 16869,
+    networkId: 16869,
+    slip44: 1,
+    status: 'active'
+  },
+  {
     name: 'IVAR Chain Testnet',
     chain: 'IVAR',
     icon: 'ivar',
@@ -32482,6 +32516,46 @@ const chainArray = [
       {
         name: 'SEC Mainnet Explorer',
         url: 'https://secexplorer.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Smart Technology Chain Testnet',
+    chain: 'Smart Technology Chain',
+    icon: 'stc',
+    rpc: [ 'https://testnet-rpc.stcexplorer.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SEP', symbol: 'SEP', decimals: 18 },
+    infoURL: 'https://smartenergypays.io/',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    shortName: 'stc-testnet',
+    chainId: 19517,
+    networkId: 19517,
+    explorers: [
+      {
+        name: 'Smart Technology Chain Explorer',
+        url: 'https://testnet.stcexplorer.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Smart Technology Chain Mainnet',
+    chain: 'Smart Technology Chain',
+    icon: 'stc',
+    rpc: [ 'https://rpc.stcexplorer.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'SEP', symbol: 'SEP', decimals: 18 },
+    infoURL: 'https://smartenergypays.io/',
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    shortName: 'stc-mainnet',
+    chainId: 19518,
+    networkId: 19518,
+    explorers: [
+      {
+        name: 'Smart Technology Chain Explorer',
+        url: 'https://stcexplorer.io',
         standard: 'EIP3091'
       }
     ]
@@ -54651,6 +54725,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'TWIX Mainnet',
+    chain: 'TWIX',
+    rpc: [ 'https://evm.twixchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'TWIX', symbol: 'TWIX', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://twixchain.com',
+    shortName: 'twix',
+    chainId: 1415006552,
+    networkId: 1415006552,
+    slip44: 60,
+    icon: 'twix'
   },
   {
     name: 'Zephyr Testnet',
