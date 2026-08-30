@@ -10717,6 +10717,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'Banteng Chain Testnet',
+    chain: 'BTG',
+    icon: 'banteng',
+    rpc: [
+      'https://rpc1.banteng.asia',
+      'https://rpc2.banteng.asia',
+      'https://rpc3.banteng.asia'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Banteng Coin', symbol: 'tBTG', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://banteng.asia',
+    shortName: 'banteng',
+    chainId: 993,
+    networkId: 993,
+    explorers: [
+      {
+        name: 'Banteng Explorer',
+        url: 'https://explorer.banteng.asia',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: '5ireChain Mainnet',
     chain: '5ireChain',
     rpc: [ 'https://rpc.5ire.network' ],
@@ -39985,6 +40009,25 @@ const chainArray = [
       {
         name: 'BORAchainscope',
         url: 'https://scope.boraportal.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Autyon Testnet',
+    chain: 'AUT',
+    rpc: [ 'https://rpc.autyon.io' ],
+    faucets: [ 'https://faucet.autyon.io' ],
+    nativeCurrency: { name: 'Autyon', symbol: 'AUT', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://autyon.io',
+    shortName: 'autyon',
+    chainId: 77077,
+    networkId: 77077,
+    explorers: [
+      {
+        name: 'autscan',
+        url: 'https://autscan.io',
         standard: 'EIP3091'
       }
     ]
