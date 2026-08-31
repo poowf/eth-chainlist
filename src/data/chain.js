@@ -22151,12 +22151,12 @@ const chainArray = [
     }
   },
   {
-    name: 'Intertrain',
+    name: 'Intertrain Mainnet',
     chain: 'INTE',
     icon: 'intertrain',
     rpc: [ 'https://rpc.intertrain.online/rpc' ],
     faucets: [],
-    nativeCurrency: { name: 'MANNA', symbol: 'MNA', decimals: 18 },
+    nativeCurrency: { name: 'WorldStreet USD', symbol: 'USDW', decimals: 18 },
     infoURL: 'https://intertrain.online',
     shortName: 'inte',
     chainId: 4683,
@@ -32950,6 +32950,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Final Chain',
+    chain: 'Final',
+    rpc: [ 'https://chain.final-de.fi' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'vETH', symbol: 'vETH', decimals: 18 },
+    infoURL: 'https://final-de.fi',
+    shortName: 'final',
+    chainId: 20678,
+    networkId: 20678,
+    explorers: [
+      {
+        name: 'Final Explorer',
+        url: 'https://explorer.final-de.fi',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'incubating'
+  },
+  {
     name: 'Callisto Testnet',
     chain: 'CLO',
     rpc: [ 'https://testnet-rpc.callisto.network/' ],
@@ -33300,7 +33320,7 @@ const chainArray = [
     chainId: 22028,
     networkId: 22028,
     icon: 'kriptoaman',
-    status: 'incubating',
+    status: 'active',
     explorers: [
       {
         name: 'KriptoAman Explorer',
@@ -36989,6 +37009,27 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Final Testnet',
+    chain: 'Final',
+    rpc: [ 'https://test-chain.final-de.fi' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet vETH', symbol: 'vETH', decimals: 18 },
+    infoURL: 'https://final-de.fi',
+    shortName: 'final-test',
+    chainId: 48359,
+    networkId: 48359,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Final Explorer',
+        url: 'https://test-explorer.final-de.fi',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'incubating'
   },
   {
     name: 'Space Subnet Testnet',
