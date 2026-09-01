@@ -4265,42 +4265,42 @@ const chainArray = [
   },
   {
     name: 'VinuChain Testnet',
-    chain: 'VinuChain Testnet',
+    chain: 'VC',
     rpc: [ 'https://vinufoundation-rpc.com' ],
     faucets: [],
     nativeCurrency: { name: 'VinuChain', symbol: 'VC', decimals: 18 },
-    infoURL: 'https://vitainu.org',
-    shortName: 'VCTEST',
+    infoURL: 'https://vinuchain.org',
+    shortName: 'vc-testnet',
     chainId: 206,
     networkId: 206,
     slip44: 1,
-    icon: 'vitainu-testnet',
+    icon: 'vinuchain',
     explorers: [
       {
-        name: 'VinuScan Testnet',
-        url: 'https://testnet.vinuscan.com',
-        icon: 'vinuscan-testnet',
-        standard: 'none'
+        name: 'VinuExplorer Testnet',
+        url: 'https://testnet.vinuexplorer.org',
+        icon: 'vinuchain',
+        standard: 'EIP3091'
       }
     ]
   },
   {
-    name: 'VinuChain Network',
-    chain: 'VinuChain',
-    rpc: [ 'https://vinuchain-rpc.com' ],
+    name: 'VinuChain',
+    chain: 'VC',
+    rpc: [ 'https://rpc.vinuchain.org' ],
     faucets: [],
     nativeCurrency: { name: 'VinuChain', symbol: 'VC', decimals: 18 },
-    infoURL: 'https://vitainu.org',
-    shortName: 'VC',
+    infoURL: 'https://vinuchain.org',
+    shortName: 'vc',
     chainId: 207,
     networkId: 207,
-    icon: 'vitainu',
+    icon: 'vinuchain',
     explorers: [
       {
-        name: 'VinuScan',
-        url: 'https://vinuscan.com',
-        icon: 'vinuscan',
-        standard: 'none'
+        name: 'VinuExplorer',
+        url: 'https://vinuexplorer.org',
+        icon: 'vinuchain',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -14093,6 +14093,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'NVNM Chain',
+    chain: 'NVNM',
+    rpc: [ 'https://evm.nvnmchain.io', 'wss://evm.nvnmchain.io/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'mantraUSD', symbol: 'mUSD', decimals: 18 },
+    infoURL: 'https://nvnmchain.io',
+    shortName: 'nvnm',
+    chainId: 1611,
+    networkId: 1611,
+    icon: 'nvnm',
+    explorers: [
+      {
+        name: 'NVNM EVM Explorer',
+        url: 'https://evm.explorer.nvnmchain.io',
+        standard: 'EIP3091',
+        icon: 'nvnm'
+      }
+    ]
+  },
+  {
     name: 'OpenLedger Mainnet',
     chain: 'OpenLedger',
     rpc: [ 'https://rpc.openledger.xyz' ],
@@ -23803,7 +23823,7 @@ const chainArray = [
       {
         name: 'Dukong Explorer',
         url: 'http://mantrascan.io/dukong',
-        standard: 'none',
+        standard: 'EIP3091',
         icon: 'mantra'
       }
     ]
@@ -23819,13 +23839,13 @@ const chainArray = [
     chainId: 5888,
     networkId: 5888,
     slip44: 1,
-    icon: 'om',
+    icon: 'mantra',
     explorers: [
       {
         name: 'MANTRA Explorer',
         url: 'https://blockscout.mantrascan.io',
         standard: 'EIP3091',
-        icon: 'om'
+        icon: 'mantra'
       }
     ]
   },
@@ -25869,6 +25889,25 @@ const chainArray = [
         url: 'https://drawscan.io',
         standard: 'EIP3091',
         icon: 'drawchain'
+      }
+    ]
+  },
+  {
+    name: 'WCAHT',
+    chain: 'WCAHT',
+    icon: 'wcaht',
+    rpc: [ 'https://denvion.com/eth' ],
+    faucets: [],
+    nativeCurrency: { name: 'WCAHT', symbol: 'WCAHT', decimals: 18 },
+    infoURL: 'https://denvion.com',
+    shortName: 'wcaht',
+    chainId: 7789,
+    networkId: 7789,
+    explorers: [
+      {
+        name: 'WCAHT Explorer',
+        url: 'https://denvion.com/explorer',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -41183,6 +41222,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'PLUS Mainnet',
+    chain: 'PLUS',
+    rpc: [ 'https://rpc.plusmain.net', 'https://plusmain.net/api/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'PLUS', symbol: 'PLUS', decimals: 18 },
+    infoURL: 'https://plusmain.net',
+    shortName: 'plus',
+    chainId: 88088,
+    networkId: 88088,
+    explorers: [
+      {
+        name: 'PLUS Explorer',
+        url: 'https://plusmain.net/scan',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Shark Network',
     chain: 'SHARK',
     rpc: [ 'https://rpc.rpcshark.com' ],
@@ -48610,6 +48667,30 @@ const chainArray = [
         name: 'Zebrocoin Explorer1',
         url: 'https://explorer1.zebrocoin.app',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'NVNM Chain Testnet',
+    chain: 'NVNM',
+    rpc: [
+      'https://evm.testnet.nvnmchain.io',
+      'wss://evm.testnet.nvnmchain.io/ws'
+    ],
+    faucets: [ 'https://faucet.testnet.nvnmchain.io' ],
+    nativeCurrency: { name: 'mantraUSD', symbol: 'mUSD', decimals: 18 },
+    infoURL: 'https://nvnmchain.io',
+    shortName: 'nvnm-testnet',
+    chainId: 787111,
+    networkId: 787111,
+    slip44: 1,
+    icon: 'nvnm',
+    explorers: [
+      {
+        name: 'NVNM EVM Testnet Explorer',
+        url: 'https://explorer.evm.testnet.nvnmchain.io',
+        standard: 'EIP3091',
+        icon: 'nvnm'
       }
     ]
   },
