@@ -32882,12 +32882,12 @@ const chainArray = [
     name: 'Aglais Testnet (Quip Network)',
     chain: 'AGLS',
     icon: 'aglais',
-    rpc: [ 'https://evm-rpc.testnet.quip.network:20049' ],
+    rpc: [ 'https://evm-rpc.aglais.quip.network:20049' ],
     faucets: [],
     explorers: [
       {
         name: 'Aglais Explorer',
-        url: 'https://explorer.testnet.quip.network',
+        url: 'https://explorer.aglais.quip.network',
         standard: 'EIP3091'
       }
     ],
