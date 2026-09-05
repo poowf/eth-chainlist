@@ -22137,7 +22137,8 @@ const chainArray = [
       'https://rpc.mainnet.chain.robinhood.com',
       'https://robinhood-rpc.publicnode.com',
       'wss://robinhood-rpc.publicnode.com',
-      'https://rpc.arrowrpc.com'
+      'https://rpc.arrowrpc.com',
+      'https://rpc.ordofi.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -22156,6 +22157,11 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://robinhoodchain.blockscout.com',
         icon: 'blockscout',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'hoodscan',
+        url: 'https://hoodscan.co',
         standard: 'EIP3091'
       }
     ],
@@ -22176,7 +22182,7 @@ const chainArray = [
     icon: 'intertrain',
     rpc: [ 'https://rpc.intertrain.online/rpc' ],
     faucets: [],
-    nativeCurrency: { name: 'WorldStreet USD', symbol: 'USDW', decimals: 18 },
+    nativeCurrency: { name: 'WorldStreet Kash', symbol: 'WSK', decimals: 18 },
     infoURL: 'https://intertrain.online',
     shortName: 'inte',
     chainId: 4683,
@@ -25743,6 +25749,19 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'RWA Chain',
+    chain: 'RWA',
+    rpc: [ 'https://rpc.rwa-chain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://rwa-chain.io',
+    shortName: 'rwachain',
+    chainId: 7741,
+    networkId: 7741,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'Phron Testnet',
