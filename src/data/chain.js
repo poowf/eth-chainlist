@@ -40216,6 +40216,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'RWA Chain Sepolia',
+    chain: 'RWA',
+    rpc: [ 'https://sepolia-rpc.rwa-chain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://rwa-chain.io',
+    shortName: 'rwachain-sepolia',
+    chainId: 77410,
+    networkId: 77410,
+    explorers: [
+      {
+        name: 'RWA Chain Sepolia Explorer',
+        url: 'https://sepolia-explorer.rwa-chain.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
     name: 'Vention Smart Chain Mainnet',
     chain: 'VSC',
     icon: 'vention',
@@ -52724,6 +52743,25 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'Zagros Mainnet',
+    chain: 'ZAGROS',
+    rpc: [ 'https://rpc.zagros.network', 'https://rpc.zagrosnetwork.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Zagros', symbol: 'ZAGROS', decimals: 18 },
+    infoURL: 'https://zagros.network',
+    shortName: 'zagros',
+    chainId: 21072026,
+    networkId: 21072026,
+    icon: 'zagros',
+    explorers: [
+      {
+        name: 'ZagrosRadar',
+        url: 'https://zagrosradar.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Excelon Mainnet',
