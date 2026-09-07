@@ -22163,6 +22163,11 @@ const chainArray = [
         name: 'hoodscan',
         url: 'https://hoodscan.co',
         standard: 'EIP3091'
+      },
+      {
+        name: 'stonkscan',
+        url: 'https://stonkscan.io',
+        standard: 'EIP3091'
       }
     ],
     status: 'active',
@@ -29424,6 +29429,24 @@ const chainArray = [
     networkId: 10086
   },
   {
+    name: 'Gate Layer',
+    shortName: 'GateLayer',
+    chain: 'GT',
+    chainId: 10088,
+    networkId: 10088,
+    rpc: [ 'https://gatelayer-mainnet.gatenode.cc' ],
+    faucets: [],
+    nativeCurrency: { name: 'GateToken', symbol: 'GT', decimals: 18 },
+    explorers: [
+      {
+        name: 'GateLayer',
+        url: 'https://www.gatescan.org/gatelayer',
+        standard: 'EIP3091'
+      }
+    ],
+    infoURL: 'https://gatechain.io/gatelayer'
+  },
+  {
     name: 'MetaNova Verse',
     chain: 'MNV',
     rpc: [ 'https://web3.metanovaverse.com' ],
@@ -32968,6 +32991,25 @@ const chainArray = [
     networkId: 20143,
     slip44: 1,
     explorers: []
+  },
+  {
+    name: 'Molibra',
+    chain: 'MOLI',
+    rpc: [ 'https://molibra.org' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Molibra', symbol: 'MOLI', decimals: 18 },
+    infoURL: 'https://molibra.org',
+    shortName: 'moli',
+    chainId: 20226,
+    networkId: 20226,
+    explorers: [
+      {
+        name: 'Moliscan',
+        url: 'https://molibra.org/molibra/moliscan',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'CHEESE Blockchain Mainnet',
@@ -40232,7 +40274,7 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ],
-    parent: { type: 'L2', chain: 'eip155-11155111' }
+    parent: { type: 'L2', chain: 'eip155-84532' }
   },
   {
     name: 'Vention Smart Chain Mainnet',
