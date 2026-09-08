@@ -4316,6 +4316,25 @@ const chainArray = [
     networkId: 208
   },
   {
+    name: 'Ri-Nn Chain',
+    chain: 'RIN',
+    icon: 'rinn',
+    rpc: [ 'https://rpc.ri-nn.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'RIN', symbol: 'RIN', decimals: 18 },
+    infoURL: 'https://ri-nn.io',
+    shortName: 'ri-nn',
+    chainId: 209,
+    networkId: 209,
+    explorers: [
+      {
+        name: 'Ri-Nn Scan',
+        url: 'https://scan.ri-nn.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Bitnet',
     chain: 'BTN',
     icon: 'bitnet',
@@ -4483,6 +4502,25 @@ const chainArray = [
     chainId: 218,
     networkId: 218,
     status: 'deprecated'
+  },
+  {
+    name: 'Ri-Nn Testnet',
+    chain: 'RIN',
+    icon: 'rinn',
+    rpc: [ 'https://testnet-rpc.ri-nn.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'RIN', symbol: 'RIN', decimals: 18 },
+    infoURL: 'https://ri-nn.io',
+    shortName: 'ri-nn-testnet',
+    chainId: 219,
+    networkId: 219,
+    explorers: [
+      {
+        name: 'Ri-Nn Testnet Scan',
+        url: 'https://testnet-scan.ri-nn.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Scalind Testnet',
@@ -25765,8 +25803,19 @@ const chainArray = [
     shortName: 'rwachain',
     chainId: 7741,
     networkId: 7741,
-    status: 'incubating',
-    parent: { type: 'L2', chain: 'eip155-1' }
+    status: 'active',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-8453',
+      bridges: [ { url: 'https://rwa-chain.io/explorer/bridge' } ]
+    },
+    explorers: [
+      {
+        name: 'RWA Chain Explorer',
+        url: 'https://explorer.rwa-chain.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Phron Testnet',
@@ -33000,6 +33049,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'Molibra', symbol: 'MOLI', decimals: 18 },
     infoURL: 'https://molibra.org',
+    icon: 'molibra',
     shortName: 'moli',
     chainId: 20226,
     networkId: 20226,
@@ -33007,7 +33057,7 @@ const chainArray = [
       {
         name: 'Moliscan',
         url: 'https://molibra.org/molibra/moliscan',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
