@@ -21,7 +21,8 @@ const chainArray = [
       'https://rpc.mevblocker.io/fullprivacy',
       'https://eth.drpc.org',
       'wss://eth.drpc.org',
-      'https://api.securerpc.com/v1'
+      'https://api.securerpc.com/v1',
+      'https://xrpc.cl/eth'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -42,12 +43,6 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://eth.blockscout.com',
         icon: 'blockscout',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'dexguru',
-        url: 'https://ethereum.dex.guru',
-        icon: 'dexguru',
         standard: 'EIP3091'
       },
       {
@@ -260,7 +255,8 @@ const chainArray = [
       'https://optimism.gateway.tenderly.co',
       'wss://optimism.gateway.tenderly.co',
       'https://optimism.drpc.org',
-      'wss://optimism.drpc.org'
+      'wss://optimism.drpc.org',
+      'https://xrpc.cl/optimism'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -278,17 +274,6 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://optimism.blockscout.com',
         icon: 'blockscout',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'dexguru',
-        url: 'https://optimism.dex.guru',
-        icon: 'dexguru',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'Routescan',
-        url: 'https://mainnet.superscan.network',
         standard: 'EIP3091'
       }
     ]
@@ -1224,7 +1209,8 @@ const chainArray = [
       'https://bsc-rpc.publicnode.com',
       'https://bsc-rpc-public.chainpulse.cc',
       'wss://bsc-rpc.publicnode.com',
-      'wss://bsc-ws-node.nariox.org'
+      'wss://bsc-ws-node.nariox.org',
+      'https://xrpc.cl/bsc'
     ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
@@ -2900,7 +2886,8 @@ const chainArray = [
       'wss://polygon.gateway.tenderly.co',
       'https://rpc.satelink.network/rpc/polygon',
       'https://rpcfree.com/polygon-rpc',
-      'wss://rpc.satelink.network/rpc/ws/polygon'
+      'wss://rpc.satelink.network/rpc/ws/polygon',
+      'https://xrpc.cl/polygon'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -9041,6 +9028,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'Pione BOS Chain Mainnet',
+    chain: 'POB',
+    icon: 'pob',
+    rpc: [ 'https://rpc.pionescan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Pione BOS Chain', symbol: 'POB', decimals: 18 },
+    infoURL: 'https://pionechain.com',
+    shortName: 'pob',
+    chainId: 739,
+    networkId: 739,
+    explorers: [
+      {
+        name: 'Pione BOS Chain Explorer',
+        url: 'https://pionescan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Canto Testnet',
     chain: 'Canto Tesnet',
     rpc: [ 'https://eth.plexnode.wtf/' ],
@@ -11629,23 +11635,18 @@ const chainArray = [
     ]
   },
   {
-    name: 'Vordium',
+    name: 'Vordium Legacy',
     chain: 'VORD',
     icon: 'vordium',
-    rpc: [ 'https://rpc.vordium.com' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'Vordium', symbol: 'VORD', decimals: 18 },
     infoURL: 'https://vordium.com',
-    shortName: 'vord',
+    shortName: 'vord-legacy',
     chainId: 1110,
     networkId: 1110,
-    explorers: [
-      {
-        name: 'vordscan',
-        url: 'https://vordscan.io',
-        standard: 'EIP3091'
-      }
-    ]
+    status: 'deprecated',
+    explorers: []
   },
   {
     name: 'WEMIX3.0 Mainnet',
@@ -27216,7 +27217,8 @@ const chainArray = [
       'wss://base-rpc.publicnode.com',
       'https://rpcfree.com/base-rpc',
       'https://rpc.baseazul.dev',
-      'https://rpc.satelink.network/rpc/base'
+      'https://rpc.satelink.network/rpc/base',
+      'https://xrpc.cl/base'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -36153,7 +36155,8 @@ const chainArray = [
       'https://arbitrum-one-rpc.publicnode.com',
       'wss://arbitrum-one-rpc.publicnode.com',
       'https://rpcfree.com/arbitrum-rpc',
-      'https://rpc.satelink.network/rpc/arbitrum'
+      'https://rpc.satelink.network/rpc/arbitrum',
+      'https://xrpc.cl/arbitrum'
     ],
     faucets: [],
     explorers: [
@@ -36540,7 +36543,8 @@ const chainArray = [
     rpc: [
       'https://api.avax.network/ext/bc/C/rpc',
       'https://avalanche-c-chain-rpc.publicnode.com',
-      'wss://avalanche-c-chain-rpc.publicnode.com'
+      'wss://avalanche-c-chain-rpc.publicnode.com',
+      'https://xrpc.cl/avalanche'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
@@ -43149,6 +43153,25 @@ const chainArray = [
       {
         name: 'Xitcoin Testnet Explorer',
         url: 'https://evm-explorer-testnet.xitcoin.org',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Vordium',
+    chain: 'VORD',
+    icon: 'vordium',
+    rpc: [ 'https://rpc.vordium.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Vordium', symbol: 'VORD', decimals: 18 },
+    infoURL: 'https://vordium.com',
+    shortName: 'vord',
+    chainId: 101101,
+    networkId: 101101,
+    explorers: [
+      {
+        name: 'vordscan',
+        url: 'https://vordscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -52027,7 +52050,8 @@ const chainArray = [
       'wss://ethereum-sepolia-rpc.publicnode.com',
       'https://sepolia.drpc.org',
       'wss://sepolia.drpc.org',
-      'https://eth-sepolia.g.alchemy.com/v2/WddzdzI2o9S3COdT73d5w6AIogbKq4X-'
+      'https://eth-sepolia.g.alchemy.com/v2/WddzdzI2o9S3COdT73d5w6AIogbKq4X-',
+      'https://xrpc.cl/sepolia'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
