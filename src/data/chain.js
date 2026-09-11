@@ -288,7 +288,14 @@ const chainArray = [
     shortName: 'meta',
     chainId: 11,
     networkId: 11,
-    slip44: 916
+    slip44: 916,
+    explorers: [
+      {
+        name: 'Metadium Explorer',
+        url: 'https://explorer.metadium.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Metadium Testnet',
@@ -300,7 +307,14 @@ const chainArray = [
     shortName: 'kal',
     chainId: 12,
     networkId: 12,
-    slip44: 1
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Metadium Testnet Explorer',
+        url: 'https://testnetexplorer.metadium.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Diode Testnet Staging',
