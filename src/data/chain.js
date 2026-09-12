@@ -10917,11 +10917,6 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
-        name: 'Kaiascope',
-        url: 'https://kairos.kaiascope.com',
-        standard: 'EIP3091'
-      },
-      {
         name: 'Kaiascan',
         url: 'https://kairos.kaiascan.io',
         standard: 'EIP3091'
@@ -26983,11 +26978,6 @@ const chainArray = [
     networkId: 8217,
     slip44: 8217,
     explorers: [
-      {
-        name: 'Kaiascope',
-        url: 'https://kaiascope.com',
-        standard: 'EIP3091'
-      },
       {
         name: 'Kaiascan',
         url: 'https://kaiascan.io',
@@ -52224,6 +52214,24 @@ const chainArray = [
         name: 'ONFA Scan',
         url: 'https://onfascan.io',
         icon: 'onfachain',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Winmar Chain Mainnet',
+    chain: 'WMC',
+    rpc: [ 'https://rpc.winmarchain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'Winmar Coin', symbol: 'WMC', decimals: 18 },
+    infoURL: 'https://scan.winmarchain.org',
+    shortName: 'winmar',
+    chainId: 12142816,
+    networkId: 12142816,
+    explorers: [
+      {
+        name: 'Winmar Chain Explorer',
+        url: 'https://scan.winmarchain.org',
         standard: 'EIP3091'
       }
     ]
