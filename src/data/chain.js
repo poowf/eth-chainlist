@@ -2348,7 +2348,7 @@ const chainArray = [
     name: 'Shibarium',
     chain: 'Shibarium',
     icon: 'shibarium',
-    rpc: [ 'https://rpc.shibrpc.com', 'https://shib.nownodes.io' ],
+    rpc: [ 'https://rpc.shibarium.shib.io', 'https://shib.nownodes.io' ],
     faucets: [],
     nativeCurrency: { name: 'BONE Shibarium', symbol: 'BONE', decimals: 18 },
     infoURL: 'https://shibariumecosystem.com',
@@ -20069,8 +20069,8 @@ const chainArray = [
     faucets: [],
     explorers: [
       {
-        name: 'Tajir Explorer',
-        url: 'https://explorer.tajirchain.com',
+        name: 'TJRscan',
+        url: 'https://tjrscan.com',
         icon: 'tajir',
         standard: 'EIP3091'
       }
@@ -38411,7 +38411,7 @@ const chainArray = [
       'wss://rpc-gel.inkonchain.com',
       'wss://rpc-qnd.inkonchain.com'
     ],
-    faucets: [ 'https://inkonchain.com/faucet' ],
+    faucets: [],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://inkonchain.com',
@@ -48762,7 +48762,7 @@ const chainArray = [
       'https://rpc-gel-sepolia.inkonchain.com',
       'wss://ws-gel-sepolia.inkonchain.com'
     ],
-    faucets: [],
+    faucets: [ 'https://inkonchain.com/faucet' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://inkonchain.com/',
