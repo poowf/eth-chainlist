@@ -2158,7 +2158,7 @@ const chainArray = [
       'wss://gnosis-rpc.publicnode.com'
     ],
     faucets: [
-      'https://gnosisfaucet.com',
+      'https://faucet.gnosischain.com',
       'https://stakely.io/faucet/gnosis-chain-xdai',
       'https://faucet.prussia.dev/xdai'
     ],
@@ -2178,12 +2178,6 @@ const chainArray = [
         name: 'blockscout',
         url: 'https://gnosis.blockscout.com',
         icon: 'blockscout',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'dexguru',
-        url: 'https://gnosis.dex.guru',
-        icon: 'dexguru',
         standard: 'EIP3091'
       }
     ]
@@ -11314,6 +11308,25 @@ const chainArray = [
         icon: 'dia'
       }
     ]
+  },
+  {
+    name: 'Bighive Mainnet',
+    chain: 'BIGHIVE',
+    rpc: [ 'https://rpc.bighive-beets.io/osc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Beets', symbol: 'BEETS', decimals: 18 },
+    infoURL: 'https://bighive-beets.io',
+    shortName: 'bighive',
+    chainId: 1062,
+    networkId: 1062,
+    explorers: [
+      {
+        name: 'BDBS',
+        url: 'https://bdbs.bighive-beets.io',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'incubating'
   },
   {
     name: 'OpenGPU Mainnet',
@@ -29611,7 +29624,7 @@ const chainArray = [
       'https://gnosis-chiado.drpc.org',
       'wss://gnosis-chiado.drpc.org'
     ],
-    faucets: [ 'https://gnosisfaucet.com' ],
+    faucets: [ 'https://faucet.gnosischain.com' ],
     nativeCurrency: { name: 'Chiado xDAI', symbol: 'XDAI', decimals: 18 },
     infoURL: 'https://docs.gnosischain.com',
     shortName: 'chi',
@@ -29619,12 +29632,6 @@ const chainArray = [
     networkId: 10200,
     slip44: 1,
     explorers: [
-      {
-        name: 'blockscout-chiadochain',
-        url: 'https://blockscout.chiadochain.net',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      },
       {
         name: 'blockscout',
         url: 'https://gnosis-chiado.blockscout.com',
