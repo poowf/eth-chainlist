@@ -19241,6 +19241,7 @@ const chainArray = [
     name: 'CandyChain',
     shortName: 'candy',
     chain: 'CANDY',
+    icon: 'candychain',
     chainId: 2828,
     networkId: 2828,
     rpc: [ 'https://publicrpc.candychain.io' ],
@@ -22282,7 +22283,8 @@ const chainArray = [
       'https://robinhood-rpc.publicnode.com',
       'wss://robinhood-rpc.publicnode.com',
       'https://rpc.arrowrpc.com',
-      'https://rpc.ordofi.network'
+      'https://rpc.ordofi.network',
+      'wss://rpc.ordofi.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -22808,14 +22810,25 @@ const chainArray = [
     name: 'Arc',
     chain: 'Arc',
     icon: 'arcnetwork',
-    rpc: [],
+    rpc: [
+      'https://rpc.mainnet.arc.io',
+      'https://rpc.blockdaemon.mainnet.arc.io',
+      'https://rpc.drpc.mainnet.arc.io',
+      'https://rpc.quicknode.mainnet.arc.io'
+    ],
     faucets: [],
     nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
-    infoURL: 'https://arc.network',
+    infoURL: 'https://arc.io',
     shortName: 'arc-mainnet',
     chainId: 5042,
     networkId: 5042,
-    explorers: []
+    explorers: [
+      {
+        name: 'Arc Explorer',
+        url: 'https://explorer.arc.io',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Skate Mainnet',
