@@ -22814,7 +22814,9 @@ const chainArray = [
       'https://rpc.mainnet.arc.io',
       'https://rpc.blockdaemon.mainnet.arc.io',
       'https://rpc.drpc.mainnet.arc.io',
-      'https://rpc.quicknode.mainnet.arc.io'
+      'https://rpc.quicknode.mainnet.arc.io',
+      'https://rpc.beamrpc.com',
+      'wss://rpc.beamrpc.com'
     ],
     faucets: [],
     nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
