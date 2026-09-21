@@ -3105,7 +3105,9 @@ const chainArray = [
     rpc: [
       'https://rpc.soniclabs.com',
       'https://sonic-rpc.publicnode.com',
-      'wss://sonic-rpc.publicnode.com'
+      'wss://sonic-rpc.publicnode.com',
+      'https://sonic.drpc.org',
+      'wss://sonic.drpc.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sonic', symbol: 'S', decimals: 18 },
