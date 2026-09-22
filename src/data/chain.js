@@ -19755,6 +19755,25 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'AVI OS',
+    chain: 'AVI',
+    rpc: [ 'https://rpc-os.avicoin.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'AVI', symbol: 'AVI', decimals: 18 },
+    infoURL: 'https://os.avicoin.org',
+    shortName: 'avi-os',
+    chainId: 3210,
+    networkId: 3210,
+    explorers: [
+      {
+        name: 'AVI OS Explorer',
+        url: 'https://explorer.avicoin.org',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-963369' }
+  },
+  {
     name: 'XO Market',
     chain: 'XO',
     rpc: [ 'https://rpc-mainnet-2.xo.market/' ],
@@ -22286,7 +22305,9 @@ const chainArray = [
       'wss://robinhood-rpc.publicnode.com',
       'https://rpc.arrowrpc.com',
       'https://rpc.ordofi.network',
-      'wss://rpc.ordofi.network'
+      'wss://rpc.ordofi.network',
+      'https://robinhood.drpc.org',
+      'wss://robinhood.drpc.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -22818,7 +22839,9 @@ const chainArray = [
       'https://rpc.drpc.mainnet.arc.io',
       'https://rpc.quicknode.mainnet.arc.io',
       'https://rpc.beamrpc.com',
-      'wss://rpc.beamrpc.com'
+      'wss://rpc.beamrpc.com',
+      'https://arc.drpc.org',
+      'wss://arc.drpc.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
@@ -37227,7 +37250,9 @@ const chainArray = [
     rpc: [
       'https://rpc.testnet.chain.robinhood.com/rpc',
       'https://robinhood-sepolia-rpc.publicnode.com',
-      'wss://robinhood-sepolia-rpc.publicnode.com'
+      'wss://robinhood-sepolia-rpc.publicnode.com',
+      'https://robinhood-testnet.drpc.org',
+      'wss://robinhood-testnet.drpc.org'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -51082,7 +51107,9 @@ const chainArray = [
       'wss://rpc.testnet.arc.network',
       'https://rpc.quicknode.testnet.arc.network',
       'wss://rpc.quicknode.testnet.arc.network',
-      'https://rpc.blockdaemon.testnet.arc.network'
+      'https://rpc.blockdaemon.testnet.arc.network',
+      'https://arc-testnet.drpc.org',
+      'wss://arc-testnet.drpc.org'
     ],
     faucets: [ 'https://faucet.circle.com/' ],
     nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
