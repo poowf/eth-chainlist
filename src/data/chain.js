@@ -24017,7 +24017,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Dukong Explorer',
-        url: 'http://mantrascan.io/dukong',
+        url: 'https://mantrascan.io/dukong',
         standard: 'EIP3091',
         icon: 'mantra'
       }
@@ -33403,7 +33403,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Action Mainnet Explorer',
-        url: 'http://exp.actionblockchain.org',
+        url: 'https://exp.actionblockchain.org',
         icon: 'action',
         standard: 'EIP3091'
       }
@@ -39974,7 +39974,7 @@ const chainArray = [
     explorers: [
       {
         name: 'GuapcoinX Explorer',
-        url: 'http://explorer.guapcoinx.com',
+        url: 'https://explorer.guapcoinx.com',
         standard: 'none',
         icon: 'guapcoinx'
       }
@@ -41364,7 +41364,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Zedscan',
-        url: 'http://zedscan.net',
+        url: 'https://zedscan.net',
         standard: 'EIP3091'
       }
     ]
@@ -50164,7 +50164,7 @@ const chainArray = [
     explorers: [
       {
         name: 'TILTYARD Explorer',
-        url: 'http://testnet-explorer.tiltyard.gg',
+        url: 'https://testnet-explorer.tiltyard.gg',
         standard: 'EIP3091'
       }
     ]
