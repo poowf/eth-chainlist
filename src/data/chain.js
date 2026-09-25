@@ -4263,7 +4263,7 @@ const chainArray = [
   {
     name: 'VinuChain Testnet',
     chain: 'VC',
-    rpc: [ 'https://vinufoundation-rpc.com' ],
+    rpc: [ 'https://testnet-rpc.vinuchain.org' ],
     faucets: [],
     nativeCurrency: { name: 'VinuChain', symbol: 'VC', decimals: 18 },
     infoURL: 'https://vinuchain.org',
@@ -13634,6 +13634,24 @@ const chainArray = [
       }
     ],
     status: 'deprecated'
+  },
+  {
+    name: 'BlockDAG',
+    chain: 'BDAG',
+    rpc: [ 'https://rpc.bdagexplorer.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'BlockDAG', symbol: 'BDAG', decimals: 18 },
+    infoURL: 'https://bdagexplorer.com',
+    shortName: 'bdag',
+    chainId: 1404,
+    networkId: 1404,
+    explorers: [
+      {
+        name: 'BDAG Explorer',
+        url: 'https://explorer.bdagexplorer.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Silicon zkEVM Sepolia Testnet(Deprecated)',
@@ -48161,6 +48179,24 @@ const chainArray = [
         name: 'dora',
         url: 'https://light-hoodi.beaconcha.in',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'PeerCash Testnet',
+    chain: 'PEER',
+    rpc: [ 'https://testrpc.peercash.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PeerCash', symbol: 'PEER', decimals: 18 },
+    infoURL: 'https://peercash.io',
+    shortName: 'pctest',
+    chainId: 563321,
+    networkId: 563321,
+    explorers: [
+      {
+        name: 'PeerCash Testnet Explorer',
+        url: 'https://testexplorer.peercash.io',
+        standard: 'EIP3091'
       }
     ]
   },
