@@ -10203,11 +10203,6 @@ const chainArray = [
         name: 'modescout',
         url: 'https://sepolia.explorer.mode.network',
         standard: 'none'
-      },
-      {
-        name: 'Routesan',
-        url: 'https://testnet.modescan.io',
-        standard: 'none'
       }
     ],
     parent: {
@@ -17643,7 +17638,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Kava Testnet Explorer',
-        url: 'http://testnet.kavascan.com',
+        url: 'https://testnet.kavascan.com',
         standard: 'EIP3091',
         icon: 'kava'
       }
@@ -28194,6 +28189,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Kortana',
+    chain: 'Kortana',
+    rpc: [ 'https://zeus-rpc.mainnet.kortana.xyz' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dinar', symbol: 'DNR', decimals: 18 },
+    infoURL: 'https://kortana.network',
+    shortName: 'kortana',
+    chainId: 9002,
+    networkId: 9002,
+    explorers: [
+      {
+        name: 'Kortana Explorer',
+        url: 'https://explorer.mainnet.kortana.xyz',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Qubetics Alpha Testnet',
     chain: 'Qubetics Alpha Testnet',
     rpc: [ 'https://alphatestnet-evm-rpc.qubetics.work/' ],
@@ -31786,7 +31799,7 @@ const chainArray = [
     explorers: [
       {
         name: 'loopscan',
-        url: 'http://explorer.mainnetloop.com',
+        url: 'https://explorer.mainnetloop.com',
         standard: 'none'
       }
     ]
@@ -52726,6 +52739,26 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-8453' }
   },
   {
+    name: 'Crynux on RH',
+    chain: 'ETH',
+    rpc: [ 'https://json-rpc.rh.crynux.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Crynux', symbol: 'CNX', decimals: 18 },
+    infoURL: 'https://crynux.io',
+    shortName: 'crynux-rh',
+    chainId: 18896215,
+    networkId: 18896215,
+    icon: 'crynux',
+    explorers: [
+      {
+        name: 'cnxscan-rh',
+        url: 'https://cnxscan.rh.crynux.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-4663' }
+  },
+  {
     name: 'DeepBrainChain Testnet',
     chain: 'DeepBrainChain',
     rpc: [ 'https://rpc-testnet.dbcwallet.io' ],
@@ -54290,6 +54323,20 @@ const chainArray = [
     icon: 'crynux',
     explorers: [],
     parent: { type: 'L2', chain: 'eip155-84532' }
+  },
+  {
+    name: 'Crynux on RH Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://json-rpc.rh-testnet.crynux.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet Crynux', symbol: 'CNX', decimals: 18 },
+    infoURL: 'https://crynux.io',
+    shortName: 'crynux-rh-testnet',
+    chainId: 188962150,
+    networkId: 188962150,
+    icon: 'crynux',
+    explorers: [],
+    parent: { type: 'L2', chain: 'eip155-46630' }
   },
   {
     name: 'Gather Mainnet Network',
