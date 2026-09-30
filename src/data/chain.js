@@ -13903,6 +13903,26 @@ const chainArray = [
     redFlags: [ 'reusedChainId' ]
   },
   {
+    name: 'CRYMAD Chain',
+    chain: 'CMX',
+    rpc: [ 'https://rpc.cmxofficial.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'CryMadX', symbol: 'CMX-R', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://cmxofficial.com',
+    shortName: 'cmxr',
+    chainId: 1475,
+    networkId: 1475,
+    icon: 'cmxr',
+    explorers: [
+      {
+        name: 'CRYMAD Chain Explorer',
+        url: 'https://explorer.cmxofficial.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Vana',
     chain: 'Vana',
     rpc: [ 'https://rpc.vana.org/' ],
@@ -25651,6 +25671,21 @@ const chainArray = [
       }
     ],
     status: 'active'
+  },
+  {
+    name: 'CRYMAD Chain L2',
+    chain: 'CMX',
+    rpc: [ 'https://rpcl2.cmxofficial.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'CryMadX', symbol: 'CMX-R', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://cmxofficial.com',
+    shortName: 'cmxr-l2',
+    chainId: 7373,
+    networkId: 7373,
+    icon: 'cmxr',
+    parent: { type: 'L2', chain: 'eip155-1475' },
+    explorers: []
   },
   {
     name: 'TokClaw Blockchain',
@@ -39285,6 +39320,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'FractalAI',
+    chainId: 62124,
+    shortName: 'frac',
+    chain: 'FRAC',
+    networkId: 62124,
+    nativeCurrency: { name: 'Fractal', symbol: 'FRAC', decimals: 18 },
+    rpc: [ 'https://api.fractalai.net.co' ],
+    faucets: [],
+    infoURL: 'https://fractalai.net.co'
+  },
+  {
     name: 'Citrea Devnet',
     chain: 'Citrea',
     rpc: [ 'https://rpc.devnet.citrea.xyz' ],
@@ -40305,14 +40351,17 @@ const chainArray = [
     name: 'SELEMAN Chain',
     chain: 'SMN',
     rpc: [
-      'https://seleman.monarcaproject.com/rpc',
+      'https://explorer.primevertexlabs.com.mx/rpc',
       'https://seleman-edge.mineriafjs.workers.dev/rpc',
-      'wss://seleman-ws.monarcaproject.com'
+      'wss://explorer-ws.primevertexlabs.com.mx'
     ],
-    faucets: [ 'https://seleman.monarcaproject.com/trust-wallet' ],
+    faucets: [
+      'https://explorer.primevertexlabs.com.mx/trust-wallet',
+      'https://explorer.primevertexlabs.com.mx/faucet'
+    ],
     nativeCurrency: { name: 'SELEMAN', symbol: 'SMN', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://seleman.monarcaproject.com/seleman-chain',
+    infoURL: 'https://explorer.primevertexlabs.com.mx/seleman-chain',
     shortName: 'seleman',
     chainId: 73571,
     networkId: 73571,
@@ -40320,7 +40369,7 @@ const chainArray = [
     explorers: [
       {
         name: 'seleman',
-        url: 'https://seleman.monarcaproject.com',
+        url: 'https://explorer.primevertexlabs.com.mx',
         standard: 'EIP3091'
       }
     ]
