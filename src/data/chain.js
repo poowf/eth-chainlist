@@ -17784,6 +17784,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Moca Chain Mainnet',
+    chain: 'Moca Chain',
+    rpc: [ 'https://rpc.mocachain.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'MOCA', symbol: 'MOCA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mocachain.org',
+    shortName: 'moca',
+    chainId: 2288,
+    networkId: 2288,
+    icon: 'moca',
+    explorers: [
+      {
+        name: 'Moca Chain Explorer',
+        url: 'https://scan.mocachain.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BOMB Chain',
     chain: 'BOMB',
     rpc: [ 'https://rpc.bombchain.com' ],
@@ -23161,25 +23182,18 @@ const chainArray = [
     ]
   },
   {
-    name: 'Moca Chain Testnet',
+    name: 'Moca Chain Devnet',
     chain: 'Moca Chain',
-    rpc: [ 'https://testnet-rpc.mechain.tech' ],
-    faucets: [ 'https://faucet.mechain.tech' ],
+    rpc: [ 'https://rpc.devnet-2.mocachain.dev' ],
+    faucets: [],
     nativeCurrency: { name: 'MOCA', symbol: 'MOCA', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://mechain.tech',
-    shortName: 'MOCA',
+    infoURL: 'https://mocachain.org',
+    shortName: 'moca-devnet',
     chainId: 5151,
     networkId: 5151,
-    icon: 'moca',
-    explorers: [
-      {
-        name: 'Moca Chain Scan',
-        url: 'https://testnet-scan.mechain.tech',
-        icon: 'moca',
-        standard: 'EIP3091'
-      }
-    ]
+    slip44: 1,
+    icon: 'moca'
   },
   {
     name: 'Bahamut',
@@ -39575,6 +39589,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Midas Testnet',
+    chain: 'MIDS',
+    rpc: [ 'https://rpc.testnet.onmidas.xyz' ],
+    faucets: [ 'https://onmidas.xyz/developers#faucet' ],
+    nativeCurrency: { name: 'Midas', symbol: 'MIDS', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://onmidas.xyz',
+    shortName: 'midas-testnet',
+    chainId: 64327,
+    networkId: 64327,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Midas Explorer',
+        url: 'https://explorer.testnet.onmidas.xyz',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' },
+    status: 'active'
+  },
+  {
     name: 'CratD2C Testnet Deprecated',
     chain: 'CRATD2C',
     status: 'deprecated',
@@ -41732,6 +41768,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Atoshi Original Mainnet',
+    chain: 'ATOS',
+    rpc: [
+      'https://rpc.atoshinetwork.xyz',
+      'https://explorer.atoshinetwork.xyz/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Atoshi', symbol: 'ATOS', decimals: 18 },
+    infoURL: 'https://explorer.atoshinetwork.xyz',
+    shortName: 'atmain',
+    chainId: 88188,
+    networkId: 88188
   },
   {
     name: 'InoAi',
@@ -44267,6 +44317,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Mersennet Testnet',
+    title: 'Mersennet Public Testnet',
+    chain: 'MRSN',
+    rpc: [ 'https://rpc.mersennet.com', 'wss://rpc.mersennet.com' ],
+    faucets: [ 'https://faucet.mersennet.com' ],
+    nativeCurrency: { name: 'Mersennet', symbol: 'MRSN', decimals: 18 },
+    infoURL: 'https://mersennet.com',
+    shortName: 'mrsnt',
+    chainId: 131071,
+    networkId: 131071,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Mersennet Explorer',
+        url: 'https://explorer.mersennet.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Odyssey Chain (Testnet)',
     chain: 'DIONE',
     rpc: [ 'https://testnode.dioneprotocol.com/ext/bc/D/rpc' ],
@@ -45879,6 +45949,28 @@ const chainArray = [
         name: 'DeepL Testnet Explorer',
         url: 'https://testnet-scan.deeplnetwork.org',
         icon: 'deepl',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Moca Chain Testnet',
+    chain: 'Moca Chain',
+    rpc: [ 'https://testnet-rpc.mocachain.org' ],
+    faucets: [ 'https://faucet.mocachain.org' ],
+    nativeCurrency: { name: 'MOCA', symbol: 'MOCA', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mocachain.org',
+    shortName: 'moca-testnet',
+    chainId: 222888,
+    networkId: 222888,
+    slip44: 1,
+    icon: 'moca',
+    explorers: [
+      {
+        name: 'Moca Chain Testnet Explorer',
+        url: 'https://testnet-scan.mocachain.org',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
