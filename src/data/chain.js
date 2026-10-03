@@ -6410,6 +6410,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'Dancore',
+    chain: 'DNC',
+    icon: 'dancore',
+    rpc: [ 'https://rpc.dancorescan.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Dancore', symbol: 'DNC', decimals: 18 },
+    infoURL: 'https://dancore.io',
+    shortName: 'dnc',
+    chainId: 362,
+    networkId: 362,
+    explorers: [
+      {
+        name: 'dancorescan',
+        url: 'https://dancorescan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Theta Sapphire Testnet',
     chain: 'Theta',
     rpc: [ 'https://eth-rpc-api-sapphire.thetatoken.org/rpc' ],
@@ -9224,6 +9244,24 @@ const chainArray = [
     shortName: 'cth',
     chainId: 777,
     networkId: 777
+  },
+  {
+    name: 'PXA Chain',
+    chain: 'PXA',
+    rpc: [ 'https://rpc.pxachain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'PXA', symbol: 'PXA', decimals: 18 },
+    infoURL: 'https://pxachain.com',
+    shortName: 'pxa',
+    chainId: 784,
+    networkId: 784,
+    explorers: [
+      {
+        name: 'PXA Explorer',
+        url: 'https://explorer.pxachain.com',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'AUTHEO Testnet',
@@ -39609,6 +39647,30 @@ const chainArray = [
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' },
     status: 'active'
+  },
+  {
+    name: 'MigoChain Testnet',
+    title: 'MigoChain Testnet',
+    chain: 'MIGO',
+    rpc: [
+      'https://rpc.testnet.migochain.org',
+      'wss://rpc.testnet.migochain.org/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'MigoCoin', symbol: 'MIGO', decimals: 18 },
+    infoURL: 'https://github.com/MigoChain/MigoChain-Core',
+    shortName: 'migo-test',
+    chainId: 64460,
+    networkId: 64460,
+    slip44: 1,
+    status: 'active',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://explorer.testnet.migochain.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'CratD2C Testnet Deprecated',
