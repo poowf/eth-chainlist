@@ -17151,6 +17151,18 @@ const chainArray = [
     networkId: 2089
   },
   {
+    chain: 'PIKO',
+    icon: 'pikochain',
+    chainId: 2099,
+    faucets: [],
+    infoURL: 'https://pikochain.serveousercontent.com',
+    name: 'PikoChain',
+    nativeCurrency: { decimals: 18, name: 'PIKO', symbol: 'PIKO' },
+    networkId: 2099,
+    rpc: [ 'https://pikochain.serveousercontent.com' ],
+    shortName: 'pikochain'
+  },
+  {
     name: 'Ecoball Mainnet',
     chain: 'ECO',
     rpc: [ 'https://api.ecoball.org/ecoball/' ],
@@ -18251,6 +18263,26 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Aeva Testnet',
+    chain: 'AEVA',
+    rpc: [ 'https://evm.aevachain.com' ],
+    faucets: [ 'https://faucet.aevachain.com' ],
+    nativeCurrency: { name: 'AEVA', symbol: 'AEVA', decimals: 18 },
+    infoURL: 'https://aevachain.com',
+    shortName: 'aeva-testnet',
+    chainId: 2382,
+    networkId: 2382,
+    icon: 'aeva',
+    explorers: [
+      {
+        name: 'Aeva Explorer',
+        url: 'https://explorer.aevachain.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'TAC Turin',
@@ -32943,15 +32975,26 @@ const chainArray = [
   {
     name: 'QMS Testnet',
     chain: 'QMS',
-    rpc: [],
-    faucets: [],
+    rpc: [
+      'https://rpc.testnet.qms.finance',
+      'wss://rpc.testnet.qms.finance'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.testnet.qms.finance' ],
     nativeCurrency: { name: 'QMS', symbol: 'QMS', decimals: 18 },
     infoURL: 'https://qms.finance',
     shortName: 'qmstest',
     chainId: 19480,
     networkId: 19480,
     slip44: 1,
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'QMS Testnet Explorer',
+        url: 'https://testnet.qmsscan.io',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
   },
   {
     name: 'SEC Testnet',
@@ -40986,7 +41029,6 @@ const chainArray = [
     chain: 'Polygon',
     icon: 'polygon',
     rpc: [
-      'https://rpc-amoy.polygon.technology',
       'https://polygon-amoy-bor-rpc.publicnode.com',
       'wss://polygon-amoy-bor-rpc.publicnode.com',
       'https://polygon-amoy.drpc.org',
@@ -46697,6 +46739,31 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
+    name: 'PMT Mainnet',
+    chain: 'PMT',
+    icon: 'pmt',
+    rpc: [
+      'https://node1.pmtchain.com',
+      'https://node2.pmtchain.com',
+      'https://node3.pmtchain.com',
+      'https://node4.pmtchain.com'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'PMT', symbol: 'PMT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://publicmasterpiece.com',
+    shortName: 'pmt',
+    chainId: 290290,
+    networkId: 290290,
+    explorers: [
+      {
+        name: 'PMTScan',
+        url: 'https://pmtscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'BetaXChain Mainnet',
     chain: 'BetaXChain',
     icon: 'betaxchain',
@@ -50857,6 +50924,27 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Bana Mainnet',
+    chain: 'BWA',
+    icon: 'bana',
+    rpc: [ 'https://rpc.banascan.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'BWA', symbol: 'BWA', decimals: 18 },
+    infoURL: 'https://banascan.com',
+    shortName: 'bana',
+    chainId: 1658000,
+    networkId: 1658000,
+    explorers: [
+      {
+        name: 'BanaScan',
+        url: 'https://banascan.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-1' },
+    status: 'active'
   },
   {
     name: 'Primea Network Testnet',
