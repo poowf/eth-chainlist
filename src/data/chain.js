@@ -45099,7 +45099,7 @@ const chainArray = [
     chainId: 177155,
     networkId: 177155,
     icon: 'mfenx',
-    status: 'active'
+    status: 'deprecated'
   },
   {
     name: 'Transparency Solution',
