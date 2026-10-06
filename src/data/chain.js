@@ -975,7 +975,6 @@ const chainArray = [
     rpc: [
       'https://rpc.darwinia.network',
       'https://darwinia-rpc.dcdao.box',
-      'https://darwinia-rpc.dwellir.com',
       'https://darwinia.rpc.subquery.network/public'
     ],
     faucets: [],
@@ -6230,11 +6229,9 @@ const chainArray = [
     chain: 'SDN',
     rpc: [
       'https://shiden.api.onfinality.io/public',
-      'https://shiden-rpc.dwellir.com',
       'https://shiden.public.blastapi.io',
       'wss://shiden.api.onfinality.io/public-ws',
-      'wss://shiden.public.blastapi.io',
-      'wss://shiden-rpc.dwellir.com'
+      'wss://shiden.public.blastapi.io'
     ],
     faucets: [],
     nativeCurrency: { name: 'Shiden', symbol: 'SDN', decimals: 18 },
@@ -6249,12 +6246,6 @@ const chainArray = [
         url: 'https://shiden.subscan.io',
         standard: 'none',
         icon: 'subscan'
-      },
-      {
-        name: 'blockscout',
-        url: 'https://blockscout.com/shiden',
-        icon: 'blockscout',
-        standard: 'EIP3091'
       }
     ]
   },
@@ -12883,8 +12874,6 @@ const chainArray = [
       'wss://wss.api.moonbeam.network',
       'https://moonbeam.public.blastapi.io',
       'wss://moonbeam.public.blastapi.io',
-      'https://moonbeam-rpc.dwellir.com',
-      'wss://moonbeam-rpc.dwellir.com',
       'https://moonbeam.api.onfinality.io/public',
       'wss://moonbeam.api.onfinality.io/public-ws',
       'https://moonbeam.unitedbloc.com',
@@ -12902,9 +12891,10 @@ const chainArray = [
     networkId: 1284,
     explorers: [
       {
-        name: 'moonscan',
-        url: 'https://moonbeam.moonscan.io',
-        standard: 'none'
+        name: 'subscan',
+        url: 'https://moonbeam.subscan.io',
+        standard: 'none',
+        icon: 'subscan'
       }
     ]
   },
@@ -12917,8 +12907,6 @@ const chainArray = [
       'wss://wss.api.moonriver.moonbeam.network',
       'https://moonriver.public.blastapi.io',
       'wss://moonriver.public.blastapi.io',
-      'https://moonriver-rpc.dwellir.com',
-      'wss://moonriver-rpc.dwellir.com',
       'https://moonriver.api.onfinality.io/public',
       'wss://moonriver.api.onfinality.io/public-ws',
       'https://moonriver.unitedbloc.com',
@@ -12936,9 +12924,10 @@ const chainArray = [
     networkId: 1285,
     explorers: [
       {
-        name: 'moonscan',
-        url: 'https://moonriver.moonscan.io',
-        standard: 'none'
+        name: 'subscan',
+        url: 'https://moonriver.subscan.io',
+        standard: 'none',
+        icon: 'subscan'
       }
     ]
   },
@@ -12963,8 +12952,6 @@ const chainArray = [
       'wss://wss.api.moonbase.moonbeam.network',
       'https://moonbase-alpha.public.blastapi.io',
       'wss://moonbase-alpha.public.blastapi.io',
-      'https://moonbase-rpc.dwellir.com',
-      'wss://moonbase-rpc.dwellir.com',
       'https://moonbeam-alpha.api.onfinality.io/public',
       'wss://moonbeam-alpha.api.onfinality.io/public-ws',
       'https://moonbase.unitedbloc.com',
@@ -12981,9 +12968,10 @@ const chainArray = [
     slip44: 1,
     explorers: [
       {
-        name: 'moonscan',
-        url: 'https://moonbase.moonscan.io',
-        standard: 'none'
+        name: 'subscan',
+        url: 'https://moonbase.subscan.io',
+        standard: 'none',
+        icon: 'subscan'
       }
     ]
   },
@@ -16811,8 +16799,6 @@ const chainArray = [
       'wss://fullnode.centrifuge.io',
       'https://centrifuge-parachain.api.onfinality.io/public',
       'wss://centrifuge-parachain.api.onfinality.io/public-ws',
-      'https://centrifuge-rpc.dwellir.com',
-      'wss://centrifuge-rpc.dwellir.com',
       'https://rpc-centrifuge.luckyfriday.io',
       'wss://rpc-centrifuge.luckyfriday.io'
     ],
@@ -23910,6 +23896,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'Konstellation',
+    chain: 'Konstellation',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'KASH', symbol: 'KASH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://github.com/Konstellation-Network',
+    shortName: 'kons',
+    chainId: 5667,
+    networkId: 5667,
+    explorers: []
+  },
+  {
     name: 'Filenova Testnet',
     chain: 'Filenova',
     rpc: [ 'https://rpctest.filenova.org' ],
@@ -23947,6 +23947,27 @@ const chainArray = [
         name: 'BlockScout',
         url: 'https://dancelight-2001-blockscout.tanssi-chains.network',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'SCDO Shard0',
+    chain: 'SCDO',
+    icon: 'scdo',
+    rpc: [ 'https://scdoscan.io/rpc/0' ],
+    faucets: [],
+    nativeCurrency: { name: 'SCDO', symbol: 'SCDO', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://scdoscan.io',
+    shortName: 'scdo0',
+    chainId: 5680,
+    networkId: 5680,
+    explorers: [
+      {
+        name: 'scdoscan',
+        url: 'https://scdoscan.io',
+        icon: 'scdo',
+        standard: 'none'
       }
     ]
   },
@@ -24551,12 +24572,33 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     infoURL: 'https://mizuhiki.io/',
     shortName: 'awaji',
+    icon: 'MIZUHIKI',
     chainId: 6497,
     networkId: 6497,
     explorers: [
       {
         name: 'blockscout',
         url: 'https://awaji.blockscout.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MIZUHIKI Mainnet',
+    chain: 'MIZU',
+    rpc: [ 'https://rpc.mizuhiki.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'MIZU', symbol: 'MIZU', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mizuhiki.io/',
+    icon: 'MIZUHIKI',
+    shortName: 'MIZUHIKI',
+    chainId: 6498,
+    networkId: 6498,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://mizuhiki.blockscout.com',
         standard: 'EIP3091'
       }
     ]
@@ -38614,6 +38656,36 @@ const chainArray = [
     ]
   },
   {
+    name: 'Konstellation Testnet',
+    chain: 'Konstellation',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'KASH', symbol: 'KASH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://github.com/Konstellation-Network',
+    shortName: 'kons-test',
+    chainId: 56671,
+    networkId: 56671,
+    slip44: 1,
+    explorers: []
+  },
+  {
+    name: 'Konstellation Devnet',
+    chain: 'Konstellation',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'KASH', symbol: 'KASH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://github.com/Konstellation-Network',
+    shortName: 'kons-dev',
+    chainId: 56672,
+    networkId: 56672,
+    slip44: 1,
+    explorers: []
+  },
+  {
     name: 'VELO Labs Mainnet',
     chain: 'NOVA chain',
     rpc: [ 'https://nova.velo.org' ],
@@ -45871,9 +45943,7 @@ const chainArray = [
     chain: 'Heima',
     rpc: [
       'https://rpc.heima-parachain.heima.network',
-      'wss://rpc.heima-parachain.heima.network',
-      'https://litentry-rpc.dwellir.com',
-      'wss://litentry-rpc.dwellir.com'
+      'wss://rpc.heima-parachain.heima.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Heima', symbol: 'HEI', decimals: 18 },
