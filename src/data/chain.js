@@ -691,7 +691,7 @@ const chainArray = [
       'https://public-node.testnet.rsk.co',
       'https://mycrypto.testnet.rsk.co'
     ],
-    faucets: [ 'https://faucet.rsk.co/' ],
+    faucets: [],
     icon: 'rootstock',
     nativeCurrency: { name: 'Testnet Smart Bitcoin', symbol: 'tRBTC', decimals: 18 },
     infoURL: 'https://rootstock.io',
@@ -2146,7 +2146,6 @@ const chainArray = [
       'https://rpc.gnosischain.com',
       'https://rpc.gnosis.gateway.fm',
       'https://rpc.ankr.com/gnosis',
-      'https://gnosischain-rpc.gateway.pokt.network',
       'https://gnosis-mainnet.public.blastapi.io',
       'https://gnosis.api.onfinality.io/public',
       'https://gnosis.blockpi.network/v1/rpc/public',
@@ -5501,7 +5500,6 @@ const chainArray = [
     chain: 'ETH',
     rpc: [
       'https://mainnet.boba.network',
-      'https://replica.boba.network',
       'https://boba-ethereum.gateway.tenderly.co',
       'https://gateway.tenderly.co/public/boba-ethereum',
       'wss://boba-ethereum.gateway.tenderly.co/',
@@ -15985,7 +15983,7 @@ const chainArray = [
     name: 'Super Smart Chain Testnet',
     chain: 'TSCS',
     rpc: [ 'https://testnetrpc.scschain.com' ],
-    faucets: [ 'https://testnet.scschain.com' ],
+    faucets: [],
     nativeCurrency: { name: 'Super Chain Native Token', symbol: 'TSCS', decimals: 18 },
     infoURL: 'https://testnet.scschain.com',
     shortName: 'tscs',
@@ -17705,7 +17703,6 @@ const chainArray = [
     chain: 'KAVA',
     rpc: [
       'https://evm.kava.io',
-      'https://kava-rpc.gateway.pokt.network',
       'https://kava-evm.rpc.thirdweb.com',
       'wss://wevm.kava.io',
       'https://kava-evm-rpc.publicnode.com',
@@ -18265,6 +18262,26 @@ const chainArray = [
       {
         name: 'Aeva Explorer',
         url: 'https://explorer.aevachain.com',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
+    name: 'Aeva Mainnet',
+    chain: 'AEVA',
+    rpc: [ 'https://evm.aevachain.app' ],
+    faucets: [],
+    nativeCurrency: { name: 'AEVA', symbol: 'AEVA', decimals: 18 },
+    infoURL: 'https://aevachain.org',
+    shortName: 'aeva',
+    chainId: 2383,
+    networkId: 2383,
+    icon: 'aeva',
+    explorers: [
+      {
+        name: 'Aeva Explorer',
+        url: 'https://aevascan.com',
         standard: 'EIP3091'
       }
     ],
@@ -21827,6 +21844,24 @@ const chainArray = [
         name: 'tempo-explorer',
         url: 'https://explore.tempo.xyz',
         icon: 'tempo',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'GenLayer Testnet',
+    chain: 'GEN',
+    rpc: [ 'https://rpc.testnet-chain.genlayer.com' ],
+    faucets: [ 'https://testnet-faucet.genlayer.foundation' ],
+    nativeCurrency: { name: 'GEN Token', symbol: 'GEN', decimals: 18 },
+    infoURL: 'https://genlayer.com',
+    shortName: 'genlayer-testnet',
+    chainId: 4221,
+    networkId: 4221,
+    explorers: [
+      {
+        name: 'GenLayer Testnet Explorer',
+        url: 'https://explorer.testnet-chain.genlayer.com',
         standard: 'EIP3091'
       }
     ]
@@ -48019,6 +48054,27 @@ const chainArray = [
     ]
   },
   {
+    name: 'Bitcoin Swap',
+    chain: 'BTCw',
+    rpc: [ 'https://rpc.btcw.tech', 'wss://rpc.btcw.tech/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'Bitcoin Swap', symbol: 'BTCw', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://btcw.tech',
+    icon: 'bitcoinswap',
+    shortName: 'btcwchain',
+    chainId: 482120,
+    networkId: 482120,
+    explorers: [
+      {
+        name: 'Bitcoin Swap Explorer',
+        url: 'https://explorer.btcw.tech',
+        standard: 'EIP3091'
+      }
+    ],
+    status: 'active'
+  },
+  {
     name: 'World Chain Sepolia Testnet Deprecated',
     status: 'deprecated',
     chain: 'ETH',
@@ -49116,7 +49172,7 @@ const chainArray = [
     name: 'bokuto',
     chain: 'bokuto',
     rpc: [ 'https://rpc-bokuto.katanarpc.com' ],
-    faucets: [ 'https://faucet.katana.tools' ],
+    faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://katana.network',
     shortName: 'bokuto',
@@ -53894,6 +53950,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'GenLayer Mainnet',
+    chain: 'GEN',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'GEN Token', symbol: 'GEN', decimals: 18 },
+    infoURL: 'https://genlayer.com',
+    shortName: 'genlayer',
+    chainId: 42424242,
+    networkId: 42424242,
+    status: 'incubating'
+  },
+  {
     name: 'maistestsubnet',
     chain: 'MAI',
     rpc: [
@@ -57152,7 +57220,7 @@ const chainArray = [
     icon: 'zeniq',
     rpc: [ 'https://api.zeniq.network' ],
     features: [ { name: 'EIP155' } ],
-    faucets: [ 'https://faucet.nomo.zone/', 'https://faucet.zeniq.net/' ],
+    faucets: [ 'https://faucet.nomo.zone/' ],
     nativeCurrency: { name: 'Zeniq', symbol: 'ZENIQ', decimals: 18 },
     infoURL: 'https://www.zeniq.dev/',
     shortName: 'zeniq',
