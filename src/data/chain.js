@@ -29697,8 +29697,7 @@ const chainArray = [
     rpc: [
       'https://smartbch.greyh.at',
       'https://rpc-mainnet.smartbch.org',
-      'https://smartbch.fountainhead.cash/mainnet',
-      'https://smartbch.devops.cash/mainnet'
+      'https://smartbch.fountainhead.cash/mainnet'
     ],
     faucets: [],
     nativeCurrency: { name: 'Bitcoin Cash', symbol: 'BCH', decimals: 18 },
@@ -48654,6 +48653,26 @@ const chainArray = [
     ]
   },
   {
+    name: 'PeerCash',
+    chain: 'PEER',
+    icon: 'peercash',
+    rpc: [ 'https://rpc.peercash.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'PeerCash', symbol: 'PEER', decimals: 18 },
+    infoURL: 'https://peercash.io',
+    shortName: 'peer',
+    chainId: 620156,
+    networkId: 620156,
+    explorers: [
+      {
+        name: 'PeerCash Explorer',
+        url: 'https://explorer.peercash.io',
+        icon: 'peercash',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'DJT Testnet',
     chain: 'DJT',
     icon: 'djt',
@@ -57308,6 +57327,7 @@ const chainArray = [
   {
     name: 'STRATO Mainnet',
     chain: 'STRATO',
+    icon: 'strato',
     rpc: [ 'https://app.strato.nexus/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'USDST', symbol: 'USDST', decimals: 18 },
@@ -57319,6 +57339,7 @@ const chainArray = [
       {
         name: 'stratoscan',
         url: 'https://stratoscan.strato.nexus',
+        icon: 'strato',
         standard: 'EIP3091'
       }
     ]
@@ -57326,6 +57347,7 @@ const chainArray = [
   {
     name: 'STRATO Helium Testnet',
     chain: 'STRATO',
+    icon: 'strato',
     rpc: [ 'https://app.testnet.strato.nexus/rpc' ],
     faucets: [],
     nativeCurrency: { name: 'USDST', symbol: 'USDST', decimals: 18 },
@@ -57338,6 +57360,7 @@ const chainArray = [
       {
         name: 'stratoscan',
         url: 'https://stratoscan.testnet.strato.nexus',
+        icon: 'strato',
         standard: 'EIP3091'
       }
     ]
