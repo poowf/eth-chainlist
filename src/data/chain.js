@@ -22,7 +22,8 @@ const chainArray = [
       'https://eth.drpc.org',
       'wss://eth.drpc.org',
       'https://api.securerpc.com/v1',
-      'https://xrpc.cl/eth'
+      'https://xrpc.cl/eth',
+      'https://ethereum-rpc.blockreq.com/v1/rpc/public'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -256,7 +257,8 @@ const chainArray = [
       'wss://optimism.gateway.tenderly.co',
       'https://optimism.drpc.org',
       'wss://optimism.drpc.org',
-      'https://xrpc.cl/optimism'
+      'https://xrpc.cl/optimism',
+      'https://optimism-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -561,7 +563,8 @@ const chainArray = [
       'https://cronos-evm-rpc.publicnode.com',
       'wss://cronos-evm-rpc.publicnode.com',
       'https://cronos.drpc.org',
-      'wss://cronos.drpc.org'
+      'wss://cronos.drpc.org',
+      'https://cronos-rpc.blockreq.com/v1/rpc/public'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
@@ -1223,7 +1226,8 @@ const chainArray = [
       'https://bsc-rpc-public.chainpulse.cc',
       'wss://bsc-rpc.publicnode.com',
       'wss://bsc-ws-node.nariox.org',
-      'https://xrpc.cl/bsc'
+      'https://xrpc.cl/bsc',
+      'https://bsc-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
@@ -1236,12 +1240,6 @@ const chainArray = [
       {
         name: 'bscscan',
         url: 'https://bscscan.com',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'dexguru',
-        url: 'https://bnb.dex.guru',
-        icon: 'dexguru',
         standard: 'EIP3091'
       }
     ]
@@ -2149,11 +2147,11 @@ const chainArray = [
       'https://gnosis-mainnet.public.blastapi.io',
       'https://gnosis.api.onfinality.io/public',
       'https://gnosis.blockpi.network/v1/rpc/public',
-      'https://web3endpoints.com/gnosischain-mainnet',
       'https://gnosis.oat.farm',
       'wss://rpc.gnosischain.com/wss',
       'https://gnosis-rpc.publicnode.com',
-      'wss://gnosis-rpc.publicnode.com'
+      'wss://gnosis-rpc.publicnode.com',
+      'https://gnosis-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [
       'https://faucet.gnosischain.com',
@@ -2745,7 +2743,8 @@ const chainArray = [
     rpc: [
       'https://mainnet.unichain.org',
       'https://unichain-rpc.publicnode.com',
-      'wss://unichain-rpc.publicnode.com'
+      'wss://unichain-rpc.publicnode.com',
+      'https://unichain-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -2893,7 +2892,8 @@ const chainArray = [
       'https://rpc.satelink.network/rpc/polygon',
       'https://rpcfree.com/polygon-rpc',
       'wss://rpc.satelink.network/rpc/ws/polygon',
-      'https://xrpc.cl/polygon'
+      'https://xrpc.cl/polygon',
+      'https://polygon-bor-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -3105,7 +3105,8 @@ const chainArray = [
       'https://sonic-rpc.publicnode.com',
       'wss://sonic-rpc.publicnode.com',
       'https://sonic.drpc.org',
-      'wss://sonic.drpc.org'
+      'wss://sonic.drpc.org',
+      'https://sonic-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sonic', symbol: 'S', decimals: 18 },
@@ -4224,7 +4225,8 @@ const chainArray = [
       'https://opbnb-rpc.publicnode.com',
       'wss://opbnb-rpc.publicnode.com',
       'https://opbnb.drpc.org',
-      'wss://opbnb.drpc.org'
+      'wss://opbnb.drpc.org',
+      'https://opbnb-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
@@ -4236,7 +4238,7 @@ const chainArray = [
     explorers: [
       {
         name: 'opbnbscan',
-        url: 'https://mainnet.opbnbscan.com',
+        url: 'https://opbnbscan.com',
         standard: 'EIP3091'
       }
     ]
@@ -16767,6 +16769,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'CitizenChain',
+    chain: 'GMB',
+    rpc: [ 'https://nrcrpc.crcfrcn.com/' ],
+    faucets: [],
+    nativeCurrency: { name: 'GMB', symbol: 'GMB', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.crcfrcn.com',
+    shortName: 'gmb',
+    chainId: 2027,
+    networkId: 2027,
+    status: 'incubating'
+  },
+  {
     name: 'ArmaChain Testnet',
     chain: 'ARMA',
     rpc: [ 'https://rpc.armascan.io' ],
@@ -22452,7 +22467,8 @@ const chainArray = [
       'https://rpc.ordofi.network',
       'wss://rpc.ordofi.network',
       'https://robinhood.drpc.org',
-      'wss://robinhood.drpc.org'
+      'wss://robinhood.drpc.org',
+      'https://robinhood-mainnet-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -22461,12 +22477,6 @@ const chainArray = [
     chainId: 4663,
     networkId: 4663,
     explorers: [
-      {
-        name: 'robinscan',
-        url: 'https://robinscan.io',
-        icon: 'robinscan',
-        standard: 'EIP3091'
-      },
       {
         name: 'blockscout',
         url: 'https://robinhoodchain.blockscout.com',
@@ -22986,7 +22996,8 @@ const chainArray = [
       'https://rpc.beamrpc.com',
       'wss://rpc.beamrpc.com',
       'https://arc.drpc.org',
-      'wss://arc.drpc.org'
+      'wss://arc.drpc.org',
+      'https://arc-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
@@ -27548,7 +27559,8 @@ const chainArray = [
       'https://rpcfree.com/base-rpc',
       'https://rpc.baseazul.dev',
       'https://rpc.satelink.network/rpc/base',
-      'https://xrpc.cl/base'
+      'https://xrpc.cl/base',
+      'https://base-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -29952,7 +29964,8 @@ const chainArray = [
       'https://gnosis-chiado-rpc.publicnode.com',
       'wss://gnosis-chiado-rpc.publicnode.com',
       'https://gnosis-chiado.drpc.org',
-      'wss://gnosis-chiado.drpc.org'
+      'wss://gnosis-chiado.drpc.org',
+      'https://gnosis-chiado-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [ 'https://faucet.gnosischain.com' ],
     nativeCurrency: { name: 'Chiado xDAI', symbol: 'XDAI', decimals: 18 },
@@ -33399,6 +33412,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Noion Testnet',
+    chain: 'NOION',
+    rpc: [ 'https://rpc.noion.xyz/eth' ],
+    faucets: [ 'https://faucet.noion.xyz' ],
+    nativeCurrency: { name: 'Noion', symbol: 'NOION', decimals: 18 },
+    infoURL: 'https://noion.xyz',
+    shortName: 'noion-testnet',
+    chainId: 20047,
+    networkId: 20047,
+    explorers: [
+      {
+        name: 'NoionScan',
+        url: 'https://scan.noion.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Niza Chain Testnet',
     chain: 'NIZA',
     icon: 'niza',
@@ -33604,6 +33635,44 @@ const chainArray = [
         name: 'JONO11 Explorer',
         url: 'https://subnets-test.avax.network/jono11',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Clutch',
+    chain: 'CLT',
+    rpc: [ 'https://api.clutchprotocol.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Clutch', symbol: 'CLT', decimals: 18 },
+    infoURL: 'https://clutchprotocol.io',
+    shortName: 'clutch',
+    chainId: 20770,
+    networkId: 20770,
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'Clutch Explorer',
+        url: 'https://explorer.clutchprotocol.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Clutch Testnet',
+    chain: 'CLT',
+    rpc: [ 'https://api-stage.clutchprotocol.io/rpc' ],
+    faucets: [],
+    nativeCurrency: { name: 'Clutch', symbol: 'CLT', decimals: 18 },
+    infoURL: 'https://clutchprotocol.io',
+    shortName: 'clutch-test',
+    chainId: 20771,
+    networkId: 20771,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Clutch Testnet Explorer',
+        url: 'https://explorer-stage.clutchprotocol.io',
+        standard: 'none'
       }
     ]
   },
@@ -36527,7 +36596,8 @@ const chainArray = [
       'wss://arbitrum-one-rpc.publicnode.com',
       'https://rpcfree.com/arbitrum-rpc',
       'https://rpc.satelink.network/rpc/arbitrum',
-      'https://xrpc.cl/arbitrum'
+      'https://xrpc.cl/arbitrum',
+      'https://arbitrum-one-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     explorers: [
@@ -36590,7 +36660,11 @@ const chainArray = [
     chain: 'CELO',
     networkId: 42220,
     nativeCurrency: { name: 'CELO', symbol: 'CELO', decimals: 18 },
-    rpc: [ 'https://forno.celo.org', 'wss://forno.celo.org/ws' ],
+    rpc: [
+      'https://forno.celo.org',
+      'wss://forno.celo.org/ws',
+      'https://celo-rpc.blockreq.com/v1/rpc/public'
+    ],
     faucets: [],
     infoURL: 'https://docs.celo.org/',
     parent: {
@@ -36915,7 +36989,8 @@ const chainArray = [
       'https://api.avax.network/ext/bc/C/rpc',
       'https://avalanche-c-chain-rpc.publicnode.com',
       'wss://avalanche-c-chain-rpc.publicnode.com',
-      'https://xrpc.cl/avalanche'
+      'https://xrpc.cl/avalanche',
+      'https://avalanche-rpc.blockreq.com/v1/rpc/public'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
@@ -38992,7 +39067,8 @@ const chainArray = [
       'https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}',
       'wss://linea-mainnet.infura.io/ws/v3/${INFURA_API_KEY}',
       'https://linea-rpc.publicnode.com',
-      'wss://linea-rpc.publicnode.com'
+      'wss://linea-rpc.publicnode.com',
+      'https://linea-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
@@ -39016,12 +39092,6 @@ const chainArray = [
       {
         name: 'Blockscout',
         url: 'https://explorer.linea.build',
-        standard: 'EIP3091',
-        icon: 'linea'
-      },
-      {
-        name: 'L2scan',
-        url: 'https://linea.l2scan.co',
         standard: 'EIP3091',
         icon: 'linea'
       }
@@ -41138,7 +41208,8 @@ const chainArray = [
       'https://polygon-amoy-bor-rpc.publicnode.com',
       'wss://polygon-amoy-bor-rpc.publicnode.com',
       'https://polygon-amoy.drpc.org',
-      'https://rpc.satelink.network/rpc/amoy'
+      'https://rpc.satelink.network/rpc/amoy',
+      'https://polygon-amoy-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [ 'https://faucet.polygon.technology/' ],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -41245,7 +41316,8 @@ const chainArray = [
       'https://berachain-rpc.publicnode.com',
       'wss://berachain-rpc.publicnode.com',
       'https://rpc.berachain-apis.com',
-      'wss://rpc.berachain-apis.com'
+      'wss://rpc.berachain-apis.com',
+      'https://berachain-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
@@ -41758,7 +41830,8 @@ const chainArray = [
     rpc: [
       'https://sepolia.base.org',
       'https://base-sepolia-rpc.publicnode.com',
-      'wss://base-sepolia-rpc.publicnode.com'
+      'wss://base-sepolia-rpc.publicnode.com',
+      'https://base-sepolia-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -43648,6 +43721,26 @@ const chainArray = [
       {
         name: 'vordscan',
         url: 'https://vordscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Vordium Testnet',
+    chain: 'VORD',
+    icon: 'vordium',
+    rpc: [ 'https://rpc-testnet.vordium.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Vordium Testnet', symbol: 'VORD', decimals: 18 },
+    infoURL: 'https://vordium.com',
+    shortName: 'vord-testnet',
+    chainId: 101102,
+    networkId: 101102,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'vordscan testnet',
+        url: 'https://testnet.vordscan.io',
         standard: 'EIP3091'
       }
     ]
@@ -47812,7 +47905,8 @@ const chainArray = [
       'https://sepolia-rollup.arbitrum.io/rpc',
       'https://arbitrum-sepolia.infura.io/v3/${INFURA_API_KEY}',
       'https://arbitrum-sepolia-rpc.publicnode.com',
-      'wss://arbitrum-sepolia-rpc.publicnode.com'
+      'wss://arbitrum-sepolia-rpc.publicnode.com',
+      'https://arbitrum-sepolia-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -48278,7 +48372,8 @@ const chainArray = [
       'https://rpc.ankr.com/scroll',
       'https://scroll-mainnet.chainstacklabs.com',
       'https://scroll-rpc.publicnode.com',
-      'wss://scroll-rpc.publicnode.com'
+      'wss://scroll-rpc.publicnode.com',
+      'https://scroll-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -51652,25 +51747,28 @@ const chainArray = [
     chain: 'Arc Network',
     icon: 'arcnetwork',
     rpc: [
-      'https://rpc.testnet.arc.network',
-      'wss://rpc.testnet.arc.network',
-      'https://rpc.quicknode.testnet.arc.network',
-      'wss://rpc.quicknode.testnet.arc.network',
-      'https://rpc.blockdaemon.testnet.arc.network',
+      'https://rpc.testnet.arc.io',
+      'wss://rpc.testnet.arc.io',
+      'https://rpc.blockdaemon.testnet.arc.io',
+      'wss://rpc.blockdaemon.testnet.arc.io:443/websocket',
+      'https://rpc.drpc.testnet.arc.io',
+      'wss://rpc.drpc.testnet.arc.io',
+      'https://rpc.quicknode.testnet.arc.io',
+      'wss://rpc.quicknode.testnet.arc.io',
       'https://arc-testnet.drpc.org',
       'wss://arc-testnet.drpc.org'
     ],
     faucets: [ 'https://faucet.circle.com/' ],
     nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
-    infoURL: 'https://arc.network',
+    infoURL: 'https://arc.io',
     shortName: 'arc-testnet',
     chainId: 5042002,
     networkId: 5042002,
     slip44: 1,
     explorers: [
       {
-        name: 'Arcscan',
-        url: 'https://testnet.arcscan.app',
+        name: 'Arc Explorer',
+        url: 'https://explorer.testnet.arc.io',
         standard: 'EIP3091'
       }
     ]
@@ -52749,7 +52847,8 @@ const chainArray = [
       'https://sepolia.drpc.org',
       'wss://sepolia.drpc.org',
       'https://eth-sepolia.g.alchemy.com/v2/WddzdzI2o9S3COdT73d5w6AIogbKq4X-',
-      'https://xrpc.cl/sepolia'
+      'https://xrpc.cl/sepolia',
+      'https://ethereum-sepolia-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
@@ -52784,7 +52883,8 @@ const chainArray = [
     rpc: [
       'https://sepolia.optimism.io',
       'https://optimism-sepolia.drpc.org',
-      'wss://optimism-sepolia.drpc.org'
+      'wss://optimism-sepolia.drpc.org',
+      'https://optimism-sepolia-rpc.blockreq.com/v1/rpc/public'
     ],
     faucets: [ 'https://app.optimism.io/faucet' ],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
