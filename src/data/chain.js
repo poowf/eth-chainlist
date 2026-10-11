@@ -23997,7 +23997,7 @@ const chainArray = [
     ]
   },
   {
-    name: 'SCDO Shard0',
+    name: 'SCDO Shard0 EVM',
     chain: 'SCDO',
     icon: 'scdo',
     rpc: [ 'https://scdoscan.io/rpc/0' ],
