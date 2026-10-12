@@ -977,8 +977,7 @@ const chainArray = [
     chain: 'darwinia',
     rpc: [
       'https://rpc.darwinia.network',
-      'https://darwinia-rpc.dcdao.box',
-      'https://darwinia.rpc.subquery.network/public'
+      'https://darwinia-rpc.dcdao.box'
     ],
     faucets: [],
     nativeCurrency: {
@@ -4335,13 +4334,7 @@ const chainArray = [
     name: 'Bitnet',
     chain: 'BTN',
     icon: 'bitnet',
-    rpc: [
-      'https://rpc.bitnet.money',
-      'https://rpc.btnscan.com',
-      'https://rpc.btn.network',
-      'https://rpc.bitnetmoney.com',
-      'https://rpc.btn-network.org'
-    ],
+    rpc: [ 'https://rpc.bitnetmoney.com' ],
     faucets: [],
     nativeCurrency: { name: 'Bitnet', symbol: 'BTN', decimals: 18 },
     infoURL: 'https://bitnet.technology',
@@ -9252,7 +9245,8 @@ const chainArray = [
         url: 'https://explorer.pxachain.com',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    icon: 'pxa'
   },
   {
     name: 'AUTHEO Testnet',
@@ -22999,7 +22993,7 @@ const chainArray = [
       'wss://arc.drpc.org',
       'https://arc-rpc.blockreq.com/v1/rpc/public'
     ],
-    faucets: [],
+    faucets: [ 'https://apexfaucet.xyz/arc/faucet/' ],
     nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
     infoURL: 'https://arc.io',
     shortName: 'arc-mainnet',
@@ -45462,6 +45456,18 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Alchemy L2',
+    chain: 'ALCHEMY',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://alchemy.xyz',
+    shortName: 'alchemy',
+    chainId: 197197,
+    networkId: 197197,
+    status: 'incubating'
   },
   {
     name: 'Lydia Coin Testnet',
