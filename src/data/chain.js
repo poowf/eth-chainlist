@@ -27257,6 +27257,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'Mersennet',
+    title: 'Mersennet Mainnet',
+    chain: 'MRSN',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Mersennet', symbol: 'MRSN', decimals: 18 },
+    infoURL: 'https://mersennet.com',
+    shortName: 'mrsn',
+    chainId: 8191,
+    networkId: 8191,
+    status: 'incubating'
+  },
+  {
     name: 'Torus Mainnet',
     chain: 'TQF',
     icon: 'torus',
@@ -48317,6 +48330,20 @@ const chainArray = [
       }
     ],
     infoURL: 'https://etherfair.org/'
+  },
+  {
+    name: 'Mersennet Privacy Testnet',
+    title: 'Mersennet Privacy Testnet',
+    chain: 'MRSN',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Mersennet', symbol: 'MRSN', decimals: 18 },
+    infoURL: 'https://mersennet.com',
+    shortName: 'mrsnp',
+    chainId: 524287,
+    networkId: 524287,
+    slip44: 1,
+    status: 'incubating'
   },
   {
     name: 'DoCoin Community Chain',
