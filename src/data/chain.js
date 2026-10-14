@@ -4570,7 +4570,6 @@ const chainArray = [
       'https://mainnet.b2-rpc.com',
       'https://rpc.bsquared.network',
       'https://b2-mainnet.alt.technology',
-      'https://b2-mainnet-public.s.chainbase.com',
       'https://rpc.ankr.com/b2'
     ],
     faucets: [],
@@ -11346,8 +11345,7 @@ const chainArray = [
         url: 'https://bdbs.bighive-beets.io',
         standard: 'EIP3091'
       }
-    ],
-    status: 'incubating'
+    ]
   },
   {
     name: 'OpenGPU Mainnet',
@@ -18861,7 +18859,7 @@ const chainArray = [
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Pho', symbol: 'PHO', decimals: 18 },
-    infoURL: 'phochain.org',
+    infoURL: 'https://phochain.org',
     shortName: 'pho',
     chainId: 2605,
     networkId: 2605,
@@ -22462,7 +22460,8 @@ const chainArray = [
       'wss://rpc.ordofi.network',
       'https://robinhood.drpc.org',
       'wss://robinhood.drpc.org',
-      'https://robinhood-mainnet-rpc.blockreq.com/v1/rpc/public'
+      'https://robinhood-mainnet-rpc.blockreq.com/v1/rpc/public',
+      'https://api.blockvectra.com/v1/robinhood_mainnet/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -23994,7 +23993,7 @@ const chainArray = [
     name: 'SCDO Shard0 EVM',
     chain: 'SCDO',
     icon: 'scdo',
-    rpc: [ 'https://scdoscan.io/rpc/0' ],
+    rpc: [ 'https://scdoscan.io/rpc/0', 'https://apeccapital.org/rpc/0' ],
     faucets: [],
     nativeCurrency: { name: 'SCDO', symbol: 'SCDO', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -24007,7 +24006,7 @@ const chainArray = [
         name: 'scdoscan',
         url: 'https://scdoscan.io',
         icon: 'scdo',
-        standard: 'none'
+        standard: 'EIP3091'
       }
     ]
   },
@@ -29614,6 +29613,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'EGGY Chain',
+    chain: 'EGGY',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'EGG', symbol: 'EGG', decimals: 18 },
+    infoURL: 'https://eggychain.com',
+    shortName: 'eggy',
+    chainId: 9988,
+    networkId: 9988,
+    status: 'incubating'
+  },
+  {
+    name: 'EGGY Chain Testnet',
+    chain: 'EGGY',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Test EGG', symbol: 'tEGG', decimals: 18 },
+    infoURL: 'https://eggychain.com',
+    shortName: 'eggy-testnet',
+    chainId: 9989,
+    networkId: 9989,
+    slip44: 1,
+    status: 'incubating'
   },
   {
     name: 'Agung Network',
@@ -37590,7 +37614,8 @@ const chainArray = [
       'https://robinhood-sepolia-rpc.publicnode.com',
       'wss://robinhood-sepolia-rpc.publicnode.com',
       'https://robinhood-testnet.drpc.org',
-      'wss://robinhood-testnet.drpc.org'
+      'wss://robinhood-testnet.drpc.org',
+      'https://api.blockvectra.com/v1/robinhood_testnet/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -45483,6 +45508,20 @@ const chainArray = [
     status: 'incubating'
   },
   {
+    name: 'Alchemy L2 Devnet',
+    chain: 'ALCHEMY',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://alchemy.xyz',
+    shortName: 'alchemy-devnet',
+    chainId: 197198,
+    networkId: 197198,
+    slip44: 1,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
     name: 'Lydia Coin Testnet',
     chain: 'LYDIA-TESTNET',
     rpc: [ 'https://testnet-rpc.lydiacoins.com' ],
@@ -51238,6 +51277,27 @@ const chainArray = [
     explorers: []
   },
   {
+    name: 'QuantPay Chain',
+    chain: 'QPC',
+    icon: 'quantpay',
+    rpc: [ 'https://rpc.quantpay.sh' ],
+    faucets: [],
+    nativeCurrency: { name: 'QuantPay Chain', symbol: 'QPC', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://quantpay.sh',
+    shortName: 'qpc',
+    chainId: 1716125,
+    networkId: 1716125,
+    status: 'active',
+    explorers: [
+      {
+        name: 'QPC Explorer',
+        url: 'https://explorer.quantpay.sh',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Turkey Demo Dev',
     chain: 'ETH',
     rpc: [ 'https://devchain-poa.huabeizhenxuan.com' ],
@@ -55276,8 +55336,6 @@ const chainArray = [
     chain: 'PAS',
     icon: 'polkadot-testnet',
     rpc: [
-      'https://services.polkadothub-rpc.com/testnet',
-      'wss://services.polkadothub-rpc.com/testnet',
       'https://eth-rpc-testnet.polkadot.io',
       'wss://eth-rpc-testnet.polkadot.io'
     ],
@@ -55323,12 +55381,7 @@ const chainArray = [
     name: 'Polkadot',
     chain: 'DOT',
     icon: 'polkadot',
-    rpc: [
-      'https://services.polkadothub-rpc.com/mainnet',
-      'wss://services.polkadothub-rpc.com/mainnet',
-      'https://eth-rpc.polkadot.io',
-      'wss://eth-rpc.polkadot.io'
-    ],
+    rpc: [ 'https://eth-rpc.polkadot.io', 'wss://eth-rpc.polkadot.io' ],
     faucets: [],
     nativeCurrency: { name: 'DOT', symbol: 'DOT', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
