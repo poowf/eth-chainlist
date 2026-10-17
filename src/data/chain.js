@@ -5224,6 +5224,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'ENI Network',
+    chain: 'ENI',
+    rpc: [ 'https://rpc.eni.top' ],
+    faucets: [],
+    nativeCurrency: { name: 'ENI', symbol: 'ENI', decimals: 18 },
+    infoURL: 'https://eniac.network',
+    shortName: 'eni-network',
+    chainId: 263,
+    networkId: 263,
+    icon: 'eni-network',
+    explorers: [
+      {
+        name: 'ENI Network Explorer',
+        url: 'https://scan.eni.top',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Neura',
     title: 'Neura Mainnet',
     chain: 'NEURA',
@@ -19040,7 +19059,7 @@ const chainArray = [
   {
     name: 'Splendor Mainnet',
     chain: 'SPLENDOR',
-    rpc: [ 'https://mainnet-rpc.splendor.org', 'https://splendor-rpc.org/' ],
+    rpc: [ 'https://mainnet-rpc.splendor.org' ],
     faucets: [],
     nativeCurrency: { name: 'Splendor Token', symbol: 'SPLD', decimals: 18 },
     features: [ { name: 'EIP155' } ],
@@ -41086,7 +41105,6 @@ const chainArray = [
     icon: 'dragonfly',
     rpc: [
       'https://dragonfly-rpc.switch.ch',
-      'https://dragonfly-rpc.kore-technologies.ch',
       'https://dragonfly-rpc.phoenix-systems.io',
       'https://dragonfly-rpc.block-spirit.ch'
     ],
@@ -42805,7 +42823,6 @@ const chainArray = [
     icon: 'mantis',
     rpc: [
       'https://mantis-rpc.switch.ch',
-      'https://mantis-rpc.kore-technologies.ch',
       'https://mantis-rpc.phoenix-systems.io'
     ],
     faucets: [
@@ -50876,6 +50893,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'DogeOS',
+    chain: 'DogeOS',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Dogecoin', symbol: 'DOGE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.dogeos.com',
+    icon: 'dogeos',
+    shortName: 'dogeos',
+    chainId: 1122005,
+    networkId: 1122005,
+    status: 'incubating'
+  },
+  {
     name: 'Tiltyard Subnet',
     chain: 'TILTYARD',
     rpc: [ 'https://subnets.avax.network/tiltyard/testnet/rpc' ],
@@ -52175,6 +52206,34 @@ const chainArray = [
       {
         name: 'Block Chain LOL Berachain Testnet Blockscout Explorer',
         url: 'https://explorer.block-chain.lol',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'DogeOS Chikyu Testnet',
+    chain: 'DogeOS',
+    icon: 'dogeos',
+    rpc: [ 'https://rpc.testnet.dogeos.com' ],
+    faucets: [
+      'https://faucet.testnet.dogeos.com',
+      'https://faucets.chain.link/dogeos-testnet-chikyu'
+    ],
+    nativeCurrency: { name: 'Dogecoin', symbol: 'DOGE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.dogeos.com',
+    shortName: 'dogeos-chikyu',
+    chainId: 6281971,
+    networkId: 6281971,
+    explorers: [
+      {
+        name: 'DogeOS Chikyu Testnet Explorer',
+        url: 'https://blockscout.testnet.dogeos.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'L2Scan',
+        url: 'https://dogeos-testnet.l2scan.co',
         standard: 'EIP3091'
       }
     ]
