@@ -23,7 +23,8 @@ const chainArray = [
       'wss://eth.drpc.org',
       'https://api.securerpc.com/v1',
       'https://xrpc.cl/eth',
-      'https://ethereum-rpc.blockreq.com/v1/rpc/public'
+      'https://ethereum-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/eth?key=${SWIFTNODES_API_KEY}'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -4334,7 +4335,7 @@ const chainArray = [
     name: 'Bitnet',
     chain: 'BTN',
     icon: 'bitnet',
-    rpc: [ 'https://rpc.bitnetmoney.com' ],
+    rpc: [ 'https://rpc.bitnetmoney.com', 'https://rpc.bitnetmoney.org' ],
     faucets: [],
     nativeCurrency: { name: 'Bitnet', symbol: 'BTN', decimals: 18 },
     infoURL: 'https://bitnet.technology',
@@ -4344,7 +4345,12 @@ const chainArray = [
     explorers: [
       {
         name: 'Bitnet Explorer',
-        url: 'https://btnscan.com',
+        url: 'https://explorer.bitnetmoney.com',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'BitnetScan',
+        url: 'https://bitnetscan.vercel.app',
         standard: 'EIP3091'
       }
     ]
@@ -22480,7 +22486,8 @@ const chainArray = [
       'https://robinhood.drpc.org',
       'wss://robinhood.drpc.org',
       'https://robinhood-mainnet-rpc.blockreq.com/v1/rpc/public',
-      'https://api.blockvectra.com/v1/robinhood_mainnet/public'
+      'https://api.blockvectra.com/v1/robinhood_mainnet/public',
+      'https://robinhood.daybreak-rpc.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -27585,7 +27592,8 @@ const chainArray = [
       'https://rpc.baseazul.dev',
       'https://rpc.satelink.network/rpc/base',
       'https://xrpc.cl/base',
-      'https://base-rpc.blockreq.com/v1/rpc/public'
+      'https://base-rpc.blockreq.com/v1/rpc/public',
+      'https://base.daybreak-rpc.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -29111,7 +29119,10 @@ const chainArray = [
   {
     name: 'Plasma Mainnet',
     chain: 'Plasma',
-    rpc: [ 'https://rpc.plasma.to' ],
+    rpc: [
+      'https://rpc.plasma.to',
+      'https://rpc.swiftnodes.io/rpc/plasma?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Plasma', symbol: 'XPL', decimals: 18 },
     infoURL: 'https://plasma.to',
@@ -33556,14 +33567,20 @@ const chainArray = [
   {
     name: 'SGA Chain',
     chain: 'SGA',
-    rpc: [],
+    rpc: [ 'https://rpc.sgamainnet.ai' ],
     faucets: [],
     nativeCurrency: { name: 'MITOSE', symbol: 'MoSE', decimals: 18 },
     infoURL: 'https://sgamainnet.ai',
     shortName: 'sga',
     chainId: 20260,
     networkId: 20260,
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'SGA Scan',
+        url: 'https://explorer.sgamainnet.ai',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MACos Chain',
@@ -36677,7 +36694,8 @@ const chainArray = [
       'https://rpcfree.com/arbitrum-rpc',
       'https://rpc.satelink.network/rpc/arbitrum',
       'https://xrpc.cl/arbitrum',
-      'https://arbitrum-one-rpc.blockreq.com/v1/rpc/public'
+      'https://arbitrum-one-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/arbitrum?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     explorers: [
@@ -42387,6 +42405,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'Otckas Testnet',
+    chain: 'OKAS',
+    rpc: [ 'https://rpc.otckas.com' ],
+    faucets: [ 'https://faucet.otckas.com' ],
+    nativeCurrency: { name: 'Otckas', symbol: 'OKAS', decimals: 18 },
+    infoURL: 'https://otckas.com',
+    shortName: 'okas-testnet',
+    chainId: 88991,
+    networkId: 88991,
+    explorers: [
+      {
+        name: 'OtckasScan',
+        url: 'https://explorer.otckas.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'INSAN',
     chain: 'INSAN',
     rpc: [],
@@ -42652,6 +42688,50 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'WireFluid Devnet',
+    chain: 'WIRE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'WIRE', symbol: 'WIRE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://wirefluid.com',
+    shortName: 'wirefluid-devnet',
+    chainId: 92531,
+    networkId: 92531,
+    slip44: 1,
+    status: 'incubating',
+    icon: 'wirefluid'
+  },
+  {
+    name: 'WireFluid Testnet',
+    chain: 'WIRE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'WIRE', symbol: 'WIRE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://wirefluid.com',
+    shortName: 'wirefluid-testnet',
+    chainId: 92532,
+    networkId: 92532,
+    slip44: 1,
+    status: 'incubating',
+    icon: 'wirefluid'
+  },
+  {
+    name: 'WireFluid Mainnet',
+    chain: 'WIRE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'WIRE', symbol: 'WIRE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://wirefluid.com',
+    shortName: 'wirefluid',
+    chainId: 92533,
+    networkId: 92533,
+    status: 'incubating',
+    icon: 'wirefluid'
   },
   {
     name: 'LiquidLayer Testnet',
