@@ -259,7 +259,8 @@ const chainArray = [
       'https://optimism.drpc.org',
       'wss://optimism.drpc.org',
       'https://xrpc.cl/optimism',
-      'https://optimism-rpc.blockreq.com/v1/rpc/public'
+      'https://optimism-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/optimism?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -1227,7 +1228,8 @@ const chainArray = [
       'wss://bsc-rpc.publicnode.com',
       'wss://bsc-ws-node.nariox.org',
       'https://xrpc.cl/bsc',
-      'https://bsc-rpc.blockreq.com/v1/rpc/public'
+      'https://bsc-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/bsc?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
@@ -2893,7 +2895,8 @@ const chainArray = [
       'https://rpcfree.com/polygon-rpc',
       'wss://rpc.satelink.network/rpc/ws/polygon',
       'https://xrpc.cl/polygon',
-      'https://polygon-bor-rpc.blockreq.com/v1/rpc/public'
+      'https://polygon-bor-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/polygon?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -22487,7 +22490,8 @@ const chainArray = [
       'wss://robinhood.drpc.org',
       'https://robinhood-mainnet-rpc.blockreq.com/v1/rpc/public',
       'https://api.blockvectra.com/v1/robinhood_mainnet/public',
-      'https://robinhood.daybreak-rpc.network'
+      'https://robinhood.daybreak-rpc.network',
+      'https://rpc.swiftnodes.io/rpc/robinhood?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -27593,7 +27597,8 @@ const chainArray = [
       'https://rpc.satelink.network/rpc/base',
       'https://xrpc.cl/base',
       'https://base-rpc.blockreq.com/v1/rpc/public',
-      'https://base.daybreak-rpc.network'
+      'https://base.daybreak-rpc.network',
+      'https://rpc.swiftnodes.io/rpc/base?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -37088,7 +37093,8 @@ const chainArray = [
       'https://avalanche-c-chain-rpc.publicnode.com',
       'wss://avalanche-c-chain-rpc.publicnode.com',
       'https://xrpc.cl/avalanche',
-      'https://avalanche-rpc.blockreq.com/v1/rpc/public'
+      'https://avalanche-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/avalanche?key=${SWIFTNODES_API_KEY}'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
@@ -41415,7 +41421,8 @@ const chainArray = [
       'wss://berachain-rpc.publicnode.com',
       'https://rpc.berachain-apis.com',
       'wss://rpc.berachain-apis.com',
-      'https://berachain-rpc.blockreq.com/v1/rpc/public'
+      'https://berachain-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/berachain?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'BERA Token', symbol: 'BERA', decimals: 18 },
