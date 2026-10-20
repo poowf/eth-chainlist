@@ -29774,7 +29774,6 @@ const chainArray = [
     chain: 'smartBCH',
     rpc: [
       'https://smartbch.greyh.at',
-      'https://rpc-mainnet.smartbch.org',
       'https://smartbch.fountainhead.cash/mainnet'
     ],
     faucets: [],
@@ -41014,7 +41013,7 @@ const chainArray = [
     name: 'RWA Chain Sepolia',
     chain: 'RWA',
     rpc: [ 'https://sepolia-rpc.rwa-chain.io' ],
-    faucets: [],
+    faucets: [ 'https://testnet.rwa-chain.io/explorer/faucet' ],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://rwa-chain.io',
     shortName: 'rwachain-sepolia',
@@ -41027,7 +41026,11 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ],
-    parent: { type: 'L2', chain: 'eip155-84532' }
+    parent: {
+      type: 'L2',
+      chain: 'eip155-84532',
+      bridges: [ { url: 'https://testnet.rwa-chain.io/explorer/bridge' } ]
+    }
   },
   {
     name: 'Vention Smart Chain Mainnet',
@@ -54336,6 +54339,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'BB84',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://bb84.com',
+    shortName: 'bb84',
+    chainId: 42069000,
+    networkId: 42069000,
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'GenLayer Mainnet',
