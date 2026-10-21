@@ -7354,6 +7354,24 @@ const chainArray = [
     ]
   },
   {
+    name: 'SciMatic',
+    chain: 'SCI',
+    rpc: [ 'https://rpc.scimatic.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'SCI', symbol: 'SCI', decimals: 18 },
+    infoURL: 'https://scimatic.net',
+    shortName: 'sci',
+    chainId: 481,
+    networkId: 481,
+    explorers: [
+      {
+        name: 'SciMatic Explorer',
+        url: 'https://explorer.scimatic.net',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Camp Network Mainnet',
     chain: 'CAMP',
     icon: 'camp',
@@ -21842,7 +21860,6 @@ const chainArray = [
     title: 'EDGEN',
     chain: 'EDGEN',
     rpc: [
-      'https://layeredge-mainnet-evm.itrocket.net',
       'https://layeredge.rpc.subquery.network/public',
       'https://rpc.layeredge.io',
       'https://rpc.layeredge.foundation'
@@ -24020,23 +24037,23 @@ const chainArray = [
     ]
   },
   {
-    name: 'SCDO Shard0 EVM',
+    name: 'SCDO Shard0',
     chain: 'SCDO',
     icon: 'scdo',
-    rpc: [ 'https://scdoscan.io/rpc/0', 'https://apeccapital.org/rpc/0' ],
+    rpc: [ 'https://scdo.com.au/rpc/0', 'https://apeccapital.org/rpc/0' ],
     faucets: [],
     nativeCurrency: { name: 'SCDO', symbol: 'SCDO', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://scdoscan.io',
-    shortName: 'scdo0',
+    infoURL: 'https://scdo.com.au',
+    shortName: 'scdo',
     chainId: 5680,
     networkId: 5680,
     explorers: [
       {
-        name: 'scdoscan',
-        url: 'https://scdoscan.io',
+        name: 'SCDO Scan',
+        url: 'https://scdo.com.au/scan',
         icon: 'scdo',
-        standard: 'EIP3091'
+        standard: 'none'
       }
     ]
   },
@@ -46377,8 +46394,6 @@ const chainArray = [
       'wss://rpc.helikon.io/hydradx',
       'https://hydration.dotters.network',
       'wss://hydration.dotters.network',
-      'https://hydration.ibp.network',
-      'wss://hydration.ibp.network',
       'https://rpc.cay.hydration.cloud',
       'wss://rpc.cay.hydration.cloud',
       'https://rpc.parm.hydration.cloud',
