@@ -1225,6 +1225,7 @@ const chainArray = [
       'https://bsc-dataseed4.ninicoin.io',
       'https://bsc-rpc.publicnode.com',
       'https://bsc-rpc-public.chainpulse.cc',
+      'https://rpc.backrunshield.com',
       'wss://bsc-rpc.publicnode.com',
       'wss://bsc-ws-node.nariox.org',
       'https://xrpc.cl/bsc',
@@ -24957,7 +24958,7 @@ const chainArray = [
     name: 'Vexanium Mainnet',
     chain: 'VEX',
     icon: 'vex',
-    rpc: [ 'https://vexascan.com/rpc' ],
+    rpc: [ 'https://vexascan.com/rpc', 'https://api.windcrypto.com/rpc' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'VEX', symbol: 'VEX', decimals: 18 },
@@ -24969,6 +24970,11 @@ const chainArray = [
       {
         name: 'vexascan',
         url: 'https://vexascan.com/evm',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'WIND Explorer',
+        url: 'https://explorer.windcrypto.com/evm',
         standard: 'EIP3091'
       }
     ]
@@ -56903,6 +56909,23 @@ const chainArray = [
     shortName: 'hop',
     chainId: 2021121117,
     networkId: 2021121117
+  },
+  {
+    name: 'MFENX Native 2026',
+    chain: 'MFENX',
+    rpc: [
+      'https://rpc.mfenx.com/2026/',
+      'https://license.mfenx.com/network/2026/'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'JULIAN', symbol: 'JULIAN', decimals: 18 },
+    infoURL: 'https://mfenx.com/status.html',
+    shortName: 'mfenx2026',
+    chainId: 2026092601,
+    networkId: 2026092601,
+    icon: 'mfenx',
+    status: 'incubating'
   },
   {
     name: 'Lumia Beam Testnet',
