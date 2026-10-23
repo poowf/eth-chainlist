@@ -24,7 +24,8 @@ const chainArray = [
       'https://api.securerpc.com/v1',
       'https://xrpc.cl/eth',
       'https://ethereum-rpc.blockreq.com/v1/rpc/public',
-      'https://rpc.swiftnodes.io/rpc/eth?key=${SWIFTNODES_API_KEY}'
+      'https://rpc.swiftnodes.io/rpc/eth?key=${SWIFTNODES_API_KEY}',
+      'https://api.blockvectra.com/v1/eth_mainnet/public'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -1230,7 +1231,8 @@ const chainArray = [
       'wss://bsc-ws-node.nariox.org',
       'https://xrpc.cl/bsc',
       'https://bsc-rpc.blockreq.com/v1/rpc/public',
-      'https://rpc.swiftnodes.io/rpc/bsc?key=${SWIFTNODES_API_KEY}'
+      'https://rpc.swiftnodes.io/rpc/bsc?key=${SWIFTNODES_API_KEY}',
+      'https://api.blockvectra.com/v1/bsc_mainnet/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
@@ -2897,7 +2899,8 @@ const chainArray = [
       'wss://rpc.satelink.network/rpc/ws/polygon',
       'https://xrpc.cl/polygon',
       'https://polygon-bor-rpc.blockreq.com/v1/rpc/public',
-      'https://rpc.swiftnodes.io/rpc/polygon?key=${SWIFTNODES_API_KEY}'
+      'https://rpc.swiftnodes.io/rpc/polygon?key=${SWIFTNODES_API_KEY}',
+      'https://api.blockvectra.com/v1/polygon_mainnet/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -5899,6 +5902,31 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'ZKsync Era Testnet',
+    chain: 'ETH',
+    rpc: [
+      'https://rpc.zksync-era-testnet.zksync.dev',
+      'wss://rpc.zksync-era-testnet.zksync.dev/ws'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://zksync.io/',
+    shortName: 'zksync-era-testnet',
+    chainId: 312,
+    networkId: 312,
+    slip44: 1,
+    icon: 'zksync-era',
+    explorers: [
+      {
+        name: 'ZKsync Era Block Explorer',
+        url: 'https://block-explorer.zksync-era-testnet.zksync.dev',
+        icon: 'zksync-era',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Neurochain Mainnet',
@@ -11156,6 +11184,19 @@ const chainArray = [
     shortName: 'new',
     chainId: 1012,
     networkId: 1012
+  },
+  {
+    name: 'Phase Mainnet',
+    chain: 'PHASE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'PHASE', symbol: 'PHASE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://phase.xyz',
+    shortName: 'phase',
+    chainId: 1015,
+    networkId: 1015,
+    status: 'incubating'
   },
   {
     name: 'MAI Chain Mainnet',
@@ -21769,11 +21810,7 @@ const chainArray = [
     name: 'Merlin Mainnet',
     title: 'Merlin Mainnet',
     chain: 'Merlin',
-    rpc: [
-      'https://rpc.merlinchain.io',
-      'https://merlin-mainnet-enterprise.unifra.io',
-      'https://rpc-merlin.rockx.com'
-    ],
+    rpc: [ 'https://rpc.merlinchain.io', 'https://rpc-merlin.rockx.com' ],
     faucets: [],
     nativeCurrency: { name: 'BTC', symbol: 'BTC', decimals: 18 },
     infoURL: 'https://merlinchain.io',
@@ -22501,7 +22538,6 @@ const chainArray = [
       'https://rpc.mainnet.chain.robinhood.com',
       'https://robinhood-rpc.publicnode.com',
       'wss://robinhood-rpc.publicnode.com',
-      'https://rpc.arrowrpc.com',
       'https://rpc.ordofi.network',
       'wss://rpc.ordofi.network',
       'https://robinhood.drpc.org',
@@ -27621,7 +27657,8 @@ const chainArray = [
       'https://xrpc.cl/base',
       'https://base-rpc.blockreq.com/v1/rpc/public',
       'https://base.daybreak-rpc.network',
-      'https://rpc.swiftnodes.io/rpc/base?key=${SWIFTNODES_API_KEY}'
+      'https://rpc.swiftnodes.io/rpc/base?key=${SWIFTNODES_API_KEY}',
+      'https://api.blockvectra.com/v1/base_mainnet/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -36722,7 +36759,8 @@ const chainArray = [
       'https://rpc.satelink.network/rpc/arbitrum',
       'https://xrpc.cl/arbitrum',
       'https://arbitrum-one-rpc.blockreq.com/v1/rpc/public',
-      'https://rpc.swiftnodes.io/rpc/arbitrum?key=${SWIFTNODES_API_KEY}'
+      'https://rpc.swiftnodes.io/rpc/arbitrum?key=${SWIFTNODES_API_KEY}',
+      'https://api.blockvectra.com/v1/arb_mainnet/public'
     ],
     faucets: [],
     explorers: [
@@ -40796,7 +40834,6 @@ const chainArray = [
     chain: 'SMN',
     rpc: [
       'https://explorer.primevertexlabs.com.mx/rpc',
-      'https://seleman-edge.mineriafjs.workers.dev/rpc',
       'wss://explorer-ws.primevertexlabs.com.mx'
     ],
     faucets: [
@@ -44893,6 +44930,29 @@ const chainArray = [
     }
   },
   {
+    name: 'ValueChain Testnet',
+    chain: 'ValueChain',
+    rpc: [
+      'https://testnet.valuechain.xyz',
+      'wss://testnet-ws.valuechain.xyz'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'SOSO', symbol: 'SOSO', decimals: 18 },
+    infoURL: 'https://sodex.com/documentation/for-developers/developers/valuechain-evm',
+    shortName: 'valuechain-testnet',
+    chainId: 138565,
+    networkId: 138565,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'ValueChain Testnet Explorer',
+        url: 'https://test-scan.valuechain.xyz',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Midpoint Cross Testnet',
     chain: 'MIDX',
     rpc: [ 'https://testnet.midpointcross.com' ],
@@ -45574,6 +45634,19 @@ const chainArray = [
         standard: 'none'
       }
     ]
+  },
+  {
+    name: 'Phase Fabric Testnet',
+    chain: 'PHASE',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Test PHASE', symbol: 'tPHASE', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://phase.xyz',
+    shortName: 'phase-fabric',
+    chainId: 190277,
+    networkId: 190277,
+    status: 'incubating'
   },
   {
     name: 'HPP Mainnet',
@@ -47150,6 +47223,28 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
+    name: 'ValueChain',
+    chain: 'ValueChain',
+    rpc: [
+      'https://mainnet.valuechain.xyz',
+      'wss://mainnet-ws.valuechain.xyz'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'SOSO', symbol: 'SOSO', decimals: 18 },
+    infoURL: 'https://sodex.com/documentation/for-developers/developers/valuechain-evm',
+    shortName: 'valuechain',
+    chainId: 286623,
+    networkId: 286623,
+    explorers: [
+      {
+        name: 'ValueChain Explorer',
+        url: 'https://main-scan.valuechain.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'PMT Mainnet',
@@ -52473,10 +52568,7 @@ const chainArray = [
   {
     name: 'Humanity Protocol testnet',
     chain: 'Humanity',
-    rpc: [
-      'https://rpc.testnet.humanity.org',
-      'https://humanity-testnet.g.alchemy.com/public'
-    ],
+    rpc: [ 'https://humanity-testnet.g.alchemy.com/public' ],
     faucets: [ 'https://faucets.alchemy.com/faucets/humanity-testnet' ],
     nativeCurrency: { name: 'tHP', symbol: 'tHP', decimals: 18 },
     infoURL: 'https://testnet.humanity.org',
@@ -53141,7 +53233,8 @@ const chainArray = [
       'wss://sepolia.drpc.org',
       'https://eth-sepolia.g.alchemy.com/v2/WddzdzI2o9S3COdT73d5w6AIogbKq4X-',
       'https://xrpc.cl/sepolia',
-      'https://ethereum-sepolia-rpc.blockreq.com/v1/rpc/public'
+      'https://ethereum-sepolia-rpc.blockreq.com/v1/rpc/public',
+      'https://api.blockvectra.com/v1/eth_sepolia/public'
     ],
     faucets: [
       'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
