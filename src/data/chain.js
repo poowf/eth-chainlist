@@ -19436,14 +19436,16 @@ const chainArray = [
     title: 'Morph Mainnet',
     chain: 'ETH',
     rpc: [
-      'https://rpc.morphl2.io',
-      'wss://rpc.morphl2.io:8443',
-      'https://rpc-quicknode.morphl2.io',
-      'wss://rpc-quicknode.morphl2.io'
+      'https://rpc-bgw.morph.network',
+      'wss://rpc-bgw.morph.network',
+      'https://rpc.morph.network',
+      'wss://rpc.morph.network',
+      'https://rpc-quicknode.morph.network',
+      'wss://rpc-quicknode.morph.network'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    infoURL: 'https://morphl2.io',
+    infoURL: 'https://morph.network',
     shortName: 'morph',
     chainId: 2818,
     networkId: 2818,
@@ -19451,14 +19453,14 @@ const chainArray = [
     explorers: [
       {
         name: 'Morph Mainnet Explorer',
-        url: 'https://explorer.morphl2.io',
+        url: 'https://explorer.morph.network',
         standard: 'EIP3091'
       }
     ],
     parent: {
       type: 'L2',
       chain: 'eip155-1',
-      bridges: [ { url: 'https://bridge.morphl2.io/' } ]
+      bridges: [ { url: 'https://bridge.morph.network/' } ]
     }
   },
   {
@@ -20144,6 +20146,25 @@ const chainArray = [
       {
         name: 'Debounce Devnet Explorer',
         url: 'https://explorer.debounce.network',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Two-Trader Mainnet',
+    chain: 'T2T',
+    rpc: [ 'https://rpc.two-trader.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Two-Trader', symbol: 'T2T', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.two-trader.com',
+    shortName: 't2t',
+    chainId: 3330,
+    networkId: 3330,
+    explorers: [
+      {
+        name: 'Two-Trader Explorer',
+        url: 'https://explorer.two-trader.io',
         standard: 'EIP3091'
       }
     ]
@@ -24541,6 +24562,30 @@ const chainArray = [
     ]
   },
   {
+    name: 'MAYA CHAIN',
+    chain: 'MAYA',
+    rpc: [ 'https://rpc.mayachain.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Maya 3G', symbol: 'M3G', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://mayachain.io',
+    shortName: 'maya',
+    chainId: 6292,
+    networkId: 6292,
+    explorers: [
+      {
+        name: 'MayaScan',
+        url: 'https://scan.mayachain.io',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://scan.mayachain.io/bridge' } ]
+    }
+  },
+  {
     name: 'NFB Chain Testnet',
     chain: 'NFB Chain Testnet',
     rpc: [ 'https://testnet-node.nfbchain.com' ],
@@ -28595,6 +28640,26 @@ const chainArray = [
         url: 'https://shidoscan.com',
         standard: 'none',
         icon: 'shidoChain'
+      }
+    ]
+  },
+  {
+    name: 'YoChain',
+    chain: 'YO',
+    rpc: [ 'https://rpc.yochain.network', 'wss://rpc.yochain.network/ws' ],
+    faucets: [],
+    nativeCurrency: { name: 'YO', symbol: 'YO', decimals: 18 },
+    infoURL: 'https://yochain.network',
+    shortName: 'yo',
+    chainId: 9009,
+    networkId: 9009,
+    icon: 'yochain',
+    explorers: [
+      {
+        name: 'YoChain Explorer',
+        url: 'https://explorer.yochain.network',
+        standard: 'EIP3091',
+        icon: 'yochain'
       }
     ]
   },
@@ -38630,6 +38695,29 @@ const chainArray = [
         name: 'toronet_explorer',
         url: 'https://testnet.toronet.org',
         standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'MST Coral Testnet',
+    chain: 'MST',
+    rpc: [
+      'https://coralrpc.mstblockchain.com',
+      'wss://coralrpc.mstblockchain.com'
+    ],
+    faucets: [ 'https://coral-faucet.mstblockchain.com' ],
+    nativeCurrency: { name: 'MST Coral Coin', symbol: 'tMSTC', decimals: 18 },
+    infoURL: 'https://mstblockchain.com',
+    shortName: 'mst-coral-testnet',
+    chainId: 54635,
+    networkId: 54635,
+    slip44: 1,
+    icon: 'mst',
+    explorers: [
+      {
+        name: 'mstscan',
+        url: 'https://coral.mstscan.com',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -54469,14 +54557,22 @@ const chainArray = [
   {
     name: 'GenLayer Mainnet',
     chain: 'GEN',
-    rpc: [],
+    rpc: [ 'https://rpc.chain.genlayer.com' ],
     faucets: [],
     nativeCurrency: { name: 'GEN Token', symbol: 'GEN', decimals: 18 },
     infoURL: 'https://genlayer.com',
     shortName: 'genlayer',
     chainId: 42424242,
     networkId: 42424242,
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'GenLayer Explorer',
+        url: 'https://scan.chain.genlayer.com',
+        standard: 'EIP3091'
+      }
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    icon: 'genlayer'
   },
   {
     name: 'maistestsubnet',
