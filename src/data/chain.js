@@ -38503,6 +38503,19 @@ const chainArray = [
     parent: { type: 'L2', chain: 'eip155-52225' }
   },
   {
+    name: 'Regulated Layer One',
+    chain: 'RL1',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'RL1 Ether', symbol: 'RETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://rl1.network',
+    shortName: 'rl1',
+    chainId: 53147,
+    networkId: 53147,
+    status: 'active'
+  },
+  {
     name: 'DOID',
     chain: 'DOID',
     rpc: [ 'https://rpc.doid.tech' ],
@@ -41154,6 +41167,26 @@ const chainArray = [
         name: 'Foundry Scan Testnet',
         url: 'https://testnet-explorer.foundryscan.org',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'ZETAPHY Testnet',
+    chain: 'ZETAPHY',
+    rpc: [ 'https://rpc.sawasdeecoin.com' ],
+    faucets: [ 'https://app.sawasdeecoin.com/?tab=earn' ],
+    nativeCurrency: { name: 'ZETAPHY', symbol: 'ZTPHY', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://app.sawasdeecoin.com',
+    shortName: 'zetaphy-testnet',
+    chainId: 77390,
+    networkId: 77390,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'ZETAPHY Explorer',
+        url: 'https://explorer.sawasdeecoin.com',
+        standard: 'none'
       }
     ]
   },
@@ -45020,10 +45053,7 @@ const chainArray = [
   {
     name: 'ValueChain Testnet',
     chain: 'ValueChain',
-    rpc: [
-      'https://testnet.valuechain.xyz',
-      'wss://testnet-ws.valuechain.xyz'
-    ],
+    rpc: [ 'https://testnet.valuechain.xyz' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'SOSO', symbol: 'SOSO', decimals: 18 },
@@ -47315,10 +47345,7 @@ const chainArray = [
   {
     name: 'ValueChain',
     chain: 'ValueChain',
-    rpc: [
-      'https://mainnet.valuechain.xyz',
-      'wss://mainnet-ws.valuechain.xyz'
-    ],
+    rpc: [ 'https://mainnet.valuechain.xyz' ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'SOSO', symbol: 'SOSO', decimals: 18 },
@@ -56065,6 +56092,24 @@ const chainArray = [
         name: 'PTCESCAN Explorer',
         url: 'https://ptcscan.io',
         standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'MobileNode Chain',
+    chain: 'MNC',
+    rpc: [ 'https://rpc.mobilenode.ru' ],
+    faucets: [],
+    nativeCurrency: { name: 'MobileNode Coin', symbol: 'MNC', decimals: 18 },
+    infoURL: 'https://chain.mobilenode.ru',
+    shortName: 'mobilenode',
+    chainId: 973164827,
+    networkId: 973164827,
+    explorers: [
+      {
+        name: 'MobileNode Explorer',
+        url: 'https://explorer.mobilenode.ru',
+        standard: 'none'
       }
     ]
   },
