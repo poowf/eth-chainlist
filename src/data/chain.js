@@ -4852,11 +4852,7 @@ const chainArray = [
     title: 'TAC Mainnet',
     chain: 'TAC',
     icon: 'tac',
-    rpc: [
-      'https://rpc.tac.build',
-      'https://rpc.ankr.com/tac',
-      'https://ws.rpc.tac.build'
-    ],
+    rpc: [ 'https://rpc-public.tac.build', 'wss://rpc-public.tac.build' ],
     faucets: [],
     nativeCurrency: { name: 'TAC', symbol: 'TAC', decimals: 18 },
     infoURL: 'https://tac.build/',
@@ -18413,9 +18409,8 @@ const chainArray = [
     chain: 'TAC',
     icon: 'tactestnet',
     rpc: [
-      'https://spb.rpc.tac.build',
-      'https://rpc.ankr.com/tac_spb',
-      'https://spb-ws.rpc.tac.build'
+      'https://rpc-public-spb.tac.build',
+      'wss://rpc-public-spb.tac.build'
     ],
     faucets: [ 'https://spb.faucet.tac.build/' ],
     nativeCurrency: { name: 'TAC', symbol: 'TAC', decimals: 18 },
@@ -19124,6 +19119,27 @@ const chainArray = [
     icon: 'apexmainnet',
     explorers: [],
     parent: { type: 'L2', chain: 'eip155-1' }
+  },
+  {
+    name: 'Eoraptor',
+    chain: 'EPR',
+    icon: 'eoraptor',
+    rpc: [ 'https://rpc.eoraptor.org', 'https://rpc2.eoraptor.org' ],
+    faucets: [],
+    nativeCurrency: { name: 'EPR', symbol: 'EPR', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://www.eoraptordex.com',
+    shortName: 'eoraptor',
+    chainId: 2679,
+    networkId: 2679,
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://scan.eoraptor.org',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Splendor Mainnet',
@@ -49986,6 +50002,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Liberium',
+    chain: 'LIB',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Liberium', symbol: 'LIB', decimals: 18 },
+    infoURL: 'https://github.com/ozgurcuk/Liberium-Network',
+    shortName: 'liberium',
+    chainId: 767366,
+    networkId: 767366,
+    status: 'incubating'
   },
   {
     name: 'Lamina1 Identity Testnet',
