@@ -75,10 +75,7 @@ const chainArray = [
       'https://ropsten.infura.io/v3/${INFURA_API_KEY}',
       'wss://ropsten.infura.io/ws/v3/${INFURA_API_KEY}'
     ],
-    faucets: [
-      'http://fauceth.komputing.org?chain=3&address=${ADDRESS}',
-      'https://faucet.ropsten.be?${ADDRESS}'
-    ],
+    faucets: [ 'https://faucet.ropsten.be?${ADDRESS}' ],
     nativeCurrency: { name: 'Ropsten Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://github.com/ethereum/ropsten',
     shortName: 'rop',
@@ -86,13 +83,7 @@ const chainArray = [
     networkId: 3,
     slip44: 1,
     ens: { registry: '0x112234455c3a32fd11230c42e7bccd4a84e02010' },
-    explorers: [
-      {
-        name: 'etherscan',
-        url: 'https://ropsten.etherscan.io',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Rinkeby',
@@ -102,10 +93,7 @@ const chainArray = [
       'https://rinkeby.infura.io/v3/${INFURA_API_KEY}',
       'wss://rinkeby.infura.io/ws/v3/${INFURA_API_KEY}'
     ],
-    faucets: [
-      'http://fauceth.komputing.org?chain=4&address=${ADDRESS}',
-      'https://faucet.rinkeby.io'
-    ],
+    faucets: [ 'https://faucet.rinkeby.io' ],
     nativeCurrency: { name: 'Rinkeby Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://www.rinkeby.io',
     shortName: 'rin',
@@ -113,13 +101,7 @@ const chainArray = [
     networkId: 4,
     slip44: 1,
     ens: { registry: '0xe7410170f87102df0055eb195163a03b7f2bff4a' },
-    explorers: [
-      {
-        name: 'etherscan-rinkeby',
-        url: 'https://rinkeby.etherscan.io',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Goerli',
@@ -135,7 +117,6 @@ const chainArray = [
       'wss://goerli.gateway.tenderly.co'
     ],
     faucets: [
-      'http://fauceth.komputing.org?chain=5&address=${ADDRESS}',
       'https://goerli-faucet.slock.it?address=${ADDRESS}',
       'https://faucet.goerli.mudit.blog'
     ],
@@ -146,19 +127,7 @@ const chainArray = [
     networkId: 5,
     slip44: 1,
     ens: { registry: '0x112234455c3a32fd11230c42e7bccd4a84e02010' },
-    explorers: [
-      {
-        name: 'etherscan-goerli',
-        url: 'https://goerli.etherscan.io',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'blockscout-goerli',
-        url: 'https://eth-goerli.blockscout.com',
-        icon: 'blockscout',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Kotti Testnet',
@@ -1531,15 +1500,9 @@ const chainArray = [
     title: 'Optimism Testnet Kovan',
     chain: 'ETH',
     rpc: [ 'https://kovan.optimism.io/' ],
-    faucets: [ 'http://fauceth.komputing.org?chain=69&address=${ADDRESS}' ],
+    faucets: [],
     nativeCurrency: { name: 'Kovan Ether', symbol: 'ETH', decimals: 18 },
-    explorers: [
-      {
-        name: 'etherscan',
-        url: 'https://kovan-optimistic.etherscan.io',
-        standard: 'EIP3091'
-      }
-    ],
+    explorers: [],
     infoURL: 'https://optimism.io',
     shortName: 'okov',
     chainId: 69,
@@ -19840,6 +19803,31 @@ const chainArray = [
     ]
   },
   {
+    name: 'VYRE',
+    chain: 'VYRE',
+    rpc: [ 'https://rpc.vyrechain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'USDC', symbol: 'USDC', decimals: 18 },
+    infoURL: 'https://vyrechain.com',
+    icon: 'vyre',
+    shortName: 'vyre',
+    chainId: 3045,
+    networkId: 3045,
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    explorers: [
+      {
+        name: 'VYRE Explorer',
+        url: 'https://explorer.vyrechain.com',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-5042',
+      bridges: [ { url: 'https://vyrechain.com/docs/get-usdc/' } ]
+    }
+  },
+  {
     name: 'Bifrost Mainnet',
     title: 'Bifrost Network Mainnet',
     chain: 'BFC',
@@ -20766,15 +20754,16 @@ const chainArray = [
     ]
   },
   {
-    name: 'Jouleverse Mainnet',
-    chain: 'Jouleverse',
-    rpc: [ 'https://rpc.jnsdao.com:8503' ],
-    faucets: [],
-    nativeCurrency: { name: 'J', symbol: 'J', decimals: 18 },
-    infoURL: 'https://jnsdao.com',
+    name: 'Jouleverse',
+    chain: 'J',
+    rpc: [ 'https://rpc.jnsdao.com' ],
+    faucets: [ 'https://faucet.jnsdao.com' ],
+    nativeCurrency: { name: 'Joule', symbol: 'J', decimals: 18 },
+    infoURL: 'https://jouleverse.com',
     shortName: 'jouleverse',
     chainId: 3666,
     networkId: 3666,
+    icon: 'jouleverse',
     explorers: [
       {
         name: 'jscan',
@@ -35116,6 +35105,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'TractSafe Testnet',
+    chain: 'TRCT',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'TractSafe', symbol: 'TRCT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://tractsafe.com',
+    shortName: 'trct-test',
+    chainId: 28282,
+    networkId: 28282,
+    icon: 'tractsafe'
+  },
+  {
     name: 'Vizing Testnet',
     title: 'Vizing Testnet',
     chain: 'Vizing Testnet',
@@ -41944,6 +41947,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'TractSafe Mainnet',
+    chain: 'TRCT',
+    status: 'incubating',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'TractSafe', symbol: 'TRCT', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://tractsafe.com',
+    shortName: 'trct',
+    chainId: 82228,
+    networkId: 82228,
+    icon: 'tractsafe'
+  },
+  {
     name: 'Smart Layer Network Testnet',
     chain: 'SLN',
     rpc: [ 'https://rpc.test.smartlayer.network' ],
@@ -48290,20 +48307,9 @@ const chainArray = [
     slip44: 1,
     nativeCurrency: { name: 'Arbitrum Rinkeby Ether', symbol: 'ETH', decimals: 18 },
     rpc: [ 'https://rinkeby.arbitrum.io/rpc' ],
-    faucets: [ 'http://fauceth.komputing.org?chain=421611&address=${ADDRESS}' ],
+    faucets: [],
     infoURL: 'https://arbitrum.io',
-    explorers: [
-      {
-        name: 'arbiscan-testnet',
-        url: 'https://testnet.arbiscan.io',
-        standard: 'EIP3091'
-      },
-      {
-        name: 'arbitrum-rinkeby',
-        url: 'https://rinkeby-explorer.arbitrum.io',
-        standard: 'EIP3091'
-      }
-    ],
+    explorers: [],
     parent: {
       type: 'L2',
       chain: 'eip155-4',
@@ -50036,6 +50042,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Ostia DevNet',
+    chain: 'Ostia',
+    rpc: [ 'https://ostia.devnet.romeprotocol.xyz/rpc' ],
+    faucets: [ 'https://ostia.devnet.romeprotocol.xyz/faucet' ],
+    nativeCurrency: { name: 'Test ROME', symbol: 'tROME', decimals: 18 },
+    infoURL: 'https://docs.rome.builders/canton-zk-evm',
+    shortName: 'ostia-devnet',
+    chainId: 770101,
+    networkId: 770101,
+    slip44: 1,
+    icon: 'rome',
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'Ostia DevNet explorer',
+        url: 'https://ostia.devnet.romeprotocol.xyz',
+        icon: 'rome',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Modularium',
     chain: 'EVMCC',
     rpc: [ 'https://fraa-dancebox-3035-rpc.a.dancebox.tanssi.network' ],
@@ -51413,22 +51441,13 @@ const chainArray = [
     title: 'Kintsugi merge testnet',
     chain: 'ETH',
     rpc: [ 'https://rpc.kintsugi.themerge.dev' ],
-    faucets: [
-      'http://fauceth.komputing.org?chain=1337702&address=${ADDRESS}',
-      'https://faucet.kintsugi.themerge.dev'
-    ],
+    faucets: [ 'https://faucet.kintsugi.themerge.dev' ],
     nativeCurrency: { name: 'kintsugi Ethere', symbol: 'kiETH', decimals: 18 },
     infoURL: 'https://kintsugi.themerge.dev/',
     shortName: 'kintsugi',
     chainId: 1337702,
     networkId: 1337702,
-    explorers: [
-      {
-        name: 'kintsugi explorer',
-        url: 'https://explorer.kintsugi.themerge.dev',
-        standard: 'EIP3091'
-      }
-    ]
+    explorers: []
   },
   {
     name: 'Kiln',
@@ -53379,9 +53398,7 @@ const chainArray = [
       'https://ethereum-sepolia-rpc.blockreq.com/v1/rpc/public',
       'https://api.blockvectra.com/v1/eth_sepolia/public'
     ],
-    faucets: [
-      'http://fauceth.komputing.org?chain=11155111&address=${ADDRESS}'
-    ],
+    faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://sepolia.otterscan.io',
     shortName: 'sep',
