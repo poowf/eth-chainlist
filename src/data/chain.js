@@ -23945,6 +23945,18 @@ const chainArray = [
     ]
   },
   {
+    name: 'OneX Smart Chain',
+    chain: 'ONEX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'BOSG', symbol: 'BOSG', decimals: 18 },
+    infoURL: 'https://github.com/onex-chain',
+    shortName: 'onex',
+    chainId: 5559,
+    networkId: 5559,
+    status: 'incubating'
+  },
+  {
     name: 'Jamton',
     chain: 'Jamton',
     rpc: [ 'https://rpc.jamton.network/' ],
@@ -24183,6 +24195,18 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'OneX Smart Chain Testnet',
+    chain: 'ONEX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Testnet BOSG', symbol: 'sBOSG', decimals: 18 },
+    infoURL: 'https://github.com/onex-chain',
+    shortName: 'onex-testnet',
+    chainId: 5775,
+    networkId: 5775,
+    status: 'incubating'
   },
   {
     name: 'Ganache',
@@ -29444,6 +29468,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'QoreChain Testnet',
+    title: 'QoreChain Testnet Diana',
+    chain: 'QORE',
+    icon: 'qorechain',
+    rpc: [
+      'https://evm-testnet.qore.host',
+      'wss://evm-ws-testnet.qore.host'
+    ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'QoreChain Testnet', symbol: 'QOR', decimals: 18 },
+    infoURL: 'https://www.qorechain.io',
+    shortName: 'qor-testnet',
+    chainId: 9800,
+    networkId: 9800,
+    slip44: 1
+  },
+  {
+    name: 'QoreChain',
+    chain: 'QORE',
+    icon: 'qorechain',
+    rpc: [ 'https://evm.qore.host' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'QoreChain', symbol: 'QOR', decimals: 18 },
+    infoURL: 'https://www.qorechain.io',
+    shortName: 'qor',
+    chainId: 9801,
+    networkId: 9801,
+    explorers: [
+      {
+        name: 'QoreChain Explorer',
+        url: 'https://explore.qore.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'IMPERIUM TESTNET',
     chain: 'tIMP',
     rpc: [
@@ -32405,6 +32467,20 @@ const chainArray = [
     chainId: 16350,
     networkId: 16350,
     slip44: 1
+  },
+  {
+    name: '16ane Mainnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://16ane.net',
+    shortName: '16ane',
+    chainId: 16463,
+    networkId: 16463,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-1' }
   },
   {
     name: 'Pivotal Sepolia',
@@ -45361,6 +45437,21 @@ const chainArray = [
     }
   },
   {
+    name: '16ane Sepolia Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://16ane.net',
+    shortName: '16ane-sep',
+    chainId: 164632,
+    networkId: 164632,
+    slip44: 1,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-11155111' }
+  },
+  {
     name: 'Eclat Mainnet',
     chain: 'Eclat',
     icon: 'eclat',
@@ -47316,6 +47407,41 @@ const chainArray = [
     ]
   },
   {
+    name: 'BrainChain Testnet',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.testnet.usebrainchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://usebrainchain.com/testnet',
+    shortName: 'brainchain-testnet',
+    chainId: 274630,
+    networkId: 274630,
+    slip44: 1,
+    status: 'active',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-46630',
+      bridges: [ { url: 'https://usebrainchain.com/testnet' } ]
+    }
+  },
+  {
+    name: 'BrainChain',
+    chain: 'ETH',
+    rpc: [ 'https://rpc.usebrainchain.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://usebrainchain.com',
+    shortName: 'brainchain',
+    chainId: 274663,
+    networkId: 274663,
+    status: 'active',
+    parent: {
+      type: 'L2',
+      chain: 'eip155-4663',
+      bridges: [ { url: 'https://usebrainchain.com/network' } ]
+    }
+  },
+  {
     name: 'Social Smart Chain Mainnet',
     chain: 'SoChain',
     rpc: [ 'https://socialsmartchain.digitalnext.business' ],
@@ -48627,6 +48753,33 @@ const chainArray = [
     chainId: 484752,
     networkId: 484752,
     slip44: 1
+  },
+  {
+    name: 'Gully Chain Testnet',
+    title: 'Gully Chain Testnet (Arbitrum Orbit L3)',
+    chain: 'ETH',
+    icon: 'gullychain',
+    rpc: [ 'https://testnet-rpc.gullychain.xyz' ],
+    faucets: [ 'https://faucet.gullychain.xyz' ],
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://gullychain.xyz',
+    shortName: 'gully-test',
+    chainId: 485590,
+    networkId: 485590,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Gully Chain Testnet Explorer',
+        url: 'https://testnet-explorer.gullychain.xyz',
+        icon: 'gullychain',
+        standard: 'EIP3091'
+      }
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-421614',
+      bridges: [ { url: 'https://testnet-bridge.gullychain.xyz' } ]
+    }
   },
   {
     name: 'Gobbl Testnet',
@@ -50077,6 +50230,24 @@ const chainArray = [
       {
         name: 'Tanssi Explorer',
         url: 'https://tanssi-evmexplorer.netlify.app/?rpcUrl=https://fraa-dancebox-3035-rpc.a.dancebox.tanssi.network',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'INKG Sovereign EVM',
+    chain: 'INKG',
+    rpc: [ 'https://rpc.inkg.org/rpc/777001' ],
+    faucets: [],
+    nativeCurrency: { name: 'INKG', symbol: 'INKG', decimals: 18 },
+    infoURL: 'https://inkg.org',
+    shortName: 'inkg',
+    chainId: 777001,
+    networkId: 777001,
+    explorers: [
+      {
+        name: 'INKG Explorer',
+        url: 'https://futurebdetbank.com/explorer.html',
         standard: 'none'
       }
     ]
@@ -51709,7 +51880,7 @@ const chainArray = [
     name: 'QuantPay Chain',
     chain: 'QPC',
     icon: 'quantpay',
-    rpc: [ 'https://rpc.quantpay.sh' ],
+    rpc: [],
     faucets: [],
     nativeCurrency: { name: 'QuantPay Chain', symbol: 'QPC', decimals: 18 },
     features: [ { name: 'EIP155' } ],
@@ -51717,14 +51888,8 @@ const chainArray = [
     shortName: 'qpc',
     chainId: 1716125,
     networkId: 1716125,
-    status: 'active',
-    explorers: [
-      {
-        name: 'QPC Explorer',
-        url: 'https://explorer.quantpay.sh',
-        standard: 'EIP3091'
-      }
-    ]
+    status: 'deprecated',
+    explorers: []
   },
   {
     name: 'Turkey Demo Dev',
