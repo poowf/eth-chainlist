@@ -52,6 +52,11 @@ const chainArray = [
         name: 'Routescan',
         url: 'https://ethereum.routescan.io',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Codex Scan',
+        url: 'https://scan.codex.io/eth',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -17093,14 +17098,22 @@ const chainArray = [
   {
     name: 'ZIGChain Testnet',
     chain: 'ZIG',
-    rpc: [],
-    faucets: [],
+    rpc: [ 'https://public-zigchain-testnet-evm-rpc.numia.xyz' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.zigchain.com' ],
     nativeCurrency: { name: 'ZIG', symbol: 'ZIG', decimals: 18 },
     infoURL: 'https://zigchain.com/',
     shortName: 'zigchain-testnet',
     chainId: 2061,
     networkId: 2061,
-    status: 'incubating'
+    slip44: 1,
+    explorers: [
+      {
+        name: 'ZIGScan',
+        url: 'https://testnet.zigscan.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MFX Network',
@@ -18896,6 +18909,17 @@ const chainArray = [
     explorers: [
       { name: 'h2scan', url: 'https://h2scan.io', standard: 'EIP3091' }
     ]
+  },
+  {
+    name: 'BlueChain',
+    chain: 'BLUE',
+    rpc: [ 'https://rpc.chain.blue.org.mx' ],
+    faucets: [],
+    nativeCurrency: { name: 'BLUE', symbol: 'BLUE', decimals: 18 },
+    infoURL: 'https://chain.blue.org.mx',
+    shortName: 'blue',
+    chainId: 2583,
+    networkId: 2583
   },
   {
     name: 'Pho Blockchain Mainnet',
@@ -26257,6 +26281,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'SOVL1 Mainnet',
+    chain: 'SOVL1',
+    rpc: [],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'SOVL1', symbol: 'SOVL1', decimals: 18 },
+    infoURL: 'https://sovereign.com.ky',
+    shortName: 'sovl1',
+    chainId: 7685,
+    networkId: 7685,
+    status: 'incubating',
+    explorers: []
+  },
+  {
     name: 'Canto',
     chain: 'Canto',
     rpc: [
@@ -27757,6 +27795,11 @@ const chainArray = [
         name: 'dexguru',
         url: 'https://base.dex.guru',
         icon: 'dexguru',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Codex Scan',
+        url: 'https://scan.codex.io/base',
         standard: 'EIP3091'
       }
     ],
@@ -41204,6 +41247,21 @@ const chainArray = [
     ]
   },
   {
+    name: 'SOVL1 Testnet',
+    chain: 'SOVL1',
+    rpc: [],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'SOVL1 Testnet', symbol: 'tSOVL1', decimals: 18 },
+    infoURL: 'https://sovereign.com.ky',
+    shortName: 'tsovl1',
+    chainId: 76851,
+    networkId: 76851,
+    slip44: 1,
+    status: 'incubating',
+    explorers: []
+  },
+  {
     name: 'BORAchain mainnet',
     chain: 'BORA',
     icon: 'bora',
@@ -47476,6 +47534,19 @@ const chainArray = [
       }
     ],
     parent: { type: 'L2', chain: 'eip155-11155111' },
+    status: 'active'
+  },
+  {
+    name: 'Regulated Layer One Testnet',
+    chain: 'RL1-TESTNET',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'RL1 Ether', symbol: 'RETH', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://rl1.network',
+    shortName: 'rl1-testnet',
+    chainId: 281182,
+    networkId: 281182,
     status: 'active'
   },
   {
