@@ -23568,6 +23568,25 @@ const chainArray = [
     status: 'deprecated'
   },
   {
+    name: 'SRC Chain',
+    chain: 'SRC',
+    rpc: [ 'https://mainnet.srcecosystem.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'SRC', symbol: 'SRC', decimals: 18 },
+    infoURL: 'https://srcecosystem.com',
+    shortName: 'srcchain',
+    chainId: 5291,
+    networkId: 5291,
+    icon: 'src-chain',
+    explorers: [
+      {
+        name: 'SRC Chain Explorer',
+        url: 'https://explorer.srcecosystem.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Uzmi Network Mainnet',
     chain: 'UZMI',
     rpc: [ 'https://network.uzmigames.com.br/' ],
@@ -31558,6 +31577,24 @@ const chainArray = [
       chain: 'eip155-1',
       bridges: [ { url: 'https://explorer.rss3.io/bridge' } ]
     }
+  },
+  {
+    name: 'Riverbit Testnet',
+    chain: 'RBT',
+    rpc: [ 'https://pre.riverbit.io/api/rpc?chainId=12589' ],
+    faucets: [],
+    nativeCurrency: { name: 'Riverbit token', symbol: 'RBT', decimals: 18 },
+    infoURL: 'https://pre.riverbit.io/explorer',
+    shortName: 'riverbit-testnet',
+    chainId: 12589,
+    networkId: 12589,
+    explorers: [
+      {
+        name: 'Riverbit Testnet Explorer',
+        url: 'https://pre.riverbit.io/explorer',
+        standard: 'none'
+      }
+    ]
   },
   {
     name: 'Rikeza Network Testnet',
