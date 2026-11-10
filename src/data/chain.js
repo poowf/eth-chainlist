@@ -1220,6 +1220,11 @@ const chainArray = [
         name: 'bscscan',
         url: 'https://bscscan.com',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Codex Scan',
+        url: 'https://scan.codex.io/bnb',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -2124,7 +2129,8 @@ const chainArray = [
       'wss://rpc.gnosischain.com/wss',
       'https://gnosis-rpc.publicnode.com',
       'wss://gnosis-rpc.publicnode.com',
-      'https://gnosis-rpc.blockreq.com/v1/rpc/public'
+      'https://gnosis-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/gnosis?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [
       'https://faucet.gnosischain.com',
@@ -11542,7 +11548,8 @@ const chainArray = [
       'https://metis.drpc.org',
       'wss://metis.drpc.org',
       'https://metis-rpc.publicnode.com',
-      'wss://metis-rpc.publicnode.com'
+      'wss://metis-rpc.publicnode.com',
+      'https://rpc.swiftnodes.io/rpc/metis?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Metis', symbol: 'METIS', decimals: 18 },
@@ -42470,6 +42477,25 @@ const chainArray = [
     ]
   },
   {
+    name: 'PSYROB Testnet',
+    chain: 'PSYROB',
+    rpc: [ 'https://rpc.psyrob.com' ],
+    faucets: [],
+    nativeCurrency: { name: 'PSY', symbol: 'PSY', decimals: 18 },
+    infoURL: 'https://psyrob.com',
+    shortName: 'psyrob',
+    chainId: 87870,
+    networkId: 87870,
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'PSYROB Explorer',
+        url: 'https://explorer.psyrob.com',
+        standard: 'none'
+      }
+    ]
+  },
+  {
     name: 'Nautilus Proteus Testnet',
     chain: 'ETH',
     icon: 'nautilus',
@@ -43781,6 +43807,26 @@ const chainArray = [
     status: 'active'
   },
   {
+    name: 'Kinetiq Elysium Testnet',
+    chain: 'Elysium Testnet',
+    rpc: [ 'https://testnet-rpc.elysium.kinetiq.xyz' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'HYPE', symbol: 'HYPE', decimals: 18 },
+    infoURL: 'https://elysium.kinetiq.xyz',
+    shortName: 'elysium-testnet',
+    chainId: 99801,
+    networkId: 99801,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'Elysium Testnet Explorer',
+        url: 'https://testnet.elysium.kinetiq.xyz/explorer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Edge Matrix Chain Testnet',
     chain: 'EMC Testnet',
     icon: 'emctest',
@@ -43814,6 +43860,26 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://sepolia.emcscan.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Elysium',
+    chain: 'Elysium',
+    rpc: [ 'https://rpc.elysium.kinetiq.xyz' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'HYPE', symbol: 'HYPE', decimals: 18 },
+    infoURL: 'https://elysium.kinetiq.xyz',
+    shortName: 'elysium',
+    chainId: 99901,
+    networkId: 99901,
+    icon: 'elysium-kinetiq',
+    explorers: [
+      {
+        name: 'Elysium Explorer',
+        url: 'https://elysium.kinetiq.xyz/explorer',
         standard: 'EIP3091'
       }
     ]
