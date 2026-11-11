@@ -43821,7 +43821,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Elysium Testnet Explorer',
-        url: 'https://testnet.elysium.kinetiq.xyz/explorer',
+        url: 'https://testnet.elysium.kinetiq.xyz',
         standard: 'EIP3091'
       }
     ]
@@ -43879,7 +43879,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Elysium Explorer',
-        url: 'https://elysium.kinetiq.xyz/explorer',
+        url: 'https://elysium.kinetiq.xyz',
         standard: 'EIP3091'
       }
     ]
