@@ -2317,7 +2317,11 @@ const chainArray = [
     name: 'Shibarium',
     chain: 'Shibarium',
     icon: 'shibarium',
-    rpc: [ 'https://rpc.shibarium.shib.io', 'https://shib.nownodes.io' ],
+    rpc: [
+      'https://rpc.shibarium.shib.io',
+      'https://shib.nownodes.io',
+      'https://rpc.swiftnodes.io/rpc/shibarium?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'BONE Shibarium', symbol: 'BONE', decimals: 18 },
     infoURL: 'https://shibariumecosystem.com',
@@ -2578,7 +2582,8 @@ const chainArray = [
     rpc: [
       'https://rpc.fuse.io',
       'https://fuse.drpc.org',
-      'wss://fuse.drpc.org'
+      'wss://fuse.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/fuse?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Fuse', symbol: 'FUSE', decimals: 18 },
@@ -2723,7 +2728,8 @@ const chainArray = [
       'https://mainnet.unichain.org',
       'https://unichain-rpc.publicnode.com',
       'wss://unichain-rpc.publicnode.com',
-      'https://unichain-rpc.blockreq.com/v1/rpc/public'
+      'https://unichain-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/unichain?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -11751,7 +11757,11 @@ const chainArray = [
   {
     name: 'WEMIX3.0 Mainnet',
     chain: 'WEMIX',
-    rpc: [ 'https://api.wemix.com', 'wss://ws.wemix.com' ],
+    rpc: [
+      'https://api.wemix.com',
+      'wss://ws.wemix.com',
+      'https://rpc.swiftnodes.io/rpc/wemix?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'WEMIX', symbol: 'WEMIX', decimals: 18 },
     infoURL: 'https://wemix.com',
@@ -11865,7 +11875,8 @@ const chainArray = [
       'https://rpc.coredao.org/',
       'https://rpc-core.icecreamswap.com',
       'https://core.drpc.org',
-      'wss://core.drpc.org'
+      'wss://core.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/core?key=${SWIFTNODES_API_KEY}'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -13388,7 +13399,11 @@ const chainArray = [
   {
     name: 'Sei Network',
     chain: 'Sei',
-    rpc: [ 'https://evm-rpc.sei-apis.com', 'wss://evm-ws.sei-apis.com' ],
+    rpc: [
+      'https://evm-rpc.sei-apis.com',
+      'wss://evm-ws.sei-apis.com',
+      'https://rpc.swiftnodes.io/rpc/sei?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Sei', symbol: 'SEI', decimals: 18 },
     infoURL: 'https://www.sei.io',
@@ -56757,7 +56772,8 @@ const chainArray = [
     rpc: [
       'https://mainnet.aurora.dev',
       'https://aurora.drpc.org',
-      'wss://aurora.drpc.org'
+      'wss://aurora.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/aurora?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
