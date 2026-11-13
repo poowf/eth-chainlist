@@ -254,6 +254,11 @@ const chainArray = [
         url: 'https://optimism.blockscout.com',
         icon: 'blockscout',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Codex Scan',
+        url: 'https://scan.codex.io/opti',
+        standard: 'EIP3091'
       }
     ]
   },
@@ -2898,6 +2903,11 @@ const chainArray = [
       {
         name: 'oklink',
         url: 'https://www.oklink.com/polygon',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Codex Scan',
+        url: 'https://scan.codex.io/polygon',
         standard: 'EIP3091'
       }
     ]
@@ -22641,6 +22651,11 @@ const chainArray = [
         name: 'stonkscan',
         url: 'https://stonkscan.io',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Codex Scan',
+        url: 'https://scan.codex.io/robinhood',
+        standard: 'EIP3091'
       }
     ],
     status: 'active',
@@ -37041,6 +37056,11 @@ const chainArray = [
         url: 'https://arbitrum.dex.guru',
         icon: 'dexguru',
         standard: 'EIP3091'
+      },
+      {
+        name: 'Codex Scan',
+        url: 'https://scan.codex.io/arb',
+        standard: 'EIP3091'
       }
     ],
     infoURL: 'https://arbitrum.io',
@@ -37440,6 +37460,11 @@ const chainArray = [
       {
         name: 'Avascan',
         url: 'https://avascan.info',
+        standard: 'EIP3091'
+      },
+      {
+        name: 'Codex Scan',
+        url: 'https://scan.codex.io/avax',
         standard: 'EIP3091'
       }
     ]
@@ -41385,6 +41410,7 @@ const chainArray = [
   {
     name: 'ZETAPHY Testnet',
     chain: 'ZETAPHY',
+    icon: 'zetaphy',
     rpc: [ 'https://rpc.sawasdeecoin.com' ],
     faucets: [ 'https://app.sawasdeecoin.com/?tab=earn' ],
     nativeCurrency: { name: 'ZETAPHY', symbol: 'ZTPHY', decimals: 18 },
