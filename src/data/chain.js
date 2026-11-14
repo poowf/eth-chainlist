@@ -11174,7 +11174,7 @@ const chainArray = [
   {
     name: 'Phase Mainnet',
     chain: 'PHASE',
-    rpc: [],
+    rpc: [ 'https://rpc-main.phase.xyz', 'wss://rpc-main.phase.xyz' ],
     faucets: [],
     nativeCurrency: { name: 'PHASE', symbol: 'PHASE', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
@@ -11182,7 +11182,13 @@ const chainArray = [
     shortName: 'phase',
     chainId: 1015,
     networkId: 1015,
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'Phase Explorer',
+        url: 'https://explorer.phase.xyz',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'MAI Chain Mainnet',
@@ -22620,8 +22626,6 @@ const chainArray = [
       'https://rpc.mainnet.chain.robinhood.com',
       'https://robinhood-rpc.publicnode.com',
       'wss://robinhood-rpc.publicnode.com',
-      'https://rpc.ordofi.network',
-      'wss://rpc.ordofi.network',
       'https://robinhood.drpc.org',
       'wss://robinhood.drpc.org',
       'https://robinhood-mainnet-rpc.blockreq.com/v1/rpc/public',
@@ -33870,6 +33874,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'QVTX Aeon',
+    chain: 'QVTX',
+    rpc: [
+      'https://rpc.qvtxaeon.io/_rpc/20232',
+      'https://rpc.quantvestrix.io/_rpc/20232'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'QVTX', symbol: 'QVTX', decimals: 18 },
+    infoURL: 'https://quantvestrix.io',
+    shortName: 'qvtx2',
+    chainId: 20232,
+    networkId: 20232
   },
   {
     name: 'CHEESE Blockchain Mainnet',
@@ -48553,6 +48571,17 @@ const chainArray = [
     ]
   },
   {
+    name: 'QVTX ByteID Anchor',
+    chain: 'QVTX',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'QVTX', symbol: 'QVTX', decimals: 18 },
+    infoURL: 'https://quantvestrix.com',
+    shortName: 'qvtxa',
+    chainId: 420018,
+    networkId: 420018
+  },
+  {
     name: 'Vector Smart Chain',
     chain: 'VSC',
     icon: 'vectorsmartgas',
@@ -58249,7 +58278,7 @@ const chainArray = [
   {
     name: 'Haradev Testnet',
     chain: 'Ntity',
-    rpc: [ 'https://blockchain.haradev.com' ],
+    rpc: [ 'https://rpc.haradev.com' ],
     faucets: [],
     nativeCurrency: { name: 'Ntity Haradev', symbol: 'NTTH', decimals: 18 },
     infoURL: 'https://ntity.io',
