@@ -11412,17 +11412,17 @@ const chainArray = [
     name: 'Bighive Mainnet',
     chain: 'BIGHIVE',
     icon: 'bighive',
-    rpc: [ 'https://rpc.bighive-beets.io/osc' ],
+    rpc: [ 'https://rpc.bighive-beets.com/osc' ],
     faucets: [],
     nativeCurrency: { name: 'Beets', symbol: 'BEETS', decimals: 18 },
-    infoURL: 'https://bighive-beets.io',
+    infoURL: 'https://bighive-beets.com',
     shortName: 'bighive',
     chainId: 1062,
     networkId: 1062,
     explorers: [
       {
         name: 'BDBS',
-        url: 'https://bdbs.bighive-beets.io',
+        url: 'https://bdbs.bighive-beets.com',
         standard: 'EIP3091'
       }
     ]
@@ -28173,6 +28173,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'QVTX',
+    chain: 'QVTX',
+    rpc: [
+      'https://rpc.qvtxaeon.io/_rpc/8825',
+      'https://rpc.quantvestrix.io/_rpc/8825'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'QVTX', symbol: 'QVTX', decimals: 18 },
+    infoURL: 'https://quantvestrix.io',
+    shortName: 'qvtx',
+    chainId: 8825,
+    networkId: 8825
+  },
+  {
     name: 'Hydra Chain Testnet',
     chain: 'HYDRA',
     rpc: [ 'https://rpc-testnet.hydrachain.org' ],
@@ -43387,7 +43401,6 @@ const chainArray = [
     ],
     faucets: [
       'https://mantis.switch.ch/faucet',
-      'https://mantis.kore-technologies.ch/faucet',
       'https://mantis.phoenix-systems.io/faucet',
       'https://mantis.block-spirit.ch/faucet'
     ],
