@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.0.881 (2026-11-16)
+
+
+### Maintenance
+
+* **release:** 0.0.880 ([1a2cace](https://github.com/poowf/eth-chainlist/commit/1a2cace99d6fec24ef7767e3eadc0a0b6cd04750))
+* update chain data ([1ed5509](https://github.com/poowf/eth-chainlist/commit/1ed55094af5e8751f99381476bb02f93dc01a6f5))
+
 ### 0.0.880 (2026-11-15)
 
 
