@@ -10448,14 +10448,21 @@ const chainArray = [
   {
     name: 'ZIGChain',
     chain: 'ZIG',
-    rpc: [],
+    rpc: [ 'https://public-zigchain-evm-rpc.numia.xyz' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'ZIG', symbol: 'ZIG', decimals: 18 },
     infoURL: 'https://zigchain.com/',
     shortName: 'zigchain',
     chainId: 944,
     networkId: 944,
-    status: 'incubating'
+    explorers: [
+      {
+        name: 'ZIGScan',
+        url: 'https://zigscan.org',
+        standard: 'EIP3091'
+      }
+    ]
   },
   {
     name: 'Subtensor EVM Testnet',
@@ -36153,6 +36160,71 @@ const chainArray = [
     ]
   },
   {
+    name: 'Zero (Beacon Chain)',
+    title: 'Zero [Beacon Chain]',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-beacon',
+    chainId: 33000,
+    networkId: 33000,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (System Zone)',
+    title: 'Zero [System Zone]',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-system',
+    chainId: 33001,
+    networkId: 33001,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (EVM Zone)',
+    title: 'Zero [EVM Zone]',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-evm',
+    chainId: 33002,
+    networkId: 33002,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (ATLAS Zone)',
+    title: 'Zero [ATLAS Zone]',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-atlas',
+    chainId: 33003,
+    networkId: 33003,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (Payments Zone)',
+    title: 'Zero [Payments Zone]',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-payments',
+    chainId: 33004,
+    networkId: 33004,
+    status: 'incubating'
+  },
+  {
     name: 'Entangle Mainnet',
     chain: 'NGL',
     icon: 'ngl',
@@ -37390,6 +37462,76 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Zero (Beacon Chain) Testnet',
+    title: 'Zero [Beacon Chain] Testnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-beacon-testnet',
+    chainId: 43000,
+    networkId: 43000,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (System Zone) Testnet',
+    title: 'Zero [System Zone] Testnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-system-testnet',
+    chainId: 43001,
+    networkId: 43001,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (EVM Zone) Testnet',
+    title: 'Zero [EVM Zone] Testnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-evm-testnet',
+    chainId: 43002,
+    networkId: 43002,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (ATLAS Zone) Testnet',
+    title: 'Zero [ATLAS Zone] Testnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-atlas-testnet',
+    chainId: 43003,
+    networkId: 43003,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (Payments Zone) Testnet',
+    title: 'Zero [Payments Zone] Testnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-payments-testnet',
+    chainId: 43004,
+    networkId: 43004,
+    slip44: 1,
+    status: 'incubating'
   },
   {
     name: 'Athereum',
@@ -42153,7 +42295,8 @@ const chainArray = [
       'https://blastl2-mainnet.public.blastapi.io',
       'https://blast.blockpi.network/v1/rpc/public',
       'https://blast-rpc.publicnode.com',
-      'wss://blast-rpc.publicnode.com'
+      'wss://blast-rpc.publicnode.com',
+      'https://rpc.swiftnodes.io/rpc/blast?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -43226,6 +43369,76 @@ const chainArray = [
     networkId: 92533,
     status: 'incubating',
     icon: 'wirefluid'
+  },
+  {
+    name: 'Zero (Beacon Chain) Devnet',
+    title: 'Zero [Beacon Chain] Devnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-beacon-devnet',
+    chainId: 93000,
+    networkId: 93000,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (System Zone) Devnet',
+    title: 'Zero [System Zone] Devnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-system-devnet',
+    chainId: 93001,
+    networkId: 93001,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (EVM Zone) Devnet',
+    title: 'Zero [EVM Zone] Devnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-evm-devnet',
+    chainId: 93002,
+    networkId: 93002,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (ATLAS Zone) Devnet',
+    title: 'Zero [ATLAS Zone] Devnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-atlas-devnet',
+    chainId: 93003,
+    networkId: 93003,
+    slip44: 1,
+    status: 'incubating'
+  },
+  {
+    name: 'Zero (Payments Zone) Devnet',
+    title: 'Zero [Payments Zone] Devnet',
+    chain: 'ZERO',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'ZRO', symbol: 'ZRO', decimals: 18 },
+    infoURL: 'https://layerzero.network/zero',
+    shortName: 'zero-payments-devnet',
+    chainId: 93004,
+    networkId: 93004,
+    slip44: 1,
+    status: 'incubating'
   },
   {
     name: 'LiquidLayer Testnet',
@@ -45474,6 +45687,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Lattice Testnet',
+    chain: 'Lattice',
+    status: 'incubating',
+    rpc: [ 'https://api.zan.top/node/v1/lattice/testnet/${ZAN_API_KEY}' ],
+    faucets: [],
+    nativeCurrency: { name: 'USDC Mock', symbol: 'USDC.m', decimals: 6 },
+    infoURL: '',
+    shortName: 'lattice-testnet',
+    chainId: 141421,
+    networkId: 141421,
+    slip44: 1,
+    explorers: []
   },
   {
     name: 'Bitharvest Chain Testnet',
@@ -50208,7 +50435,8 @@ const chainArray = [
     rpc: [
       'https://rpc.katana.network',
       'https://katana.gateway.tenderly.co/',
-      'https://rpc.katanarpc.com/'
+      'https://rpc.katanarpc.com/',
+      'https://rpc.swiftnodes.io/rpc/katana?key=${SWIFTNODES_API_KEY}'
     ],
     features: [
       { name: 'EIP155' },
@@ -52800,6 +53028,28 @@ const chainArray = [
     ]
   },
   {
+    name: 'Pinch',
+    title: 'Pinch Mainnet',
+    status: 'active',
+    chain: 'PINCH',
+    icon: 'pinch',
+    rpc: [ 'https://pinch.network/rpc' ],
+    features: [ { name: 'EIP155' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Pinch', symbol: 'PINCH', decimals: 18 },
+    infoURL: 'https://pinch.network',
+    shortName: 'pinch',
+    chainId: 5261646,
+    networkId: 5261646,
+    explorers: [
+      {
+        name: 'Pinch Explorer',
+        url: 'https://pinch.network/explorer',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Reactive Lasna',
     title: 'Reactive Network Testnet Lasna',
     chain: 'REACT',
@@ -53027,6 +53277,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'ACI Network Testnet',
+    chain: 'ETH',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+    infoURL: 'https://aci-token.net',
+    shortName: 'aci-testnet',
+    chainId: 6567731,
+    networkId: 6567731,
+    slip44: 1,
+    status: 'incubating',
+    parent: { type: 'L2', chain: 'eip155-11155111' }
   },
   {
     name: 'Safe(AnWang) Mainnet',
@@ -53320,7 +53584,10 @@ const chainArray = [
   {
     name: 'Zora',
     chain: 'ETH',
-    rpc: [ 'https://rpc.zora.energy/' ],
+    rpc: [
+      'https://rpc.zora.energy/',
+      'https://rpc.swiftnodes.io/rpc/zora?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     icon: 'zora',
