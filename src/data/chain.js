@@ -25534,7 +25534,8 @@ const chainArray = [
       'https://zetachain-mainnet.g.allthatnode.com/archive/evm',
       'https://zeta-chain.drpc.org',
       'https://zetachain-mainnet.public.blastapi.io',
-      'https://7000.rpc.thirdweb.com'
+      'https://7000.rpc.thirdweb.com',
+      'https://rpc.swiftnodes.io/rpc/zetachain?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Zeta', symbol: 'ZETA', decimals: 18 },
@@ -27580,7 +27581,10 @@ const chainArray = [
   {
     name: 'Kaia Mainnet',
     chain: 'KAIA',
-    rpc: [ 'https://public-en.node.kaia.io' ],
+    rpc: [
+      'https://public-en.node.kaia.io',
+      'https://rpc.swiftnodes.io/rpc/kaia?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'KAIA', symbol: 'KAIA', decimals: 18 },
     infoURL: 'https://kaia.io',
@@ -36053,6 +36057,19 @@ const chainArray = [
     ]
   },
   {
+    name: 'DAGCore Mainnet',
+    chain: 'DGCR',
+    rpc: [ 'https://rpc.dgcr.dagcore.net' ],
+    faucets: [],
+    nativeCurrency: { name: 'DAGCore', symbol: 'DGCR', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://dagcore.net',
+    shortName: 'dgcr',
+    chainId: 32427,
+    networkId: 32427,
+    status: 'incubating'
+  },
+  {
     name: 'Bitgert Mainnet',
     chain: 'Brise',
     rpc: [
@@ -37761,6 +37778,47 @@ const chainArray = [
         name: 'ZKFair Testnet Info',
         url: 'https://testnet-scan.zkfair.io',
         icon: 'zkfair',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'QDay Mainnet',
+    chain: 'QDAY',
+    rpc: [ 'https://rpc.qday.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'QDay Token', symbol: 'QDAY', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://qday.io',
+    shortName: 'qday',
+    chainId: 44001,
+    networkId: 44001,
+    explorers: [
+      {
+        name: 'QDay Explorer',
+        url: 'https://explorer.qday.io',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'QDAY Aevum Testnet',
+    chain: 'QDAY',
+    rpc: [ 'https://rpc-test.qday.info' ],
+    faucets: [ 'https://faucet.qday.info' ],
+    nativeCurrency: { name: 'QDAY Testnet Token', symbol: 'tQDAY', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://qday.io',
+    shortName: 'tqday',
+    chainId: 44005,
+    networkId: 44005,
+    slip44: 1,
+    explorers: [
+      {
+        name: 'QDAY Aevum Explorer',
+        url: 'https://explorer-test.qday.info',
+        icon: 'blockscout',
         standard: 'EIP3091'
       }
     ]
@@ -41853,6 +41911,44 @@ const chainArray = [
     ]
   },
   {
+    name: 'Stapleport',
+    chain: 'SP',
+    rpc: [ 'https://rpc.stapleport.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Stapleport USD', symbol: 'USDSP', decimals: 18 },
+    infoURL: 'https://stapleport.com',
+    shortName: 'sp',
+    chainId: 78753,
+    networkId: 78753,
+    explorers: [
+      {
+        name: 'blockscan',
+        url: 'https://blockscan.stapleport.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Stapleport Testnet',
+    chain: 'SP',
+    rpc: [ 'https://rpc-test.stapleport.com' ],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [ 'https://faucet.stapleport.com' ],
+    nativeCurrency: { name: 'Stapleport USD', symbol: 'USDSP', decimals: 18 },
+    infoURL: 'https://stapleport.com',
+    shortName: 'spt',
+    chainId: 78756,
+    networkId: 78756,
+    explorers: [
+      {
+        name: 'blockscan-test',
+        url: 'https://blockscan-test.stapleport.com',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
     name: 'Gold Smart Chain Testnet',
     chain: 'STAND',
     icon: 'standTestnet',
@@ -42996,7 +43092,8 @@ const chainArray = [
     rpc: [
       'https://rpc.chiliz.com',
       'https://rpc.ankr.com/chiliz',
-      'https://chiliz.publicnode.com'
+      'https://chiliz.publicnode.com',
+      'https://rpc.swiftnodes.io/rpc/chiliz?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [
       'https://spicy-faucet.chiliz.com',
@@ -44649,6 +44746,20 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Intain Markets Testnet',
+    chain: 'IMA',
+    rpc: [
+      'http://20.253.174.32:80/ext/bc/2ALtzRYgRpRWnTgjdrMArkMvU6RTpcjs7VWmupqYaPrHDrHLSd/rpc'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Intain Markets', symbol: 'IMA', decimals: 18 },
+    infoURL: 'https://imuat.intainmarkets.us',
+    shortName: 'ima-test',
+    chainId: 101122,
+    networkId: 101122,
+    explorers: []
   },
   {
     name: 'Creditcoin',
@@ -49562,6 +49673,86 @@ const chainArray = [
       {
         name: 'bescscan',
         url: 'https://Bescscan.io',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Supra Testnet',
+    chain: 'SUPRA',
+    icon: 'supra',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Supra', symbol: 'SUPRA', decimals: 18 },
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP2930' },
+      { name: 'EIP7702' }
+    ],
+    infoURL: 'https://supra.com',
+    shortName: 'supra-testnet',
+    chainId: 535556,
+    networkId: 535556,
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'SupraScan',
+        url: 'https://testnet.suprascan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Supra Mainnet',
+    chain: 'SUPRA',
+    icon: 'supra',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Supra', symbol: 'SUPRA', decimals: 18 },
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP2930' },
+      { name: 'EIP7702' }
+    ],
+    infoURL: 'https://supra.com',
+    shortName: 'supra',
+    chainId: 535558,
+    networkId: 535558,
+    status: 'incubating',
+    explorers: [
+      {
+        name: 'SupraScan',
+        url: 'https://suprascan.io',
+        standard: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Supra Devnet',
+    chain: 'SUPRA',
+    icon: 'supra',
+    rpc: [
+      'https://rpc-devnet.supra.com/rpc/v1/eth',
+      'wss://rpc-devnet.supra.com/rpc/v1/eth'
+    ],
+    faucets: [],
+    nativeCurrency: { name: 'Supra', symbol: 'SUPRA', decimals: 18 },
+    features: [
+      { name: 'EIP155' },
+      { name: 'EIP1559' },
+      { name: 'EIP2930' },
+      { name: 'EIP7702' }
+    ],
+    infoURL: 'https://supra.com',
+    shortName: 'supra-devnet',
+    chainId: 535600,
+    networkId: 535600,
+    explorers: [
+      {
+        name: 'SupraScan',
+        url: 'https://devnet.suprascan.io',
         standard: 'EIP3091'
       }
     ]
