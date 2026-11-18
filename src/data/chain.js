@@ -541,7 +541,7 @@ const chainArray = [
     name: 'Cronos Mainnet',
     chain: 'CRO',
     rpc: [
-      'https://evm.cronos.org',
+      'https://evm.cronos.com',
       'https://cronos-evm-rpc.publicnode.com',
       'wss://cronos-evm-rpc.publicnode.com',
       'https://cronos.drpc.org',
@@ -551,14 +551,14 @@ const chainArray = [
     features: [ { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Cronos', symbol: 'CRO', decimals: 18 },
-    infoURL: 'https://cronos.org/',
+    infoURL: 'https://cronos.com/',
     shortName: 'cro',
     chainId: 25,
     networkId: 25,
     explorers: [
       {
         name: 'Cronos Explorer',
-        url: 'https://explorer.cronos.org',
+        url: 'https://explorer.cronos.com',
         standard: 'none'
       }
     ]
@@ -6307,13 +6307,13 @@ const chainArray = [
     name: 'Cronos Testnet',
     chain: 'CRO',
     rpc: [
-      'https://evm-t3.cronos.org',
+      'https://evm-t3.cronos.com',
       'https://cronos-testnet.drpc.org',
       'wss://cronos-testnet.drpc.org'
     ],
-    faucets: [ 'https://cronos.org/faucet' ],
+    faucets: [ 'https://faucet.cronos.com/' ],
     nativeCurrency: { name: 'Cronos Test Coin', symbol: 'TCRO', decimals: 18 },
-    infoURL: 'https://cronos.org',
+    infoURL: 'https://cronos.com/',
     shortName: 'tcro',
     chainId: 338,
     networkId: 338,
@@ -6321,7 +6321,7 @@ const chainArray = [
     explorers: [
       {
         name: 'Cronos Testnet Explorer',
-        url: 'https://explorer.cronos.org/testnet',
+        url: 'https://explorer.cronos.com/testnet',
         standard: 'none'
       }
     ]
@@ -8016,7 +8016,10 @@ const chainArray = [
   {
     name: 'Astar',
     chain: 'ASTR',
-    rpc: [ 'https://rpc.astar.network:8545' ],
+    rpc: [
+      'https://rpc.astar.network:8545',
+      'https://rpc.swiftnodes.io/rpc/astar?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Astar', symbol: 'ASTR', decimals: 18 },
     infoURL: 'https://astar.network/',
@@ -19160,7 +19163,7 @@ const chainArray = [
     faucets: [],
     nativeCurrency: { name: 'EPR', symbol: 'EPR', decimals: 18 },
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
-    infoURL: 'https://www.eoraptordex.com',
+    infoURL: 'https://www.eoraptor.org',
     shortName: 'eoraptor',
     chainId: 2679,
     networkId: 2679,
@@ -22261,7 +22264,8 @@ const chainArray = [
       'https://build.onbeam.com/rpc',
       'wss://build.onbeam.com/ws',
       'https://subnets.avax.network/beam/mainnet/rpc',
-      'wss://subnets.avax.network/beam/mainnet/ws'
+      'wss://subnets.avax.network/beam/mainnet/ws',
+      'https://rpc.swiftnodes.io/rpc/beam?key=${SWIFTNODES_API_KEY}'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [ 'https://faucet.onbeam.com' ],
@@ -22702,7 +22706,10 @@ const chainArray = [
   {
     name: 'IoTeX Network Mainnet',
     chain: 'iotex.io',
-    rpc: [ 'https://babel-api.mainnet.iotex.io' ],
+    rpc: [
+      'https://babel-api.mainnet.iotex.io',
+      'https://rpc.swiftnodes.io/rpc/iotex?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'IoTeX', symbol: 'IOTX', decimals: 18 },
     infoURL: 'https://iotex.io',
@@ -22983,7 +22990,8 @@ const chainArray = [
     rpc: [
       'https://rpc.mantle.xyz',
       'https://mantle-rpc.publicnode.com',
-      'wss://mantle-rpc.publicnode.com'
+      'wss://mantle-rpc.publicnode.com',
+      'https://rpc.swiftnodes.io/rpc/mantle?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Mantle', symbol: 'MNT', decimals: 18 },
@@ -39085,6 +39093,34 @@ const chainArray = [
     ]
   },
   {
+    name: 'Shinerium Testnet',
+    chain: 'SHN',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Shine', symbol: 'SHN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://shinerium.org',
+    shortName: 'tshn',
+    chainId: 54004,
+    networkId: 54004,
+    icon: 'shinerium',
+    status: 'incubating'
+  },
+  {
+    name: 'Shinerium Mainnet',
+    chain: 'SHN',
+    rpc: [],
+    faucets: [],
+    nativeCurrency: { name: 'Shine', symbol: 'SHN', decimals: 18 },
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    infoURL: 'https://shinerium.org',
+    shortName: 'shn',
+    chainId: 54040,
+    networkId: 54040,
+    icon: 'shinerium',
+    status: 'incubating'
+  },
+  {
     name: 'Graphite Testnet',
     chain: 'Graphite',
     rpc: [
@@ -49583,7 +49619,8 @@ const chainArray = [
       'https://scroll-mainnet.chainstacklabs.com',
       'https://scroll-rpc.publicnode.com',
       'wss://scroll-rpc.publicnode.com',
-      'https://scroll-rpc.blockreq.com/v1/rpc/public'
+      'https://scroll-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/scroll?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
