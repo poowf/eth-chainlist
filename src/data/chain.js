@@ -646,7 +646,11 @@ const chainArray = [
   {
     name: 'Rootstock Mainnet',
     chain: 'Rootstock',
-    rpc: [ 'https://public-node.rsk.co', 'https://mycrypto.rsk.co' ],
+    rpc: [
+      'https://public-node.rsk.co',
+      'https://mycrypto.rsk.co',
+      'https://rpc.swiftnodes.io/rpc/rootstock?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     icon: 'rootstock',
     nativeCurrency: { name: 'Smart Bitcoin', symbol: 'RBTC', decimals: 18 },
@@ -818,7 +822,8 @@ const chainArray = [
     rpc: [
       'https://rpc.telos.net',
       'https://telos.drpc.org',
-      'wss://telos.drpc.org'
+      'wss://telos.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/telos?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Telos', symbol: 'TLOS', decimals: 18 },
@@ -6104,7 +6109,8 @@ const chainArray = [
     rpc: [
       'https://mainnet.era.zksync.io',
       'https://zksync.drpc.org',
-      'wss://zksync.drpc.org'
+      'wss://zksync.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/zksync?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -6523,7 +6529,8 @@ const chainArray = [
       'https://rpc.pulsechain.com',
       'https://pulsechain-rpc.publicnode.com',
       'wss://pulsechain-rpc.publicnode.com',
-      'https://rpc-pulsechain.g4mm4.io'
+      'https://rpc-pulsechain.g4mm4.io',
+      'https://rpc.swiftnodes.io/rpc/pulsechain?key=${SWIFTNODES_API_KEY}'
     ],
     icon: 'pulsechain',
     slip44: 60,
@@ -7090,6 +7097,20 @@ const chainArray = [
     ]
   },
   {
+    name: 'D Testnet',
+    chain: 'Dchain',
+    rpc: [ 'https://eth-testnet.platformd.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dchain', symbol: 'DT', decimals: 18 },
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://platformd.io',
+    shortName: 'd-testnet',
+    chainId: 430,
+    networkId: 430,
+    icon: 'd-chain',
+    explorers: []
+  },
+  {
     name: 'NutriEmp Chain',
     chain: 'nutriemp-chain',
     rpc: [ 'https://rpc.nutriemp-chain.link', 'https://rpc.nutriemp.com' ],
@@ -7109,6 +7130,20 @@ const chainArray = [
         icon: 'GRAMZ'
       }
     ]
+  },
+  {
+    name: 'D Mainnet',
+    chain: 'Dchain',
+    rpc: [ 'https://eth.platformd.io' ],
+    faucets: [],
+    nativeCurrency: { name: 'Dchain', symbol: 'DT', decimals: 18 },
+    features: [ { name: 'EIP1559' } ],
+    infoURL: 'https://platoformd.io',
+    shortName: 'd-mainnet',
+    chainId: 433,
+    networkId: 433,
+    icon: 'd-chain',
+    explorers: []
   },
   {
     name: 'Boyaa',
@@ -9103,6 +9138,21 @@ const chainArray = [
         standard: 'EIP3091'
       }
     ]
+  },
+  {
+    name: 'Telcoin Network',
+    chain: 'TEL',
+    icon: 'telcoin',
+    rpc: [],
+    features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
+    faucets: [],
+    nativeCurrency: { name: 'Telcoin', symbol: 'TEL', decimals: 18 },
+    infoURL: 'https://telcoin.network',
+    shortName: 'tn',
+    chainId: 731,
+    networkId: 731,
+    status: 'incubating',
+    explorers: []
   },
   {
     name: 'Pione BOS Chain Mainnet',
@@ -15403,12 +15453,12 @@ const chainArray = [
   },
   {
     name: 'Whitechain',
-    chain: 'WBT',
-    rpc: [ 'https://rpc.whitechain.io' ],
+    chain: 'WCH',
+    rpc: [ 'https://rpc.whitechain.io', 'https://rpc.ankr.com/whitechain' ],
     faucets: [],
     nativeCurrency: { name: 'WhiteBIT Coin', symbol: 'WBT', decimals: 18 },
     infoURL: 'https://whitechain.io',
-    shortName: 'wbt',
+    shortName: 'wch',
     chainId: 1875,
     networkId: 1875,
     icon: 'whitechain',
@@ -15418,7 +15468,12 @@ const chainArray = [
         url: 'https://explorer.whitechain.io',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    parent: {
+      type: 'L2',
+      chain: 'eip155-1',
+      bridges: [ { url: 'https://bridge.whitechain.io' } ]
+    }
   },
   {
     name: 'XGR Testnet',
@@ -16639,17 +16694,14 @@ const chainArray = [
     chain: 'TEL',
     icon: 'telcoin',
     rpc: [
-      'https://rpc.telcoin.network',
-      'https://adiri.tel',
-      'https://node1.telcoin.network',
-      'https://node2.telcoin.network',
-      'https://node3.telcoin.network',
-      'https://node4.telcoin.network'
+      'https://rpc.adiri.tel',
+      'https://rpc.adiri.telcoin.network',
+      'https://adiri.rpc.telcoin.network'
     ],
     faucets: [ 'https://telcoin.network/faucet' ],
     nativeCurrency: { name: 'Telcoin', symbol: 'TEL', decimals: 18 },
     infoURL: 'https://telcoin.network',
-    shortName: 'tel',
+    shortName: 'adiri',
     chainId: 2017,
     networkId: 2017,
     slip44: 1,
@@ -19092,7 +19144,8 @@ const chainArray = [
         url: 'https://testnet.whitechain.io',
         standard: 'EIP3091'
       }
-    ]
+    ],
+    status: 'deprecated'
   },
   {
     name: 'AILayer Testnet',
@@ -36541,7 +36594,8 @@ const chainArray = [
     rpc: [
       'https://mainnet.mode.network',
       'https://mode.drpc.org',
-      'wss://mode.drpc.org'
+      'wss://mode.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/mode?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -36554,11 +36608,6 @@ const chainArray = [
       {
         name: 'modescout',
         url: 'https://explorer.mode.network',
-        standard: 'none'
-      },
-      {
-        name: 'Routescan',
-        url: 'https://modescan.io',
         standard: 'none'
       }
     ]
@@ -37237,7 +37286,8 @@ const chainArray = [
     rpc: [
       'https://forno.celo.org',
       'wss://forno.celo.org/ws',
-      'https://celo-rpc.blockreq.com/v1/rpc/public'
+      'https://celo-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/celo?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     infoURL: 'https://docs.celo.org/',
