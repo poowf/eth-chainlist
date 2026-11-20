@@ -25,7 +25,8 @@ const chainArray = [
       'https://xrpc.cl/eth',
       'https://ethereum-rpc.blockreq.com/v1/rpc/public',
       'https://rpc.swiftnodes.io/rpc/eth?key=${SWIFTNODES_API_KEY}',
-      'https://api.blockvectra.com/v1/eth_mainnet/public'
+      'https://api.blockvectra.com/v1/eth_mainnet/public',
+      'https://ethereum-mainnet.rpc.thyme.sh/public'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -235,7 +236,8 @@ const chainArray = [
       'wss://optimism.drpc.org',
       'https://xrpc.cl/optimism',
       'https://optimism-rpc.blockreq.com/v1/rpc/public',
-      'https://rpc.swiftnodes.io/rpc/optimism?key=${SWIFTNODES_API_KEY}'
+      'https://rpc.swiftnodes.io/rpc/optimism?key=${SWIFTNODES_API_KEY}',
+      'https://optimism-mainnet.rpc.thyme.sh/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -546,7 +548,8 @@ const chainArray = [
       'wss://cronos-evm-rpc.publicnode.com',
       'https://cronos.drpc.org',
       'wss://cronos.drpc.org',
-      'https://cronos-rpc.blockreq.com/v1/rpc/public'
+      'https://cronos-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/cronos?key=${SWIFTNODES_API_KEY}'
     ],
     features: [ { name: 'EIP1559' } ],
     faucets: [],
@@ -2890,7 +2893,8 @@ const chainArray = [
       'https://xrpc.cl/polygon',
       'https://polygon-bor-rpc.blockreq.com/v1/rpc/public',
       'https://rpc.swiftnodes.io/rpc/polygon?key=${SWIFTNODES_API_KEY}',
-      'https://api.blockvectra.com/v1/polygon_mainnet/public'
+      'https://api.blockvectra.com/v1/polygon_mainnet/public',
+      'https://polygon-mainnet.rpc.thyme.sh/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -4228,7 +4232,8 @@ const chainArray = [
       'wss://opbnb-rpc.publicnode.com',
       'https://opbnb.drpc.org',
       'wss://opbnb.drpc.org',
-      'https://opbnb-rpc.blockreq.com/v1/rpc/public'
+      'https://opbnb-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/opbnb?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'BNB Chain Native Token', symbol: 'BNB', decimals: 18 },
@@ -5024,7 +5029,8 @@ const chainArray = [
     rpc: [
       'https://rpc.frax.com',
       'https://fraxtal-rpc.publicnode.com',
-      'wss://fraxtal-rpc.publicnode.com'
+      'wss://fraxtal-rpc.publicnode.com',
+      'https://rpc.swiftnodes.io/rpc/fraxtal?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Frax', symbol: 'FRAX', decimals: 18 },
@@ -5522,7 +5528,8 @@ const chainArray = [
       'wss://boba-ethereum.gateway.tenderly.co/',
       'wss://gateway.tenderly.co/public/boba-ethereum',
       'https://boba-eth.drpc.org',
-      'wss://boba-eth.drpc.org'
+      'wss://boba-eth.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/boba?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -13267,7 +13274,8 @@ const chainArray = [
     rpc: [
       'https://sepolia.unichain.org',
       'https://unichain-sepolia-rpc.publicnode.com',
-      'wss://unichain-sepolia-rpc.publicnode.com'
+      'wss://unichain-sepolia-rpc.publicnode.com',
+      'https://unichain-sepolia.rpc.thyme.sh/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -15400,7 +15408,10 @@ const chainArray = [
     shortName: 'soneium',
     title: 'Soneium mainnet',
     chain: 'ETH',
-    rpc: [ 'https://rpc.soneium.org' ],
+    rpc: [
+      'https://rpc.soneium.org',
+      'https://rpc.swiftnodes.io/rpc/soneium?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     infoURL: 'https://soneium.org',
@@ -15416,7 +15427,7 @@ const chainArray = [
       },
       {
         name: 'OKLink',
-        url: 'https://www.okx.com/web3/explorer/soneium',
+        url: 'https://soneium.blockscout.com',
         standard: 'EIP3091'
       },
       {
@@ -42091,7 +42102,8 @@ const chainArray = [
       'wss://polygon-amoy-bor-rpc.publicnode.com',
       'https://polygon-amoy.drpc.org',
       'https://rpc.satelink.network/rpc/amoy',
-      'https://polygon-amoy-rpc.blockreq.com/v1/rpc/public'
+      'https://polygon-amoy-rpc.blockreq.com/v1/rpc/public',
+      'https://polygon-amoy.rpc.thyme.sh/public'
     ],
     faucets: [ 'https://faucet.polygon.technology/' ],
     nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
@@ -54363,7 +54375,8 @@ const chainArray = [
       'https://eth-sepolia.g.alchemy.com/v2/WddzdzI2o9S3COdT73d5w6AIogbKq4X-',
       'https://xrpc.cl/sepolia',
       'https://ethereum-sepolia-rpc.blockreq.com/v1/rpc/public',
-      'https://api.blockvectra.com/v1/eth_sepolia/public'
+      'https://api.blockvectra.com/v1/eth_sepolia/public',
+      'https://ethereum-sepolia.rpc.thyme.sh/public'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
@@ -57303,6 +57316,28 @@ const chainArray = [
       {
         name: 'blockscout',
         url: 'https://blockscout.evm.mirasmanda.uz',
+        icon: 'blockscout',
+        standard: 'EIP3091'
+      }
+    ]
+  },
+  {
+    name: 'Mirasmanda UAT Testnet',
+    chain: 'MIRASMANDA',
+    rpc: [ 'https://rpc-uat.evm.mirasmanda.uz' ],
+    faucets: [ 'https://faucet-uat.evm.mirasmanda.uz' ],
+    nativeCurrency: { name: 'Gas', symbol: 'GAS', decimals: 18 },
+    features: [ { name: 'EIP155' } ],
+    infoURL: 'https://asterium.uz/',
+    shortName: 'mirasmanda-uat',
+    chainId: 1215655279,
+    networkId: 1215655279,
+    slip44: 1,
+    icon: 'mirasmanda',
+    explorers: [
+      {
+        name: 'blockscout',
+        url: 'https://blockscout-uat.evm.mirasmanda.uz',
         icon: 'blockscout',
         standard: 'EIP3091'
       }
