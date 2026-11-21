@@ -330,7 +330,8 @@ const chainArray = [
       'https://01-vinthill-003-02.rpc.tatum.io/ext/bc/C/rpc',
       'https://rpc.au.cc/flare',
       'https://flare.enosys.global/ext/C/rpc',
-      'https://flare.solidifi.app/ext/C/rpc'
+      'https://flare.solidifi.app/ext/C/rpc',
+      'https://rpc.swiftnodes.io/rpc/flare?key=${SWIFTNODES_API_KEY}'
     ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
@@ -3034,7 +3035,10 @@ const chainArray = [
     name: 'Monad',
     chain: 'MON',
     icon: 'monad',
-    rpc: [ 'https://rpc.monad.xyz' ],
+    rpc: [
+      'https://rpc.monad.xyz',
+      'https://rpc.swiftnodes.io/rpc/monad?key=${SWIFTNODES_API_KEY}'
+    ],
     features: [ { name: 'EIP155' }, { name: 'EIP1559' } ],
     faucets: [],
     nativeCurrency: { name: 'Monad', symbol: 'MON', decimals: 18 },
@@ -3112,7 +3116,8 @@ const chainArray = [
       'wss://sonic-rpc.publicnode.com',
       'https://sonic.drpc.org',
       'wss://sonic.drpc.org',
-      'https://sonic-rpc.blockreq.com/v1/rpc/public'
+      'https://sonic-rpc.blockreq.com/v1/rpc/public',
+      'https://rpc.swiftnodes.io/rpc/sonic?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Sonic', symbol: 'S', decimals: 18 },
@@ -3537,7 +3542,8 @@ const chainArray = [
     rpc: [
       'https://pacific-rpc.manta.network/http',
       'https://manta-pacific.drpc.org',
-      'wss://manta-pacific.drpc.org'
+      'wss://manta-pacific.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/manta?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -14239,7 +14245,10 @@ const chainArray = [
   {
     name: 'Data Network',
     chain: 'DATA',
-    rpc: [ 'https://mainnet.datarpc.io' ],
+    rpc: [
+      'https://mainnet.datarpc.io',
+      'https://rpc.swiftnodes.io/rpc/story?key=${SWIFTNODES_API_KEY}'
+    ],
     faucets: [],
     nativeCurrency: { name: 'DATA', symbol: 'DATA', decimals: 18 },
     infoURL: 'https://datafdn.org/',
@@ -17889,7 +17898,8 @@ const chainArray = [
       'https://rpc.ankr.com/kava_evm',
       'wss://wevm.kava-rpc.com',
       'https://kava.drpc.org',
-      'wss://kava.drpc.org'
+      'wss://kava.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/kava?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Kava', symbol: 'KAVA', decimals: 18 },
@@ -31922,7 +31932,8 @@ const chainArray = [
     rpc: [
       'https://rpc.immutable.com',
       'https://immutable-zkevm.drpc.org',
-      'wss://immutable-zkevm.drpc.org'
+      'wss://immutable-zkevm.drpc.org',
+      'https://rpc.swiftnodes.io/rpc/immutable-zkevm?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [ 'https://docs.immutable.com/docs/zkEVM/guides/faucet' ],
     nativeCurrency: { name: 'IMX', symbol: 'IMX', decimals: 18 },
@@ -46147,7 +46158,8 @@ const chainArray = [
     rpc: [
       'https://rpc.mainnet.taiko.xyz',
       'https://taiko-rpc.publicnode.com',
-      'wss://taiko-rpc.publicnode.com'
+      'wss://taiko-rpc.publicnode.com',
+      'https://rpc.swiftnodes.io/rpc/taiko?key=${SWIFTNODES_API_KEY}'
     ],
     faucets: [],
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
